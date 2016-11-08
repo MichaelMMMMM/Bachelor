@@ -1,0 +1,132 @@
+\section{Kinematik}
+Die Kinematik befasst sich mit der Bewegung von Punkten und Körper, wobei deren Ursache vernachlässigt werden. Kane stellt bereits für die Modellierung der Kinematik umfangreiche Methoden zur Verfügung, welche in dem folgenden Abschnitt näher erläutert werden. Im Zentrum stehen hierbei Vektoren, die zur Darstellung von Position, Geschwindigkeit und Beschleunigung von Punkten und Körpern verwendet werden. Um die kinematischen Zusammenhänge komplexer Mehrkörpersysteme zu beschreiben, wird die Bedeutung von Bezugssystem besonders betont. Ein Bezugssystem wird durch drei, jeweils orthogonale Einheitsvektoren definiert, welche ein Rechtssystem bilden und in ihrem Bezugssystem fixiert sind. 
+
+\begin{equation}
+\textrm{Bezugssystem } \defBS{A}
+\end{equation}
+
+Beispielsweise kann die Bewegung eines Körpers durch die Bewegung des körperfesten Bezugssystem $B$ in dem raumfesten Bezugssystem $A$ beschrieben werden. Kinematische Größen wie Position und Bewegung werden mit Hilfe von Vektorfunktionen beschrieben, d.h. Funktionen, die von den Variablen $q_1,...,q_n$ und $t$ abhängen und einen Vektor liefern. Die Darstellung eines Vektors ist abhängig von dem Bezugssystem aus wessen Perspektive dieser betrachtet wird. Folglich ist die Darstellung eines Vektors $\bs{v}$ lediglich unter Angabe eines Bezugssystem interpretierbar. 
+
+\begin{equation}
+\bs{p} = a_1 \bs{e}_{A_1}+a_2\bs{e}_{A_2}+a_3\bs{e}_{A_3} = \begin{pmatrix}
+a_1 \\ a_2 \\ a_3
+\end{pmatrix} \cdot \begin{pmatrix}
+\bs{e}_{A_1} \\ \bs{e}_{A_2} \\ \bs{e}_{A_3}
+\end{pmatrix} = \vecBS{A}{a_1}{a_2}{a_3}
+\end{equation}
+
+Angenommen ein starrer Körpers, in welchem das Bezugssystem $\defBS{B}$ fixiert ist, bewegt sich mit einer konstanten Winkelgeschwindigkeit in dem raumfesten Bezugssystem $\defBS{A}$. Die Position des Schwerpunkt $P$ wird durch den Vektor $\bs{p}$ beschrieben. Da es  sich um einen starren Körper handelt, ist die Position des Schwerpunktes aus Sicht des Körpers und somit dem Bezugssystem $B$ konstant. Aus Sicht des raumfesten Bezugssystems $A$ ändert sich die Lage von $P$ und somit der Wert von $\bs{p}$.
+
+Mit Hilfe des Skalarproduktes können die Komponenten eines Vektors in einem beliebigen Bezugssystem berechnet werden. Durch die Addition der Skalarprodukte eines Vektors mit den Einheitsvektoren eines Bezugssystemes kann der Vektor in dieses projiziert werden.
+
+\begin{equation}
+\bs{p} = \vecBS{A}{a_1}{a_2}{a_3} = \vecBS{B}{b_1}{b_2}{b_3}
+\end{equation}
+\begin{equation}
+b_i = \presuper{A}{\bs{p}} \cdot \bs{e}_{B_i} = \bs{e}_{Bi} \cdot (a_1 \bs{e}_{A_1}+a_2\bs{e}_{A_2}+a_3\bs{e}_{A_3})
+\end{equation}
+\begin{equation}
+\presuper{B}{\bs{p}} = \pMat{A}{B} \cdot \presuper{A}{\bs{p}} = 
+\begin{pmatrix}
+\bs{e}_{B_1} \cdot \bs{e}_{A_1} & \bs{e}_{B_1} \cdot \bs{e}_{A_2} & \bs{e}_{B_1} \cdot \bs{e}_{A_3} 
+\\
+ \bs{e}_{B_2} \cdot \bs{e}_{A_1} & \bs{e}_{B_2} \cdot \bs{e}_{A_2} & \bs{e}_{B_2} \cdot \bs{e}_{A_3} 
+\\
+\bs{e}_{B_3} \cdot \bs{e}_{A_1} & \bs{e}_{B_3} \cdot \bs{e}_{A_2} & \bs{e}_{B_3} \cdot \bs{e}_{A_3}
+\end{pmatrix} \cdot \vecBS{A}{a_1}{a_2}{a_3}
+\end{equation}
+
+Die Darstellung eines Vektors ist abhängig von Bezugssystem, in welchem er dargestellt wird. Folglich muss auch die Ableitung eines Vektors in Respekt zu einem Bezugssystem durchgeführt werden.
+
+\begin{equation}
+\partialDiffIn{A}{\bs{p}}{q} \equiv \sum_{i=1}^{3} \frac{\partial a_i}{\partial q}\bs{e}_{A_i} = \vecBS{A}{\frac{\partial a_1}{\partial q}}{\frac{\partial a_2}{\partial q}}{ \frac{\partial a_3}{\partial q}}
+\end{equation}
+
+Angenommen $\bs{p}$ sei ein, von $q_1,...,q_n$ und der Zeit $t$ abhängiger Vektor, so heißt die gewöhnliche Ableitung nach $t$ auch totale Ableitung. Die Berechnung mit MATLAB kann über die folgende Definition erleichtert werden.
+
+\begin{equation}
+\diffIn{A}{\bs{p}}{t} = \sum^n_{i=1} \frac{\presuper{A}{\partial} \bs{p}}{\partial q}\dot{q} + \frac{\presuper{A}{\partial}\bs{p}}{\partial t}
+\end{equation}
+
+Auch die Winkelgeschwindigkeit eines Körpers $B$ ist abhängig von dem Bezugssystem, in welchem er sich bewegt. Deshalb muss bei der Angabe einer Winkelgeschwindigkeit der rotierende Körper und das Bezugssystem, gegen welches er rotiert, beschrieben werden. Um die Abhängigkeit der Bezugssysteme zu betonen wird die folgende Definition für die Winkelgeschwindigkeit eines Körpers $B$ in einem Bezugssystem $A$ gewählt.
+\begin{equation}
+\vel{A}{\omega}{B} = \bs{e}_{B_1} \Big(\diffIn{A}{\bs{e}_{B_2}}{t} \cdot \bs{e}_{B_3}\Big) + \bs{e}_{B_2}\Big(\diffIn{A}{\bs{e}_{B_3}}{t} \cdot \bs{e}_{B_1}\Big) +
+\bs{e}_{B_3}\Big(\diffIn{A}{\bs{e}_{B_1}}{t} \cdot \bs{e}_{B_2}\Big)
+\end{equation}
+Falls über ein Zeitintervall $t$ ein Einheitsvektor $\bs{k}$ existiert, dessen Orientierung sowohl in $A$ als auch in $B$ konstant ist, so besitzt $B$ eine so genannte einfache Winkelgeschwindigkeit in $A$.
+\begin{equation}
+\vel{A}{\omega}{B} = \omega \bs{k}
+\end{equation}
+Zusätzlich können Winkelgeschwindigkeiten aus Komponenten zusammengesetzt werden. Angenommen ein Körper $B$ bewegt sich mit der Winkelgeschwindigkeit $\vel{A}{\omega}{B}$ in $A$ und es werden $n$ Hilfsbezugssysteme $A1,...,An$ definiert. Dann gilt der folgende Zusammenhang zwischen den Winkelgeschwindigkeiten der Bezugssysteme.
+\begin{equation}
+\label{eq_additionstheorem_winkelgeschwindigkeiten}
+\vel{A}{\omega}{B} = \vel{A}{\omega}{A1} + \vel{A1}{\omega}{A2}+ ... + \vel{An-1}{\omega}{An} + \vel{An}{\omega}{B}
+\end{equation}
+Diese Darstellungsform ist besonders nützlich wenn es sich bei den Komponenten um einfache Winkelgeschwindigkeiten handelt. Außerdem sei erwähnt, dass es sich bei den Hilfsbezugssysteme nicht um reelle Körper handeln muss sonder diese lediglich als analytische Hilfskonstrukte dienen um die Untersuchung der Kinematik zu vereinfachen.
+
+Mit Hilfe der Winkelgeschwindigkeit eines Körpers $B$ in $A$ kann die Ableitung eines beliebigen, in auf $B$ fixierten Punktes $P$ bestimmt werden. Die Position des Punktes wird durch den Vektor $\bs{p}$ beschrieben.
+\begin{equation}
+\diffIn{A}{\bs{p}}{t} = \vel{A}{\omega}{B} \times \presuper{B}{\bs{p}}
+\end{equation}
+Für einen Punkt $P$, welcher sich auf dem Körper $B$ bewegen kann gilt der folgende Zusammenhang.
+\begin{equation}
+\diffIn{A}{\bs{p}}{t} = \diffIn{B}{\bs{p}}{t} + \vel{A}{\omega}{B} \times \presuper{B}{\bs{p}}
+\end{equation}
+Mit Hilfe der Ableitung einer Winkelgeschwindigkeit $\vel{A}{\omega}{B}$ kann die Winkelbeschleunigung $\vel{A}{\alpha}{B}$ berechnet werden. 
+\begin{equation}
+\vel{A}{\alpha}{B} = \diffIn{A}{\vel{A}{\omega}{B}}{t} = \diffIn{B}{\vel{A}{\omega}{B}}{t}
+\end{equation}
+Für Winkelbeschleunigung besteht kein Äquivalent zu dem Additionstheorem für Winkelgeschwindigkeiten (\ref{eq_additionstheorem_winkelgeschwindigkeiten}). Allerdings besitzt $B$ eine skalare Winkelbeschleunigung in $A$, wenn $B$ eine einfache Winkelgeschwindigkeit in $A$ besitzt.
+\begin{equation}
+\vel{A}{\omega}{B} = \omega\bs{k} \rightarrow \vel{A}{\alpha}{B} = \alpha \bs{k} \hspace{35pt} \vert \hspace{10pt} \alpha = \frac{d\omega}{dt}
+\end{equation}
+
+Die Geschwindigkeit und Beschleunigung eines Punktes in einem Bezugssystem ergeben sich durch deren Differentiation mit Respekt zu dem Bezugssystem.
+
+\begin{equation}
+\vel{A}{v}{P} = \diffIn{A}{\bs{p}}{t} \hspace{35pt} \vel{A}{a}{P} = \diffIn{A}{\vel{A}{v}{P}}{t}
+\end{equation}
+
+Die Position eines Partikels $P$ in einem Bezugssystem $A$ wird durch die Angabe von drei Koordinaten $x_P$, $y_P$ und $z_P$ eindeutig bestimmt. Sei nun ein System $S$, welches aus $v$ Partikeln besteht, gegeben, so müssen $3v$ skalare Größen ermittelt werden, um die Anordnung des Systems zu bestimmen. Tritt ein System in Kontakt mit anderen Körper so kann dessen Bewegung allerdings eingeschränkt werden und die möglichen Anordnungen seiner Partikel werden eingeschränkt. Solche Einschränkungen heißen holonome Zwangsbedinungen und werden mit Hilfe von holonomen Zwangsgleichungen ausgedrückt, welche die folgende Form besitzen.
+
+\begin{equation}
+f(x_1, y_1, z_1,...,x_v, y_v, z_v,t) = 0
+\end{equation}
+
+Diese Zwangsgleichungen führen zu einer Abhängigkeit der Partikel untereinander. Daraus folgt, dass in einem System $S$ mit $v$ Partikeln, welches von $M$ holonomen Zwangsbedingungen betroffen ist, nur noch $n = 3v - M$ der Koordinaten unabhängig voneinander sind. Unter diesen Umständen können die $3v$ Koordinaten von Funktionen beschrieben werden, welche von $t$ und $q_1(t),...,q_n(t)$ abhängen. Die Größen $q_1(t),...,q_n(t)$ heißen generalisierte Koordinaten und sind unabhängig voneinander. 
+
+Falls es sich bei einem System $S$ um einen starren Körper handelt, führt die Definition eines starren Körpers, nämlich, dass die Abstände der Partikel zueinander konstant sind, dazu, dass ein starrer Körper über $n=6$ unabhängige Koordinaten verfügt.
+
+Die Darstellung der Geschwindigkeiten eines Systems $S$, dessen Konfiguration durch $n$ generalisierte Koordinaten bestimmt ist, kann durch die Einführung der Größen $u_1,...,u_n$, welche generalisierte Geschwindigkeiten heißen, vereinfacht werden. Die generalisierten Geschwindigkeiten werden wie folgt definiert.
+
+\begin{equation}
+u_r = \sum^n_{s=1} Y_{rs}\dot{q}_s + Z_r \hspace{20pt} (r=1,...,n)
+\end{equation}
+
+Wobei die Größen $Y_{rs}$ und $Z_r$ Funktionen sind, die von $q_1,...q_n$ und der Zeit $t$ abhängen. Letztendlich kann nun die Geschwindigkeit von $S$ in $A$ wie folgt dargestellt werden.
+
+\begin{equation}
+\bs{\omega} = \sum^n_{r=1} \bs{\omega}_r u_r + \bs{\omega}_t
+\end{equation}
+\begin{equation}
+\bs{v} = \sum^n_{r=1} \bs{v}_r u_r + \bs{v}_t
+\end{equation}
+
+Die Größen $\bs{\omega}_r$ und $\bs{v}_r$ heißen partielle holonome Winkelgeschwindigkeiten bzw. partielle holonome Geschwindigkeiten von $S$ in $A$. Daraus folgt, dass die Geschwindigkeit eines holonomen Systems mit Hilfe der partiellen Geschwindigkeiten als Summe der generalisierten Geschwindigkeiten dargestellt werden können. Da in einem holonomen System die generalsierten Geschwindigkeiten unabhängig voneinander sind, können diese auch getrennt untersucht werden, wodurch die kinematische Betrachtung des Systems vereinfacht wird.
+
+In manchen Systemen sind die generalisierten Geschwindigkeiten allerdings nicht unabhängig voneinander. Solche Systeme werden als nicht holonom bezeichnet, wobei der Zusammenhang der generalisierten Geschwindigkeiten durch nicht holonome Zwangsgleichungen beschrieben wird. Diese besitzen die folgende Form.
+
+\begin{equation}
+u_r = \sum^p_{A_rs} u_s + B_r	\hspace{20pt} (r=p+1,...,n)
+\end{equation}
+
+Falls ein System von $m$ nicht holonome Zwangsbedingungen betroffen ist, so besitzt dieses $p=n-m$ Freiheitsgrade. Die Geschwindigkeiten nicht holonomer Systeme können ebenfalls als Summe der generalisierten Geschwindigkeiten beschrieben werden.
+
+\begin{equation}
+\bs{\omega} = \sum^p_{s=1}\tilde{\bs{\omega}}_r u_r + \tilde{\bs{\omega}}_t
+\end{equation}
+\begin{equation}
+\bs{v} = \sum^p_{s=1}\tilde{\bs{v}}_r u_r + \tilde{\bs{v}}_t
+\end{equation}
+
+Die Größen $\tilde{\bs{\omega}}_r$ und $\tilde{\bs{v}}_r$ heißen partielle nicht holonome Geschwindigkeiten von $S$ in $A$.
