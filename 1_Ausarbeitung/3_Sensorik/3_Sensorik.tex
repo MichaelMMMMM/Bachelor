@@ -119,3 +119,34 @@ S_8 = \frac{\partial y_8}{\partial \ddot{\varphi}} = l_1 - l_2
 \end{figure}
 
 Das erste Fazit aus der Untersuchung ist, dass alle Empfindlichkeiten, die von der Position der Sensoren abhängen, mit zunehmendem Abstand der Sensoren zueinander, wachsen. Folglich muss $l_1$ möglichst groß und $l_2$ möglichst klein gewählt werden.
+
+Die folgende Tabelle zeigt die relevanten Messwerte, welche genutzt werden können um Rückschlüsse auf die Messgrößen zu ziehen. Der folgende Abschnitt stellt, neben der Empfindlichkeit, weitere Ansätze vor um die Messsysteme zu beurteilen.
+
+\begin{table}[h!]
+\centering
+\def\arraystretch{1.5}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+\textbf{Messgröße} & \textbf{Messwert} & \textbf{Kennlinie} & \textbf{Empfindlichkeit} \\ \hline
+\multirow{3}{*}{$\varphi$} & $y_9 = a^{S1}_x - \frac{l_1}{l_2}\cdot a^{S2}_x$ & $y_9 = -g\cdot c_{\varphi}\cdot (1 - \frac{l_1}{l_2})$ & $S_9 = g\cdot s_{\varphi}\cdot (1 - \frac{l_1}{l_2}$) \\
+\cline{2-4}
+ & $y_{10} = a^{S1}_y - \frac{l_1}{l_2}\cdot a^{S2}_y$ & $y_{10} = g\cdot s_{\varphi}\cdot(1 - \frac{l_1}{l_2})$ & $S_{10} = -g\cdot c_{\varphi}\cdot (1 - \frac{l_1}{l_2})$ \\
+ \cline{2-4}
+ & $y_{11} = \frac{y_{10}}{y_9}$ & $y_{11} = -tan(\varphi)$ & $S_{11} = -tan(\varphi)^2 - 1$ \\
+\hline
+\multirow{3}{*}{$\dot{\varphi}$} & $y_1 = \omega^{S1}_z$ & $y_1 = \dot{\varphi}$ & $S_1 = 1$  \\ 
+\cline{2-4}
+& $y_2 = \omega^{S2}_z$ & $y_2 = \dot{\varphi}$ & $S_2 = 1$ \\
+\cline{2-4}
+& $y_7 = a^{S1}_x - a^{S2}_x$ & $y_7 = -\dot{\varphi}^2\cdot (l_1 - l_2)$ & $S_7 = -2\cdot \dot{\varphi}\cdot (l_1-l_2)$ \\
+\hline
+$\ddot{\varphi}$ & $y_8 = a^{S1}_y - a^{S2}_y$ & $y_8=\ddot{\varphi}\cdot(l_1 - l_2)$ & $S_8 = l_1 - l_2$ \\ \hline
+
+\end{tabular}
+\end{table}
+
+\subsection{Störgrößen}
+Das ausschlaggebende Kriterium für die Beurteilung der Messsysteme ist, wie stark diese von Störgrößen betroffen sind. Die Störungen der Systeme lassen sich in zwei Gruppen unterteilen. Einerseits besteht gewöhnliches Messrauschen, welches sich nicht auf eine konkrete Quelle zurückführen lässt und somit als stochastisch betrachtet wird. Diese Störform wird im weiteren als statisches Rauschen bezeichnet, da angenommen wird, dass es zeitinvariant und unabhängig von Systemgrößen wie Geschwindigkeit und Beschleunigung ist. Andererseits treten merkbare Störungen auf wenn der Motor ein impulsartiges Eingangssignal erzeugt, diese werden im weiteren Verlauf als dynamische Störungen bezeichnet. Im folgenden werden verschiedene Ansätze verfolgt um die Söreinflüsse zu beurteilen und die Messsysteme daran zu vergleichen.
+
+\subsubsection{Untersuchung der statischen Störungen}
+Die Annahme für die statischen Störungen ist, dass diese zeitinvariant und unabhängig von der Bewegung der Würfelseite sind. Folglich kann die Würfelseite fixiert und die Messwerte aufgenommen werden. Hierbei handelt es sich um einen stationären, ergodischen Prozess, weshalb mit Hilfe des Leistungsdichtespektrum das Signal-Rausch-Verhältnis bestimmt werden kann. Dieses kann dann zum Vergleich der Messsysteme verwendet werden.

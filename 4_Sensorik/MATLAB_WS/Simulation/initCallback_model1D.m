@@ -17,7 +17,7 @@ T_M_e       = 5.5e-4;
 T_M_m       = 12.4e-3;
 
 %Anfangswerte der Zustandsgrößen
-phi_0       = degtorad(3);
+phi_0       = degtorad(15);
 phi__d_0    = 0;
 phi__dd_0   = 0;
 psi_0       = 0;

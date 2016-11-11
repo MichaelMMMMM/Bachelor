@@ -6,11 +6,23 @@
 \usepackage{graphicx} 
 \usepackage{epstopdf}
 \usepackage{svg}
+\usepackage{multirow}
+
+%Hyperlinks package, links aus inhaltsverzeichnis
+\usepackage[hidelinks]{hyperref}
+\hypersetup{
+    colorlinks=false, %set true if you want colored links
+    linktoc=all
+}
+%Blattformatierung
+\usepackage{geometry}
+\geometry{a4paper, top=25mm, left=30mm, right=25mm, bottom=20mm}
+
 
 \include{0_Makros}
 
 \begin{document}
-
+\tableofcontents
 \include{2_ModellWuerfelseite/2_ModellWuerfelseite}
 
 \include{3_Sensorik/3_Sensorik}
