@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.4.17)  8 NOV 2016 20:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.4.17)  12 NOV 2016 17:33
 entering extended mode
 **./1_BA.tex
 (1_BA.tex
@@ -817,7 +817,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
 
-<2_ModellWuerfelseite/img/ModellWuerfelseite.pdf, id=36, 963.6pt x 542.025pt>
+<2_ModellWuerfelseite/img/ModellWuerfelseite.pdf, id=42, 963.6pt x 542.025pt>
 File: 2_ModellWuerfelseite/img/ModellWuerfelseite.pdf Graphic file (type pdf)
 
 <use 2_ModellWuerfelseite/img/ModellWuerfelseite.pdf>
@@ -872,7 +872,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
 
-<3_Sensorik/img/SensorAnordnung.pdf, id=91, 963.6pt x 542.025pt>
+<3_Sensorik/img/SensorAnordnung.pdf, id=97, 963.6pt x 542.025pt>
 File: 3_Sensorik/img/SensorAnordnung.pdf Graphic file (type pdf)
 
 <use 3_Sensorik/img/SensorAnordnung.pdf>
@@ -903,7 +903,7 @@ eit_phi-eps-converted-to.pdf 3_Sensorik/img/empfindlichkeit_phi.eps>
 (epstopdf)             \includegraphics on input line 89.
 Package epstopdf Info: Output file is already uptodate.
 
-<3_Sensorik/img/empfindlichkeit_phi-eps-converted-to.pdf, id=116, 365.365pt x 3
+<3_Sensorik/img/empfindlichkeit_phi-eps-converted-to.pdf, id=122, 365.365pt x 3
 03.1325pt>
 File: 3_Sensorik/img/empfindlichkeit_phi-eps-converted-to.pdf Graphic file (typ
 e pdf)
@@ -937,7 +937,7 @@ eit_phi__d-eps-converted-to.pdf 3_Sensorik/img/empfindlichkeit_phi__d.eps>
 (epstopdf)             \includegraphics on input line 103.
 Package epstopdf Info: Output file is already uptodate.
 
-<3_Sensorik/img/empfindlichkeit_phi__d-eps-converted-to.pdf, id=129, 364.36125p
+<3_Sensorik/img/empfindlichkeit_phi__d-eps-converted-to.pdf, id=135, 364.36125p
 t x 304.13625pt>
 File: 3_Sensorik/img/empfindlichkeit_phi__d-eps-converted-to.pdf Graphic file (
 type pdf)
@@ -969,7 +969,7 @@ eit_phi__dd-eps-converted-to.pdf 3_Sensorik/img/empfindlichkeit_phi__dd.eps>
 (epstopdf)             \includegraphics on input line 117.
 Package epstopdf Info: Output file is already uptodate.
 
-<3_Sensorik/img/empfindlichkeit_phi__dd-eps-converted-to.pdf, id=166, 370.38374
+<3_Sensorik/img/empfindlichkeit_phi__dd-eps-converted-to.pdf, id=172, 370.38374
 pt x 304.13625pt>
 File: 3_Sensorik/img/empfindlichkeit_phi__dd-eps-converted-to.pdf Graphic file 
 (type pdf)
@@ -998,7 +998,47 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 151.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 151.
-)
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 153.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 153.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 153.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 153.
+[8 <./3_Sensorik/img/empfindlichkeit_phi__dd-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <3_Sensorik/img/snr_phi_plot.eps>
+(epstopdf)                    date: 2016-11-12 15:03:00
+(epstopdf)                    size: 294238 bytes
+(epstopdf)             Output file: <3_Sensorik/img/snr_phi_plot-eps-converted-
+to.pdf>
+(epstopdf)                    date: 2016-11-12 15:07:47
+(epstopdf)                    size: 113749 bytes
+(epstopdf)             Command: <epstopdf --outfile=3_Sensorik/img/snr_phi_plot
+-eps-converted-to.pdf 3_Sensorik/img/snr_phi_plot.eps>
+(epstopdf)             \includegraphics on input line 156.
+Package epstopdf Info: Output file is already uptodate.
+
+<3_Sensorik/img/snr_phi_plot-eps-converted-to.pdf, id=195, 1445.4pt x 724.7075p
+t>
+File: 3_Sensorik/img/snr_phi_plot-eps-converted-to.pdf Graphic file (type pdf)
+ <use 3_Sensorik/img/snr_phi_plot-eps-converted-to.pdf>
+Package pdftex.def Info: 3_Sensorik/img/snr_phi_plot-eps-converted-to.pdf used 
+on input line 156.
+(pdftex.def)             Requested size: 441.01773pt x 221.1184pt.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 166.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 166.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 183.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 183.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 183.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 183.
+ [9 <./3_Sensorik/img/snr_phi_plot-eps-converted-to.pdf>])
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 28.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1007,35 +1047,25 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 28.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 28.
- [8 <./3_Sensorik/img/empfindlichkeit_phi__dd-eps-converted-to.pdf>]
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 28.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 28.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 28.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 28.
- [9]
+ [10]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 30.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 30.
-
-(1_BA.aux (2_ModellWuerfelseite/2_ModellWuerfelseite.aux)
-(3_Sensorik/3_Sensorik.aux))
+ (1_BA.aux
+(2_ModellWuerfelseite/2_ModellWuerfelseite.aux) (3_Sensorik/3_Sensorik.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 30.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 30.
 Package rerunfilecheck Info: File `1_BA.out' has not changed.
-(rerunfilecheck)             Checksum: 1F00B686F4F69A4BF3FAA600D3616137;277.
+(rerunfilecheck)             Checksum: EFBD329664302DCBB19DDB249F7B4DCE;376.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 30.
  ) 
 Here is how much of TeX's memory you used:
- 9804 strings out of 493634
- 149276 string characters out of 3136055
- 273600 words of memory out of 3000000
- 12949 multiletter control sequences out of 15000+200000
+ 9823 strings out of 493634
+ 149696 string characters out of 3136055
+ 273601 words of memory out of 3000000
+ 12954 multiletter control sequences out of 15000+200000
  8061 words of font info for 29 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 68i,33n,98p,966b,385s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 68i,33n,98p,1277b,385s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/ich/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/c
 m/cmbx10.pfb><C:/Users/ich/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
 /amsfonts/cm/cmbx12.pfb><C:/Users/ich/AppData/Local/Programs/MiKTeX 2.9/fonts/t
@@ -1050,9 +1080,9 @@ fonts/cm/cmr5.pfb><C:/Users/ich/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/p
 ublic/amsfonts/cm/cmr7.pfb><C:/Users/ich/AppData/Local/Programs/MiKTeX 2.9/font
 s/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/ich/AppData/Local/Programs/MiKT
 eX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on 1_BA.pdf (9 pages, 531709 bytes).
+Output written on 1_BA.pdf (10 pages, 664273 bytes).
 PDF statistics:
- 244 PDF objects out of 1000 (max. 8388607)
- 48 named destinations out of 1000 (max. 500000)
- 70 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 272 PDF objects out of 1000 (max. 8388607)
+ 61 named destinations out of 1000 (max. 500000)
+ 83 words of extra memory for PDF output out of 10000 (max. 10000000)
 
