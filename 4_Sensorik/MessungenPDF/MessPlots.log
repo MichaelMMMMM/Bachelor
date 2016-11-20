@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.4.17)  13 NOV 2016 11:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.4.17)  14 NOV 2016 19:12
 entering extended mode
 **./MessPlots.tex
 (MessPlots.tex
@@ -786,9 +786,7 @@ LaTeX Info: Redefining \nameref on input line 21.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-
-Package hyperref Warning: old toc file detected, not used; run LaTeX again.
-
+(MessPlots.toc)
 \tf@toc=\write5
 \openout5 = `MessPlots.toc'.
 
@@ -800,2713 +798,1319 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 24.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 24.
-[1
+ [1
 
 {C:/Users/ich/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 25.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 25.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 26.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 26.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 26.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 26.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\varphi' on input line 26.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 26.
-
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 27.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 27.
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 27.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\varphi' on input line 27.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 27.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 27.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 27.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\pi' on input line 27.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\cdot' on input line 27.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\cdot' on input line 27.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 27.
-
-Package epstopdf Info: Source file: <img/phi_sinefreq_0_5.eps>
-(epstopdf)                    date: 2016-11-13 08:44:37
-(epstopdf)                    size: 172743 bytes
-(epstopdf)             Output file: <img/phi_sinefreq_0_5-eps-converted-to.pdf>
-
-(epstopdf)                    date: 2016-11-13 08:57:32
-(epstopdf)                    size: 62057 bytes
-(epstopdf)             Command: <epstopdf --outfile=img/phi_sinefreq_0_5-eps-co
-nverted-to.pdf img/phi_sinefreq_0_5.eps>
+Package epstopdf Info: Source file: <img/phi_g_constsig.eps>
+(epstopdf)                    date: 2016-11-14 18:32:57
+(epstopdf)                    size: 154659 bytes
+(epstopdf)             Output file: <img/phi_g_constsig-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-11-14 18:33:09
+(epstopdf)                    size: 53573 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/phi_g_constsig-eps-conv
+erted-to.pdf img/phi_g_constsig.eps>
 (epstopdf)             \includegraphics on input line 29.
 Package epstopdf Info: Output file is already uptodate.
-<img/phi_sinefreq_0_5-eps-converted-to.pdf, id=35, 368.37625pt x 302.12875pt>
-File: img/phi_sinefreq_0_5-eps-converted-to.pdf Graphic file (type pdf)
 
-<use img/phi_sinefreq_0_5-eps-converted-to.pdf>
-Package pdftex.def Info: img/phi_sinefreq_0_5-eps-converted-to.pdf used on inpu
-t line 29.
-(pdftex.def)             Requested size: 220.50887pt x 180.8499pt.
-Package epstopdf Info: Source file: <img/phi_sinefreq_1.eps>
-(epstopdf)                    date: 2016-11-13 08:44:38
-(epstopdf)                    size: 173476 bytes
-(epstopdf)             Output file: <img/phi_sinefreq_1-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-11-13 08:57:33
-(epstopdf)                    size: 62510 bytes
-(epstopdf)             Command: <epstopdf --outfile=img/phi_sinefreq_1-eps-conv
-erted-to.pdf img/phi_sinefreq_1.eps>
-(epstopdf)             \includegraphics on input line 30.
+<img/phi_g_constsig-eps-converted-to.pdf, id=57, 368.37625pt x 303.1325pt>
+File: img/phi_g_constsig-eps-converted-to.pdf Graphic file (type pdf)
+
+<use img/phi_g_constsig-eps-converted-to.pdf>
+Package pdftex.def Info: img/phi_g_constsig-eps-converted-to.pdf used on input 
+line 29.
+(pdftex.def)             Requested size: 220.50887pt x 181.45073pt.
+Package epstopdf Info: Source file: <img/dft_phi_a_constsig.eps>
+(epstopdf)                    date: 2016-11-14 18:32:55
+(epstopdf)                    size: 989637 bytes
+(epstopdf)             Output file: <img/dft_phi_a_constsig-eps-converted-to.pd
+f>
+(epstopdf)                    date: 2016-11-14 18:33:10
+(epstopdf)                    size: 94136 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/dft_phi_a_constsig-eps-
+converted-to.pdf img/dft_phi_a_constsig.eps>
+(epstopdf)             \includegraphics on input line 32.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/phi_sinefreq_1-eps-converted-to.pdf, id=36, 368.37625pt x 302.12875pt>
-File: img/phi_sinefreq_1-eps-converted-to.pdf Graphic file (type pdf)
+<img/dft_phi_a_constsig-eps-converted-to.pdf, id=58, 356.33125pt x 305.14pt>
+File: img/dft_phi_a_constsig-eps-converted-to.pdf Graphic file (type pdf)
 
-<use img/phi_sinefreq_1-eps-converted-to.pdf>
-Package pdftex.def Info: img/phi_sinefreq_1-eps-converted-to.pdf used on input 
-line 30.
-(pdftex.def)             Requested size: 220.50887pt x 180.8499pt.
-
-Overfull \hbox (2.22221pt too wide) in paragraph at lines 29--31
-[][] [] 
- []
-
-Package epstopdf Info: Source file: <img/phi_sinefreq_2.eps>
-(epstopdf)                    date: 2016-11-13 08:44:38
-(epstopdf)                    size: 172663 bytes
-(epstopdf)             Output file: <img/phi_sinefreq_2-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-11-13 09:00:23
-(epstopdf)                    size: 62102 bytes
-(epstopdf)             Command: <epstopdf --outfile=img/phi_sinefreq_2-eps-conv
-erted-to.pdf img/phi_sinefreq_2.eps>
+<use img/dft_phi_a_constsig-eps-converted-to.pdf>
+Package pdftex.def Info: img/dft_phi_a_constsig-eps-converted-to.pdf used on in
+put line 32.
+(pdftex.def)             Requested size: 220.50887pt x 188.83096pt.
+Package epstopdf Info: Source file: <img/dft_phi_g_constsig.eps>
+(epstopdf)                    date: 2016-11-14 18:32:58
+(epstopdf)                    size: 907925 bytes
+(epstopdf)             Output file: <img/dft_phi_g_constsig-eps-converted-to.pd
+f>
+(epstopdf)                    date: 2016-11-14 18:33:11
+(epstopdf)                    size: 67756 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/dft_phi_g_constsig-eps-
+converted-to.pdf img/dft_phi_g_constsig.eps>
 (epstopdf)             \includegraphics on input line 33.
 Package epstopdf Info: Output file is already uptodate.
-<img/phi_sinefreq_2-eps-converted-to.pdf, id=37, 368.37625pt x 302.12875pt>
-File: img/phi_sinefreq_2-eps-converted-to.pdf Graphic file (type pdf)
 
-<use img/phi_sinefreq_2-eps-converted-to.pdf>
-Package pdftex.def Info: img/phi_sinefreq_2-eps-converted-to.pdf used on input 
-line 33.
-(pdftex.def)             Requested size: 220.50887pt x 180.8499pt.
-Package epstopdf Info: Source file: <img/phi_sinefreq_3.eps>
-(epstopdf)                    date: 2016-11-13 08:44:39
-(epstopdf)                    size: 173375 bytes
-(epstopdf)             Output file: <img/phi_sinefreq_3-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-11-13 09:00:24
-(epstopdf)                    size: 62106 bytes
-(epstopdf)             Command: <epstopdf --outfile=img/phi_sinefreq_3-eps-conv
-erted-to.pdf img/phi_sinefreq_3.eps>
-(epstopdf)             \includegraphics on input line 34.
-Package epstopdf Info: Output file is already uptodate.
+<img/dft_phi_g_constsig-eps-converted-to.pdf, id=59, 372.39125pt x 305.14pt>
+File: img/dft_phi_g_constsig-eps-converted-to.pdf Graphic file (type pdf)
 
-<img/phi_sinefreq_3-eps-converted-to.pdf, id=38, 368.37625pt x 302.12875pt>
-File: img/phi_sinefreq_3-eps-converted-to.pdf Graphic file (type pdf)
+<use img/dft_phi_g_constsig-eps-converted-to.pdf>
+Package pdftex.def Info: img/dft_phi_g_constsig-eps-converted-to.pdf used on in
+put line 33.
+(pdftex.def)             Requested size: 220.50887pt x 180.69218pt.
 
-<use img/phi_sinefreq_3-eps-converted-to.pdf>
-Package pdftex.def Info: img/phi_sinefreq_3-eps-converted-to.pdf used on input 
-line 34.
-(pdftex.def)             Requested size: 220.50887pt x 180.8499pt.
-
-Overfull \hbox (2.22221pt too wide) in paragraph at lines 33--35
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 32--34
 [][] [] 
  []
 
-Package epstopdf Info: Source file: <img/phi_sinefreq_4.eps>
-(epstopdf)                    date: 2016-11-13 08:44:39
-(epstopdf)                    size: 171716 bytes
-(epstopdf)             Output file: <img/phi_sinefreq_4-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-11-13 09:00:24
-(epstopdf)                    size: 60243 bytes
-(epstopdf)             Command: <epstopdf --outfile=img/phi_sinefreq_4-eps-conv
-erted-to.pdf img/phi_sinefreq_4.eps>
+Package epstopdf Info: Source file: <img/lds_phi_a_zerosig.eps>
+(epstopdf)                    date: 2016-11-14 18:32:57
+(epstopdf)                    size: 3912980 bytes
+(epstopdf)             Output file: <img/lds_phi_a_zerosig-eps-converted-to.pdf
+>
+(epstopdf)                    date: 2016-11-14 18:33:14
+(epstopdf)                    size: 714458 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/lds_phi_a_zerosig-eps-c
+onverted-to.pdf img/lds_phi_a_zerosig.eps>
+(epstopdf)             \includegraphics on input line 36.
+Package epstopdf Info: Output file is already uptodate.
+<img/lds_phi_a_zerosig-eps-converted-to.pdf, id=60, 365.365pt x 304.13625pt>
+File: img/lds_phi_a_zerosig-eps-converted-to.pdf Graphic file (type pdf)
+
+<use img/lds_phi_a_zerosig-eps-converted-to.pdf>
+Package pdftex.def Info: img/lds_phi_a_zerosig-eps-converted-to.pdf used on inp
+ut line 36.
+(pdftex.def)             Requested size: 220.50887pt x 183.55516pt.
+Package epstopdf Info: Source file: <img/dft_phi_a_zerosig.eps>
+(epstopdf)                    date: 2016-11-14 18:32:56
+(epstopdf)                    size: 2587940 bytes
+(epstopdf)             Output file: <img/dft_phi_a_zerosig-eps-converted-to.pdf
+>
+(epstopdf)                    date: 2016-11-14 18:33:16
+(epstopdf)                    size: 527629 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/dft_phi_a_zerosig-eps-c
+onverted-to.pdf img/dft_phi_a_zerosig.eps>
 (epstopdf)             \includegraphics on input line 37.
 Package epstopdf Info: Output file is already uptodate.
-<img/phi_sinefreq_4-eps-converted-to.pdf, id=39, 368.37625pt x 302.12875pt>
-File: img/phi_sinefreq_4-eps-converted-to.pdf Graphic file (type pdf)
 
-<use img/phi_sinefreq_4-eps-converted-to.pdf>
-Package pdftex.def Info: img/phi_sinefreq_4-eps-converted-to.pdf used on input 
-line 37.
-(pdftex.def)             Requested size: 220.50887pt x 180.8499pt.
-Package epstopdf Info: Source file: <img/phi_sinefreq_5.eps>
-(epstopdf)                    date: 2016-11-13 08:44:39
-(epstopdf)                    size: 171746 bytes
-(epstopdf)             Output file: <img/phi_sinefreq_5-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-11-13 09:00:25
-(epstopdf)                    size: 59902 bytes
-(epstopdf)             Command: <epstopdf --outfile=img/phi_sinefreq_5-eps-conv
-erted-to.pdf img/phi_sinefreq_5.eps>
-(epstopdf)             \includegraphics on input line 38.
-Package epstopdf Info: Output file is already uptodate.
+<img/dft_phi_a_zerosig-eps-converted-to.pdf, id=61, 366.36874pt x 304.13625pt>
+File: img/dft_phi_a_zerosig-eps-converted-to.pdf Graphic file (type pdf)
 
-<img/phi_sinefreq_5-eps-converted-to.pdf, id=40, 368.37625pt x 302.12875pt>
-File: img/phi_sinefreq_5-eps-converted-to.pdf Graphic file (type pdf)
+<use img/dft_phi_a_zerosig-eps-converted-to.pdf>
+Package pdftex.def Info: img/dft_phi_a_zerosig-eps-converted-to.pdf used on inp
+ut line 37.
+(pdftex.def)             Requested size: 220.50887pt x 183.05396pt.
 
-<use img/phi_sinefreq_5-eps-converted-to.pdf>
-Package pdftex.def Info: img/phi_sinefreq_5-eps-converted-to.pdf used on input 
-line 38.
-(pdftex.def)             Requested size: 220.50887pt x 180.8499pt.
-
-Overfull \hbox (2.22221pt too wide) in paragraph at lines 37--39
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 36--38
 [][] [] 
  []
 
-Package epstopdf Info: Source file: <img/phi_sinefreq_6.eps>
-(epstopdf)                    date: 2016-11-13 08:44:40
-(epstopdf)                    size: 171842 bytes
-(epstopdf)             Output file: <img/phi_sinefreq_6-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-11-13 09:00:26
-(epstopdf)                    size: 60417 bytes
-(epstopdf)             Command: <epstopdf --outfile=img/phi_sinefreq_6-eps-conv
-erted-to.pdf img/phi_sinefreq_6.eps>
-(epstopdf)             \includegraphics on input line 41.
-Package epstopdf Info: Output file is already uptodate.
-<img/phi_sinefreq_6-eps-converted-to.pdf, id=41, 368.37625pt x 302.12875pt>
-File: img/phi_sinefreq_6-eps-converted-to.pdf Graphic file (type pdf)
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 40.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 40.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 40.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 40.
+[2 <./img/phi_g_constsig-eps-converted-to.pdf> <./img/dft_phi_a_constsig-eps-co
+nverted-to.pdf> <./img/dft_phi_g_constsig-eps-converted-to.pdf> <./img/lds_phi_
+a_zerosig-eps-converted-to.pdf> <./img/dft_phi_a_zerosig-eps-converted-to.pdf>]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 41.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 41.
 
-<use img/phi_sinefreq_6-eps-converted-to.pdf>
-Package pdftex.def Info: img/phi_sinefreq_6-eps-converted-to.pdf used on input 
-line 41.
-(pdftex.def)             Requested size: 220.50887pt x 180.8499pt.
-Package epstopdf Info: Source file: <img/phi_sinefreq_7.eps>
-(epstopdf)                    date: 2016-11-13 08:44:40
-(epstopdf)                    size: 172176 bytes
-(epstopdf)             Output file: <img/phi_sinefreq_7-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-11-13 09:00:27
-(epstopdf)                    size: 60128 bytes
-(epstopdf)             Command: <epstopdf --outfile=img/phi_sinefreq_7-eps-conv
-erted-to.pdf img/phi_sinefreq_7.eps>
-(epstopdf)             \includegraphics on input line 42.
-Package epstopdf Info: Output file is already uptodate.
-
-<img/phi_sinefreq_7-eps-converted-to.pdf, id=42, 368.37625pt x 302.12875pt>
-File: img/phi_sinefreq_7-eps-converted-to.pdf Graphic file (type pdf)
-
-<use img/phi_sinefreq_7-eps-converted-to.pdf>
-Package pdftex.def Info: img/phi_sinefreq_7-eps-converted-to.pdf used on input 
-line 42.
-(pdftex.def)             Requested size: 220.50887pt x 180.8499pt.
-
-Overfull \hbox (2.22221pt too wide) in paragraph at lines 41--43
-[][] [] 
- []
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 41.
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-Package epstopdf Info: Source file: <img/phi_sinefreq_8.eps>
-(epstopdf)                    date: 2016-11-13 08:44:40
-(epstopdf)                    size: 172738 bytes
-(epstopdf)             Output file: <img/phi_sinefreq_8-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-11-13 09:00:27
-(epstopdf)                    size: 59820 bytes
-(epstopdf)             Command: <epstopdf --outfile=img/phi_sinefreq_8-eps-conv
-erted-to.pdf img/phi_sinefreq_8.eps>
-(epstopdf)             \includegraphics on input line 45.
-Package epstopdf Info: Output file is already uptodate.
-<img/phi_sinefreq_8-eps-converted-to.pdf, id=43, 368.37625pt x 302.12875pt>
-File: img/phi_sinefreq_8-eps-converted-to.pdf Graphic file (type pdf)
-
-<use img/phi_sinefreq_8-eps-converted-to.pdf>
-Package pdftex.def Info: img/phi_sinefreq_8-eps-converted-to.pdf used on input 
-line 45.
-(pdftex.def)             Requested size: 220.50887pt x 180.8499pt.
-Package epstopdf Info: Source file: <img/phi_sinefreq_9.eps>
-(epstopdf)                    date: 2016-11-13 08:44:40
-(epstopdf)                    size: 171874 bytes
-(epstopdf)             Output file: <img/phi_sinefreq_9-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-11-13 09:00:28
-(epstopdf)                    size: 60077 bytes
-(epstopdf)             Command: <epstopdf --outfile=img/phi_sinefreq_9-eps-conv
-erted-to.pdf img/phi_sinefreq_9.eps>
-(epstopdf)             \includegraphics on input line 46.
-Package epstopdf Info: Output file is already uptodate.
-
-<img/phi_sinefreq_9-eps-converted-to.pdf, id=44, 368.37625pt x 302.12875pt>
-File: img/phi_sinefreq_9-eps-converted-to.pdf Graphic file (type pdf)
-
-<use img/phi_sinefreq_9-eps-converted-to.pdf>
-Package pdftex.def Info: img/phi_sinefreq_9-eps-converted-to.pdf used on input 
-line 46.
-(pdftex.def)             Requested size: 220.50887pt x 180.8499pt.
-
-Overfull \hbox (2.22221pt too wide) in paragraph at lines 45--47
-[][] [] 
- []
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\varphi' on input line 41.
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-Package epstopdf Info: Source file: <img/phi_sinefreq_10.eps>
-(epstopdf)                    date: 2016-11-13 08:44:41
-(epstopdf)                    size: 171761 bytes
-(epstopdf)             Output file: <img/phi_sinefreq_10-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-11-13 09:00:29
-(epstopdf)                    size: 59838 bytes
-(epstopdf)             Command: <epstopdf --outfile=img/phi_sinefreq_10-eps-con
-verted-to.pdf img/phi_sinefreq_10.eps>
-(epstopdf)             \includegraphics on input line 50.
-Package epstopdf Info: Output file is already uptodate.
-<img/phi_sinefreq_10-eps-converted-to.pdf, id=45, 368.37625pt x 302.12875pt>
-File: img/phi_sinefreq_10-eps-converted-to.pdf Graphic file (type pdf)
-
-<use img/phi_sinefreq_10-eps-converted-to.pdf>
-Package pdftex.def Info: img/phi_sinefreq_10-eps-converted-to.pdf used on input
- line 50.
-(pdftex.def)             Requested size: 220.50887pt x 180.8499pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 41.
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 53.
+(babel)             in language  on input line 42.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 53.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 53.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 53.
-[2 <./img/phi_sinefreq_0_5-eps-converted-to.pdf> <./img/phi_sinefreq_1-eps-conv
-erted-to.pdf> <./img/phi_sinefreq_2-eps-converted-to.pdf> <./img/phi_sinefreq_3
--eps-converted-to.pdf> <./img/phi_sinefreq_4-eps-converted-to.pdf> <./img/phi_s
-inefreq_5-eps-converted-to.pdf>]
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 54.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 54.
+(babel)             in language  on input line 42.
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 42.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 54.
+(hyperref)                removing `\varphi' on input line 42.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\varphi' on input line 54.
+(hyperref)                removing `math shift' on input line 42.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 54.
+(hyperref)                removing `math shift' on input line 42.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 54.
+(hyperref)                removing `subscript' on input line 42.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 54.
+(hyperref)                removing `\pi' on input line 42.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\pi' on input line 54.
+(hyperref)                removing `\cdot' on input line 42.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\cdot' on input line 54.
+(hyperref)                removing `\cdot' on input line 42.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\cdot' on input line 54.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 54.
+(hyperref)                removing `math shift' on input line 42.
 
 Package epstopdf Info: Source file: <img/dft_sinefreq_0_5.eps>
-(epstopdf)                    date: 2016-11-13 08:44:42
+(epstopdf)                    date: 2016-11-14 17:26:06
 (epstopdf)                    size: 1204237 bytes
 (epstopdf)             Output file: <img/dft_sinefreq_0_5-eps-converted-to.pdf>
 
-(epstopdf)                    date: 2016-11-13 09:02:46
+(epstopdf)                    date: 2016-11-14 19:09:26
 (epstopdf)                    size: 175264 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/dft_sinefreq_0_5-eps-co
 nverted-to.pdf img/dft_sinefreq_0_5.eps>
-(epstopdf)             \includegraphics on input line 56.
+(epstopdf)             \includegraphics on input line 44.
 Package epstopdf Info: Output file is already uptodate.
-<img/dft_sinefreq_0_5-eps-converted-to.pdf, id=84, 366.36874pt x 305.14pt>
+<img/dft_sinefreq_0_5-eps-converted-to.pdf, id=89, 366.36874pt x 305.14pt>
 File: img/dft_sinefreq_0_5-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/dft_sinefreq_0_5-eps-converted-to.pdf>
 Package pdftex.def Info: img/dft_sinefreq_0_5-eps-converted-to.pdf used on inpu
-t line 56.
+t line 44.
 (pdftex.def)             Requested size: 220.50887pt x 183.6581pt.
 Package epstopdf Info: Source file: <img/dft_sinefreq_1.eps>
-(epstopdf)                    date: 2016-11-13 08:44:42
+(epstopdf)                    date: 2016-11-14 17:26:07
 (epstopdf)                    size: 1161770 bytes
 (epstopdf)             Output file: <img/dft_sinefreq_1-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-11-13 09:02:48
+(epstopdf)                    date: 2016-11-14 19:09:27
 (epstopdf)                    size: 163003 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/dft_sinefreq_1-eps-conv
 erted-to.pdf img/dft_sinefreq_1.eps>
-(epstopdf)             \includegraphics on input line 57.
+(epstopdf)             \includegraphics on input line 45.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/dft_sinefreq_1-eps-converted-to.pdf, id=85, 366.36874pt x 305.14pt>
+<img/dft_sinefreq_1-eps-converted-to.pdf, id=90, 366.36874pt x 305.14pt>
 File: img/dft_sinefreq_1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/dft_sinefreq_1-eps-converted-to.pdf>
 Package pdftex.def Info: img/dft_sinefreq_1-eps-converted-to.pdf used on input 
-line 57.
+line 45.
 (pdftex.def)             Requested size: 220.50887pt x 183.6581pt.
 
-Overfull \hbox (2.22221pt too wide) in paragraph at lines 56--58
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 44--46
 [][] [] 
  []
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 Package epstopdf Info: Source file: <img/dft_sinefreq_2.eps>
-(epstopdf)                    date: 2016-11-13 08:44:43
+(epstopdf)                    date: 2016-11-14 17:26:07
 (epstopdf)                    size: 988020 bytes
 (epstopdf)             Output file: <img/dft_sinefreq_2-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-11-13 09:02:49
+(epstopdf)                    date: 2016-11-14 19:09:28
 (epstopdf)                    size: 114951 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/dft_sinefreq_2-eps-conv
 erted-to.pdf img/dft_sinefreq_2.eps>
-(epstopdf)             \includegraphics on input line 60.
+(epstopdf)             \includegraphics on input line 48.
 Package epstopdf Info: Output file is already uptodate.
-<img/dft_sinefreq_2-eps-converted-to.pdf, id=86, 372.39125pt x 305.14pt>
+<img/dft_sinefreq_2-eps-converted-to.pdf, id=91, 372.39125pt x 305.14pt>
 File: img/dft_sinefreq_2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/dft_sinefreq_2-eps-converted-to.pdf>
 Package pdftex.def Info: img/dft_sinefreq_2-eps-converted-to.pdf used on input 
-line 60.
+line 48.
 (pdftex.def)             Requested size: 220.50887pt x 180.69218pt.
 Package epstopdf Info: Source file: <img/dft_sinefreq_3.eps>
-(epstopdf)                    date: 2016-11-13 08:44:43
+(epstopdf)                    date: 2016-11-14 17:26:08
 (epstopdf)                    size: 1305371 bytes
 (epstopdf)             Output file: <img/dft_sinefreq_3-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-11-13 09:02:51
+(epstopdf)                    date: 2016-11-14 19:09:29
 (epstopdf)                    size: 202346 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/dft_sinefreq_3-eps-conv
 erted-to.pdf img/dft_sinefreq_3.eps>
-(epstopdf)             \includegraphics on input line 61.
+(epstopdf)             \includegraphics on input line 49.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/dft_sinefreq_3-eps-converted-to.pdf, id=87, 366.36874pt x 305.14pt>
+<img/dft_sinefreq_3-eps-converted-to.pdf, id=92, 366.36874pt x 305.14pt>
 File: img/dft_sinefreq_3-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/dft_sinefreq_3-eps-converted-to.pdf>
 Package pdftex.def Info: img/dft_sinefreq_3-eps-converted-to.pdf used on input 
-line 61.
+line 49.
 (pdftex.def)             Requested size: 220.50887pt x 183.6581pt.
 
-Overfull \hbox (2.22221pt too wide) in paragraph at lines 60--62
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 48--50
 [][] [] 
  []
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 Package epstopdf Info: Source file: <img/dft_sinefreq_4.eps>
-(epstopdf)                    date: 2016-11-13 08:44:44
+(epstopdf)                    date: 2016-11-14 17:26:08
 (epstopdf)                    size: 1830116 bytes
 (epstopdf)             Output file: <img/dft_sinefreq_4-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-11-13 09:02:52
+(epstopdf)                    date: 2016-11-14 19:09:31
 (epstopdf)                    size: 345435 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/dft_sinefreq_4-eps-conv
 erted-to.pdf img/dft_sinefreq_4.eps>
-(epstopdf)             \includegraphics on input line 64.
+(epstopdf)             \includegraphics on input line 52.
 Package epstopdf Info: Output file is already uptodate.
-<img/dft_sinefreq_4-eps-converted-to.pdf, id=88, 361.35pt x 305.14pt>
+<img/dft_sinefreq_4-eps-converted-to.pdf, id=93, 361.35pt x 305.14pt>
 File: img/dft_sinefreq_4-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/dft_sinefreq_4-eps-converted-to.pdf>
 Package pdftex.def Info: img/dft_sinefreq_4-eps-converted-to.pdf used on input 
-line 64.
+line 52.
 (pdftex.def)             Requested size: 220.50887pt x 186.20961pt.
 Package epstopdf Info: Source file: <img/dft_sinefreq_5.eps>
-(epstopdf)                    date: 2016-11-13 08:44:44
+(epstopdf)                    date: 2016-11-14 17:26:09
 (epstopdf)                    size: 2111667 bytes
 (epstopdf)             Output file: <img/dft_sinefreq_5-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-11-13 09:02:54
+(epstopdf)                    date: 2016-11-14 19:09:33
 (epstopdf)                    size: 423812 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/dft_sinefreq_5-eps-conv
 erted-to.pdf img/dft_sinefreq_5.eps>
-(epstopdf)             \includegraphics on input line 65.
+(epstopdf)             \includegraphics on input line 53.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/dft_sinefreq_5-eps-converted-to.pdf, id=89, 361.35pt x 305.14pt>
+<img/dft_sinefreq_5-eps-converted-to.pdf, id=94, 361.35pt x 305.14pt>
 File: img/dft_sinefreq_5-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/dft_sinefreq_5-eps-converted-to.pdf>
 Package pdftex.def Info: img/dft_sinefreq_5-eps-converted-to.pdf used on input 
-line 65.
+line 53.
 (pdftex.def)             Requested size: 220.50887pt x 186.20961pt.
 
-Overfull \hbox (2.22221pt too wide) in paragraph at lines 64--66
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 52--54
 [][] [] 
  []
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 55.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 55.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 55.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 55.
+[3 <./img/dft_sinefreq_0_5-eps-converted-to.pdf> <./img/dft_sinefreq_1-eps-conv
+erted-to.pdf> <./img/dft_sinefreq_2-eps-converted-to.pdf> <./img/dft_sinefreq_3
+-eps-converted-to.pdf> <./img/dft_sinefreq_4-eps-converted-to.pdf> <./img/dft_s
+inefreq_5-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <img/dft_sinefreq_6.eps>
-(epstopdf)                    date: 2016-11-13 08:44:45
+(epstopdf)                    date: 2016-11-14 17:26:10
 (epstopdf)                    size: 2050800 bytes
 (epstopdf)             Output file: <img/dft_sinefreq_6-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-11-13 09:02:56
+(epstopdf)                    date: 2016-11-14 19:09:35
 (epstopdf)                    size: 404939 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/dft_sinefreq_6-eps-conv
 erted-to.pdf img/dft_sinefreq_6.eps>
-(epstopdf)             \includegraphics on input line 68.
+(epstopdf)             \includegraphics on input line 57.
 Package epstopdf Info: Output file is already uptodate.
-<img/dft_sinefreq_6-eps-converted-to.pdf, id=90, 361.35pt x 305.14pt>
+
+<img/dft_sinefreq_6-eps-converted-to.pdf, id=129, 361.35pt x 305.14pt>
 File: img/dft_sinefreq_6-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/dft_sinefreq_6-eps-converted-to.pdf>
 Package pdftex.def Info: img/dft_sinefreq_6-eps-converted-to.pdf used on input 
-line 68.
+line 57.
 (pdftex.def)             Requested size: 220.50887pt x 186.20961pt.
 Package epstopdf Info: Source file: <img/dft_sinefreq_7.eps>
-(epstopdf)                    date: 2016-11-13 08:44:46
+(epstopdf)                    date: 2016-11-14 17:26:10
 (epstopdf)                    size: 2073350 bytes
 (epstopdf)             Output file: <img/dft_sinefreq_7-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-11-13 09:02:58
+(epstopdf)                    date: 2016-11-14 19:09:36
 (epstopdf)                    size: 409376 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/dft_sinefreq_7-eps-conv
 erted-to.pdf img/dft_sinefreq_7.eps>
-(epstopdf)             \includegraphics on input line 69.
+(epstopdf)             \includegraphics on input line 58.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/dft_sinefreq_7-eps-converted-to.pdf, id=91, 361.35pt x 305.14pt>
+<img/dft_sinefreq_7-eps-converted-to.pdf, id=130, 361.35pt x 305.14pt>
 File: img/dft_sinefreq_7-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/dft_sinefreq_7-eps-converted-to.pdf>
 Package pdftex.def Info: img/dft_sinefreq_7-eps-converted-to.pdf used on input 
-line 69.
+line 58.
 (pdftex.def)             Requested size: 220.50887pt x 186.20961pt.
 
-Overfull \hbox (2.22221pt too wide) in paragraph at lines 68--70
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 57--59
 [][] [] 
  []
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 Package epstopdf Info: Source file: <img/dft_sinefreq_8.eps>
-(epstopdf)                    date: 2016-11-13 08:44:46
+(epstopdf)                    date: 2016-11-14 17:26:11
 (epstopdf)                    size: 2112795 bytes
 (epstopdf)             Output file: <img/dft_sinefreq_8-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-11-13 09:03:01
+(epstopdf)                    date: 2016-11-14 19:09:38
 (epstopdf)                    size: 421810 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/dft_sinefreq_8-eps-conv
 erted-to.pdf img/dft_sinefreq_8.eps>
-(epstopdf)             \includegraphics on input line 72.
+(epstopdf)             \includegraphics on input line 61.
 Package epstopdf Info: Output file is already uptodate.
-<img/dft_sinefreq_8-eps-converted-to.pdf, id=92, 361.35pt x 305.14pt>
+<img/dft_sinefreq_8-eps-converted-to.pdf, id=131, 361.35pt x 305.14pt>
 File: img/dft_sinefreq_8-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/dft_sinefreq_8-eps-converted-to.pdf>
 Package pdftex.def Info: img/dft_sinefreq_8-eps-converted-to.pdf used on input 
-line 72.
+line 61.
 (pdftex.def)             Requested size: 220.50887pt x 186.20961pt.
 Package epstopdf Info: Source file: <img/dft_sinefreq_9.eps>
-(epstopdf)                    date: 2016-11-13 08:44:47
+(epstopdf)                    date: 2016-11-14 17:26:12
 (epstopdf)                    size: 2179916 bytes
 (epstopdf)             Output file: <img/dft_sinefreq_9-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-11-13 09:03:03
+(epstopdf)                    date: 2016-11-14 19:09:40
 (epstopdf)                    size: 441864 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/dft_sinefreq_9-eps-conv
 erted-to.pdf img/dft_sinefreq_9.eps>
-(epstopdf)             \includegraphics on input line 73.
+(epstopdf)             \includegraphics on input line 62.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/dft_sinefreq_9-eps-converted-to.pdf, id=93, 361.35pt x 305.14pt>
+<img/dft_sinefreq_9-eps-converted-to.pdf, id=132, 361.35pt x 305.14pt>
 File: img/dft_sinefreq_9-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/dft_sinefreq_9-eps-converted-to.pdf>
 Package pdftex.def Info: img/dft_sinefreq_9-eps-converted-to.pdf used on input 
-line 73.
+line 62.
 (pdftex.def)             Requested size: 220.50887pt x 186.20961pt.
 
-Overfull \hbox (2.22221pt too wide) in paragraph at lines 72--74
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 61--63
 [][] [] 
  []
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 Package epstopdf Info: Source file: <img/dft_sinefreq_10.eps>
-(epstopdf)                    date: 2016-11-13 08:44:48
+(epstopdf)                    date: 2016-11-14 17:26:12
 (epstopdf)                    size: 2155811 bytes
 (epstopdf)             Output file: <img/dft_sinefreq_10-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-11-13 09:03:05
+(epstopdf)                    date: 2016-11-14 19:09:42
 (epstopdf)                    size: 433871 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/dft_sinefreq_10-eps-con
 verted-to.pdf img/dft_sinefreq_10.eps>
-(epstopdf)             \includegraphics on input line 77.
+(epstopdf)             \includegraphics on input line 66.
 Package epstopdf Info: Output file is already uptodate.
-<img/dft_sinefreq_10-eps-converted-to.pdf, id=94, 361.35pt x 305.14pt>
+<img/dft_sinefreq_10-eps-converted-to.pdf, id=133, 361.35pt x 305.14pt>
 File: img/dft_sinefreq_10-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/dft_sinefreq_10-eps-converted-to.pdf>
 Package pdftex.def Info: img/dft_sinefreq_10-eps-converted-to.pdf used on input
- line 77.
+ line 66.
 (pdftex.def)             Requested size: 220.50887pt x 186.20961pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 80.
+(babel)             in language  on input line 69.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 80.
+(babel)             in language  on input line 69.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 80.
+(babel)             in language  on input line 69.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 80.
-[3 <./img/phi_sinefreq_6-eps-converted-to.pdf> <./img/phi_sinefreq_7-eps-conver
-ted-to.pdf> <./img/phi_sinefreq_8-eps-converted-to.pdf> <./img/phi_sinefreq_9-e
-ps-converted-to.pdf> <./img/phi_sinefreq_10-eps-converted-to.pdf>]
+(babel)             in language  on input line 69.
+ [4 <./img/dft_sinefreq_6-eps-converted-to.pdf> <./img/dft_sinefreq_7-eps-conve
+rted-to.pdf> <./img/dft_sinefreq_8-eps-converted-to.pdf> <./img/dft_sinefreq_9-
+eps-converted-to.pdf> <./img/dft_sinefreq_10-eps-converted-to.pdf>]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 81.
+(babel)             in language  on input line 71.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 81.
+(babel)             in language  on input line 71.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 81.
+(hyperref)                removing `math shift' on input line 71.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\varphi' on input line 81.
+(hyperref)                removing `\varphi' on input line 71.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 81.
+(hyperref)                removing `math shift' on input line 71.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 81.
+(hyperref)                removing `math shift' on input line 71.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 81.
+(hyperref)                removing `subscript' on input line 71.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\pi' on input line 81.
+(hyperref)                removing `\pi' on input line 71.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\cdot' on input line 81.
+(hyperref)                removing `\cdot' on input line 71.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\cdot' on input line 81.
+(hyperref)                removing `\cdot' on input line 71.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 81.
-
-Package epstopdf Info: Source file: <img/rxx_sinefreq_0_5.eps>
-(epstopdf)                    date: 2016-11-13 08:44:48
-(epstopdf)                    size: 264594 bytes
-(epstopdf)             Output file: <img/rxx_sinefreq_0_5-eps-converted-to.pdf>
-
-(epstopdf)                    date: 2016-11-13 09:05:20
-(epstopdf)                    size: 92605 bytes
-(epstopdf)             Command: <epstopdf --outfile=img/rxx_sinefreq_0_5-eps-co
-nverted-to.pdf img/rxx_sinefreq_0_5.eps>
-(epstopdf)             \includegraphics on input line 83.
-Package epstopdf Info: Output file is already uptodate.
-<img/rxx_sinefreq_0_5-eps-converted-to.pdf, id=122, 383.4325pt x 305.14pt>
-File: img/rxx_sinefreq_0_5-eps-converted-to.pdf Graphic file (type pdf)
-
-<use img/rxx_sinefreq_0_5-eps-converted-to.pdf>
-Package pdftex.def Info: img/rxx_sinefreq_0_5-eps-converted-to.pdf used on inpu
-t line 83.
-(pdftex.def)             Requested size: 220.50887pt x 175.48671pt.
-Package epstopdf Info: Source file: <img/rxx_sinefreq_1.eps>
-(epstopdf)                    date: 2016-11-13 08:44:48
-(epstopdf)                    size: 265651 bytes
-(epstopdf)             Output file: <img/rxx_sinefreq_1-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-11-13 09:05:21
-(epstopdf)                    size: 94722 bytes
-(epstopdf)             Command: <epstopdf --outfile=img/rxx_sinefreq_1-eps-conv
-erted-to.pdf img/rxx_sinefreq_1.eps>
-(epstopdf)             \includegraphics on input line 84.
-Package epstopdf Info: Output file is already uptodate.
-
-<img/rxx_sinefreq_1-eps-converted-to.pdf, id=123, 377.41pt x 305.14pt>
-File: img/rxx_sinefreq_1-eps-converted-to.pdf Graphic file (type pdf)
-
-<use img/rxx_sinefreq_1-eps-converted-to.pdf>
-Package pdftex.def Info: img/rxx_sinefreq_1-eps-converted-to.pdf used on input 
-line 84.
-(pdftex.def)             Requested size: 220.50887pt x 178.285pt.
-
-Overfull \hbox (2.22221pt too wide) in paragraph at lines 83--85
-[][] [] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-Package epstopdf Info: Source file: <img/rxx_sinefreq_2.eps>
-(epstopdf)                    date: 2016-11-13 08:44:49
-(epstopdf)                    size: 267922 bytes
-(epstopdf)             Output file: <img/rxx_sinefreq_2-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-11-13 09:05:22
-(epstopdf)                    size: 94227 bytes
-(epstopdf)             Command: <epstopdf --outfile=img/rxx_sinefreq_2-eps-conv
-erted-to.pdf img/rxx_sinefreq_2.eps>
-(epstopdf)             \includegraphics on input line 87.
-Package epstopdf Info: Output file is already uptodate.
-<img/rxx_sinefreq_2-eps-converted-to.pdf, id=124, 377.41pt x 305.14pt>
-File: img/rxx_sinefreq_2-eps-converted-to.pdf Graphic file (type pdf)
-
-<use img/rxx_sinefreq_2-eps-converted-to.pdf>
-Package pdftex.def Info: img/rxx_sinefreq_2-eps-converted-to.pdf used on input 
-line 87.
-(pdftex.def)             Requested size: 220.50887pt x 178.285pt.
-Package epstopdf Info: Source file: <img/rxx_sinefreq_3.eps>
-(epstopdf)                    date: 2016-11-13 08:44:49
-(epstopdf)                    size: 265396 bytes
-(epstopdf)             Output file: <img/rxx_sinefreq_3-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-11-13 09:05:23
-(epstopdf)                    size: 95422 bytes
-(epstopdf)             Command: <epstopdf --outfile=img/rxx_sinefreq_3-eps-conv
-erted-to.pdf img/rxx_sinefreq_3.eps>
-(epstopdf)             \includegraphics on input line 88.
-Package epstopdf Info: Output file is already uptodate.
-
-<img/rxx_sinefreq_3-eps-converted-to.pdf, id=125, 364.36125pt x 305.14pt>
-File: img/rxx_sinefreq_3-eps-converted-to.pdf Graphic file (type pdf)
-
-<use img/rxx_sinefreq_3-eps-converted-to.pdf>
-Package pdftex.def Info: img/rxx_sinefreq_3-eps-converted-to.pdf used on input 
-line 88.
-(pdftex.def)             Requested size: 220.50887pt x 184.66846pt.
-
-Overfull \hbox (2.22221pt too wide) in paragraph at lines 87--89
-[][] [] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-Package epstopdf Info: Source file: <img/rxx_sinefreq_4.eps>
-(epstopdf)                    date: 2016-11-13 08:44:49
-(epstopdf)                    size: 266819 bytes
-(epstopdf)             Output file: <img/rxx_sinefreq_4-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-11-13 09:05:23
-(epstopdf)                    size: 92369 bytes
-(epstopdf)             Command: <epstopdf --outfile=img/rxx_sinefreq_4-eps-conv
-erted-to.pdf img/rxx_sinefreq_4.eps>
-(epstopdf)             \includegraphics on input line 91.
-Package epstopdf Info: Output file is already uptodate.
-<img/rxx_sinefreq_4-eps-converted-to.pdf, id=126, 372.39125pt x 305.14pt>
-File: img/rxx_sinefreq_4-eps-converted-to.pdf Graphic file (type pdf)
-
-<use img/rxx_sinefreq_4-eps-converted-to.pdf>
-Package pdftex.def Info: img/rxx_sinefreq_4-eps-converted-to.pdf used on input 
-line 91.
-(pdftex.def)             Requested size: 220.50887pt x 180.69218pt.
-Package epstopdf Info: Source file: <img/rxx_sinefreq_5.eps>
-(epstopdf)                    date: 2016-11-13 08:44:50
-(epstopdf)                    size: 267244 bytes
-(epstopdf)             Output file: <img/rxx_sinefreq_5-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-11-13 09:05:24
-(epstopdf)                    size: 85054 bytes
-(epstopdf)             Command: <epstopdf --outfile=img/rxx_sinefreq_5-eps-conv
-erted-to.pdf img/rxx_sinefreq_5.eps>
-(epstopdf)             \includegraphics on input line 92.
-Package epstopdf Info: Output file is already uptodate.
-
-<img/rxx_sinefreq_5-eps-converted-to.pdf, id=127, 372.39125pt x 305.14pt>
-File: img/rxx_sinefreq_5-eps-converted-to.pdf Graphic file (type pdf)
-
-<use img/rxx_sinefreq_5-eps-converted-to.pdf>
-Package pdftex.def Info: img/rxx_sinefreq_5-eps-converted-to.pdf used on input 
-line 92.
-(pdftex.def)             Requested size: 220.50887pt x 180.69218pt.
-
-Overfull \hbox (2.22221pt too wide) in paragraph at lines 91--93
-[][] [] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-Package epstopdf Info: Source file: <img/rxx_sinefreq_6.eps>
-(epstopdf)                    date: 2016-11-13 08:44:50
-(epstopdf)                    size: 268299 bytes
-(epstopdf)             Output file: <img/rxx_sinefreq_6-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-11-13 09:05:25
-(epstopdf)                    size: 88301 bytes
-(epstopdf)             Command: <epstopdf --outfile=img/rxx_sinefreq_6-eps-conv
-erted-to.pdf img/rxx_sinefreq_6.eps>
-(epstopdf)             \includegraphics on input line 95.
-Package epstopdf Info: Output file is already uptodate.
-<img/rxx_sinefreq_6-eps-converted-to.pdf, id=128, 372.39125pt x 305.14pt>
-File: img/rxx_sinefreq_6-eps-converted-to.pdf Graphic file (type pdf)
-
-<use img/rxx_sinefreq_6-eps-converted-to.pdf>
-Package pdftex.def Info: img/rxx_sinefreq_6-eps-converted-to.pdf used on input 
-line 95.
-(pdftex.def)             Requested size: 220.50887pt x 180.69218pt.
-Package epstopdf Info: Source file: <img/rxx_sinefreq_7.eps>
-(epstopdf)                    date: 2016-11-13 08:44:50
-(epstopdf)                    size: 267041 bytes
-(epstopdf)             Output file: <img/rxx_sinefreq_7-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-11-13 09:05:26
-(epstopdf)                    size: 88948 bytes
-(epstopdf)             Command: <epstopdf --outfile=img/rxx_sinefreq_7-eps-conv
-erted-to.pdf img/rxx_sinefreq_7.eps>
-(epstopdf)             \includegraphics on input line 96.
-Package epstopdf Info: Output file is already uptodate.
-
-<img/rxx_sinefreq_7-eps-converted-to.pdf, id=129, 372.39125pt x 305.14pt>
-File: img/rxx_sinefreq_7-eps-converted-to.pdf Graphic file (type pdf)
-
-<use img/rxx_sinefreq_7-eps-converted-to.pdf>
-Package pdftex.def Info: img/rxx_sinefreq_7-eps-converted-to.pdf used on input 
-line 96.
-(pdftex.def)             Requested size: 220.50887pt x 180.69218pt.
-
-Overfull \hbox (2.22221pt too wide) in paragraph at lines 95--97
-[][] [] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-Package epstopdf Info: Source file: <img/rxx_sinefreq_8.eps>
-(epstopdf)                    date: 2016-11-13 08:44:50
-(epstopdf)                    size: 267585 bytes
-(epstopdf)             Output file: <img/rxx_sinefreq_8-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-11-13 09:05:27
-(epstopdf)                    size: 88279 bytes
-(epstopdf)             Command: <epstopdf --outfile=img/rxx_sinefreq_8-eps-conv
-erted-to.pdf img/rxx_sinefreq_8.eps>
-(epstopdf)             \includegraphics on input line 99.
-Package epstopdf Info: Output file is already uptodate.
-<img/rxx_sinefreq_8-eps-converted-to.pdf, id=130, 372.39125pt x 305.14pt>
-File: img/rxx_sinefreq_8-eps-converted-to.pdf Graphic file (type pdf)
-
-<use img/rxx_sinefreq_8-eps-converted-to.pdf>
-Package pdftex.def Info: img/rxx_sinefreq_8-eps-converted-to.pdf used on input 
-line 99.
-(pdftex.def)             Requested size: 220.50887pt x 180.69218pt.
-Package epstopdf Info: Source file: <img/rxx_sinefreq_9.eps>
-(epstopdf)                    date: 2016-11-13 08:44:51
-(epstopdf)                    size: 268433 bytes
-(epstopdf)             Output file: <img/rxx_sinefreq_9-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-11-13 09:05:28
-(epstopdf)                    size: 88152 bytes
-(epstopdf)             Command: <epstopdf --outfile=img/rxx_sinefreq_9-eps-conv
-erted-to.pdf img/rxx_sinefreq_9.eps>
-(epstopdf)             \includegraphics on input line 100.
-Package epstopdf Info: Output file is already uptodate.
-
-<img/rxx_sinefreq_9-eps-converted-to.pdf, id=131, 366.36874pt x 305.14pt>
-File: img/rxx_sinefreq_9-eps-converted-to.pdf Graphic file (type pdf)
-
-<use img/rxx_sinefreq_9-eps-converted-to.pdf>
-Package pdftex.def Info: img/rxx_sinefreq_9-eps-converted-to.pdf used on input 
-line 100.
-(pdftex.def)             Requested size: 220.50887pt x 183.6581pt.
-
-Overfull \hbox (2.22221pt too wide) in paragraph at lines 99--101
-[][] [] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-Package epstopdf Info: Source file: <img/rxx_sinefreq_10.eps>
-(epstopdf)                    date: 2016-11-13 08:44:51
-(epstopdf)                    size: 267926 bytes
-(epstopdf)             Output file: <img/rxx_sinefreq_10-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-11-13 09:05:29
-(epstopdf)                    size: 89727 bytes
-(epstopdf)             Command: <epstopdf --outfile=img/rxx_sinefreq_10-eps-con
-verted-to.pdf img/rxx_sinefreq_10.eps>
-(epstopdf)             \includegraphics on input line 104.
-Package epstopdf Info: Output file is already uptodate.
-<img/rxx_sinefreq_10-eps-converted-to.pdf, id=132, 372.39125pt x 305.14pt>
-File: img/rxx_sinefreq_10-eps-converted-to.pdf Graphic file (type pdf)
-
-<use img/rxx_sinefreq_10-eps-converted-to.pdf>
-Package pdftex.def Info: img/rxx_sinefreq_10-eps-converted-to.pdf used on input
- line 104.
-(pdftex.def)             Requested size: 220.50887pt x 180.69218pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 107.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 107.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 107.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 107.
-[4 <./img/dft_sinefreq_0_5-eps-converted-to.pdf> <./img/dft_sinefreq_1-eps-conv
-erted-to.pdf> <./img/dft_sinefreq_2-eps-converted-to.pdf> <./img/dft_sinefreq_3
--eps-converted-to.pdf> <./img/dft_sinefreq_4-eps-converted-to.pdf> <./img/dft_s
-inefreq_5-eps-converted-to.pdf>]
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 108.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 108.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 108.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\varphi' on input line 108.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 108.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 108.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 108.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\pi' on input line 108.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\cdot' on input line 108.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\cdot' on input line 108.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 108.
+(hyperref)                removing `math shift' on input line 71.
 
 Package epstopdf Info: Source file: <img/lds_sinefreq_0_5.eps>
-(epstopdf)                    date: 2016-11-13 08:44:52
+(epstopdf)                    date: 2016-11-14 17:26:18
 (epstopdf)                    size: 1598976 bytes
 (epstopdf)             Output file: <img/lds_sinefreq_0_5-eps-converted-to.pdf>
 
-(epstopdf)                    date: 2016-11-13 09:05:30
+(epstopdf)                    date: 2016-11-14 19:09:44
 (epstopdf)                    size: 121140 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/lds_sinefreq_0_5-eps-co
 nverted-to.pdf img/lds_sinefreq_0_5.eps>
-(epstopdf)             \includegraphics on input line 110.
+(epstopdf)             \includegraphics on input line 73.
 Package epstopdf Info: Output file is already uptodate.
-<img/lds_sinefreq_0_5-eps-converted-to.pdf, id=164, 365.365pt x 305.14pt>
+<img/lds_sinefreq_0_5-eps-converted-to.pdf, id=161, 365.365pt x 305.14pt>
 File: img/lds_sinefreq_0_5-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/lds_sinefreq_0_5-eps-converted-to.pdf>
 Package pdftex.def Info: img/lds_sinefreq_0_5-eps-converted-to.pdf used on inpu
-t line 110.
+t line 73.
 (pdftex.def)             Requested size: 220.50887pt x 184.16095pt.
 Package epstopdf Info: Source file: <img/lds_sinefreq_1.eps>
-(epstopdf)                    date: 2016-11-13 08:44:52
+(epstopdf)                    date: 2016-11-14 17:26:18
 (epstopdf)                    size: 1605061 bytes
 (epstopdf)             Output file: <img/lds_sinefreq_1-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-11-13 09:05:32
+(epstopdf)                    date: 2016-11-14 19:09:45
 (epstopdf)                    size: 117576 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/lds_sinefreq_1-eps-conv
 erted-to.pdf img/lds_sinefreq_1.eps>
-(epstopdf)             \includegraphics on input line 111.
+(epstopdf)             \includegraphics on input line 74.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/lds_sinefreq_1-eps-converted-to.pdf, id=165, 371.3875pt x 305.14pt>
+<img/lds_sinefreq_1-eps-converted-to.pdf, id=162, 371.3875pt x 305.14pt>
 File: img/lds_sinefreq_1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/lds_sinefreq_1-eps-converted-to.pdf>
 Package pdftex.def Info: img/lds_sinefreq_1-eps-converted-to.pdf used on input 
-line 111.
+line 74.
 (pdftex.def)             Requested size: 220.50887pt x 181.1764pt.
 
-Overfull \hbox (2.22221pt too wide) in paragraph at lines 110--112
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 73--75
 [][] [] 
  []
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 Package epstopdf Info: Source file: <img/lds_sinefreq_2.eps>
-(epstopdf)                    date: 2016-11-13 08:44:53
+(epstopdf)                    date: 2016-11-14 17:26:19
 (epstopdf)                    size: 1616620 bytes
 (epstopdf)             Output file: <img/lds_sinefreq_2-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-11-13 09:05:33
+(epstopdf)                    date: 2016-11-14 19:09:46
 (epstopdf)                    size: 114426 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/lds_sinefreq_2-eps-conv
 erted-to.pdf img/lds_sinefreq_2.eps>
-(epstopdf)             \includegraphics on input line 114.
+(epstopdf)             \includegraphics on input line 77.
 Package epstopdf Info: Output file is already uptodate.
-<img/lds_sinefreq_2-eps-converted-to.pdf, id=166, 371.3875pt x 305.14pt>
+<img/lds_sinefreq_2-eps-converted-to.pdf, id=163, 371.3875pt x 305.14pt>
 File: img/lds_sinefreq_2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/lds_sinefreq_2-eps-converted-to.pdf>
 Package pdftex.def Info: img/lds_sinefreq_2-eps-converted-to.pdf used on input 
-line 114.
+line 77.
 (pdftex.def)             Requested size: 220.50887pt x 181.1764pt.
 Package epstopdf Info: Source file: <img/lds_sinefreq_3.eps>
-(epstopdf)                    date: 2016-11-13 08:44:53
+(epstopdf)                    date: 2016-11-14 17:26:20
 (epstopdf)                    size: 1606398 bytes
 (epstopdf)             Output file: <img/lds_sinefreq_3-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-11-13 09:05:35
+(epstopdf)                    date: 2016-11-14 19:09:48
 (epstopdf)                    size: 127916 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/lds_sinefreq_3-eps-conv
 erted-to.pdf img/lds_sinefreq_3.eps>
-(epstopdf)             \includegraphics on input line 115.
+(epstopdf)             \includegraphics on input line 78.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/lds_sinefreq_3-eps-converted-to.pdf, id=167, 365.365pt x 305.14pt>
+<img/lds_sinefreq_3-eps-converted-to.pdf, id=164, 365.365pt x 305.14pt>
 File: img/lds_sinefreq_3-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/lds_sinefreq_3-eps-converted-to.pdf>
 Package pdftex.def Info: img/lds_sinefreq_3-eps-converted-to.pdf used on input 
-line 115.
+line 78.
 (pdftex.def)             Requested size: 220.50887pt x 184.16095pt.
 
-Overfull \hbox (2.22221pt too wide) in paragraph at lines 114--116
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 77--79
 [][] [] 
  []
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 Package epstopdf Info: Source file: <img/lds_sinefreq_4.eps>
-(epstopdf)                    date: 2016-11-13 08:44:54
+(epstopdf)                    date: 2016-11-14 17:26:20
 (epstopdf)                    size: 1764033 bytes
 (epstopdf)             Output file: <img/lds_sinefreq_4-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-11-13 09:05:36
+(epstopdf)                    date: 2016-11-14 19:09:49
 (epstopdf)                    size: 181977 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/lds_sinefreq_4-eps-conv
 erted-to.pdf img/lds_sinefreq_4.eps>
-(epstopdf)             \includegraphics on input line 118.
+(epstopdf)             \includegraphics on input line 81.
 Package epstopdf Info: Output file is already uptodate.
-<img/lds_sinefreq_4-eps-converted-to.pdf, id=168, 368.37625pt x 305.14pt>
+<img/lds_sinefreq_4-eps-converted-to.pdf, id=165, 368.37625pt x 305.14pt>
 File: img/lds_sinefreq_4-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/lds_sinefreq_4-eps-converted-to.pdf>
 Package pdftex.def Info: img/lds_sinefreq_4-eps-converted-to.pdf used on input 
-line 118.
+line 81.
 (pdftex.def)             Requested size: 220.50887pt x 182.65239pt.
 Package epstopdf Info: Source file: <img/lds_sinefreq_5.eps>
-(epstopdf)                    date: 2016-11-13 08:44:55
+(epstopdf)                    date: 2016-11-14 17:26:21
 (epstopdf)                    size: 2531731 bytes
 (epstopdf)             Output file: <img/lds_sinefreq_5-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-11-13 09:05:39
+(epstopdf)                    date: 2016-11-14 19:09:51
 (epstopdf)                    size: 390595 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/lds_sinefreq_5-eps-conv
 erted-to.pdf img/lds_sinefreq_5.eps>
-(epstopdf)             \includegraphics on input line 119.
+(epstopdf)             \includegraphics on input line 82.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/lds_sinefreq_5-eps-converted-to.pdf, id=169, 374.39874pt x 305.14pt>
+<img/lds_sinefreq_5-eps-converted-to.pdf, id=166, 374.39874pt x 305.14pt>
 File: img/lds_sinefreq_5-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/lds_sinefreq_5-eps-converted-to.pdf>
 Package pdftex.def Info: img/lds_sinefreq_5-eps-converted-to.pdf used on input 
-line 119.
+line 82.
 (pdftex.def)             Requested size: 220.50887pt x 179.71907pt.
 
-Overfull \hbox (2.22221pt too wide) in paragraph at lines 118--120
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 81--83
 [][] [] 
  []
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 84.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 84.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 84.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 84.
+[5 <./img/lds_sinefreq_0_5-eps-converted-to.pdf> <./img/lds_sinefreq_1-eps-conv
+erted-to.pdf> <./img/lds_sinefreq_2-eps-converted-to.pdf> <./img/lds_sinefreq_3
+-eps-converted-to.pdf> <./img/lds_sinefreq_4-eps-converted-to.pdf> <./img/lds_s
+inefreq_5-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <img/lds_sinefreq_6.eps>
-(epstopdf)                    date: 2016-11-13 08:44:55
+(epstopdf)                    date: 2016-11-14 17:26:22
 (epstopdf)                    size: 2014248 bytes
 (epstopdf)             Output file: <img/lds_sinefreq_6-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-11-13 09:05:40
+(epstopdf)                    date: 2016-11-14 19:09:53
 (epstopdf)                    size: 250196 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/lds_sinefreq_6-eps-conv
 erted-to.pdf img/lds_sinefreq_6.eps>
-(epstopdf)             \includegraphics on input line 122.
+(epstopdf)             \includegraphics on input line 86.
 Package epstopdf Info: Output file is already uptodate.
-<img/lds_sinefreq_6-eps-converted-to.pdf, id=170, 368.37625pt x 305.14pt>
+
+<img/lds_sinefreq_6-eps-converted-to.pdf, id=198, 368.37625pt x 305.14pt>
 File: img/lds_sinefreq_6-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/lds_sinefreq_6-eps-converted-to.pdf>
 Package pdftex.def Info: img/lds_sinefreq_6-eps-converted-to.pdf used on input 
-line 122.
+line 86.
 (pdftex.def)             Requested size: 220.50887pt x 182.65239pt.
 Package epstopdf Info: Source file: <img/lds_sinefreq_7.eps>
-(epstopdf)                    date: 2016-11-13 08:44:56
+(epstopdf)                    date: 2016-11-14 17:26:22
 (epstopdf)                    size: 2040613 bytes
 (epstopdf)             Output file: <img/lds_sinefreq_7-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-11-13 09:05:42
+(epstopdf)                    date: 2016-11-14 19:09:54
 (epstopdf)                    size: 256928 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/lds_sinefreq_7-eps-conv
 erted-to.pdf img/lds_sinefreq_7.eps>
-(epstopdf)             \includegraphics on input line 123.
+(epstopdf)             \includegraphics on input line 87.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/lds_sinefreq_7-eps-converted-to.pdf, id=171, 368.37625pt x 305.14pt>
+<img/lds_sinefreq_7-eps-converted-to.pdf, id=199, 368.37625pt x 305.14pt>
 File: img/lds_sinefreq_7-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/lds_sinefreq_7-eps-converted-to.pdf>
 Package pdftex.def Info: img/lds_sinefreq_7-eps-converted-to.pdf used on input 
-line 123.
+line 87.
 (pdftex.def)             Requested size: 220.50887pt x 182.65239pt.
 
-Overfull \hbox (2.22221pt too wide) in paragraph at lines 122--124
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 86--88
 [][] [] 
  []
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 Package epstopdf Info: Source file: <img/lds_sinefreq_8.eps>
-(epstopdf)                    date: 2016-11-13 08:44:57
+(epstopdf)                    date: 2016-11-14 17:26:23
 (epstopdf)                    size: 2084185 bytes
 (epstopdf)             Output file: <img/lds_sinefreq_8-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-11-13 09:05:44
+(epstopdf)                    date: 2016-11-14 19:09:56
 (epstopdf)                    size: 267291 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/lds_sinefreq_8-eps-conv
 erted-to.pdf img/lds_sinefreq_8.eps>
-(epstopdf)             \includegraphics on input line 126.
+(epstopdf)             \includegraphics on input line 90.
 Package epstopdf Info: Output file is already uptodate.
-<img/lds_sinefreq_8-eps-converted-to.pdf, id=172, 368.37625pt x 305.14pt>
+<img/lds_sinefreq_8-eps-converted-to.pdf, id=200, 368.37625pt x 305.14pt>
 File: img/lds_sinefreq_8-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/lds_sinefreq_8-eps-converted-to.pdf>
 Package pdftex.def Info: img/lds_sinefreq_8-eps-converted-to.pdf used on input 
-line 126.
+line 90.
 (pdftex.def)             Requested size: 220.50887pt x 182.65239pt.
 Package epstopdf Info: Source file: <img/lds_sinefreq_9.eps>
-(epstopdf)                    date: 2016-11-13 08:44:57
+(epstopdf)                    date: 2016-11-14 17:26:24
 (epstopdf)                    size: 2325413 bytes
 (epstopdf)             Output file: <img/lds_sinefreq_9-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-11-13 09:05:46
+(epstopdf)                    date: 2016-11-14 19:09:58
 (epstopdf)                    size: 334778 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/lds_sinefreq_9-eps-conv
 erted-to.pdf img/lds_sinefreq_9.eps>
-(epstopdf)             \includegraphics on input line 127.
+(epstopdf)             \includegraphics on input line 91.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/lds_sinefreq_9-eps-converted-to.pdf, id=173, 374.39874pt x 305.14pt>
+<img/lds_sinefreq_9-eps-converted-to.pdf, id=201, 374.39874pt x 305.14pt>
 File: img/lds_sinefreq_9-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/lds_sinefreq_9-eps-converted-to.pdf>
 Package pdftex.def Info: img/lds_sinefreq_9-eps-converted-to.pdf used on input 
-line 127.
+line 91.
 (pdftex.def)             Requested size: 220.50887pt x 179.71907pt.
 
-Overfull \hbox (2.22221pt too wide) in paragraph at lines 126--128
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 90--92
 [][] [] 
  []
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 Package epstopdf Info: Source file: <img/lds_sinefreq_10.eps>
-(epstopdf)                    date: 2016-11-13 08:44:58
+(epstopdf)                    date: 2016-11-14 17:26:25
 (epstopdf)                    size: 2507719 bytes
 (epstopdf)             Output file: <img/lds_sinefreq_10-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-11-13 09:05:48
+(epstopdf)                    date: 2016-11-14 19:10:00
 (epstopdf)                    size: 381256 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/lds_sinefreq_10-eps-con
 verted-to.pdf img/lds_sinefreq_10.eps>
-(epstopdf)             \includegraphics on input line 131.
+(epstopdf)             \includegraphics on input line 95.
 Package epstopdf Info: Output file is already uptodate.
-<img/lds_sinefreq_10-eps-converted-to.pdf, id=174, 374.39874pt x 305.14pt>
+<img/lds_sinefreq_10-eps-converted-to.pdf, id=202, 374.39874pt x 305.14pt>
 File: img/lds_sinefreq_10-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/lds_sinefreq_10-eps-converted-to.pdf>
 Package pdftex.def Info: img/lds_sinefreq_10-eps-converted-to.pdf used on input
- line 131.
+ line 95.
 (pdftex.def)             Requested size: 220.50887pt x 179.71907pt.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 99.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 99.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 99.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 99.
+ [6 <./img/lds_sinefreq_6-eps-converted-to.pdf> <./img/lds_sinefreq_7-eps-conve
+rted-to.pdf> <./img/lds_sinefreq_8-eps-converted-to.pdf> <./img/lds_sinefreq_9-
+eps-converted-to.pdf> <./img/lds_sinefreq_10-eps-converted-to.pdf>]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 100.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 100.
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 100.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\varphi' on input line 100.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 100.
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 135.
+(babel)             in language  on input line 101.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 135.
+(babel)             in language  on input line 101.
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 101.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\varphi' on input line 101.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 101.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 101.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 101.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\pi' on input line 101.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\cdot' on input line 101.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\cdot' on input line 101.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 101.
+
+Package epstopdf Info: Source file: <img/dft_phi_g_1.eps>
+(epstopdf)                    date: 2016-11-14 19:05:07
+(epstopdf)                    size: 896933 bytes
+(epstopdf)             Output file: <img/dft_phi_g_1-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-11-14 19:10:01
+(epstopdf)                    size: 81143 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/dft_phi_g_1-eps-convert
+ed-to.pdf img/dft_phi_g_1.eps>
+(epstopdf)             \includegraphics on input line 103.
+Package epstopdf Info: Output file is already uptodate.
+<img/dft_phi_g_1-eps-converted-to.pdf, id=230, 366.36874pt x 305.14pt>
+File: img/dft_phi_g_1-eps-converted-to.pdf Graphic file (type pdf)
+
+<use img/dft_phi_g_1-eps-converted-to.pdf>
+Package pdftex.def Info: img/dft_phi_g_1-eps-converted-to.pdf used on input lin
+e 103.
+(pdftex.def)             Requested size: 220.50887pt x 183.6581pt.
+Package epstopdf Info: Source file: <img/dft_phi_g_2.eps>
+(epstopdf)                    date: 2016-11-14 19:05:07
+(epstopdf)                    size: 894514 bytes
+(epstopdf)             Output file: <img/dft_phi_g_2-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-11-14 19:10:03
+(epstopdf)                    size: 78604 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/dft_phi_g_2-eps-convert
+ed-to.pdf img/dft_phi_g_2.eps>
+(epstopdf)             \includegraphics on input line 104.
+Package epstopdf Info: Output file is already uptodate.
+
+<img/dft_phi_g_2-eps-converted-to.pdf, id=231, 366.36874pt x 305.14pt>
+File: img/dft_phi_g_2-eps-converted-to.pdf Graphic file (type pdf)
+
+<use img/dft_phi_g_2-eps-converted-to.pdf>
+Package pdftex.def Info: img/dft_phi_g_2-eps-converted-to.pdf used on input lin
+e 104.
+(pdftex.def)             Requested size: 220.50887pt x 183.6581pt.
+
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 103--105
+[][] [] 
+ []
+
+Package epstopdf Info: Source file: <img/dft_phi_g_3.eps>
+(epstopdf)                    date: 2016-11-14 19:05:08
+(epstopdf)                    size: 906332 bytes
+(epstopdf)             Output file: <img/dft_phi_g_3-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-11-14 19:10:04
+(epstopdf)                    size: 85287 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/dft_phi_g_3-eps-convert
+ed-to.pdf img/dft_phi_g_3.eps>
+(epstopdf)             \includegraphics on input line 107.
+Package epstopdf Info: Output file is already uptodate.
+<img/dft_phi_g_3-eps-converted-to.pdf, id=232, 372.39125pt x 305.14pt>
+File: img/dft_phi_g_3-eps-converted-to.pdf Graphic file (type pdf)
+
+<use img/dft_phi_g_3-eps-converted-to.pdf>
+Package pdftex.def Info: img/dft_phi_g_3-eps-converted-to.pdf used on input lin
+e 107.
+(pdftex.def)             Requested size: 220.50887pt x 180.69218pt.
+Package epstopdf Info: Source file: <img/dft_phi_g_4.eps>
+(epstopdf)                    date: 2016-11-14 19:05:08
+(epstopdf)                    size: 941231 bytes
+(epstopdf)             Output file: <img/dft_phi_g_4-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-11-14 19:10:05
+(epstopdf)                    size: 96499 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/dft_phi_g_4-eps-convert
+ed-to.pdf img/dft_phi_g_4.eps>
+(epstopdf)             \includegraphics on input line 108.
+Package epstopdf Info: Output file is already uptodate.
+
+<img/dft_phi_g_4-eps-converted-to.pdf, id=233, 366.36874pt x 305.14pt>
+File: img/dft_phi_g_4-eps-converted-to.pdf Graphic file (type pdf)
+
+<use img/dft_phi_g_4-eps-converted-to.pdf>
+Package pdftex.def Info: img/dft_phi_g_4-eps-converted-to.pdf used on input lin
+e 108.
+(pdftex.def)             Requested size: 220.50887pt x 183.6581pt.
+
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 107--109
+[][] [] 
+ []
+
+Package epstopdf Info: Source file: <img/dft_phi_g_5.eps>
+(epstopdf)                    date: 2016-11-14 19:05:09
+(epstopdf)                    size: 992014 bytes
+(epstopdf)             Output file: <img/dft_phi_g_5-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-11-14 19:10:06
+(epstopdf)                    size: 113374 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/dft_phi_g_5-eps-convert
+ed-to.pdf img/dft_phi_g_5.eps>
+(epstopdf)             \includegraphics on input line 111.
+Package epstopdf Info: Output file is already uptodate.
+<img/dft_phi_g_5-eps-converted-to.pdf, id=234, 366.36874pt x 305.14pt>
+File: img/dft_phi_g_5-eps-converted-to.pdf Graphic file (type pdf)
+
+<use img/dft_phi_g_5-eps-converted-to.pdf>
+Package pdftex.def Info: img/dft_phi_g_5-eps-converted-to.pdf used on input lin
+e 111.
+(pdftex.def)             Requested size: 220.50887pt x 183.6581pt.
+Package epstopdf Info: Source file: <img/dft_phi_g_6.eps>
+(epstopdf)                    date: 2016-11-14 19:05:09
+(epstopdf)                    size: 1034118 bytes
+(epstopdf)             Output file: <img/dft_phi_g_6-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-11-14 19:10:07
+(epstopdf)                    size: 124397 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/dft_phi_g_6-eps-convert
+ed-to.pdf img/dft_phi_g_6.eps>
+(epstopdf)             \includegraphics on input line 112.
+Package epstopdf Info: Output file is already uptodate.
+
+<img/dft_phi_g_6-eps-converted-to.pdf, id=235, 361.35pt x 305.14pt>
+File: img/dft_phi_g_6-eps-converted-to.pdf Graphic file (type pdf)
+
+<use img/dft_phi_g_6-eps-converted-to.pdf>
+Package pdftex.def Info: img/dft_phi_g_6-eps-converted-to.pdf used on input lin
+e 112.
+(pdftex.def)             Requested size: 220.50887pt x 186.20961pt.
+
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 111--113
+[][] [] 
+ []
+
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 135.
+(babel)             in language  on input line 114.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 135.
-[5 <./img/dft_sinefreq_6-eps-converted-to.pdf> <./img/dft_sinefreq_7-eps-conver
-ted-to.pdf> <./img/dft_sinefreq_8-eps-converted-to.pdf> <./img/dft_sinefreq_9-e
-ps-converted-to.pdf> <./img/dft_sinefreq_10-eps-converted-to.pdf>]
+(babel)             in language  on input line 114.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 136.
+(babel)             in language  on input line 114.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 136.
+(babel)             in language  on input line 114.
+[7 <./img/dft_phi_g_1-eps-converted-to.pdf> <./img/dft_phi_g_2-eps-converted-to
+.pdf> <./img/dft_phi_g_3-eps-converted-to.pdf> <./img/dft_phi_g_4-eps-converted
+-to.pdf> <./img/dft_phi_g_5-eps-converted-to.pdf> <./img/dft_phi_g_6-eps-conver
+ted-to.pdf>]
+Package epstopdf Info: Source file: <img/dft_phi_g_7.eps>
+(epstopdf)                    date: 2016-11-14 19:05:10
+(epstopdf)                    size: 1011606 bytes
+(epstopdf)             Output file: <img/dft_phi_g_7-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-11-14 19:10:09
+(epstopdf)                    size: 117603 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/dft_phi_g_7-eps-convert
+ed-to.pdf img/dft_phi_g_7.eps>
+(epstopdf)             \includegraphics on input line 116.
+Package epstopdf Info: Output file is already uptodate.
 
+<img/dft_phi_g_7-eps-converted-to.pdf, id=268, 361.35pt x 305.14pt>
+File: img/dft_phi_g_7-eps-converted-to.pdf Graphic file (type pdf)
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 136.
+<use img/dft_phi_g_7-eps-converted-to.pdf>
+Package pdftex.def Info: img/dft_phi_g_7-eps-converted-to.pdf used on input lin
+e 116.
+(pdftex.def)             Requested size: 220.50887pt x 186.20961pt.
+Package epstopdf Info: Source file: <img/dft_phi_g_8.eps>
+(epstopdf)                    date: 2016-11-14 19:05:10
+(epstopdf)                    size: 968721 bytes
+(epstopdf)             Output file: <img/dft_phi_g_8-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-11-14 19:10:10
+(epstopdf)                    size: 105108 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/dft_phi_g_8-eps-convert
+ed-to.pdf img/dft_phi_g_8.eps>
+(epstopdf)             \includegraphics on input line 117.
+Package epstopdf Info: Output file is already uptodate.
 
+<img/dft_phi_g_8-eps-converted-to.pdf, id=269, 366.36874pt x 305.14pt>
+File: img/dft_phi_g_8-eps-converted-to.pdf Graphic file (type pdf)
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 136.
+<use img/dft_phi_g_8-eps-converted-to.pdf>
+Package pdftex.def Info: img/dft_phi_g_8-eps-converted-to.pdf used on input lin
+e 117.
+(pdftex.def)             Requested size: 220.50887pt x 183.6581pt.
 
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 116--118
+[][] [] 
+ []
+
+Package epstopdf Info: Source file: <img/dft_phi_g_9.eps>
+(epstopdf)                    date: 2016-11-14 19:05:11
+(epstopdf)                    size: 1097628 bytes
+(epstopdf)             Output file: <img/dft_phi_g_9-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-11-14 19:10:11
+(epstopdf)                    size: 144127 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/dft_phi_g_9-eps-convert
+ed-to.pdf img/dft_phi_g_9.eps>
+(epstopdf)             \includegraphics on input line 120.
+Package epstopdf Info: Output file is already uptodate.
+<img/dft_phi_g_9-eps-converted-to.pdf, id=270, 361.35pt x 305.14pt>
+File: img/dft_phi_g_9-eps-converted-to.pdf Graphic file (type pdf)
+
+<use img/dft_phi_g_9-eps-converted-to.pdf>
+Package pdftex.def Info: img/dft_phi_g_9-eps-converted-to.pdf used on input lin
+e 120.
+(pdftex.def)             Requested size: 220.50887pt x 186.20961pt.
+Package epstopdf Info: Source file: <img/dft_phi_g_10.eps>
+(epstopdf)                    date: 2016-11-14 19:05:11
+(epstopdf)                    size: 1092386 bytes
+(epstopdf)             Output file: <img/dft_phi_g_10-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-11-14 19:10:12
+(epstopdf)                    size: 141471 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/dft_phi_g_10-eps-conver
+ted-to.pdf img/dft_phi_g_10.eps>
+(epstopdf)             \includegraphics on input line 121.
+Package epstopdf Info: Output file is already uptodate.
+
+<img/dft_phi_g_10-eps-converted-to.pdf, id=271, 361.35pt x 305.14pt>
+File: img/dft_phi_g_10-eps-converted-to.pdf Graphic file (type pdf)
+
+<use img/dft_phi_g_10-eps-converted-to.pdf>
+Package pdftex.def Info: img/dft_phi_g_10-eps-converted-to.pdf used on input li
+ne 121.
+(pdftex.def)             Requested size: 220.50887pt x 186.20961pt.
+
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 120--122
+[][] [] 
+ []
+
+Package epstopdf Info: Source file: <img/dft_phi_g_11.eps>
+(epstopdf)                    date: 2016-11-14 19:05:12
+(epstopdf)                    size: 911630 bytes
+(epstopdf)             Output file: <img/dft_phi_g_11-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-11-14 19:10:14
+(epstopdf)                    size: 89466 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/dft_phi_g_11-eps-conver
+ted-to.pdf img/dft_phi_g_11.eps>
+(epstopdf)             \includegraphics on input line 125.
+Package epstopdf Info: Output file is already uptodate.
+<img/dft_phi_g_11-eps-converted-to.pdf, id=272, 366.36874pt x 305.14pt>
+File: img/dft_phi_g_11-eps-converted-to.pdf Graphic file (type pdf)
+
+<use img/dft_phi_g_11-eps-converted-to.pdf>
+Package pdftex.def Info: img/dft_phi_g_11-eps-converted-to.pdf used on input li
+ne 125.
+(pdftex.def)             Requested size: 220.50887pt x 183.6581pt.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 137.
+(babel)             in language  on input line 128.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 137.
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 137.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\varphi' on input line 137.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 137.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 137.
+(babel)             in language  on input line 128.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 128.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 128.
+ [8 <./img/dft_phi_g_7-eps-converted-to.pdf> <./img/dft_phi_g_8-eps-converted-t
+o.pdf> <./img/dft_phi_g_9-eps-converted-to.pdf> <./img/dft_phi_g_10-eps-convert
+ed-to.pdf> <./img/dft_phi_g_11-eps-converted-to.pdf>]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 129.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 129.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 137.
+(hyperref)                removing `math shift' on input line 129.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\pi' on input line 137.
+(hyperref)                removing `\varphi' on input line 129.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\cdot' on input line 137.
+(hyperref)                removing `math shift' on input line 129.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\cdot' on input line 137.
+(hyperref)                removing `math shift' on input line 129.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 137.
+(hyperref)                removing `subscript' on input line 129.
 
-Package epstopdf Info: Source file: <img/sim_phi_sine_freq_0_5.eps>
-(epstopdf)                    date: 2016-11-13 11:01:41
-(epstopdf)                    size: 165786 bytes
-(epstopdf)             Output file: <img/sim_phi_sine_freq_0_5-eps-converted-to
-.pdf>
-(epstopdf)             Command: <epstopdf --outfile=img/sim_phi_sine_freq_0_5-e
-ps-converted-to.pdf img/sim_phi_sine_freq_0_5.eps>
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\pi' on input line 129.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\cdot' on input line 129.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\cdot' on input line 129.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 129.
+
+Package epstopdf Info: Source file: <img/lds_phi_g_1.eps>
+(epstopdf)                    date: 2016-11-14 19:05:12
+(epstopdf)                    size: 1605262 bytes
+(epstopdf)             Output file: <img/lds_phi_g_1-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-11-14 19:10:15
+(epstopdf)                    size: 104602 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/lds_phi_g_1-eps-convert
+ed-to.pdf img/lds_phi_g_1.eps>
+(epstopdf)             \includegraphics on input line 131.
+Package epstopdf Info: Output file is already uptodate.
+<img/lds_phi_g_1-eps-converted-to.pdf, id=300, 365.365pt x 305.14pt>
+File: img/lds_phi_g_1-eps-converted-to.pdf Graphic file (type pdf)
+
+<use img/lds_phi_g_1-eps-converted-to.pdf>
+Package pdftex.def Info: img/lds_phi_g_1-eps-converted-to.pdf used on input lin
+e 131.
+(pdftex.def)             Requested size: 220.50887pt x 184.16095pt.
+Package epstopdf Info: Source file: <img/lds_phi_g_2.eps>
+(epstopdf)                    date: 2016-11-14 19:05:13
+(epstopdf)                    size: 1622564 bytes
+(epstopdf)             Output file: <img/lds_phi_g_2-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-11-14 19:10:17
+(epstopdf)                    size: 107889 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/lds_phi_g_2-eps-convert
+ed-to.pdf img/lds_phi_g_2.eps>
+(epstopdf)             \includegraphics on input line 132.
+Package epstopdf Info: Output file is already uptodate.
+
+<img/lds_phi_g_2-eps-converted-to.pdf, id=301, 371.3875pt x 305.14pt>
+File: img/lds_phi_g_2-eps-converted-to.pdf Graphic file (type pdf)
+
+<use img/lds_phi_g_2-eps-converted-to.pdf>
+Package pdftex.def Info: img/lds_phi_g_2-eps-converted-to.pdf used on input lin
+e 132.
+(pdftex.def)             Requested size: 220.50887pt x 181.1764pt.
+
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 131--133
+[][] [] 
+ []
+
+Package epstopdf Info: Source file: <img/lds_phi_g_3.eps>
+(epstopdf)                    date: 2016-11-14 19:05:14
+(epstopdf)                    size: 1646926 bytes
+(epstopdf)             Output file: <img/lds_phi_g_3-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-11-14 19:10:18
+(epstopdf)                    size: 115504 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/lds_phi_g_3-eps-convert
+ed-to.pdf img/lds_phi_g_3.eps>
+(epstopdf)             \includegraphics on input line 135.
+Package epstopdf Info: Output file is already uptodate.
+<img/lds_phi_g_3-eps-converted-to.pdf, id=302, 371.3875pt x 305.14pt>
+File: img/lds_phi_g_3-eps-converted-to.pdf Graphic file (type pdf)
+
+<use img/lds_phi_g_3-eps-converted-to.pdf>
+Package pdftex.def Info: img/lds_phi_g_3-eps-converted-to.pdf used on input lin
+e 135.
+(pdftex.def)             Requested size: 220.50887pt x 181.1764pt.
+Package epstopdf Info: Source file: <img/lds_phi_g_4.eps>
+(epstopdf)                    date: 2016-11-14 19:05:14
+(epstopdf)                    size: 1637949 bytes
+(epstopdf)             Output file: <img/lds_phi_g_4-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-11-14 19:10:20
+(epstopdf)                    size: 114873 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/lds_phi_g_4-eps-convert
+ed-to.pdf img/lds_phi_g_4.eps>
+(epstopdf)             \includegraphics on input line 136.
+Package epstopdf Info: Output file is already uptodate.
+
+<img/lds_phi_g_4-eps-converted-to.pdf, id=303, 365.365pt x 305.14pt>
+File: img/lds_phi_g_4-eps-converted-to.pdf Graphic file (type pdf)
+
+<use img/lds_phi_g_4-eps-converted-to.pdf>
+Package pdftex.def Info: img/lds_phi_g_4-eps-converted-to.pdf used on input lin
+e 136.
+(pdftex.def)             Requested size: 220.50887pt x 184.16095pt.
+
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 135--137
+[][] [] 
+ []
+
+Package epstopdf Info: Source file: <img/lds_phi_g_5.eps>
+(epstopdf)                    date: 2016-11-14 19:05:15
+(epstopdf)                    size: 1653692 bytes
+(epstopdf)             Output file: <img/lds_phi_g_5-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-11-14 19:10:21
+(epstopdf)                    size: 120593 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/lds_phi_g_5-eps-convert
+ed-to.pdf img/lds_phi_g_5.eps>
 (epstopdf)             \includegraphics on input line 139.
-runsystem(epstopdf --outfile=img/sim_phi_sine_freq_0_5-eps-converted-to.pdf img
-/sim_phi_sine_freq_0_5.eps)...executed.
+Package epstopdf Info: Output file is already uptodate.
+<img/lds_phi_g_5-eps-converted-to.pdf, id=304, 368.37625pt x 305.14pt>
+File: img/lds_phi_g_5-eps-converted-to.pdf Graphic file (type pdf)
 
-Package epstopdf Info: Result file: <img/sim_phi_sine_freq_0_5-eps-converted-to
-.pdf>
-(epstopdf)                    date: 2016-11-13 11:05:14
-(epstopdf)                    size: 46840 bytes.
-
-<img/sim_phi_sine_freq_0_5-eps-converted-to.pdf, id=202, 368.37625pt x 303.1325
-pt>
-File: img/sim_phi_sine_freq_0_5-eps-converted-to.pdf Graphic file (type pdf)
- <use img/sim_phi_sine_freq_0_5-eps-converted-to.pdf>
-Package pdftex.def Info: img/sim_phi_sine_freq_0_5-eps-converted-to.pdf used on
- input line 139.
-(pdftex.def)             Requested size: 220.50887pt x 181.45073pt.
-Package epstopdf Info: Source file: <img/sim_phi_sine_freq_1.eps>
-(epstopdf)                    date: 2016-11-13 11:01:41
-(epstopdf)                    size: 166682 bytes
-(epstopdf)             Output file: <img/sim_phi_sine_freq_1-eps-converted-to.p
-df>
-(epstopdf)             Command: <epstopdf --outfile=img/sim_phi_sine_freq_1-eps
--converted-to.pdf img/sim_phi_sine_freq_1.eps>
+<use img/lds_phi_g_5-eps-converted-to.pdf>
+Package pdftex.def Info: img/lds_phi_g_5-eps-converted-to.pdf used on input lin
+e 139.
+(pdftex.def)             Requested size: 220.50887pt x 182.65239pt.
+Package epstopdf Info: Source file: <img/lds_phi_g_6.eps>
+(epstopdf)                    date: 2016-11-14 19:05:15
+(epstopdf)                    size: 1695389 bytes
+(epstopdf)             Output file: <img/lds_phi_g_6-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-11-14 19:10:23
+(epstopdf)                    size: 131168 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/lds_phi_g_6-eps-convert
+ed-to.pdf img/lds_phi_g_6.eps>
 (epstopdf)             \includegraphics on input line 140.
-runsystem(epstopdf --outfile=img/sim_phi_sine_freq_1-eps-converted-to.pdf img/s
-im_phi_sine_freq_1.eps)...executed.
+Package epstopdf Info: Output file is already uptodate.
 
-Package epstopdf Info: Result file: <img/sim_phi_sine_freq_1-eps-converted-to.p
-df>
-(epstopdf)                    date: 2016-11-13 11:05:14
-(epstopdf)                    size: 45455 bytes.
+<img/lds_phi_g_6-eps-converted-to.pdf, id=305, 368.37625pt x 305.14pt>
+File: img/lds_phi_g_6-eps-converted-to.pdf Graphic file (type pdf)
 
-<img/sim_phi_sine_freq_1-eps-converted-to.pdf, id=203, 368.37625pt x 303.1325pt
->
-File: img/sim_phi_sine_freq_1-eps-converted-to.pdf Graphic file (type pdf)
- <use img/sim_phi_sine_freq_1-eps-converted-to.pdf>
-Package pdftex.def Info: img/sim_phi_sine_freq_1-eps-converted-to.pdf used on i
-nput line 140.
-(pdftex.def)             Requested size: 220.50887pt x 181.45073pt.
+<use img/lds_phi_g_6-eps-converted-to.pdf>
+Package pdftex.def Info: img/lds_phi_g_6-eps-converted-to.pdf used on input lin
+e 140.
+(pdftex.def)             Requested size: 220.50887pt x 182.65239pt.
 
 Overfull \hbox (2.22221pt too wide) in paragraph at lines 139--141
 [][] [] 
  []
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-Package epstopdf Info: Source file: <img/sim_phi_sine_freq_2.eps>
-(epstopdf)                    date: 2016-11-13 11:01:41
-(epstopdf)                    size: 169158 bytes
-(epstopdf)             Output file: <img/sim_phi_sine_freq_2-eps-converted-to.p
-df>
-(epstopdf)             Command: <epstopdf --outfile=img/sim_phi_sine_freq_2-eps
--converted-to.pdf img/sim_phi_sine_freq_2.eps>
-(epstopdf)             \includegraphics on input line 143.
-runsystem(epstopdf --outfile=img/sim_phi_sine_freq_2-eps-converted-to.pdf img/s
-im_phi_sine_freq_2.eps)...executed.
-
-Package epstopdf Info: Result file: <img/sim_phi_sine_freq_2-eps-converted-to.p
-df>
-(epstopdf)                    date: 2016-11-13 11:05:15
-(epstopdf)                    size: 44915 bytes.
-
-<img/sim_phi_sine_freq_2-eps-converted-to.pdf, id=204, 368.37625pt x 303.1325pt
->
-File: img/sim_phi_sine_freq_2-eps-converted-to.pdf Graphic file (type pdf)
- <use img/sim_phi_sine_freq_2-eps-converted-to.pdf>
-Package pdftex.def Info: img/sim_phi_sine_freq_2-eps-converted-to.pdf used on i
-nput line 143.
-(pdftex.def)             Requested size: 220.50887pt x 181.45073pt.
-Package epstopdf Info: Source file: <img/sim_phi_sine_freq_3.eps>
-(epstopdf)                    date: 2016-11-13 11:01:42
-(epstopdf)                    size: 167803 bytes
-(epstopdf)             Output file: <img/sim_phi_sine_freq_3-eps-converted-to.p
-df>
-(epstopdf)             Command: <epstopdf --outfile=img/sim_phi_sine_freq_3-eps
--converted-to.pdf img/sim_phi_sine_freq_3.eps>
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 142.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 142.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 142.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 142.
+[9 <./img/lds_phi_g_1-eps-converted-to.pdf> <./img/lds_phi_g_2-eps-converted-to
+.pdf> <./img/lds_phi_g_3-eps-converted-to.pdf> <./img/lds_phi_g_4-eps-converted
+-to.pdf> <./img/lds_phi_g_5-eps-converted-to.pdf> <./img/lds_phi_g_6-eps-conver
+ted-to.pdf>]
+Package epstopdf Info: Source file: <img/lds_phi_g_7.eps>
+(epstopdf)                    date: 2016-11-14 19:05:16
+(epstopdf)                    size: 1671460 bytes
+(epstopdf)             Output file: <img/lds_phi_g_7-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-11-14 19:10:25
+(epstopdf)                    size: 127228 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/lds_phi_g_7-eps-convert
+ed-to.pdf img/lds_phi_g_7.eps>
 (epstopdf)             \includegraphics on input line 144.
-runsystem(epstopdf --outfile=img/sim_phi_sine_freq_3-eps-converted-to.pdf img/s
-im_phi_sine_freq_3.eps)...executed.
-
-Package epstopdf Info: Result file: <img/sim_phi_sine_freq_3-eps-converted-to.p
-df>
-(epstopdf)                    date: 2016-11-13 11:05:16
-(epstopdf)                    size: 45662 bytes.
-
-<img/sim_phi_sine_freq_3-eps-converted-to.pdf, id=205, 363.3575pt x 303.1325pt>
-File: img/sim_phi_sine_freq_3-eps-converted-to.pdf Graphic file (type pdf)
-<use img/sim_phi_sine_freq_3-eps-converted-to.pdf>
-Package pdftex.def Info: img/sim_phi_sine_freq_3-eps-converted-to.pdf used on i
-nput line 144.
-(pdftex.def)             Requested size: 220.50887pt x 183.96234pt.
-
-Overfull \hbox (2.22221pt too wide) in paragraph at lines 143--145
-[][] [] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-Package epstopdf Info: Source file: <img/sim_phi_sine_freq_4.eps>
-(epstopdf)                    date: 2016-11-13 11:01:42
-(epstopdf)                    size: 169441 bytes
-(epstopdf)             Output file: <img/sim_phi_sine_freq_4-eps-converted-to.p
-df>
-(epstopdf)             Command: <epstopdf --outfile=img/sim_phi_sine_freq_4-eps
--converted-to.pdf img/sim_phi_sine_freq_4.eps>
-(epstopdf)             \includegraphics on input line 147.
-runsystem(epstopdf --outfile=img/sim_phi_sine_freq_4-eps-converted-to.pdf img/s
-im_phi_sine_freq_4.eps)...executed.
-
-Package epstopdf Info: Result file: <img/sim_phi_sine_freq_4-eps-converted-to.p
-df>
-(epstopdf)                    date: 2016-11-13 11:05:17
-(epstopdf)                    size: 45103 bytes.
-
-<img/sim_phi_sine_freq_4-eps-converted-to.pdf, id=206, 363.3575pt x 303.1325pt>
-File: img/sim_phi_sine_freq_4-eps-converted-to.pdf Graphic file (type pdf)
-<use img/sim_phi_sine_freq_4-eps-converted-to.pdf>
-Package pdftex.def Info: img/sim_phi_sine_freq_4-eps-converted-to.pdf used on i
-nput line 147.
-(pdftex.def)             Requested size: 220.50887pt x 183.96234pt.
-Package epstopdf Info: Source file: <img/sim_phi_sine_freq_5.eps>
-(epstopdf)                    date: 2016-11-13 11:01:42
-(epstopdf)                    size: 167497 bytes
-(epstopdf)             Output file: <img/sim_phi_sine_freq_5-eps-converted-to.p
-df>
-(epstopdf)             Command: <epstopdf --outfile=img/sim_phi_sine_freq_5-eps
--converted-to.pdf img/sim_phi_sine_freq_5.eps>
-(epstopdf)             \includegraphics on input line 148.
-runsystem(epstopdf --outfile=img/sim_phi_sine_freq_5-eps-converted-to.pdf img/s
-im_phi_sine_freq_5.eps)...executed.
-
-Package epstopdf Info: Result file: <img/sim_phi_sine_freq_5-eps-converted-to.p
-df>
-(epstopdf)                    date: 2016-11-13 11:05:17
-(epstopdf)                    size: 42997 bytes.
-
-<img/sim_phi_sine_freq_5-eps-converted-to.pdf, id=207, 363.3575pt x 303.1325pt>
-File: img/sim_phi_sine_freq_5-eps-converted-to.pdf Graphic file (type pdf)
-<use img/sim_phi_sine_freq_5-eps-converted-to.pdf>
-Package pdftex.def Info: img/sim_phi_sine_freq_5-eps-converted-to.pdf used on i
-nput line 148.
-(pdftex.def)             Requested size: 220.50887pt x 183.96234pt.
-
-Overfull \hbox (2.22221pt too wide) in paragraph at lines 147--149
-[][] [] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-Package epstopdf Info: Source file: <img/sim_phi_sine_freq_6.eps>
-(epstopdf)                    date: 2016-11-13 11:01:43
-(epstopdf)                    size: 167539 bytes
-(epstopdf)             Output file: <img/sim_phi_sine_freq_6-eps-converted-to.p
-df>
-(epstopdf)             Command: <epstopdf --outfile=img/sim_phi_sine_freq_6-eps
--converted-to.pdf img/sim_phi_sine_freq_6.eps>
-(epstopdf)             \includegraphics on input line 151.
-runsystem(epstopdf --outfile=img/sim_phi_sine_freq_6-eps-converted-to.pdf img/s
-im_phi_sine_freq_6.eps)...executed.
-
-Package epstopdf Info: Result file: <img/sim_phi_sine_freq_6-eps-converted-to.p
-df>
-(epstopdf)                    date: 2016-11-13 11:05:18
-(epstopdf)                    size: 45049 bytes.
-
-<img/sim_phi_sine_freq_6-eps-converted-to.pdf, id=208, 363.3575pt x 303.1325pt>
-File: img/sim_phi_sine_freq_6-eps-converted-to.pdf Graphic file (type pdf)
-<use img/sim_phi_sine_freq_6-eps-converted-to.pdf>
-Package pdftex.def Info: img/sim_phi_sine_freq_6-eps-converted-to.pdf used on i
-nput line 151.
-(pdftex.def)             Requested size: 220.50887pt x 183.96234pt.
-Package epstopdf Info: Source file: <img/sim_phi_sine_freq_7.eps>
-(epstopdf)                    date: 2016-11-13 11:01:43
-(epstopdf)                    size: 169152 bytes
-(epstopdf)             Output file: <img/sim_phi_sine_freq_7-eps-converted-to.p
-df>
-(epstopdf)             Command: <epstopdf --outfile=img/sim_phi_sine_freq_7-eps
--converted-to.pdf img/sim_phi_sine_freq_7.eps>
-(epstopdf)             \includegraphics on input line 152.
-runsystem(epstopdf --outfile=img/sim_phi_sine_freq_7-eps-converted-to.pdf img/s
-im_phi_sine_freq_7.eps)...executed.
-
-Package epstopdf Info: Result file: <img/sim_phi_sine_freq_7-eps-converted-to.p
-df>
-(epstopdf)                    date: 2016-11-13 11:05:19
-(epstopdf)                    size: 45610 bytes.
-
-<img/sim_phi_sine_freq_7-eps-converted-to.pdf, id=209, 371.3875pt x 303.1325pt>
-File: img/sim_phi_sine_freq_7-eps-converted-to.pdf Graphic file (type pdf)
-<use img/sim_phi_sine_freq_7-eps-converted-to.pdf>
-Package pdftex.def Info: img/sim_phi_sine_freq_7-eps-converted-to.pdf used on i
-nput line 152.
-(pdftex.def)             Requested size: 220.50887pt x 179.98448pt.
-
-Overfull \hbox (2.22221pt too wide) in paragraph at lines 151--153
-[][] [] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-Package epstopdf Info: Source file: <img/sim_phi_sine_freq_8.eps>
-(epstopdf)                    date: 2016-11-13 11:01:43
-(epstopdf)                    size: 167075 bytes
-(epstopdf)             Output file: <img/sim_phi_sine_freq_8-eps-converted-to.p
-df>
-(epstopdf)             Command: <epstopdf --outfile=img/sim_phi_sine_freq_8-eps
--converted-to.pdf img/sim_phi_sine_freq_8.eps>
-(epstopdf)             \includegraphics on input line 155.
-runsystem(epstopdf --outfile=img/sim_phi_sine_freq_8-eps-converted-to.pdf img/s
-im_phi_sine_freq_8.eps)...executed.
-
-Package epstopdf Info: Result file: <img/sim_phi_sine_freq_8-eps-converted-to.p
-df>
-(epstopdf)                    date: 2016-11-13 11:05:19
-(epstopdf)                    size: 45241 bytes.
-
-<img/sim_phi_sine_freq_8-eps-converted-to.pdf, id=210, 371.3875pt x 303.1325pt>
-File: img/sim_phi_sine_freq_8-eps-converted-to.pdf Graphic file (type pdf)
-<use img/sim_phi_sine_freq_8-eps-converted-to.pdf>
-Package pdftex.def Info: img/sim_phi_sine_freq_8-eps-converted-to.pdf used on i
-nput line 155.
-(pdftex.def)             Requested size: 220.50887pt x 179.98448pt.
-Package epstopdf Info: Source file: <img/sim_phi_sine_freq_9.eps>
-(epstopdf)                    date: 2016-11-13 11:01:43
-(epstopdf)                    size: 168051 bytes
-(epstopdf)             Output file: <img/sim_phi_sine_freq_9-eps-converted-to.p
-df>
-(epstopdf)             Command: <epstopdf --outfile=img/sim_phi_sine_freq_9-eps
--converted-to.pdf img/sim_phi_sine_freq_9.eps>
-(epstopdf)             \includegraphics on input line 156.
-runsystem(epstopdf --outfile=img/sim_phi_sine_freq_9-eps-converted-to.pdf img/s
-im_phi_sine_freq_9.eps)...executed.
-
-Package epstopdf Info: Result file: <img/sim_phi_sine_freq_9-eps-converted-to.p
-df>
-(epstopdf)                    date: 2016-11-13 11:05:20
-(epstopdf)                    size: 45666 bytes.
-
-<img/sim_phi_sine_freq_9-eps-converted-to.pdf, id=211, 371.3875pt x 303.1325pt>
-File: img/sim_phi_sine_freq_9-eps-converted-to.pdf Graphic file (type pdf)
-<use img/sim_phi_sine_freq_9-eps-converted-to.pdf>
-Package pdftex.def Info: img/sim_phi_sine_freq_9-eps-converted-to.pdf used on i
-nput line 156.
-(pdftex.def)             Requested size: 220.50887pt x 179.98448pt.
-
-Overfull \hbox (2.22221pt too wide) in paragraph at lines 155--157
-[][] [] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-Package epstopdf Info: Source file: <img/sim_phi_sine_freq_10.eps>
-(epstopdf)                    date: 2016-11-13 11:01:44
-(epstopdf)                    size: 168479 bytes
-(epstopdf)             Output file: <img/sim_phi_sine_freq_10-eps-converted-to.
-pdf>
-(epstopdf)             Command: <epstopdf --outfile=img/sim_phi_sine_freq_10-ep
-s-converted-to.pdf img/sim_phi_sine_freq_10.eps>
-(epstopdf)             \includegraphics on input line 160.
-runsystem(epstopdf --outfile=img/sim_phi_sine_freq_10-eps-converted-to.pdf img/
-sim_phi_sine_freq_10.eps)...executed.
-
-Package epstopdf Info: Result file: <img/sim_phi_sine_freq_10-eps-converted-to.
-pdf>
-(epstopdf)                    date: 2016-11-13 11:05:21
-(epstopdf)                    size: 40623 bytes.
-
-<img/sim_phi_sine_freq_10-eps-converted-to.pdf, id=212, 371.3875pt x 303.1325pt
->
-File: img/sim_phi_sine_freq_10-eps-converted-to.pdf Graphic file (type pdf)
- <use img/sim_phi_sine_freq_10-eps-converted-to.pdf>
-Package pdftex.def Info: img/sim_phi_sine_freq_10-eps-converted-to.pdf used on 
-input line 160.
-(pdftex.def)             Requested size: 220.50887pt x 179.98448pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 163.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 163.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 163.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 163.
-[6 <./img/rxx_sinefreq_0_5-eps-converted-to.pdf> <./img/rxx_sinefreq_1-eps-conv
-erted-to.pdf> <./img/rxx_sinefreq_2-eps-converted-to.pdf> <./img/rxx_sinefreq_3
--eps-converted-to.pdf> <./img/rxx_sinefreq_4-eps-converted-to.pdf> <./img/rxx_s
-inefreq_5-eps-converted-to.pdf>]
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 164.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 164.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 164.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\varphi' on input line 164.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 164.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 164.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 164.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\pi' on input line 164.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\cdot' on input line 164.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\cdot' on input line 164.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 164.
-
-Package epstopdf Info: Source file: <img/sim_fft_sine_freq_0_5.eps>
-(epstopdf)                    date: 2016-11-13 11:01:44
-(epstopdf)                    size: 871247 bytes
-(epstopdf)             Output file: <img/sim_fft_sine_freq_0_5-eps-converted-to
-.pdf>
-(epstopdf)             Command: <epstopdf --outfile=img/sim_fft_sine_freq_0_5-e
-ps-converted-to.pdf img/sim_fft_sine_freq_0_5.eps>
-(epstopdf)             \includegraphics on input line 166.
-runsystem(epstopdf --outfile=img/sim_fft_sine_freq_0_5-eps-converted-to.pdf img
-/sim_fft_sine_freq_0_5.eps)...executed.
-
-Package epstopdf Info: Result file: <img/sim_fft_sine_freq_0_5-eps-converted-to
-.pdf>
-(epstopdf)                    date: 2016-11-13 11:05:22
-(epstopdf)                    size: 73696 bytes.
-
-<img/sim_fft_sine_freq_0_5-eps-converted-to.pdf, id=246, 366.36874pt x 305.14pt
->
-File: img/sim_fft_sine_freq_0_5-eps-converted-to.pdf Graphic file (type pdf)
- <use img/sim_fft_sine_freq_0_5-eps-converted-to.pdf>
-Package pdftex.def Info: img/sim_fft_sine_freq_0_5-eps-converted-to.pdf used on
- input line 166.
-(pdftex.def)             Requested size: 220.50887pt x 183.6581pt.
-Package epstopdf Info: Source file: <img/sim_fft_sine_freq_1.eps>
-(epstopdf)                    date: 2016-11-13 11:01:45
-(epstopdf)                    size: 853043 bytes
-(epstopdf)             Output file: <img/sim_fft_sine_freq_1-eps-converted-to.p
-df>
-(epstopdf)             Command: <epstopdf --outfile=img/sim_fft_sine_freq_1-eps
--converted-to.pdf img/sim_fft_sine_freq_1.eps>
-(epstopdf)             \includegraphics on input line 167.
-runsystem(epstopdf --outfile=img/sim_fft_sine_freq_1-eps-converted-to.pdf img/s
-im_fft_sine_freq_1.eps)...executed.
-
-Package epstopdf Info: Result file: <img/sim_fft_sine_freq_1-eps-converted-to.p
-df>
-(epstopdf)                    date: 2016-11-13 11:05:23
-(epstopdf)                    size: 65907 bytes.
-
-<img/sim_fft_sine_freq_1-eps-converted-to.pdf, id=247, 372.39125pt x 305.14pt>
-File: img/sim_fft_sine_freq_1-eps-converted-to.pdf Graphic file (type pdf)
-
-<use img/sim_fft_sine_freq_1-eps-converted-to.pdf>
-Package pdftex.def Info: img/sim_fft_sine_freq_1-eps-converted-to.pdf used on i
-nput line 167.
-(pdftex.def)             Requested size: 220.50887pt x 180.69218pt.
-
-Overfull \hbox (2.22221pt too wide) in paragraph at lines 166--168
-[][] [] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-Package epstopdf Info: Source file: <img/sim_fft_sine_freq_2.eps>
-(epstopdf)                    date: 2016-11-13 11:01:45
-(epstopdf)                    size: 854663 bytes
-(epstopdf)             Output file: <img/sim_fft_sine_freq_2-eps-converted-to.p
-df>
-(epstopdf)             Command: <epstopdf --outfile=img/sim_fft_sine_freq_2-eps
--converted-to.pdf img/sim_fft_sine_freq_2.eps>
-(epstopdf)             \includegraphics on input line 170.
-runsystem(epstopdf --outfile=img/sim_fft_sine_freq_2-eps-converted-to.pdf img/s
-im_fft_sine_freq_2.eps)...executed.
-
-Package epstopdf Info: Result file: <img/sim_fft_sine_freq_2-eps-converted-to.p
-df>
-(epstopdf)                    date: 2016-11-13 11:05:24
-(epstopdf)                    size: 67215 bytes.
-
-<img/sim_fft_sine_freq_2-eps-converted-to.pdf, id=248, 366.36874pt x 305.14pt>
-File: img/sim_fft_sine_freq_2-eps-converted-to.pdf Graphic file (type pdf)
-
-<use img/sim_fft_sine_freq_2-eps-converted-to.pdf>
-Package pdftex.def Info: img/sim_fft_sine_freq_2-eps-converted-to.pdf used on i
-nput line 170.
-(pdftex.def)             Requested size: 220.50887pt x 183.6581pt.
-Package epstopdf Info: Source file: <img/sim_fft_sine_freq_3.eps>
-(epstopdf)                    date: 2016-11-13 11:01:46
-(epstopdf)                    size: 856828 bytes
-(epstopdf)             Output file: <img/sim_fft_sine_freq_3-eps-converted-to.p
-df>
-(epstopdf)             Command: <epstopdf --outfile=img/sim_fft_sine_freq_3-eps
--converted-to.pdf img/sim_fft_sine_freq_3.eps>
-(epstopdf)             \includegraphics on input line 171.
-runsystem(epstopdf --outfile=img/sim_fft_sine_freq_3-eps-converted-to.pdf img/s
-im_fft_sine_freq_3.eps)...executed.
-
-Package epstopdf Info: Result file: <img/sim_fft_sine_freq_3-eps-converted-to.p
-df>
-(epstopdf)                    date: 2016-11-13 11:05:25
-(epstopdf)                    size: 68777 bytes.
-
-<img/sim_fft_sine_freq_3-eps-converted-to.pdf, id=249, 366.36874pt x 305.14pt>
-File: img/sim_fft_sine_freq_3-eps-converted-to.pdf Graphic file (type pdf)
-
-<use img/sim_fft_sine_freq_3-eps-converted-to.pdf>
-Package pdftex.def Info: img/sim_fft_sine_freq_3-eps-converted-to.pdf used on i
-nput line 171.
-(pdftex.def)             Requested size: 220.50887pt x 183.6581pt.
-
-Overfull \hbox (2.22221pt too wide) in paragraph at lines 170--172
-[][] [] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-Package epstopdf Info: Source file: <img/sim_fft_sine_freq_4.eps>
-(epstopdf)                    date: 2016-11-13 11:01:46
-(epstopdf)                    size: 859211 bytes
-(epstopdf)             Output file: <img/sim_fft_sine_freq_4-eps-converted-to.p
-df>
-(epstopdf)             Command: <epstopdf --outfile=img/sim_fft_sine_freq_4-eps
--converted-to.pdf img/sim_fft_sine_freq_4.eps>
-(epstopdf)             \includegraphics on input line 174.
-runsystem(epstopdf --outfile=img/sim_fft_sine_freq_4-eps-converted-to.pdf img/s
-im_fft_sine_freq_4.eps)...executed.
-
-Package epstopdf Info: Result file: <img/sim_fft_sine_freq_4-eps-converted-to.p
-df>
-(epstopdf)                    date: 2016-11-13 11:05:26
-(epstopdf)                    size: 70286 bytes.
-<img/sim_fft_sine_freq_4-eps-converted-to.pdf, id=250, 361.35pt x 305.14pt>
-File: img/sim_fft_sine_freq_4-eps-converted-to.pdf Graphic file (type pdf)
-
-<use img/sim_fft_sine_freq_4-eps-converted-to.pdf>
-Package pdftex.def Info: img/sim_fft_sine_freq_4-eps-converted-to.pdf used on i
-nput line 174.
-(pdftex.def)             Requested size: 220.50887pt x 186.20961pt.
-Package epstopdf Info: Source file: <img/sim_fft_sine_freq_5.eps>
-(epstopdf)                    date: 2016-11-13 11:01:47
-(epstopdf)                    size: 860453 bytes
-(epstopdf)             Output file: <img/sim_fft_sine_freq_5-eps-converted-to.p
-df>
-(epstopdf)             Command: <epstopdf --outfile=img/sim_fft_sine_freq_5-eps
--converted-to.pdf img/sim_fft_sine_freq_5.eps>
-(epstopdf)             \includegraphics on input line 175.
-runsystem(epstopdf --outfile=img/sim_fft_sine_freq_5-eps-converted-to.pdf img/s
-im_fft_sine_freq_5.eps)...executed.
-
-Package epstopdf Info: Result file: <img/sim_fft_sine_freq_5-eps-converted-to.p
-df>
-(epstopdf)                    date: 2016-11-13 11:05:27
-(epstopdf)                    size: 71044 bytes.
-
-<img/sim_fft_sine_freq_5-eps-converted-to.pdf, id=251, 361.35pt x 305.14pt>
-File: img/sim_fft_sine_freq_5-eps-converted-to.pdf Graphic file (type pdf)
-
-<use img/sim_fft_sine_freq_5-eps-converted-to.pdf>
-Package pdftex.def Info: img/sim_fft_sine_freq_5-eps-converted-to.pdf used on i
-nput line 175.
-(pdftex.def)             Requested size: 220.50887pt x 186.20961pt.
-
-Overfull \hbox (2.22221pt too wide) in paragraph at lines 174--176
-[][] [] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-Package epstopdf Info: Source file: <img/sim_fft_sine_freq_6.eps>
-(epstopdf)                    date: 2016-11-13 11:01:47
-(epstopdf)                    size: 859474 bytes
-(epstopdf)             Output file: <img/sim_fft_sine_freq_6-eps-converted-to.p
-df>
-(epstopdf)             Command: <epstopdf --outfile=img/sim_fft_sine_freq_6-eps
--converted-to.pdf img/sim_fft_sine_freq_6.eps>
-(epstopdf)             \includegraphics on input line 178.
-runsystem(epstopdf --outfile=img/sim_fft_sine_freq_6-eps-converted-to.pdf img/s
-im_fft_sine_freq_6.eps)...executed.
-
-Package epstopdf Info: Result file: <img/sim_fft_sine_freq_6-eps-converted-to.p
-df>
-(epstopdf)                    date: 2016-11-13 11:05:28
-(epstopdf)                    size: 71778 bytes.
-<img/sim_fft_sine_freq_6-eps-converted-to.pdf, id=252, 361.35pt x 305.14pt>
-File: img/sim_fft_sine_freq_6-eps-converted-to.pdf Graphic file (type pdf)
-
-<use img/sim_fft_sine_freq_6-eps-converted-to.pdf>
-Package pdftex.def Info: img/sim_fft_sine_freq_6-eps-converted-to.pdf used on i
-nput line 178.
-(pdftex.def)             Requested size: 220.50887pt x 186.20961pt.
-Package epstopdf Info: Source file: <img/sim_fft_sine_freq_7.eps>
-(epstopdf)                    date: 2016-11-13 11:01:47
-(epstopdf)                    size: 858891 bytes
-(epstopdf)             Output file: <img/sim_fft_sine_freq_7-eps-converted-to.p
-df>
-(epstopdf)             Command: <epstopdf --outfile=img/sim_fft_sine_freq_7-eps
--converted-to.pdf img/sim_fft_sine_freq_7.eps>
-(epstopdf)             \includegraphics on input line 179.
-runsystem(epstopdf --outfile=img/sim_fft_sine_freq_7-eps-converted-to.pdf img/s
-im_fft_sine_freq_7.eps)...executed.
-
-Package epstopdf Info: Result file: <img/sim_fft_sine_freq_7-eps-converted-to.p
-df>
-(epstopdf)                    date: 2016-11-13 11:05:29
-(epstopdf)                    size: 72125 bytes.
-
-<img/sim_fft_sine_freq_7-eps-converted-to.pdf, id=253, 361.35pt x 305.14pt>
-File: img/sim_fft_sine_freq_7-eps-converted-to.pdf Graphic file (type pdf)
-
-<use img/sim_fft_sine_freq_7-eps-converted-to.pdf>
-Package pdftex.def Info: img/sim_fft_sine_freq_7-eps-converted-to.pdf used on i
-nput line 179.
-(pdftex.def)             Requested size: 220.50887pt x 186.20961pt.
-
-Overfull \hbox (2.22221pt too wide) in paragraph at lines 178--180
-[][] [] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-Package epstopdf Info: Source file: <img/sim_fft_sine_freq_8.eps>
-(epstopdf)                    date: 2016-11-13 11:01:48
-(epstopdf)                    size: 862919 bytes
-(epstopdf)             Output file: <img/sim_fft_sine_freq_8-eps-converted-to.p
-df>
-(epstopdf)             Command: <epstopdf --outfile=img/sim_fft_sine_freq_8-eps
--converted-to.pdf img/sim_fft_sine_freq_8.eps>
-(epstopdf)             \includegraphics on input line 182.
-runsystem(epstopdf --outfile=img/sim_fft_sine_freq_8-eps-converted-to.pdf img/s
-im_fft_sine_freq_8.eps)...executed.
-
-Package epstopdf Info: Result file: <img/sim_fft_sine_freq_8-eps-converted-to.p
-df>
-(epstopdf)                    date: 2016-11-13 11:05:31
-(epstopdf)                    size: 72863 bytes.
-<img/sim_fft_sine_freq_8-eps-converted-to.pdf, id=254, 361.35pt x 305.14pt>
-File: img/sim_fft_sine_freq_8-eps-converted-to.pdf Graphic file (type pdf)
-
-<use img/sim_fft_sine_freq_8-eps-converted-to.pdf>
-Package pdftex.def Info: img/sim_fft_sine_freq_8-eps-converted-to.pdf used on i
-nput line 182.
-(pdftex.def)             Requested size: 220.50887pt x 186.20961pt.
-Package epstopdf Info: Source file: <img/sim_fft_sine_freq_9.eps>
-(epstopdf)                    date: 2016-11-13 11:01:48
-(epstopdf)                    size: 862930 bytes
-(epstopdf)             Output file: <img/sim_fft_sine_freq_9-eps-converted-to.p
-df>
-(epstopdf)             Command: <epstopdf --outfile=img/sim_fft_sine_freq_9-eps
--converted-to.pdf img/sim_fft_sine_freq_9.eps>
-(epstopdf)             \includegraphics on input line 183.
-runsystem(epstopdf --outfile=img/sim_fft_sine_freq_9-eps-converted-to.pdf img/s
-im_fft_sine_freq_9.eps)...executed.
-
-Package epstopdf Info: Result file: <img/sim_fft_sine_freq_9-eps-converted-to.p
-df>
-(epstopdf)                    date: 2016-11-13 11:05:32
-(epstopdf)                    size: 74142 bytes.
-
-<img/sim_fft_sine_freq_9-eps-converted-to.pdf, id=255, 361.35pt x 305.14pt>
-File: img/sim_fft_sine_freq_9-eps-converted-to.pdf Graphic file (type pdf)
-
-<use img/sim_fft_sine_freq_9-eps-converted-to.pdf>
-Package pdftex.def Info: img/sim_fft_sine_freq_9-eps-converted-to.pdf used on i
-nput line 183.
-(pdftex.def)             Requested size: 220.50887pt x 186.20961pt.
-
-Overfull \hbox (2.22221pt too wide) in paragraph at lines 182--184
-[][] [] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-Package epstopdf Info: Source file: <img/sim_fft_sine_freq_10.eps>
-(epstopdf)                    date: 2016-11-13 11:01:49
-(epstopdf)                    size: 864484 bytes
-(epstopdf)             Output file: <img/sim_fft_sine_freq_10-eps-converted-to.
-pdf>
-(epstopdf)             Command: <epstopdf --outfile=img/sim_fft_sine_freq_10-ep
-s-converted-to.pdf img/sim_fft_sine_freq_10.eps>
-(epstopdf)             \includegraphics on input line 187.
-runsystem(epstopdf --outfile=img/sim_fft_sine_freq_10-eps-converted-to.pdf img/
-sim_fft_sine_freq_10.eps)...executed.
-
-Package epstopdf Info: Result file: <img/sim_fft_sine_freq_10-eps-converted-to.
-pdf>
-(epstopdf)                    date: 2016-11-13 11:05:33
-(epstopdf)                    size: 74412 bytes.
-<img/sim_fft_sine_freq_10-eps-converted-to.pdf, id=256, 361.35pt x 305.14pt>
-File: img/sim_fft_sine_freq_10-eps-converted-to.pdf Graphic file (type pdf)
-
-<use img/sim_fft_sine_freq_10-eps-converted-to.pdf>
-Package pdftex.def Info: img/sim_fft_sine_freq_10-eps-converted-to.pdf used on 
-input line 187.
-(pdftex.def)             Requested size: 220.50887pt x 186.20961pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 191.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 191.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 191.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 191.
-[7 <./img/rxx_sinefreq_6-eps-converted-to.pdf> <./img/rxx_sinefreq_7-eps-conver
-ted-to.pdf> <./img/rxx_sinefreq_8-eps-converted-to.pdf> <./img/rxx_sinefreq_9-e
-ps-converted-to.pdf> <./img/rxx_sinefreq_10-eps-converted-to.pdf>]
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 192.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 192.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 192.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\varphi' on input line 192.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 192.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 192.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 192.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\pi' on input line 192.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\cdot' on input line 192.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\cdot' on input line 192.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 192.
-
-Package epstopdf Info: Source file: <img/sim_rxx_sine_freq_0_5.eps>
-(epstopdf)                    date: 2016-11-13 11:01:49
-(epstopdf)                    size: 269485 bytes
-(epstopdf)             Output file: <img/sim_rxx_sine_freq_0_5-eps-converted-to
-.pdf>
-(epstopdf)             Command: <epstopdf --outfile=img/sim_rxx_sine_freq_0_5-e
-ps-converted-to.pdf img/sim_rxx_sine_freq_0_5.eps>
-(epstopdf)             \includegraphics on input line 194.
-runsystem(epstopdf --outfile=img/sim_rxx_sine_freq_0_5-eps-converted-to.pdf img
-/sim_rxx_sine_freq_0_5.eps)...executed.
-
-Package epstopdf Info: Result file: <img/sim_rxx_sine_freq_0_5-eps-converted-to
-.pdf>
-(epstopdf)                    date: 2016-11-13 11:05:34
-(epstopdf)                    size: 91616 bytes.
-
-<img/sim_rxx_sine_freq_0_5-eps-converted-to.pdf, id=286, 378.41376pt x 303.1325
-pt>
-File: img/sim_rxx_sine_freq_0_5-eps-converted-to.pdf Graphic file (type pdf)
- <use img/sim_rxx_sine_freq_0_5-eps-converted-to.pdf>
-Package pdftex.def Info: img/sim_rxx_sine_freq_0_5-eps-converted-to.pdf used on
- input line 194.
-(pdftex.def)             Requested size: 220.50887pt x 176.64029pt.
-Package epstopdf Info: Source file: <img/sim_rxx_sine_freq_1.eps>
-(epstopdf)                    date: 2016-11-13 11:01:49
-(epstopdf)                    size: 268613 bytes
-(epstopdf)             Output file: <img/sim_rxx_sine_freq_1-eps-converted-to.p
-df>
-(epstopdf)             Command: <epstopdf --outfile=img/sim_rxx_sine_freq_1-eps
--converted-to.pdf img/sim_rxx_sine_freq_1.eps>
-(epstopdf)             \includegraphics on input line 195.
-runsystem(epstopdf --outfile=img/sim_rxx_sine_freq_1-eps-converted-to.pdf img/s
-im_rxx_sine_freq_1.eps)...executed.
-
-Package epstopdf Info: Result file: <img/sim_rxx_sine_freq_1-eps-converted-to.p
-df>
-(epstopdf)                    date: 2016-11-13 11:05:34
-(epstopdf)                    size: 85392 bytes.
-
-<img/sim_rxx_sine_freq_1-eps-converted-to.pdf, id=287, 373.395pt x 303.1325pt>
-File: img/sim_rxx_sine_freq_1-eps-converted-to.pdf Graphic file (type pdf)
-
-<use img/sim_rxx_sine_freq_1-eps-converted-to.pdf>
-Package pdftex.def Info: img/sim_rxx_sine_freq_1-eps-converted-to.pdf used on i
-nput line 195.
-(pdftex.def)             Requested size: 220.50887pt x 179.01314pt.
-
-Overfull \hbox (2.22221pt too wide) in paragraph at lines 194--196
-[][] [] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-Package epstopdf Info: Source file: <img/sim_rxx_sine_freq_2.eps>
-(epstopdf)                    date: 2016-11-13 11:01:50
-(epstopdf)                    size: 267420 bytes
-(epstopdf)             Output file: <img/sim_rxx_sine_freq_2-eps-converted-to.p
-df>
-(epstopdf)             Command: <epstopdf --outfile=img/sim_rxx_sine_freq_2-eps
--converted-to.pdf img/sim_rxx_sine_freq_2.eps>
-(epstopdf)             \includegraphics on input line 198.
-runsystem(epstopdf --outfile=img/sim_rxx_sine_freq_2-eps-converted-to.pdf img/s
-im_rxx_sine_freq_2.eps)...executed.
-
-Package epstopdf Info: Result file: <img/sim_rxx_sine_freq_2-eps-converted-to.p
-df>
-(epstopdf)                    date: 2016-11-13 11:05:35
-(epstopdf)                    size: 81338 bytes.
-
-<img/sim_rxx_sine_freq_2-eps-converted-to.pdf, id=288, 378.41376pt x 303.1325pt
->
-File: img/sim_rxx_sine_freq_2-eps-converted-to.pdf Graphic file (type pdf)
- <use img/sim_rxx_sine_freq_2-eps-converted-to.pdf>
-Package pdftex.def Info: img/sim_rxx_sine_freq_2-eps-converted-to.pdf used on i
-nput line 198.
-(pdftex.def)             Requested size: 220.50887pt x 176.64029pt.
-Package epstopdf Info: Source file: <img/sim_rxx_sine_freq_3.eps>
-(epstopdf)                    date: 2016-11-13 11:01:50
-(epstopdf)                    size: 268832 bytes
-(epstopdf)             Output file: <img/sim_rxx_sine_freq_3-eps-converted-to.p
-df>
-(epstopdf)             Command: <epstopdf --outfile=img/sim_rxx_sine_freq_3-eps
--converted-to.pdf img/sim_rxx_sine_freq_3.eps>
-(epstopdf)             \includegraphics on input line 199.
-runsystem(epstopdf --outfile=img/sim_rxx_sine_freq_3-eps-converted-to.pdf img/s
-im_rxx_sine_freq_3.eps)...executed.
-
-Package epstopdf Info: Result file: <img/sim_rxx_sine_freq_3-eps-converted-to.p
-df>
-(epstopdf)                    date: 2016-11-13 11:05:36
-(epstopdf)                    size: 78078 bytes.
-
-<img/sim_rxx_sine_freq_3-eps-converted-to.pdf, id=289, 368.37625pt x 303.1325pt
->
-File: img/sim_rxx_sine_freq_3-eps-converted-to.pdf Graphic file (type pdf)
- <use img/sim_rxx_sine_freq_3-eps-converted-to.pdf>
-Package pdftex.def Info: img/sim_rxx_sine_freq_3-eps-converted-to.pdf used on i
-nput line 199.
-(pdftex.def)             Requested size: 220.50887pt x 181.45073pt.
-
-Overfull \hbox (2.22221pt too wide) in paragraph at lines 198--200
-[][] [] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-Package epstopdf Info: Source file: <img/sim_rxx_sine_freq_4.eps>
-(epstopdf)                    date: 2016-11-13 11:01:50
-(epstopdf)                    size: 274043 bytes
-(epstopdf)             Output file: <img/sim_rxx_sine_freq_4-eps-converted-to.p
-df>
-(epstopdf)             Command: <epstopdf --outfile=img/sim_rxx_sine_freq_4-eps
--converted-to.pdf img/sim_rxx_sine_freq_4.eps>
-(epstopdf)             \includegraphics on input line 202.
-runsystem(epstopdf --outfile=img/sim_rxx_sine_freq_4-eps-converted-to.pdf img/s
-im_rxx_sine_freq_4.eps)...executed.
-
-Package epstopdf Info: Result file: <img/sim_rxx_sine_freq_4-eps-converted-to.p
-df>
-(epstopdf)                    date: 2016-11-13 11:05:37
-(epstopdf)                    size: 75276 bytes.
-
-<img/sim_rxx_sine_freq_4-eps-converted-to.pdf, id=290, 360.34625pt x 303.1325pt
->
-File: img/sim_rxx_sine_freq_4-eps-converted-to.pdf Graphic file (type pdf)
- <use img/sim_rxx_sine_freq_4-eps-converted-to.pdf>
-Package pdftex.def Info: img/sim_rxx_sine_freq_4-eps-converted-to.pdf used on i
-nput line 202.
-(pdftex.def)             Requested size: 220.50887pt x 185.49799pt.
-Package epstopdf Info: Source file: <img/sim_rxx_sine_freq_5.eps>
-(epstopdf)                    date: 2016-11-13 11:01:51
-(epstopdf)                    size: 273469 bytes
-(epstopdf)             Output file: <img/sim_rxx_sine_freq_5-eps-converted-to.p
-df>
-(epstopdf)             Command: <epstopdf --outfile=img/sim_rxx_sine_freq_5-eps
--converted-to.pdf img/sim_rxx_sine_freq_5.eps>
-(epstopdf)             \includegraphics on input line 203.
-runsystem(epstopdf --outfile=img/sim_rxx_sine_freq_5-eps-converted-to.pdf img/s
-im_rxx_sine_freq_5.eps)...executed.
-
-Package epstopdf Info: Result file: <img/sim_rxx_sine_freq_5-eps-converted-to.p
-df>
-(epstopdf)                    date: 2016-11-13 11:05:38
-(epstopdf)                    size: 71087 bytes.
-
-<img/sim_rxx_sine_freq_5-eps-converted-to.pdf, id=291, 368.37625pt x 303.1325pt
->
-File: img/sim_rxx_sine_freq_5-eps-converted-to.pdf Graphic file (type pdf)
- <use img/sim_rxx_sine_freq_5-eps-converted-to.pdf>
-Package pdftex.def Info: img/sim_rxx_sine_freq_5-eps-converted-to.pdf used on i
-nput line 203.
-(pdftex.def)             Requested size: 220.50887pt x 181.45073pt.
-
-Overfull \hbox (2.22221pt too wide) in paragraph at lines 202--204
-[][] [] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-Package epstopdf Info: Source file: <img/sim_rxx_sine_freq_6.eps>
-(epstopdf)                    date: 2016-11-13 11:01:51
-(epstopdf)                    size: 273479 bytes
-(epstopdf)             Output file: <img/sim_rxx_sine_freq_6-eps-converted-to.p
-df>
-(epstopdf)             Command: <epstopdf --outfile=img/sim_rxx_sine_freq_6-eps
--converted-to.pdf img/sim_rxx_sine_freq_6.eps>
-(epstopdf)             \includegraphics on input line 206.
-runsystem(epstopdf --outfile=img/sim_rxx_sine_freq_6-eps-converted-to.pdf img/s
-im_rxx_sine_freq_6.eps)...executed.
-
-Package epstopdf Info: Result file: <img/sim_rxx_sine_freq_6-eps-converted-to.p
-df>
-(epstopdf)                    date: 2016-11-13 11:05:39
-(epstopdf)                    size: 76938 bytes.
-
-<img/sim_rxx_sine_freq_6-eps-converted-to.pdf, id=292, 362.35374pt x 303.1325pt
->
-File: img/sim_rxx_sine_freq_6-eps-converted-to.pdf Graphic file (type pdf)
- <use img/sim_rxx_sine_freq_6-eps-converted-to.pdf>
-Package pdftex.def Info: img/sim_rxx_sine_freq_6-eps-converted-to.pdf used on i
-nput line 206.
-(pdftex.def)             Requested size: 220.50887pt x 184.47113pt.
-Package epstopdf Info: Source file: <img/sim_rxx_sine_freq_7.eps>
-(epstopdf)                    date: 2016-11-13 11:01:51
-(epstopdf)                    size: 273674 bytes
-(epstopdf)             Output file: <img/sim_rxx_sine_freq_7-eps-converted-to.p
-df>
-(epstopdf)             Command: <epstopdf --outfile=img/sim_rxx_sine_freq_7-eps
--converted-to.pdf img/sim_rxx_sine_freq_7.eps>
-(epstopdf)             \includegraphics on input line 207.
-runsystem(epstopdf --outfile=img/sim_rxx_sine_freq_7-eps-converted-to.pdf img/s
-im_rxx_sine_freq_7.eps)...executed.
-
-Package epstopdf Info: Result file: <img/sim_rxx_sine_freq_7-eps-converted-to.p
-df>
-(epstopdf)                    date: 2016-11-13 11:05:39
-(epstopdf)                    size: 79239 bytes.
-
-<img/sim_rxx_sine_freq_7-eps-converted-to.pdf, id=293, 360.34625pt x 303.1325pt
->
-File: img/sim_rxx_sine_freq_7-eps-converted-to.pdf Graphic file (type pdf)
- <use img/sim_rxx_sine_freq_7-eps-converted-to.pdf>
-Package pdftex.def Info: img/sim_rxx_sine_freq_7-eps-converted-to.pdf used on i
-nput line 207.
-(pdftex.def)             Requested size: 220.50887pt x 185.49799pt.
-
-Overfull \hbox (2.22221pt too wide) in paragraph at lines 206--208
-[][] [] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-Package epstopdf Info: Source file: <img/sim_rxx_sine_freq_8.eps>
-(epstopdf)                    date: 2016-11-13 11:01:52
-(epstopdf)                    size: 272499 bytes
-(epstopdf)             Output file: <img/sim_rxx_sine_freq_8-eps-converted-to.p
-df>
-(epstopdf)             Command: <epstopdf --outfile=img/sim_rxx_sine_freq_8-eps
--converted-to.pdf img/sim_rxx_sine_freq_8.eps>
-(epstopdf)             \includegraphics on input line 210.
-runsystem(epstopdf --outfile=img/sim_rxx_sine_freq_8-eps-converted-to.pdf img/s
-im_rxx_sine_freq_8.eps)...executed.
-
-Package epstopdf Info: Result file: <img/sim_rxx_sine_freq_8-eps-converted-to.p
-df>
-(epstopdf)                    date: 2016-11-13 11:05:40
-(epstopdf)                    size: 74287 bytes.
-
-<img/sim_rxx_sine_freq_8-eps-converted-to.pdf, id=294, 368.37625pt x 303.1325pt
->
-File: img/sim_rxx_sine_freq_8-eps-converted-to.pdf Graphic file (type pdf)
- <use img/sim_rxx_sine_freq_8-eps-converted-to.pdf>
-Package pdftex.def Info: img/sim_rxx_sine_freq_8-eps-converted-to.pdf used on i
-nput line 210.
-(pdftex.def)             Requested size: 220.50887pt x 181.45073pt.
-Package epstopdf Info: Source file: <img/sim_rxx_sine_freq_9.eps>
-(epstopdf)                    date: 2016-11-13 11:01:52
-(epstopdf)                    size: 270161 bytes
-(epstopdf)             Output file: <img/sim_rxx_sine_freq_9-eps-converted-to.p
-df>
-(epstopdf)             Command: <epstopdf --outfile=img/sim_rxx_sine_freq_9-eps
--converted-to.pdf img/sim_rxx_sine_freq_9.eps>
-(epstopdf)             \includegraphics on input line 211.
-runsystem(epstopdf --outfile=img/sim_rxx_sine_freq_9-eps-converted-to.pdf img/s
-im_rxx_sine_freq_9.eps)...executed.
-
-Package epstopdf Info: Result file: <img/sim_rxx_sine_freq_9-eps-converted-to.p
-df>
-(epstopdf)                    date: 2016-11-13 11:05:41
-(epstopdf)                    size: 72013 bytes.
-
-<img/sim_rxx_sine_freq_9-eps-converted-to.pdf, id=295, 360.34625pt x 303.1325pt
->
-File: img/sim_rxx_sine_freq_9-eps-converted-to.pdf Graphic file (type pdf)
- <use img/sim_rxx_sine_freq_9-eps-converted-to.pdf>
-Package pdftex.def Info: img/sim_rxx_sine_freq_9-eps-converted-to.pdf used on i
-nput line 211.
-(pdftex.def)             Requested size: 220.50887pt x 185.49799pt.
-
-Overfull \hbox (2.22221pt too wide) in paragraph at lines 210--212
-[][] [] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-Package epstopdf Info: Source file: <img/sim_rxx_sine_freq_10.eps>
-(epstopdf)                    date: 2016-11-13 11:01:52
-(epstopdf)                    size: 270950 bytes
-(epstopdf)             Output file: <img/sim_rxx_sine_freq_10-eps-converted-to.
-pdf>
-(epstopdf)             Command: <epstopdf --outfile=img/sim_rxx_sine_freq_10-ep
-s-converted-to.pdf img/sim_rxx_sine_freq_10.eps>
-(epstopdf)             \includegraphics on input line 215.
-runsystem(epstopdf --outfile=img/sim_rxx_sine_freq_10-eps-converted-to.pdf img/
-sim_rxx_sine_freq_10.eps)...executed.
-
-Package epstopdf Info: Result file: <img/sim_rxx_sine_freq_10-eps-converted-to.
-pdf>
-(epstopdf)                    date: 2016-11-13 11:05:42
-(epstopdf)                    size: 65801 bytes.
-
-<img/sim_rxx_sine_freq_10-eps-converted-to.pdf, id=296, 360.34625pt x 303.1325p
-t>
-File: img/sim_rxx_sine_freq_10-eps-converted-to.pdf Graphic file (type pdf)
- <use img/sim_rxx_sine_freq_10-eps-converted-to.pdf>
-Package pdftex.def Info: img/sim_rxx_sine_freq_10-eps-converted-to.pdf used on 
-input line 215.
-(pdftex.def)             Requested size: 220.50887pt x 185.49799pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 218.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 218.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 218.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 218.
-[8 <./img/lds_sinefreq_0_5-eps-converted-to.pdf> <./img/lds_sinefreq_1-eps-conv
-erted-to.pdf> <./img/lds_sinefreq_2-eps-converted-to.pdf> <./img/lds_sinefreq_3
--eps-converted-to.pdf> <./img/lds_sinefreq_4-eps-converted-to.pdf> <./img/lds_s
-inefreq_5-eps-converted-to.pdf>]
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 219.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 219.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 219.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\varphi' on input line 219.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 219.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 219.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 219.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\pi' on input line 219.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\cdot' on input line 219.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\cdot' on input line 219.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 219.
-
-Package epstopdf Info: Source file: <img/sim_lds_sine_freq_0_5.eps>
-(epstopdf)                    date: 2016-11-13 11:01:53
-(epstopdf)                    size: 1536444 bytes
-(epstopdf)             Output file: <img/sim_lds_sine_freq_0_5-eps-converted-to
-.pdf>
-(epstopdf)             Command: <epstopdf --outfile=img/sim_lds_sine_freq_0_5-e
-ps-converted-to.pdf img/sim_lds_sine_freq_0_5.eps>
-(epstopdf)             \includegraphics on input line 221.
-runsystem(epstopdf --outfile=img/sim_lds_sine_freq_0_5-eps-converted-to.pdf img
-/sim_lds_sine_freq_0_5.eps)...executed.
-
-Package epstopdf Info: Result file: <img/sim_lds_sine_freq_0_5-eps-converted-to
-.pdf>
-(epstopdf)                    date: 2016-11-13 11:05:43
-(epstopdf)                    size: 97931 bytes.
-
-<img/sim_lds_sine_freq_0_5-eps-converted-to.pdf, id=329, 371.3875pt x 305.14pt>
-File: img/sim_lds_sine_freq_0_5-eps-converted-to.pdf Graphic file (type pdf)
-<use img/sim_lds_sine_freq_0_5-eps-converted-to.pdf>
-Package pdftex.def Info: img/sim_lds_sine_freq_0_5-eps-converted-to.pdf used on
- input line 221.
-(pdftex.def)             Requested size: 220.50887pt x 181.1764pt.
-Package epstopdf Info: Source file: <img/sim_lds_sine_freq_1.eps>
-(epstopdf)                    date: 2016-11-13 11:01:53
-(epstopdf)                    size: 1545526 bytes
-(epstopdf)             Output file: <img/sim_lds_sine_freq_1-eps-converted-to.p
-df>
-(epstopdf)             Command: <epstopdf --outfile=img/sim_lds_sine_freq_1-eps
--converted-to.pdf img/sim_lds_sine_freq_1.eps>
-(epstopdf)             \includegraphics on input line 222.
-runsystem(epstopdf --outfile=img/sim_lds_sine_freq_1-eps-converted-to.pdf img/s
-im_lds_sine_freq_1.eps)...executed.
-
-Package epstopdf Info: Result file: <img/sim_lds_sine_freq_1-eps-converted-to.p
-df>
-(epstopdf)                    date: 2016-11-13 11:05:45
-(epstopdf)                    size: 99494 bytes.
-
-<img/sim_lds_sine_freq_1-eps-converted-to.pdf, id=330, 371.3875pt x 305.14pt>
-File: img/sim_lds_sine_freq_1-eps-converted-to.pdf Graphic file (type pdf)
-
-<use img/sim_lds_sine_freq_1-eps-converted-to.pdf>
-Package pdftex.def Info: img/sim_lds_sine_freq_1-eps-converted-to.pdf used on i
-nput line 222.
-(pdftex.def)             Requested size: 220.50887pt x 181.1764pt.
-
-Overfull \hbox (2.22221pt too wide) in paragraph at lines 221--223
-[][] [] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-Package epstopdf Info: Source file: <img/sim_lds_sine_freq_2.eps>
-(epstopdf)                    date: 2016-11-13 11:01:54
-(epstopdf)                    size: 1569403 bytes
-(epstopdf)             Output file: <img/sim_lds_sine_freq_2-eps-converted-to.p
-df>
-(epstopdf)             Command: <epstopdf --outfile=img/sim_lds_sine_freq_2-eps
--converted-to.pdf img/sim_lds_sine_freq_2.eps>
-(epstopdf)             \includegraphics on input line 225.
-runsystem(epstopdf --outfile=img/sim_lds_sine_freq_2-eps-converted-to.pdf img/s
-im_lds_sine_freq_2.eps)...executed.
-
-Package epstopdf Info: Result file: <img/sim_lds_sine_freq_2-eps-converted-to.p
-df>
-(epstopdf)                    date: 2016-11-13 11:05:46
-(epstopdf)                    size: 103432 bytes.
-<img/sim_lds_sine_freq_2-eps-converted-to.pdf, id=331, 371.3875pt x 305.14pt>
-File: img/sim_lds_sine_freq_2-eps-converted-to.pdf Graphic file (type pdf)
-
-<use img/sim_lds_sine_freq_2-eps-converted-to.pdf>
-Package pdftex.def Info: img/sim_lds_sine_freq_2-eps-converted-to.pdf used on i
-nput line 225.
-(pdftex.def)             Requested size: 220.50887pt x 181.1764pt.
-Package epstopdf Info: Source file: <img/sim_lds_sine_freq_3.eps>
-(epstopdf)                    date: 2016-11-13 11:01:55
-(epstopdf)                    size: 1574471 bytes
-(epstopdf)             Output file: <img/sim_lds_sine_freq_3-eps-converted-to.p
-df>
-(epstopdf)             Command: <epstopdf --outfile=img/sim_lds_sine_freq_3-eps
--converted-to.pdf img/sim_lds_sine_freq_3.eps>
-(epstopdf)             \includegraphics on input line 226.
-runsystem(epstopdf --outfile=img/sim_lds_sine_freq_3-eps-converted-to.pdf img/s
-im_lds_sine_freq_3.eps)...executed.
-
-Package epstopdf Info: Result file: <img/sim_lds_sine_freq_3-eps-converted-to.p
-df>
-(epstopdf)                    date: 2016-11-13 11:05:47
-(epstopdf)                    size: 103180 bytes.
-
-<img/sim_lds_sine_freq_3-eps-converted-to.pdf, id=332, 360.34625pt x 305.14pt>
-File: img/sim_lds_sine_freq_3-eps-converted-to.pdf Graphic file (type pdf)
-
-<use img/sim_lds_sine_freq_3-eps-converted-to.pdf>
-Package pdftex.def Info: img/sim_lds_sine_freq_3-eps-converted-to.pdf used on i
-nput line 226.
+Package epstopdf Info: Output file is already uptodate.
+
+<img/lds_phi_g_7-eps-converted-to.pdf, id=337, 368.37625pt x 305.14pt>
+File: img/lds_phi_g_7-eps-converted-to.pdf Graphic file (type pdf)
+
+<use img/lds_phi_g_7-eps-converted-to.pdf>
+Package pdftex.def Info: img/lds_phi_g_7-eps-converted-to.pdf used on input lin
+e 144.
+(pdftex.def)             Requested size: 220.50887pt x 182.65239pt.
+Package epstopdf Info: Source file: <img/lds_phi_g_8.eps>
+(epstopdf)                    date: 2016-11-14 19:05:17
+(epstopdf)                    size: 1635792 bytes
+(epstopdf)             Output file: <img/lds_phi_g_8-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-11-14 19:10:26
+(epstopdf)                    size: 115545 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/lds_phi_g_8-eps-convert
+ed-to.pdf img/lds_phi_g_8.eps>
+(epstopdf)             \includegraphics on input line 145.
+Package epstopdf Info: Output file is already uptodate.
+
+<img/lds_phi_g_8-eps-converted-to.pdf, id=338, 360.34625pt x 305.14pt>
+File: img/lds_phi_g_8-eps-converted-to.pdf Graphic file (type pdf)
+
+<use img/lds_phi_g_8-eps-converted-to.pdf>
+Package pdftex.def Info: img/lds_phi_g_8-eps-converted-to.pdf used on input lin
+e 145.
 (pdftex.def)             Requested size: 220.50887pt x 186.72643pt.
 
-Overfull \hbox (2.22221pt too wide) in paragraph at lines 225--227
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 144--146
 [][] [] 
  []
 
+Package epstopdf Info: Source file: <img/lds_phi_g_9.eps>
+(epstopdf)                    date: 2016-11-14 19:05:17
+(epstopdf)                    size: 1715998 bytes
+(epstopdf)             Output file: <img/lds_phi_g_9-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-11-14 19:10:28
+(epstopdf)                    size: 140176 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/lds_phi_g_9-eps-convert
+ed-to.pdf img/lds_phi_g_9.eps>
+(epstopdf)             \includegraphics on input line 148.
+Package epstopdf Info: Output file is already uptodate.
+<img/lds_phi_g_9-eps-converted-to.pdf, id=339, 374.39874pt x 305.14pt>
+File: img/lds_phi_g_9-eps-converted-to.pdf Graphic file (type pdf)
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-Package epstopdf Info: Source file: <img/sim_lds_sine_freq_4.eps>
-(epstopdf)                    date: 2016-11-13 11:01:55
-(epstopdf)                    size: 1575796 bytes
-(epstopdf)             Output file: <img/sim_lds_sine_freq_4-eps-converted-to.p
-df>
-(epstopdf)             Command: <epstopdf --outfile=img/sim_lds_sine_freq_4-eps
--converted-to.pdf img/sim_lds_sine_freq_4.eps>
-(epstopdf)             \includegraphics on input line 229.
-runsystem(epstopdf --outfile=img/sim_lds_sine_freq_4-eps-converted-to.pdf img/s
-im_lds_sine_freq_4.eps)...executed.
-
-Package epstopdf Info: Result file: <img/sim_lds_sine_freq_4-eps-converted-to.p
-df>
-(epstopdf)                    date: 2016-11-13 11:05:49
-(epstopdf)                    size: 103967 bytes.
-
-<img/sim_lds_sine_freq_4-eps-converted-to.pdf, id=333, 368.37625pt x 305.14pt>
-File: img/sim_lds_sine_freq_4-eps-converted-to.pdf Graphic file (type pdf)
-
-<use img/sim_lds_sine_freq_4-eps-converted-to.pdf>
-Package pdftex.def Info: img/sim_lds_sine_freq_4-eps-converted-to.pdf used on i
-nput line 229.
-(pdftex.def)             Requested size: 220.50887pt x 182.65239pt.
-Package epstopdf Info: Source file: <img/sim_lds_sine_freq_5.eps>
-(epstopdf)                    date: 2016-11-13 11:01:56
-(epstopdf)                    size: 1582074 bytes
-(epstopdf)             Output file: <img/sim_lds_sine_freq_5-eps-converted-to.p
-df>
-(epstopdf)             Command: <epstopdf --outfile=img/sim_lds_sine_freq_5-eps
--converted-to.pdf img/sim_lds_sine_freq_5.eps>
-(epstopdf)             \includegraphics on input line 230.
-runsystem(epstopdf --outfile=img/sim_lds_sine_freq_5-eps-converted-to.pdf img/s
-im_lds_sine_freq_5.eps)...executed.
-
-Package epstopdf Info: Result file: <img/sim_lds_sine_freq_5-eps-converted-to.p
-df>
-(epstopdf)                    date: 2016-11-13 11:05:50
-(epstopdf)                    size: 106209 bytes.
-
-<img/sim_lds_sine_freq_5-eps-converted-to.pdf, id=334, 368.37625pt x 305.14pt>
-File: img/sim_lds_sine_freq_5-eps-converted-to.pdf Graphic file (type pdf)
-
-<use img/sim_lds_sine_freq_5-eps-converted-to.pdf>
-Package pdftex.def Info: img/sim_lds_sine_freq_5-eps-converted-to.pdf used on i
-nput line 230.
-(pdftex.def)             Requested size: 220.50887pt x 182.65239pt.
-
-Overfull \hbox (2.22221pt too wide) in paragraph at lines 229--231
-[][] [] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-Package epstopdf Info: Source file: <img/sim_lds_sine_freq_6.eps>
-(epstopdf)                    date: 2016-11-13 11:01:57
-(epstopdf)                    size: 1580665 bytes
-(epstopdf)             Output file: <img/sim_lds_sine_freq_6-eps-converted-to.p
-df>
-(epstopdf)             Command: <epstopdf --outfile=img/sim_lds_sine_freq_6-eps
--converted-to.pdf img/sim_lds_sine_freq_6.eps>
-(epstopdf)             \includegraphics on input line 233.
-runsystem(epstopdf --outfile=img/sim_lds_sine_freq_6-eps-converted-to.pdf img/s
-im_lds_sine_freq_6.eps)...executed.
-
-Package epstopdf Info: Result file: <img/sim_lds_sine_freq_6-eps-converted-to.p
-df>
-(epstopdf)                    date: 2016-11-13 11:05:52
-(epstopdf)                    size: 106586 bytes.
-
-<img/sim_lds_sine_freq_6-eps-converted-to.pdf, id=335, 374.39874pt x 305.14pt>
-File: img/sim_lds_sine_freq_6-eps-converted-to.pdf Graphic file (type pdf)
-
-<use img/sim_lds_sine_freq_6-eps-converted-to.pdf>
-Package pdftex.def Info: img/sim_lds_sine_freq_6-eps-converted-to.pdf used on i
-nput line 233.
+<use img/lds_phi_g_9-eps-converted-to.pdf>
+Package pdftex.def Info: img/lds_phi_g_9-eps-converted-to.pdf used on input lin
+e 148.
 (pdftex.def)             Requested size: 220.50887pt x 179.71907pt.
-Package epstopdf Info: Source file: <img/sim_lds_sine_freq_7.eps>
-(epstopdf)                    date: 2016-11-13 11:01:57
-(epstopdf)                    size: 1583283 bytes
-(epstopdf)             Output file: <img/sim_lds_sine_freq_7-eps-converted-to.p
-df>
-(epstopdf)             Command: <epstopdf --outfile=img/sim_lds_sine_freq_7-eps
--converted-to.pdf img/sim_lds_sine_freq_7.eps>
-(epstopdf)             \includegraphics on input line 234.
-runsystem(epstopdf --outfile=img/sim_lds_sine_freq_7-eps-converted-to.pdf img/s
-im_lds_sine_freq_7.eps)...executed.
+Package epstopdf Info: Source file: <img/lds_phi_g_10.eps>
+(epstopdf)                    date: 2016-11-14 19:05:18
+(epstopdf)                    size: 1721232 bytes
+(epstopdf)             Output file: <img/lds_phi_g_10-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-11-14 19:10:30
+(epstopdf)                    size: 142857 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/lds_phi_g_10-eps-conver
+ted-to.pdf img/lds_phi_g_10.eps>
+(epstopdf)             \includegraphics on input line 149.
+Package epstopdf Info: Output file is already uptodate.
 
-Package epstopdf Info: Result file: <img/sim_lds_sine_freq_7-eps-converted-to.p
-df>
-(epstopdf)                    date: 2016-11-13 11:05:53
-(epstopdf)                    size: 107551 bytes.
+<img/lds_phi_g_10-eps-converted-to.pdf, id=340, 374.39874pt x 305.14pt>
+File: img/lds_phi_g_10-eps-converted-to.pdf Graphic file (type pdf)
 
-<img/sim_lds_sine_freq_7-eps-converted-to.pdf, id=336, 374.39874pt x 305.14pt>
-File: img/sim_lds_sine_freq_7-eps-converted-to.pdf Graphic file (type pdf)
-
-<use img/sim_lds_sine_freq_7-eps-converted-to.pdf>
-Package pdftex.def Info: img/sim_lds_sine_freq_7-eps-converted-to.pdf used on i
-nput line 234.
+<use img/lds_phi_g_10-eps-converted-to.pdf>
+Package pdftex.def Info: img/lds_phi_g_10-eps-converted-to.pdf used on input li
+ne 149.
 (pdftex.def)             Requested size: 220.50887pt x 179.71907pt.
 
-Overfull \hbox (2.22221pt too wide) in paragraph at lines 233--235
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 148--150
 [][] [] 
  []
 
+Package epstopdf Info: Source file: <img/lds_phi_g_11.eps>
+(epstopdf)                    date: 2016-11-14 19:05:19
+(epstopdf)                    size: 1623051 bytes
+(epstopdf)             Output file: <img/lds_phi_g_11-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-11-14 19:10:31
+(epstopdf)                    size: 107606 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/lds_phi_g_11-eps-conver
+ted-to.pdf img/lds_phi_g_11.eps>
+(epstopdf)             \includegraphics on input line 153.
+Package epstopdf Info: Output file is already uptodate.
+<img/lds_phi_g_11-eps-converted-to.pdf, id=341, 365.365pt x 305.14pt>
+File: img/lds_phi_g_11-eps-converted-to.pdf Graphic file (type pdf)
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-Package epstopdf Info: Source file: <img/sim_lds_sine_freq_8.eps>
-(epstopdf)                    date: 2016-11-13 11:01:58
-(epstopdf)                    size: 1588653 bytes
-(epstopdf)             Output file: <img/sim_lds_sine_freq_8-eps-converted-to.p
-df>
-(epstopdf)             Command: <epstopdf --outfile=img/sim_lds_sine_freq_8-eps
--converted-to.pdf img/sim_lds_sine_freq_8.eps>
-(epstopdf)             \includegraphics on input line 237.
-runsystem(epstopdf --outfile=img/sim_lds_sine_freq_8-eps-converted-to.pdf img/s
-im_lds_sine_freq_8.eps)...executed.
-
-Package epstopdf Info: Result file: <img/sim_lds_sine_freq_8-eps-converted-to.p
-df>
-(epstopdf)                    date: 2016-11-13 11:05:55
-(epstopdf)                    size: 108067 bytes.
-
-<img/sim_lds_sine_freq_8-eps-converted-to.pdf, id=337, 374.39874pt x 305.14pt>
-File: img/sim_lds_sine_freq_8-eps-converted-to.pdf Graphic file (type pdf)
-
-<use img/sim_lds_sine_freq_8-eps-converted-to.pdf>
-Package pdftex.def Info: img/sim_lds_sine_freq_8-eps-converted-to.pdf used on i
-nput line 237.
-(pdftex.def)             Requested size: 220.50887pt x 179.71907pt.
-Package epstopdf Info: Source file: <img/sim_lds_sine_freq_9.eps>
-(epstopdf)                    date: 2016-11-13 11:01:58
-(epstopdf)                    size: 1588648 bytes
-(epstopdf)             Output file: <img/sim_lds_sine_freq_9-eps-converted-to.p
-df>
-(epstopdf)             Command: <epstopdf --outfile=img/sim_lds_sine_freq_9-eps
--converted-to.pdf img/sim_lds_sine_freq_9.eps>
-(epstopdf)             \includegraphics on input line 238.
-runsystem(epstopdf --outfile=img/sim_lds_sine_freq_9-eps-converted-to.pdf img/s
-im_lds_sine_freq_9.eps)...executed.
-
-Package epstopdf Info: Result file: <img/sim_lds_sine_freq_9-eps-converted-to.p
-df>
-(epstopdf)                    date: 2016-11-13 11:05:56
-(epstopdf)                    size: 107099 bytes.
-
-<img/sim_lds_sine_freq_9-eps-converted-to.pdf, id=338, 379.4175pt x 305.14pt>
-File: img/sim_lds_sine_freq_9-eps-converted-to.pdf Graphic file (type pdf)
-
-<use img/sim_lds_sine_freq_9-eps-converted-to.pdf>
-Package pdftex.def Info: img/sim_lds_sine_freq_9-eps-converted-to.pdf used on i
-nput line 238.
-(pdftex.def)             Requested size: 220.50887pt x 177.34448pt.
-
-Overfull \hbox (2.22221pt too wide) in paragraph at lines 237--239
-[][] [] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-Package epstopdf Info: Source file: <img/sim_lds_sine_freq_10.eps>
-(epstopdf)                    date: 2016-11-13 11:01:59
-(epstopdf)                    size: 1588040 bytes
-(epstopdf)             Output file: <img/sim_lds_sine_freq_10-eps-converted-to.
-pdf>
-(epstopdf)             Command: <epstopdf --outfile=img/sim_lds_sine_freq_10-ep
-s-converted-to.pdf img/sim_lds_sine_freq_10.eps>
-(epstopdf)             \includegraphics on input line 242.
-runsystem(epstopdf --outfile=img/sim_lds_sine_freq_10-eps-converted-to.pdf img/
-sim_lds_sine_freq_10.eps)...executed.
-
-Package epstopdf Info: Result file: <img/sim_lds_sine_freq_10-eps-converted-to.
-pdf>
-(epstopdf)                    date: 2016-11-13 11:05:58
-(epstopdf)                    size: 106900 bytes.
-
-<img/sim_lds_sine_freq_10-eps-converted-to.pdf, id=339, 379.4175pt x 305.14pt>
-File: img/sim_lds_sine_freq_10-eps-converted-to.pdf Graphic file (type pdf)
-
-<use img/sim_lds_sine_freq_10-eps-converted-to.pdf>
-Package pdftex.def Info: img/sim_lds_sine_freq_10-eps-converted-to.pdf used on 
-input line 242.
-(pdftex.def)             Requested size: 220.50887pt x 177.34448pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 247.
+<use img/lds_phi_g_11-eps-converted-to.pdf>
+Package pdftex.def Info: img/lds_phi_g_11-eps-converted-to.pdf used on input li
+ne 153.
+(pdftex.def)             Requested size: 220.50887pt x 184.16095pt.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 155.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 247.
+(babel)             in language  on input line 155.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 247.
+(babel)             in language  on input line 155.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 247.
+(babel)             in language  on input line 155.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 247.
-[9 <./img/lds_sinefreq_6-eps-converted-to.pdf> <./img/lds_sinefreq_7-eps-conver
-ted-to.pdf> <./img/lds_sinefreq_8-eps-converted-to.pdf> <./img/lds_sinefreq_9-e
-ps-converted-to.pdf> <./img/lds_sinefreq_10-eps-converted-to.pdf>]
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 247.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 247.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 247.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 247.
- [10 <./img/sim_phi_sine_freq_0_5-eps-converted-to.pdf> <./img/sim_phi_sine_fre
-q_1-eps-converted-to.pdf> <./img/sim_phi_sine_freq_2-eps-converted-to.pdf> <./i
-mg/sim_phi_sine_freq_3-eps-converted-to.pdf> <./img/sim_phi_sine_freq_4-eps-con
-verted-to.pdf> <./img/sim_phi_sine_freq_5-eps-converted-to.pdf>]
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 247.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 247.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 247.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 247.
- [11 <./img/sim_phi_sine_freq_6-eps-converted-to.pdf> <./img/sim_phi_sine_freq_
-7-eps-converted-to.pdf> <./img/sim_phi_sine_freq_8-eps-converted-to.pdf> <./img
-/sim_phi_sine_freq_9-eps-converted-to.pdf> <./img/sim_phi_sine_freq_10-eps-conv
-erted-to.pdf>]
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 247.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 247.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 247.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 247.
- [12 <./img/sim_fft_sine_freq_0_5-eps-converted-to.pdf> <./img/sim_fft_sine_fre
-q_1-eps-converted-to.pdf> <./img/sim_fft_sine_freq_2-eps-converted-to.pdf> <./i
-mg/sim_fft_sine_freq_3-eps-converted-to.pdf> <./img/sim_fft_sine_freq_4-eps-con
-verted-to.pdf> <./img/sim_fft_sine_freq_5-eps-converted-to.pdf>]
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 247.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 247.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 247.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 247.
- [13 <./img/sim_fft_sine_freq_6-eps-converted-to.pdf> <./img/sim_fft_sine_freq_
-7-eps-converted-to.pdf> <./img/sim_fft_sine_freq_8-eps-converted-to.pdf> <./img
-/sim_fft_sine_freq_9-eps-converted-to.pdf> <./img/sim_fft_sine_freq_10-eps-conv
-erted-to.pdf>]
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 247.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 247.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 247.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 247.
- [14 <./img/sim_rxx_sine_freq_0_5-eps-converted-to.pdf> <./img/sim_rxx_sine_fre
-q_1-eps-converted-to.pdf> <./img/sim_rxx_sine_freq_2-eps-converted-to.pdf> <./i
-mg/sim_rxx_sine_freq_3-eps-converted-to.pdf> <./img/sim_rxx_sine_freq_4-eps-con
-verted-to.pdf> <./img/sim_rxx_sine_freq_5-eps-converted-to.pdf>]
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 247.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 247.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 247.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 247.
- [15 <./img/sim_rxx_sine_freq_6-eps-converted-to.pdf> <./img/sim_rxx_sine_freq_
-7-eps-converted-to.pdf> <./img/sim_rxx_sine_freq_8-eps-converted-to.pdf> <./img
-/sim_rxx_sine_freq_9-eps-converted-to.pdf> <./img/sim_rxx_sine_freq_10-eps-conv
-erted-to.pdf>]
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 247.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 247.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 247.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 247.
- [16 <./img/sim_lds_sine_freq_0_5-eps-converted-to.pdf> <./img/sim_lds_sine_fre
-q_1-eps-converted-to.pdf> <./img/sim_lds_sine_freq_2-eps-converted-to.pdf> <./i
-mg/sim_lds_sine_freq_3-eps-converted-to.pdf> <./img/sim_lds_sine_freq_4-eps-con
-verted-to.pdf> <./img/sim_lds_sine_freq_5-eps-converted-to.pdf>]
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 247.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 247.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 247.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 247.
- [17 <./img/sim_lds_sine_freq_6-eps-converted-to.pdf> <./img/sim_lds_sine_freq_
-7-eps-converted-to.pdf> <./img/sim_lds_sine_freq_8-eps-converted-to.pdf> <./img
-/sim_lds_sine_freq_9-eps-converted-to.pdf> <./img/sim_lds_sine_freq_10-eps-conv
-erted-to.pdf>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 247.
+(babel)             in language  on input line 155.
+ [10 <./img/lds_phi_g_7-eps-converted-to.pdf> <./img/lds_phi_g_8-eps-converted-
+to.pdf> <./img/lds_phi_g_9-eps-converted-to.pdf> <./img/lds_phi_g_10-eps-conver
+ted-to.pdf> <./img/lds_phi_g_11-eps-converted-to.pdf>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 155.
  (MessPlots.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 247.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 247.
-
-
-Package rerunfilecheck Warning: File `MessPlots.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `MessPlots.out':
-(rerunfilecheck)             Before: EFD606005BFEB676AAED04DE45A89FA0;539
-(rerunfilecheck)             After:  29F8C9995D64118060A90BBDFE9EF8BA;1029.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 247.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 155.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 155.
+Package rerunfilecheck Info: File `MessPlots.out' has not changed.
+(rerunfilecheck)             Checksum: 5789DAE239C7FF181965A74ABA80A206;640.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 155.
  ) 
 Here is how much of TeX's memory you used:
- 10218 strings out of 493634
- 166241 string characters out of 3136055
- 260587 words of memory out of 3000000
- 13272 multiletter control sequences out of 15000+200000
- 8724 words of font info for 32 fonts, out of 3000000 for 9000
+ 9996 strings out of 493634
+ 156817 string characters out of 3136055
+ 255587 words of memory out of 3000000
+ 13119 multiletter control sequences out of 15000+200000
+ 9563 words of font info for 35 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 68i,6n,98p,321b,383s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 68i,6n,98p,321b,381s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/ich/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/c
 m/cmbx10.pfb><C:/Users/ich/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
 /amsfonts/cm/cmbx12.pfb><C:/Users/ich/AppData/Local/Programs/MiKTeX 2.9/fonts/t
 ype1/public/amsfonts/cm/cmmi10.pfb><C:/Users/ich/AppData/Local/Programs/MiKTeX 
 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/ich/AppData/Local/Progr
 ams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/ich/AppData/L
-ocal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/ich
-/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:
+ocal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/ich
+/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:
 /Users/ich/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr
-8.pfb><C:/Users/ich/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfon
-ts/cm/cmsy10.pfb>
-Output written on MessPlots.pdf (17 pages, 10972272 bytes).
+12.pfb><C:/Users/ich/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfo
+nts/cm/cmsy10.pfb>
+Output written on MessPlots.pdf (10 pages, 10069340 bytes).
 PDF statistics:
- 649 PDF objects out of 1000 (max. 8388607)
- 78 named destinations out of 1000 (max. 500000)
- 489 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 411 PDF objects out of 1000 (max. 8388607)
+ 46 named destinations out of 1000 (max. 500000)
+ 302 words of extra memory for PDF output out of 10000 (max. 10000000)
 

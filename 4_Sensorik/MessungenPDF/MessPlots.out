@@ -1,11 +1,7 @@
-\BOOKMARK [1][-]{section.1}{Dynamische St\366rungen}{}% 1
-\BOOKMARK [2][-]{subsection.1.1}{Messplots y11=-tan\(\)}{section.1}% 2
-\BOOKMARK [3][-]{subsubsection.1.1.1}{Verlauf von \040bei TM = sin\(2f t\)}{subsection.1.1}% 3
-\BOOKMARK [3][-]{subsubsection.1.1.2}{DFT-Spektren von \040bei TM = sin\(2f t\)}{subsection.1.1}% 4
-\BOOKMARK [3][-]{subsubsection.1.1.3}{Autokorelleation von \040bei TM = sin\(2ft\)}{subsection.1.1}% 5
-\BOOKMARK [3][-]{subsubsection.1.1.4}{Leistungsdichtespektren von \040bei TM = sin\(2ft\)}{subsection.1.1}% 6
-\BOOKMARK [2][-]{subsection.1.2}{Simulationplots varphi}{section.1}% 7
-\BOOKMARK [3][-]{subsubsection.1.2.1}{Verlauf von \040bei TM = sin\(2f t\)}{subsection.1.2}% 8
-\BOOKMARK [3][-]{subsubsection.1.2.2}{DFT-Spektren von \040bei TM = sin\(2f t\)}{subsection.1.2}% 9
-\BOOKMARK [3][-]{subsubsection.1.2.3}{Autokorelleation von \040bei TM = sin\(2ft\)}{subsection.1.2}% 10
-\BOOKMARK [3][-]{subsubsection.1.2.4}{Leistungsdichtespektren von \040bei TM = sin\(2ft\)}{subsection.1.2}% 11
+\BOOKMARK [1][-]{section.1}{Spektren bei Konstant- und Nullsignal}{}% 1
+\BOOKMARK [1][-]{section.2}{Spektren von \040aus Winkelsch\344tzung bei Sinusanregung}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{DFT-Spektren von \040bei TM = sin\(2f t\)}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Leistungsdichtespektren von \040bei TM = sin\(2ft\)}{section.2}% 4
+\BOOKMARK [1][-]{section.3}{Spektren von \040aus Gyro-Integration bei Sinusanregung}{}% 5
+\BOOKMARK [2][-]{subsection.3.1}{DFT-Spektren von \040bei TM = sin\(2ft\)}{section.3}% 6
+\BOOKMARK [2][-]{subsection.3.2}{Leistungsdichtespektren von \040bei TM = sin\(2ft\)}{section.3}% 7

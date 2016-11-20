@@ -1,12 +1,8 @@
 \select@language {ngerman}
-\contentsline {section}{\numberline {1}Dynamische St\IeC {\"o}rungen}{2}{section.1}
-\contentsline {subsection}{\numberline {1.1}Messplots $y_{11}=-tan(\varphi )$}{2}{subsection.1.1}
-\contentsline {subsubsection}{\numberline {1.1.1}Verlauf von $\varphi $ bei $T_M = sin(2\pi \cdot f \cdot t)$}{2}{subsubsection.1.1.1}
-\contentsline {subsubsection}{\numberline {1.1.2}DFT-Spektren von $\varphi $ bei $T_M = sin(2\pi \cdot f \cdot t)$}{3}{subsubsection.1.1.2}
-\contentsline {subsubsection}{\numberline {1.1.3}Autokorelleation von $\varphi $ bei $T_M = sin(2\pi \cdot f\cdot t)$}{4}{subsubsection.1.1.3}
-\contentsline {subsubsection}{\numberline {1.1.4}Leistungsdichtespektren von $\varphi $ bei $T_M = sin(2\pi \cdot f\cdot t)$}{5}{subsubsection.1.1.4}
-\contentsline {subsection}{\numberline {1.2}Simulationplots $varphi$}{6}{subsection.1.2}
-\contentsline {subsubsection}{\numberline {1.2.1}Verlauf von $\varphi $ bei $T_M = sin(2\pi \cdot f \cdot t)$}{6}{subsubsection.1.2.1}
-\contentsline {subsubsection}{\numberline {1.2.2}DFT-Spektren von $\varphi $ bei $T_M = sin(2\pi \cdot f \cdot t)$}{7}{subsubsection.1.2.2}
-\contentsline {subsubsection}{\numberline {1.2.3}Autokorelleation von $\varphi $ bei $T_M = sin(2\pi \cdot f\cdot t)$}{8}{subsubsection.1.2.3}
-\contentsline {subsubsection}{\numberline {1.2.4}Leistungsdichtespektren von $\varphi $ bei $T_M = sin(2\pi \cdot f\cdot t)$}{9}{subsubsection.1.2.4}
+\contentsline {section}{\numberline {1}Spektren bei Konstant- und Nullsignal}{2}{section.1}
+\contentsline {section}{\numberline {2}Spektren von $\varphi $ aus Winkelsch\IeC {\"a}tzung bei Sinusanregung}{3}{section.2}
+\contentsline {subsection}{\numberline {2.1}DFT-Spektren von $\varphi $ bei $T_M = sin(2\pi \cdot f \cdot t)$}{3}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Leistungsdichtespektren von $\varphi $ bei $T_M = sin(2\pi \cdot f\cdot t)$}{5}{subsection.2.2}
+\contentsline {section}{\numberline {3}Spektren von $\varphi $ aus Gyro-Integration bei Sinusanregung}{7}{section.3}
+\contentsline {subsection}{\numberline {3.1}DFT-Spektren von $\varphi $ bei $T_M = sin(2\pi \cdot f\cdot t)$}{7}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Leistungsdichtespektren von $\varphi $ bei $T_M = sin(2\pi \cdot f\cdot t)$}{9}{subsection.3.2}

@@ -62,7 +62,7 @@ for k = 1:11
    plot(t{k}, phi_11{k}); grid;
    xlabel('$Zeit [s]$', 'interpreter', 'latex');
    ylabel('$\varphi [^\circ]$', 'interpreter', 'latex');
-   title(strcat('Frequenz ', num2str(freqArr(k)), ' Amplitude 0.05Nm'));
+   title(horzcat('Frequenz ', num2str(freqArr(k)), 'Hz Amplitude 0.05Nm'));
    print(strcat('plots/phi_sinefreq_', freqName{k}), '-depsc');
 end
 
@@ -87,7 +87,7 @@ df2  = fa/n2;
 f    = -fa/2+df2/2:df2:fa/2-df2/2;
 figure;
 stem(f, abs(PHI2)); grid;
-xlabel('$Frequenz [Hz]$'); ylabel('|DFT| []'); 
+xlabel('Frequenz [Hz]'); ylabel('|DFT|'); 
 title('FFT-Spektrum der Schwingung mit 1Hz');
 print('plots/dft_sinefreq_1', '-depsc');
 
@@ -100,7 +100,7 @@ df3  = fa/n3;
 f3   = -fa/2+df3/2:df3:fa/2-df3/2;
 figure;
 stem(f3, abs(PHI3)); grid;
-xlabel('$Frequenz [Hz]$'); ylabel('|DFT| []'); 
+xlabel('Frequenz [Hz]'); ylabel('|DFT|'); 
 title('FFT-Spektrum der Schwingung mit 2Hz');
 print('plots/dft_sinefreq_2', '-depsc');
 
@@ -113,7 +113,7 @@ df4  = fa/n4;
 f4   = -fa/2+df4/2:df4:fa/2-df4/2;
 figure;
 stem(f4, abs(PHI4)); grid; 
-xlabel('$Frequenz [Hz]$'); ylabel('|DFT| []'); 
+xlabel('Frequenz [Hz]'); ylabel('|DFT|'); 
 title('FFT-Spektrum der Schwingung mit 3Hz');
 print('plots/dft_sinefreq_3', '-depsc');
 
@@ -126,7 +126,7 @@ df5  = fa/n5;
 f5   = -fa/2+df5/2:df5:fa/2-df5/2;
 figure;
 stem(f5, abs(PHI5)); grid;
-xlabel('$Frequenz [Hz]$'); ylabel('|DFT| []'); 
+xlabel('Frequenz [Hz]'); ylabel('|DFT|'); 
 title('FFT-Spektrum der Schwingung mit 4Hz');
 print('plots/dft_sinefreq_4', '-depsc');
 
@@ -139,7 +139,7 @@ df6  = fa/n6;
 f6   = -fa/2+df6/2:df6:fa/2-df6/2;
 figure;
 stem(f6, abs(PHI6)); grid;
-xlabel('$Frequenz [Hz]$'); ylabel('|DFT| []'); 
+xlabel('Frequenz [Hz]'); ylabel('|DFT|'); 
 title('FFT-Spektrum der Schwingung mit 5Hz');
 print('plots/dft_sinefreq_5', '-depsc');
 
@@ -151,7 +151,7 @@ PHI7 = fftshift(fft(phi7));
 df7  = fa/n7;
 f7   = -fa/2+df7/2:df7:fa/2-df7/2;
 figure; stem(f7, abs(PHI7)); grid;
-xlabel('$Frequenz [Hz]$'); ylabel('|DFT| []'); 
+xlabel('Frequenz [Hz]'); ylabel('|DFT|'); 
 title('FFT-Spektrum der Schwingung mit 6Hz');
 print('plots/dft_sinefreq_6', '-depsc');
 
@@ -163,7 +163,7 @@ PHI8 = fftshift(fft(phi8));
 df8  = fa/n8;
 f8   = -fa/2+df8/2:df8:fa/2-df8/2;
 figure; stem(f8, abs(PHI8)); grid;
-xlabel('$Frequenz [Hz]$'); ylabel('|DFT| []'); 
+xlabel('Frequenz [Hz]'); ylabel('|DFT|'); 
 title('FFT-Spektrum der Schwingung mit 7Hz');
 print('plots/dft_sinefreq_7', '-depsc');
 
@@ -175,7 +175,7 @@ PHI9 = fftshift(fft(phi9));
 df9  = fa/n9;
 f9   = -fa/2+df9/2:df9:fa/2-df9/2;
 figure; stem(f9, abs(PHI9)); grid;
-xlabel('$Frequenz [Hz]$'); ylabel('|DFT| []'); 
+xlabel('Frequenz [Hz]'); ylabel('|DFT|'); 
 title('FFT-Spektrum der Schwingung mit 8Hz');
 print('plots/dft_sinefreq_8', '-depsc');
 
@@ -187,7 +187,7 @@ PHI10 = fftshift(fft(phi10));
 df10  = fa/n10;
 f10   = -fa/2+df10/2:df10:fa/2-df10/2;
 figure; stem(f10, abs(PHI10)); grid;
-xlabel('$Frequenz [Hz]$'); ylabel('|DFT| []'); 
+xlabel('Frequenz [Hz]'); ylabel('|DFT|');  
 title('FFT-Spektrum der Schwingung mit 9Hz');
 print('plots/dft_sinefreq_9', '-depsc');
 
@@ -199,7 +199,7 @@ PHI11 = fftshift(fft(phi11));
 df11  = fa/n11;
 f11   = -fa/2+df11/2:df11:fa/2-df11/2;
 figure; stem(f11, abs(PHI11)); grid;
-xlabel('$Frequenz [Hz]$'); ylabel('|DFT| []'); 
+xlabel('Frequenz [Hz]'); ylabel('|DFT|'); 
 title('FFT-Spektrum der Schwingung mit 10Hz');
 print('plots/dft_sinefreq_10', '-depsc');
 
