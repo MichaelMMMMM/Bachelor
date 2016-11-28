@@ -33,7 +33,7 @@ b_subs = [(-1)/(I_KO+m_r*l_M^2), (I_GO)/(I_RM*(I_KO+m_r*l_M^2))];
       
 %Setup nominator and denomiantor of the transfer functions for the partial
 %expansion
-nom_phi = [b_subs(1) 0];
+nom_phi = [b_subs(1) -a_subs(3)*b_subs(2)+a_subs(4)*b_subs(1)];
 den_phi = [1, (-a_subs(2)-a_subs(4)),...
            (a_subs(2)*a_subs(3)+a_subs(2)*a_subs(4)-a_subs(1)),...
            (a_subs(1)*a_subs(3)+a_subs(1)*a_subs(4))];
@@ -50,8 +50,8 @@ G_phi = 0;
 G_psi = 0;
 
 for k = 1:length(r_phi)
-    G_phi = G_phi + r_phi(1)/(s-p_phi(1));
-    G_psi = G_psi + r_psi(1)/(s-p_psi(1));
+    G_phi = G_phi + r_phi(k)/(s-p_phi(k));
+    G_psi = G_psi + r_psi(k)/(s-p_psi(k));
 end
 
 FMat = subs(FMat, [a1 a2 a3 a4], a_subs);
