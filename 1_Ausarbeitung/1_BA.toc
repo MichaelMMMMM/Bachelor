@@ -1,6 +1,7 @@
 \select@language {ngerman}
 \contentsline {section}{\numberline {1}Modellbildung W\IeC {\"u}rfelseite}{2}{section.1}
-\contentsline {section}{\numberline {2}Sensorik}{5}{section.2}
-\contentsline {subsection}{\numberline {2.1}St\IeC {\"o}rgr\IeC {\"o}\IeC {\ss }en}{8}{subsection.2.1}
-\contentsline {subsubsection}{\numberline {2.1.1}Untersuchung der statischen St\IeC {\"o}rungen}{9}{subsubsection.2.1.1}
-\contentsline {subsubsection}{\numberline {2.1.2}Diskrete Fourier-Transformation (DFT)}{9}{subsubsection.2.1.2}
+\contentsline {subsection}{\numberline {1.1}Zustandsraumdarstellung}{4}{subsection.1.1}
+\contentsline {section}{\numberline {2}Sensorik}{7}{section.2}
+\contentsline {subsection}{\numberline {2.1}Untersuchung der Messsysteme f\IeC {\"u}r $\mathaccentV {dot}05F{\varphi }$}{8}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Ermittlung von $\varphi $}{8}{subsection.2.2}
+\contentsline {section}{\numberline {3}Herleitung/Interpretation Fourier-Spektren}{11}{section.3}

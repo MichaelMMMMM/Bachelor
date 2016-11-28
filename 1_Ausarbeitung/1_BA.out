@@ -1,5 +1,6 @@
 \BOOKMARK [1][-]{section.1}{Modellbildung W\374rfelseite}{}% 1
-\BOOKMARK [1][-]{section.2}{Sensorik}{}% 2
-\BOOKMARK [2][-]{subsection.2.1}{St\366rgr\366\337en}{section.2}% 3
-\BOOKMARK [3][-]{subsubsection.2.1.1}{Untersuchung der statischen St\366rungen}{subsection.2.1}% 4
-\BOOKMARK [3][-]{subsubsection.2.1.2}{Diskrete Fourier-Transformation \(DFT\)}{subsection.2.1}% 5
+\BOOKMARK [2][-]{subsection.1.1}{Zustandsraumdarstellung}{section.1}% 2
+\BOOKMARK [1][-]{section.2}{Sensorik}{}% 3
+\BOOKMARK [2][-]{subsection.2.1}{Untersuchung der Messsysteme f\374r }{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.2}{Ermittlung von }{section.2}% 5
+\BOOKMARK [1][-]{section.3}{Herleitung/Interpretation Fourier-Spektren}{}% 6

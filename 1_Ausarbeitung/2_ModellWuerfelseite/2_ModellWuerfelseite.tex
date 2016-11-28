@@ -112,3 +112,133 @@ F_1 + F^*_1 = 0 \hspace{5pt} \rightarrow \hspace{5pt} (I^{K/O}+I^{R/M}+m_R\cdot 
 \begin{equation}
 F_2 + F^*_2 = 0 \hspace{5pt} \rightarrow \hspace{5pt} I^{R/M} \cdot \ddot{\psi} = T_M - C_{\psi} \cdot \dot{\psi} - I^{R/M} \cdot \ddot{\varphi}
 \end{equation}
+
+\subsection{Zustandsraumdarstellung}
+Ein beliebiges Differentialgleichungssystem kann in ein System von Differentialgleichungen 1. Ordnung transformiert werden. Dadurch lässt sich die so genannte Zustandsraumdarstellung bestimmen, welche erhebliche Vorteile in der Systemanalyse und dem bei Reglerentwurf mit sich bringt. Ausgangspunkt zur Bestimmung dieser Darstellung ist die Definition des Zustandvektors $\bs{x}$. Für die Würfelseite wird folgende Definition verwendet.
+\begin{equation}
+\bs{x} = \begin{pmatrix}
+x_1 \\ x_2 \\ x_3
+\end{pmatrix} \equiv \begin{pmatrix}
+\varphi \\ \dot{\varphi} \\ \dot{\psi}
+\end{pmatrix}
+\end{equation}
+
+Mit Hilfe der Zustände können die linearisierten Bewegungsgleichungen in ein System aus drei Differentialgleichungen erster Ordnung umgeschrieben werden. Zusätzlich muss hierfür der Eingangsvektor $\bs{u}$ definiert werden, der in diesem Fall lediglich aus dem Motormoment $T_M$ besteht.
+\begin{equation}
+u \equiv T_M
+\end{equation}
+\begin{equation}
+\begin{split}
+\dot{x_1} &= x_2 \\
+\dot{x_2} &= \frac{m_G \cdot g \cdot l_M \cdot x_1 - C_{\varphi}\cdot x_2 + C_{\psi} - u }{I^{K/O}+m_r\cdot l^2_{M}} \\
+\dot{x_3} &= \frac{I^{G/O}\cdot(T_M - C_{\psi}\cdot x_3)}{I^{R/M}(I^{K/O}+m_R\cdot l^2_{M})}-\frac{m_G\cdot g \cdot l_C \cdot x_1 - C_{\varphi}\cdot x_2}{I^{K/O}+m_r \cdot l^2_M}
+\end{split}
+\end{equation}
+
+Dieses Gleichungssystem lässt sich in die folgende, vektorielle Form umschreiben, welche die erste Gleichung der Zustandsraumdarstellung ist.
+
+\begin{equation}
+\dot{\bs{x}}=\bs{A}\cdot \bs{x}+\bs{B}\cdot \bs{u}
+\end{equation}
+\begin{equation}
+\bs{A} = \begin{pmatrix}
+ 0 & 1 & 0 \\
+ \frac{m_G\cdot g\cdot l_C}{I^{K/O}+m_r\cdot l^2_M} & 
+ \frac{-C_{\varphi}}{I^{K/O}+m_r\cdot l^2_M} &
+ \frac{C_{\psi}}{I^{K/O}+m_r\cdot l^2_M} \\
+ \frac{-m_G\cdot g \cdot l_C}{I^{K/O}+m_r\cdot l^2_M} &
+ \frac{C_{\varphi}}{I^{K/O}+m_r\cdot l^2_M} &
+ \frac{C_{\psi}}{I^{G/O}(I^{K/O}+m_r\cdot l^2_M)}
+\end{pmatrix}
+\hspace{35pt}
+\bs{B} = \begin{pmatrix}
+0 \\ \frac{1}{I^{K/O}+m_r\cdot l^2_M} \\ \frac{I^{G/O}}{I^{R/M}(I^{K/O}+m_r \cdot l^2_M}
+\end{pmatrix}
+\end{equation}
+
+Die Matrizen $\bs{A}$ und $\bs{B}$ heißen System- bzw. Eingangsmatrix und stellen den Zusammenhang zwischen des Zustand- und Eingangsvektors zu der zeitlichen Änderung des Zustandvektors dar.
+Im nächsten Schritt wird der Ausgangsvektor $\bs{y}$ definiert. Hierfür werden die Ausgangsmatrix $\bs{C}$ und die Durchgangsmatrix $\bs{D}$ bestimmt, welche den Einfluss des Zustands- und Eingangsvektors auf die Ausgangsgrößen wiedergeben. In dem Fall der Würfelseite primär der Ausfallwinkel $\varphi$ geregelt werden, welcher somit als Ausgangsgröße aufgeführt wird. Zusätzlich soll die Geschwindigkeit der Schwungmasse $\dot{\psi}$ minimiert werden, weshalb diese Größe ebenfalls im Ausgangsvektor enthalten ist. einzige Ausgangsgröße dar.
+\begin{equation}
+\bs{y} = \begin{pmatrix}
+\varphi \\ \dot{\psi}
+\end{pmatrix}
+\end{equation}
+\begin{equation}
+\bs{y} = \bs{C} \cdot \bs{x} + \bs{D} \cdot \bs{u}
+\end{equation}
+\begin{equation}
+\bs{C} = \begin{pmatrix}
+1 & 0 & 0 \\ 0 & 0 & 1
+\end{pmatrix}
+\hspace{35pt}
+\bs{D} = \begin{pmatrix}
+0
+\end{pmatrix}
+\end{equation}
+Als nächstes stellt sich die Frage, wie aus der Zustandsraumdarstellung die Lösung der Bewegungsgleichungen bestimmt werden können. Hierfür kann nach (RT2, S.6 ff.) der Exponentialansatz für einzelne Differentialgleichungen auf die vektorielle Zustandsraumdarstellung übertragen werden.
+\begin{equation}
+\bs{x} = e^{\bs{A}\cdot t} \cdot \bs{x}_0 + \int^t_0 e^{\bs{A}(t - \tau)} \bs{B}\cdot \bs{u}(\tau) d\tau
+\end{equation}
+Die Matrix-Exponentialfunktion $e^{\bs{A}\cdot t}$ heißt Fundamentalmatrix $\Phi(t)$. Für die Herleitung der folgenden Definition sei ebenfalls auf (RT2, S.6 ff.) verwiesen.
+\begin{equation}
+\Phi(t) = e^{\bs{A}\cdot t} = \sum^{\infty}_{k=0} \bs{A}^k \cdot \frac{t^k}{k!}
+\end{equation}
+Mit Hilfe der Fundamentalmatrix kann einerseits die homogene Lösung $\bs{x}_h$ des Zustandraums bestimmt werden.
+\begin{equation}
+\bs{x}_h(t) = \Phi(t)\cdot \bs{x}_0 \hspace{35pt} \vert \hspace{15pt} \bs{x}_0 = \bs{x}(t=0)
+\end{equation}
+Diese die Eigenbewegung des Systems, welche von den Anfangswerten der Zustände abhängt. Andererseits kann die partikuläre Lösung $\bs{x}_p$ berechnet werden, welche die, durch die Eingangsgrößen verursachte, Systembewegung wiedergibt.
+\begin{equation}
+\bs{x}_p(t) = \int^t_0 \Phi(t-\tau)\cdot \bs{B}\cdot \bs{u}(\tau)d\tau
+\end{equation}
+Neben dem Verlauf der Zustandsvektors $\bs{x}$ spielt der Zusammenhang der Eingangs- und Ausgangsgrößen eine zentrale Rolle. Dieser wird von der Übertragungsfunktion $g(t)$ bzw., bei Mehrgrößensystemen, der Übertragungsmatrix $\bs{G}(t)$ beschrieben.
+Die zweite Gleichung der Zustandsraumdarstellung führt zu dem Verlauf des Ausgangvektors $\bs{y}(t)$. Setzt man die Lösung für $\bs{x}(t)$ ein ergibt sich:
+\begin{equation}
+\bs{y}(t) = \bs{C}\Phi(t)\bs{x}_0 + \int^t_0 \bs{C}\Phi(t-\tau)\bs{B}\bs{u}(\tau)d\tau
+\end{equation}
+Durch die folgende Definition der Übertragungsmatrix $\bs{G}(t)$ lässt sich diese Gleichung weiter vereinfachen.
+\begin{equation}
+\bs{y}(t) = \bs{C}\Phi(t)\bs{x}_0 + \int^t_0 \bs{G}(t-\tau)\bs{u}(\tau)d\tau \hspace{35pt} \vert \hspace{15pt} \bs{G}(t) = \bs{C}\Phi(t)\bs{B}+\bs{D}\delta(t)
+\end{equation}
+Die Lösung des Ausgangvektors setzt sich ebenfalls aus der homogenen Lösung
+\begin{equation}
+\bs{y}_h(t) = \bs{C}\Phi(t)\bs{x}_0
+\end{equation}
+und der partikulären Lösung, welche sich aus dem Faltungsintegral der Übertraungsmatrix und des Eingangsvektors ergibt.
+\begin{equation}
+\bs{y}_p(t) = \int^t_0 \bs{G}(t-\tau)\bs{u}(\tau)d\tau = \bs{G}(t)*\bs{u}(t)
+\end{equation}
+Die obigen Darstellungen zeigen, dass mit Hilfe der Fundamental- und Übergangsmatrix sowohl die homogenen als auch partikulären Lösungen des Zustands- und Ausgangsvektors berechnet werden können. Das bedeutet, dass sie das vollständige Systemverhalten wiedergeben. Deshalb sollen im nächsten Schritt weitere Methoden untersucht werden um die beiden Matrizen zu ermitteln.
+
+Durch die Laplace-Transformation der Zustandsraumdarstellung ergeben sich die folgenden Gleichungen im Bildbereich.
+\begin{equation}
+s\bs{X}(t) - \bs{x}_0 = \bs{A}\bs{X}(s) + \bs{B}\bs{U}(s)
+\end{equation}
+\begin{equation}
+\bs{Y}(s) = \bs{C}\bs{X}(s)+\bs{D}\bs{U}(s)
+\end{equation}
+Aus der ersten Gleichung lässt sich die Lösung des Zustandvektors im Bildbereich ermitteln.
+\begin{equation}
+\bs{X}(s) = (s\cdot \bs{I} - \bs{A})^{-1}\bs{x}_0 + (s\cdot\bs{I}-\bs{A})^{-1}\bs{B}\bs{U}(s)
+\end{equation}
+Vergleicht man diese Gleichung mit der Lösung im Zeitbereich so ergibt sich für die Laplace-Transformierte der Fundamentalmatrix:
+\begin{equation}
+\mathcal{L}(\Phi(t)) = \bs{\Phi}(s) = (s\cdot\bs{I}-\bs{A})^{-1}
+\end{equation}
+Somit kann nun auch die Übertragungsmatrix im Bildbereich berechnet werden.
+\begin{equation}
+\mathcal{L}(\bs{G}(t)) = \bs{G}(s) = \bs{C}\bs{\Phi}(s)\bs{B}+\bs{D}
+\end{equation}
+Mit Hilfe der Berechnungsvorschriften im Bildbereich können nun auch die Fundamental- und Übertragungsmatrix der Würfelseite bestimmt werden. Es sei allerdings angemerkt, dass die Berechnung, welche im Vergleich zu den Vorschriften im Zeitbereich relativ einfach ist, nur mit Hilfe von Hilfsmitteln wie MATLAB durchzuführen ist. Auch die Darstellung der symbolischen Wert führt zu kaum interpretierbaren Ergebnissen, weshalb die ermittelten Werte für die Systemgrößen verwendet werden.
+\begin{equation}
+\bs{\Phi}(s) = \begin{pmatrix}
+
+\end{pmatrix}
+\end{equation}
+\begin{equation}
+\bs{G}(s)= \begin{pmatrix}
+\frac{17,0}{s+9,7}+\frac{-16,0}{s-7,9}+\frac{-1,0}{s+0,3} \\
+\frac{169,8}{s+9,7}+\frac{122,1}{s-7,9}+\frac{8558,6}{s+0,3}
+\end{pmatrix}
+\end{equation}
+In den Darstellung ist leicht zu erkennen, dass das System über Pole verfügt, welche in der rechten Halbebene liegen, und somit instabil ist. 
