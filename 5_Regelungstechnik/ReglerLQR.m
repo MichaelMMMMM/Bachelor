@@ -56,3 +56,36 @@ Bg = B*V;
 sFMat = inv(s*eye(3)-A+B*(-F));
 sG    = Cg*sFMat*Bg;
 ssZRD = ss(Ag,Bg,Cg,Dg);
+
+%Test der Rückführung des Ausgangvektors
+F = sym('F', 'real');
+F_ = [0,0;0,F];
+
+P = det(s*eye(3)-Ag-Bg*F_*Cg);
+pole = solve(P == 0, s);
+
+FValues    = -50:1:50;
+poleValues = subs(pole, F, FValues);
+
+subplot(3,1,1);
+plot(FValues, double(abs(vpa(poleValues(1,:),2)))); grid;
+title('Betrag des ersten Pols');
+subplot(3,1,2);
+plot(FValues, double(abs(vpa(poleValues(2,:),2)))); grid;
+title('Betrag des zweiten Pols');
+subplot(3,1,3);
+plot(FValues, double(abs(vpa(poleValues(3,:),2)))); grid;
+title('Betrag des dritten Pols');
+
+absSum = (double(abs(vpa(poleValues(1,:),2)))+double(abs(vpa(poleValues(2,:),2)))+double(abs(vpa(poleValues(3,:),2))));
+figure;
+plot(FValues, absSum); grid;
+
+F_ = [0, 0;0,-17];
+
+Ac = Ag+Bg*F_*Cg;
+Bc = [0;0;0];
+Cc = Cg;
+Dc = D;
+
+casZRD = ss(Ac,Bc,Cc,Dc);
