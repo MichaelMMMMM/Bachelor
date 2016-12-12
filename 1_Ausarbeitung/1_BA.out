@@ -1,6 +1,10 @@
 \BOOKMARK [1][-]{section.1}{Modellbildung W\374rfelseite}{}% 1
 \BOOKMARK [2][-]{subsection.1.1}{Zustandsraumdarstellung}{section.1}% 2
-\BOOKMARK [1][-]{section.2}{Sensorik}{}% 3
-\BOOKMARK [2][-]{subsection.2.1}{Untersuchung der Messsysteme f\374r }{section.2}% 4
-\BOOKMARK [2][-]{subsection.2.2}{Ermittlung von }{section.2}% 5
-\BOOKMARK [1][-]{section.3}{Herleitung/Interpretation Fourier-Spektren}{}% 6
+\BOOKMARK [1][-]{section.2}{Regelungstechnik}{}% 3
+\BOOKMARK [2][-]{subsection.2.1}{Entwurf der Reglermatrix bold0mu mumu FF2005/06/28 ver: 1.3 subfig packageFFFF}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.2}{Entwurf des Vorfilters bold0mu mumu VV2005/06/28 ver: 1.3 subfig packageVVVV}{section.2}% 5
+\BOOKMARK [2][-]{subsection.2.3}{Entwurf eines kaskadierten Regelkreises}{section.2}% 6
+\BOOKMARK [1][-]{section.3}{Sensorik}{}% 7
+\BOOKMARK [2][-]{subsection.3.1}{Untersuchung der Messsysteme f\374r }{section.3}% 8
+\BOOKMARK [2][-]{subsection.3.2}{Ermittlung von }{section.3}% 9
+\BOOKMARK [1][-]{section.4}{Herleitung/Interpretation Fourier-Spektren}{}% 10

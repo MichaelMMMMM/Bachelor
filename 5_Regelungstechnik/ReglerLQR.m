@@ -56,3 +56,80 @@ Bg = B*V;
 sFMat = inv(s*eye(3)-A+B*(-F));
 sG    = Cg*sFMat*Bg;
 ssZRD = ss(Ag,Bg,Cg,Dg);
+
+%Simulation und Plot der homogenen Lösung
+x0     = [degtorad(5);0;0];
+[y,t]  = initial(ssZRD, x0);
+t      = t';
+phi    = (y(:,1))';
+psi__d = (y(:,2))';
+
+figure; plot(t(1:2000), radtodeg(phi(1:2000))); grid; xlabel('Zeit [s]', 'interpreter', 'latex');
+ylabel('$\varphi [^\circ]$', 'interpreter', 'latex');
+title('Verlauf von $\varphi$ bei  $\varphi_0=5^\circ$', 'interpreter', 'latex');
+%print('plots/x0_phi', '-depsc');
+
+figure; plot(t, radtodeg(psi__d)); grid; xlabel('Zeit [s]', 'interpreter', 'latex');
+ylabel('$\dot{\psi} [^\circ/s]$', 'interpreter', 'latex');
+title('Verlauf von $\dot{\psi}$ bei $\varphi_0=5^\circ$', 'interpreter', 'latex');
+%print ('plots/x0_psi__d', '-depsc');
+
+%Kaskadierter Regelkreis
+F1 = sym('F1', 'real');
+F2 = sym('F2', 'real');
+F_  = [0, 0; F1, F2];
+
+Ac = Ag+Bg*F_*Cg;
+P  = det(s*eye(3)-Ac);
+myPoles = solve(P==0);
+FMatc = inv(s*eye(3)-Ac);
+yFMatc = collect(C*FMatc);
+
+
+p1 = myPoles(1);
+p2 = myPoles(2);
+p3 = myPoles(3);
+
+F1vals = -50:1:50;
+F2vals = (F1vals)';
+
+ p1Vals = vpa(subs(p1, F1, F1vals),3);
+ p1Vals = vpa(subs(p1Vals, F2, F2vals),3);
+ p2Vals = vpa(subs(p2, F1, F1vals),3);
+ p2Vals = vpa(subs(p2Vals, F2, F2vals),3);
+ p3Vals = vpa(subs(p3, F1, F1vals),3);
+ p3Vals = vpa(subs(p3Vals, F2, F2vals),3);
+ 
+ [X,Y] = meshgrid(F1vals);
+ figure; mesh(X,Y,double(real(p1Vals))); title('Pol 1 Verlauf');
+ xlabel('F1'); ylabel('F2'); zlabel('Realteil Pol 1');
+ figure; mesh(X,Y,double(real(p2Vals))); title('Pol 2 Verlauf');
+ xlabel('F1'); ylabel('F2'); zlabel('Realteil Pol 2');
+ figure; mesh(X,Y,double(real(p3Vals))); title('Pol 3 Verlauf');
+ xlabel('F1'); ylabel('F2'); zlabel('Realteil Pol 3');
+
+
+F_ = [0,0;0,-17];
+Ac = Ag+Bg*F_*Cg;
+Bc = [0,0;0,0;0,0];
+Cc = Cg;
+Dc = Dg;
+
+
+ssRKc = ss(Ac,Bc,Cc,Dc);
+%Simulation und Plot der homogenen Lösung
+x0     = [degtorad(5);0;0];
+[y,t]  = initial(ssRKc, x0);
+t      = t';
+phi    = (y(:,1))';
+psi__d = (y(:,2))';
+
+figure; plot(t, radtodeg(phi)); grid; xlabel('Zeit [s]', 'interpreter', 'latex');
+ylabel('$\varphi [^\circ]$', 'interpreter', 'latex');
+title('Verlauf von $\varphi$ bei  $\varphi_0=5^\circ$', 'interpreter', 'latex');
+print('plots/x0_phi_kaskadiert', '-depsc');
+
+figure; plot(t, radtodeg(psi__d)); grid; xlabel('Zeit [s]', 'interpreter', 'latex');
+ylabel('$\dot{\psi} [^\circ/s]$', 'interpreter', 'latex');
+title('Verlauf von $\dot{\psi}$ bei $\varphi_0=5^\circ$', 'interpreter', 'latex');
+print ('plots/x0_psi__d_kaskadiert', '-depsc');
