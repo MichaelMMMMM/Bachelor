@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.4.17)  10 DEC 2016 14:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.4.17)  14 DEC 2016 15:35
 entering extended mode
 **./1_BA.tex
 (1_BA.tex
@@ -818,7 +818,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
 
-<2_ModellWuerfelseite/img/ModellWuerfelseite.pdf, id=74, 963.6pt x 542.025pt>
+<2_ModellWuerfelseite/img/ModellWuerfelseite.pdf, id=80, 963.6pt x 542.025pt>
 File: 2_ModellWuerfelseite/img/ModellWuerfelseite.pdf Graphic file (type pdf)
 
 <use 2_ModellWuerfelseite/img/ModellWuerfelseite.pdf>
@@ -913,7 +913,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
 
-<4_Regelungstechnik/img/GRK_1.pdf, id=161, 963.6pt x 542.025pt>
+<4_Regelungstechnik/img/GRK_1.pdf, id=167, 963.6pt x 542.025pt>
 File: 4_Regelungstechnik/img/GRK_1.pdf Graphic file (type pdf)
 
 <use 4_Regelungstechnik/img/GRK_1.pdf>
@@ -1380,18 +1380,18 @@ Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 111.
 [8]
 Package epstopdf Info: Source file: <4_Regelungstechnik/img/x0_phi.eps>
-(epstopdf)                    date: 2016-12-02 14:22:42
-(epstopdf)                    size: 78657 bytes
+(epstopdf)                    date: 2016-12-12 05:57:14
+(epstopdf)                    size: 81649 bytes
 (epstopdf)             Output file: <4_Regelungstechnik/img/x0_phi-eps-converte
 d-to.pdf>
-(epstopdf)                    date: 2016-12-02 14:25:08
+(epstopdf)                    date: 2016-12-12 05:57:14
 (epstopdf)                    size: 28857 bytes
 (epstopdf)             Command: <epstopdf --outfile=4_Regelungstechnik/img/x0_p
 hi-eps-converted-to.pdf 4_Regelungstechnik/img/x0_phi.eps>
 (epstopdf)             \includegraphics on input line 121.
 Package epstopdf Info: Output file is already uptodate.
 
-<4_Regelungstechnik/img/x0_phi-eps-converted-to.pdf, id=207, 360.34625pt x 303.
+<4_Regelungstechnik/img/x0_phi-eps-converted-to.pdf, id=213, 360.34625pt x 303.
 1325pt>
 File: 4_Regelungstechnik/img/x0_phi-eps-converted-to.pdf Graphic file (type pdf
 )
@@ -1400,18 +1400,18 @@ Package pdftex.def Info: 4_Regelungstechnik/img/x0_phi-eps-converted-to.pdf use
 d on input line 121.
 (pdftex.def)             Requested size: 198.45662pt x 166.9454pt.
 Package epstopdf Info: Source file: <4_Regelungstechnik/img/x0_psi__d.eps>
-(epstopdf)                    date: 2016-12-02 14:22:43
-(epstopdf)                    size: 214758 bytes
+(epstopdf)                    date: 2016-12-12 05:57:14
+(epstopdf)                    size: 225280 bytes
 (epstopdf)             Output file: <4_Regelungstechnik/img/x0_psi__d-eps-conve
 rted-to.pdf>
-(epstopdf)                    date: 2016-12-02 14:25:09
+(epstopdf)                    date: 2016-12-12 05:57:14
 (epstopdf)                    size: 64926 bytes
 (epstopdf)             Command: <epstopdf --outfile=4_Regelungstechnik/img/x0_p
 si__d-eps-converted-to.pdf 4_Regelungstechnik/img/x0_psi__d.eps>
 (epstopdf)             \includegraphics on input line 122.
 Package epstopdf Info: Output file is already uptodate.
 
-<4_Regelungstechnik/img/x0_psi__d-eps-converted-to.pdf, id=208, 375.4025pt x 30
+<4_Regelungstechnik/img/x0_psi__d-eps-converted-to.pdf, id=214, 375.4025pt x 30
 6.14375pt>
 File: 4_Regelungstechnik/img/x0_psi__d-eps-converted-to.pdf Graphic file (type 
 pdf)
@@ -1429,7 +1429,7 @@ Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 163.
  [9 <./4_Regelungstechnik/img/x0_phi-eps-converted-to.pdf> <./4_Regelungstechni
 k/img/x0_psi__d-eps-converted-to.pdf>]
-<4_Regelungstechnik/img/GRK_2.pdf, id=226, 963.6pt x 542.025pt>
+<4_Regelungstechnik/img/GRK_2.pdf, id=232, 963.6pt x 542.025pt>
 File: 4_Regelungstechnik/img/GRK_2.pdf Graphic file (type pdf)
 
 <use 4_Regelungstechnik/img/GRK_2.pdf>
@@ -1447,11 +1447,11 @@ Package babel Info: Redefining ngerman shorthand "~
  [10 <./4_Regelungstechnik/img/GRK_2.pdf>]
 Package epstopdf Info: Source file: <4_Regelungstechnik/img/x0_phi_kaskadiert.e
 ps>
-(epstopdf)                    date: 2016-12-02 16:07:17
-(epstopdf)                    size: 45899 bytes
+(epstopdf)                    date: 2016-12-12 05:57:14
+(epstopdf)                    size: 47092 bytes
 (epstopdf)             Output file: <4_Regelungstechnik/img/x0_phi_kaskadiert-e
 ps-converted-to.pdf>
-(epstopdf)                    date: 2016-12-02 16:13:35
+(epstopdf)                    date: 2016-12-12 05:57:14
 (epstopdf)                    size: 17206 bytes
 (epstopdf)             Command: <epstopdf --outfile=4_Regelungstechnik/img/x0_p
 hi_kaskadiert-eps-converted-to.pdf 4_Regelungstechnik/img/x0_phi_kaskadiert.eps
@@ -1459,7 +1459,7 @@ hi_kaskadiert-eps-converted-to.pdf 4_Regelungstechnik/img/x0_phi_kaskadiert.eps
 (epstopdf)             \includegraphics on input line 196.
 Package epstopdf Info: Output file is already uptodate.
 
-<4_Regelungstechnik/img/x0_phi_kaskadiert-eps-converted-to.pdf, id=250, 362.353
+<4_Regelungstechnik/img/x0_phi_kaskadiert-eps-converted-to.pdf, id=256, 362.353
 74pt x 303.1325pt>
 File: 4_Regelungstechnik/img/x0_phi_kaskadiert-eps-converted-to.pdf Graphic fil
 e (type pdf)
@@ -1470,11 +1470,11 @@ Package pdftex.def Info: 4_Regelungstechnik/img/x0_phi_kaskadiert-eps-converted
 (pdftex.def)             Requested size: 198.45662pt x 166.02495pt.
 Package epstopdf Info: Source file: <4_Regelungstechnik/img/x0_psi__d_kaskadier
 t.eps>
-(epstopdf)                    date: 2016-12-02 16:07:17
-(epstopdf)                    size: 47981 bytes
+(epstopdf)                    date: 2016-12-12 05:57:14
+(epstopdf)                    size: 49255 bytes
 (epstopdf)             Output file: <4_Regelungstechnik/img/x0_psi__d_kaskadier
 t-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-12-02 16:13:35
+(epstopdf)                    date: 2016-12-12 05:57:14
 (epstopdf)                    size: 18701 bytes
 (epstopdf)             Command: <epstopdf --outfile=4_Regelungstechnik/img/x0_p
 si__d_kaskadiert-eps-converted-to.pdf 4_Regelungstechnik/img/x0_psi__d_kaskadie
@@ -1482,7 +1482,7 @@ rt.eps>
 (epstopdf)             \includegraphics on input line 197.
 Package epstopdf Info: Output file is already uptodate.
 
-<4_Regelungstechnik/img/x0_psi__d_kaskadiert-eps-converted-to.pdf, id=251, 377.
+<4_Regelungstechnik/img/x0_psi__d_kaskadiert-eps-converted-to.pdf, id=257, 377.
 41pt x 306.14375pt>
 File: 4_Regelungstechnik/img/x0_psi__d_kaskadiert-eps-converted-to.pdf Graphic 
 file (type pdf)
@@ -1491,28 +1491,52 @@ file (type pdf)
 Package pdftex.def Info: 4_Regelungstechnik/img/x0_psi__d_kaskadiert-eps-conver
 ted-to.pdf used on input line 197.
 (pdftex.def)             Requested size: 198.45662pt x 160.98012pt.
-)
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 28.
+(babel)             in language  on input line 201.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 28.
+(babel)             in language  on input line 201.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 28.
+(babel)             in language  on input line 224.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 28.
+(babel)             in language  on input line 224.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 224.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 224.
+ [11 <./4_Regelungstechnik/img/x0_phi_kaskadiert-eps-converted-to.pdf> <./4_Reg
+elungstechnik/img/x0_psi__d_kaskadiert-eps-converted-to.pdf>]
+Overfull \hbox (21.96909pt too wide) in paragraph at lines 277--279
+\OT1/cmr/m/n/10 Auch die cha-rak-te-ris-ti-sche Glei-chung und so-mit die Po-le
+ des Sys-tems k[]onnen mit Hil-fe der z-Transformierten
+ []
 
-[11 <./4_Regelungstechnik/img/x0_phi_kaskadiert-eps-converted-to.pdf> <./4_Rege
-lungstechnik/img/x0_psi__d_kaskadiert-eps-converted-to.pdf>]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 281.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 281.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 281.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 281.
+[12])
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 28.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 28.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 28.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 28.
+ [13]
 \openout2 = `3_Sensorik/3_Sensorik.aux'.
 
-
-(3_Sensorik/3_Sensorik.tex
+ (3_Sensorik/3_Sensorik.tex
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
 
-<3_Sensorik/img/SensorAnordnung.pdf, id=263, 963.6pt x 542.025pt>
+<3_Sensorik/img/SensorAnordnung.pdf, id=298, 963.6pt x 542.025pt>
 File: 3_Sensorik/img/SensorAnordnung.pdf Graphic file (type pdf)
 
 <use 3_Sensorik/img/SensorAnordnung.pdf>
@@ -1527,7 +1551,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 42.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 42.
- [12
+ [14
 
 
  <./3_Sensorik/img/SensorAnordnung.pdf>]
@@ -1568,7 +1592,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 92.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 92.
-[13]
+[15]
 Package epstopdf Info: Source file: <3_Sensorik/img/empfindlichkeit_phi.eps>
 (epstopdf)                    date: 2016-11-06 17:19:55
 (epstopdf)                    size: 248462 bytes
@@ -1581,7 +1605,7 @@ eit_phi-eps-converted-to.pdf 3_Sensorik/img/empfindlichkeit_phi.eps>
 (epstopdf)             \includegraphics on input line 103.
 Package epstopdf Info: Output file is already uptodate.
 
-<3_Sensorik/img/empfindlichkeit_phi-eps-converted-to.pdf, id=300, 365.365pt x 3
+<3_Sensorik/img/empfindlichkeit_phi-eps-converted-to.pdf, id=334, 365.365pt x 3
 03.1325pt>
 File: 3_Sensorik/img/empfindlichkeit_phi-eps-converted-to.pdf Graphic file (typ
 e pdf)
@@ -1601,7 +1625,7 @@ to.pdf>
 (epstopdf)             \includegraphics on input line 111.
 Package epstopdf Info: Output file is already uptodate.
 
-<3_Sensorik/img/snr_phi_plot-eps-converted-to.pdf, id=301, 1445.4pt x 724.7075p
+<3_Sensorik/img/snr_phi_plot-eps-converted-to.pdf, id=335, 1445.4pt x 724.7075p
 t>
 File: 3_Sensorik/img/snr_phi_plot-eps-converted-to.pdf Graphic file (type pdf)
  <use 3_Sensorik/img/snr_phi_plot-eps-converted-to.pdf>
@@ -1620,7 +1644,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 127.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 127.
-[14 <./3_Sensorik/img/empfindlichkeit_phi-eps-converted-to.pdf>])
+[16 <./3_Sensorik/img/empfindlichkeit_phi-eps-converted-to.pdf>])
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 30.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1629,7 +1653,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 30.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 30.
- [15 <./3_Sensorik/img/snr_phi_plot-eps-converted-to.pdf>]
+ [17 <./3_Sensorik/img/snr_phi_plot-eps-converted-to.pdf>]
 \openout2 = `9_Spektren.aux'.
 
  (9_Spektren.tex
@@ -1645,7 +1669,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 40.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 40.
- [16
+ [18
 
 
 ])
@@ -1657,7 +1681,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 32.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 32.
- [17]
+ [19]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 34.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 34.
 
@@ -1667,14 +1691,14 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 34.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 34.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 34.
 Package rerunfilecheck Info: File `1_BA.out' has not changed.
-(rerunfilecheck)             Checksum: 5585DFD2854B6725801CC85ABB2824DC;806.
+(rerunfilecheck)             Checksum: B1C3A701BCEDBCCDA8F532F2574F9152;887.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 34.
  ) 
 Here is how much of TeX's memory you used:
- 9970 strings out of 493634
- 152166 string characters out of 3136055
- 272611 words of memory out of 3000000
- 12997 multiletter control sequences out of 15000+200000
+ 9994 strings out of 493634
+ 152484 string characters out of 3136055
+ 272614 words of memory out of 3000000
+ 12998 multiletter control sequences out of 15000+200000
  13635 words of font info for 48 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  68i,33n,98p,1266b,395s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1696,9 +1720,9 @@ cal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/ich/A
 ppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/
 Users/ich/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy
 7.pfb>
-Output written on 1_BA.pdf (17 pages, 1169475 bytes).
+Output written on 1_BA.pdf (19 pages, 1185259 bytes).
 PDF statistics:
- 433 PDF objects out of 1000 (max. 8388607)
- 131 named destinations out of 1000 (max. 500000)
- 155 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 473 PDF objects out of 1000 (max. 8388607)
+ 154 named destinations out of 1000 (max. 500000)
+ 163 words of extra memory for PDF output out of 10000 (max. 10000000)
 

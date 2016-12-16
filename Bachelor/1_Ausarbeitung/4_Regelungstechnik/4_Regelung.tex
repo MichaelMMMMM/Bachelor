@@ -197,3 +197,107 @@ Die folgenden Darstellung zeigen den Verlauf der Zustandsgrößen bei $\bs{x}_0=
 \includegraphics[width=0.45\linewidth]{4_Regelungstechnik/img/x0_psi__d_kaskadiert}
 \caption{Verlauf von $\varphi$ und $\dot{\psi}$, Quelle: eigene Darstellung}
 \end{figure}
+
+\subsection{Einfluss des digitalen Reglers}
+Bisher wurde der Regelkreis als zeitkontinuierliches System betrachtet. Allerdings wird der Regler selbst mit Hilfe eines Digitalrechners implementiert. Deshalb werden im in diesem Abschnitt die Einflüsse der diskreten Systeme auf den Regelkreis untersucht und anschließend Methoden erläutert um den diskreten Regelkreis zu analysieren.
+
+Der Rechner erfasst den Verlauf des Zustandsvektors an äquidistanten Zeitpunkten $k\cdot T$. Dies entspricht einem $\delta$-Abtaster der die kontinuierliche Funktion des Zustandvektors in die Zahlenfolge $\bs{x}(k)$ überführt.
+Auch der Verlauf des Eingangsignales $u(t)$ wird durch den Rechner beeinflusst. Der Stellwert des Regelkreises wird an den Abtastzeitpunkten berechnet und ist somit eine Zahlenfolge. Um diese in eine kontinuierliche Funktion zu überführen wird ein Halteglied nullter Ordnung verwendet. Dadurch entsteht eine Treppenfunktion, deren Wert an den Abtastzeitpunkten aktualisiert wird. Das Verhalten des Haltegliedes wird von der folgenden Übertragungsfunktion beschrieben.
+\begin{equation}
+H_0(s)=\frac{1-e^{T\cdot s}}{s}
+\end{equation}
+Die Analyse von kontinuierlichen Systemen wird durch die Laplace-Transformation stark erleichtert. Für diskrete Systeme stellt die z-Transformation das diskrete Analogon dar. Allerdings muss der vollständige Regelkreis als diskretes System dargestellt werden um die z-Transformation anwenden zu können. Das heißt, dass die Bewegung der Würfelseite, welche ein kontinuerliches System darstellt, mit Hilfe von Differenzengleichungen beschrieben werden muss. Dadurch besteht eine diskrete Beschreibung des gesamten Reglekreises, wodurch die z-Transformation zur Analyse genutzt werden kann.
+
+Die Modellierung des kontinuierlichen Systems erfolgt mit Hilfe der Zustandsraumdarstellung. Diese kann auch für diskrete Systeme formuliert werden, welche sich aus Differenzengleichungen erster Gleichung zusammensetzt. Das heißt bei den Eingangs-, Zustands- und Ausgangsvektor handelt es sich nicht mehr um kontinuierliche Zeitfunktionen sondern um diskrete Zahlenfolgen.
+
+
+Die Matrizen $\bs{A}_d$, $\bs{B}_d$, $\bs{C}_d$ und $\bs{D}_d$ stellen die diskrete System-, Eingangs-, Ausgangs- und Durchgangsmatrix dar. Somit kann das kontinuierliche System in ein diskretes überführt werden, wenn der Zusammenhang der Matrizen der kontinuierlichen und diskreten Zustandsraumdarstellung hergestellt wurde. Hierfür soll zunächst die Lösung des kontinuierlichen Zustandvektors $\bs{x}(t)$ betrachtet werden.
+\begin{equation}
+\bs{x}(t) = e^{\bs{A}t}\bs{x}(t_0)+\int^t_0 e^{\bs{A}(t-\tau)}\bs{B}\bs{u}(\tau)d\tau
+\end{equation}
+Der Verlauf zwischen zwei Abtastzeitpunkten $(k+1)T$ und $kT$ wird berechnet indem $t_0=kT$ und $t=(k+1)T$ gilt.
+\begin{equation}
+\begin{split}
+\bs{x}(t) &= e^{\bs{A}(k+1)T}\bs{x}(kT)+\int^{(k+1)T}_{kT} e^{\bs{A}([k+1]T-\tau)}\bs{B}\bs{u}(\tau)d\tau \\
+ &=  e^{\bs{A}(k+1)T}\bs{x}(kT)+e^{\bs{A}T}\int^{T}_{0} e^{\bs{A}(kT-\tau)}\bs{B}\bs{u}(\tau)d\tau
+\end{split}
+\end{equation}
+Für die Lösung des Integrals muss der Verlauf von $\bs{u}$ bekannt sein. Das Halteglied nullter Ordnung führt die diskrete Zahlenfolge der Stellgröße in eine Treppenfunktion über. Das heißt $\bs{u}$ ist im Verlauf einer Abtastperiode konstant.
+\begin{equation}
+\bs{u}(kT+t)=\bs{u}(kT) \hspace{35pt} | \hspace{15pt} 0 \leq t < T
+\end{equation}
+Somit folgt für die Lösung der Gleichung:
+\begin{equation}
+x([k+1]T)=e^{\bs{A}T}\bs{x}(kT)+e^{\bs{A}T}(\bs{I}-e^{-\bs{A}T})\bs{A}^{-1}\bs{B}\bs{u}(kT)
+\end{equation}
+Diese Lösung stellt den Zusammenhang zwischen den kontinuierlichen Differentialgleichungen und der diskreten Differenzengleichung dar. Vergleicht man die obige Lösung mit der der kontinuierlichen Form lassen sich die folgenden Zusammenhänge ablesen.
+\begin{equation}
+\bs{A}_d=e^{\bs{A}T} \hspace{35pt}\bs{B}_d=(e^{\bs{A}T}-\bs{I})\bs{A}^{-1}\bs{B}
+\end{equation}
+Mit der Definition
+\begin{equation}
+\bs{S}=T\sum^{\infty}_{v=0}\bs{A}^v \frac{T^v}{(v+1)!}
+\end{equation}
+kann die Definition vereinfacht und die Berechnung der inversen Matrix vermieden werden.
+\begin{equation}
+\bs{A}_d = \bs{I}+\bs{S}\bs{A} \hspace{35pt} \bs{B}_d=\bs{S}\bs{B}
+\end{equation}
+Somit beschreibt die Matrix $\bs{S}$ einerseits den Einfluss des Halteglieds auf den Regelkreis, andererseits ermöglicht sie die Überführung in eine diskrete Darstellung. Diese besteht aus einem System von Differenzengleichungen erster Ordnung. Die Lösung des Zustandsvektors ist somit eine Zahlenfolge.
+\begin{equation}
+\begin{split}
+\bs{x}(1) &= \bs{A}_d\bs{x}(0)+\bs{B}_d\bs{u}(0) \\
+\vdots & \\
+\bs{x}(k)&=\bs{A}^k_d\bs{x}(0)+\sum^{k-1}_{j=0}\bs{A}^{k-j-1}_d \bs{B}_d\bs{u}(j)
+\end{split}
+\end{equation}
+Diese setzt sich ebenfalls aus einer homogenen und partikulären Lösung zusammen. Der Vergleich mit der kontinuierlichen Lösung liefert die folgenden Definitionen für die diskrete Fundamentalmatrix $\bs{\Phi}$.
+\begin{equation}
+\bs{\Phi}(k) = \bs{A}^k_d
+\end{equation}
+\begin{equation}
+\bs{x}(k) = \bs{\Phi}(k)\bs{x}(0)+\sum^{k-1}_{j=0} \bs{\Psi}(k-j-1)\bs{B}_d\bs{u}(j)
+\end{equation}
+\begin{equation}
+\bs{y}(k) = \bs{C}\bs{\Phi}(k)\bs{x}(0)+\bs{C}_d\sum^{k-1}_{j=0}[ \bs{\Phi}(k-j-1)\bs{B}_d\bs{u}(j)] +\bs{D}_d\bs{u}(k)
+\end{equation}
+Die Berechnung der Fundamental- und Übertragungsmatrix kann ebenfalls im Bildbereich berechnet werden. Hierfür wird nun die z-Transformation angewandt.
+\begin{equation}
+\begin{split}
+z\bs{X}(z)-z\bs{x}(0) &= \bs{A}_d\bs{X}(z)+\bs{B}_d\bs{U}(z) \\
+\bs{X}(z)(z\cdot\bs{I}-\bs{A}_d) &= z\cdot\bs{x}(0)+\bs{B}_d\bs{U}(z) \\
+\bs{X}(z) &= (z\cdot\bs{I}-\bs{A}_d)^{-1}z\cdot \bs{x}(0) + (z\cdot\bs{I}-\bs{A}_d)^{-1}\bs{B}_d\bs{U}(z)
+\end{split}
+\end{equation}
+Der Vergleich mit den Laplace-Transformierten Lösungen der kontinuerlichen Funktionen liefert die folgenden Definitionen.
+\begin{equation}
+\bs{\Phi}(z)=(z\cdot\bs{I}-\bs{A}_d)^{-1}\cdot z
+\end{equation}
+\begin{equation}
+\bs{G}(z) = \bs{C}_d(z\cdot\bs{I}-\bs{A}_d)^{-1}\bs{B}_d+\bs{D}_d
+\end{equation}
+Auch die charakteristische Gleichung und somit die Pole des Systems können mit Hilfe der z-Transformierten der Zustandsraumdarstellung bestimmt werden.
+\begin{equation}
+\vert z \cdot \bs{I} - \bs{A}_d \vert = 0
+\end{equation}
+Somit stehen nun äquivalente Methoden zur Untersuchung von diskreten Systemen bereit. Weshalb im nächsten Schritt der Zusammenhang zwischen den Polen $z_i$ des diskreten Systems und dessen Stabilitäts- bzw. Zeitverhalten hergestellt werden soll.
+
+Die Herleitung der z-Transformation basiert auf der folgenden Substitution.
+\begin{equation}
+z=e^{T\cdot s} \hspace{35pt}\vert \hspace{15pt} s=\sigma+\omega j
+\end{equation}
+Wobei die Position von $z$ in der imaginären Zahlenebene mit Hilfe von Polarkoordinaten beschrieben wird. $\vert z \vert$ beschreibt dabei den Abstand des Punktes zum Ursprung und $\psi$ beschreibt den Winkel zwischen dem Punkt und der reellen Achse entgegen des Uhrzeigersinnes. Die Koordinaten werden über den folgenden Zusammenhang berechnet.
+\begin{equation}
+\vert z\vert = e^{T\cdot \sigma} \hspace{15pt} \phi = \omega \cdot T
+\end{equation}
+Die Stabilität eines kontinuierlichen Systems ist gegeben, wenn die Realteile $\sigma_i$ seiner Pole $s_i$ negativen sind. Daraus folgt, dass 
+\begin{equation}
+\vert z_i \vert = e^{T\cdot \sigma_i} \overset{!}< 1 \hspace{35pt} \vert \hspace{15pt} \sigma_i \overset{!} < 0
+\end{equation}
+gelten muss. 
+Das Zeitverhalten eines kontinuierlichen Systems wird von dem Abstand seiner Pole zu der imaginären Achse definiert. Hierbei gilt je kleiner der Realteil eines stabilen Pols ist, desto schneller konvergiert das System gegen seinen Endwert. Folglich führen diskrete Pole mit kleinen Beträgen zu einem schnellerem System.
+
+Die zweite Koordinate der diskreten Pole wird durch den Imaginärteil der Variable $s$ definiert. Bei einem komplex konjugierten Polpaar definieren diese die Eigenfrequenz des Systems. Allerdings lässt sich diese nicht eindeutig aus der Abbildung der diskreten Polen $z_i$ in der Zahlenebene rekonstruieren, da nach
+\begin{equation}
+\psi = \omega \cdot T
+\end{equation}
+unendliche viele Punkte in der s-Ebene der Position des diskreten Pols entsprechen.

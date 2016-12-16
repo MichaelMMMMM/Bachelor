@@ -5,7 +5,8 @@
 \contentsline {subsection}{\numberline {2.1}Entwurf der Reglermatrix $\boldsymbol {F}$}{7}{subsection.2.1}
 \contentsline {subsection}{\numberline {2.2}Entwurf des Vorfilters $\boldsymbol {V}$}{8}{subsection.2.2}
 \contentsline {subsection}{\numberline {2.3}Entwurf eines kaskadierten Regelkreises}{9}{subsection.2.3}
-\contentsline {section}{\numberline {3}Sensorik}{12}{section.3}
-\contentsline {subsection}{\numberline {3.1}Untersuchung der Messsysteme f\IeC {\"u}r $\mathaccentV {dot}05F{\varphi }$}{13}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Ermittlung von $\varphi $}{13}{subsection.3.2}
-\contentsline {section}{\numberline {4}Herleitung/Interpretation Fourier-Spektren}{16}{section.4}
+\contentsline {subsection}{\numberline {2.4}Einfluss des digitalen Reglers}{11}{subsection.2.4}
+\contentsline {section}{\numberline {3}Sensorik}{14}{section.3}
+\contentsline {subsection}{\numberline {3.1}Untersuchung der Messsysteme f\IeC {\"u}r $\mathaccentV {dot}05F{\varphi }$}{15}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Ermittlung von $\varphi $}{15}{subsection.3.2}
+\contentsline {section}{\numberline {4}Herleitung/Interpretation Fourier-Spektren}{18}{section.4}
