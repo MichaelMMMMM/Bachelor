@@ -10,3 +10,4 @@
 \contentsline {subsection}{\numberline {3.1}Untersuchung der Messsysteme f\IeC {\"u}r $\mathaccentV {dot}05F{\varphi }$}{15}{subsection.3.1}
 \contentsline {subsection}{\numberline {3.2}Ermittlung von $\varphi $}{15}{subsection.3.2}
 \contentsline {section}{\numberline {4}Herleitung/Interpretation Fourier-Spektren}{18}{section.4}
+\contentsline {section}{\numberline {5}3D-Modell}{20}{section.5}

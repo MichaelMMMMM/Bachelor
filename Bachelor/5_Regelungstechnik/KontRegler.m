@@ -57,7 +57,6 @@ sFMat = inv(s*eye(3)-A+B*(-F));
 sG    = Cg*sFMat*Bg;
 ssZRD = ss(Ag,Bg,Cg,Dg);
 
-<<<<<<< HEAD
 %Simulation und Plot der homogenen Lösung
 x0     = [degtorad(5);0;0];
 [y,t]  = initial(ssZRD, x0);
@@ -134,7 +133,7 @@ figure; plot(t, radtodeg(psi__d)); grid; xlabel('Zeit [s]', 'interpreter', 'late
 ylabel('$\dot{\psi} [^\circ/s]$', 'interpreter', 'latex');
 title('Verlauf von $\dot{\psi}$ bei $\varphi_0=5^\circ$', 'interpreter', 'latex');
 print ('plots/x0_psi__d_kaskadiert', '-depsc');
-=======
+
 %Test der Rückführung des Ausgangvektors
 F = sym('F', 'real');
 F_ = [0,0;0,F];
@@ -167,4 +166,3 @@ Cc = Cg;
 Dc = D;
 
 casZRD = ss(Ac,Bc,Cc,Dc);
->>>>>>> origin/master
