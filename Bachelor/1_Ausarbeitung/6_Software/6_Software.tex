@@ -1,0 +1,37 @@
+\section{Software}
+Wie bereits beschrieben wird der Regler auf einem digitalen Rechner realisiert. Somit muss eine SW-Anwendung entworfen werden, welche die Auswertung der Sensorik, Berechnung des Regelkreises und Ansteuerung der Aktorik übernimmt. Allerdings muss die SW-Infrastruktur neben dem Regler weitere Aufgaben erfüllen. Beispilsweise müssen im Entwicklungsverlauf verschiedene Versuche durchgeführt werden um die Sensoren zu justieren, Modellwerte zu bestimmen und Theorien zu widerlegen. Hierfür müssen Messdaten visualisiert und für folgende Untersuchungen gespeichert werden.
+Hierbei spielt die Informatik die Rolle der zugrunde liegenden Infrastruktur und beeinflusst somit erheblich die Effizienz des Entwicklungsprozesses. Eine durchdachte SW-Basis führt zwar zu einem deutlichen Mehraufwand, der sich allerdings durch die folgende Effizienzsteigerung mehr als bezahlt macht.
+Deshalb soll an dieser Stelle zunächst eine Grundstruktur vorgestellt werden, welche in verschiedenen mechatronischen Projekten verwendet werden kann. Im nächsten schritt wird diese Basis um die projektspezifischen Anforderungen und Funktionen, wie z.B. die vorgestellten Regelungskonzepte, erweitert. Als Ausgangspunkt wird die Idee der Komponentenarchitektur aus [WieTra] übernommen, wobei für jede zentrale Aufgabe ein logisches Geräte, eine so genannte Komponente, entworfen wird.
+Allerdings handelt es sich bei den in [WieTra] vorgestellten Ideen um Muster für die Entwicklung von umfangreichen Infotainment-Anwendungen im Automobilbereich. Weshalb sie die relativ trivialen Anforderung eines mechatronischen SW-Systems weit übertreffen und somit zu unnötig komplexen Anwendungen führen. Dennoch können die zugrunde liegenden Ideen wiederverwendet und in vereinfachter Form angewandt werden. 
+Wie bereits erwähnt besteht der erste Schritt darin, die Hauptaufgaben der Anwendung zu definieren und auf logische Komponenten zu verteilen.
+Hier ist zuerst die Reglerkomponente zu nennen, welche die Auswertung und Skalierung der Sensorik, die Berechnung des Regelkreises und Ansteuerung der Aktorik übernimmt. Des weiteren steuert diese Komponente den Kontroll- und Signalfluss in den verschiedenen Versuchen des Entwicklungsprozesses.
+Um eine komfortable Auswertung der Experimente und Analyse der Messdaten zu ermöglichen, müssen die Signale des Regelkreises an einen Host-PC übertragen und dort visualisiert werden. Des weiteren soll die Anwendung in der Lage sein Steuerbefehle zu empfangen, um beispielsweise Regler- oder Filterparameter festzulegen. Diese Aufgaben werden einer Kommunikations-Komponente zugeordnet, welche den Informationsaustausch zwischen der Regelungseinheit und einem Entwicklungs-PC ermöglicht.
+An dieser STelle sei angemekrt, dass die obigen Anforderungen für viele mechatronische Projekte gelten und somit auch der vorgestellte Lösungsansatz auf diese übertragen werden kann. Deshalb wird bei der folgenden Umsetzung der Konzepte in C++ darauf geachtet, dass projektspezifische Teile flexibel hinzugefügt und verändert werden können.
+
+\begin{figure}
+\caption{Übersicht der Komponenten, Quelle: eigene Darstellung}
+\end{figure}
+
+Die Realisierung der Komponenten erfolgt in der Form von Klassen, welche von der abstrakten Klasse \textit{AComponenteBase} erben. Diese erfüllt wiederum das Interface \textit{IRunnable}. Dadurch wird eine einheitliche Struktur der Komponenten geschaffen, welche die wesentlichen Elemente definiert.
+
+\begin{figure}
+\caption{Klassendiagramm der Komponenten, Quelle: eigene Darstellung}
+\end{figure}
+
+Um die unabhängige Abarbeitung der Komponenten zu ermöglichen werden diese in parallelen Threads ausgeführt. Diese werden las Instanzen der Klasse CThread erzeugt und gestartet, welche somit als Träger der Komponenten fungierteren (siehe [WieTra] für mehr Infos).
+
+
+Im nächsten Schritt muss eine Form des Datenaustausch zwischen den Komponenten etabliert werden. Hierfür werden Events verwendet, welche in Form von Nachrichten übertragen werden. Die Implementierung der Ereignisse erfolgt als Enumeration.
+
+%Codelisting Enumeration
+
+Die Nachrichten werden als Klassen aus einem Event und Feldern für Zusatzinformationen komponiert. Mit Hilfe von setter- ung getter-Methoden kann die Erzeugung und Auswertung von Nachrichten zusätzlich gesteuert werden.
+
+%Codelisting CMessage
+
+Ein großer Vorteil der Kommunikation mittels Nachrichten besteht darion, dass sie prozessorübergreifend eingesetzt werden können. Beispielsweise kann in der Client-Anwendung eine Nachricht instanziert werden, welche ein Event zur Auswahl des Reglers enthält. Diese Nachricht wird anschließend über die TCP/IP-Verbindung byteweise an die Zielapplikation gesendet. Hier wird die Nachricht von der Kommunikations-Komponente empfangen und an die Regelungs-Komponente weitergeleitet. Analog können Daten aus dem Regelkreis an die Client-Anwendung auf dem Host-Rechner übertragen werden.
+Die Erzeugung und Versendung erfolgt über einen Proxy, der Methoden für die auszuführenden Aktionen bereitstellt.
+
+%Codelisting Proxy
+
+Die Komponenten besitzen jeweils eine Queue, welche als Eingangspuffer für Nachrichten dient. Der Proxy kennt die Queues der Komponenten und legt neue Nachrichten in Abhängikeit des jeweiligen Events, in die Eingangslisten des Empfängers.

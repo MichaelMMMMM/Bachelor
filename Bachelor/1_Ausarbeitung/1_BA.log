@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.4.17)  20 DEC 2016 16:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.4.17)  2 JAN 2017 20:46
 entering extended mode
 **./1_BA.tex
 (1_BA.tex
@@ -569,6 +569,10 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 y"
 \bigstrutjot=\dimen132
 )
+("C:\Users\ich\AppData\Local\Programs\MiKTeX 2.9\tex\latex\setspace\setspace.st
+y"
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
 ("C:\Users\ich\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hyperref.st
 y"
 Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
@@ -675,7 +679,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip57
 )
-Package hyperref Info: Option `colorlinks' set `false' on input line 16.
+Package hyperref Info: Option `colorlinks' set `false' on input line 18.
 
 ("C:\Users\ich\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.st
 y"
@@ -700,23 +704,23 @@ g"))
 
 (0_Makros.tex) (1_BA.aux (2_ModellWuerfelseite/2_ModellWuerfelseite.aux)
 (4_Regelungstechnik/4_Regelung.aux) (3_Sensorik/3_Sensorik.aux) (9_Spektren.aux
-) (5_ModellWuerfel/5_ModellWuerfel.aux))
+) (5_ModellWuerfel/5_ModellWuerfel.aux) (6_Software/6_Software.aux))
 \openout1 = `1_BA.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
 
 ("C:\Users\ich\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.mkii
 "
@@ -738,7 +742,7 @@ Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box29
-Package hyperref Info: Link coloring OFF on input line 24.
+Package hyperref Info: Link coloring OFF on input line 26.
 
 ("C:\Users\ich\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\nameref.sty
 "
@@ -750,9 +754,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count136
 )
-LaTeX Info: Redefining \ref on input line 24.
-LaTeX Info: Redefining \pageref on input line 24.
-LaTeX Info: Redefining \nameref on input line 24.
+LaTeX Info: Redefining \ref on input line 26.
+LaTeX Info: Redefining \pageref on input line 26.
+LaTeX Info: Redefining \nameref on input line 26.
  (1_BA.out) (1_BA.out)
 \@outlinefile=\write4
 \openout4 = `1_BA.out'.
@@ -797,13 +801,13 @@ LaTeX Info: Redefining \nameref on input line 24.
 \openout5 = `1_BA.toc'.
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 26.
+(babel)             in language  on input line 28.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 26.
+(babel)             in language  on input line 28.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 26.
+(babel)             in language  on input line 28.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 26.
+(babel)             in language  on input line 28.
  [1
 
 
@@ -818,7 +822,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
 
-<2_ModellWuerfelseite/img/ModellWuerfelseite.pdf, id=86, 963.6pt x 542.025pt>
+<2_ModellWuerfelseite/img/ModellWuerfelseite.pdf, id=92, 963.6pt x 542.025pt>
 File: 2_ModellWuerfelseite/img/ModellWuerfelseite.pdf Graphic file (type pdf)
 
 <use 2_ModellWuerfelseite/img/ModellWuerfelseite.pdf>
@@ -826,16 +830,25 @@ Package pdftex.def Info: 2_ModellWuerfelseite/img/ModellWuerfelseite.pdf used o
 n input line 6.
 (pdftex.def)             Requested size: 264.61333pt x 250.08806pt.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 34.
+(babel)             in language  on input line 23.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 34.
+(babel)             in language  on input line 23.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 34.
+(babel)             in language  on input line 23.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 34.
+(babel)             in language  on input line 23.
  [2
 
  <./2_ModellWuerfelseite/img/ModellWuerfelseite.pdf>]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 65.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 65.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 65.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 65.
+ [3]
 Overfull \hbox (10.48184pt too wide) in paragraph at lines 70--71
 []\OT1/cmr/m/n/10 Das Mo-tor-mo-ment $[][]$ und das Reib-mo-ment $[][]$ wir-ken
  in um-ge-kehr-ter Rich-tung auf die W[]urfelseite.
@@ -848,27 +861,27 @@ e-won-nen. Folg-lich muss zu-letzt das Tr[]agheitsmoment
  []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 111.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 111.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 111.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 87.
-[3]
+(babel)             in language  on input line 111.
+[4]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 116.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 116.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 157.
+(babel)             in language  on input line 179.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 157.
+(babel)             in language  on input line 179.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 157.
+(babel)             in language  on input line 179.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 157.
- [4]
+(babel)             in language  on input line 179.
+ [5]
 Overfull \hbox (10.42479pt too wide) in paragraph at lines 193--196
 \OT1/cmr/m/n/10 gr[]oen ei-ne zen-tra-le Rol-le. Die-ser wird von der []Ubertr
 agungsfunktion $\OML/cmm/m/it/10 g\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m
@@ -876,14 +889,14 @@ agungsfunktion $\OML/cmm/m/it/10 g\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m
  []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 214.
+(babel)             in language  on input line 223.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 214.
+(babel)             in language  on input line 223.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 214.
+(babel)             in language  on input line 223.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 214.
-[5]
+(babel)             in language  on input line 223.
+[6]
 Overfull \hbox (14.27458pt too wide) in paragraph at lines 223--225
 \OT1/cmr/m/n/10 Vergleicht man die-se Glei-chung mit der L[]osung im Zeit-be-re
 ich so er-gibt sich f[]ur die Laplace-Transformierte
@@ -897,14 +910,14 @@ Overfull \hbox (49.23322pt too wide) in paragraph at lines 231--233
 
 )
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 26.
+(babel)             in language  on input line 28.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 26.
+(babel)             in language  on input line 28.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 26.
+(babel)             in language  on input line 28.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 26.
- [6]
+(babel)             in language  on input line 28.
+ [7]
 \openout2 = `4_Regelungstechnik/4_Regelung.aux'.
 
  (4_Regelungstechnik/4_Regelung.tex
@@ -913,7 +926,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
 
-<4_Regelungstechnik/img/GRK_1.pdf, id=173, 963.6pt x 542.025pt>
+<4_Regelungstechnik/img/GRK_1.pdf, id=184, 963.6pt x 542.025pt>
 File: 4_Regelungstechnik/img/GRK_1.pdf Graphic file (type pdf)
 
 <use 4_Regelungstechnik/img/GRK_1.pdf>
@@ -1138,14 +1151,14 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 33.
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 45.
+(babel)             in language  on input line 37.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 45.
+(babel)             in language  on input line 37.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 45.
+(babel)             in language  on input line 37.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 45.
-[7
+(babel)             in language  on input line 37.
+[8
 
 
  <./4_Regelungstechnik/img/GRK_1.pdf>]
@@ -1367,18 +1380,18 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 69.
 
 Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 86.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 86.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 86.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 86.
+[9]
+Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 99.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 99.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 111.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 111.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 111.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 111.
-[8]
 Package epstopdf Info: Source file: <4_Regelungstechnik/img/x0_phi.eps>
 (epstopdf)                    date: 2016-12-12 05:57:14
 (epstopdf)                    size: 81649 bytes
@@ -1391,7 +1404,7 @@ hi-eps-converted-to.pdf 4_Regelungstechnik/img/x0_phi.eps>
 (epstopdf)             \includegraphics on input line 121.
 Package epstopdf Info: Output file is already uptodate.
 
-<4_Regelungstechnik/img/x0_phi-eps-converted-to.pdf, id=219, 360.34625pt x 303.
+<4_Regelungstechnik/img/x0_phi-eps-converted-to.pdf, id=226, 360.34625pt x 303.
 1325pt>
 File: 4_Regelungstechnik/img/x0_phi-eps-converted-to.pdf Graphic file (type pdf
 )
@@ -1411,7 +1424,7 @@ si__d-eps-converted-to.pdf 4_Regelungstechnik/img/x0_psi__d.eps>
 (epstopdf)             \includegraphics on input line 122.
 Package epstopdf Info: Output file is already uptodate.
 
-<4_Regelungstechnik/img/x0_psi__d-eps-converted-to.pdf, id=220, 375.4025pt x 30
+<4_Regelungstechnik/img/x0_psi__d-eps-converted-to.pdf, id=227, 375.4025pt x 30
 6.14375pt>
 File: 4_Regelungstechnik/img/x0_psi__d-eps-converted-to.pdf Graphic file (type 
 pdf)
@@ -1419,23 +1432,39 @@ pdf)
 Package pdftex.def Info: 4_Regelungstechnik/img/x0_psi__d-eps-converted-to.pdf 
 used on input line 122.
 (pdftex.def)             Requested size: 198.45662pt x 161.84433pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 163.
+(babel)             in language  on input line 137.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 163.
+(babel)             in language  on input line 137.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 163.
+(babel)             in language  on input line 137.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 163.
- [9 <./4_Regelungstechnik/img/x0_phi-eps-converted-to.pdf> <./4_Regelungstechni
-k/img/x0_psi__d-eps-converted-to.pdf>]
-<4_Regelungstechnik/img/GRK_2.pdf, id=238, 963.6pt x 542.025pt>
+(babel)             in language  on input line 137.
+[10] <4_Regelungstechnik/img/GRK_2.pdf, id=239, 963.6pt x 542.025pt>
 File: 4_Regelungstechnik/img/GRK_2.pdf Graphic file (type pdf)
 
 <use 4_Regelungstechnik/img/GRK_2.pdf>
 Package pdftex.def Info: 4_Regelungstechnik/img/GRK_2.pdf used on input line 16
 7.
 (pdftex.def)             Requested size: 396.91325pt x 156.31566pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 177.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 177.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 177.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 177.
+[11 <./4_Regelungstechnik/img/x0_phi-eps-converted-to.pdf> <./4_Regelungstechni
+k/img/x0_psi__d-eps-converted-to.pdf>]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 188.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1444,7 +1473,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 188.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 188.
- [10 <./4_Regelungstechnik/img/GRK_2.pdf>]
+ [12 <./4_Regelungstechnik/img/GRK_2.pdf>]
 Package epstopdf Info: Source file: <4_Regelungstechnik/img/x0_phi_kaskadiert.e
 ps>
 (epstopdf)                    date: 2016-12-12 05:57:14
@@ -1459,7 +1488,7 @@ hi_kaskadiert-eps-converted-to.pdf 4_Regelungstechnik/img/x0_phi_kaskadiert.eps
 (epstopdf)             \includegraphics on input line 196.
 Package epstopdf Info: Output file is already uptodate.
 
-<4_Regelungstechnik/img/x0_phi_kaskadiert-eps-converted-to.pdf, id=262, 362.353
+<4_Regelungstechnik/img/x0_phi_kaskadiert-eps-converted-to.pdf, id=276, 362.353
 74pt x 303.1325pt>
 File: 4_Regelungstechnik/img/x0_phi_kaskadiert-eps-converted-to.pdf Graphic fil
 e (type pdf)
@@ -1482,7 +1511,7 @@ rt.eps>
 (epstopdf)             \includegraphics on input line 197.
 Package epstopdf Info: Output file is already uptodate.
 
-<4_Regelungstechnik/img/x0_psi__d_kaskadiert-eps-converted-to.pdf, id=263, 377.
+<4_Regelungstechnik/img/x0_psi__d_kaskadiert-eps-converted-to.pdf, id=277, 377.
 41pt x 306.14375pt>
 File: 4_Regelungstechnik/img/x0_psi__d_kaskadiert-eps-converted-to.pdf Graphic 
 file (type pdf)
@@ -1496,38 +1525,47 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 201.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 224.
+(babel)             in language  on input line 214.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 224.
+(babel)             in language  on input line 214.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 224.
+(babel)             in language  on input line 214.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 224.
- [11 <./4_Regelungstechnik/img/x0_phi_kaskadiert-eps-converted-to.pdf> <./4_Reg
+(babel)             in language  on input line 214.
+ [13 <./4_Regelungstechnik/img/x0_phi_kaskadiert-eps-converted-to.pdf> <./4_Reg
 elungstechnik/img/x0_psi__d_kaskadiert-eps-converted-to.pdf>]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 256.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 256.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 256.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 256.
+ [14]
 Overfull \hbox (21.96909pt too wide) in paragraph at lines 277--279
 \OT1/cmr/m/n/10 Auch die cha-rak-te-ris-ti-sche Glei-chung und so-mit die Po-le
  des Sys-tems k[]onnen mit Hil-fe der z-Transformierten
  []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 281.
+(babel)             in language  on input line 300.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 281.
+(babel)             in language  on input line 300.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 281.
+(babel)             in language  on input line 300.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 281.
-[12])
+(babel)             in language  on input line 300.
+[15])
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 28.
+(babel)             in language  on input line 30.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 28.
+(babel)             in language  on input line 30.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 28.
+(babel)             in language  on input line 30.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 28.
- [13]
+(babel)             in language  on input line 30.
+ [16]
 \openout2 = `3_Sensorik/3_Sensorik.aux'.
 
  (3_Sensorik/3_Sensorik.tex
@@ -1536,7 +1574,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
 
-<3_Sensorik/img/SensorAnordnung.pdf, id=304, 963.6pt x 542.025pt>
+<3_Sensorik/img/SensorAnordnung.pdf, id=322, 963.6pt x 542.025pt>
 File: 3_Sensorik/img/SensorAnordnung.pdf Graphic file (type pdf)
 
 <use 3_Sensorik/img/SensorAnordnung.pdf>
@@ -1544,14 +1582,14 @@ Package pdftex.def Info: 3_Sensorik/img/SensorAnordnung.pdf used on input line
 6.
 (pdftex.def)             Requested size: 264.61333pt x 250.08806pt.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 42.
+(babel)             in language  on input line 39.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 42.
+(babel)             in language  on input line 39.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 42.
+(babel)             in language  on input line 39.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 42.
- [14
+(babel)             in language  on input line 39.
+ [17
 
 
  <./3_Sensorik/img/SensorAnordnung.pdf>]
@@ -1569,9 +1607,19 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 64.
 
 Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 81.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 81.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 81.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 81.
+[18]
+Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 84.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 84.
+
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 84.
@@ -1584,15 +1632,6 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 84.
 
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 92.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 92.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 92.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 92.
-[15]
 Package epstopdf Info: Source file: <3_Sensorik/img/empfindlichkeit_phi.eps>
 (epstopdf)                    date: 2016-11-06 17:19:55
 (epstopdf)                    size: 248462 bytes
@@ -1605,7 +1644,7 @@ eit_phi-eps-converted-to.pdf 3_Sensorik/img/empfindlichkeit_phi.eps>
 (epstopdf)             \includegraphics on input line 103.
 Package epstopdf Info: Output file is already uptodate.
 
-<3_Sensorik/img/empfindlichkeit_phi-eps-converted-to.pdf, id=340, 365.365pt x 3
+<3_Sensorik/img/empfindlichkeit_phi-eps-converted-to.pdf, id=357, 365.365pt x 3
 03.1325pt>
 File: 3_Sensorik/img/empfindlichkeit_phi-eps-converted-to.pdf Graphic file (typ
 e pdf)
@@ -1613,6 +1652,10 @@ e pdf)
 Package pdftex.def Info: 3_Sensorik/img/empfindlichkeit_phi-eps-converted-to.pd
 f used on input line 103.
 (pdftex.def)             Requested size: 220.50887pt x 182.94937pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 Package epstopdf Info: Source file: <3_Sensorik/img/snr_phi_plot.eps>
 (epstopdf)                    date: 2016-11-12 15:03:00
 (epstopdf)                    size: 294238 bytes
@@ -1625,7 +1668,7 @@ to.pdf>
 (epstopdf)             \includegraphics on input line 111.
 Package epstopdf Info: Output file is already uptodate.
 
-<3_Sensorik/img/snr_phi_plot-eps-converted-to.pdf, id=341, 1445.4pt x 724.7075p
+<3_Sensorik/img/snr_phi_plot-eps-converted-to.pdf, id=358, 1445.4pt x 724.7075p
 t>
 File: 3_Sensorik/img/snr_phi_plot-eps-converted-to.pdf Graphic file (type pdf)
  <use 3_Sensorik/img/snr_phi_plot-eps-converted-to.pdf>
@@ -1637,23 +1680,33 @@ on input line 111.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 127.
+(babel)             in language  on input line 123.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 127.
+(babel)             in language  on input line 123.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 127.
+(babel)             in language  on input line 123.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 127.
-[16 <./3_Sensorik/img/empfindlichkeit_phi-eps-converted-to.pdf>])
+(babel)             in language  on input line 123.
+[19]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 30.
+(babel)             in language  on input line 145.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 30.
+(babel)             in language  on input line 145.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 30.
+(babel)             in language  on input line 145.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 30.
- [17 <./3_Sensorik/img/snr_phi_plot-eps-converted-to.pdf>]
+(babel)             in language  on input line 145.
+ [20 <./3_Sensorik/img/empfindlichkeit_phi-eps-converted-to.pdf> <./3_Sensorik/
+img/snr_phi_plot-eps-converted-to.pdf>])
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 32.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 32.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 32.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 32.
+ [21]
 \openout2 = `9_Spektren.aux'.
 
  (9_Spektren.tex
@@ -1662,73 +1715,106 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 40.
+(babel)             in language  on input line 30.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 40.
+(babel)             in language  on input line 30.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 40.
+(babel)             in language  on input line 30.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 40.
- [18
+(babel)             in language  on input line 30.
+ [22
 
 
 ])
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 32.
+(babel)             in language  on input line 34.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 32.
+(babel)             in language  on input line 34.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 32.
+(babel)             in language  on input line 34.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 32.
- [19]
+(babel)             in language  on input line 34.
+
+[23]
 \openout2 = `5_ModellWuerfel/5_ModellWuerfel.aux'.
 
-
-(5_ModellWuerfel/5_ModellWuerfel.tex
+ (5_ModellWuerfel/5_ModellWuerfel.tex
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 50.
+(babel)             in language  on input line 32.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 50.
+(babel)             in language  on input line 32.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 50.
+(babel)             in language  on input line 32.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 50.
- [20
+(babel)             in language  on input line 32.
+ [24
 
 
 ])
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 34.
+(babel)             in language  on input line 36.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 34.
+(babel)             in language  on input line 36.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 34.
+(babel)             in language  on input line 36.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 34.
- [21]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 36.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 36.
- (1_BA.aux
-(2_ModellWuerfelseite/2_ModellWuerfelseite.aux)
+(babel)             in language  on input line 36.
+ [25]
+\openout2 = `6_Software/6_Software.aux'.
+
+ (6_Software/6_Software.tex
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 29.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 29.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 29.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 29.
+[26
+
+
+]
+Overfull \hbox (23.12305pt too wide) in paragraph at lines 32--34
+[]\OT1/cmr/m/n/10 Ein groer Vor-teil der Kom-mu-ni-ka-ti-on mit-tels Nach-rich
+-ten be-steht dari-on, dass sie pro-zes-sor[]ubergreifend
+ []
+
+)
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 38.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 38.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 38.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 38.
+ [27]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 40.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 40.
+ (1_BA.aux (2_ModellWuerfelseite/2_ModellWuerfelseite.aux)
 (4_Regelungstechnik/4_Regelung.aux) (3_Sensorik/3_Sensorik.aux) (9_Spektren.aux
-) (5_ModellWuerfel/5_ModellWuerfel.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 36.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 36.
+) (5_ModellWuerfel/5_ModellWuerfel.aux) (6_Software/6_Software.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 40.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 40.
 Package rerunfilecheck Info: File `1_BA.out' has not changed.
-(rerunfilecheck)             Checksum: 9AC98DF9B69318DB86E75740799DCBB1;933.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 36.
+(rerunfilecheck)             Checksum: DDD27CEEBA9923362A28FE78BF1E7BDC;978.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 40.
  ) 
 Here is how much of TeX's memory you used:
- 10023 strings out of 493634
- 153017 string characters out of 3136055
- 273099 words of memory out of 3000000
- 13000 multiletter control sequences out of 15000+200000
- 13635 words of font info for 48 fonts, out of 3000000 for 9000
+ 10074 strings out of 493634
+ 153923 string characters out of 3136055
+ 276881 words of memory out of 3000000
+ 13029 multiletter control sequences out of 15000+200000
+ 13981 words of font info for 49 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  68i,33n,98p,1266b,395s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/ich/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/c
@@ -1748,10 +1834,11 @@ ams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/ich/AppData/Lo
 cal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/ich/A
 ppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/
 Users/ich/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy
-7.pfb>
-Output written on 1_BA.pdf (21 pages, 1196540 bytes).
+7.pfb><C:/Users/ich/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/cm/cmti10.pfb>
+Output written on 1_BA.pdf (27 pages, 1219802 bytes).
 PDF statistics:
- 506 PDF objects out of 1000 (max. 8388607)
- 173 named destinations out of 1000 (max. 500000)
- 171 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 546 PDF objects out of 1000 (max. 8388607)
+ 182 named destinations out of 1000 (max. 500000)
+ 179 words of extra memory for PDF output out of 10000 (max. 10000000)
 
