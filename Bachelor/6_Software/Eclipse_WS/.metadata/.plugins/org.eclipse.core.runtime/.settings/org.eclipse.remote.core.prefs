@@ -1,0 +1,8 @@
+connections/org.eclipse.remote.JSch/BBB/JSCH_ADDRESS_ATTR=192.168.9.1
+connections/org.eclipse.remote.JSch/BBB/JSCH_IS_PASSWORD_ATTR=true
+connections/org.eclipse.remote.JSch/BBB/JSCH_LOGIN_SHELL_COMMAND_ATTR=/bin/bb -l -c '{0}'
+connections/org.eclipse.remote.JSch/BBB/JSCH_PORT_ATTR=22
+connections/org.eclipse.remote.JSch/BBB/JSCH_TIMEOUT_ATTR=0
+connections/org.eclipse.remote.JSch/BBB/JSCH_USERNAME_ATTR=root
+connections/org.eclipse.remote.JSch/BBB/JSCH_USE_LOGIN_SHELL_ATTR=true
+eclipse.preferences.version=1

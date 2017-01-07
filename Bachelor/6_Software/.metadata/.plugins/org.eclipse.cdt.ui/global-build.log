@@ -1,0 +1,12 @@
+15:46:03 **** Incremental Build of configuration Debug for project Desktop_1D ****
+make all 
+Building file: ../CommComp/CServer.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Desktop_1D/CommComp" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Desktop_1D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"CommComp/CServer.d" -MT"CommComp/CServer.o" -o "CommComp/CServer.o" "../CommComp/CServer.cpp"
+Finished building: ../CommComp/CServer.cpp
+ 
+Building target: Desktop_1D
+Invoking: GCC C++ Linker
+g++  -o "Desktop_1D"  ./lib/AComponentBase.o ./lib/Assertion.o ./lib/CBinarySemaphore.o ./lib/CCountingSemaphore.o ./lib/CMessage.o ./lib/CMutex.o ./lib/CProxy.o ./lib/CThread.o  ./CommComp/CServer.o  ./main.o   -lpthread
+Finished building target: Desktop_1D
+ 

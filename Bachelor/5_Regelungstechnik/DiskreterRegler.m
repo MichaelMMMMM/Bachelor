@@ -93,3 +93,7 @@ subplot(3,1,2);
 plot(Fvals, abs(z2)); grid;
 subplot(3,1,3);
 plot(Fvals, abs(z3)); grid;
+
+poleSum = abs(z1)+abs(z2)+abs(z3);
+
+figure; plot(Fvals, poleSum); grid;

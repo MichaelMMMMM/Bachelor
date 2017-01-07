@@ -1,0 +1,8 @@
+/**
+ * @file	CSensorCalibration.cpp
+ * @author	Michael Meindl
+ * @date	5.1.2017
+ * @brief	Method definitions for CSensorCalibration.
+ */
+#include "CSensorCalibration.h"
+

@@ -1,0 +1,884 @@
+!SESSION 2017-01-05 09:31:44.465 -----------------------------------------------
+eclipse.buildId=4.6.1.M20160907-1200
+java.version=1.8.0_101
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 16 2017-01-05 09:32:00.769
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: Connect to dev.eclipse.org:443 [dev.eclipse.org/198.41.30.200] failed: connect timed out. ; version: 2.0.3.v20160905-1331
+!STACK 0
+org.apache.http.conn.ConnectTimeoutException: Connect to dev.eclipse.org:443 [dev.eclipse.org/198.41.30.200] failed: connect timed out
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:134)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:319)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.apache.http.client.fluent.Executor.execute(Executor.java:206)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.request(IO.java:205)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:68)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:103)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:244)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:125)
+	... 16 more
+
+!ENTRY org.eclipse.cdt.core 1 0 2017-01-05 09:33:09.783
+!MESSAGE Indexed 'BBB_1D' (0 sources, 0 headers) in 0.007 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.epp.mpc.core 4 0 2017-01-05 09:37:40.532
+!MESSAGE Failed to stream using org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport@7402a456 - falling back to org.eclipse.epp.internal.mpc.core.util.TransportFactory$1@1fdaa0d0: Connection failed
+
+This is most often caused by a problem with your internet connection. Please check your internet connection and retry.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Connection failed
+
+This is most often caused by a problem with your internet connection. Please check your internet connection and retry.
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.stream(HttpClientTransport.java:226)
+	at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.stream(FallbackTransportFactory.java:68)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:136)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:101)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:88)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.processSearchRequest(DefaultMarketplaceService.java:396)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.tagged(DefaultMarketplaceService.java:421)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.tagged(DefaultMarketplaceService.java:1)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService$2.doSearch(CachingMarketplaceService.java:234)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.performSearch(CachingMarketplaceService.java:249)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.tagged(CachingMarketplaceService.java:231)
+	at org.eclipse.epp.internal.mpc.ui.AskMarketPlaceForFileSupportStrategy$1.run(AskMarketPlaceForFileSupportStrategy.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.apache.http.conn.ConnectTimeoutException: Connect to marketplace.eclipse.org:80 [marketplace.eclipse.org/198.41.30.197] failed: connect timed out
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:134)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:319)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.ExecutorClientWrapper.execute(ExecutorClientWrapper.java:61)
+	at org.apache.http.client.fluent.Executor.execute(Executor.java:206)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.execute(HttpClientTransport.java:198)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.executeImpl(RequestTemplate.java:91)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.execute(RequestTemplate.java:50)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.stream(HttpClientTransport.java:211)
+	... 12 more
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:72)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:125)
+	... 27 more
+Contains: Connection failed
+
+This is most often caused by a problem with your internet connection. Please check your internet connection and retry.
+java.net.SocketTimeoutException: connect timed out
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:72)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:125)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:319)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.ExecutorClientWrapper.execute(ExecutorClientWrapper.java:61)
+	at org.apache.http.client.fluent.Executor.execute(Executor.java:206)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.execute(HttpClientTransport.java:198)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.executeImpl(RequestTemplate.java:91)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.execute(RequestTemplate.java:50)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.stream(HttpClientTransport.java:211)
+	at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.stream(FallbackTransportFactory.java:68)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:136)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:101)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:88)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.processSearchRequest(DefaultMarketplaceService.java:396)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.tagged(DefaultMarketplaceService.java:421)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.tagged(DefaultMarketplaceService.java:1)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService$2.doSearch(CachingMarketplaceService.java:234)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.performSearch(CachingMarketplaceService.java:249)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.tagged(CachingMarketplaceService.java:231)
+	at org.eclipse.epp.internal.mpc.ui.AskMarketPlaceForFileSupportStrategy$1.run(AskMarketPlaceForFileSupportStrategy.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.epp.mpc.core 4 0 2017-01-05 09:37:40.534
+!MESSAGE Connection failed
+
+This is most often caused by a problem with your internet connection. Please check your internet connection and retry.
+!STACK 0
+org.apache.http.conn.ConnectTimeoutException: Connect to marketplace.eclipse.org:80 [marketplace.eclipse.org/198.41.30.197] failed: connect timed out
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:134)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:319)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.ExecutorClientWrapper.execute(ExecutorClientWrapper.java:61)
+	at org.apache.http.client.fluent.Executor.execute(Executor.java:206)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.execute(HttpClientTransport.java:198)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.executeImpl(RequestTemplate.java:91)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.execute(RequestTemplate.java:50)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.stream(HttpClientTransport.java:211)
+	at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.stream(FallbackTransportFactory.java:68)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:136)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:101)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:88)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.processSearchRequest(DefaultMarketplaceService.java:396)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.tagged(DefaultMarketplaceService.java:421)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.tagged(DefaultMarketplaceService.java:1)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService$2.doSearch(CachingMarketplaceService.java:234)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.performSearch(CachingMarketplaceService.java:249)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.tagged(CachingMarketplaceService.java:231)
+	at org.eclipse.epp.internal.mpc.ui.AskMarketPlaceForFileSupportStrategy$1.run(AskMarketPlaceForFileSupportStrategy.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:72)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:125)
+	... 27 more
+!SUBENTRY 2 org.eclipse.epp.mpc.core 4 0 2017-01-05 09:37:40.535
+!MESSAGE Connection failed
+
+This is most often caused by a problem with your internet connection. Please check your internet connection and retry.
+!STACK 0
+java.net.SocketTimeoutException: connect timed out
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:72)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:125)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:319)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.ExecutorClientWrapper.execute(ExecutorClientWrapper.java:61)
+	at org.apache.http.client.fluent.Executor.execute(Executor.java:206)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.execute(HttpClientTransport.java:198)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.executeImpl(RequestTemplate.java:91)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.execute(RequestTemplate.java:50)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.stream(HttpClientTransport.java:211)
+	at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.stream(FallbackTransportFactory.java:68)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:136)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:101)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:88)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.processSearchRequest(DefaultMarketplaceService.java:396)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.tagged(DefaultMarketplaceService.java:421)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.tagged(DefaultMarketplaceService.java:1)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService$2.doSearch(CachingMarketplaceService.java:234)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.performSearch(CachingMarketplaceService.java:249)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.tagged(CachingMarketplaceService.java:231)
+	at org.eclipse.epp.internal.mpc.ui.AskMarketPlaceForFileSupportStrategy$1.run(AskMarketPlaceForFileSupportStrategy.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.epp.mpc.core 4 0 2017-01-05 09:37:40.535
+!MESSAGE Connection failed
+
+This is most often caused by a problem with your internet connection. Please check your internet connection and retry.
+!STACK 0
+java.net.SocketTimeoutException: connect timed out
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:72)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:125)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:319)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.ExecutorClientWrapper.execute(ExecutorClientWrapper.java:61)
+	at org.apache.http.client.fluent.Executor.execute(Executor.java:206)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.execute(HttpClientTransport.java:198)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.executeImpl(RequestTemplate.java:91)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.execute(RequestTemplate.java:50)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.stream(HttpClientTransport.java:211)
+	at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.stream(FallbackTransportFactory.java:68)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:136)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:101)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:88)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.processSearchRequest(DefaultMarketplaceService.java:396)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.tagged(DefaultMarketplaceService.java:421)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.tagged(DefaultMarketplaceService.java:1)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService$2.doSearch(CachingMarketplaceService.java:234)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.performSearch(CachingMarketplaceService.java:249)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.tagged(CachingMarketplaceService.java:231)
+	at org.eclipse.epp.internal.mpc.ui.AskMarketPlaceForFileSupportStrategy$1.run(AskMarketPlaceForFileSupportStrategy.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.epp.mpc.ui 4 0 2017-01-05 09:39:40.626
+!MESSAGE Cannot complete request to http://marketplace.eclipse.org/category/free-tagging/fileExtension_cpp%7E/api/p?client=org.eclipse.epp.mpc.core&client.version=1.5.2.v20161004-1655&os=linux&ws=gtk&nl=en_US&java.version=1.8.0_101&product=org.eclipse.epp.package.cpp.product&product.version=4.6.1.M20160907-1200&runtime.version=3.12.0.v20160606-1342&platform.version=4.6.1.v20160907-1200: Unable to read repository at http://marketplace.eclipse.org/category/free-tagging/fileExtension_cpp%7E/api/p?client=org.eclipse.epp.mpc.core&client.version=1.5.2.v20161004-1655&os=linux&ws=gtk&nl=en_US&java.version=1.8.0_101&product=org.eclipse.epp.package.cpp.product&product.version=4.6.1.M20160907-1200&runtime.version=3.12.0.v20160606-1342&platform.version=4.6.1.v20160907-1200.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Cannot complete request to http://marketplace.eclipse.org/category/free-tagging/fileExtension_cpp%7E/api/p?client=org.eclipse.epp.mpc.core&client.version=1.5.2.v20161004-1655&os=linux&ws=gtk&nl=en_US&java.version=1.8.0_101&product=org.eclipse.epp.package.cpp.product&product.version=4.6.1.M20160907-1200&runtime.version=3.12.0.v20160606-1342&platform.version=4.6.1.v20160907-1200: Unable to read repository at http://marketplace.eclipse.org/category/free-tagging/fileExtension_cpp%7E/api/p?client=org.eclipse.epp.mpc.core&client.version=1.5.2.v20161004-1655&os=linux&ws=gtk&nl=en_US&java.version=1.8.0_101&product=org.eclipse.epp.package.cpp.product&product.version=4.6.1.M20160907-1200&runtime.version=3.12.0.v20160606-1342&platform.version=4.6.1.v20160907-1200.
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:171)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:101)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:88)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.processSearchRequest(DefaultMarketplaceService.java:396)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.tagged(DefaultMarketplaceService.java:421)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.tagged(DefaultMarketplaceService.java:1)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService$2.doSearch(CachingMarketplaceService.java:234)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.performSearch(CachingMarketplaceService.java:249)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.tagged(CachingMarketplaceService.java:231)
+	at org.eclipse.epp.internal.mpc.ui.AskMarketPlaceForFileSupportStrategy$1.run(AskMarketPlaceForFileSupportStrategy.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.core.runtime.CoreException: Unable to read repository at http://marketplace.eclipse.org/category/free-tagging/fileExtension_cpp%7E/api/p?client=org.eclipse.epp.mpc.core&client.version=1.5.2.v20161004-1655&os=linux&ws=gtk&nl=en_US&java.version=1.8.0_101&product=org.eclipse.epp.package.cpp.product&product.version=4.6.1.M20160907-1200&runtime.version=3.12.0.v20160606-1342&platform.version=4.6.1.v20160907-1200.
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.stream(RepositoryTransport.java:181)
+	at org.eclipse.oomph.p2.internal.core.CachingTransport.stream(CachingTransport.java:244)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.epp.internal.mpc.core.util.AbstractP2TransportFactory.invokeStream(AbstractP2TransportFactory.java:35)
+	at org.eclipse.epp.internal.mpc.core.util.TransportFactory$1.stream(TransportFactory.java:285)
+	at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.primaryFailed(FallbackTransportFactory.java:129)
+	at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.stream(FallbackTransportFactory.java:85)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:136)
+	... 10 more
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient4.ECFHttpClientProtocolSocketFactory.connectSocket(ECFHttpClientProtocolSocketFactory.java:86)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:177)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:131)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	... 1 more
+!SUBENTRY 1 org.eclipse.epp.mpc.core 4 0 2017-01-05 09:39:40.627
+!MESSAGE Cannot complete request to http://marketplace.eclipse.org/category/free-tagging/fileExtension_cpp%7E/api/p?client=org.eclipse.epp.mpc.core&client.version=1.5.2.v20161004-1655&os=linux&ws=gtk&nl=en_US&java.version=1.8.0_101&product=org.eclipse.epp.package.cpp.product&product.version=4.6.1.M20160907-1200&runtime.version=3.12.0.v20160606-1342&platform.version=4.6.1.v20160907-1200: Unable to read repository at http://marketplace.eclipse.org/category/free-tagging/fileExtension_cpp%7E/api/p?client=org.eclipse.epp.mpc.core&client.version=1.5.2.v20161004-1655&os=linux&ws=gtk&nl=en_US&java.version=1.8.0_101&product=org.eclipse.epp.package.cpp.product&product.version=4.6.1.M20160907-1200&runtime.version=3.12.0.v20160606-1342&platform.version=4.6.1.v20160907-1200.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Unable to read repository at http://marketplace.eclipse.org/category/free-tagging/fileExtension_cpp%7E/api/p?client=org.eclipse.epp.mpc.core&client.version=1.5.2.v20161004-1655&os=linux&ws=gtk&nl=en_US&java.version=1.8.0_101&product=org.eclipse.epp.package.cpp.product&product.version=4.6.1.M20160907-1200&runtime.version=3.12.0.v20160606-1342&platform.version=4.6.1.v20160907-1200.
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.stream(RepositoryTransport.java:181)
+	at org.eclipse.oomph.p2.internal.core.CachingTransport.stream(CachingTransport.java:244)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.epp.internal.mpc.core.util.AbstractP2TransportFactory.invokeStream(AbstractP2TransportFactory.java:35)
+	at org.eclipse.epp.internal.mpc.core.util.TransportFactory$1.stream(TransportFactory.java:285)
+	at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.primaryFailed(FallbackTransportFactory.java:129)
+	at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.stream(FallbackTransportFactory.java:85)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:136)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:101)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:88)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.processSearchRequest(DefaultMarketplaceService.java:396)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.tagged(DefaultMarketplaceService.java:421)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.tagged(DefaultMarketplaceService.java:1)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService$2.doSearch(CachingMarketplaceService.java:234)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.performSearch(CachingMarketplaceService.java:249)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.tagged(CachingMarketplaceService.java:231)
+	at org.eclipse.epp.internal.mpc.ui.AskMarketPlaceForFileSupportStrategy$1.run(AskMarketPlaceForFileSupportStrategy.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient4.ECFHttpClientProtocolSocketFactory.connectSocket(ECFHttpClientProtocolSocketFactory.java:86)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:177)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:131)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	... 1 more
+!SUBENTRY 2 org.eclipse.equinox.p2.transport.ecf 4 1002 2017-01-05 09:39:40.627
+!MESSAGE Unable to read repository at http://marketplace.eclipse.org/category/free-tagging/fileExtension_cpp%7E/api/p?client=org.eclipse.epp.mpc.core&client.version=1.5.2.v20161004-1655&os=linux&ws=gtk&nl=en_US&java.version=1.8.0_101&product=org.eclipse.epp.package.cpp.product&product.version=4.6.1.M20160907-1200&runtime.version=3.12.0.v20160606-1342&platform.version=4.6.1.v20160907-1200.
+!STACK 0
+java.net.SocketTimeoutException: connect timed out
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient4.ECFHttpClientProtocolSocketFactory.connectSocket(ECFHttpClientProtocolSocketFactory.java:86)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:177)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:131)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SESSION 2017-01-05 18:21:23.952 -----------------------------------------------
+eclipse.buildId=4.6.1.M20160907-1200
+java.version=1.8.0_101
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 16 2017-01-05 18:22:09.236
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: dev.eclipse.org: unknown error. ; version: 2.0.3.v20160905-1331
+!STACK 0
+java.net.UnknownHostException: dev.eclipse.org: unknown error
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:928)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1323)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1276)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:44)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:102)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:319)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.apache.http.client.fluent.Executor.execute(Executor.java:206)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.request(IO.java:205)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:68)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:103)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.cdt.launch.remote 4 150 2017-01-05 18:22:52.351
+!MESSAGE Error during file upload.
+!STACK 1
+org.eclipse.remote.core.exception.RemoteConnectionException: org.eclipse.remote.core.exception.RemoteConnectionException: sh: locale: not found
+
+	at org.eclipse.remote.internal.jsch.core.JschFileStore.checkConnection(JschFileStore.java:95)
+	at org.eclipse.remote.internal.jsch.core.JschFileStore.openOutputStream(JschFileStore.java:297)
+	at org.eclipse.core.filesystem.provider.FileStore.copyFile(FileStore.java:199)
+	at org.eclipse.core.filesystem.provider.FileStore.copy(FileStore.java:130)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.copy(LocalFile.java:123)
+	at org.eclipse.cdt.launch.remote.RemoteHelper.remoteFileDownload(RemoteHelper.java:115)
+	at org.eclipse.cdt.launch.remote.launching.RemoteGdbLaunchDelegate.launch(RemoteGdbLaunchDelegate.java:61)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.remote.core.exception.RemoteConnectionException: org.eclipse.remote.core.exception.RemoteConnectionException: sh: locale: not found
+
+	at org.eclipse.remote.internal.jsch.core.commands.AbstractRemoteCommand$ExecCallable.waitCmdInThread(AbstractRemoteCommand.java:173)
+	at org.eclipse.remote.internal.jsch.core.commands.AbstractRemoteCommand$ExecCallable.getResult(AbstractRemoteCommand.java:152)
+	at org.eclipse.remote.internal.jsch.core.commands.ExecCommand.getResult(ExecCommand.java:58)
+	at org.eclipse.remote.internal.jsch.core.JSchConnection.executeCommand(JSchConnection.java:404)
+	at org.eclipse.remote.internal.jsch.core.JSchConnection.loadProperties(JSchConnection.java:875)
+	at org.eclipse.remote.internal.jsch.core.JSchConnection.open(JSchConnection.java:1015)
+	at org.eclipse.remote.internal.jsch.core.JSchConnection.open(JSchConnection.java:970)
+	at org.eclipse.remote.internal.core.RemoteConnection.open(RemoteConnection.java:208)
+	at org.eclipse.remote.internal.jsch.core.JschFileStore.checkConnection(JschFileStore.java:88)
+	... 11 more
+!SUBENTRY 1 org.eclipse.remote.core 4 0 2017-01-05 18:22:52.352
+!MESSAGE org.eclipse.remote.core.exception.RemoteConnectionException: sh: locale: not found
+
+!STACK 1
+org.eclipse.remote.core.exception.RemoteConnectionException: org.eclipse.remote.core.exception.RemoteConnectionException: sh: locale: not found
+
+	at org.eclipse.remote.internal.jsch.core.commands.AbstractRemoteCommand$ExecCallable.waitCmdInThread(AbstractRemoteCommand.java:173)
+	at org.eclipse.remote.internal.jsch.core.commands.AbstractRemoteCommand$ExecCallable.getResult(AbstractRemoteCommand.java:152)
+	at org.eclipse.remote.internal.jsch.core.commands.ExecCommand.getResult(ExecCommand.java:58)
+	at org.eclipse.remote.internal.jsch.core.JSchConnection.executeCommand(JSchConnection.java:404)
+	at org.eclipse.remote.internal.jsch.core.JSchConnection.loadProperties(JSchConnection.java:875)
+	at org.eclipse.remote.internal.jsch.core.JSchConnection.open(JSchConnection.java:1015)
+	at org.eclipse.remote.internal.jsch.core.JSchConnection.open(JSchConnection.java:970)
+	at org.eclipse.remote.internal.core.RemoteConnection.open(RemoteConnection.java:208)
+	at org.eclipse.remote.internal.jsch.core.JschFileStore.checkConnection(JschFileStore.java:88)
+	at org.eclipse.remote.internal.jsch.core.JschFileStore.openOutputStream(JschFileStore.java:297)
+	at org.eclipse.core.filesystem.provider.FileStore.copyFile(FileStore.java:199)
+	at org.eclipse.core.filesystem.provider.FileStore.copy(FileStore.java:130)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.copy(LocalFile.java:123)
+	at org.eclipse.cdt.launch.remote.RemoteHelper.remoteFileDownload(RemoteHelper.java:115)
+	at org.eclipse.cdt.launch.remote.launching.RemoteGdbLaunchDelegate.launch(RemoteGdbLaunchDelegate.java:61)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 2 org.eclipse.remote.core 4 0 2017-01-05 18:22:52.352
+!MESSAGE org.eclipse.remote.core.exception.RemoteConnectionException: sh: locale: not found
+
+!SUBENTRY 1 org.eclipse.cdt.launch.remote 4 150 2017-01-05 18:22:52.352
+!MESSAGE org.eclipse.remote.core.exception.RemoteConnectionException: sh: locale: not found
+
+!STACK 1
+org.eclipse.remote.core.exception.RemoteConnectionException: org.eclipse.remote.core.exception.RemoteConnectionException: sh: locale: not found
+
+	at org.eclipse.remote.internal.jsch.core.JschFileStore.checkConnection(JschFileStore.java:95)
+	at org.eclipse.remote.internal.jsch.core.JschFileStore.openOutputStream(JschFileStore.java:297)
+	at org.eclipse.core.filesystem.provider.FileStore.copyFile(FileStore.java:199)
+	at org.eclipse.core.filesystem.provider.FileStore.copy(FileStore.java:130)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.copy(LocalFile.java:123)
+	at org.eclipse.cdt.launch.remote.RemoteHelper.remoteFileDownload(RemoteHelper.java:115)
+	at org.eclipse.cdt.launch.remote.launching.RemoteGdbLaunchDelegate.launch(RemoteGdbLaunchDelegate.java:61)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.remote.core.exception.RemoteConnectionException: org.eclipse.remote.core.exception.RemoteConnectionException: sh: locale: not found
+
+	at org.eclipse.remote.internal.jsch.core.commands.AbstractRemoteCommand$ExecCallable.waitCmdInThread(AbstractRemoteCommand.java:173)
+	at org.eclipse.remote.internal.jsch.core.commands.AbstractRemoteCommand$ExecCallable.getResult(AbstractRemoteCommand.java:152)
+	at org.eclipse.remote.internal.jsch.core.commands.ExecCommand.getResult(ExecCommand.java:58)
+	at org.eclipse.remote.internal.jsch.core.JSchConnection.executeCommand(JSchConnection.java:404)
+	at org.eclipse.remote.internal.jsch.core.JSchConnection.loadProperties(JSchConnection.java:875)
+	at org.eclipse.remote.internal.jsch.core.JSchConnection.open(JSchConnection.java:1015)
+	at org.eclipse.remote.internal.jsch.core.JSchConnection.open(JSchConnection.java:970)
+	at org.eclipse.remote.internal.core.RemoteConnection.open(RemoteConnection.java:208)
+	at org.eclipse.remote.internal.jsch.core.JschFileStore.checkConnection(JschFileStore.java:88)
+	... 11 more
+!SUBENTRY 2 org.eclipse.remote.core 4 0 2017-01-05 18:22:52.353
+!MESSAGE org.eclipse.remote.core.exception.RemoteConnectionException: sh: locale: not found
+
+!STACK 1
+org.eclipse.remote.core.exception.RemoteConnectionException: org.eclipse.remote.core.exception.RemoteConnectionException: sh: locale: not found
+
+	at org.eclipse.remote.internal.jsch.core.commands.AbstractRemoteCommand$ExecCallable.waitCmdInThread(AbstractRemoteCommand.java:173)
+	at org.eclipse.remote.internal.jsch.core.commands.AbstractRemoteCommand$ExecCallable.getResult(AbstractRemoteCommand.java:152)
+	at org.eclipse.remote.internal.jsch.core.commands.ExecCommand.getResult(ExecCommand.java:58)
+	at org.eclipse.remote.internal.jsch.core.JSchConnection.executeCommand(JSchConnection.java:404)
+	at org.eclipse.remote.internal.jsch.core.JSchConnection.loadProperties(JSchConnection.java:875)
+	at org.eclipse.remote.internal.jsch.core.JSchConnection.open(JSchConnection.java:1015)
+	at org.eclipse.remote.internal.jsch.core.JSchConnection.open(JSchConnection.java:970)
+	at org.eclipse.remote.internal.core.RemoteConnection.open(RemoteConnection.java:208)
+	at org.eclipse.remote.internal.jsch.core.JschFileStore.checkConnection(JschFileStore.java:88)
+	at org.eclipse.remote.internal.jsch.core.JschFileStore.openOutputStream(JschFileStore.java:297)
+	at org.eclipse.core.filesystem.provider.FileStore.copyFile(FileStore.java:199)
+	at org.eclipse.core.filesystem.provider.FileStore.copy(FileStore.java:130)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.copy(LocalFile.java:123)
+	at org.eclipse.cdt.launch.remote.RemoteHelper.remoteFileDownload(RemoteHelper.java:115)
+	at org.eclipse.cdt.launch.remote.launching.RemoteGdbLaunchDelegate.launch(RemoteGdbLaunchDelegate.java:61)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 3 org.eclipse.remote.core 4 0 2017-01-05 18:22:52.353
+!MESSAGE org.eclipse.remote.core.exception.RemoteConnectionException: sh: locale: not found
+
+!SESSION 2017-01-06 09:24:01.819 -----------------------------------------------
+eclipse.buildId=4.6.1.M20160907-1200
+java.version=1.8.0_101
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2017-01-06 09:24:21.569
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 16 2017-01-06 09:24:34.899
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: Connect to dev.eclipse.org:443 [dev.eclipse.org/198.41.30.200] failed: connect timed out. ; version: 2.0.3.v20160905-1331
+!STACK 0
+org.apache.http.conn.ConnectTimeoutException: Connect to dev.eclipse.org:443 [dev.eclipse.org/198.41.30.200] failed: connect timed out
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:134)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:319)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.apache.http.client.fluent.Executor.execute(Executor.java:206)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.request(IO.java:205)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:68)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:103)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:244)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:125)
+	... 16 more
+!SESSION 2017-01-06 13:05:18.446 -----------------------------------------------
+eclipse.buildId=4.6.1.M20160907-1200
+java.version=1.8.0_101
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 16 2017-01-06 13:06:01.214
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: dev.eclipse.org: unknown error. ; version: 2.0.3.v20160905-1331
+!STACK 0
+java.net.UnknownHostException: dev.eclipse.org: unknown error
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:928)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1323)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1276)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:44)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:102)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:319)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.apache.http.client.fluent.Executor.execute(Executor.java:206)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.request(IO.java:205)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:68)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:103)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY org.eclipse.cdt.launch.remote 4 150 2017-01-06 13:09:04.452
+!MESSAGE Error during file upload.
+!STACK 1
+org.eclipse.remote.core.exception.RemoteConnectionException: org.eclipse.remote.core.exception.RemoteConnectionException: sh: locale: not found
+
+	at org.eclipse.remote.internal.jsch.core.JschFileStore.checkConnection(JschFileStore.java:95)
+	at org.eclipse.remote.internal.jsch.core.JschFileStore.openOutputStream(JschFileStore.java:297)
+	at org.eclipse.core.filesystem.provider.FileStore.copyFile(FileStore.java:199)
+	at org.eclipse.core.filesystem.provider.FileStore.copy(FileStore.java:130)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.copy(LocalFile.java:123)
+	at org.eclipse.cdt.launch.remote.RemoteHelper.remoteFileDownload(RemoteHelper.java:115)
+	at org.eclipse.cdt.launch.remote.launching.RemoteGdbLaunchDelegate.launch(RemoteGdbLaunchDelegate.java:61)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.remote.core.exception.RemoteConnectionException: org.eclipse.remote.core.exception.RemoteConnectionException: sh: locale: not found
+
+	at org.eclipse.remote.internal.jsch.core.commands.AbstractRemoteCommand$ExecCallable.waitCmdInThread(AbstractRemoteCommand.java:173)
+	at org.eclipse.remote.internal.jsch.core.commands.AbstractRemoteCommand$ExecCallable.getResult(AbstractRemoteCommand.java:152)
+	at org.eclipse.remote.internal.jsch.core.commands.ExecCommand.getResult(ExecCommand.java:58)
+	at org.eclipse.remote.internal.jsch.core.JSchConnection.executeCommand(JSchConnection.java:404)
+	at org.eclipse.remote.internal.jsch.core.JSchConnection.loadProperties(JSchConnection.java:875)
+	at org.eclipse.remote.internal.jsch.core.JSchConnection.open(JSchConnection.java:1015)
+	at org.eclipse.remote.internal.jsch.core.JSchConnection.open(JSchConnection.java:970)
+	at org.eclipse.remote.internal.core.RemoteConnection.open(RemoteConnection.java:208)
+	at org.eclipse.remote.internal.jsch.core.JschFileStore.checkConnection(JschFileStore.java:88)
+	... 11 more
+!SUBENTRY 1 org.eclipse.remote.core 4 0 2017-01-06 13:09:04.453
+!MESSAGE org.eclipse.remote.core.exception.RemoteConnectionException: sh: locale: not found
+
+!STACK 1
+org.eclipse.remote.core.exception.RemoteConnectionException: org.eclipse.remote.core.exception.RemoteConnectionException: sh: locale: not found
+
+	at org.eclipse.remote.internal.jsch.core.commands.AbstractRemoteCommand$ExecCallable.waitCmdInThread(AbstractRemoteCommand.java:173)
+	at org.eclipse.remote.internal.jsch.core.commands.AbstractRemoteCommand$ExecCallable.getResult(AbstractRemoteCommand.java:152)
+	at org.eclipse.remote.internal.jsch.core.commands.ExecCommand.getResult(ExecCommand.java:58)
+	at org.eclipse.remote.internal.jsch.core.JSchConnection.executeCommand(JSchConnection.java:404)
+	at org.eclipse.remote.internal.jsch.core.JSchConnection.loadProperties(JSchConnection.java:875)
+	at org.eclipse.remote.internal.jsch.core.JSchConnection.open(JSchConnection.java:1015)
+	at org.eclipse.remote.internal.jsch.core.JSchConnection.open(JSchConnection.java:970)
+	at org.eclipse.remote.internal.core.RemoteConnection.open(RemoteConnection.java:208)
+	at org.eclipse.remote.internal.jsch.core.JschFileStore.checkConnection(JschFileStore.java:88)
+	at org.eclipse.remote.internal.jsch.core.JschFileStore.openOutputStream(JschFileStore.java:297)
+	at org.eclipse.core.filesystem.provider.FileStore.copyFile(FileStore.java:199)
+	at org.eclipse.core.filesystem.provider.FileStore.copy(FileStore.java:130)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.copy(LocalFile.java:123)
+	at org.eclipse.cdt.launch.remote.RemoteHelper.remoteFileDownload(RemoteHelper.java:115)
+	at org.eclipse.cdt.launch.remote.launching.RemoteGdbLaunchDelegate.launch(RemoteGdbLaunchDelegate.java:61)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 2 org.eclipse.remote.core 4 0 2017-01-06 13:09:04.453
+!MESSAGE org.eclipse.remote.core.exception.RemoteConnectionException: sh: locale: not found
+
+!SUBENTRY 1 org.eclipse.cdt.launch.remote 4 150 2017-01-06 13:09:04.453
+!MESSAGE org.eclipse.remote.core.exception.RemoteConnectionException: sh: locale: not found
+
+!STACK 1
+org.eclipse.remote.core.exception.RemoteConnectionException: org.eclipse.remote.core.exception.RemoteConnectionException: sh: locale: not found
+
+	at org.eclipse.remote.internal.jsch.core.JschFileStore.checkConnection(JschFileStore.java:95)
+	at org.eclipse.remote.internal.jsch.core.JschFileStore.openOutputStream(JschFileStore.java:297)
+	at org.eclipse.core.filesystem.provider.FileStore.copyFile(FileStore.java:199)
+	at org.eclipse.core.filesystem.provider.FileStore.copy(FileStore.java:130)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.copy(LocalFile.java:123)
+	at org.eclipse.cdt.launch.remote.RemoteHelper.remoteFileDownload(RemoteHelper.java:115)
+	at org.eclipse.cdt.launch.remote.launching.RemoteGdbLaunchDelegate.launch(RemoteGdbLaunchDelegate.java:61)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.remote.core.exception.RemoteConnectionException: org.eclipse.remote.core.exception.RemoteConnectionException: sh: locale: not found
+
+	at org.eclipse.remote.internal.jsch.core.commands.AbstractRemoteCommand$ExecCallable.waitCmdInThread(AbstractRemoteCommand.java:173)
+	at org.eclipse.remote.internal.jsch.core.commands.AbstractRemoteCommand$ExecCallable.getResult(AbstractRemoteCommand.java:152)
+	at org.eclipse.remote.internal.jsch.core.commands.ExecCommand.getResult(ExecCommand.java:58)
+	at org.eclipse.remote.internal.jsch.core.JSchConnection.executeCommand(JSchConnection.java:404)
+	at org.eclipse.remote.internal.jsch.core.JSchConnection.loadProperties(JSchConnection.java:875)
+	at org.eclipse.remote.internal.jsch.core.JSchConnection.open(JSchConnection.java:1015)
+	at org.eclipse.remote.internal.jsch.core.JSchConnection.open(JSchConnection.java:970)
+	at org.eclipse.remote.internal.core.RemoteConnection.open(RemoteConnection.java:208)
+	at org.eclipse.remote.internal.jsch.core.JschFileStore.checkConnection(JschFileStore.java:88)
+	... 11 more
+!SUBENTRY 2 org.eclipse.remote.core 4 0 2017-01-06 13:09:04.453
+!MESSAGE org.eclipse.remote.core.exception.RemoteConnectionException: sh: locale: not found
+
+!STACK 1
+org.eclipse.remote.core.exception.RemoteConnectionException: org.eclipse.remote.core.exception.RemoteConnectionException: sh: locale: not found
+
+	at org.eclipse.remote.internal.jsch.core.commands.AbstractRemoteCommand$ExecCallable.waitCmdInThread(AbstractRemoteCommand.java:173)
+	at org.eclipse.remote.internal.jsch.core.commands.AbstractRemoteCommand$ExecCallable.getResult(AbstractRemoteCommand.java:152)
+	at org.eclipse.remote.internal.jsch.core.commands.ExecCommand.getResult(ExecCommand.java:58)
+	at org.eclipse.remote.internal.jsch.core.JSchConnection.executeCommand(JSchConnection.java:404)
+	at org.eclipse.remote.internal.jsch.core.JSchConnection.loadProperties(JSchConnection.java:875)
+	at org.eclipse.remote.internal.jsch.core.JSchConnection.open(JSchConnection.java:1015)
+	at org.eclipse.remote.internal.jsch.core.JSchConnection.open(JSchConnection.java:970)
+	at org.eclipse.remote.internal.core.RemoteConnection.open(RemoteConnection.java:208)
+	at org.eclipse.remote.internal.jsch.core.JschFileStore.checkConnection(JschFileStore.java:88)
+	at org.eclipse.remote.internal.jsch.core.JschFileStore.openOutputStream(JschFileStore.java:297)
+	at org.eclipse.core.filesystem.provider.FileStore.copyFile(FileStore.java:199)
+	at org.eclipse.core.filesystem.provider.FileStore.copy(FileStore.java:130)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.copy(LocalFile.java:123)
+	at org.eclipse.cdt.launch.remote.RemoteHelper.remoteFileDownload(RemoteHelper.java:115)
+	at org.eclipse.cdt.launch.remote.launching.RemoteGdbLaunchDelegate.launch(RemoteGdbLaunchDelegate.java:61)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 3 org.eclipse.remote.core 4 0 2017-01-06 13:09:04.453
+!MESSAGE org.eclipse.remote.core.exception.RemoteConnectionException: sh: locale: not found
+
+!SESSION 2017-01-06 14:27:26.050 -----------------------------------------------
+eclipse.buildId=4.6.1.M20160907-1200
+java.version=1.8.0_101
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2017-01-06 14:27:44.799
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 16 2017-01-06 14:27:58.753
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: Connect to dev.eclipse.org:443 [dev.eclipse.org/198.41.30.200] failed: connect timed out. ; version: 2.0.3.v20160905-1331
+!STACK 0
+org.apache.http.conn.ConnectTimeoutException: Connect to dev.eclipse.org:443 [dev.eclipse.org/198.41.30.200] failed: connect timed out
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:134)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:319)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.apache.http.client.fluent.Executor.execute(Executor.java:206)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.request(IO.java:205)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:68)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:103)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:244)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:125)
+	... 16 more
+
+!ENTRY org.eclipse.cdt.launch.remote 4 150 2017-01-06 14:30:53.134
+!MESSAGE Error during file upload.
+!STACK 1
+org.eclipse.remote.core.exception.RemoteConnectionException: org.eclipse.remote.core.exception.RemoteConnectionException: sh: locale: not found
+
+	at org.eclipse.remote.internal.jsch.core.JschFileStore.checkConnection(JschFileStore.java:95)
+	at org.eclipse.remote.internal.jsch.core.JschFileStore.openOutputStream(JschFileStore.java:297)
+	at org.eclipse.core.filesystem.provider.FileStore.copyFile(FileStore.java:199)
+	at org.eclipse.core.filesystem.provider.FileStore.copy(FileStore.java:130)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.copy(LocalFile.java:123)
+	at org.eclipse.cdt.launch.remote.RemoteHelper.remoteFileDownload(RemoteHelper.java:115)
+	at org.eclipse.cdt.launch.remote.launching.RemoteGdbLaunchDelegate.launch(RemoteGdbLaunchDelegate.java:61)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.remote.core.exception.RemoteConnectionException: org.eclipse.remote.core.exception.RemoteConnectionException: sh: locale: not found
+
+	at org.eclipse.remote.internal.jsch.core.commands.AbstractRemoteCommand$ExecCallable.waitCmdInThread(AbstractRemoteCommand.java:173)
+	at org.eclipse.remote.internal.jsch.core.commands.AbstractRemoteCommand$ExecCallable.getResult(AbstractRemoteCommand.java:152)
+	at org.eclipse.remote.internal.jsch.core.commands.ExecCommand.getResult(ExecCommand.java:58)
+	at org.eclipse.remote.internal.jsch.core.JSchConnection.executeCommand(JSchConnection.java:404)
+	at org.eclipse.remote.internal.jsch.core.JSchConnection.loadProperties(JSchConnection.java:875)
+	at org.eclipse.remote.internal.jsch.core.JSchConnection.open(JSchConnection.java:1015)
+	at org.eclipse.remote.internal.jsch.core.JSchConnection.open(JSchConnection.java:970)
+	at org.eclipse.remote.internal.core.RemoteConnection.open(RemoteConnection.java:208)
+	at org.eclipse.remote.internal.jsch.core.JschFileStore.checkConnection(JschFileStore.java:88)
+	... 11 more
+!SUBENTRY 1 org.eclipse.remote.core 4 0 2017-01-06 14:30:53.135
+!MESSAGE org.eclipse.remote.core.exception.RemoteConnectionException: sh: locale: not found
+
+!STACK 1
+org.eclipse.remote.core.exception.RemoteConnectionException: org.eclipse.remote.core.exception.RemoteConnectionException: sh: locale: not found
+
+	at org.eclipse.remote.internal.jsch.core.commands.AbstractRemoteCommand$ExecCallable.waitCmdInThread(AbstractRemoteCommand.java:173)
+	at org.eclipse.remote.internal.jsch.core.commands.AbstractRemoteCommand$ExecCallable.getResult(AbstractRemoteCommand.java:152)
+	at org.eclipse.remote.internal.jsch.core.commands.ExecCommand.getResult(ExecCommand.java:58)
+	at org.eclipse.remote.internal.jsch.core.JSchConnection.executeCommand(JSchConnection.java:404)
+	at org.eclipse.remote.internal.jsch.core.JSchConnection.loadProperties(JSchConnection.java:875)
+	at org.eclipse.remote.internal.jsch.core.JSchConnection.open(JSchConnection.java:1015)
+	at org.eclipse.remote.internal.jsch.core.JSchConnection.open(JSchConnection.java:970)
+	at org.eclipse.remote.internal.core.RemoteConnection.open(RemoteConnection.java:208)
+	at org.eclipse.remote.internal.jsch.core.JschFileStore.checkConnection(JschFileStore.java:88)
+	at org.eclipse.remote.internal.jsch.core.JschFileStore.openOutputStream(JschFileStore.java:297)
+	at org.eclipse.core.filesystem.provider.FileStore.copyFile(FileStore.java:199)
+	at org.eclipse.core.filesystem.provider.FileStore.copy(FileStore.java:130)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.copy(LocalFile.java:123)
+	at org.eclipse.cdt.launch.remote.RemoteHelper.remoteFileDownload(RemoteHelper.java:115)
+	at org.eclipse.cdt.launch.remote.launching.RemoteGdbLaunchDelegate.launch(RemoteGdbLaunchDelegate.java:61)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 2 org.eclipse.remote.core 4 0 2017-01-06 14:30:53.136
+!MESSAGE org.eclipse.remote.core.exception.RemoteConnectionException: sh: locale: not found
+
+!SUBENTRY 1 org.eclipse.cdt.launch.remote 4 150 2017-01-06 14:30:53.136
+!MESSAGE org.eclipse.remote.core.exception.RemoteConnectionException: sh: locale: not found
+
+!STACK 1
+org.eclipse.remote.core.exception.RemoteConnectionException: org.eclipse.remote.core.exception.RemoteConnectionException: sh: locale: not found
+
+	at org.eclipse.remote.internal.jsch.core.JschFileStore.checkConnection(JschFileStore.java:95)
+	at org.eclipse.remote.internal.jsch.core.JschFileStore.openOutputStream(JschFileStore.java:297)
+	at org.eclipse.core.filesystem.provider.FileStore.copyFile(FileStore.java:199)
+	at org.eclipse.core.filesystem.provider.FileStore.copy(FileStore.java:130)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.copy(LocalFile.java:123)
+	at org.eclipse.cdt.launch.remote.RemoteHelper.remoteFileDownload(RemoteHelper.java:115)
+	at org.eclipse.cdt.launch.remote.launching.RemoteGdbLaunchDelegate.launch(RemoteGdbLaunchDelegate.java:61)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.remote.core.exception.RemoteConnectionException: org.eclipse.remote.core.exception.RemoteConnectionException: sh: locale: not found
+
+	at org.eclipse.remote.internal.jsch.core.commands.AbstractRemoteCommand$ExecCallable.waitCmdInThread(AbstractRemoteCommand.java:173)
+	at org.eclipse.remote.internal.jsch.core.commands.AbstractRemoteCommand$ExecCallable.getResult(AbstractRemoteCommand.java:152)
+	at org.eclipse.remote.internal.jsch.core.commands.ExecCommand.getResult(ExecCommand.java:58)
+	at org.eclipse.remote.internal.jsch.core.JSchConnection.executeCommand(JSchConnection.java:404)
+	at org.eclipse.remote.internal.jsch.core.JSchConnection.loadProperties(JSchConnection.java:875)
+	at org.eclipse.remote.internal.jsch.core.JSchConnection.open(JSchConnection.java:1015)
+	at org.eclipse.remote.internal.jsch.core.JSchConnection.open(JSchConnection.java:970)
+	at org.eclipse.remote.internal.core.RemoteConnection.open(RemoteConnection.java:208)
+	at org.eclipse.remote.internal.jsch.core.JschFileStore.checkConnection(JschFileStore.java:88)
+	... 11 more
+!SUBENTRY 2 org.eclipse.remote.core 4 0 2017-01-06 14:30:53.136
+!MESSAGE org.eclipse.remote.core.exception.RemoteConnectionException: sh: locale: not found
+
+!STACK 1
+org.eclipse.remote.core.exception.RemoteConnectionException: org.eclipse.remote.core.exception.RemoteConnectionException: sh: locale: not found
+
+	at org.eclipse.remote.internal.jsch.core.commands.AbstractRemoteCommand$ExecCallable.waitCmdInThread(AbstractRemoteCommand.java:173)
+	at org.eclipse.remote.internal.jsch.core.commands.AbstractRemoteCommand$ExecCallable.getResult(AbstractRemoteCommand.java:152)
+	at org.eclipse.remote.internal.jsch.core.commands.ExecCommand.getResult(ExecCommand.java:58)
+	at org.eclipse.remote.internal.jsch.core.JSchConnection.executeCommand(JSchConnection.java:404)
+	at org.eclipse.remote.internal.jsch.core.JSchConnection.loadProperties(JSchConnection.java:875)
+	at org.eclipse.remote.internal.jsch.core.JSchConnection.open(JSchConnection.java:1015)
+	at org.eclipse.remote.internal.jsch.core.JSchConnection.open(JSchConnection.java:970)
+	at org.eclipse.remote.internal.core.RemoteConnection.open(RemoteConnection.java:208)
+	at org.eclipse.remote.internal.jsch.core.JschFileStore.checkConnection(JschFileStore.java:88)
+	at org.eclipse.remote.internal.jsch.core.JschFileStore.openOutputStream(JschFileStore.java:297)
+	at org.eclipse.core.filesystem.provider.FileStore.copyFile(FileStore.java:199)
+	at org.eclipse.core.filesystem.provider.FileStore.copy(FileStore.java:130)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.copy(LocalFile.java:123)
+	at org.eclipse.cdt.launch.remote.RemoteHelper.remoteFileDownload(RemoteHelper.java:115)
+	at org.eclipse.cdt.launch.remote.launching.RemoteGdbLaunchDelegate.launch(RemoteGdbLaunchDelegate.java:61)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 3 org.eclipse.remote.core 4 0 2017-01-06 14:30:53.137
+!MESSAGE org.eclipse.remote.core.exception.RemoteConnectionException: sh: locale: not found
+

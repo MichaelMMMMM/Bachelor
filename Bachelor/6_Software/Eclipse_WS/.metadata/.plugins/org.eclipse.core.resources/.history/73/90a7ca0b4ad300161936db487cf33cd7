@@ -1,0 +1,10 @@
+#include "CProxy.h"
+#include "CControlComp.h"
+#include "CCommComponent.h"
+#include "CThread.h"
+
+int main()
+{
+	CProxy& proxy = CProxy::getInstance();
+	return 0;
+}

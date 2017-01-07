@@ -1,0 +1,179 @@
+14:24:00 **** Incremental Build of configuration Debug for project BBB_1D ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: BBB_1D
+Invoking: Cross G++ Linker
+arm-linux-gnueabihf-g++  -o "BBB_1D"  ./lib/AComponentBase.o ./lib/Assertion.o ./lib/CBinarySemaphore.o ./lib/CCountingSemaphore.o ./lib/CMessage.o ./lib/CMutex.o ./lib/CProxy.o ./lib/CThread.o  ./Hardware/CADC.o ./Hardware/CBBBHardware.o ./Hardware/CBrake.o ./Hardware/CMPU6050.o ./Hardware/CMotor.o  ./Control/CControlAction.o ./Control/CControlActionBase.o ./Control/CControlComp.o ./Control/CSensorCalibration.o ./Control/CSensorCalibrationAction.o ./Control/CTimerTask.o  ./Comm/CCommAction.o ./Comm/CCommComponent.o ./Comm/CCommFSM.o ./Comm/CReceiveTask.o ./Comm/CServer.o  ./main.o   -lpthread
+./main.o: In function `main':
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Debug/../main.cpp:8: undefined reference to `CControlComp::CControlComp()'
+collect2: error: ld returned 1 exit status
+make: *** [BBB_1D] Error 1
+14:24:22 **** Incremental Build of configuration Debug for project BBB_1D ****
+make all 
+Building file: ../Control/CControlComp.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/CControlComp.d" -MT"Control/CControlComp.o" -o "Control/CControlComp.o" "../Control/CControlComp.cpp"
+Finished building: ../Control/CControlComp.cpp
+ 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: BBB_1D
+Invoking: Cross G++ Linker
+arm-linux-gnueabihf-g++  -o "BBB_1D"  ./lib/AComponentBase.o ./lib/Assertion.o ./lib/CBinarySemaphore.o ./lib/CCountingSemaphore.o ./lib/CMessage.o ./lib/CMutex.o ./lib/CProxy.o ./lib/CThread.o  ./Hardware/CADC.o ./Hardware/CBBBHardware.o ./Hardware/CBrake.o ./Hardware/CMPU6050.o ./Hardware/CMotor.o  ./Control/CControlAction.o ./Control/CControlActionBase.o ./Control/CControlComp.o ./Control/CSensorCalibration.o ./Control/CSensorCalibrationAction.o ./Control/CTimerTask.o  ./Comm/CCommAction.o ./Comm/CCommComponent.o ./Comm/CCommFSM.o ./Comm/CReceiveTask.o ./Comm/CServer.o  ./main.o   -lpthread
+Finished building target: BBB_1D
+ 
+18:22:50 **** Incremental Build of configuration Debug for project BBB_1D ****
+make all 
+make: Nothing to be done for `all'.
+18:22:56 **** Incremental Build of configuration Debug for project BBB_1D ****
+make all 
+make: Nothing to be done for `all'.
+18:26:56 **** Incremental Build of configuration Debug for project BBB_1D ****
+make all 
+Building file: ../Control/CSensorCalibrationAction.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/CSensorCalibrationAction.d" -MT"Control/CSensorCalibrationAction.o" -o "Control/CSensorCalibrationAction.o" "../Control/CSensorCalibrationAction.cpp"
+../Control/CSensorCalibrationAction.cpp: In member function ‘void CSensorCalibrationAction::exitSensorCalibration()’:
+../Control/CSensorCalibrationAction.cpp:27:19: error: no matching function for call to ‘CTimerTask::pause()’
+  sTimerTask.pause();
+                   ^
+../Control/CSensorCalibrationAction.cpp:27:19: note: candidate is:
+In file included from ../Control/CControlActionBase.h:10:0,
+                 from ../Control/CSensorCalibrationAction.h:9,
+                 from ../Control/CSensorCalibrationAction.cpp:7:
+../Control/CTimerTask.h:18:7: note: bool CTimerTask::pause(bool)
+  bool pause(bool waitForever);
+       ^
+../Control/CTimerTask.h:18:7: note:   candidate expects 1 argument, 0 provided
+make: *** [Control/CSensorCalibrationAction.o] Error 1
+18:27:13 **** Incremental Build of configuration Debug for project BBB_1D ****
+make all 
+Building file: ../Control/CSensorCalibrationAction.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/CSensorCalibrationAction.d" -MT"Control/CSensorCalibrationAction.o" -o "Control/CSensorCalibrationAction.o" "../Control/CSensorCalibrationAction.cpp"
+Finished building: ../Control/CSensorCalibrationAction.cpp
+ 
+Building target: BBB_1D
+Invoking: Cross G++ Linker
+arm-linux-gnueabihf-g++  -o "BBB_1D"  ./lib/AComponentBase.o ./lib/Assertion.o ./lib/CBinarySemaphore.o ./lib/CCountingSemaphore.o ./lib/CMessage.o ./lib/CMutex.o ./lib/CProxy.o ./lib/CThread.o  ./Hardware/CADC.o ./Hardware/CBBBHardware.o ./Hardware/CBrake.o ./Hardware/CMPU6050.o ./Hardware/CMotor.o  ./Control/CControlAction.o ./Control/CControlActionBase.o ./Control/CControlComp.o ./Control/CSensorCalibration.o ./Control/CSensorCalibrationAction.o ./Control/CTimerTask.o  ./Comm/CCommAction.o ./Comm/CCommComponent.o ./Comm/CCommFSM.o ./Comm/CReceiveTask.o ./Comm/CServer.o  ./main.o   -lpthread
+Finished building target: BBB_1D
+ 
+18:30:22 **** Incremental Build of configuration Debug for project BBB_1D ****
+make all 
+Building file: ../Control/CControlAction.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/CControlAction.d" -MT"Control/CControlAction.o" -o "Control/CControlAction.o" "../Control/CControlAction.cpp"
+../Control/CControlAction.cpp:10:37: error: return type specification for constructor invalid
+ void CControlAction::CControlAction()
+                                     ^
+make: *** [Control/CControlAction.o] Error 1
+18:30:43 **** Incremental Build of configuration Debug for project BBB_1D ****
+make all 
+Building file: ../Control/CControlAction.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/CControlAction.d" -MT"Control/CControlAction.o" -o "Control/CControlAction.o" "../Control/CControlAction.cpp"
+Finished building: ../Control/CControlAction.cpp
+ 
+Building file: ../Control/CControlActionBase.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/CControlActionBase.d" -MT"Control/CControlActionBase.o" -o "Control/CControlActionBase.o" "../Control/CControlActionBase.cpp"
+Finished building: ../Control/CControlActionBase.cpp
+ 
+Building file: ../Control/CControlComp.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/CControlComp.d" -MT"Control/CControlComp.o" -o "Control/CControlComp.o" "../Control/CControlComp.cpp"
+Finished building: ../Control/CControlComp.cpp
+ 
+Building file: ../Control/CSensorCalibration.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/CSensorCalibration.d" -MT"Control/CSensorCalibration.o" -o "Control/CSensorCalibration.o" "../Control/CSensorCalibration.cpp"
+Finished building: ../Control/CSensorCalibration.cpp
+ 
+Building file: ../Control/CSensorCalibrationAction.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/CSensorCalibrationAction.d" -MT"Control/CSensorCalibrationAction.o" -o "Control/CSensorCalibrationAction.o" "../Control/CSensorCalibrationAction.cpp"
+Finished building: ../Control/CSensorCalibrationAction.cpp
+ 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: BBB_1D
+Invoking: Cross G++ Linker
+arm-linux-gnueabihf-g++  -o "BBB_1D"  ./lib/AComponentBase.o ./lib/Assertion.o ./lib/CBinarySemaphore.o ./lib/CCountingSemaphore.o ./lib/CMessage.o ./lib/CMutex.o ./lib/CProxy.o ./lib/CThread.o  ./Hardware/CADC.o ./Hardware/CBBBHardware.o ./Hardware/CBrake.o ./Hardware/CMPU6050.o ./Hardware/CMotor.o  ./Control/CControlAction.o ./Control/CControlActionBase.o ./Control/CControlComp.o ./Control/CSensorCalibration.o ./Control/CSensorCalibrationAction.o ./Control/CTimerTask.o  ./Comm/CCommAction.o ./Comm/CCommComponent.o ./Comm/CCommFSM.o ./Comm/CReceiveTask.o ./Comm/CServer.o  ./main.o   -lpthread
+Finished building target: BBB_1D
+ 
+18:34:32 **** Incremental Build of configuration Debug for project BBB_1D ****
+make all 
+make: Nothing to be done for `all'.
+18:37:10 **** Incremental Build of configuration Debug for project BBB_1D ****
+make all 
+make: Nothing to be done for `all'.
+18:38:42 **** Incremental Build of configuration Debug for project BBB_1D ****
+make all 
+make: Nothing to be done for `all'.
+18:39:49 **** Incremental Build of configuration Debug for project BBB_1D ****
+make all 
+make: Nothing to be done for `all'.
+18:42:33 **** Incremental Build of configuration Debug for project BBB_1D ****
+make all 
+make: Nothing to be done for `all'.
+18:49:22 **** Incremental Build of configuration Debug for project BBB_1D ****
+make all 
+make: Nothing to be done for `all'.
+18:53:46 **** Incremental Build of configuration Debug for project BBB_1D ****
+make all 
+make: Nothing to be done for `all'.
+18:55:41 **** Incremental Build of configuration Debug for project BBB_1D ****
+make all 
+make: Nothing to be done for `all'.
+18:58:28 **** Incremental Build of configuration Debug for project BBB_1D ****
+make all 
+make: Nothing to be done for `all'.
+19:01:36 **** Incremental Build of configuration Debug for project BBB_1D ****
+make all 
+make: Nothing to be done for `all'.
+19:02:46 **** Incremental Build of configuration Debug for project BBB_1D ****
+make all 
+make: Nothing to be done for `all'.
+19:07:51 **** Incremental Build of configuration Debug for project BBB_1D ****
+make all 
+make: Nothing to be done for `all'.
+19:11:28 **** Incremental Build of configuration Debug for project BBB_1D ****
+make all 
+make: Nothing to be done for `all'.
+19:12:49 **** Incremental Build of configuration Debug for project BBB_1D ****
+make all 
+make: Nothing to be done for `all'.
+13:09:00 **** Build of configuration Debug for project BBB_1D ****
+make all 
+make: Nothing to be done for `all'.
+13:09:08 **** Incremental Build of configuration Debug for project BBB_1D ****
+make all 
+make: Nothing to be done for `all'.
+13:10:27 **** Incremental Build of configuration Debug for project BBB_1D ****
+make all 
+make: Nothing to be done for `all'.
+13:13:43 **** Incremental Build of configuration Debug for project BBB_1D ****
+make all 
+make: Nothing to be done for `all'.
+13:14:43 **** Incremental Build of configuration Debug for project BBB_1D ****
+make all 
+make: Nothing to be done for `all'.
+14:30:48 **** Build of configuration Debug for project BBB_1D ****
+make all 
+make: Nothing to be done for `all'.
+14:30:58 **** Incremental Build of configuration Debug for project BBB_1D ****
+make all 
+make: Nothing to be done for `all'.
+14:34:29 **** Incremental Build of configuration Debug for project BBB_1D ****
+make all 
+make: Nothing to be done for `all'.

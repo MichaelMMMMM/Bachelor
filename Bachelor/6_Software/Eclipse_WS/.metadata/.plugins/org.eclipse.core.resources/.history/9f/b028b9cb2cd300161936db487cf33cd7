@@ -1,0 +1,87 @@
+#ifndef TFSM_H
+#define TFSM_H
+#include "TLinHierarchy.h"
+#include "AState.h"
+
+template<class StateList>
+class TFSM : public AState
+{
+public:
+	bool dispatch(EEvent event) override;
+	bool tryEntry(EEvent event, AState*& statePtr) override;
+	void onEntry() override;
+	void onExit() override;
+	bool onStandby(EEvent event);
+public:
+	TFSM();
+	TFSM(const TFSM&) = delete;
+	TFSM& operator=(const TFSM&) = delete;
+	~TFSM() = default;
+private:
+	AState* mStatePtr;
+	StateList mStateList;
+};
+
+template<class StateList>
+TFSM<StateList>::TFSM() : mStatePtr(nullptr)
+{
+
+}
+template<class StateList>
+bool TFSM<StateList>::onStandby(EEvent event)
+{
+	bool consumed = this->tryEntry(event, mStatePtr);
+
+	if(consumed == true)
+	{
+		//mAction.exit();
+		mStatePtr->onEntry();
+	}
+	else
+	{
+		//Unhandled event
+	}
+	return consumed;
+}
+template<class StateList>
+bool TFSM<StateList>::dispatch(EEvent event)
+{
+	bool consumed = false;
+	if(mStatePtr == nullptr)
+	{
+		consumed = this->onStandby(event);
+	}
+	else
+	{
+		consumed = mStatePtr->dispatch(event);
+	}
+
+	if(consumed == false)
+	{
+		if(EEvent::EV_CLIENT_DC == event)
+		{
+			mStatePtr->onExit();
+			mStatePtr = nullptr;
+			//Action.entry();
+		}
+	}
+
+	//RTC
+	return consumed;
+}
+template<class StateList>
+bool TFSM<StateList>::tryEntry(EEvent event, AState*& statePtr)
+{
+	return mStateList.tryEntry(event, statePtr);
+}
+template<class StateList>
+void TFSM<StateList>::onEntry()
+{
+
+}
+template<class StateList>
+void TFSM<StateList>::onExit()
+{
+
+}
+#endif

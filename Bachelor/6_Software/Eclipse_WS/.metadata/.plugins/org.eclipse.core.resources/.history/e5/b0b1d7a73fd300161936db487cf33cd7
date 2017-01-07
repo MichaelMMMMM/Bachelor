@@ -1,0 +1,19 @@
+/**
+ * @file	CSensorCalibration.h
+ * @author	Michael Meindl
+ * @date	5.1.2017
+ * @brief	Class definition for the state which handles sensor calibration.
+ */
+#ifndef CSENSORCALIBRATION_H
+#define CSENSORCALIBRATION_H
+#include "AState.h"
+
+class CSensorCalibration : public AState
+{
+public:
+	bool tryEntry(CMessage& msg, AState*& statePtr) override;
+	void onEntry() override;
+	void onExit() override;
+};
+
+#endif
