@@ -12,8 +12,10 @@
 #include "TLinHierarchy.h"
 #include "TStateHolder.h"
 #include "CSensorCalibration.h"
+#include "CADCCalibration.h"
+#include "CControlTest.h"
 
-using StateList = TYPELIST_1(CSensorCalibration);
+using StateList = TYPELIST_3(CSensorCalibration, CADCCalibration, CControlTest);
 
 class CControlComp : public AComponentBase
 {

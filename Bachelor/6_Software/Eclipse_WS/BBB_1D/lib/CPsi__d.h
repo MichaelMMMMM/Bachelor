@@ -12,9 +12,8 @@ struct CPsi__d
 {
 	Float32 mTime;
 	Float32 mEstimation;
-	Float32 mMean4;
-	Float32 mMean8;
-	Float32 mMean16;
+	Float32 mPT1_5Hz;
+	Float32 mPT1_10Hz;
 };
 
 #endif

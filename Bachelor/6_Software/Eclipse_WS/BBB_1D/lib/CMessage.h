@@ -19,6 +19,7 @@ public:
 	EEvent getEvent() const;
 	Float32 getTorque() const;
 	EFilter getFilter() const;
+	UInt8* getDataPtr();
 public:
 	CMessage();
 	CMessage(const CSensorData& data);

@@ -12,7 +12,8 @@ struct CPhi__d
 {
 	Float32 mTime;
 	Float32 mEstimation;
-	Float32 mKalman;
+	Float32 mPT1_5Hz;
+	Float32 mPT1_10Hz;
 };
 
 #endif

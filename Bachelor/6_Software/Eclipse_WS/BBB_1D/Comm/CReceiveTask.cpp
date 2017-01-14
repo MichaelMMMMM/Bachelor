@@ -8,8 +8,8 @@
 #include <iostream>
 
 CReceiveTask::CReceiveTask(CServer& server) : mServer(server),
-											   mRunningSem(false, true),
-											   mProxyPtr(nullptr)
+											  mRunningSem(false, true),
+											  mProxyPtr(nullptr)
 {
 
 }

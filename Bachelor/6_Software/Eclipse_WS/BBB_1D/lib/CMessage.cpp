@@ -47,3 +47,7 @@ EFilter CMessage::getFilter() const
 {
 	return *reinterpret_cast<const EFilter*>(mData);
 }
+UInt8* CMessage::getDataPtr()
+{
+	return mData;
+}
