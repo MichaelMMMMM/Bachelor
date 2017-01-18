@@ -2,15 +2,21 @@
 Das nächste Ziel besteht darin ein Regelungskonzept zu entwickeln, welches das Balancieren des Würfels auf einer Ecke ermöglicht. Hierfür werden drei Motor verwendet, wodurch das gesamte System über sechs Freiheitsgrade verfügt. Die Vorgehensweise erfolgt analog zu dem Reglerentwurf der Würfelseite. Somit besteht der erste Schritt in dem Entwurf eines mechanischen Modells, welches wiederum zu einer Zustandsraumdarstellung führt, die als Grundlage für den Reglerentwurf verwendet wird.
 Der erste Schritt in der Modellbildung besteht in der Definition der Bezugssystem, welche zur Beschreibung der Systembewegung dienen. Der Ausgangspunkt ist das raumfeste Bezugssystem $A$, welches durch die drei Einheitsvektoren $\bs{a}_1$, $\bs{a}_2$ und $\bs{a}_3$ definiert wird. Das Würfelgehäuse verfügt über drei rotatorische Freiheitsgrade, welche durch die Winkel $\varphi_1$, $\varphi_2$ und $\varphi_3$ beschrieben werden. Durch die Rotation des Würfels um den Winkel $\varphi_1$ in Richtung des Vektors $\bs{a}_1$ entsteht das Hilfsbezugssystem $B$, das durch die Einheitsvektoren $\bs{b}_1$, $\bs{b}_2$ und $\bs{b}_3$ aufgespannt wird.
 \begin{equation}
-\presuper{A}{\bs{v}} = \presuper{B}{\Big( \pMat{A}{B} \cdot \presuper{A}{\bs{v}}\Big)} = \presuper{B}{\bs{v}}
+\presuper{A}{\bs{v}} = \presuper{B}{\Big( \pMat{A}{B} \cdot \presuper{A}{\bs{v}}\Big)} = \presuper{B}{\bs{v}} \hspace{35pt} \vert \hspace{15pt} \pMat{A}{B} = \begin{pmatrix}
+1 & 0 & 0 \\ 0 & c_{\varphi_1} & s_{\varphi_1} \\ 0 & -s_{\varphi} & c_{\varphi_1}
+\end{pmatrix}
 \end{equation}
 Die Rotation um den Winkel $\varphi_2$ in Richtung des Vektors $\bs{b}_2$ führt zu dem zweiten Hilfsbezugssystem $C$ mit den drei Einheitsvektoren $\bs{c}_1$, $\bs{c}_2$ und $\bs{c}_3$.
 \begin{equation}
-\presuper{B}{\bs{v}} = \presuper{C}{\Big( \pMat{B}{C} \cdot \presuper{B}{\bs{v}}\Big)} = \presuper{C}{\bs{v}}
+\presuper{B}{\bs{v}} = \presuper{C}{\Big( \pMat{B}{C} \cdot \presuper{B}{\bs{v}}\Big)} = \presuper{C}{\bs{v}} \hspace{35pt} \vert \hspace{15pt} \pMat{B}{C} = \begin{pmatrix}
+c_{\varphi_2} & 0 & -s_{\varphi_2} \\ 0 & 1 & 0 \\ s_{\varphi_2} 0 c_{\varphi_2}
+\end{pmatrix}
 \end{equation}
 Die letzte Rotation des Würfels in Richtung von $\bs{c}_3$ um den Winkel $\varphi_3$ führt zu dem körperfesten Bezugssystem $K$, welches durch die drei Vektoren $\bs{k}_1$, $\bs{k}_2$ und $\bs{k}_3$ definiert ist.
 \begin{equation}
-\presuper{C}{\bs{v}} = \presuper{K}{\Big( \pMat{C}{K} \cdot \presuper{C}{\bs{v}}\Big)} = \presuper{K}{\bs{v}}
+\presuper{C}{\bs{v}} = \presuper{K}{\Big( \pMat{C}{K} \cdot \presuper{C}{\bs{v}}\Big)} = \presuper{K}{\bs{v}} \hspace{35pt} \vert \hspace{15pt} \pMat{C}{K} = \begin{pmatrix}
+c_{\varphi_3} & s_{\varphi_3} & 0 \\ -s_{\varphi_3} & c_{\varphi_3} & 0 \\ 0 & 0 & 1
+\end{pmatrix}
 \end{equation}
 Hier sei angemerkt, dass es sich bei den Bezugssystem $B$ und $C$ um theoretische Konstrukte handelt, für die kein physisches Gegenstück existiert. Sie werden lediglich als Hilfsmittel zur Beschreibung des Systems verwendet.
 

@@ -1,14 +1,14 @@
 \select@language {ngerman}
 \contentsline {section}{\numberline {1}Modellbildung W\IeC {\"u}rfelseite}{2}{section.1}
-\contentsline {subsection}{\numberline {1.1}Zustandsraumdarstellung}{5}{subsection.1.1}
-\contentsline {section}{\numberline {2}Regelungstechnik}{8}{section.2}
-\contentsline {subsection}{\numberline {2.1}Entwurf der Reglermatrix $\boldsymbol {F}$}{9}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}Entwurf des Vorfilters $\boldsymbol {V}$}{9}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}Entwurf eines kaskadierten Regelkreises}{10}{subsection.2.3}
-\contentsline {subsection}{\numberline {2.4}Einfluss des digitalen Reglers}{13}{subsection.2.4}
-\contentsline {section}{\numberline {3}Sensorik}{17}{section.3}
-\contentsline {subsection}{\numberline {3.1}Untersuchung der Messsysteme f\IeC {\"u}r $\mathaccentV {dot}05F{\varphi }$}{18}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Ermittlung von $\varphi $}{19}{subsection.3.2}
-\contentsline {section}{\numberline {4}Herleitung/Interpretation Fourier-Spektren}{22}{section.4}
-\contentsline {section}{\numberline {5}3D-Modell}{24}{section.5}
-\contentsline {section}{\numberline {6}Software}{26}{section.6}
+\contentsline {subsection}{\numberline {1.1}Zustandsraumdarstellung}{4}{subsection.1.1}
+\contentsline {section}{\numberline {2}Regelungstechnik}{7}{section.2}
+\contentsline {subsection}{\numberline {2.1}Entwurf der Reglermatrix $\boldsymbol {F}$}{7}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Entwurf des Vorfilters $\boldsymbol {V}$}{8}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Entwurf eines kaskadierten Regelkreises}{9}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Einfluss des digitalen Reglers}{11}{subsection.2.4}
+\contentsline {section}{\numberline {3}Sensorik}{14}{section.3}
+\contentsline {subsection}{\numberline {3.1}Untersuchung der Messsysteme f\IeC {\"u}r $\mathaccentV {dot}05F{\varphi }$}{15}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Ermittlung von $\varphi $}{15}{subsection.3.2}
+\contentsline {section}{\numberline {4}Herleitung/Interpretation Fourier-Spektren}{18}{section.4}
+\contentsline {section}{\numberline {5}3D-Modell}{20}{section.5}
+\contentsline {section}{\numberline {6}Software}{22}{section.6}
