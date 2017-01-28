@@ -47,3 +47,20 @@ A_a_R1 = [u__d(1)+u__d(4); u__d(2); u__d(3)];
 A_a_R2 = [u__d(1); u__d(2)+u__d(5); u__d(3)];
 A_a_R3 = [u__d(1); u__d(2); u__d(3)+u__d(6)];
 
+A_w_K  = C_P_K*(B_P_C*(A_P_B*[phi__d(1);0;0])) + ...
+         C_P_K*(B_P_C*[0;phi__d(2);0]) + ...
+         C_P_K*[0;0;phi__d(3)];
+     
+phi1_0 = 0; phi2_0 = -2*atan(2^(1/2) - 3^(1/2)); phi3_0 = -pi/4;
+
+u1_lin = cos(phi2_0) * phi__d(2) + (-sin(phi2_0)*cos(phi3_0)-cos(phi2_0)*sin(phi3_0))*phi__d(1);
+u2_lin = -sin(phi3_0)*phi__d(2)  - (-sin(phi2_0)*sin(phi3_0)+cos(phi2_0)*cos(phi3_0))*phi__d(1);
+u3_lin = phi__d(3)+cos(phi2_0)*phi__d(1);
+
+g   = sym('g');
+m_G = sym('m_G');
+l_c = sym('l_c');
+
+F1_lin  = g*m_G*l_c*(-cos(phi2_0)+sin(phi2_0)*sin(phi3_0)-cos(phi2_0)*cos(phi3_0));
+F2_lin  = g*m_G*l_c*(cos(phi2_0)+sin(phi2_0)*cos(phi3_0)+cos(phi2_0)*sin(phi3_0));
+F3_lin  = g*m_G*l_c*(-sin(phi2_0)*cos(phi3_0)-cos(phi2_0)*sin(phi3_0)-sin(phi2_0)*sin(phi3_0)+cos(phi2_0)*cos(phi3_0));
