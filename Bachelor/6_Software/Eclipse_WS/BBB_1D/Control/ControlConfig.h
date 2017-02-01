@@ -15,9 +15,11 @@ namespace ControlConfig
 	constexpr Float32 R_S1					= 0.14F;
 	constexpr Float32 R_S2					= 0.061F;
 	constexpr Float32 SensorAlpha			= R_S1/R_S2;
-	constexpr Float32 Phi1__d_P1			= -0.00013265F;
+	//constexpr Float32 Phi1__d_P1			= -0.00013265F;
+	constexpr Float32 Phi1__d_P1			= -4000.0F/65536.0F*3.14F/180.0F;
 	constexpr Float32 Phi1__d_P2			= 120.2720F;
-	constexpr Float32 Phi2__d_P1			= -0.00013265F;
+	//constexpr Float32 Phi2__d_P1			= -0.00013265F;
+	constexpr Float32 Phi2__d_P1			= -4000.0F/65536.0F*3.14F/180.0F;
 	constexpr Float32 Phi2__d_P2			= -78.732F;
 	constexpr Float32 Psi__d_P1				= -0.1533F;
 	constexpr Float32 Psi__d_P2				= 312.4F;

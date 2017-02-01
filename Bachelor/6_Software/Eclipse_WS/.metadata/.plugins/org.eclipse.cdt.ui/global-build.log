@@ -1,69 +1,14 @@
-16:22:38 **** Incremental Build of configuration Debug for project BBB_1D ****
-make all 
-Building file: ../Control/CFilterSystem.cpp
-Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/CFilterSystem.d" -MT"Control/CFilterSystem.o" -o "Control/CFilterSystem.o" "../Control/CFilterSystem.cpp"
-Finished building: ../Control/CFilterSystem.cpp
- 
-Building target: BBB_1D
-Invoking: Cross G++ Linker
-arm-linux-gnueabihf-g++  -o "BBB_1D"  ./lib/AComponentBase.o ./lib/Assertion.o ./lib/CBinarySemaphore.o ./lib/CCountingSemaphore.o ./lib/CMessage.o ./lib/CMutex.o ./lib/CProxy.o ./lib/CThread.o  ./Hardware/CADC.o ./Hardware/CBBBHardware.o ./Hardware/CBrake.o ./Hardware/CMPU6050.o ./Hardware/CMotor.o  ./Control/CADCCalibration.o ./Control/CADCCalibrationAction.o ./Control/CComplementaryFilter.o ./Control/CControlAction.o ./Control/CControlActionBase.o ./Control/CControlComp.o ./Control/CControlTest.o ./Control/CControlTestAction.o ./Control/CDT1.o ./Control/CFilterSystem.o ./Control/CLQRControl.o ./Control/CPT1.o ./Control/CSensorCalibration.o ./Control/CSensorCalibrationAction.o ./Control/CSensorEvaluation.o ./Control/CTimerTask.o  ./Comm/CCommAction.o ./Comm/CCommComponent.o ./Comm/CCommFSM.o ./Comm/CReceiveTask.o ./Comm/CServer.o  ./main.o   -lpthread
-Finished building target: BBB_1D
- 
-16:30:53 **** Incremental Build of configuration Debug for project BBB_1D ****
+16:07:16 **** Incremental Build of configuration Debug for project BBB_1D ****
 make all 
 make: Nothing to be done for `all'.
-16:33:31 **** Incremental Build of configuration Debug for project BBB_1D ****
+16:07:26 **** Incremental Build of configuration Debug for project BBB_1D ****
 make all 
-Building file: ../Control/CControlTestAction.cpp
-Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/CControlTestAction.d" -MT"Control/CControlTestAction.o" -o "Control/CControlTestAction.o" "../Control/CControlTestAction.cpp"
-Finished building: ../Control/CControlTestAction.cpp
- 
-Building target: BBB_1D
-Invoking: Cross G++ Linker
-arm-linux-gnueabihf-g++  -o "BBB_1D"  ./lib/AComponentBase.o ./lib/Assertion.o ./lib/CBinarySemaphore.o ./lib/CCountingSemaphore.o ./lib/CMessage.o ./lib/CMutex.o ./lib/CProxy.o ./lib/CThread.o  ./Hardware/CADC.o ./Hardware/CBBBHardware.o ./Hardware/CBrake.o ./Hardware/CMPU6050.o ./Hardware/CMotor.o  ./Control/CADCCalibration.o ./Control/CADCCalibrationAction.o ./Control/CComplementaryFilter.o ./Control/CControlAction.o ./Control/CControlActionBase.o ./Control/CControlComp.o ./Control/CControlTest.o ./Control/CControlTestAction.o ./Control/CDT1.o ./Control/CFilterSystem.o ./Control/CLQRControl.o ./Control/CPT1.o ./Control/CSensorCalibration.o ./Control/CSensorCalibrationAction.o ./Control/CSensorEvaluation.o ./Control/CTimerTask.o  ./Comm/CCommAction.o ./Comm/CCommComponent.o ./Comm/CCommFSM.o ./Comm/CReceiveTask.o ./Comm/CServer.o  ./main.o   -lpthread
-Finished building target: BBB_1D
- 
-16:36:59 **** Incremental Build of configuration Debug for project BBB_1D ****
+make: Nothing to be done for `all'.
+16:08:57 **** Incremental Build of configuration Debug for project BBB_1D ****
 make all 
-Building file: ../Control/CControlTestAction.cpp
-Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/CControlTestAction.d" -MT"Control/CControlTestAction.o" -o "Control/CControlTestAction.o" "../Control/CControlTestAction.cpp"
-Finished building: ../Control/CControlTestAction.cpp
- 
-Building file: ../Control/CFilterSystem.cpp
-Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/CFilterSystem.d" -MT"Control/CFilterSystem.o" -o "Control/CFilterSystem.o" "../Control/CFilterSystem.cpp"
-Finished building: ../Control/CFilterSystem.cpp
- 
-Building target: BBB_1D
-Invoking: Cross G++ Linker
-arm-linux-gnueabihf-g++  -o "BBB_1D"  ./lib/AComponentBase.o ./lib/Assertion.o ./lib/CBinarySemaphore.o ./lib/CCountingSemaphore.o ./lib/CMessage.o ./lib/CMutex.o ./lib/CProxy.o ./lib/CThread.o  ./Hardware/CADC.o ./Hardware/CBBBHardware.o ./Hardware/CBrake.o ./Hardware/CMPU6050.o ./Hardware/CMotor.o  ./Control/CADCCalibration.o ./Control/CADCCalibrationAction.o ./Control/CComplementaryFilter.o ./Control/CControlAction.o ./Control/CControlActionBase.o ./Control/CControlComp.o ./Control/CControlTest.o ./Control/CControlTestAction.o ./Control/CDT1.o ./Control/CFilterSystem.o ./Control/CLQRControl.o ./Control/CPT1.o ./Control/CSensorCalibration.o ./Control/CSensorCalibrationAction.o ./Control/CSensorEvaluation.o ./Control/CTimerTask.o  ./Comm/CCommAction.o ./Comm/CCommComponent.o ./Comm/CCommFSM.o ./Comm/CReceiveTask.o ./Comm/CServer.o  ./main.o   -lpthread
-Finished building target: BBB_1D
- 
-17:00:44 **** Incremental Build of configuration Debug for project BBB_1D ****
+make: Nothing to be done for `all'.
+16:12:13 **** Incremental Build of configuration Debug for project BBB_1D ****
 make all 
-Building file: ../lib/AComponentBase.cpp
-Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"lib/AComponentBase.d" -MT"lib/AComponentBase.o" -o "lib/AComponentBase.o" "../lib/AComponentBase.cpp"
-Finished building: ../lib/AComponentBase.cpp
- 
-Building file: ../lib/CMessage.cpp
-Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"lib/CMessage.d" -MT"lib/CMessage.o" -o "lib/CMessage.o" "../lib/CMessage.cpp"
-Finished building: ../lib/CMessage.cpp
- 
-Building file: ../lib/CProxy.cpp
-Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"lib/CProxy.d" -MT"lib/CProxy.o" -o "lib/CProxy.o" "../lib/CProxy.cpp"
-Finished building: ../lib/CProxy.cpp
- 
-Building file: ../Control/CADCCalibration.cpp
-Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/CADCCalibration.d" -MT"Control/CADCCalibration.o" -o "Control/CADCCalibration.o" "../Control/CADCCalibration.cpp"
-Finished building: ../Control/CADCCalibration.cpp
- 
 Building file: ../Control/CADCCalibrationAction.cpp
 Invoking: Cross G++ Compiler
 arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/CADCCalibrationAction.d" -MT"Control/CADCCalibrationAction.o" -o "Control/CADCCalibrationAction.o" "../Control/CADCCalibrationAction.cpp"
@@ -78,16 +23,6 @@ Building file: ../Control/CComplementaryFilter.cpp
 Invoking: Cross G++ Compiler
 arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/CComplementaryFilter.d" -MT"Control/CComplementaryFilter.o" -o "Control/CComplementaryFilter.o" "../Control/CComplementaryFilter.cpp"
 Finished building: ../Control/CComplementaryFilter.cpp
- 
-Building file: ../Control/CControlAction.cpp
-Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/CControlAction.d" -MT"Control/CControlAction.o" -o "Control/CControlAction.o" "../Control/CControlAction.cpp"
-Finished building: ../Control/CControlAction.cpp
- 
-Building file: ../Control/CControlActionBase.cpp
-Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/CControlActionBase.d" -MT"Control/CControlActionBase.o" -o "Control/CControlActionBase.o" "../Control/CControlActionBase.cpp"
-Finished building: ../Control/CControlActionBase.cpp
  
 Building file: ../Control/CControlComp.cpp
 Invoking: Cross G++ Compiler
@@ -124,11 +59,6 @@ Invoking: Cross G++ Compiler
 arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/CPT1.d" -MT"Control/CPT1.o" -o "Control/CPT1.o" "../Control/CPT1.cpp"
 Finished building: ../Control/CPT1.cpp
  
-Building file: ../Control/CSensorCalibration.cpp
-Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/CSensorCalibration.d" -MT"Control/CSensorCalibration.o" -o "Control/CSensorCalibration.o" "../Control/CSensorCalibration.cpp"
-Finished building: ../Control/CSensorCalibration.cpp
- 
 Building file: ../Control/CSensorCalibrationAction.cpp
 Invoking: Cross G++ Compiler
 arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/CSensorCalibrationAction.d" -MT"Control/CSensorCalibrationAction.o" -o "Control/CSensorCalibrationAction.o" "../Control/CSensorCalibrationAction.cpp"
@@ -138,56 +68,6 @@ Building file: ../Control/CSensorEvaluation.cpp
 Invoking: Cross G++ Compiler
 arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/CSensorEvaluation.d" -MT"Control/CSensorEvaluation.o" -o "Control/CSensorEvaluation.o" "../Control/CSensorEvaluation.cpp"
 Finished building: ../Control/CSensorEvaluation.cpp
- 
-Building file: ../Control/CTimerTask.cpp
-Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/CTimerTask.d" -MT"Control/CTimerTask.o" -o "Control/CTimerTask.o" "../Control/CTimerTask.cpp"
-Finished building: ../Control/CTimerTask.cpp
- 
-Building file: ../Comm/CCommAction.cpp
-Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Comm/CCommAction.d" -MT"Comm/CCommAction.o" -o "Comm/CCommAction.o" "../Comm/CCommAction.cpp"
-Finished building: ../Comm/CCommAction.cpp
- 
-Building file: ../Comm/CCommComponent.cpp
-Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Comm/CCommComponent.d" -MT"Comm/CCommComponent.o" -o "Comm/CCommComponent.o" "../Comm/CCommComponent.cpp"
-In file included from /usr/arm-linux-gnueabihf/include/c++/4.8.4/string:52:0,
-                 from /usr/arm-linux-gnueabihf/include/c++/4.8.4/bits/locale_classes.h:40,
-                 from /usr/arm-linux-gnueabihf/include/c++/4.8.4/bits/ios_base.h:41,
-                 from /usr/arm-linux-gnueabihf/include/c++/4.8.4/ios:42,
-                 from /usr/arm-linux-gnueabihf/include/c++/4.8.4/ostream:38,
-                 from /usr/arm-linux-gnueabihf/include/c++/4.8.4/iostream:39,
-                 from ../Comm/CCommComponent.cpp:7:
-/usr/arm-linux-gnueabihf/include/c++/4.8.4/bits/basic_string.h:1557:74: internal compiler error: Segmentation fault
-       replace(iterator __i1, iterator __i2, const _CharT* __s, size_type __n)
-                                                                          ^
-Please submit a full bug report,
-with preprocessed source if appropriate.
-See <file:///usr/share/doc/gcc-4.8/README.Bugs> for instructions.
-The bug is not reproducible, so it is likely a hardware or OS problem.
-make: *** [Comm/CCommComponent.o] Error 1
-17:00:54 **** Incremental Build of configuration Debug for project BBB_1D ****
-make all 
-Building file: ../Comm/CCommComponent.cpp
-Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Comm/CCommComponent.d" -MT"Comm/CCommComponent.o" -o "Comm/CCommComponent.o" "../Comm/CCommComponent.cpp"
-Finished building: ../Comm/CCommComponent.cpp
- 
-Building file: ../Comm/CCommFSM.cpp
-Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Comm/CCommFSM.d" -MT"Comm/CCommFSM.o" -o "Comm/CCommFSM.o" "../Comm/CCommFSM.cpp"
-Finished building: ../Comm/CCommFSM.cpp
- 
-Building file: ../Comm/CReceiveTask.cpp
-Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Comm/CReceiveTask.d" -MT"Comm/CReceiveTask.o" -o "Comm/CReceiveTask.o" "../Comm/CReceiveTask.cpp"
-Finished building: ../Comm/CReceiveTask.cpp
- 
-Building file: ../Comm/CServer.cpp
-Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Comm/CServer.d" -MT"Comm/CServer.o" -o "Comm/CServer.o" "../Comm/CServer.cpp"
-Finished building: ../Comm/CServer.cpp
  
 Building file: ../main.cpp
 Invoking: Cross G++ Compiler
@@ -199,6 +79,3 @@ Invoking: Cross G++ Linker
 arm-linux-gnueabihf-g++  -o "BBB_1D"  ./lib/AComponentBase.o ./lib/Assertion.o ./lib/CBinarySemaphore.o ./lib/CCountingSemaphore.o ./lib/CMessage.o ./lib/CMutex.o ./lib/CProxy.o ./lib/CThread.o  ./Hardware/CADC.o ./Hardware/CBBBHardware.o ./Hardware/CBrake.o ./Hardware/CMPU6050.o ./Hardware/CMotor.o  ./Control/CADCCalibration.o ./Control/CADCCalibrationAction.o ./Control/CCascadeControl.o ./Control/CComplementaryFilter.o ./Control/CControlAction.o ./Control/CControlActionBase.o ./Control/CControlComp.o ./Control/CControlTest.o ./Control/CControlTestAction.o ./Control/CDT1.o ./Control/CFilterSystem.o ./Control/CLQRControl.o ./Control/CPT1.o ./Control/CSensorCalibration.o ./Control/CSensorCalibrationAction.o ./Control/CSensorEvaluation.o ./Control/CTimerTask.o  ./Comm/CCommAction.o ./Comm/CCommComponent.o ./Comm/CCommFSM.o ./Comm/CReceiveTask.o ./Comm/CServer.o  ./main.o   -lpthread
 Finished building target: BBB_1D
  
-17:03:58 **** Incremental Build of configuration Debug for project BBB_1D ****
-make all 
-make: Nothing to be done for `all'.
