@@ -1,81 +1,516 @@
-16:07:16 **** Incremental Build of configuration Debug for project BBB_1D ****
+16:09:55 **** Incremental Build of configuration Debug for project Template_SignalFlow ****
 make all 
-make: Nothing to be done for `all'.
-16:07:26 **** Incremental Build of configuration Debug for project BBB_1D ****
-make all 
-make: Nothing to be done for `all'.
-16:08:57 **** Incremental Build of configuration Debug for project BBB_1D ****
-make all 
-make: Nothing to be done for `all'.
-16:12:13 **** Incremental Build of configuration Debug for project BBB_1D ****
-make all 
-Building file: ../Control/CADCCalibrationAction.cpp
-Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/CADCCalibrationAction.d" -MT"Control/CADCCalibrationAction.o" -o "Control/CADCCalibrationAction.o" "../Control/CADCCalibrationAction.cpp"
-Finished building: ../Control/CADCCalibrationAction.cpp
- 
-Building file: ../Control/CCascadeControl.cpp
-Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/CCascadeControl.d" -MT"Control/CCascadeControl.o" -o "Control/CCascadeControl.o" "../Control/CCascadeControl.cpp"
-Finished building: ../Control/CCascadeControl.cpp
- 
-Building file: ../Control/CComplementaryFilter.cpp
-Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/CComplementaryFilter.d" -MT"Control/CComplementaryFilter.o" -o "Control/CComplementaryFilter.o" "../Control/CComplementaryFilter.cpp"
-Finished building: ../Control/CComplementaryFilter.cpp
- 
-Building file: ../Control/CControlComp.cpp
-Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/CControlComp.d" -MT"Control/CControlComp.o" -o "Control/CControlComp.o" "../Control/CControlComp.cpp"
-Finished building: ../Control/CControlComp.cpp
- 
-Building file: ../Control/CControlTest.cpp
-Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/CControlTest.d" -MT"Control/CControlTest.o" -o "Control/CControlTest.o" "../Control/CControlTest.cpp"
-Finished building: ../Control/CControlTest.cpp
- 
-Building file: ../Control/CControlTestAction.cpp
-Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/CControlTestAction.d" -MT"Control/CControlTestAction.o" -o "Control/CControlTestAction.o" "../Control/CControlTestAction.cpp"
-Finished building: ../Control/CControlTestAction.cpp
- 
-Building file: ../Control/CDT1.cpp
-Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/CDT1.d" -MT"Control/CDT1.o" -o "Control/CDT1.o" "../Control/CDT1.cpp"
-Finished building: ../Control/CDT1.cpp
- 
-Building file: ../Control/CFilterSystem.cpp
-Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/CFilterSystem.d" -MT"Control/CFilterSystem.o" -o "Control/CFilterSystem.o" "../Control/CFilterSystem.cpp"
-Finished building: ../Control/CFilterSystem.cpp
- 
-Building file: ../Control/CLQRControl.cpp
-Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/CLQRControl.d" -MT"Control/CLQRControl.o" -o "Control/CLQRControl.o" "../Control/CLQRControl.cpp"
-Finished building: ../Control/CLQRControl.cpp
- 
-Building file: ../Control/CPT1.cpp
-Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/CPT1.d" -MT"Control/CPT1.o" -o "Control/CPT1.o" "../Control/CPT1.cpp"
-Finished building: ../Control/CPT1.cpp
- 
-Building file: ../Control/CSensorCalibrationAction.cpp
-Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/CSensorCalibrationAction.d" -MT"Control/CSensorCalibrationAction.o" -o "Control/CSensorCalibrationAction.o" "../Control/CSensorCalibrationAction.cpp"
-Finished building: ../Control/CSensorCalibrationAction.cpp
- 
-Building file: ../Control/CSensorEvaluation.cpp
-Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/CSensorEvaluation.d" -MT"Control/CSensorEvaluation.o" -o "Control/CSensorEvaluation.o" "../Control/CSensorEvaluation.cpp"
-Finished building: ../Control/CSensorEvaluation.cpp
- 
 Building file: ../main.cpp
-Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+In file included from ../CA.h:3:0,
+                 from ../main.cpp:2:
+../Global.h:8:23: fatal error: Assertion.h: No such file or directory
+ #include "Assertion.h"
+                       ^
+compilation terminated.
+make: *** [main.o] Error 1
+16:10:04 **** Incremental Build of configuration Debug for project BBB_3D ****
+make all 
+make: Nothing to be done for `all'.
+16:10:04 **** Incremental Build of configuration Debug for project Template_SignalFlow ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+In file included from ../main.cpp:1:0:
+../TLinHierarchy.h:6:7: error: no default argument for ‘in’
+ class TLinHierarchy;
+       ^
+../TLinHierarchy.h:6:7: error: no default argument for ‘out’
+../TLinHierarchy.h:9:50: error: template argument 4 is invalid
+ class TLinHierarchy<TTypeList<T1, T2>, Unit, Root>
+                                                  ^
+../TLinHierarchy.h:9:50: error: template argument 5 is invalid
+../TLinHierarchy.h:10:48: error: template argument 4 is invalid
+  : public Unit<T1, TLinHierarchy<T2, Unit, Root>, class input, class output>
+                                                ^
+../TLinHierarchy.h:10:48: error: template argument 5 is invalid
+../TLinHierarchy.h:10:76: error: template argument 2 is invalid
+  : public Unit<T1, TLinHierarchy<T2, Unit, Root>, class input, class output>
+                                                                            ^
+../TLinHierarchy.h:16:46: error: template argument 4 is invalid
+ class TLinHierarchy<TYPELIST_1(T), Unit, Root>
+                                              ^
+../TLinHierarchy.h:16:46: error: template argument 5 is invalid
+../TLinHierarchy.h:17:25: error: ‘inType’ was not declared in this scope
+  : public Unit<T, Root, inType, output>
+                         ^
+../TLinHierarchy.h:17:39: error: template argument 3 is invalid
+  : public Unit<T, Root, inType, output>
+                                       ^
+../main.cpp:7:61: error: template argument 4 is invalid
+ using CSignalFlow = TLinHierarchy<CActionList, TActionHolder>;
+                                                             ^
+../main.cpp:7:61: error: template argument 5 is invalid
+make: *** [main.o] Error 1
+16:10:31 **** Incremental Build of configuration Debug for project BBB_3D ****
+make all 
+make: Nothing to be done for `all'.
+16:10:31 **** Incremental Build of configuration Debug for project Template_SignalFlow ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+In file included from ../main.cpp:1:0:
+../TLinHierarchy.h:9:50: error: wrong number of template arguments (3, should be 5)
+ class TLinHierarchy<TTypeList<T1, T2>, Unit, Root>
+                                                  ^
+../TLinHierarchy.h:6:7: error: provided for ‘template<class TList, template<class AtomicType, class Base, class, class> class Unit, class in, class out, class Root> class TLinHierarchy’
+ class TLinHierarchy;
+       ^
+../TLinHierarchy.h:10:48: error: wrong number of template arguments (3, should be 5)
+  : public Unit<T1, TLinHierarchy<T2, Unit, Root>, class input, class output>
+                                                ^
+../TLinHierarchy.h:6:7: error: provided for ‘template<class TList, template<class AtomicType, class Base, class, class> class Unit, class in, class out, class Root> class TLinHierarchy’
+ class TLinHierarchy;
+       ^
+../TLinHierarchy.h:10:76: error: template argument 2 is invalid
+  : public Unit<T1, TLinHierarchy<T2, Unit, Root>, class input, class output>
+                                                                            ^
+../TLinHierarchy.h:16:46: error: wrong number of template arguments (3, should be 5)
+ class TLinHierarchy<TYPELIST_1(T), Unit, Root>
+                                              ^
+../TLinHierarchy.h:6:7: error: provided for ‘template<class TList, template<class AtomicType, class Base, class, class> class Unit, class in, class out, class Root> class TLinHierarchy’
+ class TLinHierarchy;
+       ^
+../TLinHierarchy.h:17:25: error: ‘inType’ was not declared in this scope
+  : public Unit<T, Root, inType, output>
+                         ^
+../TLinHierarchy.h:17:39: error: template argument 3 is invalid
+  : public Unit<T, Root, inType, output>
+                                       ^
+../main.cpp:7:61: error: wrong number of template arguments (2, should be 5)
+ using CSignalFlow = TLinHierarchy<CActionList, TActionHolder>;
+                                                             ^
+In file included from ../main.cpp:1:0:
+../TLinHierarchy.h:6:7: error: provided for ‘template<class TList, template<class AtomicType, class Base, class, class> class Unit, class in, class out, class Root> class TLinHierarchy’
+ class TLinHierarchy;
+       ^
+make: *** [main.o] Error 1
+16:10:41 **** Incremental Build of configuration Debug for project BBB_3D ****
+make all 
+make: Nothing to be done for `all'.
+16:10:41 **** Incremental Build of configuration Debug for project Template_SignalFlow ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+In file included from ../main.cpp:1:0:
+../TLinHierarchy.h:9:50: error: wrong number of template arguments (3, should be 5)
+ class TLinHierarchy<TTypeList<T1, T2>, Unit, Root>
+                                                  ^
+../TLinHierarchy.h:6:7: error: provided for ‘template<class TList, template<class AtomicType, class Base, class, class> class Unit, class in, class out, class Root> class TLinHierarchy’
+ class TLinHierarchy;
+       ^
+../TLinHierarchy.h:10:48: error: wrong number of template arguments (3, should be 5)
+  : public Unit<T1, TLinHierarchy<T2, Unit, Root>, class input, class output>
+                                                ^
+../TLinHierarchy.h:6:7: error: provided for ‘template<class TList, template<class AtomicType, class Base, class, class> class Unit, class in, class out, class Root> class TLinHierarchy’
+ class TLinHierarchy;
+       ^
+../TLinHierarchy.h:10:76: error: template argument 2 is invalid
+  : public Unit<T1, TLinHierarchy<T2, Unit, Root>, class input, class output>
+                                                                            ^
+../TLinHierarchy.h:16:46: error: wrong number of template arguments (3, should be 5)
+ class TLinHierarchy<TYPELIST_1(T), Unit, Root>
+                                              ^
+../TLinHierarchy.h:6:7: error: provided for ‘template<class TList, template<class AtomicType, class Base, class, class> class Unit, class in, class out, class Root> class TLinHierarchy’
+ class TLinHierarchy;
+       ^
+../TLinHierarchy.h:17:25: error: ‘inType’ was not declared in this scope
+  : public Unit<T, Root, inType, output>
+                         ^
+../TLinHierarchy.h:17:39: error: template argument 3 is invalid
+  : public Unit<T, Root, inType, output>
+                                       ^
+make: *** [main.o] Error 1
+16:11:06 **** Incremental Build of configuration Debug for project BBB_3D ****
+make all 
+make: Nothing to be done for `all'.
+16:11:06 **** Incremental Build of configuration Debug for project Template_SignalFlow ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+In file included from ../main.cpp:1:0:
+../TLinHierarchy.h:9:50: error: wrong number of template arguments (3, should be 5)
+ class TLinHierarchy<TTypeList<T1, T2>, Unit, Root>
+                                                  ^
+../TLinHierarchy.h:6:7: error: provided for ‘template<class TList, template<class AtomicType, class Base, class, class> class Unit, class in, class out, class Root> class TLinHierarchy’
+ class TLinHierarchy;
+       ^
+../TLinHierarchy.h:10:48: error: wrong number of template arguments (3, should be 5)
+  : public Unit<T1, TLinHierarchy<T2, Unit, Root>, class input, class output>
+                                                ^
+../TLinHierarchy.h:6:7: error: provided for ‘template<class TList, template<class AtomicType, class Base, class, class> class Unit, class in, class out, class Root> class TLinHierarchy’
+ class TLinHierarchy;
+       ^
+../TLinHierarchy.h:10:76: error: template argument 2 is invalid
+  : public Unit<T1, TLinHierarchy<T2, Unit, Root>, class input, class output>
+                                                                            ^
+../TLinHierarchy.h:16:46: error: wrong number of template arguments (3, should be 5)
+ class TLinHierarchy<TYPELIST_1(T), Unit, Root>
+                                              ^
+../TLinHierarchy.h:6:7: error: provided for ‘template<class TList, template<class AtomicType, class Base, class, class> class Unit, class in, class out, class Root> class TLinHierarchy’
+ class TLinHierarchy;
+       ^
+make: *** [main.o] Error 1
+16:11:18 **** Incremental Build of configuration Debug for project BBB_3D ****
+make all 
+make: Nothing to be done for `all'.
+16:11:18 **** Incremental Build of configuration Debug for project Template_SignalFlow ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+In file included from ../main.cpp:1:0:
+../TLinHierarchy.h:9:50: error: wrong number of template arguments (3, should be 5)
+ class TLinHierarchy<TTypeList<T1, T2>, Unit, Root>
+                                                  ^
+../TLinHierarchy.h:6:7: error: provided for ‘template<class TList, template<class AtomicType, class Base, class, class> class Unit, class in, class out, class Root> class TLinHierarchy’
+ class TLinHierarchy;
+       ^
+../TLinHierarchy.h:10:48: error: wrong number of template arguments (3, should be 5)
+  : public Unit<T1, TLinHierarchy<T2, Unit, Root>, class input, class output>
+                                                ^
+../TLinHierarchy.h:6:7: error: provided for ‘template<class TList, template<class AtomicType, class Base, class, class> class Unit, class in, class out, class Root> class TLinHierarchy’
+ class TLinHierarchy;
+       ^
+../TLinHierarchy.h:10:76: error: template argument 2 is invalid
+  : public Unit<T1, TLinHierarchy<T2, Unit, Root>, class input, class output>
+                                                                            ^
+../TLinHierarchy.h:16:46: error: wrong number of template arguments (3, should be 5)
+ class TLinHierarchy<TYPELIST_1(T), Unit, Root>
+                                              ^
+../TLinHierarchy.h:6:7: error: provided for ‘template<class TList, template<class AtomicType, class Base, class, class> class Unit, class in, class out, class Root> class TLinHierarchy’
+ class TLinHierarchy;
+       ^
+make: *** [main.o] Error 1
+16:11:31 **** Incremental Build of configuration Debug for project BBB_3D ****
+make all 
+make: Nothing to be done for `all'.
+16:11:31 **** Incremental Build of configuration Debug for project Template_SignalFlow ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+In file included from ../main.cpp:1:0:
+../TLinHierarchy.h:9:50: error: wrong number of template arguments (3, should be 5)
+ class TLinHierarchy<TTypeList<T1, T2>, Unit, Root>
+                                                  ^
+../TLinHierarchy.h:6:7: error: provided for ‘template<class TList, template<class AtomicType, class Base, class, class> class Unit, class in, class out, class Root> class TLinHierarchy’
+ class TLinHierarchy;
+       ^
+../TLinHierarchy.h:10:48: error: wrong number of template arguments (3, should be 5)
+  : public Unit<T1, TLinHierarchy<T2, Unit, Root>, class input, class output>
+                                                ^
+../TLinHierarchy.h:6:7: error: provided for ‘template<class TList, template<class AtomicType, class Base, class, class> class Unit, class in, class out, class Root> class TLinHierarchy’
+ class TLinHierarchy;
+       ^
+../TLinHierarchy.h:10:76: error: template argument 2 is invalid
+  : public Unit<T1, TLinHierarchy<T2, Unit, Root>, class input, class output>
+                                                                            ^
+make: *** [main.o] Error 1
+16:11:40 **** Incremental Build of configuration Debug for project BBB_3D ****
+make all 
+make: Nothing to be done for `all'.
+16:11:40 **** Incremental Build of configuration Debug for project Template_SignalFlow ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+In file included from ../main.cpp:1:0:
+../TLinHierarchy.h:10:48: error: wrong number of template arguments (3, should be 5)
+  : public Unit<T1, TLinHierarchy<T2, Unit, Root>, class input, class output>
+                                                ^
+../TLinHierarchy.h:6:7: error: provided for ‘template<class TList, template<class AtomicType, class Base, class, class> class Unit, class in, class out, class Root> class TLinHierarchy’
+ class TLinHierarchy;
+       ^
+../TLinHierarchy.h:10:76: error: template argument 2 is invalid
+  : public Unit<T1, TLinHierarchy<T2, Unit, Root>, class input, class output>
+                                                                            ^
+make: *** [main.o] Error 1
+16:11:54 **** Incremental Build of configuration Debug for project BBB_3D ****
+make all 
+make: Nothing to be done for `all'.
+16:11:54 **** Incremental Build of configuration Debug for project Template_SignalFlow ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
 Finished building: ../main.cpp
  
-Building target: BBB_1D
-Invoking: Cross G++ Linker
-arm-linux-gnueabihf-g++  -o "BBB_1D"  ./lib/AComponentBase.o ./lib/Assertion.o ./lib/CBinarySemaphore.o ./lib/CCountingSemaphore.o ./lib/CMessage.o ./lib/CMutex.o ./lib/CProxy.o ./lib/CThread.o  ./Hardware/CADC.o ./Hardware/CBBBHardware.o ./Hardware/CBrake.o ./Hardware/CMPU6050.o ./Hardware/CMotor.o  ./Control/CADCCalibration.o ./Control/CADCCalibrationAction.o ./Control/CCascadeControl.o ./Control/CComplementaryFilter.o ./Control/CControlAction.o ./Control/CControlActionBase.o ./Control/CControlComp.o ./Control/CControlTest.o ./Control/CControlTestAction.o ./Control/CDT1.o ./Control/CFilterSystem.o ./Control/CLQRControl.o ./Control/CPT1.o ./Control/CSensorCalibration.o ./Control/CSensorCalibrationAction.o ./Control/CSensorEvaluation.o ./Control/CTimerTask.o  ./Comm/CCommAction.o ./Comm/CCommComponent.o ./Comm/CCommFSM.o ./Comm/CReceiveTask.o ./Comm/CServer.o  ./main.o   -lpthread
-Finished building target: BBB_1D
+Building target: Template_SignalFlow
+Invoking: GCC C++ Linker
+g++  -o "Template_SignalFlow"  ./main.o   
+Finished building target: Template_SignalFlow
  
+16:12:19 **** Incremental Build of configuration Debug for project BBB_3D ****
+make all 
+make: Nothing to be done for `all'.
+16:12:19 **** Incremental Build of configuration Debug for project Template_SignalFlow ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+In file included from ../main.cpp:1:0:
+../TLinHierarchy.h:10:60: error: ‘input’ was not declared in this scope
+  : public Unit<T1, TLinHierarchy<T2, Unit,in, out, Root>,  input, class output>
+                                                            ^
+../TLinHierarchy.h:10:79: error: template argument 3 is invalid
+  : public Unit<T1, TLinHierarchy<T2, Unit,in, out, Root>,  input, class output>
+                                                                               ^
+make: *** [main.o] Error 1
+16:12:53 **** Incremental Build of configuration Debug for project BBB_3D ****
+make all 
+make: Nothing to be done for `all'.
+16:12:54 **** Incremental Build of configuration Debug for project Template_SignalFlow ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+In file included from ../main.cpp:1:0:
+../TLinHierarchy.h:16:54: error: wrong number of template arguments (5, should be 3)
+ class TLinHierarchy<TYPELIST_1(T), Unit,in, out, Root>
+                                                      ^
+../TLinHierarchy.h:6:7: error: provided for ‘template<class TList, template<class AtomicType, class Base, class, class> class Unit, class Root> class TLinHierarchy’
+ class TLinHierarchy;
+       ^
+make: *** [main.o] Error 1
+16:13:05 **** Incremental Build of configuration Debug for project BBB_3D ****
+make all 
+make: Nothing to be done for `all'.
+16:13:05 **** Incremental Build of configuration Debug for project Template_SignalFlow ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Template_SignalFlow
+Invoking: GCC C++ Linker
+g++  -o "Template_SignalFlow"  ./main.o   
+Finished building target: Template_SignalFlow
+ 
+16:13:18 **** Incremental Build of configuration Debug for project BBB_3D ****
+make all 
+make: Nothing to be done for `all'.
+16:13:18 **** Incremental Build of configuration Debug for project Template_SignalFlow ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Template_SignalFlow
+Invoking: GCC C++ Linker
+g++  -o "Template_SignalFlow"  ./main.o   
+Finished building target: Template_SignalFlow
+ 
+16:13:44 **** Incremental Build of configuration Debug for project BBB_3D ****
+make all 
+make: Nothing to be done for `all'.
+16:13:45 **** Incremental Build of configuration Debug for project Template_SignalFlow ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘int main()’:
+../main.cpp:12:24: error: no matching function for call to ‘TLinHierarchy<TTypeList<CA, TTypeList<CB, CNullType> >, TActionHolder>::calcOutput(int)’
+  test.calcOutput(int(2));
+                        ^
+../main.cpp:12:24: note: candidate is:
+In file included from ../main.cpp:4:0:
+../TActionHolder.h:9:7: note: void TActionHolder<Action, Base, inputType, outputType>::calcOutput(const inputType&) [with Action = CA; Base = TLinHierarchy<TTypeList<CB, CNullType>, TActionHolder, CNullType>; inputType = input; outputType = output]
+  void calcOutput(const inputType& input)
+       ^
+../TActionHolder.h:9:7: note:   no known conversion for argument 1 from ‘int’ to ‘const input&’
+make: *** [main.o] Error 1
+16:31:16 **** Incremental Build of configuration Debug for project BBB_3D ****
+make all 
+make: Nothing to be done for `all'.
+16:31:16 **** Incremental Build of configuration Debug for project Template_SignalFlow ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+In file included from ../main.cpp:4:0:
+../TActionHolder.h:9:24: error: need ‘typename’ before ‘Action::InputType’ because ‘Action’ is a dependent scope
+  void calcOutput(const Action::InputType& input)
+                        ^
+../TActionHolder.h:9:43: error: ISO C++ forbids declaration of ‘input’ with no type [-fpermissive]
+  void calcOutput(const Action::InputType& input)
+                                           ^
+../TActionHolder.h:24:61: error: wrong number of template arguments (4, should be 2)
+ class TActionHolder<Action, CNullType, inputType, outputType> : public CNullType
+                                                             ^
+../TActionHolder.h:6:7: error: provided for ‘template<class Action, class Base> class TActionHolder’
+ class TActionHolder: public Base
+       ^
+make: *** [main.o] Error 1
+16:31:39 **** Incremental Build of configuration Debug for project BBB_3D ****
+make all 
+make: Nothing to be done for `all'.
+16:31:39 **** Incremental Build of configuration Debug for project Template_SignalFlow ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+In file included from ../main.cpp:4:0:
+../TActionHolder.h:24:61: error: wrong number of template arguments (4, should be 2)
+ class TActionHolder<Action, CNullType, inputType, outputType> : public CNullType
+                                                             ^
+../TActionHolder.h:6:7: error: provided for ‘template<class Action, class Base> class TActionHolder’
+ class TActionHolder: public Base
+       ^
+make: *** [main.o] Error 1
+16:32:12 **** Incremental Build of configuration Debug for project BBB_3D ****
+make all 
+make: Nothing to be done for `all'.
+16:32:12 **** Incremental Build of configuration Debug for project Template_SignalFlow ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Template_SignalFlow
+Invoking: GCC C++ Linker
+g++  -o "Template_SignalFlow"  ./main.o   
+Finished building target: Template_SignalFlow
+ 
+16:32:30 **** Incremental Build of configuration Debug for project BBB_3D ****
+make all 
+make: Nothing to be done for `all'.
+16:32:30 **** Incremental Build of configuration Debug for project Template_SignalFlow ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Template_SignalFlow
+Invoking: GCC C++ Linker
+g++  -o "Template_SignalFlow"  ./main.o   
+Finished building target: Template_SignalFlow
+ 
+16:33:01 **** Incremental Build of configuration Debug for project BBB_3D ****
+make all 
+make: Nothing to be done for `all'.
+16:33:01 **** Incremental Build of configuration Debug for project Template_SignalFlow ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘int main()’:
+../main.cpp:14:36: error: ‘CA’ is not a base of ‘CSignalFlow {aka TLinHierarchy<TTypeList<CA, TTypeList<CB, CNullType> >, TActionHolder>}’
+  const double& a_output = test.CA::getValue();
+                                    ^
+../main.cpp:14:16: warning: unused variable ‘a_output’ [-Wunused-variable]
+  const double& a_output = test.CA::getValue();
+                ^
+make: *** [main.o] Error 1
+16:33:26 **** Incremental Build of configuration Debug for project BBB_3D ****
+make all 
+make: Nothing to be done for `all'.
+16:33:26 **** Incremental Build of configuration Debug for project Template_SignalFlow ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘int main()’:
+../main.cpp:14:32: error: ‘using CSignalFlow = class TLinHierarchy<TTypeList<CA, TTypeList<CB, CNullType> >, TActionHolder>’ has no member named ‘getValue’
+  const double& a_output = test.getValue();
+                                ^
+../main.cpp:14:16: warning: unused variable ‘a_output’ [-Wunused-variable]
+  const double& a_output = test.getValue();
+                ^
+make: *** [main.o] Error 1
+16:33:38 **** Incremental Build of configuration Debug for project BBB_3D ****
+make all 
+make: Nothing to be done for `all'.
+16:33:38 **** Incremental Build of configuration Debug for project Template_SignalFlow ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Template_SignalFlow
+Invoking: GCC C++ Linker
+g++  -o "Template_SignalFlow"  ./main.o   
+Finished building target: Template_SignalFlow
+ 
+16:33:41 **** Incremental Build of configuration Debug for project Template_SignalFlow ****
+make all 
+make: Nothing to be done for `all'.
+16:42:24 **** Incremental Build of configuration Debug for project BBB_3D ****
+make all 
+make: Nothing to be done for `all'.
+16:42:24 **** Incremental Build of configuration Debug for project Template_SignalFlow ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Template_SignalFlow
+Invoking: GCC C++ Linker
+g++  -o "Template_SignalFlow"  ./main.o   
+Finished building target: Template_SignalFlow
+ 
+16:42:59 **** Incremental Build of configuration Debug for project BBB_3D ****
+make all 
+make: Nothing to be done for `all'.
+16:43:00 **** Incremental Build of configuration Debug for project Template_SignalFlow ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘int main()’:
+../main.cpp:14:16: warning: unused variable ‘a_out’ [-Wunused-variable]
+  const double& a_out = test.CA::getValue();
+                ^
+../main.cpp:15:15: warning: unused variable ‘b_out’ [-Wunused-variable]
+  const float& b_out  = test.CB::getValue();
+               ^
+Finished building: ../main.cpp
+ 
+Building target: Template_SignalFlow
+Invoking: GCC C++ Linker
+g++  -o "Template_SignalFlow"  ./main.o   
+./main.o: In function `main':
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/Template_SignalFlow/Debug/../main.cpp:15: undefined reference to `CB::getValue()'
+collect2: error: ld returned 1 exit status
+make: *** [Template_SignalFlow] Error 1
+16:43:29 **** Incremental Build of configuration Debug for project BBB_3D ****
+make all 
+make: Nothing to be done for `all'.
+16:43:29 **** Incremental Build of configuration Debug for project Template_SignalFlow ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘int main()’:
+../main.cpp:14:16: warning: unused variable ‘a_out’ [-Wunused-variable]
+  const double& a_out = test.CA::getValue();
+                ^
+../main.cpp:15:15: warning: unused variable ‘b_out’ [-Wunused-variable]
+  const float& b_out  = test.CB::getValue();
+               ^
+Finished building: ../main.cpp
+ 
+Building target: Template_SignalFlow
+Invoking: GCC C++ Linker
+g++  -o "Template_SignalFlow"  ./main.o   
+Finished building target: Template_SignalFlow
+ 
+16:43:48 **** Incremental Build of configuration Debug for project Template_SignalFlow ****
+make all 
+make: Nothing to be done for `all'.
