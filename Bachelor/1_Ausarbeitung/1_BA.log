@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2017.1.27)  28 JAN 2017 18:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2017.1.27)  5 FEB 2017 19:00
 entering extended mode
 **./1_BA.tex
 (1_BA.tex
@@ -758,7 +758,8 @@ Package: geometry 2010/09/12 v5.6 Page Geometry
 
 (0_Makros.tex) (1_BA.aux (2_ModellWuerfelseite/2_ModellWuerfelseite.aux)
 (4_Regelungstechnik/4_Regelung.aux) (3_Sensorik/3_Sensorik.aux) (9_Spektren.aux
-) (5_ModellWuerfel/5_ModellWuerfel.aux) (6_Software/6_Software.aux))
+) (5_ModellWuerfel/5_ModellWuerfel.aux) (7_Sensorik3D/7_Sensorik3D.aux)
+(6_Software/6_Software.aux))
 \openout1 = `1_BA.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
@@ -872,89 +873,143 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 4.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 4.
 
-<2_ModellWuerfelseite/img/ModellWuerfelseite.pdf, id=110, 963.6pt x 542.025pt>
+<2_ModellWuerfelseite/img/ModellWuerfelseite.pdf, id=134, 963.6pt x 542.025pt>
 File: 2_ModellWuerfelseite/img/ModellWuerfelseite.pdf Graphic file (type pdf)
 
 <use 2_ModellWuerfelseite/img/ModellWuerfelseite.pdf>
 Package pdftex.def Info: 2_ModellWuerfelseite/img/ModellWuerfelseite.pdf used o
-n input line 6.
+n input line 9.
 (pdftex.def)             Requested size: 264.61333pt x 250.08806pt.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 23.
+(babel)             in language  on input line 20.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 23.
+(babel)             in language  on input line 20.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 23.
+(babel)             in language  on input line 20.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 23.
+(babel)             in language  on input line 20.
  [2
 
  <./2_ModellWuerfelseite/img/ModellWuerfelseite.pdf>]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 65.
+(babel)             in language  on input line 56.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 65.
+(babel)             in language  on input line 56.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 65.
+(babel)             in language  on input line 56.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 65.
+(babel)             in language  on input line 56.
  [3]
-Overfull \hbox (10.48184pt too wide) in paragraph at lines 70--71
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 80.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 80.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 80.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 80.
+ [4]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 101.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 101.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 105.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 105.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 105.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 105.
+ [5]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 110.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 110.
+File: 2_ModellWuerfelseite/img/ModellWuerfelseite.pdf Graphic file (type pdf)
+
+<use 2_ModellWuerfelseite/img/ModellWuerfelseite.pdf>
+Package pdftex.def Info: 2_ModellWuerfelseite/img/ModellWuerfelseite.pdf used o
+n input line 115.
+(pdftex.def)             Requested size: 264.61333pt x 250.08806pt.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 122.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 122.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 122.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 122.
+ [6]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 170.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 170.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 170.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 170.
+ [7]
+Overfull \hbox (10.48184pt too wide) in paragraph at lines 179--180
 []\OT1/cmr/m/n/10 Das Mo-tor-mo-ment $[][]$ und das Reib-mo-ment $[][]$ wir-ken
  in um-ge-kehr-ter Rich-tung auf die W[]urfelseite.
  []
 
 
-Overfull \hbox (7.15631pt too wide) in paragraph at lines 86--87
+Overfull \hbox (7.15631pt too wide) in paragraph at lines 195--196
 \OT1/cmr/m/n/10 ven Kr[]afte und der ge-ne-ra-li-sier-ten Tr[]agheitskr[]afte g
 e-won-nen. Folg-lich muss zu-letzt das Tr[]agheitsmoment
  []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 111.
+(babel)             in language  on input line 214.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 111.
+(babel)             in language  on input line 214.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 111.
+(babel)             in language  on input line 214.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 111.
-[4]
+(babel)             in language  on input line 214.
+[8]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 116.
+(babel)             in language  on input line 225.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 116.
+(babel)             in language  on input line 225.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 179.
+(babel)             in language  on input line 274.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 179.
+(babel)             in language  on input line 274.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 179.
+(babel)             in language  on input line 274.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 179.
- [5]
-Overfull \hbox (10.42479pt too wide) in paragraph at lines 193--196
+(babel)             in language  on input line 274.
+ [9]
+Overfull \hbox (10.42479pt too wide) in paragraph at lines 302--305
 \OT1/cmr/m/n/10 gr[]oen ei-ne zen-tra-le Rol-le. Die-ser wird von der []Ubertr
 agungsfunktion $\OML/cmm/m/it/10 g\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m
 /n/10 )$ bzw., bei Mehr-gr[]oensystemen,
  []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 223.
+(babel)             in language  on input line 321.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 223.
+(babel)             in language  on input line 321.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 223.
+(babel)             in language  on input line 321.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 223.
-[6]
-Overfull \hbox (14.27458pt too wide) in paragraph at lines 223--225
+(babel)             in language  on input line 321.
+[10]
+Overfull \hbox (14.27458pt too wide) in paragraph at lines 332--334
 \OT1/cmr/m/n/10 Vergleicht man die-se Glei-chung mit der L[]osung im Zeit-be-re
 ich so er-gibt sich f[]ur die Laplace-Transformierte
  []
 
 
-Overfull \hbox (49.23322pt too wide) in paragraph at lines 231--233
+Overfull \hbox (49.23322pt too wide) in paragraph at lines 340--342
 \OT1/cmr/m/n/10 Mit Hil-fe der Be-rech-nungs-vor-schrif-ten im Bild-be-reich k[
 ]onnen nun auch die Fundamental- und []Ubertragungsmatrix
  []
@@ -968,7 +1023,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 28.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 28.
- [7]
+ [11]
 \openout2 = `4_Regelungstechnik/4_Regelung.aux'.
 
  (4_Regelungstechnik/4_Regelung.tex
@@ -977,7 +1032,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
 
-<4_Regelungstechnik/img/GRK_1.pdf, id=202, 963.6pt x 542.025pt>
+<4_Regelungstechnik/img/GRK_1.pdf, id=261, 963.6pt x 542.025pt>
 File: 4_Regelungstechnik/img/GRK_1.pdf Graphic file (type pdf)
 
 <use 4_Regelungstechnik/img/GRK_1.pdf>
@@ -1209,7 +1264,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 37.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 37.
-[8
+[12
 
 
  <./4_Regelungstechnik/img/GRK_1.pdf>]
@@ -1438,7 +1493,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 86.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 86.
-[9]
+[13]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 99.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1455,7 +1510,7 @@ hi-eps-converted-to.pdf 4_Regelungstechnik/img/x0_phi.eps>
 (epstopdf)             \includegraphics on input line 121.
 Package epstopdf Info: Output file is already uptodate.
 
-<4_Regelungstechnik/img/x0_phi-eps-converted-to.pdf, id=244, 360.34625pt x 303.
+<4_Regelungstechnik/img/x0_phi-eps-converted-to.pdf, id=304, 360.34625pt x 303.
 1325pt>
 File: 4_Regelungstechnik/img/x0_phi-eps-converted-to.pdf Graphic file (type pdf
 )
@@ -1475,7 +1530,7 @@ si__d-eps-converted-to.pdf 4_Regelungstechnik/img/x0_psi__d.eps>
 (epstopdf)             \includegraphics on input line 122.
 Package epstopdf Info: Output file is already uptodate.
 
-<4_Regelungstechnik/img/x0_psi__d-eps-converted-to.pdf, id=245, 375.4025pt x 30
+<4_Regelungstechnik/img/x0_psi__d-eps-converted-to.pdf, id=305, 375.4025pt x 30
 6.14375pt>
 File: 4_Regelungstechnik/img/x0_psi__d-eps-converted-to.pdf Graphic file (type 
 pdf)
@@ -1495,7 +1550,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 137.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 137.
-[10] <4_Regelungstechnik/img/GRK_2.pdf, id=257, 963.6pt x 542.025pt>
+[14] <4_Regelungstechnik/img/GRK_2.pdf, id=317, 963.6pt x 542.025pt>
 File: 4_Regelungstechnik/img/GRK_2.pdf Graphic file (type pdf)
 
 <use 4_Regelungstechnik/img/GRK_2.pdf>
@@ -1514,7 +1569,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 177.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 177.
-[11 <./4_Regelungstechnik/img/x0_phi-eps-converted-to.pdf> <./4_Regelungstechni
+[15 <./4_Regelungstechnik/img/x0_phi-eps-converted-to.pdf> <./4_Regelungstechni
 k/img/x0_psi__d-eps-converted-to.pdf>]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 188.
@@ -1524,7 +1579,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 188.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 188.
- [12 <./4_Regelungstechnik/img/GRK_2.pdf>]
+ [16 <./4_Regelungstechnik/img/GRK_2.pdf>]
 Package epstopdf Info: Source file: <4_Regelungstechnik/img/x0_phi_kaskadiert.e
 ps>
 (epstopdf)                    date: 2017-01-03 21:25:09
@@ -1539,7 +1594,7 @@ hi_kaskadiert-eps-converted-to.pdf 4_Regelungstechnik/img/x0_phi_kaskadiert.eps
 (epstopdf)             \includegraphics on input line 196.
 Package epstopdf Info: Output file is already uptodate.
 
-<4_Regelungstechnik/img/x0_phi_kaskadiert-eps-converted-to.pdf, id=294, 362.353
+<4_Regelungstechnik/img/x0_phi_kaskadiert-eps-converted-to.pdf, id=354, 362.353
 74pt x 303.1325pt>
 File: 4_Regelungstechnik/img/x0_phi_kaskadiert-eps-converted-to.pdf Graphic fil
 e (type pdf)
@@ -1562,7 +1617,7 @@ rt.eps>
 (epstopdf)             \includegraphics on input line 197.
 Package epstopdf Info: Output file is already uptodate.
 
-<4_Regelungstechnik/img/x0_psi__d_kaskadiert-eps-converted-to.pdf, id=295, 377.
+<4_Regelungstechnik/img/x0_psi__d_kaskadiert-eps-converted-to.pdf, id=355, 377.
 41pt x 306.14375pt>
 File: 4_Regelungstechnik/img/x0_psi__d_kaskadiert-eps-converted-to.pdf Graphic 
 file (type pdf)
@@ -1583,7 +1638,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 214.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 214.
- [13 <./4_Regelungstechnik/img/x0_phi_kaskadiert-eps-converted-to.pdf> <./4_Reg
+ [17 <./4_Regelungstechnik/img/x0_phi_kaskadiert-eps-converted-to.pdf> <./4_Reg
 elungstechnik/img/x0_psi__d_kaskadiert-eps-converted-to.pdf>]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 256.
@@ -1593,7 +1648,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 256.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 256.
- [14]
+ [18]
 Overfull \hbox (21.96909pt too wide) in paragraph at lines 277--279
 \OT1/cmr/m/n/10 Auch die cha-rak-te-ris-ti-sche Glei-chung und so-mit die Po-le
  des Sys-tems k[]onnen mit Hil-fe der z-Transformierten
@@ -1607,7 +1662,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 300.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 300.
-[15])
+[19])
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 30.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1616,7 +1671,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 30.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 30.
- [16]
+ [20]
 \openout2 = `3_Sensorik/3_Sensorik.aux'.
 
  (3_Sensorik/3_Sensorik.tex
@@ -1625,7 +1680,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
 
-<3_Sensorik/img/SensorAnordnung.pdf, id=340, 963.6pt x 542.025pt>
+<3_Sensorik/img/SensorAnordnung.pdf, id=400, 963.6pt x 542.025pt>
 File: 3_Sensorik/img/SensorAnordnung.pdf Graphic file (type pdf)
 
 <use 3_Sensorik/img/SensorAnordnung.pdf>
@@ -1640,7 +1695,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 39.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 39.
- [17
+ [21
 
 
  <./3_Sensorik/img/SensorAnordnung.pdf>]
@@ -1665,7 +1720,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 81.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 81.
-[18]
+[22]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 84.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1695,7 +1750,7 @@ eit_phi-eps-converted-to.pdf 3_Sensorik/img/empfindlichkeit_phi.eps>
 (epstopdf)             \includegraphics on input line 103.
 Package epstopdf Info: Output file is already uptodate.
 
-<3_Sensorik/img/empfindlichkeit_phi-eps-converted-to.pdf, id=375, 365.365pt x 3
+<3_Sensorik/img/empfindlichkeit_phi-eps-converted-to.pdf, id=435, 365.365pt x 3
 03.1325pt>
 File: 3_Sensorik/img/empfindlichkeit_phi-eps-converted-to.pdf Graphic file (typ
 e pdf)
@@ -1719,7 +1774,7 @@ to.pdf>
 (epstopdf)             \includegraphics on input line 111.
 Package epstopdf Info: Output file is already uptodate.
 
-<3_Sensorik/img/snr_phi_plot-eps-converted-to.pdf, id=376, 1445.4pt x 724.7075p
+<3_Sensorik/img/snr_phi_plot-eps-converted-to.pdf, id=436, 1445.4pt x 724.7075p
 t>
 File: 3_Sensorik/img/snr_phi_plot-eps-converted-to.pdf Graphic file (type pdf)
  <use 3_Sensorik/img/snr_phi_plot-eps-converted-to.pdf>
@@ -1738,7 +1793,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 123.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 123.
-[19]
+[23]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 145.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1747,7 +1802,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 145.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 145.
- [20 <./3_Sensorik/img/empfindlichkeit_phi-eps-converted-to.pdf> <./3_Sensorik/
+ [24 <./3_Sensorik/img/empfindlichkeit_phi-eps-converted-to.pdf> <./3_Sensorik/
 img/snr_phi_plot-eps-converted-to.pdf>])
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 32.
@@ -1757,7 +1812,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 32.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 32.
- [21]
+ [25]
 \openout2 = `9_Spektren.aux'.
 
  (9_Spektren.tex
@@ -1773,7 +1828,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 30.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 30.
- [22
+ [26
 
 
 ])
@@ -1786,7 +1841,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 34.
 
-[23]
+[27]
 \openout2 = `5_ModellWuerfel/5_ModellWuerfel.aux'.
 
  (5_ModellWuerfel/5_ModellWuerfel.tex
@@ -1806,7 +1861,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 52.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 52.
- [24
+ [28
 
 
 ]
@@ -1815,7 +1870,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 82.
 
-<5_ModellWuerfel/img/MechAufbau3D.pdf, id=444, 963.6pt x 542.025pt>
+<5_ModellWuerfel/img/MechAufbau3D.pdf, id=504, 963.6pt x 542.025pt>
 File: 5_ModellWuerfel/img/MechAufbau3D.pdf Graphic file (type pdf)
 
 <use 5_ModellWuerfel/img/MechAufbau3D.pdf>
@@ -1834,7 +1889,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 96.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 96.
-[25]
+[29]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 112.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1843,7 +1898,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 112.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 112.
- [26 <./5_ModellWuerfel/img/MechAufbau3D.pdf>]
+ [30 <./5_ModellWuerfel/img/MechAufbau3D.pdf>]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 150.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1852,7 +1907,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 150.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 150.
- [27]
+ [31]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 170.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1865,7 +1920,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 184.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 184.
- [28]
+ [32]
 Overfull \hbox (15.03343pt too wide) in paragraph at lines 215--218
 \OT1/cmr/m/n/10 Wobei $[]$ und $[]$ die Winkelbeschleunigung- bzw. ge-schwin-di
 g-keit des K[]orpers und $[]$ des-sen Tr[]agheitstensor
@@ -1879,7 +1934,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 220.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 220.
-[29]
+[33]
 Overfull \hbox (37.02032pt too wide) in paragraph at lines 220--222
 \OT1/cmr/m/n/10 Zun[]achst sol-len die Tr[]agheitsmomente $[][]$ der Schwung-ma
 s-sen be-stimmt wer-den. De-ren Tr[]agsheitstensoren
@@ -1893,7 +1948,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 256.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 256.
-[30]
+[34]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 291.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1902,7 +1957,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 291.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 291.
- [31]
+ [35]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 335.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1911,7 +1966,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 335.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 335.
- [32]
+ [36]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 404.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1920,7 +1975,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 404.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 404.
- [33])
+ [37])
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 36.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1929,7 +1984,33 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 36.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 36.
- [34]
+ [38]
+\openout2 = `7_Sensorik3D/7_Sensorik3D.aux'.
+
+ (7_Sensorik3D/7_Sensorik3D.tex
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1.
+
+Overfull \hbox (18.59521pt too wide) in paragraph at lines 4--5
+[]\OT1/cmr/m/n/10 Auf dem W[]urfelk[]orper sind ins-ge-samt sechs 9250-Module m
+on-tiert, wel-che drei-ach-si-ge Beschleunigungs-
+ []
+
+)
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 38.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 38.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 38.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 38.
+ [39
+
+
+]
 \openout2 = `6_Software/6_Software.aux'.
 
  (6_Software/6_Software.tex
@@ -1945,7 +2026,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 29.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 29.
- [35
+ [40
 
 
 ]
@@ -1956,37 +2037,34 @@ Overfull \hbox (23.12305pt too wide) in paragraph at lines 32--34
 
 )
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 38.
+(babel)             in language  on input line 40.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 38.
+(babel)             in language  on input line 40.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 38.
+(babel)             in language  on input line 40.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 38.
- [36]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 40.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 40.
+(babel)             in language  on input line 40.
+ [41]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 42.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 42.
  (1_BA.aux (2_ModellWuerfelseite/2_ModellWuerfelseite.aux)
 (4_Regelungstechnik/4_Regelung.aux) (3_Sensorik/3_Sensorik.aux) (9_Spektren.aux
-) (5_ModellWuerfel/5_ModellWuerfel.aux) (6_Software/6_Software.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 40.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 40.
+) (5_ModellWuerfel/5_ModellWuerfel.aux) (7_Sensorik3D/7_Sensorik3D.aux)
+(6_Software/6_Software.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 42.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 42.
 Package rerunfilecheck Info: File `1_BA.out' has not changed.
-(rerunfilecheck)             Checksum: 072C3E4DD1500EE15BE15DC6FEC7E7AF;1196.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 40.
+(rerunfilecheck)             Checksum: 49A8BBEA5A4B61B5B2096BA5B03C8E04;1482.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 42.
  ) 
 Here is how much of TeX's memory you used:
- 10308 strings out of 493333
- 154036 string characters out of 3139200
- 283346 words of memory out of 3000000
- 13329 multiletter control sequences out of 15000+200000
+ 10352 strings out of 493333
+ 154717 string characters out of 3139200
+ 283932 words of memory out of 3000000
+ 13336 multiletter control sequences out of 15000+200000
  13981 words of font info for 49 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,34n,98p,1266b,395s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 68i,44n,98p,1266b,395s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx7.pfb><C:/Program Files/MiKTe
@@ -2004,9 +2082,9 @@ ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files
 pe1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
 ic/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
 ts/cm/cmti10.pfb>
-Output written on 1_BA.pdf (36 pages, 1744380 bytes).
+Output written on 1_BA.pdf (41 pages, 1773764 bytes).
 PDF statistics:
- 718 PDF objects out of 1000 (max. 8388607)
- 257 named destinations out of 1000 (max. 500000)
- 214 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 794 PDF objects out of 1000 (max. 8388607)
+ 286 named destinations out of 1000 (max. 500000)
+ 252 words of extra memory for PDF output out of 10000 (max. 10000000)
 

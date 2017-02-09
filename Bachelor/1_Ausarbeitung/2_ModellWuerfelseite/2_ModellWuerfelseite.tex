@@ -1,5 +1,114 @@
 \section{Modellbildung Würfelseite}
-Die Untersuchung des Systems beginnt mit der Bestimmung eines mathematischen Modells, welches in diesem Abschnitt näher erläutert wird. Die Herleitung der Systemdynamik erfolgt mit Hilfe der Methoden nach Kane. Zunächst beschränkt sich die mechanische Untersuchung auf einen vereinfachten Prototypen, welcher aus einer Würfelseite besteht, die auf einer Achse gelagert ist. An der Würfelseite ist ein Motor befestigt, auf wessen Schaft wiederum eine Schwungmasse gelagert ist.
+Die Untersuchung des Systems beginnt mit der Bestimmung eines mathematischen Modells, welches in diesem Abschnitt näher erläutert wird.  Zunächst beschränkt sich die mechanische Untersuchung auf einen vereinfachten Prototypen, welcher aus einer Würfelseite besteht, die auf einer Achse gelagert ist. An der Würfelseite ist ein Motor befestigt, auf dessen Schaft wiederum eine Schwungmasse gelagert ist. Die Herleitung der Bewegungsgleichungen erfolgt mit Hilfe der Methoden nach Kane [Kane], die im Verlauf der Untersuchung näher erläutert werden
+
+\subsection{Untersuchung der Kinematik}
+Zu Beginn der Untersuchung werden die kinematischen Zusammenhänge mit Hilfe von Bezugssystemen beschrieben. Dieser Ansatz ist bereits aus der Relativkinematik bekannt, wobei häufig nur zwischen einem Inertial- und Relativsystem unterschieden wird. Allerdings kann diese Prinzip auf eine beliebige Anzahl von Bezugssystemen erweitert werden.
+
+\begin{figure}[!h]
+\centering
+\includegraphics[width=0.6\linewidth, trim={1cm 1.5cm 18cm 3.5cm}, clip]{2_ModellWuerfelseite/img/ModellWuerfelseite}
+\caption{Mechanischer Aufbau der Würfelseite, Quelle: eigene Darstellung}
+\label{abb_wuerfelseite}
+\end{figure}
+
+Ein Bezugssystem $A$ wird durch drei Vektoren $\bs{a}_i \hspace{5pt} i \in {1, 2, 3}$ definiert, welche auch als Vektorbasis des Bezugssystem bezeichnet werden. Prinzipiell müssen diese drei Vektoren nur linear unabhängig sein, allerdings werden in dieser Arbeit ausschließlich paarweise orthogonale Einheitsvektoren verwendet, da diese eine leichtere Handhabung ermöglichen. Ist ein Bezugssystem definiert kann ein beliebiger Vektor $\bs{v}$ als Linearkombination der Vektorbasis ausgedrückt werden. Als Beispiel sei hierfür das Bezugssystem $K$ genannt, welches durch die die Einheitsvektoren $\bs{k}_i$ definiert ist. Diese sind nach \ref{abb_wuerfelseite} an der Würfelseite fixiert, d.h. die Ausrichtung der Einheitsvektoren ändert sich mit der Rotation der Würfelseite. 
+\begin{equation}
+\bs{v} = v_{k1} \bs{k}_1 + v_{k2} \bs{k}_2 + v_{k3} \bs{k}_3 = \vecBS{K}{v_1}{v_2}{v_3}
+\end{equation}
+Da im Verlauf der Untersuchung mehrere Bezugssysteme eingeführt werden, muss die vektorielle Schreibweise neben den einzelnen Komponenten auch das verwendete Bezugssystem wiedergeben. Dies erfolgt durch den vorangehenden Superskript. 
+Um die Bedeutung der Vektorbasis zu veranschaulichen wird im nächsten schritt das Intertialsystem $A$ mit der Vektorbasis $\bs{a}$ definiert. Da es sich bei $A$ um ein Intertialsystem handelt ändert sich die Ausrichtung der Vektoren $\bs{a}_i$ im Verlauf der Zeit nicht. Solche Systeme werden auch als im Raum fixierte bzw. raumfeste Bezugssysteme bezeichnet. Nun kann der Vektor $\bs{v}$ auch als Linearkombination der Vektoren $\bs{a}_i$ dargestellt werden. Man nennt diese  Form des Vektors auch dessen Darstellung aus Perspektive von $A$.
+\begin{equation}
+\bs{v} =  v_{a1} \bs{a}_1 + v_{a2} \bs{a}_2 + v_{a3} \bs{a}_3 = \vecBS{A}{v_{a1}}{v_{a2}}{v_{a3}}
+\end{equation}
+Nun stellt sich die Frage wie die beiden Darstellungen des Vektors $\bs{v}$ zusammenhängen. Die Komponente eines Vektors $\bs{v}$ in Richtung eines Einheitvektors $\bs{k}_i$ ergibt sich aus deren Skalarprodukt ([Kane], S. 23ff). Wird dieser Ansatz auf alle drei Komponenten appliziert ergibt sich am Beispiel der beiden Bezugssysteme $A$ und $K$ die folgende Gleichung.
+\begin{equation}
+\begin{split}
+\bs{v} &= \inProd{\bs{v}}{\bs{k}_1} \bs{k}_1 + \inProd{\bs{v}}{\bs{k}_2}\bs{k}_2 + \inProd{\bs{v}}{\bs{k}_3}\bs{k}_3 = \vecBS{K}{\inProd{\bs{v}}{\bs{k}_1}}{\inProd{\bs{v}}{\bs{k}_2}}{\inProd{\bs{v}}{\bs{k}_3}} \\
+&= \vecBS{K}{v_{a1}\inProd{\bs{a}_1}{\bs{k}_1} + v_{a2}\inProd{\bs{a}_2}{\bs{k}_1} + v_{a3}\inProd{\bs{a}_3}{\bs{k}_1}}{v_{a1}\inProd{\bs{a}_1}{\bs{k}_2} + v_{a2}\inProd{\bs{a}_2}{\bs{k}_2} + v_{a3}\inProd{\bs{a}_3}{\bs{k}_2}}{v_{a1}\inProd{\bs{a}_1}{\bs{k}_3} + v_{a2}\inProd{\bs{a}_2}{\bs{k}_3} + v_{a3}\inProd{\bs{a}_3}{\bs{k}_3}}
+= \presuper{K}{\begin{pmatrix}
+\underbrace{
+\begin{bmatrix}
+\inProd{\bs{a}_1}{\bs{k}_1} & \inProd{\bs{a}_2}{\bs{k}_1} & \inProd{\bs{a}_3}{\bs{k}_1} \\
+\inProd{\bs{a}_1}{\bs{k}_2} & \inProd{\bs{a}_2}{\bs{k}_2} & \inProd{\bs{a}_3}{\bs{k}_2} \\
+\inProd{\bs{a}_1}{\bs{k}_3} & \inProd{\bs{a}_2}{\bs{k}_3} & \inProd{\bs{a}_3}{\bs{k}_3}
+\end{bmatrix}}_{\equiv \pMat{A}{B}} \cdot \underbrace{\begin{bmatrix}
+v_{a1} \\ v_{a2} \\ v_{a3}
+\end{bmatrix}}_{= \presuper{K}{\bs{v}}}
+\end{pmatrix}} 
+\\
+&= \presuper{K}{\begin{pmatrix}
+\begin{bmatrix}c_{\varphi} & s_{\varphi} & 0 \\ -s_{\varphi} & c_{\varphi} & 0 \\ 0 & 0 & 1 \end{bmatrix} \cdot \presuper{K}{\bs{v}} \end{pmatrix}}
+\end{split}
+\end{equation}
+Folglich kann der Zusammenhang zwischen den Darstellung von $\bs{v}$ aus den Perspektiven von $A$ und $K$ als lineare Abbildung ausgedrückt werden, welche durch die Matrix $\pMat{A}{K}$  definiert ist. Diese Matrix hängt von dem Winkel $\varphi$ ab, welcher eine generalisierte Koordinate ist und einen rotatorischen Freiheitsgrad des Systems beschreibt. Der zweite Freiheitsgrad des Systems ensteht durch die Rotation der Schwungmasse relativ zu der Würfelseite. Diese Drehung wird von dem Winkel $\psi$ beschrieben. Wird nun ein weiteres Bezugssystem $R$ eingeführt, dessen Vektorbasis $\bs{r}$ auf der Schwungmasse fixiert ist kann der Zusammenhang der Bezugssysteme $K$ und $R$ wieder mit einer Abbildungsmatrix $\pMat{K}{R}$ beschrieben werden.
+\begin{equation}
+\pMat{K}{R} = \begin{pmatrix}
+c_{\psi} & -s_{\psi} & 0 \\ s_{\psi} & c_{\psi} & 0 \\ 0 & 0 & 1
+\end{pmatrix}
+\end{equation}
+Die Vorteile dieser Beschreibungsform zeigen sich, wenn man zum Beispiel das Moment $\bs{T}^{G/O}$ berechnen möchte, welche durch die Gravitationskraft $\bs{G}$ verursacht wird. Dieser Kraftvektor lässt sich leicht aus der Perspektive des Intertialsystems $A$ bestimmen.
+\begin{equation}
+\bs{G} = \vecBS{A}{-g\cdot m}{0}{0}
+\end{equation}
+Des weiter hängt das Gravitationsmoment von dem Ortsvektor $\bs{c}$ des Schwerpunktes $C$ ab, der mit Hilfe einer CAD-Anwendung aus der Perspektive von $K$ ermittelt wird.
+\begin{equation}
+\bs{c} = \vecBS{K}{l_C}{0}{0}
+\end{equation}
+Um nun das Gravitationsmoment zu berechnen muss das Kreuzprodukt der beiden Vektoren gebildet werden. Hierfür müssen die Vektoren aber aus Perspektive des selben Bezugssystems dargestellt werden. Dies erfolgt mit Hilfe der Abbildungsmatrix $\pMat{K}{A}$.
+\begin{equation}
+\begin{split}
+\bs{T}^{G/O} &= \bs{c} \times \bs{G} = \presuper{A}{\begin{pmatrix}
+\pMat{K}{A} \cdot \vecBS{K}{l_C}{0}{0}
+\end{pmatrix} \times \vecBS{A}{-g\cdot m}{0}{0}} \\
+&= \vecBS{A}{c_{\varphi}\cdot l_C}{s_{\varphi}\cdot l_C}{0} \times \vecBS{K}{-g\cdot m}{0}{0} = \vecBS{A}{0}{0}{m\cdot g\cdot l_C \cdot s_{\varphi}}
+\end{split}
+\end{equation}
+Dieses Beispiel zeigt, dass die Einführung von Bezugssystemen eine eindeutige Notation und Vorgehensweise zur Berechnung von Vektoren ermöglicht. Man möge bei diesem Anwendungsfall zwar argumentieren, dass die trigonometrischen Zusammenhänge des Gravitationsmoment auch direkt aus Abbildung \ref{abb_wuerfelseite} gewonnen werden können und keine Abbildungsmatrizen notwendig sind. Allerdings zeigt die Untersuchung des Würfels, dass die obige Vorgehensweise auf Beispiele beliebiger Komplexität angewandt werden kann. 
+
+Des weiteren stellt der Ortsvektor $\bs{c}$ des Schwerpunktes ein gutes Beispiel dar um die Ableitung eines Vektors zu diskutieren. Aus Perspektive des Bezugssystem $K$ ist der Vektor $\bs{c}$ konstant. Wird der Vektor aber in $A$ abgebildet so hängt dieser von der Zeitfunktion $\varphi(t)$ ab. Deshalb muss bei der Ableitung eines Vektors das Bezugssystem angegeben werden, aus dessen Perspektive die Differentation durchgeführt werden soll ([Kane], S. 25 ff.). Wenn beispielsweise der Vektor $\bs{c}$ in $A$ differenziert werden soll, so muss dieser zunächst in $A$ dargestellt werden und anschließend seine Komponenten nach der Zeit abgeleitet werden. 
+\begin{equation}
+\frac{\presuper{A}{d \bs{c}}}{dt} = \frac{d(c_{\varphi}\cdot l_C)}{dt}\bs{a}_1 + \frac{\presuper{A}{d(s_{\varphi}\cdot l_C})}{dt}\bs{a}_2 + \frac{\presuper{A}{d (0)}}{dt}\bs{a}_3 = \vecBS{A}{-s_{\varphi}\cdot \dot{\varphi}\cdot l_C}{c_{\varphi}\cdot \dot{\varphi}\cdot l_C}{0}
+\end{equation}
+Aus dieser Überlegung resultiert auch die Frage wie sinnvoll die, aus der klassischen Mechanik bekannte, Definition der Geschwindigkeit als Ableitung des Ortes nach der Zeit ist, da diese keinerlei Abhängigkeit eines Bezugssystemes beinhaltet. Deshalb führt Kane anstelle der Geschwindigkeit $\bs{v}$ eines Punktes $P$, die  Geschwindigkeit $\vel{A}{v}{P}$ bzw. Beschleunigung $\vel{A}{a}{P}$ eines Punktes relativ zu dem Bezugssystem $A$ mit der folgenden Definition ein ([Kane], S. 28).
+\begin{equation}
+\vel{A}{v}{P} = \frac{\presuper{A}{d\bs{p}}}{dt} \hspace{35pt} \vel{A}{a}{P} = \frac{\presuper{A}{d\vel{A}{v}{P}}}{dt}
+\end{equation}
+Die selbe Notation wird für Winkelgeschwindigkeiten und -beschleunigungen eingeführt, wobei $\vel{A}{\omega}{B}$ die Winkelgeschwindigkeit bzw. $\vel{A}{\alpha}{B}$ die Winkelbeschleunigung des Punktes oder Bezugssystems $B$ relativ zu $A$ ist. Die Geschwindigkeit relativ zu einem Intertialsystem wird auch als absolute Geschwindigkeit bezeichnet. 
+Die Winkelgeschwindigkeiten der Bezugssysteme $K$ und $R$ ergeben sich die folgenden Werte, wobei die absolute Winkelgeschwindigkeit eines Bezugssystem die Summe seiner relativen Winkelgeschwindigkeiten ist ([Kane], S. 24 f).
+\begin{equation}
+\vel{A}{\omega}{K} = \vecBS{K}{0}{0}{\dot{\varphi}} \hspace{15pt} \vel{K}{\omega}{R} = \vecBS{R}{0}{0}{\dot{\psi}} \hspace{15pt} \vel{A}{\omega}{R} = \vel{A}{\omega}{K} + \vel{K}{\omega}{R} = \vecBS{A}{0}{0}{\dot{\varphi} + \dot{\psi}}
+\end{equation}
+
+Rückblickend wurden zunächst die generalisierte Koordinaten $\varphi$ und $\psi$ definiert, welche die beiden rotatorischen Freiheitsgrade des Systems beschreiben. Anschließend wurden die Bezugssysteme $K$ und $R$ eingeführt welche durch die Rotation um $\varphi$ und $\psi$ entstehen. Die zugehörigen Abbildungsmatrizen $\pMat{A}{K}$ und $\pMat{K}{R}$ ermöglichen einen beliebigen Ortsvektors des Systems aus Perspektive des Intertialsystems $A$ darzustellen. Das heißt, dass die Kombination von Bezugssystemen und Abbildungsmatrizen die vollständige Konfiguration des Systems beschreibt, wie es auch von generalisierten Koordinaten gefordert wird. Im nächsten schritt wurden die absoluten Winkelgeschwindigkeiten der Würfelseite $K$ und der Schwungmasse $R$ bestimmt. An dieser Stelle führt Kane einen weiteren Schritt in der Untersuchung der Kinematik ein. Dieser besteht darin die so genannten generalisierten Geschwindigkeiten $u_i$ zu definieren ([Kane, S. 40 ff) und daraus die partiellen Geschwindigkeiten der Schwungmasse $R$ und des Wuerfelkörpers $K$ zu bestimmen ([Kane], S. 45 ff).
+Bei dem generalisierten Geschwindigkeiten $u_i$ handelt es sich um skalare Größen deren Anzahl gleich der Zahl der generalisierten Koordinaten ist. Die generalisierten Geschwindigkeiten sind für gewöhnlich abhängig von den Zeitableitungen der generalisierten Geschwindigkeiten $\dot{q}_i$, wobei sie so gewählt werden müssen, dass die Definitionen eindeutig nach den Ableitungen $\dot{q}_i$ aufgelöst werden können. Die Einführung der generalisierten Geschwindigkeiten verfolgt das Ziel, möglichst einfache Ausdrücke für die absoluten Geschwindigkeiten $\vel{A}{\omega}{K}$ und $\vel{A}{\omega}{R}$  und, wie sich im späteren Verlauf zeigen wird, einfachere Ausdrücke der Bewegungsgleichungen zu erhalten. Deshalb werden hier die folgenden Definitionen gewählt.
+\begin{equation}
+u_1 \equiv  \dot{\varphi} \hspace{35pt} u_2 \equiv \dot{\varphi} + \dot{\psi}
+\end{equation}
+Somit ergeben sich die folgenden Ausdrücke für die Winkelgeschwindigkeiten der Körper.
+\begin{equation}
+\vel{A}{\omega}{K} = \vecBS{K}{0}{0}{u_1} \hspace{35pt} \vel{A}{\omega}{R} = \vecBS{K}{0}{0}{u_2}
+\end{equation}
+Diese Geschwindigkeitsausdrücke können auch in die Form
+\begin{equation}
+\begin{split}
+\vel{A}{\omega}{K} = u_1 \cdot \vel{A}{\omega}{K}_1 + u_2 \cdot \vel{A}{\omega}{K}_2 &\hspace{15pt} \vel{A}{\omega}{R} = u_1 \cdot \vel{A}{\omega}{R}_1 + u_2 \cdot \vel{A}{\omega}{R}_2
+\\
+\vel{A}{\omega}{K}_1 = \bs{k}_3 \hspace{15pt} \vel{A}{\omega}{K}_2 = 0 &\hspace{15pt}\vel{A}{\omega}{R}_1 = 0 \hspace{15pt} \vel{A}{\omega}{R}_2 = \bs{k}_3
+\end{split}
+\end{equation}
+gebracht werden, wobei die Größen $\vel{A}{\omega}{K}_i$ und $\vel{A}{\omega}{R}_i$ partielle Geschwindigkeiten genannt werden. Diese Zerlegung kann so interpretiert werden, dass die generalisierten Geschwindigkeiten $u_i$ als skalare Größen den Betrag der Bewegung und die entsprechende partielle Geschwindigkeit, als vektorielle Größe, deren Richtung wiedergibt. Die Vorteile diese Zerlegung in generalisierte und partielle Geschwindigkeiten wird sich im folgenden Abschnitt zeigen.
+
+\subsection{Untersuchung der Kinetik}
+Der nächste Schritt besteht darin die Bewegungsgleichungen des Systems herzuleiten. Hierfür werden nach Kane die wirkenden Drehmomente bestimmt und daraus die generalisierten aktiven Kräfte $F_i$ ermittelt. Anschließend werden die so genannten generalisierten Trägheitskräfte $F^*_i$ berechnet, welche über Kanes Gleichung $F_i + F^*_i = 0$ die gesuchten Bewegungsgleichungen liefern.
+
+Zunächst werden die wirkenden Drehmomente bestimmt. Die Schwungmasse $R$ wird einerseits von dem Motormoment $\bs{T}^{R/M}_M$ angetrieben, andererseits wirkt das Reibmoment $\bs{T}^{R/M}_R$ verzögernd. Die Reibung wird als proportional zu der Geschwindigkeit $\dot{\psi}$ modelliert. Somit ergibt sich für das resultierende Drehmoment $\bs{T}^{R/M}$ der folgende Wert.
+\begin{equation}
+\bs{T}^{R/M} = \bs{T}^{R/M}_M + \bs{T}^{R/M}_R = \vecBS{K}{0}{0}{T_M} + \vecBS{K}{0}{0}{-C_{\psi}(u_2 - u_1)} = \vecBS{K}{0}{0}{T_M - C_{\psi}(u_2-u_1)}
+\end{equation} 
+
+
+\section{Modellbildung Würfelseite}
+Die Untersuchung des Systems beginnt mit der Bestimmung eines mathematischen Modells, welches in diesem Abschnitt näher erläutert ist. Die Herleitung der Systemdynamik erfolgt mit Hilfe der Methoden nach Kane. Zunächst beschränkt sich die mechanische Untersuchung auf einen vereinfachten Prototypen, welcher aus einer Würfelseite besteht, die auf einer Achse gelagert ist. An der Würfelseite ist ein Motor befestigt, auf wessen Schaft wiederum eine Schwungmasse gelagert ist.
 
 \begin{figure}[!h]
 \centering
