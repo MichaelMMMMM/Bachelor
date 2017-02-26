@@ -1,0 +1,15 @@
+#include <iostream>
+#include "CMotor.h"
+
+int main()
+{
+	CMotor myMotor("4", "0", "67", "66");
+
+	myMotor.enableMotor();
+	myMotor.setTorque(0.005F);
+	myMotor.setTorque(-0.05F);
+	myMotor.setTorque(0.1F);
+	myMotor.disableMotor();
+
+	return 0;
+}

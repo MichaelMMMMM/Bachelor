@@ -52,19 +52,19 @@ CADCCalibWidget::CADCCalibWidget() :
     mADC1PlotPtr->xAxis->setLabel("Time [s]");
     mADC1PlotPtr->yAxis->setLabel("ADC1-Value []");
     mADC1PlotPtr->xAxis->setRange(0.0, 40.0);
-    mADC1PlotPtr->yAxis->setRange(-10.0, 2060.0);
+    mADC1PlotPtr->yAxis->setRange(-10.0, 4200.0);
     mADC2PlotPtr = new QCustomPlot;
     mADC2PlotPtr->addGraph();
     mADC2PlotPtr->xAxis->setLabel("Time [s]");
     mADC2PlotPtr->yAxis->setLabel("ADC2-Value []");
     mADC2PlotPtr->xAxis->setRange(0.0, 40.0);
-    mADC2PlotPtr->yAxis->setRange(-10.0, 2060.0);
+    mADC2PlotPtr->yAxis->setRange(-10.0, 4200.0);
     mADC3PlotPtr = new QCustomPlot;
     mADC3PlotPtr->addGraph();
     mADC3PlotPtr->xAxis->setLabel("Time [s]");
     mADC3PlotPtr->yAxis->setLabel("ADC3-Value []");
     mADC3PlotPtr->xAxis->setRange(0.0, 40.0);
-    mADC3PlotPtr->yAxis->setRange(-10.0, 2060.0);
+    mADC3PlotPtr->yAxis->setRange(-10.0, 4200.0);
 
     mLeftLayoutPtr->addWidget(mADC1PlotPtr, 0, 0);
     mLeftLayoutPtr->addWidget(mADC2PlotPtr, 0, 1);

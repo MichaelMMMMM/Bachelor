@@ -5,6 +5,7 @@
 #include <QStackedWidget>
 #include "CSensorCalibWidget.h"
 #include "CADCWidget.h"
+#include "CControlWidget.h"
 
 class CMainWindow : public QMainWindow
 {
@@ -16,6 +17,7 @@ public:
 public slots:
     void selectSensorCalibration();
     void selectADCCalibration();
+    void selectLQRControl();
 private:
     CRxThread* mRxThreadPtr;
 
@@ -25,6 +27,7 @@ private:
     QWidget*            mStartWidgetPtr;
     CSensorCalibWidget* mSensorCalibWidgetPtr;
     CADCCalibWidget*    mADCCalibWidgetPtr;
+    CControlWidget*     mControlWidgetPtr;
 };
 
 #endif // CMAINWINDOW_H

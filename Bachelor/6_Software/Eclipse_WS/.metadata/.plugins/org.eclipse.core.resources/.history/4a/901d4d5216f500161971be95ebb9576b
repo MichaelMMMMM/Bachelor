@@ -1,0 +1,42 @@
+/**
+ * @file	COffsetCorrection.h
+ * @author	Michael Meindl
+ * @date	17.02.2017
+ * @brief	Action Object to correct the State-Vector's Offsets.
+ */
+#ifndef COFFSETCORRECTION_H
+#define COFFSETCORRECTION_H
+#include "CStateData.h"
+#include "CPT1.h"
+
+class COffsetCorrection
+{
+public:
+	using InputType  = CStateData;
+	using OutputType = CStateData;
+public:
+	void reset();
+	void enableHighpass();
+	void disableHighpass();
+	const CStateData& calcOutput(const CStateData& input);
+	const CStateData& getValue();
+public:
+	COffsetCorrection();
+	COffsetCorrection(const COffsetCorrection&) = delete;
+	COffsetCorrection& operator=(const COffsetCorrection&) = delete;
+	~COffsetCorrection() = default;
+private:
+	CStateData mOutput;
+	CPT1	   mG1PT1;
+	CPT1	   mG2PT1;
+	CPT1	   mG3PT1;
+	bool 	   mHPFlag;
+
+	static constexpr Float32 sHP_GF	      = 5.0F;
+	static constexpr Float32 sG_0         = -5.6638F;
+	static constexpr Float32 sG_k1_Offset = -0.3F;
+	static constexpr Float32 sG_k2_Offset =  0.4F;
+	static constexpr Float32 sG_k3_Offset =  0.4F;
+};
+
+#endif

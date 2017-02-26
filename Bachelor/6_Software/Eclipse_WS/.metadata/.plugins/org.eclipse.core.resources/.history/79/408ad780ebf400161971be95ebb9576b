@@ -1,0 +1,14 @@
+/**
+ * @file	COffsetCorrection.cpp
+ * @author	Michael Meindl
+ * @date	17.02.2017
+ * @brief	Method definitions for COffsetCorrection.
+ */
+#include "COffsetCorrection.h"
+
+const CStateData& COffsetCorrection::calcOutput(const CStateData& input)
+{
+	mOutput.mGData.mG_k1 = input.mGData.mG_k1 - sG_0;
+	mOutput.mGData.mG_k2 = input.mGData.mG_k2 - sG_0;
+	mOutput.mGData.mG_k3 = input.mGData.mG_k3 - sG_0;
+}

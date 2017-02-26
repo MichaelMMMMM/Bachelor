@@ -1,0 +1,32 @@
+/**
+ * @file	CLQR.h
+ * @author	Michael Meindl
+ * @date	16.02.2017
+ * @brief	Class to calculate the LQR-Controller.
+ */
+#ifndef CLQR_H
+#define CLQR_H
+#include "CStateData.h"
+#include "CTorqueData.h"
+
+class CLQR
+{
+public:
+	using InputType = CStateData;
+	using OutputType = CTorqueData;
+public:
+	const CTorqueData& calcOutput(const CStateData& input);
+	const CTorqueData& getValue();
+public:
+	CLQR() = default;
+	CLQR(const CLQR&) = delete;
+	CLQR& operator=(const CLQR&) = delete;
+	~CLQR() = default;
+private:
+	CTorqueData mOutput;
+	static constexpr Float32 sF_TM1[] = { 0.6299F, 2.7204F, -3.3502F, -3.8892F, 2.7429F, 0.7214F, -0.0314F, 0.0127F, 0.084F} ;
+	static constexpr Float32 sF_TM2[] = { -1.0129F, 0.3343F, 0.6786F, 0.2508F, -0.9354F, 0.4169F, -0.0142F, -0.0015F, 0.0094F };
+	static constexpr Float32 sF_TM3[] = { 0.5732F, -0.7528F, 0.1795F, 0.5262F, 0.1628F, -0.4238F, 0.0016F, 0.0073F, 0.0013F };
+};
+
+#endif

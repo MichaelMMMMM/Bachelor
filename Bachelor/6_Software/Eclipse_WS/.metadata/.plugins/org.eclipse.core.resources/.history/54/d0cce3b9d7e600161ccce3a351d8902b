@@ -1,0 +1,25 @@
+/**
+ * @file	CMotor.h
+ * @author	Michael Meindl
+ * @date	30.01.2017
+ * @brief	Class to initialize and utilize the motors.
+ */
+#ifndef CMOTOR_H
+#define CMOTOR_H
+#include "CPWM.h"
+#include "CGPIO.h"
+
+class CMotor
+{
+public:
+	void enableMotor();
+	void disableMotor();
+	void setTorque(Float32 torque);
+public:
+	CMotor(const std::string& pwmchipNr,
+		   const std::string& pwmNr,
+		   const std::string& enablePinNr,
+		   const std::string& directionPinNr)
+};
+
+#endif

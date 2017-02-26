@@ -1,0 +1,32 @@
+Messung 1: Complementär-Filter aus, Offset-Korrektur aus, Regelzeiten extrem kurz, hohe Impulse bei g-Schätzung durch Drehmomente
+An Zeiten der Regelung 21.5203-21.56 21.5203-21.5603 24.5604-24.6004 26.2804-26.3004 27.4204-27.4604 28.7605-28.8005 30.2605-30.3005 34.1806-34.2006 35.6806-35.7006 40.1807-40.2207 42.0008-42.0408  43.3808-43.4208 44.5408-44.5608 47.7609-47.7809 49.2009-49.2409 50.561-50.601  52.001-52.041 54.4411-54.4811  56.2811-56.3211 57.7611-57.8011 59.7412-59.7612 62.5412-62.5812
+
+Messung 2: Komplementär-Filter (alpha=0.98) an, Offset-Korrektur aus, Regelzeiten recht kurz, Impulse g-Schätzung durch Drehmomente gedämpft aber da
+An Zeiten der Regelung 
+12.6601-12.8001
+14.8401-15.3202
+18.3202-18.7202
+20.6203-21.0403
+23.1803-23.2403
+25.8804-26.3004
+33.5406-33.5806
+35.0606-35.1806
+37.0007-37.4007
+45.3408-45.4008
+46.9409-47.3009
+51.941-51.981
+54.121-54.7011
+56.8011-56.9011
+
+Messung 3: Komp-Filter aus, Offset-Bestimmung, Regelung-deaktiviert, extrem großes Rauschen g-Schätzung
+
+Messung 4: Komp-Filter (alpha=0.98F), Offset-Bestimmung, Offset-Bestimmung , Regelung-deaktiviert, Rauschen deutlich verbessert, verbleibende Messabweichung
+
+Messung 5: Komp-Filter (alpha=0.98F), Offset-Kompensation (g1_o = -0.005, g2_o = 0.1804F, g3_o = 0.5234), Regelung-daektiviert
+
+Messung 6: Komp-Filter (alpha=0.98F), Offset-Kompensation ((g1_o = -0.005, g2_o = 0.1804F, g3_o = 0.5234), Regelung-aktiviert, Würfel fixiert (10sec Verzögerung bis einsetzen),
+Zeiten-Regelung: 12.5401-16.5802
+
+Messung 7: Komp-Filter(alpha=0.98F), Offset-Kompensation (''), Regelung-atkiviert, Zeiten-Regelung: 71.7-73.0598
+
+Messung 8: Komp-Aus, Rauschen g-Vektor, Regelung-deaktiviert

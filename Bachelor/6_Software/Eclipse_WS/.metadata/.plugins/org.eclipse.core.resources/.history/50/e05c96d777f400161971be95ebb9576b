@@ -1,0 +1,19 @@
+/**
+ * @file	CLQR.h
+ * @author	Michael Meindl
+ * @date	16.02.2017
+ * @brief	Class to calculate the LQR-Controller.
+ */
+#ifndef CLQR_H
+#define CLQR_H
+#include "CStateData.h"
+#include "CTorqueData.h"
+
+class CLQR
+{
+public:
+	using InputType = CStateData;
+	using OutputType = CTorqueData;
+};
+
+#endif

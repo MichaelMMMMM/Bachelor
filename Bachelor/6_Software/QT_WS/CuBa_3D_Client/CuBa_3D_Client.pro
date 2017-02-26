@@ -24,7 +24,9 @@ SOURCES += main.cpp\
     CSensorCalibWidget.cpp \
     CTorqueData.cpp \
     CADCData.cpp \
-    CADCWidget.cpp
+    CADCWidget.cpp \
+    CStateData.cpp \
+    CControlWidget.cpp
 
 HEADERS  += CMainWindow.h \
     Assertion.h \
@@ -38,4 +40,6 @@ HEADERS  += CMainWindow.h \
     qcustomplot.h \
     CTorqueData.h \
     CADCData.h \
-    CADCWidget.h
+    CADCWidget.h \
+    CStateData.h \
+    CControlWidget.h

@@ -1,0 +1,18 @@
+/**
+ * @file	CMotor.cpp
+ * @author	Michael Meindl
+ * @date	30.01.2017
+ * @brief	Method definitios for CMotor.
+ */
+#include "CMotor.h"
+
+CMotor::CMotor(const std::string& pwmchipNr,
+			   const std::string& pwmNr,
+			   const std::string& enablePinNr,
+			   const std::string& directionPinNr)
+				: mTorquePWM(pwmchipNr, pwmNr),
+				  mEnablePin(enablePinNr),
+				  mDirectionPin(directionPinNr)
+{
+	mEnablePin.setLow();
+}

@@ -1,0 +1,19 @@
+/**
+ * @file	CStateEstimate.h
+ * @author	Michael Meindl
+ * @date	16.02.2017
+ * @brief	Class to calculate the state estimates from the sensor values.
+ */
+#ifndef CSTATEESTIMATE_H
+#define CSTATEESTIMATE_H
+#include "CPoly1.h"
+#include "CStateData.h"
+#include "CSensorData.h"
+
+class CStateEstimate
+{
+public:
+
+};
+
+#endif

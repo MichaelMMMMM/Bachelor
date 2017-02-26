@@ -1,0 +1,21 @@
+/**
+ * @file	CMPUCalib.cpp
+ * @author	Michael Meindl
+ * @date	19.02.2017
+ * @brief	Method definitions for CMPUCalib.
+ */
+#include "CMPUCalib.h"
+#include <ostream>
+#include <fstream>
+using namespace std;
+
+CMPUCalib::CMPUCalib(const std::string& calib_file) : mSMatrix{0.0F},
+													  mOffsetVector{0.0F},
+													  mAcceleration{0.0F}
+{
+
+}
+void CMPUCalib::calibrate(const CMPUData& data)
+{
+	Float32 x = static_cast<data.mX_dd>;
+}

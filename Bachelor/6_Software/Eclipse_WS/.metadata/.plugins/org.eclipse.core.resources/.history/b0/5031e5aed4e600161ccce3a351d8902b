@@ -1,0 +1,17 @@
+#include <iostream>
+#include "CGPIO.h"
+#include "CPWM.h"
+
+int main()
+{
+	std::cout << "Hallo" << std::endl;
+	CGPIO myPin("66");
+	myPin.setHigh();
+	myPin.setLow();
+
+	CPWM myPWM("4", "0");
+	myPWM.setDutyCycle(50.0F);
+	myPWM.setDutyCycle(10.0F);
+
+	return 0;
+}

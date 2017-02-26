@@ -1,0 +1,82 @@
+/**
+ * @file	CLQRTestAction.cpp
+ * @author	Michael Meindl
+ * @date	08.02.2017
+ * @brief	Method definitions for CLQRTestAction.
+ */
+#include "CLQRTestAction.h"
+#include <iostream>
+
+CLQRTestAction::CLQRTestAction() : mTime(0.0F)
+{
+
+}
+void CLQRTestAction::onLQRTestEntry()
+{
+	std::cout << "[*] Control-Comp: Entering LQR-Test" << std::endl;
+	sHardware.enableMotor();
+	mSignalFlow.CCompFilter::reset();
+	mTime = 0.0F;
+}
+void CLQRTestAction::onLQRTestExit()
+{
+	std::cout << "[*] Control-Comp: Exiting LQR-Test" << std::endl;
+	sHardware.disableMotor();
+}
+void CLQRTestAction::sampleLQRTest()
+{
+	static bool balance_flag = false;
+
+	CSensorData sensor_data;
+	if(sHardware.fetchSensorData(sensor_data))
+	{
+		mSignalFlow.calcOutput(sensor_data);
+		CStateData state_data = mSignalFlow.COffsetCorrection::getValue();
+		CTorqueData tm_data   = mSignalFlow.CLQR::getValue();
+
+		state_data.mGData.mTime  = mTime;
+		state_data.mUKData.mTime = mTime;
+		state_data.mURData.mTime = mTime;
+		tm_data.mTime = mTime;
+
+		Float32 g1_abs = state_data.mGData.mG_k1;
+		g1_abs = g1_abs > 0 ? g1_abs : -g1_abs;
+		Float32 g2_abs = state_data.mGData.mG_k2;
+		g2_abs = g2_abs > 0 ? g2_abs : -g2_abs;
+		Float32 g3_abs = state_data.mGData.mG_k3;
+		g3_abs = g3_abs > 0 ? g3_abs : -g3_abs;
+
+		if( ( g3_abs < 0.7F) && (g2_abs < 0.7F) && (g1_abs < 0.7F) )
+		{
+			if(balance_flag == false)
+			{
+				balance_flag = true;
+				std::cout << "[*] Control-Component: Entering Balance-Area" << std::endl;
+				mSignalFlow.COffsetCorrection::disableHighpass();
+				sHardware.enableMotor();
+			}
+			//sHardware.setTorque(tm_data);
+		}
+		else
+		{
+			if(balance_flag == true)
+			{
+				balance_flag = false;
+				std::cout << "[*] Control-Component: Exiting Balance-Area" << std::endl;
+				mSignalFlow.COffsetCorrection::disableHighpass();
+				sHardware.disableMotor();
+			}
+		}
+
+		sProxy.transmitGData(state_data.mGData, false);
+		sProxy.transmitUKData(state_data.mUKData, false);
+		sProxy.transmitURData(state_data.mURData, false);
+		sProxy.transmitTorqueData(tm_data, false);
+	}
+	else
+	{
+		std::cout << "[*] Control-Comp: Failed to read Sensor-Data" << std::endl;
+	}
+
+	mTime += 0.02F;
+}

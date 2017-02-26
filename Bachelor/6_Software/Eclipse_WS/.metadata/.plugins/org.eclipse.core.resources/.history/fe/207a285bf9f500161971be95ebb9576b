@@ -1,0 +1,18 @@
+/**
+ * @file	 CTMFilter.cpp
+ * @author	Michael Meindl
+ * @date	18.02.2017
+ * @brief	Method definitions for CTMFilter.
+ */
+#include "CTMFilter.h"
+
+CTMFilter::CTMFilter() : mTM1Filter(sGF),
+						 mTM2Filter(sGF),
+						 mTM3Filter(sGF)
+{
+
+}
+const CTorqueData& CTMFilter::calcOutput(const CTorqueData& input)
+{
+	mOutput.mTorque1 = mTM1Filter.calculateOutput(input.mTorque1);
+}

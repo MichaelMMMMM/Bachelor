@@ -1,0 +1,16 @@
+#include <iostream>
+#include "CMotor.h"
+
+int main()
+{
+	CMotor motor1("4", "0", "67", "66");
+	CMotor motor2("4", "1", "68", "69");
+	CMotor motor3("1", "0", "44", "45");
+
+	motor2.enableMotor();
+	motor2.disableMotor();
+	motor2.setTorque(0.04F);
+	motor2.setTorque(-0.08F);
+
+	return 0;
+}

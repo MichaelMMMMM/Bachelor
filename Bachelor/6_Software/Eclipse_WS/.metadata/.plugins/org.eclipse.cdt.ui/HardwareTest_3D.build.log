@@ -1,0 +1,30 @@
+13:05:10 **** Incremental Build of configuration Debug for project HardwareTest_3D ****
+make all 
+Building file: ../Hardware/CSensorData.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/HardwareTest_3D/Hardware" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Hardware/CSensorData.d" -MT"Hardware/CSensorData.o" -o "Hardware/CSensorData.o" "../Hardware/CSensorData.cpp"
+Finished building: ../Hardware/CSensorData.cpp
+ 
+Building file: ../Hardware/CSensorSystem.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/HardwareTest_3D/Hardware" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Hardware/CSensorSystem.d" -MT"Hardware/CSensorSystem.o" -o "Hardware/CSensorSystem.o" "../Hardware/CSensorSystem.cpp"
+Finished building: ../Hardware/CSensorSystem.cpp
+ 
+Building file: ../Hardware/CSwitch.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/HardwareTest_3D/Hardware" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Hardware/CSwitch.d" -MT"Hardware/CSwitch.o" -o "Hardware/CSwitch.o" "../Hardware/CSwitch.cpp"
+Finished building: ../Hardware/CSwitch.cpp
+ 
+Building file: ../Hardware/CTorqueData.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/HardwareTest_3D/Hardware" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Hardware/CTorqueData.d" -MT"Hardware/CTorqueData.o" -o "Hardware/CTorqueData.o" "../Hardware/CTorqueData.cpp"
+Finished building: ../Hardware/CTorqueData.cpp
+ 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/HardwareTest_3D/lib" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/HardwareTest_3D/Hardware" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+/bin/sh: 1: arm-linux-gnueabihf-arm-linux-gnueabihf-g++: not found
+make: *** [main.o] Error 127
+
+13:05:11 Build Finished (took 1s.372ms)
+

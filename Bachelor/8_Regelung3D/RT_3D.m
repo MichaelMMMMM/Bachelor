@@ -2,9 +2,9 @@
 
 m      = 1.532;
 m_R    = 0.155;
-r_1    = [1;7.5;7.5]*1e-2;
-r_2    = [7.5;1;7.5]*1e-2;
-r_3    = [7.5;7.5;1]*1e-2;
+r_1    = [0.5;7.5;7.5]*1e-2;
+r_2    = [7.5;0.5;7.5]*1e-2;
+r_3    = [7.5;7.5;0.5]*1e-2;
 l_C    = 0.066;
 c      = [l_C;l_C;l_C]; 
 C_psi  = 3.1176e-5;
@@ -22,7 +22,7 @@ I_KO   = I_GHO + m_R*(eye(3)*dot(r_1,r_1)-r_1*r_1') ...
            
 I_K    = I_KO+[I_R2M2(1,1)+I_R3M3(1,1), 0, 0;
                0, I_R1M1(2,2)+I_R3M3(2,2), 0;
-               0, 0, I_R1M1(3,3)+I_R2M2(1,1)];
+               0, 0, I_R1M1(3,3)+I_R2M2(3,3)];
 I_R    = [I_R1M1(1,1), 0, 0; 0, I_R2M2(2,2), 0; 0, 0, I_R3M3(3,3)];
 
 I_K_inv = inv(I_K);
@@ -39,7 +39,7 @@ g_LA   = [0, g*sin(phi_20), g*cos(phi_20)*sin(phi_30);
 G_LA   = [0, -m*l_C, m*l_C; m*l_C, 0, -m*l_C; -m*l_C, m*l_C, 0];
 
 A = [zeros(3,3), g_LA, zeros(3,3); 
-     I_K_inv*G_LA, -C_psi*I_K_inv, C_psi*I_K_inv;
+     I_K\G_LA, -C_psi*I_K_inv, C_psi*I_K_inv;
      zeros(3,3), C_psi*I_R_inv, -C_psi*I_R_inv];
 B = [zeros(3,3); -I_K_inv; I_R_inv];
 
@@ -48,10 +48,10 @@ D = zeros(3,3);
 
 mySS = ss(A, B, C, D);
 
-g_max   = 0.5;
-u_K_max = degtorad(50);
-u_R_max = degtorad(360/60*300);
-T_max   = 0.110;
+g_max   = 7;
+u_K_max = degtorad(5);
+u_R_max = degtorad(4000/60*300);
+T_max   = 0.0001;
 
 
 [reduced_SS, VK] = minreal(mySS);
@@ -66,14 +66,26 @@ E = eig(A);
 
 ctrb_ranks = zeros(size(E));
 
-x_0 = ones(9,1)*0;
-x_0(4) = 1;
+phi    = sym('phi', [3 1], 'real');
+A_P_B = [1, 0, 0; 0, cos(phi(1)), sin(phi(1)); 0, -sin(phi(1)), cos(phi(1))];
+B_P_C = [cos(phi(2)), 0, -sin(phi(2)); 0, 1, 0; sin(phi(2)), 0, cos(phi(2))];
+C_P_K = [cos(phi(3)), sin(phi(3)), 0; -sin(phi(3)), cos(phi(3)), 0; 0, 0, 1];
+
+A_P_K = C_P_K*(B_P_C*A_P_B);
+K_P_A = A_P_K';
+
+x_0 = double(subs(A_P_K, phi, [phi_10; phi_20; phi_30-degtorad(5)]))*[-9.81;0;0] + 9.81/sqrt(3);
+x_0 = [x_0;zeros(6,1)];
+
+x_0 = [0;0;0;1;zeros(5,1)];
 
 for k = 1:length(E)
     ctrb_ranks(k) = rank([E(k)*eye(9) - A, B]); 
 end
 
-F = lqr(reduced_SS.A, reduced_SS.B, Q, R);
+F = lqrd(reduced_SS.A, reduced_SS.B, Q, R, 0.02);
 
 F_vorMat = inv(VK);
 F_vorMat = F_vorMat(1:7, 1:9);
+
+F_final = F* [eye(7), zeros(7,2)]*VK;

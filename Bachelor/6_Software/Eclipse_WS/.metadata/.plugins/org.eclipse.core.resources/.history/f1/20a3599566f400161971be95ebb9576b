@@ -1,0 +1,18 @@
+/**
+ * @file	CLQRTest.cpp
+ * @author	Michael Meindl
+ * @date	16.02.2017
+ * @brief	Method definitions for CLQRTest.
+ */
+#include "CLQRTest.h"
+
+bool CLQRTest::tryEntry(CMessage& msg, AState*& statePtr)
+{
+	EEvent event = msg.getEvent();
+	if(EEvent::RUN_CONTROL == event)
+	{
+		statePtr = this;
+		return true;
+	}
+	return false;
+}

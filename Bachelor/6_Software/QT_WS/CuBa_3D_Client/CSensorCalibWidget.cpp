@@ -51,17 +51,17 @@ CSensorCalibWidget::CSensorCalibWidget() : mSavedFlag(false),
     mXAnglVelPlotPtr = new QCustomPlot;
     mXAnglVelPlotPtr->xAxis->setLabel("Time [s]");
     mXAnglVelPlotPtr->yAxis->setLabel("X-Angular-Velocity []");
-    mXAnglVelPlotPtr->xAxis->setRange(0.0, 40.0);
+    mXAnglVelPlotPtr->xAxis->setRange(0.0, 140.0);
     mXAnglVelPlotPtr->yAxis->setRange(-33000.0, 33000);
     mYAnglVelPlotPtr = new QCustomPlot;
     mYAnglVelPlotPtr->xAxis->setLabel("Time [s]");
     mYAnglVelPlotPtr->xAxis->setLabel("Y-Angulvar-Velocity []");
-    mYAnglVelPlotPtr->xAxis->setRange(0.0, 40.0);
+    mYAnglVelPlotPtr->xAxis->setRange(0.0, 140.0);
     mYAnglVelPlotPtr->yAxis->setRange(-33000.0, 33000);
     mZAnglVelPlotPtr = new QCustomPlot;
     mZAnglVelPlotPtr->xAxis->setLabel("Time [s]");
     mZAnglVelPlotPtr->yAxis->setLabel("Z-Angulvar-Velocity []");
-    mZAnglVelPlotPtr->xAxis->setRange(0.0, 40.0);
+    mZAnglVelPlotPtr->xAxis->setRange(0.0, 140.0);
     mZAnglVelPlotPtr->yAxis->setRange(-33000.0, 33000);
 
     for(int i = 0; i < 6; i++)
@@ -254,7 +254,7 @@ void CSensorCalibWidget::drawPlots()
         mZAnglVelPlotPtr->graph(5)->setData(mTime6, mW_Z6);
         mZAnglVelPlotPtr->replot();
     }
-    if(mTime1.length() > 1050)
+    if(mTime1.length() > 350)
     {
         this->saveCSV();
         emit endMeasurement();

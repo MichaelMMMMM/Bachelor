@@ -1,0 +1,15 @@
+17:22:53 **** Incremental Build of configuration Debug for project Template_SignalFlow ****
+make all 
+Building file: ../CMPUCalib.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"CMPUCalib.d" -MT"CMPUCalib.o" -o "CMPUCalib.o" "../CMPUCalib.cpp"
+Finished building: ../CMPUCalib.cpp
+ 
+Building target: Template_SignalFlow
+Invoking: GCC C++ Linker
+g++  -o "Template_SignalFlow"  ./CMPUCalib.o ./CMPUData.o ./main.o   
+Finished building target: Template_SignalFlow
+ 
+
+17:22:54 Build Finished (took 491ms)
+

@@ -25,7 +25,12 @@ enum class EEvent : UInt32
     SENSOR_5_DATA,
     SENSOR_6_DATA,
     ADC_DATA,
-    TORQUE_DATA
+    TORQUE_DATA,
+    G_DATA,
+    UK_DATA,
+    UR_DATA,
+    COMPFILTER_ACTIVE_FLAG,
+    OFFSETCORRECTION_ACTIVE_FLAG
 };
 
 #endif

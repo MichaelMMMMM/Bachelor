@@ -1,0 +1,29 @@
+/**
+ * @file	CLQR.cpp
+ * @author	Michael Meindl
+ * @date	16.02.2017
+ * @brief	Method definitions for CLQR.
+ */
+#include "CLQR.h"
+
+const CTorqueData& CLQR::calcOutput(const CStateData& input)
+{
+	mOutput.mTorque1 = input.mGData.mG_k1 * sF_TM1[0]   + input.mGData.mG_k2 * sF_TM1[1]   + input.mGData.mG_k3 * sF_TM1[2] +
+			 	 	   input.mUKData.mUK_k1 * sF_TM1[3] + input.mUKData.mUK_k2 * sF_TM1[4] + input.mUKData.mUK_k3 * sF_TM1[5] +
+					   input.mURData.mUR_k1 + sF_TM1[6] + input.mURData.mUR_k2 * sF_TM1[7] + input.mURData.mUR_k3 * sF_TM1[8];
+	mOutput.mTorque2 = 0.0F;
+	mOutput.mTorque3 = 0.0F;
+
+	for(int i = 0; i < 9; i++)
+	{
+		mOutput.mTorque1 += mX[i]*sF_TM1[i];
+		mOutput.mTorque2 += mX[i]*sF_TM2[i];
+		mOutput.mTorque3 += mX[i]*sF_TM3[i];
+	}
+
+	return mOutput;
+}
+const CTorqueData& CLQR::getValue()
+{
+	return mOutput;
+}

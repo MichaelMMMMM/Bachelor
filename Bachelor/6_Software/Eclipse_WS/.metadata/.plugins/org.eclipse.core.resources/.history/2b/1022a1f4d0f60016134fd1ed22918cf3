@@ -1,0 +1,66 @@
+/**
+ * @file	CADCSystem.cpp
+ * @author	Michael Meindl
+ * @date	19.02.2017
+ * @brief	Method definitions for CADCSystem.
+ */
+#include "CADCSystem.h"
+#include <iostream>   // cout, cerr
+#include <string>     // string, to_string
+#include <cstdio>     // fprintf, perror
+#include <cstring>    // strlen
+#include <cerrno>     // errno
+#include <unistd.h>   // open, close, read, write, access, F_OK
+#include <fcntl.h>    // O_RDONLY
+#include <cstdlib>
+#include <string.h>
+
+CADCSystem::CADCSystem() : mSwitch("49", "48", "7", "26"), mADCFD(-1)
+{
+
+}
+bool CADCSystem::fetchValues(CADCData& data)
+{
+	mSwitch.selectX0();
+	mSwitch.selectX1();
+	mSwitch.selectX2();
+	mSwitch.selectX3();
+	return true;
+}
+int CADCSystem::sysfsEcho(const char* file, const char* string)
+{
+	// Control function parameters
+	if (file == 0 || string == 0) {
+		fprintf(stderr, "Invalid parameters.\n");
+		return -1;
+	}
+
+	// Open the sysfs-entry
+	int fd;
+	fd = open(file, O_WRONLY);
+	if (fd < 0) {
+		perror("open");
+		return -2;
+	}
+
+	// Write into the sysfs entry
+	int ret;
+	ret = write(fd, string, strlen(string));
+	if (ret < 0)
+	{
+		perror("write");
+		std::cout << "Errno: " << errno <<", string: " << string
+				  << ", strlen: " << strlen(string) << std::endl;
+		return -3;
+	}
+	else if (ret < (int)strlen(string))
+	{
+		return -4;
+	}
+
+
+	// Close the sysfs-entry
+	close(fd);
+
+	return 0;
+}

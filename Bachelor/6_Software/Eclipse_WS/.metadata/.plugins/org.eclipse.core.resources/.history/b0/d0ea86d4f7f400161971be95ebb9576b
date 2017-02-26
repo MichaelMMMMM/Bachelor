@@ -1,0 +1,39 @@
+/**
+ * @file	CLQR.h
+ * @author	Michael Meindl
+ * @date	16.02.2017
+ * @brief	Class to calculate the LQR-Controller.
+ */
+#ifndef CLQR_H
+#define CLQR_H
+#include "CStateData.h"
+#include "CTorqueData.h"
+
+class CLQR
+{
+public:
+	using InputType = CStateData;
+	using OutputType = CTorqueData;
+public:
+	const CTorqueData& calcOutput(const CStateData& input);
+	const CTorqueData& getValue();
+public:
+	CLQR() = default;
+	CLQR(const CLQR&) = delete;
+	CLQR& operator=(const CLQR&) = delete;
+	~CLQR() = default;
+private:
+	CTorqueData mOutput;
+
+//	static constexpr Float32 sF_TM1[] = { 0.6299F, 2.7204F, -3.3502F, -3.8892F, 2.7429F, 0.7214F, -0.0314F, 0.0127F, 0.084F} ;
+//	static constexpr Float32 sF_TM2[] = { -1.0129F, 0.3343F, 0.6786F, 0.2508F, -0.9354F, 0.4169F, -0.0142F, -0.0015F, 0.0094F };
+//	static constexpr Float32 sF_TM3[] = { 0.5732F, -0.7528F, 0.1795F, 0.5262F, 0.1628F, -0.4238F, 0.0016F, 0.0073F, 0.0013F };
+	static constexpr Float32 sF_TM1[] = { 0.2960F, 1.3239F, -1.6198F, -1.9050F, 1.3401F, 0.3554F, -0.0164F, 0.0071F, 0.0051F };
+	static constexpr Float32 sF_TM2[] = { -0.5690F, 0.4589F, 0.1101F, -0.2037F, -0.3368F, 0.3313F, -0.0118F, 0.0009F, 0.0065F };
+	static constexpr Float32 sF_TM3[] = { 0.4861F, -0.0302F, -0.4559F, -0.3257F, 0.5911F, -0.1604F, -0.0060F, 0.0077F, 0.0035F };
+	static constexpr Float32 sF_TM1[] = { 0.058999F,0.51833F,-0.57733F,-0.69353F,0.44193F,0.15746F,-0.0039613F,0.0012611F,0.0010319F};
+	-0.33985,0.0021508,0.3377,0.22913,-0.41081,0.10974,-0.00051269,-0.0010412,0.00037302
+	0.18965,-0.23713,0.047484,0.15971,0.070289,-0.14137,0.0012624,0.00086951,0.00017172
+};
+
+#endif

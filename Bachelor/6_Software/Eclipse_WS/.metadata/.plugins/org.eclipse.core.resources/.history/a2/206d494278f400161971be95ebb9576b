@@ -1,0 +1,15 @@
+/**
+ * @file	CLQR.cpp
+ * @author	Michael Meindl
+ * @date	16.02.2017
+ * @brief	Method definitions for CLQR.
+ */
+#include "CLQR.h"
+
+const CTorqueData& CLQR::calcOutput(const CStateData& input)
+{
+	Float32& mX[] = { input.mGData.mG_k1, input.mGData.mG_k2, input.mGData.mG_k3,
+					  input.mUKData.mUK_k1, input.mUKData.mUK_k2, input.mUKData.mUK_k3,
+					  input.mURData.mUR_k1, input.mURData.mUR_k2, input.mURData.mUR_k3 };
+	};
+}

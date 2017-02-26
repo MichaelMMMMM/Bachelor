@@ -1,0 +1,8 @@
+/**
+ * @file	CLQR.cpp
+ * @author	Michael Meindl
+ * @date	16.02.2017
+ * @brief	Method definitions for CLQR.
+ */
+#include "CLQR.h"
+
