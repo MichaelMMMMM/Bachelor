@@ -1,0 +1,24 @@
+#include <iostream>
+#include "TMatrix.h"
+using namespace std;
+
+
+int main()
+{
+
+	TMatrix<3U,3U> mat;
+	mat.display();
+	mat.scalarAt(1,1) = 5;
+	mat.display();
+	TMatrix<3U,3U> mat2;
+	mat2.scalarAt(1,2) = 3;
+	mat2.display();
+	mat2 = mat2 + mat;
+	mat2.display();
+
+	TMatrix<3U, 3U> mat3 = mat*mat2;
+	TMatrix<4U, 4U> mat4 = mat*mat2;
+	mat3.display();
+
+	return 0;
+}

@@ -1,0 +1,57 @@
+/*
+ * @file	CLQB.cpp
+ * @author	Michael Meindl
+ * @date	2.3.2017
+ * @brief	Method definitions for CLQB.
+ */
+#include "CLQB.h"
+#include <iostream>
+#include <ostream>
+#include <fstream>
+using namespace std;
+
+CLQB::CLQB(const string& kFile,
+		   const string& lFile,
+		   const string& aFile,
+		   const string& bFile,
+		   const string& cFile) : mKd(kFile), mLd(lFile), mAd(aFile),mBd(bFile), mCd(cFile), mFirstRun(true)
+{
+
+}
+Float32 CLQB::calculateOutput(Float32 phi, Float32 phi__d, Float32 psi__d)
+{
+	if(mFirstRun == true)
+	{
+		mU.scalarAt(1,1) = 0.0F;
+	}
+	else
+	{
+
+	}
+}
+void CLQB::calculateLQR(Float32 phi, Float32 phi__d, Float32 psi__d)
+{
+	mTorque =  mK[0]*phi + mK[1]*phi__d + mK[2]*psi__d;
+	mTorque = mTorque > sMaxTorque ? sMaxTorque : mTorque;
+	mTorque = mTorque < -sMaxTorque ? -sMaxTorque : mTorque;
+}
+void CLQB::x2xB(Float32& x1, Float32& x2, Float32& x3)
+{
+	Float32 x1_B = mT_B_inv[0][0] * x1 + mT_B_inv[0][1] * x2 + mT_B_inv[0][2] * x3;
+	Float32 x2_B = mT_B_inv[1][0] * x1 + mT_B_inv[1][1] * x2 + mT_B_inv[1][2] * x3;
+	Float32 x3_B = mT_B_inv[2][0] * x1 + mT_B_inv[2][1] * x2 + mT_B_inv[2][2] * x3;
+
+	x1 = x1_B;
+	x2 = x2_B;
+	x3 = x3_B;
+}
+void CLQB::xB2x(Float32& x1B, Float32& x2B, Float32& x3B)
+{
+	Float32 x1 = mT_B[0][0] * x1B + mT_B[0][1] * x2B + mT_B[0][2] * x3B;
+	Float32 x2 = mT_B[1][0] * x1B + mT_B[1][1] * x2B + mT_B[2][1] * x3B;
+	Float32 x3 = mT_B[2][0] * x1B + mT_B[2][1] * x2B + mT_B[2][2] * x3B;
+
+	x1B = x1;
+	x2B = x2;
+	x3B = x3;
+}

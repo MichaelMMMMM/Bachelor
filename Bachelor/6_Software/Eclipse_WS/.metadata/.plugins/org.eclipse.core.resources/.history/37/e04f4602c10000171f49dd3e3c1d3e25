@@ -1,0 +1,29 @@
+#include <iostream>
+#include "TMatrix.h"
+using namespace std;
+
+
+int main()
+{
+
+	TMatrix<3U,3U> mat;
+	mat.display();
+	mat.scalarAt(1,1) = 5;
+	mat.display();
+	TMatrix<3U,3U> mat2;
+	mat2.scalarAt(1,2) = 3;
+	mat2.display();
+	mat2 = mat2 + mat;
+	mat2.display();
+
+	TMatrix<3U, 3U> mat3 = mat*mat2;
+	TMatrix<3U, 1U> vec1;
+	TMatrix<3U, 1U> vec2 = mat*vec1;
+	vec2.display();
+	mat3.display();
+
+	TMatrix<7U, 3U> lMat("/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/MatrixLib/Ld_mat.csv");
+	lMat.display();
+
+	return 0;
+}

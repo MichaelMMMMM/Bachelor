@@ -1,0 +1,15 @@
+#include <iostream>
+#include "TMatrix.h"
+using namespace std;
+
+
+int main()
+{
+
+	TMatrix<3U,3U> mat;
+	mat.display();
+	mat.scalarAt(1,1) = 5;
+	mat.display();
+
+	return 0;
+}

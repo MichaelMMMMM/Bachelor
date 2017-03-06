@@ -1,0 +1,16 @@
+#include "CMPUCalib.h"
+#include <iostream>
+
+#pragma GCC push
+#pragma GCC diagnostic ignored "-Wall"
+int warningFunc(int input);
+#pragma GCC pop
+
+int main()
+{
+	CMPUCalib myCalib("/root/control_data/sensor1_calib_data.csv");
+
+	//std::cout << "Warning: " << warningFunc(3) << std::endl;
+	std::cout << "hallo" << std::endl;
+	return 0;
+}

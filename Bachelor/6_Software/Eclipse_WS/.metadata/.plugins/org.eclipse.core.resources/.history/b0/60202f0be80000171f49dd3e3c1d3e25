@@ -1,0 +1,123 @@
+/**
+ * @file	CControlTestAction.cpp
+ * @author	Michael Meindl
+ * @date	9.1.2017
+ * @brief	Method definitions for CControlTestAction.
+ */
+#include "CControlTestAction.h"
+#include "ControlConfig.h"
+#include <iostream>
+
+CControlTestAction::CControlTestAction() : 	mFilterSystem(sProxy),
+											mSensorEval(sHardware),
+											mLQB("/root/calib/K_data.csv",
+												 "/root/calib/L_data.csv",
+												 "/root/calib/A_data.csv",
+												 "/root/calib/B_data.csv",
+												 "/root/calib/C_data.csv",
+												 "/root/calib/T_data.csv",
+												 "/root/calib/T_inv_data.csv"),
+											mLQRFlag(true),
+											mObsFlag(false)
+{
+
+}
+void CControlTestAction::sampleControlTest()
+{
+	mFilterSystem.calculateHighpass();
+	Float32 torque = 0.0F;
+
+	if(mObsFlag == true)
+	{
+		torque = mLQB.calculateOutput(mFilterSystem.getControlPhi(),
+									  mFilterSystem.getControlPhi__d(),
+									  mFilterSystem.getControlPsi__d());
+	}
+	else
+	{
+		torque = mLQRFlag ? mLQR.calculateTorque(mFilterSystem.getControlPhi(),
+												 mFilterSystem.getControlPhi__d(),
+												 mFilterSystem.getControlPsi__d()) :
+							mCascControl.calculateTorque(mFilterSystem.getControlPhi(),
+														 mFilterSystem.getControlPhi__d(),
+														 mFilterSystem.getControlPsi__d());
+	}
+
+	sHardware.setTorque(torque);
+}
+void CControlTestAction::setLQRFlag(bool flag)
+{
+	if(flag == true)
+	{
+		std::cout << "[*] Control-Comp: Using LQR-Controller" << std::endl;
+	}
+	else
+	{
+		std::cout << "[*] Control-Comp: Using Cascade-Controller" << std::endl;
+	}
+	mLQRFlag = flag;
+}
+void CControlTestAction::setFilter(EFilter filter)
+{
+	mFilterSystem.setFilter(filter);
+}
+void CControlTestAction::setHighpassFlag(bool flag)
+{
+	mFilterSystem.setHighpassFlag(flag);
+}
+void CControlTestAction::entryControlTest()
+{
+	std::cout << "[*] Control-Comp: Entering Control-Test" << std::endl;
+	sTimerTask.resume(true);
+	mFilterSystem.reset();
+}
+void CControlTestAction::exitControlTest()
+{
+	std::cout << "[*] Control-Comp: Exiting Control-Test" << std::endl;
+}
+void CControlTestAction::entryBalance()
+{
+	std::cout << "[*] Control-Comp: Entering Balance" << std::endl;
+	sHardware.setTorque(0.0F);
+	sHardware.enableMotor();
+}
+void CControlTestAction::exitBalance()
+{
+	std::cout << "[*] Control-Comp: Exiting Balance" << std::endl;
+	sHardware.disableMotor();
+}
+void CControlTestAction::entryIdle()
+{
+	std::cout << "[*] Control-Comp: Entering Idle" << std::endl;
+	sHardware.disableMotor();
+}
+void CControlTestAction::exitIdle()
+{
+	std::cout << "[*] Control-Comp: Exiting Idle" << std::endl;
+}
+bool CControlTestAction::inBalanceArea()
+{
+	mSensorEval.calculateValues();
+	mFilterSystem.calculateValues(mSensorEval.getPhi(),
+								  mSensorEval.getPhi__d(),
+								  mSensorEval.getPsi__d());
+
+	Float32 phi = mFilterSystem.getFilteredPhi() - ControlConfig::PHI_OFFSET;
+	phi = phi > 0.0F ? phi : -phi;
+	return phi < ControlConfig::PHI_BALANCE_MAX;
+}
+void CControlTestAction::setPhiOffset(Float32 offset)
+{
+	std::cout << "[*] Control-Comp: Setting phi-offset: "    << offset << std::endl;
+	mFilterSystem.setPhiOffset(offset);
+}
+void CControlTestAction::setPhi__dOffset(Float32 offset)
+{
+	std::cout << "[*] Control-Comp: Setting phi__d-offset: " << offset << std::endl;
+	mFilterSystem.setPhi__dOffset(offset);
+}
+void CControlTestAction::setPsi__dOffset(Float32 offset)
+{
+	std::cout << "[*] Control-Comp: Setting psi__d-offset: " << offset << std::endl;
+	mFilterSystem.setPsi__dOffset(offset);
+}

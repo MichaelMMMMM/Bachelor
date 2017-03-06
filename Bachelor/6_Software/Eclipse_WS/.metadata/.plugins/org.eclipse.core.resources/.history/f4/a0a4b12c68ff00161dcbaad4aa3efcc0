@@ -1,0 +1,26 @@
+/*
+ * @file	CLQB.h
+ * @author	Michael Meindl
+ * @date	2.3.2017
+ * @brief	Class to calculate the observer + LQR-controller.
+ */
+#ifndef CLQB_H
+#define CLQB_H
+#include "Global.h"
+
+class CLQB
+{
+public:
+	Float32 calculateTorque(Float32 phi, Float32 phi__d, Float32 psi__d);
+public:
+	CLQB();
+	CLQB(const CLQB&) = delete;
+	CLQB& operator=(const CLQB&) = delete;
+	~CLQB() = default;
+private:
+	static constexpr Float32 sK1 = 0.0F;
+	static constexpr Float32 sK2 = 0.0F;
+	static constexpr Float32 sK3 = 0.0F;s
+};
+
+#endif

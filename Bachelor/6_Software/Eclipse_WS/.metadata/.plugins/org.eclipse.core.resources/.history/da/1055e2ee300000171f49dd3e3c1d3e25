@@ -1,0 +1,10 @@
+#include "CMPUCalib.h"
+#include <iostream>
+
+
+int main()
+{
+	CMPUCalib myCalib("/root/control_data/sensor1_calib_data.csv");
+
+	return 0;
+}

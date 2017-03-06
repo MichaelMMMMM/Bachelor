@@ -1,0 +1,16 @@
+#include "CMPUCalib.h"
+#include <iostream>
+
+
+int warningFunc(int input)
+{
+	return 2;
+}
+
+int main()
+{
+	CMPUCalib myCalib("/root/control_data/sensor1_calib_data.csv");
+
+	warningFunc(3);
+	return 0;
+}

@@ -1,0 +1,52 @@
+/*
+ * @file	CLQB.h
+ * @author	Michael Meindl
+ * @date	2.3.2017
+ * @brief	Class to calculate the observer + LQR-controller.
+ */
+#ifndef CLQB_H
+#define CLQB_H
+#include "Global.h"
+#include <string>
+
+class CLQB
+{
+public:
+	Float32 calculateOutput(Float32 phi, Float32 phi__d, Float32 psi__d);
+private:
+	void calculateLQR(Float32 phi, Float32 phi__d, Float32 psi__d);
+	void x2xB(Float32& x1, Float32& x2, Float32& x3);
+	void xB2x(Float32& x1, Float32& x2, Float32& x3);
+public:
+	CLQB(const std::string& kFile,
+		 const std::string& lFile,
+		 const std::string& aFile,
+		 const std::string& bFile,
+		 const std::string& cFile,
+		 const std::string& tFile,
+		 const std::string& tInvFile);
+	CLQB(const CLQB&) = delete;
+	CLQB& operator=(const CLQB&) = delete;
+	~CLQB() = default;
+private:
+	Float32 mK[3];
+	Float32 mL[3];
+	Float32 mA_B[3][3];
+	Float32 mB_B[3];
+	Float32 mC_B[3];
+	Float32 mT_B[3][3];
+	Float32 mT_B_inv[3][3];
+
+	Float32 mY;
+	Float32 mX1_B;
+	Float32 mX2_B;
+	Float32 mX3_B;
+	Float32 mU;
+	Float32 mU_B;
+	Float32 mTorque;
+
+	static constexpr Float32 sMaxTorque = 0.07F;
+	bool mFirstRun;
+};
+
+#endif

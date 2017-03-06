@@ -1,0 +1,160 @@
+/*
+ * @file	CLQB.cpp
+ * @author	Michael Meindl
+ * @date	2.3.2017
+ * @brief	Method definitions for CLQB.
+ */
+#include "CLQB.h"
+#include <iostream>
+#include <ostream>
+#include <fstream>
+using namespace std;
+
+CLQB::CLQB(const string& fFile,
+		   const string& lFile,
+		   const string& aFile,
+		   const string& bFile,
+		   const string& cFile,
+		   const string& tFile,
+		   const string& tInvFile) : mK{0.0F}, mL{0.0F}, mA_B{0.0F},
+				   	   	   	   	   	 mB_B{0.0F}, mC_B{0.0F}, mT_B{0.0F},
+									 mT_B_inv{0.0F}, mY(0.0F), mX1_B{0.0F}, mX2_B{0.0F},
+									 mX3_B{0.0F}, mU(0.0F), mU_B(0.0F), mTorque{0.0F}, mFirstRun(true)
+{
+	ifstream stream;
+	string data;
+
+	stream.open(fFile);
+	stream >> data;
+	for(int k = 0; k < 3; k++)
+	{
+		string tmp = data.substr(0, data.find(","));
+		mK[k] = std::stof(tmp);
+		data = data.substr(data.find(",")+1);
+	}
+	stream.close();
+
+	stream.open(lFile);
+	stream >> data;
+	for(int k = 0; k < 3; k++)
+	{
+		string tmp = data.substr(0, data.find(","));
+		mL[k] = std::stof(tmp);
+		data = data.substr(data.find(",")+1);
+	}
+	stream.close();
+
+	stream.open(aFile);
+	for(int k = 0; k < 3; k++)
+	{
+		stream >> data;
+		for(int n = 0; n < 3; n++)
+		{
+			string tmp = data.substr(0, data.find(","));
+			mA_B[k][n] = std::stof(tmp);
+			data = data.substr(data.find(",")+1);
+		}
+	}
+	stream.close();
+
+	stream.open(bFile);
+	stream >> data;
+	for(int k = 0; k < 3; k++)
+	{
+		string tmp = data.substr(0, data.find(","));
+		mB_B[k] = std::stof(tmp);
+		data = data.substr(data.find(",")+1);
+	}
+	stream.close();
+
+	stream.open(cFile);
+	stream >> data;
+	for(int k = 0; k < 3; k++)
+	{
+		string tmp = data.substr(0, data.find(","));
+		mC_B[k] = std::stof(tmp);
+		data = data.substr(data.find(",")+1);
+	}
+	stream.close();
+
+	stream.open(tFile);
+	for(int k = 0; k < 3; k++)
+	{
+		stream >> data;
+		for(int n = 0; n < 3; n++)
+		{
+			string tmp = data.substr(0, data.find(","));
+			mT_B[k][n] = std::stof(tmp);
+			data = data.substr(data.find(",")+1);
+		}
+	}
+	stream.close();
+
+	stream.open(tInvFile);
+	for(int k = 0; k < 3; k++)
+	{
+		stream >> data;
+		for(int n = 0; n < 3; n++)
+		{
+			string tmp = data.substr(0, data.find(","));
+			mT_B_inv[k][n] = std::stof(tmp);
+			data = data.substr(data.find(",")+1);
+		}
+	}
+	stream.close();
+}
+Float32 CLQB::calculateOutput(Float32 phi, Float32 phi__d, Float32 psi__d)
+{
+	if(mFirstRun == true)
+	{
+		mFirstRun = false;
+		this->calculateLQR(phi, phi__d, psi__d);
+		mY      = phi__d;
+		this->x2xB(phi, phi__d, psi__d);
+		mX1_B   = phi;
+		mX2_B   = phi__d;
+		mX3_B   = psi__d;
+		mU      = mTorque;
+		return mTorque;
+	}
+	else
+	{
+		Float32 y_diff = mY - (mC_B[0] * mX1_B + mC_B[1] * mX2_B + mC_B[2] * mX3_B);
+		Float32 mY     = phi__d;
+		Float32 x1_p1 = mB_B[0] * mU + mL[0] * y_diff + mA_B[0][0] * mX1_B + mA_B[0][1] * mX2_B + mA_B[0][2] * mX3_B;
+		Float32 x2_p1 = mB_B[1] * mU + mL[1] * y_diff + mA_B[1][0] * mX1_B + mA_B[1][1] * mX2_B + mA_B[1][2] * mX3_B;
+		Float32 x3_p1 = mB_B[2] * mU + mL[2] * y_diff + mA_B[2][0] * mX1_B + mA_B[2][1] * mX2_B + mA_B[2][2] * mX3_B;
+
+		mX1_B = x1_p1; mX2_B = x2_p1; mX3_B = x3_p1;
+		this->xB2x(x1_p1, x2_p1, x3_p1);
+		calculateLQR(x1_p1, x2_p1, x3_p1);
+		mU = mTorque;
+		return mU;
+	}
+}
+void CLQB::calculateLQR(Float32 phi, Float32 phi__d, Float32 psi__d)
+{
+	mTorque =  mK[0]*phi + mK[1]*phi__d + mK[2]*psi__d;
+	mTorque = mTorque > sMaxTorque ? sMaxTorque : mTorque;
+	mTorque = mTorque < -sMaxTorque ? -sMaxTorque : mTorque;
+}
+void CLQB::x2xB(Float32& x1, Float32& x2, Float32& x3)
+{
+	Float32 x1_B = mT_B_inv[0][0] * x1 + mT_B_inv[0][1] * x2 + mT_B_inv[0][2] * x3;
+	Float32 x2_B = mT_B_inv[1][0] * x1 + mT_B_inv[1][1] * x2 + mT_B_inv[1][2] * x3;
+	Float32 x3_B = mT_B_inv[2][0] * x1 + mT_B_inv[2][1] * x2 + mT_B_inv[2][2] * x3;
+
+	x1 = x1_B;
+	x2 = x2_B;
+	x3 = x3_B;
+}
+void CLQB::xB2x(Float32& x1B, Float32& x2B, Float32& x3B)
+{
+	Float32 x1 = mT_B[0][0] * x1B + mT_B[0][1] * x2B + mT_B[0][2] * x3B;
+	Float32 x2 = mT_B[1][0] * x1B + mT_B[1][1] * x2B + mT_B[2][1] * x3B;
+	Float32 x3 = mT_B[2][0] * x1B + mT_B[2][1] * x2B + mT_B[2][2] * x3B;
+
+	x1B = x1;
+	x2B = x2;
+	x3B = x3;
+}

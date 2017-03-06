@@ -1,0 +1,14 @@
+#include "CMPUCalib.h"
+#include <iostream>
+#include "TMatrix.h"
+
+
+int main()
+{
+	CMPUCalib myCalib("/root/control_data/sensor1_calib_data.csv");
+
+	TMatrix mat;
+	std::cout << mat << endl;
+
+	return 0;
+}

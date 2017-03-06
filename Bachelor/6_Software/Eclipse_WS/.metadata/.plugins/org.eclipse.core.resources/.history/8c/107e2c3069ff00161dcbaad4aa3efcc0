@@ -1,0 +1,23 @@
+/*
+ * @file	CLQB.cpp
+ * @author	Michael Meindl
+ * @date	2.3.2017
+ * @brief	Method definitions for CLQB.
+ */
+#include "CLQB.h"
+#include <iostream>
+#include <ostream>
+#include <fstream>
+using namespace std;
+
+CLQB::CLQB(const string& fFile,
+		   const string& lFile,
+		   const string& aFile,
+		   const string& bFile,
+		   const string& cFile,
+		   const string& tFile,
+		   const string& tInvFile)
+{
+	ifstream stream;
+	stream.open(fFile);
+}
