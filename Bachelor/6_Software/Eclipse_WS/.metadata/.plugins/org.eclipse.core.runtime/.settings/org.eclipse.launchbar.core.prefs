@@ -1,6 +1,6 @@
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=linux
-configDescList=org.eclipse.launchbar.core.descriptorType.default\:BBB_1D Debug,org.eclipse.launchbar.core.descriptorType.default\:Template_SignalFlow,org.eclipse.launchbar.core.descriptorType.default\:HardwareTest_3D Debug,org.eclipse.launchbar.core.descriptorType.default\:TestProject Debug,org.eclipse.launchbar.core.descriptorType.default\:HWTest_3D Debug,org.eclipse.launchbar.core.descriptorType.default\:BBB_3D Debug
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:Template_SignalFlow,org.eclipse.launchbar.core.descriptorType.default\:HardwareTest_3D Debug,org.eclipse.launchbar.core.descriptorType.default\:TestProject Debug,org.eclipse.launchbar.core.descriptorType.default\:HWTest_3D Debug,org.eclipse.launchbar.core.descriptorType.default\:BBB_3D Debug,org.eclipse.launchbar.core.descriptorType.default\:MatrixLib,org.eclipse.launchbar.core.descriptorType.default\:BBB_1D Debug
 eclipse.preferences.version=1
 org.eclipse.launchbar.core.descriptorType.default\:BBB_1D\ Debug/activeLaunchMode=debug
 org.eclipse.launchbar.core.descriptorType.default\:BBB_1D\ Debug/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
@@ -9,3 +9,4 @@ org.eclipse.launchbar.core.descriptorType.default\:BBB_3D/activeLaunchMode=run
 org.eclipse.launchbar.core.descriptorType.default\:HWTest_3D\ Debug/activeLaunchMode=debug
 org.eclipse.launchbar.core.descriptorType.default\:HardwareTest_3D\ Debug/activeLaunchMode=run
 org.eclipse.launchbar.core.descriptorType.default\:HardwareTest_3D\ Debug/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:MatrixLib/activeLaunchMode=run

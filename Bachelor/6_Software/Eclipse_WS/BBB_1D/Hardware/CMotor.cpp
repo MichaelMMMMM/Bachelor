@@ -103,7 +103,7 @@ bool CMotor::setTorque(float torque)
 
 	//Calculate the required duty-cycle
 	float period = 20000000.0F;
-	int dc = static_cast<int>(period*(torque*11.258F+0.1F));
+	int dc = static_cast<int>(period*(torque*0.8F/0.07F+0.1F));
 	ostringstream oss;
 	oss << dc;
 	string dcStr = oss.str();

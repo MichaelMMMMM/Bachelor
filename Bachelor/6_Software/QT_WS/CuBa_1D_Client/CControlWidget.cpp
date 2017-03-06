@@ -179,8 +179,18 @@ CControlWidget::CControlWidget() : mDrawCounter(0)
     QObject::connect(mCascButtonPtr, SIGNAL(clicked()),
                      this, SLOT(controllerGroupClicked()));
 
+    mObserverCheckBoxPtr    = new QCheckBox("Enable Observer");
+    mRightLayoutPtr->addWidget(mObserverCheckBoxPtr);
+    QObject::connect(mObserverCheckBoxPtr, SIGNAL(clicked(bool)),
+                     this, SLOT(observerCheckboxToggled(bool)));
+
     mRightLayoutPtr->addStretch();
 }
+void CControlWidget::observerCheckboxToggled(bool flag)
+{
+    emit obsFlagChanged(flag);
+}
+
 void CControlWidget::controllerGroupClicked()
 {
     if(mLQRButtonPtr->isChecked() == true)

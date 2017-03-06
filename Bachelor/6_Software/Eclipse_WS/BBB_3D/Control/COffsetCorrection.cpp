@@ -21,7 +21,10 @@ const CStateData& COffsetCorrection::calcOutput(const CStateData& input)
 		mOutput.mGData.mG_k1 = input.mGData.mG_k1 - sG_0 + sG_k1_Offset;
 		mOutput.mGData.mG_k2 = input.mGData.mG_k2 - sG_0 + sG_k2_Offset;
 		mOutput.mGData.mG_k3 = input.mGData.mG_k3 - sG_0 + sG_k3_Offset;
-		mOutput.mUKData = input.mUKData;
+		mOutput.mUKData.mUK_k1 = input.mUKData.mUK_k1 + sUK_k1_Offset;
+		mOutput.mUKData.mUK_k2 = input.mUKData.mUK_k2 + sUK_k2_Offset;
+		mOutput.mUKData.mUK_k3 = input.mUKData.mUK_k3 + sUK_k3_Offset;
+
 		mOutput.mURData = input.mURData;
 
 		if(mHPFlag == true)

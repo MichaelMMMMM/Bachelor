@@ -42,7 +42,8 @@ enum class EEvent : UInt32
 	SET_P_JUMP_VELOCITY		= 31,
     SET_N_JUMP_VELOCITY		= 32,
     SET_HIGHPASS_FLAG       = 33,
-    SET_LQR_FLAG            = 34
+    SET_LQR_FLAG            = 34,
+    SET_OBS_FLAG            = 35
 };
 
 #endif

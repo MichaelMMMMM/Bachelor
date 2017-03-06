@@ -32,6 +32,7 @@ public slots:
     void filterChanged(EFilter filter);
     void highpassFlagChanged(bool flag);
     void lqrFlagChanged(bool flag);
+    void obsFlagChanged(bool flag);
 private:
     CClient mClient;
     bool mConnectedFlag;

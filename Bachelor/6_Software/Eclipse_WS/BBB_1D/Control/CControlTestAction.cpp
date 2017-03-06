@@ -10,21 +10,51 @@
 
 CControlTestAction::CControlTestAction() : 	mFilterSystem(sProxy),
 											mSensorEval(sHardware),
-											mLQRFlag(true)
+											mLQB("/root/config/k_mat.csv",
+												 "/root/config/L_mat.csv",
+												 "/root/config/A_mat.csv",
+												 "/root/config/B_mat.csv",
+												 "/root/config/C_mat.csv"),
+											mLQRFlag(true),
+											mObsFlag(false)
 {
 
 }
 void CControlTestAction::sampleControlTest()
 {
 	mFilterSystem.calculateHighpass();
+	Float32 torque = 0.0F;
 
-	Float32 torque = mLQRFlag ? mLQR.calculateTorque(mFilterSystem.getControlPhi(),
-													 mFilterSystem.getControlPhi__d(),
-													 mFilterSystem.getControlPsi__d()) :
-								mCascControl.calculateTorque(mFilterSystem.getControlPhi(),
-															 mFilterSystem.getControlPhi__d(),
-															 mFilterSystem.getControlPsi__d());
+	if(mObsFlag == true)
+	{
+		torque = mLQB.calculateOutput(mFilterSystem.getControlPhi(),
+									  mFilterSystem.getControlPhi__d(),
+									  mFilterSystem.getControlPsi__d());
+	}
+	else
+	{
+		torque = mLQRFlag ? mLQR.calculateTorque(mFilterSystem.getControlPhi(),
+												 mFilterSystem.getControlPhi__d(),
+												 mFilterSystem.getControlPsi__d()) :
+							mCascControl.calculateTorque(mFilterSystem.getControlPhi(),
+														 mFilterSystem.getControlPhi__d(),
+														 mFilterSystem.getControlPsi__d());
+	}
+
 	sHardware.setTorque(torque);
+}
+void CControlTestAction::setObsFlag(bool flag)
+{
+	if(flag == true)
+	{
+		std::cout << "[*] Control-Comp: Enabling LQB-Controller" << std::endl;
+	}
+	else
+	{
+		std::cout << "[*] Control-Comp: Disabling LQB-Controller" << std::endl;
+		mLQB.reset();
+	}
+	mObsFlag = flag;
 }
 void CControlTestAction::setLQRFlag(bool flag)
 {
@@ -59,6 +89,7 @@ void CControlTestAction::exitControlTest()
 void CControlTestAction::entryBalance()
 {
 	std::cout << "[*] Control-Comp: Entering Balance" << std::endl;
+	mLQB.reset();
 	sHardware.setTorque(0.0F);
 	sHardware.enableMotor();
 }

@@ -1,6 +1,6 @@
-15:16:43 **** Incremental Build of configuration Debug for project BBB_3D ****
+11:06:11 **** Incremental Build of configuration Debug for project BBB_3D ****
 make all 
 make: Nothing to be done for `all'.
 
-15:16:43 Build Finished (took 79ms)
+11:06:11 Build Finished (took 70ms)
 

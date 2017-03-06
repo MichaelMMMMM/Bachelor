@@ -45,7 +45,7 @@ void CLQRTestAction::sampleLQRTest()
 	{
 
 		mSignalFlow.calcOutput(sensor_data);
-		CStateData state_data = mSignalFlow.COffsetCorrection::getValue();
+		CStateData state_data = mSignalFlow.CCompFilter::getValue();
 		CTorqueData tm_data   = mSignalFlow.CLQR::getValue();
 
 		state_data.mGData.mTime  = mTime;
@@ -60,13 +60,14 @@ void CLQRTestAction::sampleLQRTest()
 		Float32 g3_abs = state_data.mGData.mG_k3;
 		g3_abs = g3_abs > 0 ? g3_abs : -g3_abs;
 
-		constexpr Float32 sGMax = 2.5F;
+		constexpr Float32 sGMax = 1.0F;
+		constexpr Float32 sGExit = 3.0F;
 		if( ( g3_abs < sGMax) && (g2_abs < sGMax) && (g1_abs < sGMax) )
 		{
 			if(balance_flag == false)
 			{
 				mDelayCounter++;
-				if(mDelayCounter >= 50U)
+				if(mDelayCounter >= 100U)
 				{
 					balance_flag = true;
 					std::cout << "[*] Control-Component: Entering Balance-Area, Time: " << mTime << std::endl;
@@ -82,7 +83,7 @@ void CLQRTestAction::sampleLQRTest()
 		}
 		else
 		{
-			if(balance_flag == true)
+			if( (balance_flag == true) && ( (g3_abs > sGExit) || (g2_abs > sGExit) || (g1_abs > sGExit) ) )
 			{
 				balance_flag = false;
 				mDelayCounter = 0U;

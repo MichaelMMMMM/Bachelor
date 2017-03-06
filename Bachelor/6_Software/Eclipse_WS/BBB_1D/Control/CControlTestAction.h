@@ -12,6 +12,7 @@
 #include "CLQRControl.h"
 #include "CFilterSystem.h"
 #include "CCascadeControl.h"
+#include "CLQB.h"
 
 class CControlTestAction : public CControlActionBase
 {
@@ -30,6 +31,7 @@ public:
 	void setFilter(EFilter filter);
 	void setHighpassFlag(bool flag);
 	void setLQRFlag(bool flag);
+	void setObsFlag(bool flag);
 public:
 	CControlTestAction();
 	CControlTestAction(const CControlTestAction&) = delete;
@@ -40,7 +42,9 @@ private:
 	CSensorEvaluation mSensorEval;
 	CLQRControl 	  mLQR;
 	CCascadeControl   mCascControl;
+	CLQB			  mLQB;
 	bool 			  mLQRFlag;
+	bool   			  mObsFlag;
 };
 
 #endif

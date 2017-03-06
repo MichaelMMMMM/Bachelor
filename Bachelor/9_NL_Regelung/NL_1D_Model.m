@@ -18,7 +18,7 @@ g     = 9.81;
 k = [-0.9120, -0.0773, -0.0001];
 
 u_max = 0.035;
-phi0 = degtorad(-10:1:10);
+phi0 = degtorad(-10:0.5:10);
 n    = length(phi0);
 
 stop_time = 1;

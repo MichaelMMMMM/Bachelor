@@ -19,8 +19,8 @@
 
 QT_BEGIN_MOC_NAMESPACE
 struct qt_meta_stringdata_CControlWidget_t {
-    QByteArrayData data[28];
-    char stringdata[420];
+    QByteArrayData data[30];
+    char stringdata[459];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -41,35 +41,37 @@ QT_MOC_LITERAL(8, 102, 6),
 QT_MOC_LITERAL(9, 109, 19),
 QT_MOC_LITERAL(10, 129, 4),
 QT_MOC_LITERAL(11, 134, 14),
-QT_MOC_LITERAL(12, 149, 15),
-QT_MOC_LITERAL(13, 165, 4),
-QT_MOC_LITERAL(14, 170, 4),
-QT_MOC_LITERAL(15, 175, 18),
-QT_MOC_LITERAL(16, 194, 7),
-QT_MOC_LITERAL(17, 202, 18),
-QT_MOC_LITERAL(18, 221, 7),
-QT_MOC_LITERAL(19, 229, 22),
-QT_MOC_LITERAL(20, 252, 25),
-QT_MOC_LITERAL(21, 278, 25),
-QT_MOC_LITERAL(22, 304, 17),
-QT_MOC_LITERAL(23, 322, 7),
-QT_MOC_LITERAL(24, 330, 20),
-QT_MOC_LITERAL(25, 351, 20),
-QT_MOC_LITERAL(26, 372, 23),
-QT_MOC_LITERAL(27, 396, 22)
+QT_MOC_LITERAL(12, 149, 14),
+QT_MOC_LITERAL(13, 164, 15),
+QT_MOC_LITERAL(14, 180, 4),
+QT_MOC_LITERAL(15, 185, 4),
+QT_MOC_LITERAL(16, 190, 18),
+QT_MOC_LITERAL(17, 209, 7),
+QT_MOC_LITERAL(18, 217, 18),
+QT_MOC_LITERAL(19, 236, 7),
+QT_MOC_LITERAL(20, 244, 22),
+QT_MOC_LITERAL(21, 267, 25),
+QT_MOC_LITERAL(22, 293, 25),
+QT_MOC_LITERAL(23, 319, 17),
+QT_MOC_LITERAL(24, 337, 7),
+QT_MOC_LITERAL(25, 345, 20),
+QT_MOC_LITERAL(26, 366, 20),
+QT_MOC_LITERAL(27, 387, 23),
+QT_MOC_LITERAL(28, 411, 22),
+QT_MOC_LITERAL(29, 434, 23)
     },
     "CControlWidget\0phiOffsetChanged\0\0"
     "offset\0phi__dOffsetChanged\0"
     "psi__dOffsetChanged\0filterChanged\0"
     "EFilter\0filter\0highpassFlagChanged\0"
-    "flag\0lqrFlagChanged\0phiDataReceived\0"
-    "CPhi\0data\0phi__dDataReceived\0CPhi__d\0"
-    "psi__dDataReceived\0CPsi__d\0"
+    "flag\0lqrFlagChanged\0obsFlagChanged\0"
+    "phiDataReceived\0CPhi\0data\0phi__dDataReceived\0"
+    "CPhi__d\0psi__dDataReceived\0CPsi__d\0"
     "phiOffsetButtonClicked\0phi__dOffsetButtonClicked\0"
     "psi__dOffsetButtonClicked\0phiFilterSelected\0"
     "toggled\0phi__dFilterSelected\0"
     "psi__dFilterSelected\0highpassCheckboxToggled\0"
-    "controllerGroupClicked\0"
+    "controllerGroupClicked\0observerCheckboxToggled\0"
 };
 #undef QT_MOC_LITERAL
 
@@ -79,33 +81,35 @@ static const uint qt_meta_data_CControlWidget[] = {
        7,       // revision
        0,       // classname
        0,    0, // classinfo
-      17,   14, // methods
+      19,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
-       6,       // signalCount
+       7,       // signalCount
 
  // signals: name, argc, parameters, tag, flags
-       1,    1,   99,    2, 0x06,
-       4,    1,  102,    2, 0x06,
-       5,    1,  105,    2, 0x06,
-       6,    1,  108,    2, 0x06,
-       9,    1,  111,    2, 0x06,
-      11,    1,  114,    2, 0x06,
+       1,    1,  109,    2, 0x06,
+       4,    1,  112,    2, 0x06,
+       5,    1,  115,    2, 0x06,
+       6,    1,  118,    2, 0x06,
+       9,    1,  121,    2, 0x06,
+      11,    1,  124,    2, 0x06,
+      12,    1,  127,    2, 0x06,
 
  // slots: name, argc, parameters, tag, flags
-      12,    1,  117,    2, 0x0a,
-      15,    1,  120,    2, 0x0a,
-      17,    1,  123,    2, 0x0a,
-      19,    0,  126,    2, 0x0a,
-      20,    0,  127,    2, 0x0a,
-      21,    0,  128,    2, 0x0a,
-      22,    1,  129,    2, 0x0a,
-      24,    1,  132,    2, 0x0a,
-      25,    1,  135,    2, 0x0a,
-      26,    1,  138,    2, 0x0a,
-      27,    0,  141,    2, 0x0a,
+      13,    1,  130,    2, 0x0a,
+      16,    1,  133,    2, 0x0a,
+      18,    1,  136,    2, 0x0a,
+      20,    0,  139,    2, 0x0a,
+      21,    0,  140,    2, 0x0a,
+      22,    0,  141,    2, 0x0a,
+      23,    1,  142,    2, 0x0a,
+      25,    1,  145,    2, 0x0a,
+      26,    1,  148,    2, 0x0a,
+      27,    1,  151,    2, 0x0a,
+      28,    0,  154,    2, 0x0a,
+      29,    1,  155,    2, 0x0a,
 
  // signals: parameters
     QMetaType::Void, QMetaType::Float,    3,
@@ -114,19 +118,21 @@ static const uint qt_meta_data_CControlWidget[] = {
     QMetaType::Void, 0x80000000 | 7,    8,
     QMetaType::Void, QMetaType::Bool,   10,
     QMetaType::Void, QMetaType::Bool,   10,
+    QMetaType::Void, QMetaType::Bool,   10,
 
  // slots: parameters
-    QMetaType::Void, 0x80000000 | 13,   14,
-    QMetaType::Void, 0x80000000 | 16,   14,
-    QMetaType::Void, 0x80000000 | 18,   14,
+    QMetaType::Void, 0x80000000 | 14,   15,
+    QMetaType::Void, 0x80000000 | 17,   15,
+    QMetaType::Void, 0x80000000 | 19,   15,
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
-    QMetaType::Void, QMetaType::Bool,   23,
-    QMetaType::Void, QMetaType::Bool,   23,
-    QMetaType::Void, QMetaType::Bool,   23,
+    QMetaType::Void, QMetaType::Bool,   24,
+    QMetaType::Void, QMetaType::Bool,   24,
+    QMetaType::Void, QMetaType::Bool,   24,
     QMetaType::Void, QMetaType::Bool,   10,
     QMetaType::Void,
+    QMetaType::Void, QMetaType::Bool,   10,
 
        0        // eod
 };
@@ -142,17 +148,19 @@ void CControlWidget::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
         case 3: _t->filterChanged((*reinterpret_cast< EFilter(*)>(_a[1]))); break;
         case 4: _t->highpassFlagChanged((*reinterpret_cast< bool(*)>(_a[1]))); break;
         case 5: _t->lqrFlagChanged((*reinterpret_cast< bool(*)>(_a[1]))); break;
-        case 6: _t->phiDataReceived((*reinterpret_cast< const CPhi(*)>(_a[1]))); break;
-        case 7: _t->phi__dDataReceived((*reinterpret_cast< const CPhi__d(*)>(_a[1]))); break;
-        case 8: _t->psi__dDataReceived((*reinterpret_cast< const CPsi__d(*)>(_a[1]))); break;
-        case 9: _t->phiOffsetButtonClicked(); break;
-        case 10: _t->phi__dOffsetButtonClicked(); break;
-        case 11: _t->psi__dOffsetButtonClicked(); break;
-        case 12: _t->phiFilterSelected((*reinterpret_cast< bool(*)>(_a[1]))); break;
-        case 13: _t->phi__dFilterSelected((*reinterpret_cast< bool(*)>(_a[1]))); break;
-        case 14: _t->psi__dFilterSelected((*reinterpret_cast< bool(*)>(_a[1]))); break;
-        case 15: _t->highpassCheckboxToggled((*reinterpret_cast< bool(*)>(_a[1]))); break;
-        case 16: _t->controllerGroupClicked(); break;
+        case 6: _t->obsFlagChanged((*reinterpret_cast< bool(*)>(_a[1]))); break;
+        case 7: _t->phiDataReceived((*reinterpret_cast< const CPhi(*)>(_a[1]))); break;
+        case 8: _t->phi__dDataReceived((*reinterpret_cast< const CPhi__d(*)>(_a[1]))); break;
+        case 9: _t->psi__dDataReceived((*reinterpret_cast< const CPsi__d(*)>(_a[1]))); break;
+        case 10: _t->phiOffsetButtonClicked(); break;
+        case 11: _t->phi__dOffsetButtonClicked(); break;
+        case 12: _t->psi__dOffsetButtonClicked(); break;
+        case 13: _t->phiFilterSelected((*reinterpret_cast< bool(*)>(_a[1]))); break;
+        case 14: _t->phi__dFilterSelected((*reinterpret_cast< bool(*)>(_a[1]))); break;
+        case 15: _t->psi__dFilterSelected((*reinterpret_cast< bool(*)>(_a[1]))); break;
+        case 16: _t->highpassCheckboxToggled((*reinterpret_cast< bool(*)>(_a[1]))); break;
+        case 17: _t->controllerGroupClicked(); break;
+        case 18: _t->observerCheckboxToggled((*reinterpret_cast< bool(*)>(_a[1]))); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
@@ -194,6 +202,12 @@ void CControlWidget::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
                 *result = 5;
             }
         }
+        {
+            typedef void (CControlWidget::*_t)(bool );
+            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&CControlWidget::obsFlagChanged)) {
+                *result = 6;
+            }
+        }
     }
 }
 
@@ -222,13 +236,13 @@ int CControlWidget::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 17)
+        if (_id < 19)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 17;
+        _id -= 19;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 17)
+        if (_id < 19)
             *reinterpret_cast<int*>(_a[0]) = -1;
-        _id -= 17;
+        _id -= 19;
     }
     return _id;
 }
@@ -273,5 +287,12 @@ void CControlWidget::lqrFlagChanged(bool _t1)
 {
     void *_a[] = { 0, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
     QMetaObject::activate(this, &staticMetaObject, 5, _a);
+}
+
+// SIGNAL 6
+void CControlWidget::obsFlagChanged(bool _t1)
+{
+    void *_a[] = { 0, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
+    QMetaObject::activate(this, &staticMetaObject, 6, _a);
 }
 QT_END_MOC_NAMESPACE

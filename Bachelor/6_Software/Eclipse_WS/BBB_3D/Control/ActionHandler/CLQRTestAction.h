@@ -28,7 +28,7 @@ public:
 	CLQRTestAction& operator=(const CLQRTestAction&) = default;
 	~CLQRTestAction() = default;
 private:
-	using ActionTypeList = TYPELIST_4(CStateEstimate, CCompFilter, COffsetCorrection, CLQR);
+	using ActionTypeList = TYPELIST_4(CStateEstimate, COffsetCorrection, CCompFilter, CLQR);
 	TLinHierarchy<ActionTypeList, TActionHolder> mSignalFlow;
 	Float32 mTime;
 	UInt32 mDelayCounter;

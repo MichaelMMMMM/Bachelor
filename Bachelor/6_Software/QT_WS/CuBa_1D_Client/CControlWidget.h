@@ -20,6 +20,7 @@ signals:
     void filterChanged(EFilter filter);
     void highpassFlagChanged(bool flag);
     void lqrFlagChanged(bool flag);
+    void obsFlagChanged(bool flag);
 public slots:
     void phiDataReceived(const CPhi& data);
     void phi__dDataReceived(const CPhi__d& data);
@@ -32,6 +33,7 @@ public slots:
     void psi__dFilterSelected(bool toggled);
     void highpassCheckboxToggled(bool flag);
     void controllerGroupClicked();
+    void observerCheckboxToggled(bool flag);
 private:
     void drawPlots();
 private:
@@ -83,6 +85,8 @@ private:
     QVBoxLayout*    mControlLayoutPtr;
     QRadioButton*   mLQRButtonPtr;
     QRadioButton*   mCascButtonPtr;
+
+    QCheckBox*      mObserverCheckBoxPtr;
 
     QVector<double> mPhiTime;
     QVector<double> mPhi_Acc;

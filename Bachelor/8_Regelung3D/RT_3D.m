@@ -48,16 +48,14 @@ D = zeros(3,3);
 
 mySS = ss(A, B, C, D);
 
-g_max   = 7;
-u_K_max = degtorad(5);
+g_max   = 1;
+u_K_max = degtorad(2);
 u_R_max = degtorad(4000/60*300);
-T_max   = 0.0001;
-
-
-[reduced_SS, VK] = minreal(mySS);
-
+T_max   = 0.13;
 x_max = [g_max; g_max; g_max; u_K_max; u_K_max; u_K_max; u_R_max; u_R_max; u_R_max];
 x__max = VK*x_max;
+
+[reduced_SS, VK] = minreal(mySS);
 
 Q    = diag((x__max(1:7)).^(-2), 0);
 R    = eye(3)*T_max^(-2);

@@ -67,6 +67,8 @@ CMainWindow::CMainWindow(QWidget *parent)
                      mRxThreadPtr, SLOT(highpassFlagChanged(bool)));
     QObject::connect(mControlWidgetPtr, SIGNAL(lqrFlagChanged(bool)),
                      mRxThreadPtr, SLOT(lqrFlagChanged(bool)));
+    QObject::connect(mControlWidgetPtr, SIGNAL(obsFlagChanged(bool)),
+                     mRxThreadPtr, SLOT(obsFlagChanged(bool)));
 
     mRxThreadPtr->start();
 }

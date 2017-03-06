@@ -37,13 +37,9 @@ const CStateData& CCompFilter::calcOutput(const CStateData& input)
 		}
 		else
 		{
-//			const Float32& g1 = input.mGData.mG_k1;
-//			const Float32& g2 = input.mGData.mG_k2;
-//			const Float32& g3 = input.mGData.mG_k3;
-
-			const Float32& g1 = mOutput.mGData.mG_k1;
-			const Float32& g2 = mOutput.mGData.mG_k2;
-			const Float32& g3 = mOutput.mGData.mG_k3;
+			const Float32 g1 = mOutput.mGData.mG_k1 - 5.663806140750229F;
+			const Float32 g2 = mOutput.mGData.mG_k2 - 5.663806140750229F;
+			const Float32 g3 = mOutput.mGData.mG_k3 - 5.663806140750229F;
 
 			const Float32& w1 = input.mUKData.mUK_k1;
 			const Float32& w2 = input.mUKData.mUK_k2;
@@ -53,18 +49,12 @@ const CStateData& CCompFilter::calcOutput(const CStateData& input)
 			g__d[0] = g2*w3-g3*w2;
 			g__d[1] = g3*w1-w3*g1;
 			g__d[2] = g1*w2-g2*w1;
-//			mGInt[0] += 0.02F*g__d[0];
-//			mGInt[1] += 0.02F*g__d[1];
-//			mGInt[2] += 0.02F*g__d[2];
 
 			mOutput.mGData.mG_k1 = sAlpha*(mOutput.mGData.mG_k1 + 0.02F*g__d[0])+(1-sAlpha)*input.mGData.mG_k1;
 			mOutput.mGData.mG_k2 = sAlpha*(mOutput.mGData.mG_k2 + 0.02F*g__d[1])+(1-sAlpha)*input.mGData.mG_k2;
 			mOutput.mGData.mG_k3 = sAlpha*(mOutput.mGData.mG_k3 + 0.02F*g__d[2])+(1-sAlpha)*input.mGData.mG_k3;
 			mOutput.mUKData      = input.mUKData;
 			mOutput.mURData      = input.mURData;
-//			mOutput.mURData.mUR_k1 = mUR1Filter.calculateOutput(input.mURData.mUR_k1);
-//			mOutput.mURData.mUR_k2 = mUR2Filter.calculateOutput(input.mURData.mUR_k2);
-//			mOutput.mURData.mUR_k3 = mUR3Filter.calculateOutput(input.mURData.mUR_k3);
 		}
 		return mOutput;
 	}

@@ -36,6 +36,11 @@ bool CControlTest::dispatch(CMessage& msg)
 			mAction.setLQRFlag(*reinterpret_cast<bool*>(msg.getDataPtr()));
 			consumed = true;
 		}
+		if(EEvent::SET_OBS_FLAG == event)
+		{
+			mAction.setObsFlag(*reinterpret_cast<bool*>(msg.getDataPtr()));
+			consumed = true;
+		}
 	}
 	return consumed;
 }

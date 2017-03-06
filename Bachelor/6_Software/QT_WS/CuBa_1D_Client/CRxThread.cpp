@@ -109,3 +109,9 @@ void CRxThread::lqrFlagChanged(bool flag)
     *reinterpret_cast<bool*>(msg.getDataPtr()) = flag;
     mClient.writeMessage(msg);
 }
+void CRxThread::obsFlagChanged(bool flag)
+{
+    CMessage msg(EEvent::SET_OBS_FLAG);
+    *reinterpret_cast<bool*>(msg.getDataPtr()) = flag;
+    mClient.writeMessage(msg);
+}
