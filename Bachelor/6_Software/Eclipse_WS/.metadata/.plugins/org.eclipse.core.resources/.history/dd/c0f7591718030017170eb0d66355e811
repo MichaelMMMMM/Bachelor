@@ -40,7 +40,7 @@ void CSensorEvaluation::calculateValues()
 	Float32 phi2__d = (static_cast<Float32>(mSensor2Data.mPhi__d) + ControlConfig::Phi2__d_P2) *
 					   ControlConfig::Phi2__d_P1;
 	mPsi__d     = static_cast<Float32>(mADCValue) * ControlConfig::Psi__d_P1 +
-					ControlConfig::Psi__d_P2 - 0.59F;
+					ControlConfig::Psi__d_P2;
 
 	mPhi		= -atan2(x1__dd - (ControlConfig::SensorAlpha * x2__dd),
 						  y1__dd - (ControlConfig::SensorAlpha * y2__dd));

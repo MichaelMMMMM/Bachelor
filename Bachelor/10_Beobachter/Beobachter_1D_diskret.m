@@ -63,3 +63,8 @@ P_P_0 = eye(3);
 M_0 = zeros(3,3);
 y_0 = Cd*x_0;
 
+G = eye(3);
+Q = eye(3)*1e-3;
+Ld1 = lqed(A,G,C,Q,R, Ta);
+
+alpha_M = 0.3;

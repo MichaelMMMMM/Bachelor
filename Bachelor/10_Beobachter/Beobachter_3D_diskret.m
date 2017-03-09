@@ -57,7 +57,7 @@ u_K_max = degtorad(2);
 u_R_max = degtorad(4000/60*300);
 T_max   = 0.13;
 x_max   = [g_max; g_max; g_max; u_K_max; u_K_max; u_K_max; u_R_max; u_R_max; u_R_max];
-x_max   = VK*x_max;
+x_max   = T_K*x_max;
 
 Q       = diag(x_max(1:7).^(-2));
 R       = eye(3)*(T_max^(-2));

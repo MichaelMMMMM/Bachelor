@@ -9723,3 +9723,131 @@ org.eclipse.remote.core.exception.RemoteConnectionException: org.eclipse.remote.
 
 !ENTRY org.eclipse.rse.core 1 0 2017-03-04 18:52:41.898
 !MESSAGE Saved passwords are not available for migration to secure storage. Deprecated authorization classes (org.eclipse.core.runtime.compatibility.auth) are not installed.
+!SESSION 2017-03-07 08:36:58.476 -----------------------------------------------
+eclipse.buildId=4.6.1.M20160907-1200
+java.version=1.8.0_101
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.rse.core 1 0 2017-03-07 08:43:28.161
+!MESSAGE Saved passwords are not available for migration to secure storage. Deprecated authorization classes (org.eclipse.core.runtime.compatibility.auth) are not installed.
+
+!ENTRY org.eclipse.cdt.launch.remote 4 150 2017-03-07 08:44:15.672
+!MESSAGE Error during file upload.
+!STACK 1
+org.eclipse.remote.core.exception.RemoteConnectionException: org.eclipse.remote.core.exception.RemoteConnectionException: sh: locale: not found
+
+	at org.eclipse.remote.internal.jsch.core.JschFileStore.checkConnection(JschFileStore.java:95)
+	at org.eclipse.remote.internal.jsch.core.JschFileStore.openOutputStream(JschFileStore.java:297)
+	at org.eclipse.core.filesystem.provider.FileStore.copyFile(FileStore.java:199)
+	at org.eclipse.core.filesystem.provider.FileStore.copy(FileStore.java:130)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.copy(LocalFile.java:123)
+	at org.eclipse.cdt.launch.remote.RemoteHelper.remoteFileDownload(RemoteHelper.java:115)
+	at org.eclipse.cdt.launch.remote.launching.RemoteGdbLaunchDelegate.launch(RemoteGdbLaunchDelegate.java:61)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.remote.core.exception.RemoteConnectionException: org.eclipse.remote.core.exception.RemoteConnectionException: sh: locale: not found
+
+	at org.eclipse.remote.internal.jsch.core.commands.AbstractRemoteCommand$ExecCallable.waitCmdInThread(AbstractRemoteCommand.java:173)
+	at org.eclipse.remote.internal.jsch.core.commands.AbstractRemoteCommand$ExecCallable.getResult(AbstractRemoteCommand.java:152)
+	at org.eclipse.remote.internal.jsch.core.commands.ExecCommand.getResult(ExecCommand.java:58)
+	at org.eclipse.remote.internal.jsch.core.JSchConnection.executeCommand(JSchConnection.java:404)
+	at org.eclipse.remote.internal.jsch.core.JSchConnection.loadProperties(JSchConnection.java:875)
+	at org.eclipse.remote.internal.jsch.core.JSchConnection.open(JSchConnection.java:1015)
+	at org.eclipse.remote.internal.jsch.core.JSchConnection.open(JSchConnection.java:970)
+	at org.eclipse.remote.internal.core.RemoteConnection.open(RemoteConnection.java:208)
+	at org.eclipse.remote.internal.jsch.core.JschFileStore.checkConnection(JschFileStore.java:88)
+	... 11 more
+!SUBENTRY 1 org.eclipse.remote.core 4 0 2017-03-07 08:44:15.676
+!MESSAGE org.eclipse.remote.core.exception.RemoteConnectionException: sh: locale: not found
+
+!STACK 1
+org.eclipse.remote.core.exception.RemoteConnectionException: org.eclipse.remote.core.exception.RemoteConnectionException: sh: locale: not found
+
+	at org.eclipse.remote.internal.jsch.core.commands.AbstractRemoteCommand$ExecCallable.waitCmdInThread(AbstractRemoteCommand.java:173)
+	at org.eclipse.remote.internal.jsch.core.commands.AbstractRemoteCommand$ExecCallable.getResult(AbstractRemoteCommand.java:152)
+	at org.eclipse.remote.internal.jsch.core.commands.ExecCommand.getResult(ExecCommand.java:58)
+	at org.eclipse.remote.internal.jsch.core.JSchConnection.executeCommand(JSchConnection.java:404)
+	at org.eclipse.remote.internal.jsch.core.JSchConnection.loadProperties(JSchConnection.java:875)
+	at org.eclipse.remote.internal.jsch.core.JSchConnection.open(JSchConnection.java:1015)
+	at org.eclipse.remote.internal.jsch.core.JSchConnection.open(JSchConnection.java:970)
+	at org.eclipse.remote.internal.core.RemoteConnection.open(RemoteConnection.java:208)
+	at org.eclipse.remote.internal.jsch.core.JschFileStore.checkConnection(JschFileStore.java:88)
+	at org.eclipse.remote.internal.jsch.core.JschFileStore.openOutputStream(JschFileStore.java:297)
+	at org.eclipse.core.filesystem.provider.FileStore.copyFile(FileStore.java:199)
+	at org.eclipse.core.filesystem.provider.FileStore.copy(FileStore.java:130)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.copy(LocalFile.java:123)
+	at org.eclipse.cdt.launch.remote.RemoteHelper.remoteFileDownload(RemoteHelper.java:115)
+	at org.eclipse.cdt.launch.remote.launching.RemoteGdbLaunchDelegate.launch(RemoteGdbLaunchDelegate.java:61)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 2 org.eclipse.remote.core 4 0 2017-03-07 08:44:15.676
+!MESSAGE org.eclipse.remote.core.exception.RemoteConnectionException: sh: locale: not found
+
+!SUBENTRY 1 org.eclipse.cdt.launch.remote 4 150 2017-03-07 08:44:15.676
+!MESSAGE org.eclipse.remote.core.exception.RemoteConnectionException: sh: locale: not found
+
+!STACK 1
+org.eclipse.remote.core.exception.RemoteConnectionException: org.eclipse.remote.core.exception.RemoteConnectionException: sh: locale: not found
+
+	at org.eclipse.remote.internal.jsch.core.JschFileStore.checkConnection(JschFileStore.java:95)
+	at org.eclipse.remote.internal.jsch.core.JschFileStore.openOutputStream(JschFileStore.java:297)
+	at org.eclipse.core.filesystem.provider.FileStore.copyFile(FileStore.java:199)
+	at org.eclipse.core.filesystem.provider.FileStore.copy(FileStore.java:130)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.copy(LocalFile.java:123)
+	at org.eclipse.cdt.launch.remote.RemoteHelper.remoteFileDownload(RemoteHelper.java:115)
+	at org.eclipse.cdt.launch.remote.launching.RemoteGdbLaunchDelegate.launch(RemoteGdbLaunchDelegate.java:61)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.remote.core.exception.RemoteConnectionException: org.eclipse.remote.core.exception.RemoteConnectionException: sh: locale: not found
+
+	at org.eclipse.remote.internal.jsch.core.commands.AbstractRemoteCommand$ExecCallable.waitCmdInThread(AbstractRemoteCommand.java:173)
+	at org.eclipse.remote.internal.jsch.core.commands.AbstractRemoteCommand$ExecCallable.getResult(AbstractRemoteCommand.java:152)
+	at org.eclipse.remote.internal.jsch.core.commands.ExecCommand.getResult(ExecCommand.java:58)
+	at org.eclipse.remote.internal.jsch.core.JSchConnection.executeCommand(JSchConnection.java:404)
+	at org.eclipse.remote.internal.jsch.core.JSchConnection.loadProperties(JSchConnection.java:875)
+	at org.eclipse.remote.internal.jsch.core.JSchConnection.open(JSchConnection.java:1015)
+	at org.eclipse.remote.internal.jsch.core.JSchConnection.open(JSchConnection.java:970)
+	at org.eclipse.remote.internal.core.RemoteConnection.open(RemoteConnection.java:208)
+	at org.eclipse.remote.internal.jsch.core.JschFileStore.checkConnection(JschFileStore.java:88)
+	... 11 more
+!SUBENTRY 2 org.eclipse.remote.core 4 0 2017-03-07 08:44:15.676
+!MESSAGE org.eclipse.remote.core.exception.RemoteConnectionException: sh: locale: not found
+
+!STACK 1
+org.eclipse.remote.core.exception.RemoteConnectionException: org.eclipse.remote.core.exception.RemoteConnectionException: sh: locale: not found
+
+	at org.eclipse.remote.internal.jsch.core.commands.AbstractRemoteCommand$ExecCallable.waitCmdInThread(AbstractRemoteCommand.java:173)
+	at org.eclipse.remote.internal.jsch.core.commands.AbstractRemoteCommand$ExecCallable.getResult(AbstractRemoteCommand.java:152)
+	at org.eclipse.remote.internal.jsch.core.commands.ExecCommand.getResult(ExecCommand.java:58)
+	at org.eclipse.remote.internal.jsch.core.JSchConnection.executeCommand(JSchConnection.java:404)
+	at org.eclipse.remote.internal.jsch.core.JSchConnection.loadProperties(JSchConnection.java:875)
+	at org.eclipse.remote.internal.jsch.core.JSchConnection.open(JSchConnection.java:1015)
+	at org.eclipse.remote.internal.jsch.core.JSchConnection.open(JSchConnection.java:970)
+	at org.eclipse.remote.internal.core.RemoteConnection.open(RemoteConnection.java:208)
+	at org.eclipse.remote.internal.jsch.core.JschFileStore.checkConnection(JschFileStore.java:88)
+	at org.eclipse.remote.internal.jsch.core.JschFileStore.openOutputStream(JschFileStore.java:297)
+	at org.eclipse.core.filesystem.provider.FileStore.copyFile(FileStore.java:199)
+	at org.eclipse.core.filesystem.provider.FileStore.copy(FileStore.java:130)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.copy(LocalFile.java:123)
+	at org.eclipse.cdt.launch.remote.RemoteHelper.remoteFileDownload(RemoteHelper.java:115)
+	at org.eclipse.cdt.launch.remote.launching.RemoteGdbLaunchDelegate.launch(RemoteGdbLaunchDelegate.java:61)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 3 org.eclipse.remote.core 4 0 2017-03-07 08:44:15.677
+!MESSAGE org.eclipse.remote.core.exception.RemoteConnectionException: sh: locale: not found
+
