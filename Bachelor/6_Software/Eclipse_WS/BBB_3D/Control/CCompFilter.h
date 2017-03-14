@@ -8,15 +8,16 @@
 #define CCOMPFILTER_H
 #include "CStateData.h"
 #include "CPT1.h"
+#include "TMatrix.h"
 
 class CCompFilter
 {
 public:
-	using InputType = CStateData;
-	using OutputType = CStateData;
+	using InputType  = TRVector<9U>;
+	using OutputType = TRVector<9U>;
 public:
-	const CStateData& calcOutput(const CStateData& input);
-	const CStateData& getValue();
+	const OutputType& calcOutput(const InputType& input);
+	const OutputType& getValue();
 	void reset();
 	void activate();
 	void deactivate();
@@ -28,7 +29,7 @@ public:
 private:
 	bool mActiveFlag;
 	bool mFirstRun;
-	CStateData mOutput;
+	OutputType mOutput;
 	CPT1 mUR1Filter;
 	CPT1 mUR2Filter;
 	CPT1 mUR3Filter;

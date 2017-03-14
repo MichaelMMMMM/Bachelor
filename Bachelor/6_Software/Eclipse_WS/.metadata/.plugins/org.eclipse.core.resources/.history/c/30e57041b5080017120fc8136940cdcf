@@ -1,0 +1,8 @@
+/**
+ * @file	CEdgeBalance.cpp
+ * @author	Michael Meindl
+ * @date	14.03.2017
+ * @brief	Method definitions for CEdgeBalance.
+ */
+#include "CEdgeBalance.h"
+

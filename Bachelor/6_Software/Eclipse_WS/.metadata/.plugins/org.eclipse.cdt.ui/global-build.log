@@ -1,364 +1,1152 @@
-18:36:03 **** Incremental Build of configuration Debug for project BBB_1D ****
+14:55:06 **** Incremental Build of configuration Debug for project BBB_3D ****
+make all 
+Building file: ../C1DOffsetCorrection.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"C1DOffsetCorrection.d" -MT"C1DOffsetCorrection.o" -o "C1DOffsetCorrection.o" "../C1DOffsetCorrection.cpp"
+../C1DOffsetCorrection.cpp: In member function ‘const OutputType& C1DOffsetCorrection::calcOutput(const InputType&)’:
+../C1DOffsetCorrection.cpp:18:34: error: passing ‘const InputType {aka const TMatrix<3ul, 1ul>}’ as ‘this’ argument of ‘TMatrix<n_R, n_C>& TMatrix<n_R, n_C>::operator+(const TMatrix<n_R, n_C>&) [with long unsigned int n_R = 3ul; long unsigned int n_C = 1ul]’ discards qualifiers [-fpermissive]
+  mOutput = mActiveFlag ? input + mOffset : input;
+                                  ^
+make: *** [C1DOffsetCorrection.o] Error 1
+14:57:35 **** Incremental Build of configuration Debug for project BBB_3D ****
+make all 
+Building file: ../C1DOffsetCorrection.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"C1DOffsetCorrection.d" -MT"C1DOffsetCorrection.o" -o "C1DOffsetCorrection.o" "../C1DOffsetCorrection.cpp"
+Finished building: ../C1DOffsetCorrection.cpp
+ 
+Building target: BBB_3D
+Invoking: Cross G++ Linker
+arm-linux-gnueabihf-g++  -o "BBB_3D"  ./lib/AComponentBase.o ./lib/Assertion.o ./lib/CBinarySemaphore.o ./lib/CCountingSemaphore.o ./lib/CMessage.o ./lib/CMutex.o ./lib/CProxy.o ./lib/CThread.o  ./Hardware/CADC.o ./Hardware/CADCData.o ./Hardware/CGPIO.o ./Hardware/CHardware.o ./Hardware/CMPU9250.o ./Hardware/CMPUData.o ./Hardware/CMotor.o ./Hardware/CPWM.o ./Hardware/CSensorData.o ./Hardware/CSensorSystem.o ./Hardware/CStateData.o ./Hardware/CSwitch.o ./Hardware/CTorqueData.o  ./Control/States/AState.o ./Control/States/CADCCalibration.o ./Control/States/CEdgeBalance.o ./Control/States/CLQRTest.o ./Control/States/CSensorCalibration.o  ./Control/ActionHandler/CADCCalibrationAction.o ./Control/ActionHandler/CControlAction.o ./Control/ActionHandler/CControlActionBase.o ./Control/ActionHandler/CLQRTestAction.o ./Control/ActionHandler/CSensorCalibrationAction.o  ./Control/C1DStateReduction.o ./Control/CCompFilter.o ./Control/CControlComp.o ./Control/CLQR.o ./Control/CMPUCalib.o ./Control/COffsetCorrection.o ./Control/CPT1.o ./Control/CPoly1.o ./Control/CStateEstimate.o ./Control/CTimerTask.o  ./Comm/CCommAction.o ./Comm/CCommComponent.o ./Comm/CCommFSM.o ./Comm/CReceiveTask.o ./Comm/CServer.o  ./C1DOffsetCorrection.o ./main.o   -lpthread
+./Control/States/CEdgeBalance.o: In function `CEdgeBalance::CEdgeBalance()':
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Debug/../Control/States/CEdgeBalance.cpp:9: undefined reference to `CEdgeBalanceAction::CEdgeBalanceAction()'
+./Control/States/CEdgeBalance.o: In function `CEdgeBalance::onDefault(CMessage&)':
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Debug/../Control/States/CEdgeBalance.cpp:23: undefined reference to `CEdgeBalanceAction::onEntryIdle()'
+./Control/States/CEdgeBalance.o: In function `CEdgeBalance::onIdle(CMessage&)':
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Debug/../Control/States/CEdgeBalance.cpp:33: undefined reference to `CEdgeBalanceAction::onExitIdle()'
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Debug/../Control/States/CEdgeBalance.cpp:39: undefined reference to `CEdgeBalanceAction::sampleIdle()'
+./Control/States/CEdgeBalance.o: In function `CEdgeBalance::onControl(CMessage&)':
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Debug/../Control/States/CEdgeBalance.cpp:49: undefined reference to `CEdgeBalanceAction::onExitControl()'
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Debug/../Control/States/CEdgeBalance.cpp:55: undefined reference to `CEdgeBalanceAction::sampleControl()'
+./Control/States/CEdgeBalance.o: In function `CEdgeBalance::onEntry()':
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Debug/../Control/States/CEdgeBalance.cpp:72: undefined reference to `CEdgeBalanceAction::onEntryEdgeBalance()'
+./Control/States/CEdgeBalance.o: In function `CEdgeBalance::onExit()':
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Debug/../Control/States/CEdgeBalance.cpp:80: undefined reference to `CEdgeBalanceAction::onExitEdgeBalance()'
+collect2: error: ld returned 1 exit status
+make: *** [BBB_3D] Error 1
+15:46:17 **** Incremental Build of configuration Debug for project BBB_3D ****
+make all 
+Building file: ../Control/C1DCompFilter.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/C1DCompFilter.d" -MT"Control/C1DCompFilter.o" -o "Control/C1DCompFilter.o" "../Control/C1DCompFilter.cpp"
+../Control/C1DCompFilter.cpp: In member function ‘const OutputType& C1DCompFilter::calcOutput(const InputType&)’:
+../Control/C1DCompFilter.cpp:18:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../Control/C1DCompFilter.cpp
+ 
+Building file: ../Control/C1DLPF.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/C1DLPF.d" -MT"Control/C1DLPF.o" -o "Control/C1DLPF.o" "../Control/C1DLPF.cpp"
+Finished building: ../Control/C1DLPF.cpp
+ 
+Building file: ../C1DOffsetCorrection.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"C1DOffsetCorrection.d" -MT"C1DOffsetCorrection.o" -o "C1DOffsetCorrection.o" "../C1DOffsetCorrection.cpp"
+Finished building: ../C1DOffsetCorrection.cpp
+ 
+Building target: BBB_3D
+Invoking: Cross G++ Linker
+arm-linux-gnueabihf-g++  -o "BBB_3D"  ./lib/AComponentBase.o ./lib/Assertion.o ./lib/CBinarySemaphore.o ./lib/CCountingSemaphore.o ./lib/CMessage.o ./lib/CMutex.o ./lib/CProxy.o ./lib/CThread.o  ./Hardware/CADC.o ./Hardware/CADCData.o ./Hardware/CGPIO.o ./Hardware/CHardware.o ./Hardware/CMPU9250.o ./Hardware/CMPUData.o ./Hardware/CMotor.o ./Hardware/CPWM.o ./Hardware/CSensorData.o ./Hardware/CSensorSystem.o ./Hardware/CStateData.o ./Hardware/CSwitch.o ./Hardware/CTorqueData.o  ./Control/States/AState.o ./Control/States/CADCCalibration.o ./Control/States/CEdgeBalance.o ./Control/States/CLQRTest.o ./Control/States/CSensorCalibration.o  ./Control/ActionHandler/CADCCalibrationAction.o ./Control/ActionHandler/CControlAction.o ./Control/ActionHandler/CControlActionBase.o ./Control/ActionHandler/CLQRTestAction.o ./Control/ActionHandler/CSensorCalibrationAction.o  ./Control/C1DCompFilter.o ./Control/C1DLPF.o ./Control/C1DStateReduction.o ./Control/CCompFilter.o ./Control/CControlComp.o ./Control/CLQR.o ./Control/CMPUCalib.o ./Control/COffsetCorrection.o ./Control/CPT1.o ./Control/CPoly1.o ./Control/CStateEstimate.o ./Control/CTimerTask.o  ./Comm/CCommAction.o ./Comm/CCommComponent.o ./Comm/CCommFSM.o ./Comm/CReceiveTask.o ./Comm/CServer.o  ./C1DOffsetCorrection.o ./main.o   -lpthread
+./Control/States/CEdgeBalance.o: In function `CEdgeBalance::CEdgeBalance()':
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Debug/../Control/States/CEdgeBalance.cpp:9: undefined reference to `CEdgeBalanceAction::CEdgeBalanceAction()'
+./Control/States/CEdgeBalance.o: In function `CEdgeBalance::onDefault(CMessage&)':
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Debug/../Control/States/CEdgeBalance.cpp:23: undefined reference to `CEdgeBalanceAction::onEntryIdle()'
+./Control/States/CEdgeBalance.o: In function `CEdgeBalance::onIdle(CMessage&)':
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Debug/../Control/States/CEdgeBalance.cpp:33: undefined reference to `CEdgeBalanceAction::onExitIdle()'
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Debug/../Control/States/CEdgeBalance.cpp:39: undefined reference to `CEdgeBalanceAction::sampleIdle()'
+./Control/States/CEdgeBalance.o: In function `CEdgeBalance::onControl(CMessage&)':
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Debug/../Control/States/CEdgeBalance.cpp:49: undefined reference to `CEdgeBalanceAction::onExitControl()'
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Debug/../Control/States/CEdgeBalance.cpp:55: undefined reference to `CEdgeBalanceAction::sampleControl()'
+./Control/States/CEdgeBalance.o: In function `CEdgeBalance::onEntry()':
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Debug/../Control/States/CEdgeBalance.cpp:72: undefined reference to `CEdgeBalanceAction::onEntryEdgeBalance()'
+./Control/States/CEdgeBalance.o: In function `CEdgeBalance::onExit()':
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Debug/../Control/States/CEdgeBalance.cpp:80: undefined reference to `CEdgeBalanceAction::onExitEdgeBalance()'
+collect2: error: ld returned 1 exit status
+make: *** [BBB_3D] Error 1
+15:46:39 **** Incremental Build of configuration Debug for project BBB_3D ****
+make all 
+Building file: ../Control/C1DCompFilter.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/C1DCompFilter.d" -MT"Control/C1DCompFilter.o" -o "Control/C1DCompFilter.o" "../Control/C1DCompFilter.cpp"
+Finished building: ../Control/C1DCompFilter.cpp
+ 
+Building target: BBB_3D
+Invoking: Cross G++ Linker
+arm-linux-gnueabihf-g++  -o "BBB_3D"  ./lib/AComponentBase.o ./lib/Assertion.o ./lib/CBinarySemaphore.o ./lib/CCountingSemaphore.o ./lib/CMessage.o ./lib/CMutex.o ./lib/CProxy.o ./lib/CThread.o  ./Hardware/CADC.o ./Hardware/CADCData.o ./Hardware/CGPIO.o ./Hardware/CHardware.o ./Hardware/CMPU9250.o ./Hardware/CMPUData.o ./Hardware/CMotor.o ./Hardware/CPWM.o ./Hardware/CSensorData.o ./Hardware/CSensorSystem.o ./Hardware/CStateData.o ./Hardware/CSwitch.o ./Hardware/CTorqueData.o  ./Control/States/AState.o ./Control/States/CADCCalibration.o ./Control/States/CEdgeBalance.o ./Control/States/CLQRTest.o ./Control/States/CSensorCalibration.o  ./Control/ActionHandler/CADCCalibrationAction.o ./Control/ActionHandler/CControlAction.o ./Control/ActionHandler/CControlActionBase.o ./Control/ActionHandler/CLQRTestAction.o ./Control/ActionHandler/CSensorCalibrationAction.o  ./Control/C1DCompFilter.o ./Control/C1DLPF.o ./Control/C1DStateReduction.o ./Control/CCompFilter.o ./Control/CControlComp.o ./Control/CLQR.o ./Control/CMPUCalib.o ./Control/COffsetCorrection.o ./Control/CPT1.o ./Control/CPoly1.o ./Control/CStateEstimate.o ./Control/CTimerTask.o  ./Comm/CCommAction.o ./Comm/CCommComponent.o ./Comm/CCommFSM.o ./Comm/CReceiveTask.o ./Comm/CServer.o  ./C1DOffsetCorrection.o ./main.o   -lpthread
+./Control/States/CEdgeBalance.o: In function `CEdgeBalance::CEdgeBalance()':
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Debug/../Control/States/CEdgeBalance.cpp:9: undefined reference to `CEdgeBalanceAction::CEdgeBalanceAction()'
+./Control/States/CEdgeBalance.o: In function `CEdgeBalance::onDefault(CMessage&)':
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Debug/../Control/States/CEdgeBalance.cpp:23: undefined reference to `CEdgeBalanceAction::onEntryIdle()'
+./Control/States/CEdgeBalance.o: In function `CEdgeBalance::onIdle(CMessage&)':
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Debug/../Control/States/CEdgeBalance.cpp:33: undefined reference to `CEdgeBalanceAction::onExitIdle()'
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Debug/../Control/States/CEdgeBalance.cpp:39: undefined reference to `CEdgeBalanceAction::sampleIdle()'
+./Control/States/CEdgeBalance.o: In function `CEdgeBalance::onControl(CMessage&)':
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Debug/../Control/States/CEdgeBalance.cpp:49: undefined reference to `CEdgeBalanceAction::onExitControl()'
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Debug/../Control/States/CEdgeBalance.cpp:55: undefined reference to `CEdgeBalanceAction::sampleControl()'
+./Control/States/CEdgeBalance.o: In function `CEdgeBalance::onEntry()':
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Debug/../Control/States/CEdgeBalance.cpp:72: undefined reference to `CEdgeBalanceAction::onEntryEdgeBalance()'
+./Control/States/CEdgeBalance.o: In function `CEdgeBalance::onExit()':
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Debug/../Control/States/CEdgeBalance.cpp:80: undefined reference to `CEdgeBalanceAction::onExitEdgeBalance()'
+collect2: error: ld returned 1 exit status
+make: *** [BBB_3D] Error 1
+16:02:58 **** Incremental Build of configuration Debug for project BBB_3D ****
 make all 
 Building file: ../lib/AComponentBase.cpp
 Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"lib/AComponentBase.d" -MT"lib/AComponentBase.o" -o "lib/AComponentBase.o" "../lib/AComponentBase.cpp"
-Finished building: ../lib/AComponentBase.cpp
- 
-Building file: ../lib/CMessage.cpp
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"lib/AComponentBase.d" -MT"lib/AComponentBase.o" -o "lib/AComponentBase.o" "../lib/AComponentBase.cpp"
+In file included from /home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware/CTorqueData.h:10:0,
+                 from ../lib/CProxy.h:12,
+                 from ../lib/AComponentBase.cpp:7:
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TMatrix.h:85:20: error: prototype for ‘TMatrix<n_R, n_C>& TMatrix<n_R, n_C>::operator-(const TMatrix<n_R, n_C>&)’ does not match any in class ‘TMatrix<n_R, n_C>’
+ TMatrix<n_R, n_C>& TMatrix<n_R, n_C>::operator-(const TMatrix& mat)
+                    ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TMatrix.h:33:10: error: candidate is: TMatrix<n_R, n_C> TMatrix<n_R, n_C>::operator-(const TMatrix<n_R, n_C>&)
+  TMatrix operator-(const TMatrix&);
+          ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TMatrix.h:97:20: error: prototype for ‘TMatrix<n_R, n_C>& TMatrix<n_R, n_C>::operator+(const TMatrix<n_R, n_C>&)’ does not match any in class ‘TMatrix<n_R, n_C>’
+ TMatrix<n_R, n_C>& TMatrix<n_R, n_C>::operator+(const TMatrix& mat)
+                    ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TMatrix.h:32:10: error: candidate is: TMatrix<n_R, n_C> TMatrix<n_R, n_C>::operator+(const TMatrix<n_R, n_C>&)
+  TMatrix operator+(const TMatrix&);
+          ^
+make: *** [lib/AComponentBase.o] Error 1
+16:03:12 **** Incremental Build of configuration Debug for project BBB_3D ****
+make all 
+Building file: ../lib/AComponentBase.cpp
 Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"lib/CMessage.d" -MT"lib/CMessage.o" -o "lib/CMessage.o" "../lib/CMessage.cpp"
-Finished building: ../lib/CMessage.cpp
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"lib/AComponentBase.d" -MT"lib/AComponentBase.o" -o "lib/AComponentBase.o" "../lib/AComponentBase.cpp"
+Finished building: ../lib/AComponentBase.cpp
  
 Building file: ../lib/CProxy.cpp
 Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"lib/CProxy.d" -MT"lib/CProxy.o" -o "lib/CProxy.o" "../lib/CProxy.cpp"
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"lib/CProxy.d" -MT"lib/CProxy.o" -o "lib/CProxy.o" "../lib/CProxy.cpp"
 Finished building: ../lib/CProxy.cpp
  
-Building file: ../Hardware/CMotor.cpp
+Building file: ../Hardware/CHardware.cpp
 Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Hardware/CMotor.d" -MT"Hardware/CMotor.o" -o "Hardware/CMotor.o" "../Hardware/CMotor.cpp"
-Finished building: ../Hardware/CMotor.cpp
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Hardware/CHardware.d" -MT"Hardware/CHardware.o" -o "Hardware/CHardware.o" "../Hardware/CHardware.cpp"
+Finished building: ../Hardware/CHardware.cpp
  
-Building file: ../Control/CADCCalibration.cpp
+Building file: ../Hardware/CStateData.cpp
 Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/CADCCalibration.d" -MT"Control/CADCCalibration.o" -o "Control/CADCCalibration.o" "../Control/CADCCalibration.cpp"
-Finished building: ../Control/CADCCalibration.cpp
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Hardware/CStateData.d" -MT"Hardware/CStateData.o" -o "Hardware/CStateData.o" "../Hardware/CStateData.cpp"
+Finished building: ../Hardware/CStateData.cpp
  
-Building file: ../Control/CADCCalibrationAction.cpp
+Building file: ../Hardware/CTorqueData.cpp
 Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/CADCCalibrationAction.d" -MT"Control/CADCCalibrationAction.o" -o "Control/CADCCalibrationAction.o" "../Control/CADCCalibrationAction.cpp"
-Finished building: ../Control/CADCCalibrationAction.cpp
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Hardware/CTorqueData.d" -MT"Hardware/CTorqueData.o" -o "Hardware/CTorqueData.o" "../Hardware/CTorqueData.cpp"
+Finished building: ../Hardware/CTorqueData.cpp
  
-Building file: ../Control/CControlAction.cpp
+Building file: ../Control/States/CADCCalibration.cpp
 Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/CControlAction.d" -MT"Control/CControlAction.o" -o "Control/CControlAction.o" "../Control/CControlAction.cpp"
-Finished building: ../Control/CControlAction.cpp
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/States/CADCCalibration.d" -MT"Control/States/CADCCalibration.o" -o "Control/States/CADCCalibration.o" "../Control/States/CADCCalibration.cpp"
+Finished building: ../Control/States/CADCCalibration.cpp
  
-Building file: ../Control/CControlActionBase.cpp
+Building file: ../Control/States/CEdgeBalance.cpp
 Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/CControlActionBase.d" -MT"Control/CControlActionBase.o" -o "Control/CControlActionBase.o" "../Control/CControlActionBase.cpp"
-Finished building: ../Control/CControlActionBase.cpp
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/States/CEdgeBalance.d" -MT"Control/States/CEdgeBalance.o" -o "Control/States/CEdgeBalance.o" "../Control/States/CEdgeBalance.cpp"
+Finished building: ../Control/States/CEdgeBalance.cpp
+ 
+Building file: ../Control/States/CLQRTest.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/States/CLQRTest.d" -MT"Control/States/CLQRTest.o" -o "Control/States/CLQRTest.o" "../Control/States/CLQRTest.cpp"
+Finished building: ../Control/States/CLQRTest.cpp
+ 
+Building file: ../Control/States/CSensorCalibration.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/States/CSensorCalibration.d" -MT"Control/States/CSensorCalibration.o" -o "Control/States/CSensorCalibration.o" "../Control/States/CSensorCalibration.cpp"
+Finished building: ../Control/States/CSensorCalibration.cpp
+ 
+Building file: ../Control/ActionHandler/CADCCalibrationAction.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/ActionHandler/CADCCalibrationAction.d" -MT"Control/ActionHandler/CADCCalibrationAction.o" -o "Control/ActionHandler/CADCCalibrationAction.o" "../Control/ActionHandler/CADCCalibrationAction.cpp"
+Finished building: ../Control/ActionHandler/CADCCalibrationAction.cpp
+ 
+Building file: ../Control/ActionHandler/CControlAction.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/ActionHandler/CControlAction.d" -MT"Control/ActionHandler/CControlAction.o" -o "Control/ActionHandler/CControlAction.o" "../Control/ActionHandler/CControlAction.cpp"
+Finished building: ../Control/ActionHandler/CControlAction.cpp
+ 
+Building file: ../Control/ActionHandler/CControlActionBase.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/ActionHandler/CControlActionBase.d" -MT"Control/ActionHandler/CControlActionBase.o" -o "Control/ActionHandler/CControlActionBase.o" "../Control/ActionHandler/CControlActionBase.cpp"
+Finished building: ../Control/ActionHandler/CControlActionBase.cpp
+ 
+Building file: ../Control/ActionHandler/CLQRTestAction.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/ActionHandler/CLQRTestAction.d" -MT"Control/ActionHandler/CLQRTestAction.o" -o "Control/ActionHandler/CLQRTestAction.o" "../Control/ActionHandler/CLQRTestAction.cpp"
+Finished building: ../Control/ActionHandler/CLQRTestAction.cpp
+ 
+Building file: ../Control/ActionHandler/CSensorCalibrationAction.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/ActionHandler/CSensorCalibrationAction.d" -MT"Control/ActionHandler/CSensorCalibrationAction.o" -o "Control/ActionHandler/CSensorCalibrationAction.o" "../Control/ActionHandler/CSensorCalibrationAction.cpp"
+Finished building: ../Control/ActionHandler/CSensorCalibrationAction.cpp
+ 
+Building file: ../Control/C1DCompFilter.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/C1DCompFilter.d" -MT"Control/C1DCompFilter.o" -o "Control/C1DCompFilter.o" "../Control/C1DCompFilter.cpp"
+Finished building: ../Control/C1DCompFilter.cpp
+ 
+Building file: ../Control/C1DLPF.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/C1DLPF.d" -MT"Control/C1DLPF.o" -o "Control/C1DLPF.o" "../Control/C1DLPF.cpp"
+Finished building: ../Control/C1DLPF.cpp
+ 
+Building file: ../Control/C1DStateReduction.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/C1DStateReduction.d" -MT"Control/C1DStateReduction.o" -o "Control/C1DStateReduction.o" "../Control/C1DStateReduction.cpp"
+Finished building: ../Control/C1DStateReduction.cpp
+ 
+Building file: ../Control/CCompFilter.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/CCompFilter.d" -MT"Control/CCompFilter.o" -o "Control/CCompFilter.o" "../Control/CCompFilter.cpp"
+Finished building: ../Control/CCompFilter.cpp
  
 Building file: ../Control/CControlComp.cpp
 Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/CControlComp.d" -MT"Control/CControlComp.o" -o "Control/CControlComp.o" "../Control/CControlComp.cpp"
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/CControlComp.d" -MT"Control/CControlComp.o" -o "Control/CControlComp.o" "../Control/CControlComp.cpp"
 Finished building: ../Control/CControlComp.cpp
  
-Building file: ../Control/CControlTest.cpp
+Building file: ../Control/CLQR.cpp
 Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/CControlTest.d" -MT"Control/CControlTest.o" -o "Control/CControlTest.o" "../Control/CControlTest.cpp"
-Finished building: ../Control/CControlTest.cpp
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/CLQR.d" -MT"Control/CLQR.o" -o "Control/CLQR.o" "../Control/CLQR.cpp"
+Finished building: ../Control/CLQR.cpp
  
-Building file: ../Control/CControlTestAction.cpp
+Building file: ../Control/COffsetCorrection.cpp
 Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/CControlTestAction.d" -MT"Control/CControlTestAction.o" -o "Control/CControlTestAction.o" "../Control/CControlTestAction.cpp"
-Finished building: ../Control/CControlTestAction.cpp
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/COffsetCorrection.d" -MT"Control/COffsetCorrection.o" -o "Control/COffsetCorrection.o" "../Control/COffsetCorrection.cpp"
+Finished building: ../Control/COffsetCorrection.cpp
  
-Building file: ../Control/CFilterSystem.cpp
+Building file: ../Control/CStateEstimate.cpp
 Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/CFilterSystem.d" -MT"Control/CFilterSystem.o" -o "Control/CFilterSystem.o" "../Control/CFilterSystem.cpp"
-Finished building: ../Control/CFilterSystem.cpp
- 
-Building file: ../Control/CLQB.cpp
-Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/CLQB.d" -MT"Control/CLQB.o" -o "Control/CLQB.o" "../Control/CLQB.cpp"
-Finished building: ../Control/CLQB.cpp
- 
-Building file: ../Control/CSensorCalibration.cpp
-Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/CSensorCalibration.d" -MT"Control/CSensorCalibration.o" -o "Control/CSensorCalibration.o" "../Control/CSensorCalibration.cpp"
-Finished building: ../Control/CSensorCalibration.cpp
- 
-Building file: ../Control/CSensorCalibrationAction.cpp
-Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/CSensorCalibrationAction.d" -MT"Control/CSensorCalibrationAction.o" -o "Control/CSensorCalibrationAction.o" "../Control/CSensorCalibrationAction.cpp"
-Finished building: ../Control/CSensorCalibrationAction.cpp
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/CStateEstimate.d" -MT"Control/CStateEstimate.o" -o "Control/CStateEstimate.o" "../Control/CStateEstimate.cpp"
+Finished building: ../Control/CStateEstimate.cpp
  
 Building file: ../Control/CTimerTask.cpp
 Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/CTimerTask.d" -MT"Control/CTimerTask.o" -o "Control/CTimerTask.o" "../Control/CTimerTask.cpp"
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/CTimerTask.d" -MT"Control/CTimerTask.o" -o "Control/CTimerTask.o" "../Control/CTimerTask.cpp"
 Finished building: ../Control/CTimerTask.cpp
  
 Building file: ../Comm/CCommAction.cpp
 Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Comm/CCommAction.d" -MT"Comm/CCommAction.o" -o "Comm/CCommAction.o" "../Comm/CCommAction.cpp"
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Comm/CCommAction.d" -MT"Comm/CCommAction.o" -o "Comm/CCommAction.o" "../Comm/CCommAction.cpp"
 Finished building: ../Comm/CCommAction.cpp
  
 Building file: ../Comm/CCommComponent.cpp
 Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Comm/CCommComponent.d" -MT"Comm/CCommComponent.o" -o "Comm/CCommComponent.o" "../Comm/CCommComponent.cpp"
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Comm/CCommComponent.d" -MT"Comm/CCommComponent.o" -o "Comm/CCommComponent.o" "../Comm/CCommComponent.cpp"
 Finished building: ../Comm/CCommComponent.cpp
  
 Building file: ../Comm/CCommFSM.cpp
 Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Comm/CCommFSM.d" -MT"Comm/CCommFSM.o" -o "Comm/CCommFSM.o" "../Comm/CCommFSM.cpp"
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Comm/CCommFSM.d" -MT"Comm/CCommFSM.o" -o "Comm/CCommFSM.o" "../Comm/CCommFSM.cpp"
 Finished building: ../Comm/CCommFSM.cpp
  
 Building file: ../Comm/CReceiveTask.cpp
 Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Comm/CReceiveTask.d" -MT"Comm/CReceiveTask.o" -o "Comm/CReceiveTask.o" "../Comm/CReceiveTask.cpp"
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Comm/CReceiveTask.d" -MT"Comm/CReceiveTask.o" -o "Comm/CReceiveTask.o" "../Comm/CReceiveTask.cpp"
 Finished building: ../Comm/CReceiveTask.cpp
  
-Building file: ../Comm/CServer.cpp
+Building file: ../C1DOffsetCorrection.cpp
 Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Comm/CServer.d" -MT"Comm/CServer.o" -o "Comm/CServer.o" "../Comm/CServer.cpp"
-Finished building: ../Comm/CServer.cpp
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"C1DOffsetCorrection.d" -MT"C1DOffsetCorrection.o" -o "C1DOffsetCorrection.o" "../C1DOffsetCorrection.cpp"
+Finished building: ../C1DOffsetCorrection.cpp
  
 Building file: ../main.cpp
 Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
 Finished building: ../main.cpp
  
-Building target: BBB_1D
+Building target: BBB_3D
 Invoking: Cross G++ Linker
-arm-linux-gnueabihf-g++  -o "BBB_1D"  ./lib/AComponentBase.o ./lib/Assertion.o ./lib/CBinarySemaphore.o ./lib/CCountingSemaphore.o ./lib/CMessage.o ./lib/CMutex.o ./lib/CProxy.o ./lib/CThread.o  ./Hardware/CADC.o ./Hardware/CBBBHardware.o ./Hardware/CBrake.o ./Hardware/CMPU6050.o ./Hardware/CMotor.o  ./Control/CADCCalibration.o ./Control/CADCCalibrationAction.o ./Control/CCascadeControl.o ./Control/CComplementaryFilter.o ./Control/CControlAction.o ./Control/CControlActionBase.o ./Control/CControlComp.o ./Control/CControlTest.o ./Control/CControlTestAction.o ./Control/CDT1.o ./Control/CFilterSystem.o ./Control/CLQB.o ./Control/CLQRControl.o ./Control/CPT1.o ./Control/CSensorCalibration.o ./Control/CSensorCalibrationAction.o ./Control/CSensorEvaluation.o ./Control/CTimerTask.o  ./Comm/CCommAction.o ./Comm/CCommComponent.o ./Comm/CCommFSM.o ./Comm/CReceiveTask.o ./Comm/CServer.o  ./main.o   -lpthread
-Finished building target: BBB_1D
- 
-18:36:42 **** Incremental Build of configuration Debug for project BBB_1D ****
+arm-linux-gnueabihf-g++  -o "BBB_3D"  ./lib/AComponentBase.o ./lib/Assertion.o ./lib/CBinarySemaphore.o ./lib/CCountingSemaphore.o ./lib/CMessage.o ./lib/CMutex.o ./lib/CProxy.o ./lib/CThread.o  ./Hardware/CADC.o ./Hardware/CADCData.o ./Hardware/CGPIO.o ./Hardware/CHardware.o ./Hardware/CMPU9250.o ./Hardware/CMPUData.o ./Hardware/CMotor.o ./Hardware/CPWM.o ./Hardware/CSensorData.o ./Hardware/CSensorSystem.o ./Hardware/CStateData.o ./Hardware/CSwitch.o ./Hardware/CTorqueData.o  ./Control/States/AState.o ./Control/States/CADCCalibration.o ./Control/States/CEdgeBalance.o ./Control/States/CLQRTest.o ./Control/States/CSensorCalibration.o  ./Control/ActionHandler/CADCCalibrationAction.o ./Control/ActionHandler/CControlAction.o ./Control/ActionHandler/CControlActionBase.o ./Control/ActionHandler/CLQRTestAction.o ./Control/ActionHandler/CSensorCalibrationAction.o  ./Control/C1DCompFilter.o ./Control/C1DLPF.o ./Control/C1DStateReduction.o ./Control/CCompFilter.o ./Control/CControlComp.o ./Control/CLQR.o ./Control/CMPUCalib.o ./Control/COffsetCorrection.o ./Control/CPT1.o ./Control/CPoly1.o ./Control/CStateEstimate.o ./Control/CTimerTask.o  ./Comm/CCommAction.o ./Comm/CCommComponent.o ./Comm/CCommFSM.o ./Comm/CReceiveTask.o ./Comm/CServer.o  ./C1DOffsetCorrection.o ./main.o   -lpthread
+./Control/States/CEdgeBalance.o: In function `CEdgeBalance::CEdgeBalance()':
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Debug/../Control/States/CEdgeBalance.cpp:9: undefined reference to `CEdgeBalanceAction::CEdgeBalanceAction()'
+./Control/States/CEdgeBalance.o: In function `CEdgeBalance::onDefault(CMessage&)':
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Debug/../Control/States/CEdgeBalance.cpp:23: undefined reference to `CEdgeBalanceAction::onEntryIdle()'
+./Control/States/CEdgeBalance.o: In function `CEdgeBalance::onIdle(CMessage&)':
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Debug/../Control/States/CEdgeBalance.cpp:33: undefined reference to `CEdgeBalanceAction::onExitIdle()'
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Debug/../Control/States/CEdgeBalance.cpp:39: undefined reference to `CEdgeBalanceAction::sampleIdle()'
+./Control/States/CEdgeBalance.o: In function `CEdgeBalance::onControl(CMessage&)':
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Debug/../Control/States/CEdgeBalance.cpp:49: undefined reference to `CEdgeBalanceAction::onExitControl()'
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Debug/../Control/States/CEdgeBalance.cpp:55: undefined reference to `CEdgeBalanceAction::sampleControl()'
+./Control/States/CEdgeBalance.o: In function `CEdgeBalance::onEntry()':
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Debug/../Control/States/CEdgeBalance.cpp:72: undefined reference to `CEdgeBalanceAction::onEntryEdgeBalance()'
+./Control/States/CEdgeBalance.o: In function `CEdgeBalance::onExit()':
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Debug/../Control/States/CEdgeBalance.cpp:80: undefined reference to `CEdgeBalanceAction::onExitEdgeBalance()'
+collect2: error: ld returned 1 exit status
+make: *** [BBB_3D] Error 1
+16:04:00 **** Incremental Build of configuration Debug for project BBB_3D ****
 make all 
-make: Nothing to be done for `all'.
-18:36:49 **** Incremental Build of configuration Debug for project BBB_1D ****
-make all 
-make: Nothing to be done for `all'.
-18:44:33 **** Incremental Build of configuration Debug for project BBB_1D ****
-make all 
-Building file: ../Control/CLQB.cpp
+Building file: ../lib/AComponentBase.cpp
 Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/CLQB.d" -MT"Control/CLQB.o" -o "Control/CLQB.o" "../Control/CLQB.cpp"
-Finished building: ../Control/CLQB.cpp
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"lib/AComponentBase.d" -MT"lib/AComponentBase.o" -o "lib/AComponentBase.o" "../lib/AComponentBase.cpp"
+Finished building: ../lib/AComponentBase.cpp
  
-Building target: BBB_1D
-Invoking: Cross G++ Linker
-arm-linux-gnueabihf-g++  -o "BBB_1D"  ./lib/AComponentBase.o ./lib/Assertion.o ./lib/CBinarySemaphore.o ./lib/CCountingSemaphore.o ./lib/CMessage.o ./lib/CMutex.o ./lib/CProxy.o ./lib/CThread.o  ./Hardware/CADC.o ./Hardware/CBBBHardware.o ./Hardware/CBrake.o ./Hardware/CMPU6050.o ./Hardware/CMotor.o  ./Control/CADCCalibration.o ./Control/CADCCalibrationAction.o ./Control/CCascadeControl.o ./Control/CComplementaryFilter.o ./Control/CControlAction.o ./Control/CControlActionBase.o ./Control/CControlComp.o ./Control/CControlTest.o ./Control/CControlTestAction.o ./Control/CDT1.o ./Control/CFilterSystem.o ./Control/CLQB.o ./Control/CLQRControl.o ./Control/CPT1.o ./Control/CSensorCalibration.o ./Control/CSensorCalibrationAction.o ./Control/CSensorEvaluation.o ./Control/CTimerTask.o  ./Comm/CCommAction.o ./Comm/CCommComponent.o ./Comm/CCommFSM.o ./Comm/CReceiveTask.o ./Comm/CServer.o  ./main.o   -lpthread
-Finished building target: BBB_1D
+Building file: ../lib/CProxy.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"lib/CProxy.d" -MT"lib/CProxy.o" -o "lib/CProxy.o" "../lib/CProxy.cpp"
+Finished building: ../lib/CProxy.cpp
  
-18:53:50 **** Incremental Build of configuration Debug for project BBB_1D ****
-make all 
+Building file: ../Hardware/CHardware.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Hardware/CHardware.d" -MT"Hardware/CHardware.o" -o "Hardware/CHardware.o" "../Hardware/CHardware.cpp"
+Finished building: ../Hardware/CHardware.cpp
+ 
+Building file: ../Hardware/CStateData.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Hardware/CStateData.d" -MT"Hardware/CStateData.o" -o "Hardware/CStateData.o" "../Hardware/CStateData.cpp"
+Finished building: ../Hardware/CStateData.cpp
+ 
+Building file: ../Hardware/CTorqueData.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Hardware/CTorqueData.d" -MT"Hardware/CTorqueData.o" -o "Hardware/CTorqueData.o" "../Hardware/CTorqueData.cpp"
+Finished building: ../Hardware/CTorqueData.cpp
+ 
+Building file: ../Control/States/CADCCalibration.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/States/CADCCalibration.d" -MT"Control/States/CADCCalibration.o" -o "Control/States/CADCCalibration.o" "../Control/States/CADCCalibration.cpp"
+Finished building: ../Control/States/CADCCalibration.cpp
+ 
+Building file: ../Control/States/CEdgeBalance.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/States/CEdgeBalance.d" -MT"Control/States/CEdgeBalance.o" -o "Control/States/CEdgeBalance.o" "../Control/States/CEdgeBalance.cpp"
+Finished building: ../Control/States/CEdgeBalance.cpp
+ 
+Building file: ../Control/States/CLQRTest.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/States/CLQRTest.d" -MT"Control/States/CLQRTest.o" -o "Control/States/CLQRTest.o" "../Control/States/CLQRTest.cpp"
+Finished building: ../Control/States/CLQRTest.cpp
+ 
+Building file: ../Control/States/CSensorCalibration.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/States/CSensorCalibration.d" -MT"Control/States/CSensorCalibration.o" -o "Control/States/CSensorCalibration.o" "../Control/States/CSensorCalibration.cpp"
+Finished building: ../Control/States/CSensorCalibration.cpp
+ 
+Building file: ../Control/ActionHandler/CADCCalibrationAction.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/ActionHandler/CADCCalibrationAction.d" -MT"Control/ActionHandler/CADCCalibrationAction.o" -o "Control/ActionHandler/CADCCalibrationAction.o" "../Control/ActionHandler/CADCCalibrationAction.cpp"
+Finished building: ../Control/ActionHandler/CADCCalibrationAction.cpp
+ 
+Building file: ../Control/ActionHandler/CControlAction.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/ActionHandler/CControlAction.d" -MT"Control/ActionHandler/CControlAction.o" -o "Control/ActionHandler/CControlAction.o" "../Control/ActionHandler/CControlAction.cpp"
+Finished building: ../Control/ActionHandler/CControlAction.cpp
+ 
+Building file: ../Control/ActionHandler/CControlActionBase.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/ActionHandler/CControlActionBase.d" -MT"Control/ActionHandler/CControlActionBase.o" -o "Control/ActionHandler/CControlActionBase.o" "../Control/ActionHandler/CControlActionBase.cpp"
+Finished building: ../Control/ActionHandler/CControlActionBase.cpp
+ 
+Building file: ../Control/ActionHandler/CLQRTestAction.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/ActionHandler/CLQRTestAction.d" -MT"Control/ActionHandler/CLQRTestAction.o" -o "Control/ActionHandler/CLQRTestAction.o" "../Control/ActionHandler/CLQRTestAction.cpp"
+Finished building: ../Control/ActionHandler/CLQRTestAction.cpp
+ 
+Building file: ../Control/ActionHandler/CSensorCalibrationAction.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/ActionHandler/CSensorCalibrationAction.d" -MT"Control/ActionHandler/CSensorCalibrationAction.o" -o "Control/ActionHandler/CSensorCalibrationAction.o" "../Control/ActionHandler/CSensorCalibrationAction.cpp"
+Finished building: ../Control/ActionHandler/CSensorCalibrationAction.cpp
+ 
+Building file: ../Control/C1DCompFilter.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/C1DCompFilter.d" -MT"Control/C1DCompFilter.o" -o "Control/C1DCompFilter.o" "../Control/C1DCompFilter.cpp"
+Finished building: ../Control/C1DCompFilter.cpp
+ 
+Building file: ../Control/C1DLPF.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/C1DLPF.d" -MT"Control/C1DLPF.o" -o "Control/C1DLPF.o" "../Control/C1DLPF.cpp"
+Finished building: ../Control/C1DLPF.cpp
+ 
+Building file: ../Control/C1DStateReduction.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/C1DStateReduction.d" -MT"Control/C1DStateReduction.o" -o "Control/C1DStateReduction.o" "../Control/C1DStateReduction.cpp"
+Finished building: ../Control/C1DStateReduction.cpp
+ 
+Building file: ../Control/CCompFilter.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/CCompFilter.d" -MT"Control/CCompFilter.o" -o "Control/CCompFilter.o" "../Control/CCompFilter.cpp"
+Finished building: ../Control/CCompFilter.cpp
+ 
 Building file: ../Control/CControlComp.cpp
 Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/CControlComp.d" -MT"Control/CControlComp.o" -o "Control/CControlComp.o" "../Control/CControlComp.cpp"
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/CControlComp.d" -MT"Control/CControlComp.o" -o "Control/CControlComp.o" "../Control/CControlComp.cpp"
 Finished building: ../Control/CControlComp.cpp
  
-Building file: ../Control/CControlTest.cpp
+Building file: ../Control/CLQR.cpp
 Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/CControlTest.d" -MT"Control/CControlTest.o" -o "Control/CControlTest.o" "../Control/CControlTest.cpp"
-Finished building: ../Control/CControlTest.cpp
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/CLQR.d" -MT"Control/CLQR.o" -o "Control/CLQR.o" "../Control/CLQR.cpp"
+Finished building: ../Control/CLQR.cpp
  
-Building file: ../Control/CControlTestAction.cpp
+Building file: ../Control/COffsetCorrection.cpp
 Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/CControlTestAction.d" -MT"Control/CControlTestAction.o" -o "Control/CControlTestAction.o" "../Control/CControlTestAction.cpp"
-Finished building: ../Control/CControlTestAction.cpp
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/COffsetCorrection.d" -MT"Control/COffsetCorrection.o" -o "Control/COffsetCorrection.o" "../Control/COffsetCorrection.cpp"
+Finished building: ../Control/COffsetCorrection.cpp
  
-Building file: ../Control/CLQB.cpp
+Building file: ../Control/CStateEstimate.cpp
 Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/CLQB.d" -MT"Control/CLQB.o" -o "Control/CLQB.o" "../Control/CLQB.cpp"
-Finished building: ../Control/CLQB.cpp
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/CStateEstimate.d" -MT"Control/CStateEstimate.o" -o "Control/CStateEstimate.o" "../Control/CStateEstimate.cpp"
+Finished building: ../Control/CStateEstimate.cpp
+ 
+Building file: ../Control/CTimerTask.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/CTimerTask.d" -MT"Control/CTimerTask.o" -o "Control/CTimerTask.o" "../Control/CTimerTask.cpp"
+Finished building: ../Control/CTimerTask.cpp
+ 
+Building file: ../Comm/CCommAction.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Comm/CCommAction.d" -MT"Comm/CCommAction.o" -o "Comm/CCommAction.o" "../Comm/CCommAction.cpp"
+Finished building: ../Comm/CCommAction.cpp
+ 
+Building file: ../Comm/CCommComponent.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Comm/CCommComponent.d" -MT"Comm/CCommComponent.o" -o "Comm/CCommComponent.o" "../Comm/CCommComponent.cpp"
+Finished building: ../Comm/CCommComponent.cpp
+ 
+Building file: ../Comm/CCommFSM.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Comm/CCommFSM.d" -MT"Comm/CCommFSM.o" -o "Comm/CCommFSM.o" "../Comm/CCommFSM.cpp"
+Finished building: ../Comm/CCommFSM.cpp
+ 
+Building file: ../Comm/CReceiveTask.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Comm/CReceiveTask.d" -MT"Comm/CReceiveTask.o" -o "Comm/CReceiveTask.o" "../Comm/CReceiveTask.cpp"
+Finished building: ../Comm/CReceiveTask.cpp
+ 
+Building file: ../C1DOffsetCorrection.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"C1DOffsetCorrection.d" -MT"C1DOffsetCorrection.o" -o "C1DOffsetCorrection.o" "../C1DOffsetCorrection.cpp"
+Finished building: ../C1DOffsetCorrection.cpp
  
 Building file: ../main.cpp
 Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
 Finished building: ../main.cpp
  
-Building target: BBB_1D
+Building target: BBB_3D
 Invoking: Cross G++ Linker
-arm-linux-gnueabihf-g++  -o "BBB_1D"  ./lib/AComponentBase.o ./lib/Assertion.o ./lib/CBinarySemaphore.o ./lib/CCountingSemaphore.o ./lib/CMessage.o ./lib/CMutex.o ./lib/CProxy.o ./lib/CThread.o  ./Hardware/CADC.o ./Hardware/CBBBHardware.o ./Hardware/CBrake.o ./Hardware/CMPU6050.o ./Hardware/CMotor.o  ./Control/CADCCalibration.o ./Control/CADCCalibrationAction.o ./Control/CCascadeControl.o ./Control/CComplementaryFilter.o ./Control/CControlAction.o ./Control/CControlActionBase.o ./Control/CControlComp.o ./Control/CControlTest.o ./Control/CControlTestAction.o ./Control/CDT1.o ./Control/CFilterSystem.o ./Control/CLQB.o ./Control/CLQRControl.o ./Control/CPT1.o ./Control/CSensorCalibration.o ./Control/CSensorCalibrationAction.o ./Control/CSensorEvaluation.o ./Control/CTimerTask.o  ./Comm/CCommAction.o ./Comm/CCommComponent.o ./Comm/CCommFSM.o ./Comm/CReceiveTask.o ./Comm/CServer.o  ./main.o   -lpthread
-Finished building target: BBB_1D
+arm-linux-gnueabihf-g++  -o "BBB_3D"  ./lib/AComponentBase.o ./lib/Assertion.o ./lib/CBinarySemaphore.o ./lib/CCountingSemaphore.o ./lib/CMessage.o ./lib/CMutex.o ./lib/CProxy.o ./lib/CThread.o  ./Hardware/CADC.o ./Hardware/CADCData.o ./Hardware/CGPIO.o ./Hardware/CHardware.o ./Hardware/CMPU9250.o ./Hardware/CMPUData.o ./Hardware/CMotor.o ./Hardware/CPWM.o ./Hardware/CSensorData.o ./Hardware/CSensorSystem.o ./Hardware/CStateData.o ./Hardware/CSwitch.o ./Hardware/CTorqueData.o  ./Control/States/AState.o ./Control/States/CADCCalibration.o ./Control/States/CEdgeBalance.o ./Control/States/CLQRTest.o ./Control/States/CSensorCalibration.o  ./Control/ActionHandler/CADCCalibrationAction.o ./Control/ActionHandler/CControlAction.o ./Control/ActionHandler/CControlActionBase.o ./Control/ActionHandler/CLQRTestAction.o ./Control/ActionHandler/CSensorCalibrationAction.o  ./Control/C1DCompFilter.o ./Control/C1DLPF.o ./Control/C1DStateReduction.o ./Control/CCompFilter.o ./Control/CControlComp.o ./Control/CLQR.o ./Control/CMPUCalib.o ./Control/COffsetCorrection.o ./Control/CPT1.o ./Control/CPoly1.o ./Control/CStateEstimate.o ./Control/CTimerTask.o  ./Comm/CCommAction.o ./Comm/CCommComponent.o ./Comm/CCommFSM.o ./Comm/CReceiveTask.o ./Comm/CServer.o  ./C1DOffsetCorrection.o ./main.o   -lpthread
+./Control/States/CEdgeBalance.o: In function `CEdgeBalance::CEdgeBalance()':
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Debug/../Control/States/CEdgeBalance.cpp:9: undefined reference to `CEdgeBalanceAction::CEdgeBalanceAction()'
+./Control/States/CEdgeBalance.o: In function `CEdgeBalance::onDefault(CMessage&)':
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Debug/../Control/States/CEdgeBalance.cpp:23: undefined reference to `CEdgeBalanceAction::onEntryIdle()'
+./Control/States/CEdgeBalance.o: In function `CEdgeBalance::onIdle(CMessage&)':
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Debug/../Control/States/CEdgeBalance.cpp:33: undefined reference to `CEdgeBalanceAction::onExitIdle()'
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Debug/../Control/States/CEdgeBalance.cpp:39: undefined reference to `CEdgeBalanceAction::sampleIdle()'
+./Control/States/CEdgeBalance.o: In function `CEdgeBalance::onControl(CMessage&)':
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Debug/../Control/States/CEdgeBalance.cpp:49: undefined reference to `CEdgeBalanceAction::onExitControl()'
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Debug/../Control/States/CEdgeBalance.cpp:55: undefined reference to `CEdgeBalanceAction::sampleControl()'
+./Control/States/CEdgeBalance.o: In function `CEdgeBalance::onEntry()':
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Debug/../Control/States/CEdgeBalance.cpp:72: undefined reference to `CEdgeBalanceAction::onEntryEdgeBalance()'
+./Control/States/CEdgeBalance.o: In function `CEdgeBalance::onExit()':
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Debug/../Control/States/CEdgeBalance.cpp:80: undefined reference to `CEdgeBalanceAction::onExitEdgeBalance()'
+collect2: error: ld returned 1 exit status
+make: *** [BBB_3D] Error 1
+16:05:43 **** Incremental Build of configuration Debug for project BBB_3D ****
+make all 
+Building file: ../lib/AComponentBase.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"lib/AComponentBase.d" -MT"lib/AComponentBase.o" -o "lib/AComponentBase.o" "../lib/AComponentBase.cpp"
+Finished building: ../lib/AComponentBase.cpp
  
-18:53:52 **** Build of configuration Debug for project MatrixLib ****
-make all 
-make: Nothing to be done for `all'.
-18:54:10 **** Incremental Build of configuration Debug for project BBB_1D ****
-make all 
-make: Nothing to be done for `all'.
-18:57:10 **** Incremental Build of configuration Debug for project BBB_1D ****
-make all 
+Building file: ../lib/CProxy.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"lib/CProxy.d" -MT"lib/CProxy.o" -o "lib/CProxy.o" "../lib/CProxy.cpp"
+Finished building: ../lib/CProxy.cpp
+ 
+Building file: ../Hardware/CHardware.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Hardware/CHardware.d" -MT"Hardware/CHardware.o" -o "Hardware/CHardware.o" "../Hardware/CHardware.cpp"
+Finished building: ../Hardware/CHardware.cpp
+ 
+Building file: ../Hardware/CStateData.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Hardware/CStateData.d" -MT"Hardware/CStateData.o" -o "Hardware/CStateData.o" "../Hardware/CStateData.cpp"
+Finished building: ../Hardware/CStateData.cpp
+ 
+Building file: ../Hardware/CTorqueData.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Hardware/CTorqueData.d" -MT"Hardware/CTorqueData.o" -o "Hardware/CTorqueData.o" "../Hardware/CTorqueData.cpp"
+Finished building: ../Hardware/CTorqueData.cpp
+ 
+Building file: ../Control/States/CADCCalibration.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/States/CADCCalibration.d" -MT"Control/States/CADCCalibration.o" -o "Control/States/CADCCalibration.o" "../Control/States/CADCCalibration.cpp"
+Finished building: ../Control/States/CADCCalibration.cpp
+ 
+Building file: ../Control/States/CEdgeBalance.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/States/CEdgeBalance.d" -MT"Control/States/CEdgeBalance.o" -o "Control/States/CEdgeBalance.o" "../Control/States/CEdgeBalance.cpp"
+Finished building: ../Control/States/CEdgeBalance.cpp
+ 
+Building file: ../Control/States/CLQRTest.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/States/CLQRTest.d" -MT"Control/States/CLQRTest.o" -o "Control/States/CLQRTest.o" "../Control/States/CLQRTest.cpp"
+Finished building: ../Control/States/CLQRTest.cpp
+ 
+Building file: ../Control/States/CSensorCalibration.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/States/CSensorCalibration.d" -MT"Control/States/CSensorCalibration.o" -o "Control/States/CSensorCalibration.o" "../Control/States/CSensorCalibration.cpp"
+Finished building: ../Control/States/CSensorCalibration.cpp
+ 
+Building file: ../Control/ActionHandler/CADCCalibrationAction.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/ActionHandler/CADCCalibrationAction.d" -MT"Control/ActionHandler/CADCCalibrationAction.o" -o "Control/ActionHandler/CADCCalibrationAction.o" "../Control/ActionHandler/CADCCalibrationAction.cpp"
+Finished building: ../Control/ActionHandler/CADCCalibrationAction.cpp
+ 
+Building file: ../Control/ActionHandler/CControlAction.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/ActionHandler/CControlAction.d" -MT"Control/ActionHandler/CControlAction.o" -o "Control/ActionHandler/CControlAction.o" "../Control/ActionHandler/CControlAction.cpp"
+Finished building: ../Control/ActionHandler/CControlAction.cpp
+ 
+Building file: ../Control/ActionHandler/CControlActionBase.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/ActionHandler/CControlActionBase.d" -MT"Control/ActionHandler/CControlActionBase.o" -o "Control/ActionHandler/CControlActionBase.o" "../Control/ActionHandler/CControlActionBase.cpp"
+Finished building: ../Control/ActionHandler/CControlActionBase.cpp
+ 
+Building file: ../Control/ActionHandler/CLQRTestAction.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/ActionHandler/CLQRTestAction.d" -MT"Control/ActionHandler/CLQRTestAction.o" -o "Control/ActionHandler/CLQRTestAction.o" "../Control/ActionHandler/CLQRTestAction.cpp"
+Finished building: ../Control/ActionHandler/CLQRTestAction.cpp
+ 
+Building file: ../Control/ActionHandler/CSensorCalibrationAction.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/ActionHandler/CSensorCalibrationAction.d" -MT"Control/ActionHandler/CSensorCalibrationAction.o" -o "Control/ActionHandler/CSensorCalibrationAction.o" "../Control/ActionHandler/CSensorCalibrationAction.cpp"
+Finished building: ../Control/ActionHandler/CSensorCalibrationAction.cpp
+ 
+Building file: ../Control/C1DCompFilter.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/C1DCompFilter.d" -MT"Control/C1DCompFilter.o" -o "Control/C1DCompFilter.o" "../Control/C1DCompFilter.cpp"
+Finished building: ../Control/C1DCompFilter.cpp
+ 
+Building file: ../Control/C1DLPF.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/C1DLPF.d" -MT"Control/C1DLPF.o" -o "Control/C1DLPF.o" "../Control/C1DLPF.cpp"
+Finished building: ../Control/C1DLPF.cpp
+ 
+Building file: ../Control/C1DStateReduction.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/C1DStateReduction.d" -MT"Control/C1DStateReduction.o" -o "Control/C1DStateReduction.o" "../Control/C1DStateReduction.cpp"
+Finished building: ../Control/C1DStateReduction.cpp
+ 
+Building file: ../Control/CCompFilter.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/CCompFilter.d" -MT"Control/CCompFilter.o" -o "Control/CCompFilter.o" "../Control/CCompFilter.cpp"
+Finished building: ../Control/CCompFilter.cpp
+ 
 Building file: ../Control/CControlComp.cpp
 Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/CControlComp.d" -MT"Control/CControlComp.o" -o "Control/CControlComp.o" "../Control/CControlComp.cpp"
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/CControlComp.d" -MT"Control/CControlComp.o" -o "Control/CControlComp.o" "../Control/CControlComp.cpp"
 Finished building: ../Control/CControlComp.cpp
  
-Building file: ../Control/CControlTest.cpp
+Building file: ../Control/CLQR.cpp
 Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/CControlTest.d" -MT"Control/CControlTest.o" -o "Control/CControlTest.o" "../Control/CControlTest.cpp"
-Finished building: ../Control/CControlTest.cpp
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/CLQR.d" -MT"Control/CLQR.o" -o "Control/CLQR.o" "../Control/CLQR.cpp"
+Finished building: ../Control/CLQR.cpp
  
-Building file: ../Control/CControlTestAction.cpp
+Building file: ../Control/COffsetCorrection.cpp
 Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/CControlTestAction.d" -MT"Control/CControlTestAction.o" -o "Control/CControlTestAction.o" "../Control/CControlTestAction.cpp"
-Finished building: ../Control/CControlTestAction.cpp
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/COffsetCorrection.d" -MT"Control/COffsetCorrection.o" -o "Control/COffsetCorrection.o" "../Control/COffsetCorrection.cpp"
+Finished building: ../Control/COffsetCorrection.cpp
  
-Building file: ../Control/CLQB.cpp
+Building file: ../Control/CStateEstimate.cpp
 Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/CLQB.d" -MT"Control/CLQB.o" -o "Control/CLQB.o" "../Control/CLQB.cpp"
-../Control/CLQB.cpp: In member function ‘Float32 CLQB::calculateOutput(Float32, Float32, Float32)’:
-../Control/CLQB.cpp:32:8: error: no match for ‘operator=’ (operand types are ‘TRVector<2ul> {aka TMatrix<2ul, 1ul>}’ and ‘TMatrix<1ul, 1ul>’)
-   mY_B = mCd * mX_B;
-        ^
-../Control/CLQB.cpp:32:8: note: candidate is:
-In file included from ../Control/CLQB.h:10:0,
-                 from ../Control/CLQB.cpp:7:
-../Control/TMatrix.h:41:11: note: TMatrix<n_R, n_C>& TMatrix<n_R, n_C>::operator=(const TMatrix<n_R, n_C>&) [with long unsigned int n_R = 2ul; long unsigned int n_C = 1ul]
-  TMatrix& operator=(const TMatrix&) = default;
-           ^
-../Control/TMatrix.h:41:11: note:   no known conversion for argument 1 from ‘TMatrix<1ul, 1ul>’ to ‘const TMatrix<2ul, 1ul>&’
-../Control/CLQB.cpp:42:8: error: no match for ‘operator=’ (operand types are ‘TRVector<2ul> {aka TMatrix<2ul, 1ul>}’ and ‘TMatrix<1ul, 1ul>’)
-   mY_B = mCd * mX_B;
-        ^
-../Control/CLQB.cpp:42:8: note: candidate is:
-In file included from ../Control/CLQB.h:10:0,
-                 from ../Control/CLQB.cpp:7:
-../Control/TMatrix.h:41:11: note: TMatrix<n_R, n_C>& TMatrix<n_R, n_C>::operator=(const TMatrix<n_R, n_C>&) [with long unsigned int n_R = 2ul; long unsigned int n_C = 1ul]
-  TMatrix& operator=(const TMatrix&) = default;
-           ^
-../Control/TMatrix.h:41:11: note:   no known conversion for argument 1 from ‘TMatrix<1ul, 1ul>’ to ‘const TMatrix<2ul, 1ul>&’
-make: *** [Control/CLQB.o] Error 1
-18:57:11 **** Incremental Build of configuration Debug for project MatrixLib ****
-make all 
-make: Nothing to be done for `all'.
-18:57:27 **** Incremental Build of configuration Debug for project BBB_1D ****
-make all 
-Building file: ../Control/CControlComp.cpp
-Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/CControlComp.d" -MT"Control/CControlComp.o" -o "Control/CControlComp.o" "../Control/CControlComp.cpp"
-Finished building: ../Control/CControlComp.cpp
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/CStateEstimate.d" -MT"Control/CStateEstimate.o" -o "Control/CStateEstimate.o" "../Control/CStateEstimate.cpp"
+Finished building: ../Control/CStateEstimate.cpp
  
-Building file: ../Control/CControlTest.cpp
+Building file: ../Control/CTimerTask.cpp
 Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/CControlTest.d" -MT"Control/CControlTest.o" -o "Control/CControlTest.o" "../Control/CControlTest.cpp"
-Finished building: ../Control/CControlTest.cpp
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/CTimerTask.d" -MT"Control/CTimerTask.o" -o "Control/CTimerTask.o" "../Control/CTimerTask.cpp"
+Finished building: ../Control/CTimerTask.cpp
  
-Building file: ../Control/CControlTestAction.cpp
+Building file: ../Comm/CCommAction.cpp
 Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/CControlTestAction.d" -MT"Control/CControlTestAction.o" -o "Control/CControlTestAction.o" "../Control/CControlTestAction.cpp"
-Finished building: ../Control/CControlTestAction.cpp
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Comm/CCommAction.d" -MT"Comm/CCommAction.o" -o "Comm/CCommAction.o" "../Comm/CCommAction.cpp"
+Finished building: ../Comm/CCommAction.cpp
  
-Building file: ../Control/CLQB.cpp
+Building file: ../Comm/CCommComponent.cpp
 Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/CLQB.d" -MT"Control/CLQB.o" -o "Control/CLQB.o" "../Control/CLQB.cpp"
-Finished building: ../Control/CLQB.cpp
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Comm/CCommComponent.d" -MT"Comm/CCommComponent.o" -o "Comm/CCommComponent.o" "../Comm/CCommComponent.cpp"
+Finished building: ../Comm/CCommComponent.cpp
+ 
+Building file: ../Comm/CCommFSM.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Comm/CCommFSM.d" -MT"Comm/CCommFSM.o" -o "Comm/CCommFSM.o" "../Comm/CCommFSM.cpp"
+Finished building: ../Comm/CCommFSM.cpp
+ 
+Building file: ../Comm/CReceiveTask.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Comm/CReceiveTask.d" -MT"Comm/CReceiveTask.o" -o "Comm/CReceiveTask.o" "../Comm/CReceiveTask.cpp"
+Finished building: ../Comm/CReceiveTask.cpp
+ 
+Building file: ../C1DOffsetCorrection.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"C1DOffsetCorrection.d" -MT"C1DOffsetCorrection.o" -o "C1DOffsetCorrection.o" "../C1DOffsetCorrection.cpp"
+Finished building: ../C1DOffsetCorrection.cpp
  
 Building file: ../main.cpp
 Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
 Finished building: ../main.cpp
  
-Building target: BBB_1D
+Building target: BBB_3D
 Invoking: Cross G++ Linker
-arm-linux-gnueabihf-g++  -o "BBB_1D"  ./lib/AComponentBase.o ./lib/Assertion.o ./lib/CBinarySemaphore.o ./lib/CCountingSemaphore.o ./lib/CMessage.o ./lib/CMutex.o ./lib/CProxy.o ./lib/CThread.o  ./Hardware/CADC.o ./Hardware/CBBBHardware.o ./Hardware/CBrake.o ./Hardware/CMPU6050.o ./Hardware/CMotor.o  ./Control/CADCCalibration.o ./Control/CADCCalibrationAction.o ./Control/CCascadeControl.o ./Control/CComplementaryFilter.o ./Control/CControlAction.o ./Control/CControlActionBase.o ./Control/CControlComp.o ./Control/CControlTest.o ./Control/CControlTestAction.o ./Control/CDT1.o ./Control/CFilterSystem.o ./Control/CLQB.o ./Control/CLQRControl.o ./Control/CPT1.o ./Control/CSensorCalibration.o ./Control/CSensorCalibrationAction.o ./Control/CSensorEvaluation.o ./Control/CTimerTask.o  ./Comm/CCommAction.o ./Comm/CCommComponent.o ./Comm/CCommFSM.o ./Comm/CReceiveTask.o ./Comm/CServer.o  ./main.o   -lpthread
-Finished building target: BBB_1D
- 
-18:57:29 **** Incremental Build of configuration Debug for project MatrixLib ****
+arm-linux-gnueabihf-g++  -o "BBB_3D"  ./lib/AComponentBase.o ./lib/Assertion.o ./lib/CBinarySemaphore.o ./lib/CCountingSemaphore.o ./lib/CMessage.o ./lib/CMutex.o ./lib/CProxy.o ./lib/CThread.o  ./Hardware/CADC.o ./Hardware/CADCData.o ./Hardware/CGPIO.o ./Hardware/CHardware.o ./Hardware/CMPU9250.o ./Hardware/CMPUData.o ./Hardware/CMotor.o ./Hardware/CPWM.o ./Hardware/CSensorData.o ./Hardware/CSensorSystem.o ./Hardware/CStateData.o ./Hardware/CSwitch.o ./Hardware/CTorqueData.o  ./Control/States/AState.o ./Control/States/CADCCalibration.o ./Control/States/CEdgeBalance.o ./Control/States/CLQRTest.o ./Control/States/CSensorCalibration.o  ./Control/ActionHandler/CADCCalibrationAction.o ./Control/ActionHandler/CControlAction.o ./Control/ActionHandler/CControlActionBase.o ./Control/ActionHandler/CLQRTestAction.o ./Control/ActionHandler/CSensorCalibrationAction.o  ./Control/C1DCompFilter.o ./Control/C1DLPF.o ./Control/C1DStateReduction.o ./Control/CCompFilter.o ./Control/CControlComp.o ./Control/CLQR.o ./Control/CMPUCalib.o ./Control/COffsetCorrection.o ./Control/CPT1.o ./Control/CPoly1.o ./Control/CStateEstimate.o ./Control/CTimerTask.o  ./Comm/CCommAction.o ./Comm/CCommComponent.o ./Comm/CCommFSM.o ./Comm/CReceiveTask.o ./Comm/CServer.o  ./C1DOffsetCorrection.o ./main.o   -lpthread
+./Control/States/CEdgeBalance.o: In function `CEdgeBalance::CEdgeBalance()':
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Debug/../Control/States/CEdgeBalance.cpp:9: undefined reference to `CEdgeBalanceAction::CEdgeBalanceAction()'
+./Control/States/CEdgeBalance.o: In function `CEdgeBalance::onDefault(CMessage&)':
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Debug/../Control/States/CEdgeBalance.cpp:23: undefined reference to `CEdgeBalanceAction::onEntryIdle()'
+./Control/States/CEdgeBalance.o: In function `CEdgeBalance::onIdle(CMessage&)':
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Debug/../Control/States/CEdgeBalance.cpp:33: undefined reference to `CEdgeBalanceAction::onExitIdle()'
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Debug/../Control/States/CEdgeBalance.cpp:39: undefined reference to `CEdgeBalanceAction::sampleIdle()'
+./Control/States/CEdgeBalance.o: In function `CEdgeBalance::onControl(CMessage&)':
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Debug/../Control/States/CEdgeBalance.cpp:49: undefined reference to `CEdgeBalanceAction::onExitControl()'
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Debug/../Control/States/CEdgeBalance.cpp:55: undefined reference to `CEdgeBalanceAction::sampleControl()'
+./Control/States/CEdgeBalance.o: In function `CEdgeBalance::onEntry()':
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Debug/../Control/States/CEdgeBalance.cpp:72: undefined reference to `CEdgeBalanceAction::onEntryEdgeBalance()'
+./Control/States/CEdgeBalance.o: In function `CEdgeBalance::onExit()':
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Debug/../Control/States/CEdgeBalance.cpp:80: undefined reference to `CEdgeBalanceAction::onExitEdgeBalance()'
+collect2: error: ld returned 1 exit status
+make: *** [BBB_3D] Error 1
+16:49:36 **** Incremental Build of configuration Debug for project BBB_3D ****
 make all 
-make: Nothing to be done for `all'.
-18:57:33 **** Incremental Build of configuration Debug for project BBB_1D ****
-make all 
-make: Nothing to be done for `all'.
-08:44:11 **** Incremental Build of configuration Debug for project BBB_1D ****
-make all 
-make: Nothing to be done for `all'.
-08:44:19 **** Incremental Build of configuration Debug for project BBB_1D ****
-make all 
-make: Nothing to be done for `all'.
-08:47:36 **** Incremental Build of configuration Debug for project BBB_1D ****
-make all 
-make: Nothing to be done for `all'.
-09:09:25 **** Incremental Build of configuration Debug for project BBB_1D ****
-make all 
-make: Nothing to be done for `all'.
-09:10:56 **** Incremental Build of configuration Debug for project BBB_1D ****
-make all 
-make: Nothing to be done for `all'.
-09:11:46 **** Incremental Build of configuration Debug for project BBB_1D ****
-make all 
-make: Nothing to be done for `all'.
-09:13:44 **** Incremental Build of configuration Debug for project BBB_1D ****
-make all 
-make: Nothing to be done for `all'.
-09:15:07 **** Incremental Build of configuration Debug for project BBB_1D ****
-make all 
-make: Nothing to be done for `all'.
-09:52:53 **** Incremental Build of configuration Debug for project BBB_1D ****
-make all 
-Building file: ../Control/CLQB.cpp
+Building file: ../Control/States/CEdgeBalance.cpp
 Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/CLQB.d" -MT"Control/CLQB.o" -o "Control/CLQB.o" "../Control/CLQB.cpp"
-Finished building: ../Control/CLQB.cpp
- 
-Building target: BBB_1D
-Invoking: Cross G++ Linker
-arm-linux-gnueabihf-g++  -o "BBB_1D"  ./lib/AComponentBase.o ./lib/Assertion.o ./lib/CBinarySemaphore.o ./lib/CCountingSemaphore.o ./lib/CMessage.o ./lib/CMutex.o ./lib/CProxy.o ./lib/CThread.o  ./Hardware/CADC.o ./Hardware/CBBBHardware.o ./Hardware/CBrake.o ./Hardware/CMPU6050.o ./Hardware/CMotor.o  ./Control/CADCCalibration.o ./Control/CADCCalibrationAction.o ./Control/CCascadeControl.o ./Control/CComplementaryFilter.o ./Control/CControlAction.o ./Control/CControlActionBase.o ./Control/CControlComp.o ./Control/CControlTest.o ./Control/CControlTestAction.o ./Control/CDT1.o ./Control/CFilterSystem.o ./Control/CLQB.o ./Control/CLQRControl.o ./Control/CPT1.o ./Control/CSensorCalibration.o ./Control/CSensorCalibrationAction.o ./Control/CSensorEvaluation.o ./Control/CTimerTask.o  ./Comm/CCommAction.o ./Comm/CCommComponent.o ./Comm/CCommFSM.o ./Comm/CReceiveTask.o ./Comm/CServer.o  ./main.o   -lpthread
-Finished building target: BBB_1D
- 
-09:54:20 **** Incremental Build of configuration Debug for project BBB_1D ****
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/States/CEdgeBalance.d" -MT"Control/States/CEdgeBalance.o" -o "Control/States/CEdgeBalance.o" "../Control/States/CEdgeBalance.cpp"
+In file included from /home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler/CEdgeBalanceAction.h:16:0,
+                 from ../Control/States/CEdgeBalance.h:9,
+                 from ../Control/States/CEdgeBalance.cpp:7:
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h:12:64: error: ‘class std::basic_string<char>’ is not a valid type for a template non-type parameter
+ template<const UInt32 nrX, const UInt32 nrU, const std::string kFile>
+                                                                ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h:31:64: error: ‘class std::basic_string<char>’ is not a valid type for a template non-type parameter
+ template<const UInt32 nrX, const UInt32 nrU, const std::string kFile>
+                                                                ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h:32:16: error: ‘kFile’ was not declared in this scope
+ TLQR<nrX, nrU, kFile>::TLQR() : mK(kFile)
+                ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h:32:21: error: template argument 3 is invalid
+ TLQR<nrX, nrU, kFile>::TLQR() : mK(kFile)
+                     ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h:32:29: error: declaration of template ‘template<long unsigned int nrX, long unsigned int nrU, <declaration error> > int TLQR()’
+ TLQR<nrX, nrU, kFile>::TLQR() : mK(kFile)
+                             ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h:13:7: error: conflicts with previous declaration ‘template<long unsigned int nrX, long unsigned int nrU, <declaration error> > class TLQR’
+ class TLQR
+       ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h: In function ‘int TLQR()’:
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h:32:33: error: only constructors take member initializers
+ TLQR<nrX, nrU, kFile>::TLQR() : mK(kFile)
+                                 ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h:32:36: error: ‘kFile’ was not declared in this scope
+ TLQR<nrX, nrU, kFile>::TLQR() : mK(kFile)
+                                    ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h:35:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h: At global scope:
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h:36:64: error: ‘class std::basic_string<char>’ is not a valid type for a template non-type parameter
+ template<const UInt32 nrX, const UInt32 nrU, const std::string kFile>
+                                                                ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h:37:37: error: ‘kFile’ was not declared in this scope
+ const TRVector<nrU>& TLQR<nrX, nrU, kFile>::calcOutput(const TRVector<nrX>& input)
+                                     ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h:37:42: error: template argument 3 is invalid
+ const TRVector<nrU>& TLQR<nrX, nrU, kFile>::calcOutput(const TRVector<nrX>& input)
+                                          ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h: In function ‘TRVector<nrU>& calcOutput(TRVector<nrX>&)’:
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h:39:2: error: ‘mOutput’ was not declared in this scope
+  mOutput = mK * input;
+  ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h:39:12: error: ‘mK’ was not declared in this scope
+  mOutput = mK * input;
+            ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h: At global scope:
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h:43:64: error: ‘class std::basic_string<char>’ is not a valid type for a template non-type parameter
+ template<const UInt32 nrX, const UInt32 nrU, const std::string kFile>
+                                                                ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h:44:37: error: ‘kFile’ was not declared in this scope
+ const TRVector<nrU>& TLQR<nrX, nrU, kFile>::getValue()
+                                     ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h:44:42: error: template argument 3 is invalid
+ const TRVector<nrU>& TLQR<nrX, nrU, kFile>::getValue()
+                                          ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h: In function ‘TRVector<nrU>& getValue()’:
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h:46:9: error: ‘mOutput’ was not declared in this scope
+  return mOutput;
+         ^
+make: *** [Control/States/CEdgeBalance.o] Error 1
+16:49:47 **** Incremental Build of configuration Debug for project BBB_3D ****
 make all 
-Building file: ../Control/CLQB.cpp
+Building file: ../Control/States/CEdgeBalance.cpp
 Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/CLQB.d" -MT"Control/CLQB.o" -o "Control/CLQB.o" "../Control/CLQB.cpp"
-Finished building: ../Control/CLQB.cpp
- 
-Building target: BBB_1D
-Invoking: Cross G++ Linker
-arm-linux-gnueabihf-g++  -o "BBB_1D"  ./lib/AComponentBase.o ./lib/Assertion.o ./lib/CBinarySemaphore.o ./lib/CCountingSemaphore.o ./lib/CMessage.o ./lib/CMutex.o ./lib/CProxy.o ./lib/CThread.o  ./Hardware/CADC.o ./Hardware/CBBBHardware.o ./Hardware/CBrake.o ./Hardware/CMPU6050.o ./Hardware/CMotor.o  ./Control/CADCCalibration.o ./Control/CADCCalibrationAction.o ./Control/CCascadeControl.o ./Control/CComplementaryFilter.o ./Control/CControlAction.o ./Control/CControlActionBase.o ./Control/CControlComp.o ./Control/CControlTest.o ./Control/CControlTestAction.o ./Control/CDT1.o ./Control/CFilterSystem.o ./Control/CLQB.o ./Control/CLQRControl.o ./Control/CPT1.o ./Control/CSensorCalibration.o ./Control/CSensorCalibrationAction.o ./Control/CSensorEvaluation.o ./Control/CTimerTask.o  ./Comm/CCommAction.o ./Comm/CCommComponent.o ./Comm/CCommFSM.o ./Comm/CReceiveTask.o ./Comm/CServer.o  ./main.o   -lpthread
-Finished building target: BBB_1D
- 
-09:55:36 **** Incremental Build of configuration Debug for project BBB_1D ****
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/States/CEdgeBalance.d" -MT"Control/States/CEdgeBalance.o" -o "Control/States/CEdgeBalance.o" "../Control/States/CEdgeBalance.cpp"
+In file included from /home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler/CEdgeBalanceAction.h:16:0,
+                 from ../Control/States/CEdgeBalance.h:9,
+                 from ../Control/States/CEdgeBalance.cpp:7:
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h:12:64: error: ‘class std::basic_string<char>’ is not a valid type for a template non-type parameter
+ template<const UInt32 nrX, const UInt32 nrU, const std::string kFile>
+                                                                ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h:31:64: error: ‘class std::basic_string<char>’ is not a valid type for a template non-type parameter
+ template<const UInt32 nrX, const UInt32 nrU, const std::string kFile>
+                                                                ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h:32:16: error: ‘kFile’ was not declared in this scope
+ TLQR<nrX, nrU, kFile>::TLQR() : mK(kFile)
+                ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h:32:21: error: template argument 3 is invalid
+ TLQR<nrX, nrU, kFile>::TLQR() : mK(kFile)
+                     ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h:32:29: error: declaration of template ‘template<long unsigned int nrX, long unsigned int nrU, <declaration error> > int TLQR()’
+ TLQR<nrX, nrU, kFile>::TLQR() : mK(kFile)
+                             ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h:13:7: error: conflicts with previous declaration ‘template<long unsigned int nrX, long unsigned int nrU, <declaration error> > class TLQR’
+ class TLQR
+       ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h: In function ‘int TLQR()’:
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h:32:33: error: only constructors take member initializers
+ TLQR<nrX, nrU, kFile>::TLQR() : mK(kFile)
+                                 ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h:32:36: error: ‘kFile’ was not declared in this scope
+ TLQR<nrX, nrU, kFile>::TLQR() : mK(kFile)
+                                    ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h:35:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h: At global scope:
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h:36:64: error: ‘class std::basic_string<char>’ is not a valid type for a template non-type parameter
+ template<const UInt32 nrX, const UInt32 nrU, const std::string kFile>
+                                                                ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h:37:37: error: ‘kFile’ was not declared in this scope
+ const TRVector<nrU>& TLQR<nrX, nrU, kFile>::calcOutput(const TRVector<nrX>& input)
+                                     ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h:37:42: error: template argument 3 is invalid
+ const TRVector<nrU>& TLQR<nrX, nrU, kFile>::calcOutput(const TRVector<nrX>& input)
+                                          ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h: In function ‘TRVector<nrU>& calcOutput(TRVector<nrX>&)’:
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h:39:2: error: ‘mOutput’ was not declared in this scope
+  mOutput = mK * input;
+  ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h:39:12: error: ‘mK’ was not declared in this scope
+  mOutput = mK * input;
+            ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h: At global scope:
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h:43:64: error: ‘class std::basic_string<char>’ is not a valid type for a template non-type parameter
+ template<const UInt32 nrX, const UInt32 nrU, const std::string kFile>
+                                                                ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h:44:37: error: ‘kFile’ was not declared in this scope
+ const TRVector<nrU>& TLQR<nrX, nrU, kFile>::getValue()
+                                     ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h:44:42: error: template argument 3 is invalid
+ const TRVector<nrU>& TLQR<nrX, nrU, kFile>::getValue()
+                                          ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h: In function ‘TRVector<nrU>& getValue()’:
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h:46:9: error: ‘mOutput’ was not declared in this scope
+  return mOutput;
+         ^
+make: *** [Control/States/CEdgeBalance.o] Error 1
+16:49:58 **** Incremental Build of configuration Debug for project BBB_3D ****
 make all 
-Building file: ../Control/CLQB.cpp
+Building file: ../Control/States/CEdgeBalance.cpp
 Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/CLQB.d" -MT"Control/CLQB.o" -o "Control/CLQB.o" "../Control/CLQB.cpp"
-Finished building: ../Control/CLQB.cpp
- 
-Building target: BBB_1D
-Invoking: Cross G++ Linker
-arm-linux-gnueabihf-g++  -o "BBB_1D"  ./lib/AComponentBase.o ./lib/Assertion.o ./lib/CBinarySemaphore.o ./lib/CCountingSemaphore.o ./lib/CMessage.o ./lib/CMutex.o ./lib/CProxy.o ./lib/CThread.o  ./Hardware/CADC.o ./Hardware/CBBBHardware.o ./Hardware/CBrake.o ./Hardware/CMPU6050.o ./Hardware/CMotor.o  ./Control/CADCCalibration.o ./Control/CADCCalibrationAction.o ./Control/CCascadeControl.o ./Control/CComplementaryFilter.o ./Control/CControlAction.o ./Control/CControlActionBase.o ./Control/CControlComp.o ./Control/CControlTest.o ./Control/CControlTestAction.o ./Control/CDT1.o ./Control/CFilterSystem.o ./Control/CLQB.o ./Control/CLQRControl.o ./Control/CPT1.o ./Control/CSensorCalibration.o ./Control/CSensorCalibrationAction.o ./Control/CSensorEvaluation.o ./Control/CTimerTask.o  ./Comm/CCommAction.o ./Comm/CCommComponent.o ./Comm/CCommFSM.o ./Comm/CReceiveTask.o ./Comm/CServer.o  ./main.o   -lpthread
-Finished building target: BBB_1D
- 
-09:56:37 **** Incremental Build of configuration Debug for project BBB_1D ****
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/States/CEdgeBalance.d" -MT"Control/States/CEdgeBalance.o" -o "Control/States/CEdgeBalance.o" "../Control/States/CEdgeBalance.cpp"
+In file included from /home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler/CEdgeBalanceAction.h:16:0,
+                 from ../Control/States/CEdgeBalance.h:9,
+                 from ../Control/States/CEdgeBalance.cpp:7:
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h:12:64: error: ‘class std::basic_string<char>’ is not a valid type for a template non-type parameter
+ template<const UInt32 nrX, const UInt32 nrU, const std::string kFile>
+                                                                ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h:31:64: error: ‘class std::basic_string<char>’ is not a valid type for a template non-type parameter
+ template<const UInt32 nrX, const UInt32 nrU, const std::string kFile>
+                                                                ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h:32:16: error: ‘kFile’ was not declared in this scope
+ TLQR<nrX, nrU, kFile>::TLQR() : mK(kFile)
+                ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h:32:21: error: template argument 3 is invalid
+ TLQR<nrX, nrU, kFile>::TLQR() : mK(kFile)
+                     ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h:32:29: error: declaration of template ‘template<long unsigned int nrX, long unsigned int nrU, <declaration error> > int TLQR()’
+ TLQR<nrX, nrU, kFile>::TLQR() : mK(kFile)
+                             ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h:13:7: error: conflicts with previous declaration ‘template<long unsigned int nrX, long unsigned int nrU, <declaration error> > class TLQR’
+ class TLQR
+       ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h: In function ‘int TLQR()’:
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h:32:33: error: only constructors take member initializers
+ TLQR<nrX, nrU, kFile>::TLQR() : mK(kFile)
+                                 ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h:32:36: error: ‘kFile’ was not declared in this scope
+ TLQR<nrX, nrU, kFile>::TLQR() : mK(kFile)
+                                    ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h:35:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h: At global scope:
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h:36:64: error: ‘class std::basic_string<char>’ is not a valid type for a template non-type parameter
+ template<const UInt32 nrX, const UInt32 nrU, const std::string kFile>
+                                                                ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h:37:37: error: ‘kFile’ was not declared in this scope
+ const TRVector<nrU>& TLQR<nrX, nrU, kFile>::calcOutput(const TRVector<nrX>& input)
+                                     ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h:37:42: error: template argument 3 is invalid
+ const TRVector<nrU>& TLQR<nrX, nrU, kFile>::calcOutput(const TRVector<nrX>& input)
+                                          ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h: In function ‘TRVector<nrU>& calcOutput(TRVector<nrX>&)’:
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h:39:2: error: ‘mOutput’ was not declared in this scope
+  mOutput = mK * input;
+  ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h:39:12: error: ‘mK’ was not declared in this scope
+  mOutput = mK * input;
+            ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h: At global scope:
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h:43:64: error: ‘class std::basic_string<char>’ is not a valid type for a template non-type parameter
+ template<const UInt32 nrX, const UInt32 nrU, const std::string kFile>
+                                                                ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h:44:37: error: ‘kFile’ was not declared in this scope
+ const TRVector<nrU>& TLQR<nrX, nrU, kFile>::getValue()
+                                     ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h:44:42: error: template argument 3 is invalid
+ const TRVector<nrU>& TLQR<nrX, nrU, kFile>::getValue()
+                                          ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h: In function ‘TRVector<nrU>& getValue()’:
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h:46:9: error: ‘mOutput’ was not declared in this scope
+  return mOutput;
+         ^
+make: *** [Control/States/CEdgeBalance.o] Error 1
+16:51:08 **** Incremental Build of configuration Debug for project BBB_3D ****
 make all 
-Building file: ../Control/CLQB.cpp
+Building file: ../Control/States/CEdgeBalance.cpp
 Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/CLQB.d" -MT"Control/CLQB.o" -o "Control/CLQB.o" "../Control/CLQB.cpp"
-Finished building: ../Control/CLQB.cpp
- 
-Building target: BBB_1D
-Invoking: Cross G++ Linker
-arm-linux-gnueabihf-g++  -o "BBB_1D"  ./lib/AComponentBase.o ./lib/Assertion.o ./lib/CBinarySemaphore.o ./lib/CCountingSemaphore.o ./lib/CMessage.o ./lib/CMutex.o ./lib/CProxy.o ./lib/CThread.o  ./Hardware/CADC.o ./Hardware/CBBBHardware.o ./Hardware/CBrake.o ./Hardware/CMPU6050.o ./Hardware/CMotor.o  ./Control/CADCCalibration.o ./Control/CADCCalibrationAction.o ./Control/CCascadeControl.o ./Control/CComplementaryFilter.o ./Control/CControlAction.o ./Control/CControlActionBase.o ./Control/CControlComp.o ./Control/CControlTest.o ./Control/CControlTestAction.o ./Control/CDT1.o ./Control/CFilterSystem.o ./Control/CLQB.o ./Control/CLQRControl.o ./Control/CPT1.o ./Control/CSensorCalibration.o ./Control/CSensorCalibrationAction.o ./Control/CSensorEvaluation.o ./Control/CTimerTask.o  ./Comm/CCommAction.o ./Comm/CCommComponent.o ./Comm/CCommFSM.o ./Comm/CReceiveTask.o ./Comm/CServer.o  ./main.o   -lpthread
-Finished building target: BBB_1D
- 
-10:03:22 **** Incremental Build of configuration Debug for project BBB_1D ****
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/States/CEdgeBalance.d" -MT"Control/States/CEdgeBalance.o" -o "Control/States/CEdgeBalance.o" "../Control/States/CEdgeBalance.cpp"
+In file included from /home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler/CEdgeBalanceAction.h:16:0,
+                 from ../Control/States/CEdgeBalance.h:9,
+                 from ../Control/States/CEdgeBalance.cpp:7:
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h:12:64: error: ‘class std::basic_string<char>’ is not a valid type for a template non-type parameter
+ template<const UInt32 nrX, const UInt32 nrU, const std::string kFile>
+                                                                ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h:31:64: error: ‘class std::basic_string<char>’ is not a valid type for a template non-type parameter
+ template<const UInt32 nrX, const UInt32 nrU, const std::string kFile>
+                                                                ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h:32:16: error: ‘kFile’ was not declared in this scope
+ TLQR<nrX, nrU, kFile>::TLQR() : mK(kFile)
+                ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h:32:21: error: template argument 3 is invalid
+ TLQR<nrX, nrU, kFile>::TLQR() : mK(kFile)
+                     ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h:32:29: error: declaration of template ‘template<long unsigned int nrX, long unsigned int nrU, <declaration error> > int TLQR()’
+ TLQR<nrX, nrU, kFile>::TLQR() : mK(kFile)
+                             ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h:13:7: error: conflicts with previous declaration ‘template<long unsigned int nrX, long unsigned int nrU, <declaration error> > class TLQR’
+ class TLQR
+       ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h: In function ‘int TLQR()’:
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h:32:33: error: only constructors take member initializers
+ TLQR<nrX, nrU, kFile>::TLQR() : mK(kFile)
+                                 ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h:32:36: error: ‘kFile’ was not declared in this scope
+ TLQR<nrX, nrU, kFile>::TLQR() : mK(kFile)
+                                    ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h:35:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h: At global scope:
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h:36:64: error: ‘class std::basic_string<char>’ is not a valid type for a template non-type parameter
+ template<const UInt32 nrX, const UInt32 nrU, const std::string kFile>
+                                                                ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h:37:37: error: ‘kFile’ was not declared in this scope
+ const TRVector<nrU>& TLQR<nrX, nrU, kFile>::calcOutput(const TRVector<nrX>& input)
+                                     ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h:37:42: error: template argument 3 is invalid
+ const TRVector<nrU>& TLQR<nrX, nrU, kFile>::calcOutput(const TRVector<nrX>& input)
+                                          ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h: In function ‘TRVector<nrU>& calcOutput(TRVector<nrX>&)’:
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h:39:2: error: ‘mOutput’ was not declared in this scope
+  mOutput = mK * input;
+  ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h:39:12: error: ‘mK’ was not declared in this scope
+  mOutput = mK * input;
+            ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h: At global scope:
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h:43:64: error: ‘class std::basic_string<char>’ is not a valid type for a template non-type parameter
+ template<const UInt32 nrX, const UInt32 nrU, const std::string kFile>
+                                                                ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h:44:37: error: ‘kFile’ was not declared in this scope
+ const TRVector<nrU>& TLQR<nrX, nrU, kFile>::getValue()
+                                     ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h:44:42: error: template argument 3 is invalid
+ const TRVector<nrU>& TLQR<nrX, nrU, kFile>::getValue()
+                                          ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h: In function ‘TRVector<nrU>& getValue()’:
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h:46:9: error: ‘mOutput’ was not declared in this scope
+  return mOutput;
+         ^
+In file included from ../Control/States/CEdgeBalance.h:9:0,
+                 from ../Control/States/CEdgeBalance.cpp:7:
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler/CEdgeBalanceAction.h: At global scope:
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler/CEdgeBalanceAction.h:37:70: note: invalid template non-type parameter
+  using Controller  = TLQR<3U, 1U, "/root/control_config/1D_K_mat.csv">;
+                                                                      ^
+In file included from /home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib/TLinHierarchy.h:3:0,
+                 from /home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler/CEdgeBalanceAction.h:10,
+                 from ../Control/States/CEdgeBalance.h:9,
+                 from ../Control/States/CEdgeBalance.cpp:7:
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler/CEdgeBalanceAction.h:38:107: error: ‘Controller’ was not declared in this scope
+  using ActionTypeList = TYPELIST_5(CStateEstimate, C1DStateReduction, C1DOffsetCorrection, C1DCompFilter, Controller);
+                                                                                                           ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib/TTypeList.h:12:34: note: in definition of macro ‘TYPELIST_1’
+ #define TYPELIST_1(T1) TTypeList<T1, CNullType>
+                                  ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib/TTypeList.h:14:47: note: in expansion of macro ‘TYPELIST_2’
+ #define TYPELIST_3(T1, T2, T3)  TTypeList<T1, TYPELIST_2(T2, T3) >
+                                               ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib/TTypeList.h:15:51: note: in expansion of macro ‘TYPELIST_3’
+ #define TYPELIST_4(T1, T2, T3, T4)  TTypeList<T1, TYPELIST_3(T2, T3, T4) >
+                                                   ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib/TTypeList.h:16:54: note: in expansion of macro ‘TYPELIST_4’
+ #define TYPELIST_5(T1, T2, T3, T4, T5) TTypeList<T1, TYPELIST_4(T2, T3, T4, T5) >
+                                                      ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler/CEdgeBalanceAction.h:38:25: note: in expansion of macro ‘TYPELIST_5’
+  using ActionTypeList = TYPELIST_5(CStateEstimate, C1DStateReduction, C1DOffsetCorrection, C1DCompFilter, Controller);
+                         ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib/TTypeList.h:12:47: error: template argument 1 is invalid
+ #define TYPELIST_1(T1) TTypeList<T1, CNullType>
+                                               ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib/TTypeList.h:13:43: note: in expansion of macro ‘TYPELIST_1’
+ #define TYPELIST_2(T1, T2)  TTypeList<T1, TYPELIST_1(T2) >
+                                           ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib/TTypeList.h:14:47: note: in expansion of macro ‘TYPELIST_2’
+ #define TYPELIST_3(T1, T2, T3)  TTypeList<T1, TYPELIST_2(T2, T3) >
+                                               ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib/TTypeList.h:15:51: note: in expansion of macro ‘TYPELIST_3’
+ #define TYPELIST_4(T1, T2, T3, T4)  TTypeList<T1, TYPELIST_3(T2, T3, T4) >
+                                                   ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib/TTypeList.h:16:54: note: in expansion of macro ‘TYPELIST_4’
+ #define TYPELIST_5(T1, T2, T3, T4, T5) TTypeList<T1, TYPELIST_4(T2, T3, T4, T5) >
+                                                      ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler/CEdgeBalanceAction.h:38:25: note: in expansion of macro ‘TYPELIST_5’
+  using ActionTypeList = TYPELIST_5(CStateEstimate, C1DStateReduction, C1DOffsetCorrection, C1DCompFilter, Controller);
+                         ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib/TTypeList.h:13:58: error: template argument 2 is invalid
+ #define TYPELIST_2(T1, T2)  TTypeList<T1, TYPELIST_1(T2) >
+                                                          ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib/TTypeList.h:14:47: note: in expansion of macro ‘TYPELIST_2’
+ #define TYPELIST_3(T1, T2, T3)  TTypeList<T1, TYPELIST_2(T2, T3) >
+                                               ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib/TTypeList.h:15:51: note: in expansion of macro ‘TYPELIST_3’
+ #define TYPELIST_4(T1, T2, T3, T4)  TTypeList<T1, TYPELIST_3(T2, T3, T4) >
+                                                   ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib/TTypeList.h:16:54: note: in expansion of macro ‘TYPELIST_4’
+ #define TYPELIST_5(T1, T2, T3, T4, T5) TTypeList<T1, TYPELIST_4(T2, T3, T4, T5) >
+                                                      ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler/CEdgeBalanceAction.h:38:25: note: in expansion of macro ‘TYPELIST_5’
+  using ActionTypeList = TYPELIST_5(CStateEstimate, C1DStateReduction, C1DOffsetCorrection, C1DCompFilter, Controller);
+                         ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib/TTypeList.h:14:66: error: template argument 2 is invalid
+ #define TYPELIST_3(T1, T2, T3)  TTypeList<T1, TYPELIST_2(T2, T3) >
+                                                                  ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib/TTypeList.h:15:51: note: in expansion of macro ‘TYPELIST_3’
+ #define TYPELIST_4(T1, T2, T3, T4)  TTypeList<T1, TYPELIST_3(T2, T3, T4) >
+                                                   ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib/TTypeList.h:16:54: note: in expansion of macro ‘TYPELIST_4’
+ #define TYPELIST_5(T1, T2, T3, T4, T5) TTypeList<T1, TYPELIST_4(T2, T3, T4, T5) >
+                                                      ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler/CEdgeBalanceAction.h:38:25: note: in expansion of macro ‘TYPELIST_5’
+  using ActionTypeList = TYPELIST_5(CStateEstimate, C1DStateReduction, C1DOffsetCorrection, C1DCompFilter, Controller);
+                         ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib/TTypeList.h:15:74: error: template argument 2 is invalid
+ #define TYPELIST_4(T1, T2, T3, T4)  TTypeList<T1, TYPELIST_3(T2, T3, T4) >
+                                                                          ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib/TTypeList.h:16:54: note: in expansion of macro ‘TYPELIST_4’
+ #define TYPELIST_5(T1, T2, T3, T4, T5) TTypeList<T1, TYPELIST_4(T2, T3, T4, T5) >
+                                                      ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler/CEdgeBalanceAction.h:38:25: note: in expansion of macro ‘TYPELIST_5’
+  using ActionTypeList = TYPELIST_5(CStateEstimate, C1DStateReduction, C1DOffsetCorrection, C1DCompFilter, Controller);
+                         ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib/TTypeList.h:16:81: error: template argument 2 is invalid
+ #define TYPELIST_5(T1, T2, T3, T4, T5) TTypeList<T1, TYPELIST_4(T2, T3, T4, T5) >
+                                                                                 ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler/CEdgeBalanceAction.h:38:25: note: in expansion of macro ‘TYPELIST_5’
+  using ActionTypeList = TYPELIST_5(CStateEstimate, C1DStateReduction, C1DOffsetCorrection, C1DCompFilter, Controller);
+                         ^
+In file included from ../Control/States/CEdgeBalance.h:9:0,
+                 from ../Control/States/CEdgeBalance.cpp:7:
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler/CEdgeBalanceAction.h:39:16: error: ‘ActionTypeList’ was not declared in this scope
+  TLinHierarchy<ActionTypeList, TActionHolder> mSignalFlow;
+                ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler/CEdgeBalanceAction.h:39:32: error: ‘TActionHolder’ was not declared in this scope
+  TLinHierarchy<ActionTypeList, TActionHolder> mSignalFlow;
+                                ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler/CEdgeBalanceAction.h:39:45: error: template argument 1 is invalid
+  TLinHierarchy<ActionTypeList, TActionHolder> mSignalFlow;
+                                             ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler/CEdgeBalanceAction.h:39:45: error: template argument 2 is invalid
+make: *** [Control/States/CEdgeBalance.o] Error 1
+16:52:05 **** Incremental Build of configuration Debug for project BBB_3D ****
 make all 
-Building file: ../Control/CLQB.cpp
+Building file: ../Control/States/CEdgeBalance.cpp
 Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/CLQB.d" -MT"Control/CLQB.o" -o "Control/CLQB.o" "../Control/CLQB.cpp"
-Finished building: ../Control/CLQB.cpp
- 
-Building target: BBB_1D
-Invoking: Cross G++ Linker
-arm-linux-gnueabihf-g++  -o "BBB_1D"  ./lib/AComponentBase.o ./lib/Assertion.o ./lib/CBinarySemaphore.o ./lib/CCountingSemaphore.o ./lib/CMessage.o ./lib/CMutex.o ./lib/CProxy.o ./lib/CThread.o  ./Hardware/CADC.o ./Hardware/CBBBHardware.o ./Hardware/CBrake.o ./Hardware/CMPU6050.o ./Hardware/CMotor.o  ./Control/CADCCalibration.o ./Control/CADCCalibrationAction.o ./Control/CCascadeControl.o ./Control/CComplementaryFilter.o ./Control/CControlAction.o ./Control/CControlActionBase.o ./Control/CControlComp.o ./Control/CControlTest.o ./Control/CControlTestAction.o ./Control/CDT1.o ./Control/CFilterSystem.o ./Control/CLQB.o ./Control/CLQRControl.o ./Control/CPT1.o ./Control/CSensorCalibration.o ./Control/CSensorCalibrationAction.o ./Control/CSensorEvaluation.o ./Control/CTimerTask.o  ./Comm/CCommAction.o ./Comm/CCommComponent.o ./Comm/CCommFSM.o ./Comm/CReceiveTask.o ./Comm/CServer.o  ./main.o   -lpthread
-Finished building target: BBB_1D
- 
-10:04:31 **** Incremental Build of configuration Debug for project BBB_1D ****
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/States/CEdgeBalance.d" -MT"Control/States/CEdgeBalance.o" -o "Control/States/CEdgeBalance.o" "../Control/States/CEdgeBalance.cpp"
+In file included from /home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler/CEdgeBalanceAction.h:16:0,
+                 from ../Control/States/CEdgeBalance.h:9,
+                 from ../Control/States/CEdgeBalance.cpp:7:
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h:32:16: error: ‘kFile’ was not declared in this scope
+ TLQR<nrX, nrU, kFile>::TLQR() : mK("/root/control_config/1D_K_mat.csv")
+                ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h:32:21: error: wrong number of template arguments (3, should be 2)
+ TLQR<nrX, nrU, kFile>::TLQR() : mK("/root/control_config/1D_K_mat.csv")
+                     ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h:13:7: error: provided for ‘template<long unsigned int nrX, long unsigned int nrU> class TLQR’
+ class TLQR
+       ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h:32:29: error: declaration of template ‘template<long unsigned int nrX, long unsigned int nrU> int TLQR()’
+ TLQR<nrX, nrU, kFile>::TLQR() : mK("/root/control_config/1D_K_mat.csv")
+                             ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h:13:7: error: conflicts with previous declaration ‘template<long unsigned int nrX, long unsigned int nrU> class TLQR’
+ class TLQR
+       ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h: In function ‘int TLQR()’:
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h:32:33: error: only constructors take member initializers
+ TLQR<nrX, nrU, kFile>::TLQR() : mK("/root/control_config/1D_K_mat.csv")
+                                 ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h:35:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h: At global scope:
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h:37:37: error: ‘kFile’ was not declared in this scope
+ const TRVector<nrU>& TLQR<nrX, nrU, kFile>::calcOutput(const TRVector<nrX>& input)
+                                     ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h:37:42: error: wrong number of template arguments (3, should be 2)
+ const TRVector<nrU>& TLQR<nrX, nrU, kFile>::calcOutput(const TRVector<nrX>& input)
+                                          ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h:13:7: error: provided for ‘template<long unsigned int nrX, long unsigned int nrU> class TLQR’
+ class TLQR
+       ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h: In function ‘TRVector<nrU>& calcOutput(TRVector<nrX>&)’:
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h:39:2: error: ‘mOutput’ was not declared in this scope
+  mOutput = mK * input;
+  ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h:39:12: error: ‘mK’ was not declared in this scope
+  mOutput = mK * input;
+            ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h: At global scope:
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h:44:37: error: ‘kFile’ was not declared in this scope
+ const TRVector<nrU>& TLQR<nrX, nrU, kFile>::getValue()
+                                     ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h:44:42: error: wrong number of template arguments (3, should be 2)
+ const TRVector<nrU>& TLQR<nrX, nrU, kFile>::getValue()
+                                          ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h:13:7: error: provided for ‘template<long unsigned int nrX, long unsigned int nrU> class TLQR’
+ class TLQR
+       ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h: In function ‘TRVector<nrU>& getValue()’:
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TLQR.h:46:9: error: ‘mOutput’ was not declared in this scope
+  return mOutput;
+         ^
+In file included from ../Control/States/CEdgeBalance.h:9:0,
+                 from ../Control/States/CEdgeBalance.cpp:7:
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler/CEdgeBalanceAction.h: At global scope:
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler/CEdgeBalanceAction.h:39:32: error: ‘TActionHolder’ was not declared in this scope
+  TLinHierarchy<ActionTypeList, TActionHolder> mSignalFlow;
+                                ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler/CEdgeBalanceAction.h:39:45: error: template argument 2 is invalid
+  TLinHierarchy<ActionTypeList, TActionHolder> mSignalFlow;
+                                             ^
+make: *** [Control/States/CEdgeBalance.o] Error 1
+16:52:34 **** Incremental Build of configuration Debug for project BBB_3D ****
 make all 
-Building file: ../Control/CLQB.cpp
+Building file: ../Control/States/CEdgeBalance.cpp
 Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/CLQB.d" -MT"Control/CLQB.o" -o "Control/CLQB.o" "../Control/CLQB.cpp"
-Finished building: ../Control/CLQB.cpp
- 
-Building target: BBB_1D
-Invoking: Cross G++ Linker
-arm-linux-gnueabihf-g++  -o "BBB_1D"  ./lib/AComponentBase.o ./lib/Assertion.o ./lib/CBinarySemaphore.o ./lib/CCountingSemaphore.o ./lib/CMessage.o ./lib/CMutex.o ./lib/CProxy.o ./lib/CThread.o  ./Hardware/CADC.o ./Hardware/CBBBHardware.o ./Hardware/CBrake.o ./Hardware/CMPU6050.o ./Hardware/CMotor.o  ./Control/CADCCalibration.o ./Control/CADCCalibrationAction.o ./Control/CCascadeControl.o ./Control/CComplementaryFilter.o ./Control/CControlAction.o ./Control/CControlActionBase.o ./Control/CControlComp.o ./Control/CControlTest.o ./Control/CControlTestAction.o ./Control/CDT1.o ./Control/CFilterSystem.o ./Control/CLQB.o ./Control/CLQRControl.o ./Control/CPT1.o ./Control/CSensorCalibration.o ./Control/CSensorCalibrationAction.o ./Control/CSensorEvaluation.o ./Control/CTimerTask.o  ./Comm/CCommAction.o ./Comm/CCommComponent.o ./Comm/CCommFSM.o ./Comm/CReceiveTask.o ./Comm/CServer.o  ./main.o   -lpthread
-Finished building target: BBB_1D
- 
-10:26:13 **** Incremental Build of configuration Debug for project BBB_1D ****
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/States/CEdgeBalance.d" -MT"Control/States/CEdgeBalance.o" -o "Control/States/CEdgeBalance.o" "../Control/States/CEdgeBalance.cpp"
+In file included from ../Control/States/CEdgeBalance.h:9:0,
+                 from ../Control/States/CEdgeBalance.cpp:7:
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler/CEdgeBalanceAction.h:39:32: error: ‘TActionHolder’ was not declared in this scope
+  TLinHierarchy<ActionTypeList, TActionHolder> mSignalFlow;
+                                ^
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler/CEdgeBalanceAction.h:39:45: error: template argument 2 is invalid
+  TLinHierarchy<ActionTypeList, TActionHolder> mSignalFlow;
+                                             ^
+make: *** [Control/States/CEdgeBalance.o] Error 1
+16:52:45 **** Incremental Build of configuration Debug for project BBB_3D ****
 make all 
-Building file: ../Control/CSensorEvaluation.cpp
+Building file: ../Control/States/CEdgeBalance.cpp
 Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/CSensorEvaluation.d" -MT"Control/CSensorEvaluation.o" -o "Control/CSensorEvaluation.o" "../Control/CSensorEvaluation.cpp"
-Finished building: ../Control/CSensorEvaluation.cpp
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/States/CEdgeBalance.d" -MT"Control/States/CEdgeBalance.o" -o "Control/States/CEdgeBalance.o" "../Control/States/CEdgeBalance.cpp"
+Finished building: ../Control/States/CEdgeBalance.cpp
  
-Building target: BBB_1D
+Building file: ../Control/States/CLQRTest.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/States/CLQRTest.d" -MT"Control/States/CLQRTest.o" -o "Control/States/CLQRTest.o" "../Control/States/CLQRTest.cpp"
+Finished building: ../Control/States/CLQRTest.cpp
+ 
+Building file: ../Control/ActionHandler/CLQRTestAction.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/ActionHandler/CLQRTestAction.d" -MT"Control/ActionHandler/CLQRTestAction.o" -o "Control/ActionHandler/CLQRTestAction.o" "../Control/ActionHandler/CLQRTestAction.cpp"
+Finished building: ../Control/ActionHandler/CLQRTestAction.cpp
+ 
+Building file: ../Control/CControlComp.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/CControlComp.d" -MT"Control/CControlComp.o" -o "Control/CControlComp.o" "../Control/CControlComp.cpp"
+Finished building: ../Control/CControlComp.cpp
+ 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: BBB_3D
 Invoking: Cross G++ Linker
-arm-linux-gnueabihf-g++  -o "BBB_1D"  ./lib/AComponentBase.o ./lib/Assertion.o ./lib/CBinarySemaphore.o ./lib/CCountingSemaphore.o ./lib/CMessage.o ./lib/CMutex.o ./lib/CProxy.o ./lib/CThread.o  ./Hardware/CADC.o ./Hardware/CBBBHardware.o ./Hardware/CBrake.o ./Hardware/CMPU6050.o ./Hardware/CMotor.o  ./Control/CADCCalibration.o ./Control/CADCCalibrationAction.o ./Control/CCascadeControl.o ./Control/CComplementaryFilter.o ./Control/CControlAction.o ./Control/CControlActionBase.o ./Control/CControlComp.o ./Control/CControlTest.o ./Control/CControlTestAction.o ./Control/CDT1.o ./Control/CFilterSystem.o ./Control/CLQB.o ./Control/CLQRControl.o ./Control/CPT1.o ./Control/CSensorCalibration.o ./Control/CSensorCalibrationAction.o ./Control/CSensorEvaluation.o ./Control/CTimerTask.o  ./Comm/CCommAction.o ./Comm/CCommComponent.o ./Comm/CCommFSM.o ./Comm/CReceiveTask.o ./Comm/CServer.o  ./main.o   -lpthread
-Finished building target: BBB_1D
+arm-linux-gnueabihf-g++  -o "BBB_3D"  ./lib/AComponentBase.o ./lib/Assertion.o ./lib/CBinarySemaphore.o ./lib/CCountingSemaphore.o ./lib/CMessage.o ./lib/CMutex.o ./lib/CProxy.o ./lib/CThread.o  ./Hardware/CADC.o ./Hardware/CADCData.o ./Hardware/CGPIO.o ./Hardware/CHardware.o ./Hardware/CMPU9250.o ./Hardware/CMPUData.o ./Hardware/CMotor.o ./Hardware/CPWM.o ./Hardware/CSensorData.o ./Hardware/CSensorSystem.o ./Hardware/CStateData.o ./Hardware/CSwitch.o ./Hardware/CTorqueData.o  ./Control/States/AState.o ./Control/States/CADCCalibration.o ./Control/States/CEdgeBalance.o ./Control/States/CLQRTest.o ./Control/States/CSensorCalibration.o  ./Control/ActionHandler/CADCCalibrationAction.o ./Control/ActionHandler/CControlAction.o ./Control/ActionHandler/CControlActionBase.o ./Control/ActionHandler/CLQRTestAction.o ./Control/ActionHandler/CSensorCalibrationAction.o  ./Control/C1DCompFilter.o ./Control/C1DLPF.o ./Control/C1DStateReduction.o ./Control/CCompFilter.o ./Control/CControlComp.o ./Control/CLQR.o ./Control/CMPUCalib.o ./Control/COffsetCorrection.o ./Control/CPT1.o ./Control/CPoly1.o ./Control/CStateEstimate.o ./Control/CTimerTask.o  ./Comm/CCommAction.o ./Comm/CCommComponent.o ./Comm/CCommFSM.o ./Comm/CReceiveTask.o ./Comm/CServer.o  ./C1DOffsetCorrection.o ./main.o   -lpthread
+./Control/States/CEdgeBalance.o: In function `CEdgeBalance::CEdgeBalance()':
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Debug/../Control/States/CEdgeBalance.cpp:9: undefined reference to `CEdgeBalanceAction::CEdgeBalanceAction()'
+./Control/States/CEdgeBalance.o: In function `CEdgeBalance::onDefault(CMessage&)':
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Debug/../Control/States/CEdgeBalance.cpp:23: undefined reference to `CEdgeBalanceAction::onEntryIdle()'
+./Control/States/CEdgeBalance.o: In function `CEdgeBalance::onIdle(CMessage&)':
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Debug/../Control/States/CEdgeBalance.cpp:33: undefined reference to `CEdgeBalanceAction::onExitIdle()'
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Debug/../Control/States/CEdgeBalance.cpp:39: undefined reference to `CEdgeBalanceAction::sampleIdle()'
+./Control/States/CEdgeBalance.o: In function `CEdgeBalance::onControl(CMessage&)':
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Debug/../Control/States/CEdgeBalance.cpp:49: undefined reference to `CEdgeBalanceAction::onExitControl()'
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Debug/../Control/States/CEdgeBalance.cpp:55: undefined reference to `CEdgeBalanceAction::sampleControl()'
+./Control/States/CEdgeBalance.o: In function `CEdgeBalance::onEntry()':
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Debug/../Control/States/CEdgeBalance.cpp:72: undefined reference to `CEdgeBalanceAction::onEntryEdgeBalance()'
+./Control/States/CEdgeBalance.o: In function `CEdgeBalance::onExit()':
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Debug/../Control/States/CEdgeBalance.cpp:80: undefined reference to `CEdgeBalanceAction::onExitEdgeBalance()'
+./Control/States/CEdgeBalance.o: In function `TActionHolder<TLQR<3ul, 1ul>, CNullType>::~TActionHolder()':
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/TActionHolder.h:33: undefined reference to `TLQR<3ul, 1ul>::~TLQR()'
+collect2: error: ld returned 1 exit status
+make: *** [BBB_3D] Error 1
+16:53:04 **** Incremental Build of configuration Debug for project BBB_3D ****
+make all 
+Building file: ../Control/States/CEdgeBalance.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/States/CEdgeBalance.d" -MT"Control/States/CEdgeBalance.o" -o "Control/States/CEdgeBalance.o" "../Control/States/CEdgeBalance.cpp"
+Finished building: ../Control/States/CEdgeBalance.cpp
  
+Building target: BBB_3D
+Invoking: Cross G++ Linker
+arm-linux-gnueabihf-g++  -o "BBB_3D"  ./lib/AComponentBase.o ./lib/Assertion.o ./lib/CBinarySemaphore.o ./lib/CCountingSemaphore.o ./lib/CMessage.o ./lib/CMutex.o ./lib/CProxy.o ./lib/CThread.o  ./Hardware/CADC.o ./Hardware/CADCData.o ./Hardware/CGPIO.o ./Hardware/CHardware.o ./Hardware/CMPU9250.o ./Hardware/CMPUData.o ./Hardware/CMotor.o ./Hardware/CPWM.o ./Hardware/CSensorData.o ./Hardware/CSensorSystem.o ./Hardware/CStateData.o ./Hardware/CSwitch.o ./Hardware/CTorqueData.o  ./Control/States/AState.o ./Control/States/CADCCalibration.o ./Control/States/CEdgeBalance.o ./Control/States/CLQRTest.o ./Control/States/CSensorCalibration.o  ./Control/ActionHandler/CADCCalibrationAction.o ./Control/ActionHandler/CControlAction.o ./Control/ActionHandler/CControlActionBase.o ./Control/ActionHandler/CLQRTestAction.o ./Control/ActionHandler/CSensorCalibrationAction.o  ./Control/C1DCompFilter.o ./Control/C1DLPF.o ./Control/C1DStateReduction.o ./Control/CCompFilter.o ./Control/CControlComp.o ./Control/CLQR.o ./Control/CMPUCalib.o ./Control/COffsetCorrection.o ./Control/CPT1.o ./Control/CPoly1.o ./Control/CStateEstimate.o ./Control/CTimerTask.o  ./Comm/CCommAction.o ./Comm/CCommComponent.o ./Comm/CCommFSM.o ./Comm/CReceiveTask.o ./Comm/CServer.o  ./C1DOffsetCorrection.o ./main.o   -lpthread
+./Control/States/CEdgeBalance.o: In function `CEdgeBalance::CEdgeBalance()':
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Debug/../Control/States/CEdgeBalance.cpp:9: undefined reference to `CEdgeBalanceAction::CEdgeBalanceAction()'
+./Control/States/CEdgeBalance.o: In function `CEdgeBalance::onDefault(CMessage&)':
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Debug/../Control/States/CEdgeBalance.cpp:23: undefined reference to `CEdgeBalanceAction::onEntryIdle()'
+./Control/States/CEdgeBalance.o: In function `CEdgeBalance::onIdle(CMessage&)':
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Debug/../Control/States/CEdgeBalance.cpp:33: undefined reference to `CEdgeBalanceAction::onExitIdle()'
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Debug/../Control/States/CEdgeBalance.cpp:39: undefined reference to `CEdgeBalanceAction::sampleIdle()'
+./Control/States/CEdgeBalance.o: In function `CEdgeBalance::onControl(CMessage&)':
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Debug/../Control/States/CEdgeBalance.cpp:49: undefined reference to `CEdgeBalanceAction::onExitControl()'
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Debug/../Control/States/CEdgeBalance.cpp:55: undefined reference to `CEdgeBalanceAction::sampleControl()'
+./Control/States/CEdgeBalance.o: In function `CEdgeBalance::onEntry()':
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Debug/../Control/States/CEdgeBalance.cpp:72: undefined reference to `CEdgeBalanceAction::onEntryEdgeBalance()'
+./Control/States/CEdgeBalance.o: In function `CEdgeBalance::onExit()':
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Debug/../Control/States/CEdgeBalance.cpp:80: undefined reference to `CEdgeBalanceAction::onExitEdgeBalance()'
+collect2: error: ld returned 1 exit status
+make: *** [BBB_3D] Error 1

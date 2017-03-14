@@ -1,6 +1,29 @@
-11:06:11 **** Incremental Build of configuration Debug for project BBB_3D ****
+16:53:04 **** Incremental Build of configuration Debug for project BBB_3D ****
 make all 
-make: Nothing to be done for `all'.
+Building file: ../Control/States/CEdgeBalance.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/States/CEdgeBalance.d" -MT"Control/States/CEdgeBalance.o" -o "Control/States/CEdgeBalance.o" "../Control/States/CEdgeBalance.cpp"
+Finished building: ../Control/States/CEdgeBalance.cpp
+ 
+Building target: BBB_3D
+Invoking: Cross G++ Linker
+arm-linux-gnueabihf-g++  -o "BBB_3D"  ./lib/AComponentBase.o ./lib/Assertion.o ./lib/CBinarySemaphore.o ./lib/CCountingSemaphore.o ./lib/CMessage.o ./lib/CMutex.o ./lib/CProxy.o ./lib/CThread.o  ./Hardware/CADC.o ./Hardware/CADCData.o ./Hardware/CGPIO.o ./Hardware/CHardware.o ./Hardware/CMPU9250.o ./Hardware/CMPUData.o ./Hardware/CMotor.o ./Hardware/CPWM.o ./Hardware/CSensorData.o ./Hardware/CSensorSystem.o ./Hardware/CStateData.o ./Hardware/CSwitch.o ./Hardware/CTorqueData.o  ./Control/States/AState.o ./Control/States/CADCCalibration.o ./Control/States/CEdgeBalance.o ./Control/States/CLQRTest.o ./Control/States/CSensorCalibration.o  ./Control/ActionHandler/CADCCalibrationAction.o ./Control/ActionHandler/CControlAction.o ./Control/ActionHandler/CControlActionBase.o ./Control/ActionHandler/CLQRTestAction.o ./Control/ActionHandler/CSensorCalibrationAction.o  ./Control/C1DCompFilter.o ./Control/C1DLPF.o ./Control/C1DStateReduction.o ./Control/CCompFilter.o ./Control/CControlComp.o ./Control/CLQR.o ./Control/CMPUCalib.o ./Control/COffsetCorrection.o ./Control/CPT1.o ./Control/CPoly1.o ./Control/CStateEstimate.o ./Control/CTimerTask.o  ./Comm/CCommAction.o ./Comm/CCommComponent.o ./Comm/CCommFSM.o ./Comm/CReceiveTask.o ./Comm/CServer.o  ./C1DOffsetCorrection.o ./main.o   -lpthread
+./Control/States/CEdgeBalance.o: In function `CEdgeBalance::CEdgeBalance()':
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Debug/../Control/States/CEdgeBalance.cpp:9: undefined reference to `CEdgeBalanceAction::CEdgeBalanceAction()'
+./Control/States/CEdgeBalance.o: In function `CEdgeBalance::onDefault(CMessage&)':
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Debug/../Control/States/CEdgeBalance.cpp:23: undefined reference to `CEdgeBalanceAction::onEntryIdle()'
+./Control/States/CEdgeBalance.o: In function `CEdgeBalance::onIdle(CMessage&)':
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Debug/../Control/States/CEdgeBalance.cpp:33: undefined reference to `CEdgeBalanceAction::onExitIdle()'
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Debug/../Control/States/CEdgeBalance.cpp:39: undefined reference to `CEdgeBalanceAction::sampleIdle()'
+./Control/States/CEdgeBalance.o: In function `CEdgeBalance::onControl(CMessage&)':
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Debug/../Control/States/CEdgeBalance.cpp:49: undefined reference to `CEdgeBalanceAction::onExitControl()'
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Debug/../Control/States/CEdgeBalance.cpp:55: undefined reference to `CEdgeBalanceAction::sampleControl()'
+./Control/States/CEdgeBalance.o: In function `CEdgeBalance::onEntry()':
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Debug/../Control/States/CEdgeBalance.cpp:72: undefined reference to `CEdgeBalanceAction::onEntryEdgeBalance()'
+./Control/States/CEdgeBalance.o: In function `CEdgeBalance::onExit()':
+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Debug/../Control/States/CEdgeBalance.cpp:80: undefined reference to `CEdgeBalanceAction::onExitEdgeBalance()'
+collect2: error: ld returned 1 exit status
+make: *** [BBB_3D] Error 1
 
-11:06:11 Build Finished (took 70ms)
+16:53:06 Build Finished (took 1s.113ms)
 

@@ -1,0 +1,47 @@
+/**
+ * @file	COffsetCorrection.cpp
+ * @author	Michael Meindl
+ * @date	17.02.2017
+ * @brief	Method definitions for COffsetCorrection.
+ */
+#include "COffsetCorrection.h"
+
+COffsetCorrection::COffsetCorrection() : mActiveFlag(false)
+{
+
+}
+const COffsetCorrection::OutputType& COffsetCorrection::calcOutput(const COffsetCorrection::InputType& input)
+{
+	if(mActiveFlag == true)
+	{
+		mOutput.scalarAt(1,1) = input.scalarAt(1,1) - sG_0 + sG_k1_Offset;
+		mOutput.mGData.mG_k1 = input.mGData.mG_k1 - sG_0 + sG_k1_Offset;
+		mOutput.mGData.mG_k2 = input.mGData.mG_k2 - sG_0 + sG_k2_Offset;
+		mOutput.mGData.mG_k3 = input.mGData.mG_k3 - sG_0 + sG_k3_Offset;
+		mOutput.mUKData.mUK_k1 = input.mUKData.mUK_k1 + sUK_k1_Offset;
+		mOutput.mUKData.mUK_k2 = input.mUKData.mUK_k2 + sUK_k2_Offset;
+		mOutput.mUKData.mUK_k3 = input.mUKData.mUK_k3 + sUK_k3_Offset;
+		mOutput.mURData.mUR_k1 = input.mURData.mUR_k1 + sUR_k1_Offset;
+		mOutput.mURData.mUR_k2 = input.mURData.mUR_k2 + sUR_k2_Offset;
+		mOutput.mURData.mUR_k3 = input.mURData.mUR_k3 + sUR_k3_Offset;
+
+	}
+	else
+	{
+		mOutput = input;
+	}
+
+	return mOutput;
+}
+void COffsetCorrection::activate()
+{
+	mActiveFlag = true;
+}
+void COffsetCorrection::deactive()
+{
+	mActiveFlag = false;
+}
+const CStateData& COffsetCorrection::getValue()
+{
+	return mOutput;
+}

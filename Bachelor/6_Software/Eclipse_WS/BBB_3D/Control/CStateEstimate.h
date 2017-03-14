@@ -10,15 +10,16 @@
 #include "CStateData.h"
 #include "CSensorData.h"
 #include "CMPUCalib.h"
+#include "TMatrix.h"
 
 class CStateEstimate
 {
 public:
 	using InputType  = CSensorData;
-	using OutputType = CStateData;
+	using OutputType = TRVector<9U>;
 public:
-	const CStateData& calcOutput(const CSensorData& input);
-	const CStateData& getValue();
+	const OutputType& calcOutput(const CSensorData& input);
+	const OutputType& getValue();
 public:
 	CStateEstimate();
 	CStateEstimate(const CStateEstimate&) = delete;
@@ -29,7 +30,7 @@ private:
 	void calculateUK(const CSensorData& input);
 	void calculateUR(const CSensorData& input);
 private:
-	CStateData mOutput;
+	TRVector<9U> mOutput;
 
 	CMPUCalib mACalibArr[6];
 	CPoly1 mA_X_PolyArr[6];

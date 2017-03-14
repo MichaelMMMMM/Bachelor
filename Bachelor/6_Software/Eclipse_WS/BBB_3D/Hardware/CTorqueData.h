@@ -7,6 +7,7 @@
 #ifndef CTORQUEDATA_H
 #define CTORQUEDATA_H
 #include "Global.h"
+#include "TMatrix.h"
 
 class CTorqueData
 {
@@ -14,6 +15,7 @@ public:
 	void display();
 public:
 	CTorqueData();
+	CTorqueData(const TRVector<3U> u);
 	CTorqueData(const CTorqueData&) = default;
 	CTorqueData& operator=(const CTorqueData&) = default;
 	~CTorqueData() = default;

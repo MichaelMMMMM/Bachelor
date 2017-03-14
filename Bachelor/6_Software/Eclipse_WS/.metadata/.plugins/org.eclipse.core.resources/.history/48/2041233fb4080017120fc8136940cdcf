@@ -1,0 +1,35 @@
+/**
+ * @file	CEdgeBalanceAction.h
+ * @author	Michael Meindl
+ * @date	14.3.2017
+ * @brief	Action Handler for balancing on the cube-edge.
+ */
+#ifndef CEDGEBALANCEACTION_H
+#define CEDGEBALANCEACTION_H
+#include "CControlActionBase.h"
+
+class CEdgeBalanceAction : public CControlActionBase
+{
+public:
+	void onEntryEdgeBalance();
+	void onExitEdgeBalance();
+	void onEntryIdle();
+	void onExitIdle();
+	void onEntryControl();
+	void onExitControl();
+
+	bool inControlArea();
+	void sampleIdle();
+	void sampleControl();
+public:
+	CEdgeBalanceAction();
+	CEdgeBalanceAction(const CEdgeBalanceAction&) = delete;
+	CEdgeBalanceAction& operator=(const CEdgeBalanceAction&) = delete;
+	~CEdgeBalanceAction() = default;
+private:
+	static constexpr Float32 sMaxGValue;
+	Float32 mTime;
+
+};
+
+#endif

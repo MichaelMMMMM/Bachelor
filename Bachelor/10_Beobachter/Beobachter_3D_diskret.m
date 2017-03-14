@@ -41,8 +41,9 @@ A = [zeros(3,3), g_LA, zeros(3,3);
      zeros(3,3), C_psi*I_R_inv, -C_psi*I_R_inv];
 B = [zeros(3,3); -I_K_inv; I_R_inv];
 
-C = [zeros(3,3),eye(3), eye(3)];
-D = zeros(3,3);
+C = [zeros(3,3),eye(3), zeros(3,3);
+     zeros(3,6), eye(3)];
+D = zeros(6,3);
 
 %Create the state-space model
 mySS = ss(A, B, C, D);
@@ -53,7 +54,7 @@ T_red = [eye(7), zeros(7,2)];
 
 %Design the discrete controller using LQR
 g_max   = 1;
-u_K_max = degtorad(2);
+u_K_max = degtorad(180);
 u_R_max = degtorad(4000/60*300);
 T_max   = 0.13;
 x_max   = [g_max; g_max; g_max; u_K_max; u_K_max; u_K_max; u_R_max; u_R_max; u_R_max];
@@ -67,17 +68,6 @@ Kd      = lqrd(minSYS.A, minSYS.B, Q, R, 0.02);
 Ad_C    = Ad-Bd*Kd;
 max_eig_cl = min(real(eig(Ad_C)));
 
-%Calculate the continous observer
-ew_cont = real(eig(minSYS.A-minSYS.B*K));
-ew_cont_max = min(ew_cont);
-ew_beo  = (3*ew_cont_max)-[0;1;2;3;4;5;6];
-v_beo   = zeros(7,7);
-p_beo   = [1, -2, 3, 4, 5, 6, 17; 0.5, 1.5, -0.5, 2.5, -1.5, 3.5, -2.5; 0.1, 0.3, -0.2, 0.7, -0.4, -0.8, -0.9];
-
-for i = 1:7
-    v_beo(:,i) = (minSYS.A'-ew_beo(i)*eye(7))\minSYS.C'*p_beo(:,i); 
-end
-L = (p_beo/v_beo)';
 
 %Calculate the discrete observer
 ew_disc = abs(eig(Ad_C));

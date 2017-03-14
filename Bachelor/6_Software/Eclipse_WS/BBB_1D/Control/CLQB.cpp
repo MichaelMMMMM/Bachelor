@@ -48,9 +48,7 @@ Float32 CLQB::calculateOutput(Float32 phi, Float32 phi__d, Float32 psi__d)
 		x.scalarAt(2,1) = phi__d;
 		x.scalarAt(3,1) = psi__d;
 		mU   = mKd * x;
-		//mU = mKd * mX_B;
-		std::cout << "X_B:" << std::endl;
-		mX_B.display();
+	    //mU = mKd * mX_B;
 
 		Float32 tm = -1.0F * mU.scalarAt(1,1);
 		tm = tm > sMaxTorque  ? sMaxTorque  : tm;

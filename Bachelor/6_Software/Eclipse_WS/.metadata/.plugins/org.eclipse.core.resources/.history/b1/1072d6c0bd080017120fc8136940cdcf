@@ -1,0 +1,19 @@
+/**
+ * @file	C1DOffsetCorrection.cpp
+ * @author	Michael Meindl
+ * @date	14.03.2017
+ * @brief	Method definitions for C1DOffsetCorrection.
+ */
+#include "C1DOffsetCorrection.h"
+
+C1DOffsetCorrection::C1DOffsetCorrection() : mActiveFlag(false)
+{
+	mOffset.scalarAt(1,1) = sX1Offset;
+	mOffset.scalarAt(2,1) = sX2Offset;
+	mOffset.scalarAt(3,1) = sX3Offset;
+}
+const C1DOffsetCorrection::OutputType& C1DOffsetCorrection::calcOutput(const C1DOffsetCorrection::InputType& input)
+{
+	mOutput = mActiveFlag ? input + mOffset : input;
+	return mOutput;
+}

@@ -1,0 +1,36 @@
+/**
+ * @file	CEdgeBalance.h
+ * @author	Michael Meindl
+ * @date	14.03.2017
+ * @brief	State to handle balancing on an edge.
+ */
+#ifndef CEDGEBALANCE_H
+#define CEDGEBALANCE_H
+#include "CEdgeBalanceAction.h"
+#include "AState.h"
+
+class CEdgeBalance : public AState
+{
+public:
+	bool dispatch(CMessage& msg) override;
+	bool tryentry(CMessage& msg, AState*& statePtr) override;
+	void onEntry() override;
+	void onExit() override;
+
+	bool onDefault(CMessage& msg);
+	bool onIdle(CMessage& msg);
+	bool onControl(CMessage& msg);
+
+	using State = bool (*)(CMessage&);
+public:
+	CEdgeBalance();
+	CEdgeBalance(const CEdgeBalance&) = delete;
+	CEdgeBalance& operator=(const CEdgeBalance&) = delete;
+	~CEdgeBalance() = default;
+private:
+	CEdgeBalanceAction mAction;
+
+	static constexpr State sDefault = static_cast<StatePtr>(&CEdgeBalance::onDefault);
+};
+
+#endif

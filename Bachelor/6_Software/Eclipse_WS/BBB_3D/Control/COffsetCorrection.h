@@ -8,20 +8,18 @@
 #define COFFSETCORRECTION_H
 #include "CStateData.h"
 #include "CPT1.h"
+#include "TMatrix.h"
 
 class COffsetCorrection
 {
 public:
-	using InputType  = CStateData;
-	using OutputType = CStateData;
+	using InputType  = TRVector<9U>;
+	using OutputType = TRVector<9U>;
 public:
-	void reset();
 	void activate();
 	void deactive();
-	void enableHighpass();
-	void disableHighpass();
-	const CStateData& calcOutput(const CStateData& input);
-	const CStateData& getValue();
+	const OutputType& calcOutput(const InputType& input);
+	const OutputType& getValue();
 public:
 	COffsetCorrection();
 	COffsetCorrection(const COffsetCorrection&) = delete;
@@ -29,20 +27,18 @@ public:
 	~COffsetCorrection() = default;
 private:
 	bool mActiveFlag;
-	CStateData mOutput;
-	CPT1	   mG1PT1;
-	CPT1	   mG2PT1;
-	CPT1	   mG3PT1;
-	bool 	   mHPFlag;
+	OutputType mOutput;
 
-	static constexpr Float32 sHP_GF	      = 10.0F;
 	static constexpr Float32 sG_0         = -5.6638F;
 	static constexpr Float32 sG_k1_Offset  = 0.017F;
 	static constexpr Float32 sG_k2_Offset  = 0.139F;
 	static constexpr Float32 sG_k3_Offset  = 0.449F;
-	static constexpr Float32 sUK_k1_Offset = 0.001638F;
-	static constexpr Float32 sUK_k2_Offset = 0.000877F;
-	static constexpr Float32 sUK_k3_Offset = 0.001154F;
+	static constexpr Float32 sUK_k1_Offset = 0.0020673F;
+	static constexpr Float32 sUK_k2_Offset = 0.0010100F;
+	static constexpr Float32 sUK_k3_Offset = 0.0018871F;
+	static constexpr Float32 sUR_k1_Offset = 0.0F;
+	static constexpr Float32 sUR_k2_Offset = 0.0F;
+	static constexpr Float32 sUR_k3_Offset = -0.605355F;
 };
 
 #endif

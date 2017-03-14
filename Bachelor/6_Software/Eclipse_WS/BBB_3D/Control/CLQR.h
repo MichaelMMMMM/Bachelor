@@ -8,22 +8,23 @@
 #define CLQR_H
 #include "CStateData.h"
 #include "CTorqueData.h"
+#include "TMatrix.h"
 
 class CLQR
 {
 public:
-	using InputType = CStateData;
-	using OutputType = CTorqueData;
+	using InputType  = TRVector<9U>;
+	using OutputType = TRVector<3U>;
 public:
-	const CTorqueData& calcOutput(const CStateData& input);
-	const CTorqueData& getValue();
+	const OutputType& calcOutput(const InputType& input);
+	const OutputType& getValue();
 public:
 	CLQR() = default;
 	CLQR(const CLQR&) = delete;
 	CLQR& operator=(const CLQR&) = delete;
 	~CLQR() = default;
 private:
-	CTorqueData mOutput;
+	OutputType mOutput;
 
 	static constexpr Float32 sF_TM1[] = { 0.061636198237490, 1.268673454163169F, -1.330309652400662F,
 										 -1.038461672469759F, 0.142786616339576F, -0.089449973363467F,

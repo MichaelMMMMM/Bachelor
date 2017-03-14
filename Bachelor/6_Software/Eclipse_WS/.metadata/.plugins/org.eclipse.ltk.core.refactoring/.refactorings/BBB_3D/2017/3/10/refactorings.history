@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;BBB_3D/Control/TLQB.h&apos; to &apos;TLQG.h&apos;" description="Rename resource &apos;TLQB.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Control/TLQB.h" name="TLQG.h" stamp="1489157860042" updateReferences="true"/>
+</session>

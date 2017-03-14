@@ -34,11 +34,11 @@ CStateEstimate::CStateEstimate() :
 
 
 }
-const CStateData& CStateEstimate::getValue()
+const CStateEstimate::OutputType& CStateEstimate::getValue()
 {
 	return mOutput;
 }
-const CStateData& CStateEstimate::calcOutput(const CSensorData& input)
+const CStateEstimate::OutputType& CStateEstimate::calcOutput(const CSensorData& input)
 {
 	this->calculateG(input);
 	this->calculateUK(input);
@@ -76,69 +76,30 @@ void CStateEstimate::calculateG(const CSensorData& input)
 	tmp_data.mA_z = input.mSensor2Data.mA_x;
 	mACalibArr[5].calibrate(tmp_data);
 
-//	mOutput.mGData.mG_k1 = ( mACalibArr[0].getK1Acceleration() + mACalibArr[1].getK1Acceleration() +
-//							 mACalibArr[4].getK1Acceleration() + mACalibArr[5].getK1Acceleration() ) / 4.0F;
-//	mOutput.mGData.mG_k2 = ( mACalibArr[0].getK2Acceleration() + mACalibArr[1].getK2Acceleration() +
-//							 mACalibArr[2].getK2Acceleration() + mACalibArr[3].getK2Acceleration() ) / 4.0F;
-//	mOutput.mGData.mG_k3 = ( mACalibArr[2)])
-	mOutput.mGData.mG_k1 = ( sB1[0]*mACalibArr[0].getK1Acceleration() + sB1[1]*mACalibArr[1].getK1Acceleration() +
+
+	mOutput.scalarAt(1,1) = ( sB1[0]*mACalibArr[0].getK1Acceleration() + sB1[1]*mACalibArr[1].getK1Acceleration() +
 							 sB1[2]*mACalibArr[4].getK1Acceleration() + sB1[3]*mACalibArr[5].getK1Acceleration() ) / B1Sum;
-	mOutput.mGData.mG_k2 = ( sB2[0]*mACalibArr[0].getK2Acceleration() + sB2[1]*mACalibArr[1].getK2Acceleration() +
+	mOutput.scalarAt(2,1) = ( sB2[0]*mACalibArr[0].getK2Acceleration() + sB2[1]*mACalibArr[1].getK2Acceleration() +
 							 sB2[2]*mACalibArr[2].getK2Acceleration() + sB2[3]*mACalibArr[3].getK2Acceleration() ) / B2Sum;
-	mOutput.mGData.mG_k3 = ( sB3[0]*mACalibArr[2].getK3Acceleration() + sB3[1]*mACalibArr[3].getK3Acceleration() +
+	mOutput.scalarAt(3,1) = ( sB3[0]*mACalibArr[2].getK3Acceleration() + sB3[1]*mACalibArr[3].getK3Acceleration() +
 							 sB3[2]*mACalibArr[4].getK3Acceleration() + sB3[3]*mACalibArr[5].getK3Acceleration() ) / B3Sum;
-//	mOutput.mGData.mG_k1 = ( sB1[0]*mA_Y_PolyArr[0].calcOutput(static_cast<Float32>(input.mSensor1Data.mA_y)) +
-//						     sB1[1]*mA_Y_PolyArr[1].calcOutput(static_cast<Float32>(input.mSensor2Data.mA_y)) +
-//						     sB1[2]*mA_X_PolyArr[4].calcOutput(static_cast<Float32>(input.mSensor5Data.mA_x)) +
-//						     sB1[3]*mA_X_PolyArr[5].calcOutput(static_cast<Float32>(input.mSensor6Data.mA_x)) ) / B1Sum;
-//
-//	constexpr Float32 B2Sum = sB2[0] + sB2[1] + sB2[2] + sB2[3];
-//	mOutput.mGData.mG_k2 = ( sB2[0]*mA_X_PolyArr[0].calcOutput(static_cast<Float32>(input.mSensor1Data.mA_x)) +
-//							 sB2[1]*mA_X_PolyArr[1].calcOutput(static_cast<Float32>(input.mSensor2Data.mA_x)) +
-//							 sB2[2]*mA_Y_PolyArr[2].calcOutput(static_cast<Float32>(input.mSensor3Data.mA_y)) +
-//							 sB2[3]*mA_Y_PolyArr[3].calcOutput(static_cast<Float32>(input.mSensor4Data.mA_y)) ) / B2Sum;
-//
-//	constexpr Float32 B3Sum = sB3[0] + sB3[1] + sB3[2] + sB3[3];
-//	mOutput.mGData.mG_k3 = ( sB3[0]*mA_X_PolyArr[2].calcOutput(static_cast<Float32>(input.mSensor3Data.mA_x)) +
-//							 sB3[1]*mA_X_PolyArr[3].calcOutput(static_cast<Float32>(input.mSensor4Data.mA_x)) +
-//							 sB3[2]*mA_Y_PolyArr[4].calcOutput(static_cast<Float32>(input.mSensor5Data.mA_y)) +
-//							 sB3[3]*mA_Y_PolyArr[5].calcOutput(static_cast<Float32>(input.mSensor6Data.mA_y)) ) / B3Sum;
 }
 void CStateEstimate::calculateUK(const CSensorData& input)
 {
-	mOutput.mUKData.mUK_k1 = ( mACalibArr[0].getK1AngularVelocity() + mACalibArr[1].getK1AngularVelocity() +
+	mOutput.scalarAt(4,1) = ( mACalibArr[0].getK1AngularVelocity() + mACalibArr[1].getK1AngularVelocity() +
 							   mACalibArr[2].getK1AngularVelocity() + mACalibArr[3].getK1AngularVelocity() +
 							   mACalibArr[4].getK1AngularVelocity() + mACalibArr[5].getK1AngularVelocity() ) / 6.0F;
-	mOutput.mUKData.mUK_k2 = ( mACalibArr[0].getK2AngularVelocity() + mACalibArr[1].getK2AngularVelocity() +
+	mOutput.scalarAt(5,1) = ( mACalibArr[0].getK2AngularVelocity() + mACalibArr[1].getK2AngularVelocity() +
 							   mACalibArr[2].getK2AngularVelocity() + mACalibArr[3].getK2AngularVelocity() +
 							   mACalibArr[4].getK2AngularVelocity() + mACalibArr[5].getK2AngularVelocity() ) / 6.0F;
-	mOutput.mUKData.mUK_k3 = ( mACalibArr[0].getK3AngularVelocity() + mACalibArr[1].getK3AngularVelocity() +
+	mOutput.scalarAt(6,1) = ( mACalibArr[0].getK3AngularVelocity() + mACalibArr[1].getK3AngularVelocity() +
 							   mACalibArr[2].getK3AngularVelocity() + mACalibArr[3].getK3AngularVelocity() +
 							   mACalibArr[4].getK3AngularVelocity() + mACalibArr[5].getK3AngularVelocity() ) / 6.0F;
-//	mOutput.mUKData.mUK_k1 = (mW_Y_PolyArr[0].calcOutput(static_cast<Float32>(input.mSensor1Data.mW_y)) +
-//						      mW_Y_PolyArr[1].calcOutput(static_cast<Float32>(input.mSensor2Data.mW_y)) +
-//							  mW_Z_PolyArr[2].calcOutput(static_cast<Float32>(input.mSensor3Data.mW_z)) +
-//							  mW_Z_PolyArr[3].calcOutput(static_cast<Float32>(input.mSensor4Data.mW_z)) +
-//							  mW_X_PolyArr[4].calcOutput(static_cast<Float32>(input.mSensor5Data.mW_x)) +
-//							  mW_X_PolyArr[5].calcOutput(static_cast<Float32>(input.mSensor6Data.mW_x))) / (-6.0F);
-//
-//	mOutput.mUKData.mUK_k2 = (mW_X_PolyArr[0].calcOutput(static_cast<Float32>(input.mSensor1Data.mW_x)) +
-//							  mW_X_PolyArr[1].calcOutput(static_cast<Float32>(input.mSensor2Data.mW_x)) +
-//							  mW_Y_PolyArr[2].calcOutput(static_cast<Float32>(input.mSensor3Data.mW_y)) +
-//							  mW_Y_PolyArr[3].calcOutput(static_cast<Float32>(input.mSensor4Data.mW_y)) +
-//							  mW_Z_PolyArr[4].calcOutput(static_cast<Float32>(input.mSensor5Data.mW_z)) +
-//							  mW_Z_PolyArr[5].calcOutput(static_cast<Float32>(input.mSensor6Data.mW_z))) / (-6.0F);
-//
-//	mOutput.mUKData.mUK_k3 = (mW_Z_PolyArr[0].calcOutput(static_cast<Float32>(input.mSensor1Data.mW_z)) +
-//							  mW_Z_PolyArr[1].calcOutput(static_cast<Float32>(input.mSensor2Data.mW_z)) +
-//							  mW_X_PolyArr[2].calcOutput(static_cast<Float32>(input.mSensor3Data.mW_x)) +
-//							  mW_X_PolyArr[3].calcOutput(static_cast<Float32>(input.mSensor4Data.mW_x)) +
-//							  mW_Y_PolyArr[4].calcOutput(static_cast<Float32>(input.mSensor5Data.mW_y)) +
-//							  mW_Y_PolyArr[5].calcOutput(static_cast<Float32>(input.mSensor6Data.mW_y))) / (-6.0F);
+
 }
 void CStateEstimate::calculateUR(const CSensorData& input)
 {
-	mOutput.mURData.mUR_k1 = mOutput.mUKData.mUK_k1 + mADC_PolyArr[0].calcOutput(static_cast<Float32>(input.mADCData.mADC1Value));
-	mOutput.mURData.mUR_k2 = mOutput.mUKData.mUK_k2 + mADC_PolyArr[1].calcOutput(static_cast<Float32>(input.mADCData.mADC2Value));
-	mOutput.mURData.mUR_k3 = mOutput.mUKData.mUK_k3 + mADC_PolyArr[2].calcOutput(static_cast<Float32>(input.mADCData.mADC3Value));
+	mOutput.scalarAt(7,1) = mOutput.scalarAt(4,1) + mADC_PolyArr[0].calcOutput(static_cast<Float32>(input.mADCData.mADC1Value));
+	mOutput.scalarAt(8,1) = mOutput.scalarAt(5,1) + mADC_PolyArr[1].calcOutput(static_cast<Float32>(input.mADCData.mADC2Value));
+	mOutput.scalarAt(9,1) = mOutput.scalarAt(6,1) + mADC_PolyArr[2].calcOutput(static_cast<Float32>(input.mADCData.mADC3Value));
 }

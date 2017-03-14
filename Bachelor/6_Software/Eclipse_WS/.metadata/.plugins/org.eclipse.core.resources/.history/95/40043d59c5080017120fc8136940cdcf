@@ -1,0 +1,19 @@
+/**
+ * @file	TLQR.h
+ * @author	Michael Meindl
+ * @date	14.03.2017
+ * @brief	Template class to calculate a LQR-Controller.
+ */
+#ifndef TLQR_H
+#define TLQR_H
+#include "TMatrix.h"
+
+template<const UInt32 nrX, const UInt32 nrU>
+class TLQR
+{
+public:
+	using InputType  = TRVector<nrX>;
+	using OutputType = TRVector<nrU>;
+};
+
+#endif

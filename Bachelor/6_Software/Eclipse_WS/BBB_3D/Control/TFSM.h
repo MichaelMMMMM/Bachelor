@@ -70,6 +70,13 @@ bool TFSM<StateList>::dispatch(CMessage& msg)
 	}
 
 	//RTC
+	while(sQueueSize > 0U)
+	{
+		CMessage internalMessage(sInternalQueue);
+		sQueueSize = 0U;
+		consumed = mStatePtr->dispatch(internalMessage);
+	}
+
 	return consumed;
 }
 template<class StateList>

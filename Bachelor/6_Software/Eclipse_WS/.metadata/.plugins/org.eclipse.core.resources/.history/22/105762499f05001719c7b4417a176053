@@ -1,0 +1,56 @@
+/**
+ * @file	TLQB.h
+ * @author	Michael Meindl
+ * @date	10.3.2017
+ * @brief	Template class to realize a optimal controller + stationary kalman filter.
+ */
+#ifndef TLQG_H
+#define TLQG_H
+#include "TMatrix.h"
+
+template<const UInt32 nrX, UInt32 nrU, UInt32 nrY>
+class TLQG
+{
+public:
+	CTorqueData calculateOutput(CStateData& x);s
+public:
+	TLQG(const std::string& kFile,
+		 const std::string& lFile,
+		 const std::string& aFile,
+		 const std::string& bFile,
+		 const std::string& cFile);
+	TLQG(const TLQG&) = delete;
+	TLQG& operator=(const TLQG&) = delete;
+	~TLQG() = default;
+private:
+	TMatrix<nrU, nrX> mKd;
+	TMatrix<nrX, nrY> mLd;
+	TMatrix<nrX, nrX> mAd;
+	TMatrix<nrX, nrU> mBd;
+	TMatrix<nrY, nrX> mCd;
+
+	TRVector<nrY> mY;
+	TRVector<nrY> mY_B;
+	TRVector<nrX> mX_B;
+	TRVector<nrX> mU_B;
+	TRVector<nrU> mU;
+
+	static constexpr Float32 sMaxU = 0.11F;
+	bool mFirstRun;
+};
+
+template<const UInt32 nrX, const UInt32 nrU, const UInt32 nrY>
+TLQG<nrX, nrU, nrY>::TLQG(const std::string& kFile,
+						  const std::string& lFile,
+						  const std::string& aFile,
+						  const std::string& bFile,
+						  const std::string& cFile) : mKd(kFile),
+						  	  	  	  	  	  	  	  mLd(lFile),
+													  mAd(aFile),
+													  mBd(bFile),
+													  mCd(cFile),
+													  mFirstRun(true)
+{
+
+}
+#endif

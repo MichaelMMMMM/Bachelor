@@ -1,15 +1,6 @@
-10:26:13 **** Incremental Build of configuration Debug for project BBB_1D ****
+16:02:37 **** Incremental Build of configuration Debug for project BBB_1D ****
 make all 
-Building file: ../Control/CSensorEvaluation.cpp
-Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_1D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/CSensorEvaluation.d" -MT"Control/CSensorEvaluation.o" -o "Control/CSensorEvaluation.o" "../Control/CSensorEvaluation.cpp"
-Finished building: ../Control/CSensorEvaluation.cpp
- 
-Building target: BBB_1D
-Invoking: Cross G++ Linker
-arm-linux-gnueabihf-g++  -o "BBB_1D"  ./lib/AComponentBase.o ./lib/Assertion.o ./lib/CBinarySemaphore.o ./lib/CCountingSemaphore.o ./lib/CMessage.o ./lib/CMutex.o ./lib/CProxy.o ./lib/CThread.o  ./Hardware/CADC.o ./Hardware/CBBBHardware.o ./Hardware/CBrake.o ./Hardware/CMPU6050.o ./Hardware/CMotor.o  ./Control/CADCCalibration.o ./Control/CADCCalibrationAction.o ./Control/CCascadeControl.o ./Control/CComplementaryFilter.o ./Control/CControlAction.o ./Control/CControlActionBase.o ./Control/CControlComp.o ./Control/CControlTest.o ./Control/CControlTestAction.o ./Control/CDT1.o ./Control/CFilterSystem.o ./Control/CLQB.o ./Control/CLQRControl.o ./Control/CPT1.o ./Control/CSensorCalibration.o ./Control/CSensorCalibrationAction.o ./Control/CSensorEvaluation.o ./Control/CTimerTask.o  ./Comm/CCommAction.o ./Comm/CCommComponent.o ./Comm/CCommFSM.o ./Comm/CReceiveTask.o ./Comm/CServer.o  ./main.o   -lpthread
-Finished building target: BBB_1D
- 
+make: Nothing to be done for `all'.
 
-10:26:14 Build Finished (took 474ms)
+16:02:37 Build Finished (took 61ms)
 

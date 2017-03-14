@@ -8,7 +8,8 @@
 #include <iostream>
 #include <sys/time.h>
 
-CLQRTestAction::CLQRTestAction() : mTime(0.0F), mDelayCounter(0U)
+CLQRTestAction::CLQRTestAction() : mTime(0.0F),
+								   mDelayCounter(0U)
 {
 
 }
@@ -45,8 +46,8 @@ void CLQRTestAction::sampleLQRTest()
 	{
 
 		mSignalFlow.calcOutput(sensor_data);
-		CStateData state_data = mSignalFlow.CCompFilter::getValue();
-		CTorqueData tm_data   = mSignalFlow.CLQR::getValue();
+		CStateData state_data  = mSignalFlow.CCompFilter::getValue();
+		CTorqueData tm_data    = mSignalFlow.CLQR::getValue();
 
 		state_data.mGData.mTime  = mTime;
 		state_data.mUKData.mTime = mTime;
@@ -61,7 +62,7 @@ void CLQRTestAction::sampleLQRTest()
 		g3_abs = g3_abs > 0 ? g3_abs : -g3_abs;
 
 		constexpr Float32 sGMax = 1.0F;
-		constexpr Float32 sGExit = 3.0F;
+		constexpr Float32 sGExit = 4.5F;
 		if( ( g3_abs < sGMax) && (g2_abs < sGMax) && (g1_abs < sGMax) )
 		{
 			if(balance_flag == false)
@@ -71,7 +72,6 @@ void CLQRTestAction::sampleLQRTest()
 				{
 					balance_flag = true;
 					std::cout << "[*] Control-Component: Entering Balance-Area, Time: " << mTime << std::endl;
-					mSignalFlow.COffsetCorrection::disableHighpass();
 					sHardware.enableMotor();
 					//sHardware.disableMotor();
 				}
@@ -83,12 +83,11 @@ void CLQRTestAction::sampleLQRTest()
 		}
 		else
 		{
-			if( (balance_flag == true) && ( (g3_abs > sGExit) || (g2_abs > sGExit) || (g1_abs > sGExit) ) )
+			if( (balance_flag == true) && ( (g3_abs > sGExit) && (g2_abs > sGExit) && (g1_abs > sGExit) ) )
 			{
 				balance_flag = false;
 				mDelayCounter = 0U;
 				std::cout << "[*] Control-Component: Exiting Balance-Area, Time: " << mTime << std::endl;
-				mSignalFlow.COffsetCorrection::disableHighpass();
 				sHardware.disableMotor();
 			}
 		}
