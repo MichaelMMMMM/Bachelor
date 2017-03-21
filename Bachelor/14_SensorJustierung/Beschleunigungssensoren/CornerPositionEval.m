@@ -1,0 +1,43 @@
+%Corner trial
+
+    [t1, a_x1, a_y1, a_z1, w_x1, w_y1, w_z1,...
+     t2, a_x2, a_y2, a_z2, w_x2, w_y2, w_z2,...
+     t3, a_x3, a_y3, a_z3, w_x3, w_y3, w_z3,...
+     t4, a_x4, a_y4, a_z4, w_x4, w_y4, w_z4,...
+     t5, a_x5, a_y5, a_z5, w_x5, w_y5, w_z5,...
+     t6, a_x6, a_y6, a_z6, w_x6, w_y6, w_z6] = importfile('data/sensor_data_corner.csv');
+ 
+ s1_raw = [mean(a_y1); mean(a_x1); mean(a_x3)];
+ s2_raw = [mean(a_y2); mean(a_x2); mean(a_x4)];
+ s3_raw = [mean(a_x5); mean(a_y3); mean(a_y5)];
+ s4_raw = [mean(a_x6); mean(a_y4); mean(a_y6)];
+ 
+ s1_calib_V1 = [Sfit_V1{1,1}(1)*s1_raw(1) + Sfit_V1{1,1}(2);...
+                Sfit_V1{2,1}(1)*s1_raw(2) + Sfit_V1{2,1}(2);...
+                Sfit_V1{3,1}(1)*s1_raw(3) + Sfit_V1{3,1}(2)];
+ s2_calib_V1 = [Sfit_V1{1,2}(1)*s2_raw(1) + Sfit_V1{1,2}(2);...
+                Sfit_V1{2,2}(1)*s2_raw(2) + Sfit_V1{2,2}(2);...
+                Sfit_V1{3,2}(1)*s2_raw(3) + Sfit_V1{3,2}(2)];
+ s3_calib_V1 = [Sfit_V1{1,3}(1)*s3_raw(1) + Sfit_V1{1,3}(2);...
+                Sfit_V1{2,3}(1)*s3_raw(2) + Sfit_V1{2,3}(2);...
+                Sfit_V1{3,3}(1)*s3_raw(3) + Sfit_V1{3,3}(2)];
+ s4_calib_V1 = [Sfit_V1{1,4}(1)*s4_raw(1) + Sfit_V1{1,4}(2);...
+                Sfit_V1{2,4}(1)*s4_raw(2) + Sfit_V1{2,4}(2);...
+                Sfit_V1{3,4}(1)*s4_raw(3) + Sfit_V1{3,4}(2)];
+            
+s1_calib_V2 = Sfit_V2{1}(1:3,1:3)*s1_raw + Sfit_V2{1}(1:3, 4);
+s2_calib_V2 = Sfit_V2{2}(1:3,1:3)*s2_raw + Sfit_V2{2}(1:3, 4);
+s3_calib_V2 = Sfit_V2{3}(1:3,1:3)*s3_raw + Sfit_V2{3}(1:3, 4);
+s4_calib_V2 = Sfit_V2{4}(1:3,1:3)*s4_raw + Sfit_V2{4}(1:3, 4);
+
+t = -ones(3,1)*9.81/sqrt(3);
+
+s1_V1_error = t - s1_calib_V1;
+s2_V1_error = t - s2_calib_V1;
+s3_V1_error = t - s3_calib_V1;
+s4_V1_error = t - s4_calib_V1;
+
+s1_V2_error = t - s1_calib_V2;
+s2_V2_error = t - s2_calib_V2;
+s3_V2_error = t - s3_calib_V2;
+s4_V2_error = t - s4_calib_V2;

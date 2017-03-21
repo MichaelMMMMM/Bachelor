@@ -1,0 +1,21 @@
+#include "CADC.h"
+#include <iostream>
+#include <cstdio>
+#include <cstdlib>
+#include <unistd.h>
+#include <stdio.h>
+#include <fcntl.h>
+#include <sys/mman.h>
+#include "Global.h"
+
+CADC::CADC() : mMemoryFD(-1), mAddrPtr(nullptr)
+{
+	mMemoryFD = open("/dev/mem", O_RDWR);
+	sAssertion(mMemoryFD <= 0, "(CSPI::CSPI) Failed to open /dev/mem", true);
+	mAddrPtr = reinterpret_cast<UInt8*>(mmap(0, sMCSPI_MEM_SIZE, PROT_READ | PROT_WRITE, MAP_SHARED, mMemoryFD, sMCSPI_START_ADDR));
+	sAssertion(mRegisterPtr != MAP_FAILED, "(SPI::CSPI) Failed to mmap", true);
+}
+CADC::~CADC()
+{
+
+}

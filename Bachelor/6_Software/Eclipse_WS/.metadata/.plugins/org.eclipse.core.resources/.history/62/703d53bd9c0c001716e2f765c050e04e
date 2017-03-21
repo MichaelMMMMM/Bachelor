@@ -1,0 +1,45 @@
+/**
+ * @file	COffsetCorrection.h
+ * @author	Michael Meindl
+ * @date	17.02.2017
+ * @brief	Action Object to correct the State-Vector's Offsets.
+ */
+#ifndef COFFSETCORRECTION_H
+#define COFFSETCORRECTION_H
+#include "CStateData.h"
+#include "CPT1.h"
+#include "TMatrix.h"
+
+class COffsetCorrection
+{
+public:
+	using InputType  = TRVector<9U>;
+	using OutputType = TRVector<9U>;
+public:
+	void activate();
+	void deactive();
+	const OutputType& calcOutput(const InputType& input);
+	const OutputType& getValue();
+public:
+	COffsetCorrection();
+	COffsetCorrection(const COffsetCorrection&) = delete;
+	COffsetCorrection& operator=(const COffsetCorrection&) = delete;
+	~COffsetCorrection() = default;
+private:
+	bool mActiveFlag;
+	OutputType mOutput;
+
+	static constexpr Float32 sPi		   = 3.141592653589793F;
+	static constexpr Float32 sG_0         = -5.6638F;
+	static constexpr Float32 sG_k1_Offset  = 0.0F;
+	static constexpr Float32 sG_k2_Offset  = -0.615479708670387F - 0.0042076215981735F - 0.03F  - 0.05F;
+	static constexpr Float32 sG_k3_Offset  = 0.785398163397448F  + 0.021899672146119F - 0.0032F + 0.052F;
+	static constexpr Float32 sUK_k1_Offset = 0.0020673F;
+	static constexpr Float32 sUK_k2_Offset = 0.0010100F;
+	static constexpr Float32 sUK_k3_Offset = 0.0018871F;
+	static constexpr Float32 sUR_k1_Offset = 0.0F;
+	static constexpr Float32 sUR_k2_Offset = 0.0F;
+	static constexpr Float32 sUR_k3_Offset = -0.605355F;
+};
+
+#endif

@@ -1,0 +1,12 @@
+/**
+ * @file	C1DOffsetCorrection.cpp
+ * @author	Michael Meindl
+ * @date	15.03.2017
+ * @brief	Method definitions for C1DOffsetCorrection.
+ */
+#include "C1DOffsetCorrection.h"
+
+C1DOffsetCorrection::C1DOffsetCorrection() : mActiveFlag(false)
+{
+
+}
