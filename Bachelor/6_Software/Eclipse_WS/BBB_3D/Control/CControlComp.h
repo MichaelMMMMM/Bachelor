@@ -14,9 +14,10 @@
 #include "CSensorCalibration.h"
 #include "CADCCalibration.h"
 #include "CLQRTest.h"
+#include "CEdgeBalance.h"
 
 
-using StateList = TYPELIST_3(CSensorCalibration, CADCCalibration, CLQRTest);
+using StateList = TYPELIST_4(CSensorCalibration, CADCCalibration, CLQRTest, CEdgeBalance);
 
 class CControlComp : public AComponentBase
 {

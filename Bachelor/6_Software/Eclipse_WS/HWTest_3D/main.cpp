@@ -29,8 +29,8 @@ int main()
 	//switchTest();
 	//multipleMPUTest();
 	//multipleSensorTimeTest();
-	//sensorSystemTest();
-	adcTest();
+	sensorSystemTest();
+	//adcTest();
 	//torqueTest();
 	//adcSystemTest();
 	return 0;
@@ -70,31 +70,35 @@ void adcTest()
 	struct timeval timebegin, timeend;
 	long seconds, useconds;
 
-	gettimeofday(&timebegin, (struct timezone*)0);
 
 
+
+	int i = 0;
 	while(true)
 	{
+		usleep(10000);
+		gettimeofday(&timebegin, (struct timezone*)0);
 		if(adc.fetchValue(data))
 		{
-			data.display();
+			//data.display();
 		}
 		else
 		{
 			std::cout << "ADC-Read failed!" << std::endl;
 		}
+
+		gettimeofday(&timeend, (struct timezone*)0);
+		seconds = timeend.tv_sec - timebegin.tv_sec;
+		useconds = timeend.tv_usec - timebegin.tv_usec;
+		if(useconds < 0)
+		{
+			useconds += 1000000;
+			seconds--;
+		}
+		//std::cerr << "seconds: " << seconds << " useconds: " << useconds << std::endl;
 	}
 
 
-	gettimeofday(&timeend, (struct timezone*)0);
-	seconds = timeend.tv_sec - timebegin.tv_sec;
-	useconds = timeend.tv_usec - timebegin.tv_usec;
-	if(useconds < 0)
-	{
-		useconds += 1000000;
-		seconds--;
-	}
-	std::cout << "seconds: " << seconds << " useconds: " << useconds << std::endl;
 }
 void sensorSystemTest()
 {
@@ -108,11 +112,21 @@ void sensorSystemTest()
 
 	while(true)
 	{
-		std::cout << "-------------------------------------------------------------" <<
-				     "-------------------------------------------------------------" << std::endl;
+		gettimeofday(&timebegin, (struct timezone*)0);
+		//std::cout << "-------------------------------------------------------------" <<
+		//		     "-------------------------------------------------------------" << std::endl;
 		sensorSystem.readSensorData(data);
-		data.display();
-		usleep(200000);
+		gettimeofday(&timeend, (struct timezone*)0);
+		seconds = timeend.tv_sec - timebegin.tv_sec;
+		useconds = timeend.tv_usec - timebegin.tv_usec;
+		if(useconds < 0)
+		{
+			useconds += 1000000;
+			seconds--;
+		}
+		//std::cerr << " Overall-useconds: " << useconds << std::endl;
+		//data.display();
+		usleep(10000);
 	}
 	gettimeofday(&timeend, (struct timezone*)0);
 	seconds = timeend.tv_sec - timebegin.tv_sec;
@@ -122,7 +136,7 @@ void sensorSystemTest()
 		useconds += 1000000;
 		seconds--;
 	}
-	std::cout << "seconds: " << seconds << " useconds: " << useconds << std::endl;
+	std::cerr << "seconds: " << seconds << " useconds: " << useconds << std::endl;
 }
 void multipleSensorTimeTest()
 {
@@ -151,6 +165,7 @@ void multipleSensorTimeTest()
 
 	for(int i = 0; i < 100000; i++)
 	{
+		gettimeofday(&timebegin, (struct timezone*)0);
 		mySwitch.selectX1();
 		if(false == mpu.readSensorData(sensorData))
 		{
@@ -181,6 +196,15 @@ void multipleSensorTimeTest()
 		{
 			std::cout << "MPU6 Error" << std::endl;
 		}
+		gettimeofday(&timeend, (struct timezone*)0);
+		seconds = timeend.tv_sec - timebegin.tv_sec;
+		useconds = timeend.tv_usec - timebegin.tv_usec;
+		if(useconds < 0)
+		{
+			useconds += 1000000;
+			seconds--;
+		}
+		std::cout <<" MPU1-useconds: " << useconds << std::endl;
 	}
 
 	gettimeofday(&timeend, (struct timezone*)0);
@@ -356,18 +380,18 @@ void motorTest()
 	CMotor motor3("1", "0", "44", "45");
 
 	motor1.enableMotor();
+	motor1.setTorque(0.01F);
+	motor1.setTorque(0.0F);
 	motor1.disableMotor();
-	motor1.setTorque(0.04F);
-	motor1.setTorque(-0.08F);
 
 	motor2.enableMotor();
+	motor2.setTorque(0.01F);
+	motor2.setTorque(0.0F);
 	motor2.disableMotor();
-	motor2.setTorque(0.04F);
-	motor2.setTorque(-0.08F);
 
 	motor3.enableMotor();
+	motor3.setTorque(0.01F);
+	motor3.setTorque(0.0F);
 	motor3.disableMotor();
-	motor3.setTorque(0.04F);
-	motor3.setTorque(-0.08F);
 }
 

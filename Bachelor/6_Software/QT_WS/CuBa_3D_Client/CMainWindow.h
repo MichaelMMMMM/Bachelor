@@ -6,6 +6,7 @@
 #include "CSensorCalibWidget.h"
 #include "CADCWidget.h"
 #include "CControlWidget.h"
+#include "CEdgeBalanceWidget.h"
 
 class CMainWindow : public QMainWindow
 {
@@ -18,6 +19,7 @@ public slots:
     void selectSensorCalibration();
     void selectADCCalibration();
     void selectLQRControl();
+    void selectEdgeBalanceSLOT();
 private:
     CRxThread* mRxThreadPtr;
 
@@ -28,6 +30,7 @@ private:
     CSensorCalibWidget* mSensorCalibWidgetPtr;
     CADCCalibWidget*    mADCCalibWidgetPtr;
     CControlWidget*     mControlWidgetPtr;
+    CEdgeBalanceWidget* mEdgeBalanceWidgetPtr;
 };
 
 #endif // CMAINWINDOW_H

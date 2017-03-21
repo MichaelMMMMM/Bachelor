@@ -8,6 +8,9 @@
 #define CMESSAGE_H
 #include "Global.h"
 #include "EEvent.h"
+#include "TMatrix.h"
+
+using Data1D = TRVector<4U>;
 
 class CMessage
 {

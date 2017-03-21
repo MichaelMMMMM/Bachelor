@@ -5,6 +5,7 @@
  * @brief	Method definitions for CStateEstimate.h
  */
 #include "CStateEstimate.h"
+#include <cmath>
 
 CStateEstimate::CStateEstimate() :
 	mACalibArr{ {"/root/control_data/sensor1_calib_data.csv", "/root/control_data/gyro1_calib_data.csv"},
@@ -77,12 +78,24 @@ void CStateEstimate::calculateG(const CSensorData& input)
 	mACalibArr[5].calibrate(tmp_data);
 
 
-	mOutput.scalarAt(1,1) = ( sB1[0]*mACalibArr[0].getK1Acceleration() + sB1[1]*mACalibArr[1].getK1Acceleration() +
-							 sB1[2]*mACalibArr[4].getK1Acceleration() + sB1[3]*mACalibArr[5].getK1Acceleration() ) / B1Sum;
-	mOutput.scalarAt(2,1) = ( sB2[0]*mACalibArr[0].getK2Acceleration() + sB2[1]*mACalibArr[1].getK2Acceleration() +
-							 sB2[2]*mACalibArr[2].getK2Acceleration() + sB2[3]*mACalibArr[3].getK2Acceleration() ) / B2Sum;
-	mOutput.scalarAt(3,1) = ( sB3[0]*mACalibArr[2].getK3Acceleration() + sB3[1]*mACalibArr[3].getK3Acceleration() +
-							 sB3[2]*mACalibArr[4].getK3Acceleration() + sB3[3]*mACalibArr[5].getK3Acceleration() ) / B3Sum;
+//	mOutput.scalarAt(1,1) = ( sB1[0]*mACalibArr[0].getK1Acceleration() + sB1[1]*mACalibArr[1].getK1Acceleration() +
+//							 sB1[2]*mACalibArr[4].getK1Acceleration() + sB1[3]*mACalibArr[5].getK1Acceleration() ) / B1Sum;
+//	mOutput.scalarAt(2,1) = ( sB2[0]*mACalibArr[0].getK2Acceleration() + sB2[1]*mACalibArr[1].getK2Acceleration() +
+//							 sB2[2]*mACalibArr[2].getK2Acceleration() + sB2[3]*mACalibArr[3].getK2Acceleration() ) / B2Sum;
+//	mOutput.scalarAt(3,1) = ( sB3[0]*mACalibArr[2].getK3Acceleration() + sB3[1]*mACalibArr[3].getK3Acceleration() +
+//							 sB3[2]*mACalibArr[4].getK3Acceleration() + sB3[3]*mACalibArr[5].getK3Acceleration() ) / B3Sum;
+
+	Float32 g1 = ( sB1[0]*mACalibArr[0].getK1Acceleration() + sB1[1]*mACalibArr[1].getK1Acceleration() +
+			 sB1[2]*mACalibArr[4].getK1Acceleration() + sB1[3]*mACalibArr[5].getK1Acceleration() ) / B1Sum;
+	Float32 g2 = ( sB2[0]*mACalibArr[0].getK2Acceleration() + sB2[1]*mACalibArr[1].getK2Acceleration() +
+			 sB2[2]*mACalibArr[2].getK2Acceleration() + sB2[3]*mACalibArr[3].getK2Acceleration() ) / B2Sum;
+	Float32 g3 = ( sB3[0]*mACalibArr[2].getK3Acceleration() + sB3[1]*mACalibArr[3].getK3Acceleration() +
+			 sB3[2]*mACalibArr[4].getK3Acceleration() + sB3[3]*mACalibArr[5].getK3Acceleration() ) / B3Sum;
+	Float32 gAbs = sqrtf(g1*g1 + g2*g2 + g3*g3);
+
+	mOutput.scalarAt(1,1) = 0.0F;
+	mOutput.scalarAt(2,1) = -asinf(g3/gAbs);
+	mOutput.scalarAt(3,1) = -atan2f(g2/gAbs, g1/gAbs);
 }
 void CStateEstimate::calculateUK(const CSensorData& input)
 {

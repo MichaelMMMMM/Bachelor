@@ -36,7 +36,9 @@ private:
 
 	Float32 mGInt[3];
 
-	static constexpr Float32 sAlpha = 0.9901F;
+	TMatrix<3U, 3U> mDPhi;
+	static constexpr Float32 sAlpha = 0.98F;
+
 };
 
 #endif

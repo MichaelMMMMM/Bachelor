@@ -14,6 +14,7 @@
 #include "CCompFilter.h"
 #include "COffsetCorrection.h"
 #include "TLQG.h"
+#include "TLQR.h"
 
 class CLQRTestAction : public CControlActionBase
 {
@@ -29,10 +30,14 @@ public:
 	CLQRTestAction& operator=(const CLQRTestAction&) = default;
 	~CLQRTestAction() = default;
 private:
-	using ActionTypeList = TYPELIST_4(CStateEstimate, COffsetCorrection, CCompFilter, CLQR);
+	using Controller     = TLQR<9U, 3U>;
+	using ActionTypeList = TYPELIST_4(CStateEstimate, COffsetCorrection, CCompFilter, Controller);
 	TLinHierarchy<ActionTypeList, TActionHolder> mSignalFlow;
 	Float32 mTime;
 	UInt32 mDelayCounter;
+	TLQG<7U, 3U, 6U> mLQG;
+	bool mLQRFlag;
+	int mSamplingCounter;
 };
 
 #endif

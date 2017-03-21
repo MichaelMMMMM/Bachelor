@@ -12,6 +12,7 @@ class CADC
 {
 public:
 	bool fetchValue(CADCData& data);
+	void reset();
 public:
 	CADC();
 	~CADC();
@@ -19,6 +20,8 @@ private:
 	int sysfsEcho(const char* file, const char* string);
 private:
 	int mADCFd;
+	bool   mFirstRun;
+	UInt16 mRecentData[3];
 };
 
 #endif

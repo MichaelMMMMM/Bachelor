@@ -1,6 +1,44 @@
-20:14:45 **** Incremental Build of configuration Debug for project HWTest_3D ****
+10:09:38 **** Incremental Build of configuration Debug for project HWTest_3D ****
 make all 
-make: Nothing to be done for `all'.
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/HWTest_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/HWTest_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘void adcTest()’:
+../main.cpp:76:6: warning: unused variable ‘i’ [-Wunused-variable]
+  int i = 0;
+      ^
+../main.cpp: At global scope:
+../main.cpp:376:6: warning: ‘void motorTest()’ defined but not used [-Wunused-function]
+ void motorTest()
+      ^
+../main.cpp:333:6: warning: ‘void mpuTest()’ defined but not used [-Wunused-function]
+ void mpuTest()
+      ^
+../main.cpp:302:6: warning: ‘void switchTest()’ defined but not used [-Wunused-function]
+ void switchTest()
+      ^
+../main.cpp:220:6: warning: ‘void multipleMPUTest()’ defined but not used [-Wunused-function]
+ void multipleMPUTest()
+      ^
+../main.cpp:141:6: warning: ‘void multipleSensorTimeTest()’ defined but not used [-Wunused-function]
+ void multipleSensorTimeTest()
+      ^
+../main.cpp:65:6: warning: ‘void adcTest()’ defined but not used [-Wunused-function]
+ void adcTest()
+      ^
+../main.cpp:50:6: warning: ‘void torqueTest()’ defined but not used [-Wunused-function]
+ void torqueTest()
+      ^
+../main.cpp:38:6: warning: ‘void adcSystemTest()’ defined but not used [-Wunused-function]
+ void adcSystemTest()
+      ^
+Finished building: ../main.cpp
+ 
+Building target: HWTest_3D
+Invoking: Cross G++ Linker
+arm-linux-gnueabihf-g++  -o "HWTest_3D"  ./Hardware/Assertion.o ./Hardware/CADC.o ./Hardware/CADCData.o ./Hardware/CADCSystem.o ./Hardware/CGPIO.o ./Hardware/CHardware.o ./Hardware/CMPU9250.o ./Hardware/CMPUData.o ./Hardware/CMotor.o ./Hardware/CPWM.o ./Hardware/CSensorData.o ./Hardware/CSensorSystem.o ./Hardware/CSwitch.o ./Hardware/CTorqueData.o  ./main.o   
+Finished building target: HWTest_3D
+ 
 
-20:14:45 Build Finished (took 72ms)
+10:09:38 Build Finished (took 623ms)
 

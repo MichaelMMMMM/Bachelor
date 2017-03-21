@@ -37,6 +37,28 @@ bool CEdgeBalance::onIdle(CMessage& msg)
 	if(EEvent::TIMER_TICK == event)
 	{
 		mAction.sampleIdle();
+		if(mAction.inControlArea())
+		{
+			sInternalQueue = CMessage(EEvent::IN_CONTROL_AREA);
+			sQueueSize     = 1U;
+		}
+		return true;
+	}
+	if(EEvent::IN_CONTROL_AREA == event)
+	{
+		mAction.onExitIdle();
+		mState = sControl;
+		mAction.onEntryControl();
+		return true;
+	}
+	if(EEvent::OFFSETCORRECTION_ACTIVE_FLAG == event)
+	{
+		mAction.setOffsetCorrectionFlag(*reinterpret_cast<bool*>(msg.getDataPtr()));
+		return true;
+	}
+	if(EEvent::LQR_LQG_FLAG == event)
+	{
+		mAction.setLQRFlag(*reinterpret_cast<bool*>(msg.getDataPtr()));
 		return true;
 	}
 	return false;
@@ -50,9 +72,20 @@ bool CEdgeBalance::onControl(CMessage& msg)
 		mState = sDefault;
 		return true;
 	}
+	if(EEvent::OUT_OF_CONTROL_AREA == event)
+	{
+		mAction.onExitControl();
+		mState = sIdle;
+		mAction.onEntryIdle();
+	}
 	if(EEvent::TIMER_TICK == event)
 	{
 		mAction.sampleControl();
+		if(mAction.inControlArea() == false)
+		{
+			sInternalQueue = CMessage(EEvent::OUT_OF_CONTROL_AREA);
+			sQueueSize     = 1U;
+		}
 		return true;
 	}
 	return false;

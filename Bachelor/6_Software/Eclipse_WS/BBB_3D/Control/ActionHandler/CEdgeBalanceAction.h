@@ -15,6 +15,8 @@
 #include "C1DLPF.h"
 #include "C1DCompFilter.h"
 #include "TLQR.h"
+#include "TLQG.h"
+#include "CLQB.h"
 
 class CEdgeBalanceAction : public CControlActionBase
 {
@@ -29,6 +31,9 @@ public:
 	bool inControlArea();
 	void sampleIdle();
 	void sampleControl();
+	void setTorques();
+	void setOffsetCorrectionFlag(bool flag);
+	void setLQRFlag(bool flag);
 public:
 	CEdgeBalanceAction();
 	CEdgeBalanceAction(const CEdgeBalanceAction&) = delete;
@@ -39,9 +44,12 @@ private:
 	using ActionTypeList = TYPELIST_5(CStateEstimate, C1DStateReduction, C1DOffsetCorrection, C1DCompFilter, Controller);
 	TLinHierarchy<ActionTypeList, TActionHolder> mSignalFlow;
 	C1DLPF	mXLPF;
+	CLQB mLQG;
 
-	static constexpr Float32 sMaxGValue = 0.5F;
+	static constexpr Float32 sMaxGValue = 0.1F;
 	Float32 mTime;
+	bool    mLQRFlag;
+	int mSampleCounter;
 
 };
 

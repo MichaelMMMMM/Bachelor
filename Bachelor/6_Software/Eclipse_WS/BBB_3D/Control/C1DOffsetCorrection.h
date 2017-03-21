@@ -27,9 +27,9 @@ private:
 	OutputType mOffset;
 	bool 	   mActiveFlag;
 
-	static constexpr Float32 sX1Offset = -9.81F;
-	static constexpr Float32 sX2Offset = 0.0F;
-	static constexpr Float32 sX3Offset = 0.0F;
+	static constexpr Float32 sX1Offset = -0.785398163397448F - 0.029F;
+	static constexpr Float32 sX2Offset = 0.001364F;
+	static constexpr Float32 sX3Offset = 0.702F;
 };
 
 #endif

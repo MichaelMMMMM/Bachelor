@@ -20,6 +20,10 @@ CMainWindow::CMainWindow(QWidget *parent)
     mExperimentMenuPtr->addAction(controlActionPtr);
     QObject::connect(controlActionPtr, SIGNAL(triggered()),
                      this, SLOT(selectLQRControl()));
+    QAction* edgeBalActionPtr       = new QAction("Run Edge-Balance", mMenuBarPtr);
+    mExperimentMenuPtr->addAction(edgeBalActionPtr);
+    QObject::connect(edgeBalActionPtr, SIGNAL(triggered()),
+                     this, SLOT(selectEdgeBalanceSLOT()));
 
     //Create the Stacked-Widget holding the Widgets for the different experiments
     mStackedWidgetPtr       = new QStackedWidget;
@@ -27,11 +31,13 @@ CMainWindow::CMainWindow(QWidget *parent)
     mSensorCalibWidgetPtr   = new CSensorCalibWidget;
     mADCCalibWidgetPtr      = new CADCCalibWidget;
     mControlWidgetPtr       = new CControlWidget;
+    mEdgeBalanceWidgetPtr   = new CEdgeBalanceWidget;
 
     mStackedWidgetPtr->addWidget(mStartWidgetPtr);
     mStackedWidgetPtr->addWidget(mSensorCalibWidgetPtr);
     mStackedWidgetPtr->addWidget(mADCCalibWidgetPtr);
     mStackedWidgetPtr->addWidget(mControlWidgetPtr);
+    mStackedWidgetPtr->addWidget(mEdgeBalanceWidgetPtr);
 
     //Setup the Main-Window
     this->setCentralWidget(mStackedWidgetPtr);
@@ -84,6 +90,19 @@ CMainWindow::CMainWindow(QWidget *parent)
                      mRxThreadPtr, SLOT(setCompFilterFlag(bool)));
     QObject::connect(mControlWidgetPtr, SIGNAL(setOffsetFilterFlag(bool)),
                      mRxThreadPtr, SLOT(setOffsetCorrectionFlag(bool)));
+    //Edge-Balance
+    QObject::connect(mEdgeBalanceWidgetPtr, SIGNAL(runEdgeBalanceSIG()),
+                     mRxThreadPtr, SLOT(runEdgeBalanceSLOT()));
+    QObject::connect(mRxThreadPtr, SIGNAL(lqr1DDataReceivedSIG(const Data1D&)),
+                     mEdgeBalanceWidgetPtr, SLOT(lqrDataReceivedSLOT(const Data1D&)));
+    QObject::connect(mRxThreadPtr, SIGNAL(lqg1DDataReceivedSIG(const Data1D&)),
+                     mEdgeBalanceWidgetPtr, SLOT(lqgDataReceivedSLOT(const Data1D&)));
+    QObject::connect(mEdgeBalanceWidgetPtr, SIGNAL(stopEdgeBalanceSIG()),
+                     mRxThreadPtr, SLOT(endMeasurement()));
+    QObject::connect(mEdgeBalanceWidgetPtr, SIGNAL(setOffsetCorrectionFlagSIG(bool)),
+                     mRxThreadPtr, SLOT(setOffsetCorrectionFlag(bool)));
+    QObject::connect(mEdgeBalanceWidgetPtr, SIGNAL(setLQRFlagSIG(bool)),
+                     mRxThreadPtr, SLOT(setLQRFlag(bool)));
     //Start the Rx-Thread
     mRxThreadPtr->start();
 }
@@ -103,4 +122,8 @@ void CMainWindow::selectADCCalibration()
 void CMainWindow::selectLQRControl()
 {
     mStackedWidgetPtr->setCurrentWidget(mControlWidgetPtr);
+}
+void CMainWindow::selectEdgeBalanceSLOT()
+{
+    mStackedWidgetPtr->setCurrentWidget(mEdgeBalanceWidgetPtr);
 }

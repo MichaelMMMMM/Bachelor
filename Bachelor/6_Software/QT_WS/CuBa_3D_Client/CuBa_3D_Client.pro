@@ -26,7 +26,8 @@ SOURCES += main.cpp\
     CADCData.cpp \
     CADCWidget.cpp \
     CStateData.cpp \
-    CControlWidget.cpp
+    CControlWidget.cpp \
+    CEdgeBalanceWidget.cpp
 
 HEADERS  += CMainWindow.h \
     Assertion.h \
@@ -42,4 +43,6 @@ HEADERS  += CMainWindow.h \
     CADCData.h \
     CADCWidget.h \
     CStateData.h \
-    CControlWidget.h
+    CControlWidget.h \
+    CEdgeBalanceWidget.h \
+    TMatrix.h

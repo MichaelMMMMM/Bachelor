@@ -15,7 +15,7 @@ int main()
 	proxy.registerControlComponent(&controlComp);
 
 	CThread commThread(&commComp, CThread::PRIORITY_LOW);
-	CThread controlThread(&controlComp, CThread::PRIORITY_HIGH);
+	CThread controlThread(&controlComp, CThread::PRIORITY_CRITICAL);
 
 	commThread.start();
 	controlThread.start();

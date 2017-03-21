@@ -14,9 +14,13 @@ const COffsetCorrection::OutputType& COffsetCorrection::calcOutput(const COffset
 {
 	if(mActiveFlag == true)
 	{
-		mOutput.scalarAt(1,1) = input.scalarAt(1,1) - sG_0 + sG_k1_Offset;
-		mOutput.scalarAt(2,1) = input.scalarAt(2,1) - sG_0 + sG_k2_Offset;
-		mOutput.scalarAt(3,1) = input.scalarAt(3,1) - sG_0 + sG_k3_Offset;
+		mOutput.scalarAt(1,1) = input.scalarAt(1,1) + sG_k1_Offset;
+		mOutput.scalarAt(2,1) = input.scalarAt(2,1) + sG_k2_Offset;
+		mOutput.scalarAt(3,1) = input.scalarAt(3,1) + sG_k3_Offset - sPi;
+		if(mOutput.scalarAt(3,1) < -5.0F)
+		{
+			mOutput.scalarAt(3,1) = mOutput.scalarAt(3,1) + 2*sPi;
+		}
 		mOutput.scalarAt(4,1) = input.scalarAt(4,1) + sUK_k1_Offset;
 		mOutput.scalarAt(5,1) = input.scalarAt(5,1) + sUK_k2_Offset;
 		mOutput.scalarAt(6,1) = input.scalarAt(6,1) + sUK_k3_Offset;

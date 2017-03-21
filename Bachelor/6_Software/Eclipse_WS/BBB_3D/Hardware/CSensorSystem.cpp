@@ -5,6 +5,8 @@
  * @brief	Method definitions for CSensorSystem.
  */
 #include "CSensorSystem.h"
+#include <sys/time.h>
+#include <iostream>
 
 CSensorSystem::CSensorSystem() : mSwitch("47", "46", "27", "65")
 {

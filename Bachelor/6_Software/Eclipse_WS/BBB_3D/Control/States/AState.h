@@ -16,7 +16,7 @@ public:
 	AState& operator=(const AState&) = delete;
 	virtual ~AState() = default;
 protected:
-	static EEvent sInternalQueue;
+	static CMessage sInternalQueue;
 	static UInt32 sQueueSize;
 };
 

@@ -29,12 +29,12 @@ public:
 	void display();
 	Float32& scalarAt(UInt32 ir, UInt32 ic);
 	const Float32& scalarAt(UInt32 ir, UInt32 ic) const;
-	TMatrix operator+(const TMatrix&);
-	TMatrix operator-(const TMatrix&);
-	TMatrix operator*(const Float32);
+	TMatrix operator+(const TMatrix&) const;
+	TMatrix operator-(const TMatrix&) const;
+	TMatrix operator*(const Float32) const;
 
 	template<const UInt32 n_C_new>
-	TMatrix<n_R, n_C_new> operator*(const TMatrix<n_C, n_C_new> mat);
+	TMatrix<n_R, n_C_new> operator*(const TMatrix<n_C, n_C_new> mat) const;
 public:
 	TMatrix();
 	TMatrix(const std::string& filename);
@@ -65,7 +65,7 @@ TMatrix<n_R, n_C>::TMatrix(const std::string& filename) : mMatrix{0.0F}
 }
 template<const UInt32 n_R, const UInt32 n_C>
 template<const UInt32 n_C_new>
-TMatrix<n_R, n_C_new> TMatrix<n_R, n_C>::operator*(const TMatrix<n_C, n_C_new> mat)
+TMatrix<n_R, n_C_new> TMatrix<n_R, n_C>::operator*(const TMatrix<n_C, n_C_new> mat) const
 {
 	TMatrix<n_R, n_C_new> newMat;
 	for(UInt32 ir = 0; ir < n_R; ir++)
@@ -82,7 +82,7 @@ TMatrix<n_R, n_C_new> TMatrix<n_R, n_C>::operator*(const TMatrix<n_C, n_C_new> m
 	return newMat;
 }
 template<const UInt32 n_R, const UInt32 n_C>
-TMatrix<n_R, n_C> TMatrix<n_R, n_C>::operator-(const TMatrix& mat)
+TMatrix<n_R, n_C> TMatrix<n_R, n_C>::operator-(const TMatrix& mat) const
 {
 	TMatrix<n_R, n_C> result;
 	for(UInt32 ir = 0; ir < n_R; ir++)
@@ -95,7 +95,7 @@ TMatrix<n_R, n_C> TMatrix<n_R, n_C>::operator-(const TMatrix& mat)
 	return result;
 }
 template<const UInt32 n_R, const UInt32 n_C>
-TMatrix<n_R, n_C> TMatrix<n_R, n_C>::operator+(const TMatrix& mat)
+TMatrix<n_R, n_C> TMatrix<n_R, n_C>::operator+(const TMatrix& mat) const
 {
 	TMatrix<n_R, n_C> result;
 	for(UInt32 ir = 0; ir < n_R; ir++)
@@ -108,7 +108,7 @@ TMatrix<n_R, n_C> TMatrix<n_R, n_C>::operator+(const TMatrix& mat)
 	return result;
 }
 template<const UInt32 n_R, const UInt32 n_C>
-TMatrix<n_R, n_C> TMatrix<n_R, n_C>::operator*(const Float32 scalar)
+TMatrix<n_R, n_C> TMatrix<n_R, n_C>::operator*(const Float32 scalar) const
 {
 	TMatrix<n_R, n_C> result;
 	for(UInt32 ir = 0; ir < n_R; ir++)

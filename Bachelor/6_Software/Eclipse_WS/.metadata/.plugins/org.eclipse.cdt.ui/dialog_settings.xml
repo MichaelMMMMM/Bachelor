@@ -8,6 +8,10 @@
 		<item value="705" key="DIALOG_X_ORIGIN"/>
 		<item value="218" key="DIALOG_Y_ORIGIN"/>
 	</section>
+	<section name="org.eclipse.cdt.ui.text.hover.CMacroExpansionExploration.internal">
+		<item value="174" key="size.height"/>
+		<item value="731" key="size.width"/>
+	</section>
 	<section name="org.eclipse.cdt.ui.text.hover.CMacroExpansionExploration">
 	</section>
 	<section name="OptionalMessageDialog.hide.">

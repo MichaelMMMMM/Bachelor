@@ -11,6 +11,7 @@
 #include "CADCData.h"
 #include "CTorqueData.h"
 #include "CStateData.h"
+#include "TMatrix.h"
 
 class AComponentBase;
 
@@ -31,6 +32,8 @@ public:
 	bool transmitGData(const CGData& data, bool waitForever);
 	bool transmitUKData(const CUKData& data, bool waitForever);
 	bool transmitURData(const CURData& data, bool waitForever);
+	bool transmitLQRData1D(const TRVector<4U>& data, bool waitForever);
+	bool transmitLQGData1D(const TRVector<4U>& data, bool waitForever);
 private:
 	CProxy();
 	CProxy(const CProxy&) = delete;

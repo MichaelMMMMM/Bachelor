@@ -29,7 +29,7 @@ private:
 };
 
 template<const UInt32 nrX, const UInt32 nrU>
-TLQR<nrX, nrU>::TLQR() : mK("/root/control_config/1D_K_mat.csv")
+TLQR<nrX, nrU>::TLQR()
 {
 
 }
@@ -37,7 +37,7 @@ template<const UInt32 nrX, const UInt32 nrU>
 const TRVector<nrU>& TLQR<nrX, nrU>::calcOutput(const TRVector<nrX>& input)
 {
 	mOutput = mK * input;
-	mOutput = -1.0F * mOutput;
+	mOutput = mOutput * (-1.0F);
 	return mOutput;
 }
 template<const UInt32 nrX, const UInt32 nrU>

@@ -90,3 +90,15 @@ bool CProxy::transmitURData(const CURData& data, bool waitForever)
 	*reinterpret_cast<CURData*>(msg.getDataPtr()) = data;
 	return mCommPtr->mQueue.pushBack(msg, waitForever);
 }
+bool CProxy::transmitLQRData1D(const TRVector<4U>& data, bool waitForever)
+{
+	CMessage msg(EEvent::LQR_DATA_1D);
+	*reinterpret_cast<TRVector<4U>*>(msg.getDataPtr()) = data;
+	return mCommPtr->mQueue.pushBack(msg, waitForever);
+}
+bool CProxy::transmitLQGData1D(const TRVector<4U>& data, bool waitForever)
+{
+	CMessage msg(EEvent::LQG_DATA_1D);
+	*reinterpret_cast<TRVector<4U>*>(msg.getDataPtr()) = data;
+	return mCommPtr->mQueue.pushBack(msg, waitForever);
+}

@@ -6,5 +6,5 @@
  */
 #include "AState.h"
 
-EEvent AState::sInternalQueue = EEvent::DEFAULT_IGNORE;
+CMessage AState::sInternalQueue = CMessage(EEvent::DEFAULT_IGNORE);
 UInt32 AState::sQueueSize     = 0U;

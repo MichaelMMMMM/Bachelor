@@ -7,6 +7,7 @@
 #include "CTimerTask.h"
 #include <iostream>
 #include <unistd.h>
+#include <sys/time.h>
 
 CTimerTask::CTimerTask() : mRunningSem(false, true),
 						   mProxyPtr(nullptr)
@@ -20,11 +21,12 @@ void CTimerTask::init()
 }
 void CTimerTask::run()
 {
+
 	while(true)
 	{
 		mRunningSem.take(true);
 		mRunningSem.give();
-		usleep(20*1000);
+		usleep(10*1000);
 		mProxyPtr->timerTick(true);
 	}
 }

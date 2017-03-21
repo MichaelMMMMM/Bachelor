@@ -254,7 +254,7 @@ void CControlWidget::drawGData()
     g1_max = g1_max > g2_max ? g1_max : g2_max;
     g1_max = g1_max > g3_max ? g1_max : g3_max;
 
-    mGPlotPtr->yAxis->setRange(g1_min - 0.5, g1_max + 0.5);
+    mGPlotPtr->yAxis->setRange(g1_min - 0.01, g1_max + 0.01);
 
     mGPlotPtr->replot();
 }

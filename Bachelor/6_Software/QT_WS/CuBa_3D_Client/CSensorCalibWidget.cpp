@@ -254,7 +254,7 @@ void CSensorCalibWidget::drawPlots()
         mZAnglVelPlotPtr->graph(5)->setData(mTime6, mW_Z6);
         mZAnglVelPlotPtr->replot();
     }
-    if(mTime1.length() > 350)
+    if(mTime1.length() > 500)
     {
         this->saveCSV();
         emit endMeasurement();

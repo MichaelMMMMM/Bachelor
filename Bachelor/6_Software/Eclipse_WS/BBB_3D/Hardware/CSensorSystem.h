@@ -15,6 +15,7 @@ class CSensorSystem
 {
 public:
 	bool readSensorData(CSensorData& data);
+	void reset() { mADC.reset(); };
 public:
 	CSensorSystem();
 	CSensorSystem(const CSensorSystem&) = delete;

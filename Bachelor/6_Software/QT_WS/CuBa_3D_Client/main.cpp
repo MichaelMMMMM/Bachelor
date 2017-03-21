@@ -14,6 +14,7 @@ int main(int argc, char *argv[])
     qRegisterMetaType<CGData>("CGData");
     qRegisterMetaType<CUKData>("CUKData");
     qRegisterMetaType<CURData>("CURData");
+    qRegisterMetaType<Data1D>("Data1D");
 
     CMainWindow w;
     w.show();

@@ -16,7 +16,7 @@
 
 using namespace std;
 
-CADC::CADC() : mADCFd(-1)
+CADC::CADC() : mADCFd(-1), mFirstRun(true), mRecentData{0U}
 {
 	string adcPath = "/sys/bus/iio/devices/iio:device0/";
 
@@ -95,10 +95,15 @@ bool CADC::fetchValue(CADCData& data)
 		cerr << "(CADC::fetchValues) read() mADCFd failed! ret: " << ret << endl;
 		return false;
 	}
+
 	data.mADC1Value = values[0];
 	data.mADC2Value = values[1];
 	data.mADC3Value = values[2];
 	return true;
+}
+void CADC::reset()
+{
+	mFirstRun = true;
 }
 int CADC::sysfsEcho(const char* file, const char* string)
 {

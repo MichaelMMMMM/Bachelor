@@ -19,8 +19,8 @@
 
 QT_BEGIN_MOC_NAMESPACE
 struct qt_meta_stringdata_CRxThread_t {
-    QByteArrayData data[28];
-    char stringdata[395];
+    QByteArrayData data[33];
+    char stringdata[474];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -49,14 +49,19 @@ QT_MOC_LITERAL(16, 214, 14),
 QT_MOC_LITERAL(17, 229, 7),
 QT_MOC_LITERAL(18, 237, 18),
 QT_MOC_LITERAL(19, 256, 11),
-QT_MOC_LITERAL(20, 268, 14),
-QT_MOC_LITERAL(21, 283, 20),
-QT_MOC_LITERAL(22, 304, 17),
-QT_MOC_LITERAL(23, 322, 14),
-QT_MOC_LITERAL(24, 337, 9),
-QT_MOC_LITERAL(25, 347, 17),
-QT_MOC_LITERAL(26, 365, 4),
-QT_MOC_LITERAL(27, 370, 23)
+QT_MOC_LITERAL(20, 268, 20),
+QT_MOC_LITERAL(21, 289, 6),
+QT_MOC_LITERAL(22, 296, 20),
+QT_MOC_LITERAL(23, 317, 14),
+QT_MOC_LITERAL(24, 332, 20),
+QT_MOC_LITERAL(25, 353, 17),
+QT_MOC_LITERAL(26, 371, 14),
+QT_MOC_LITERAL(27, 386, 18),
+QT_MOC_LITERAL(28, 405, 9),
+QT_MOC_LITERAL(29, 415, 17),
+QT_MOC_LITERAL(30, 433, 4),
+QT_MOC_LITERAL(31, 438, 23),
+QT_MOC_LITERAL(32, 462, 10)
     },
     "CRxThread\0sensor1DataReceived\0\0CMPUData\0"
     "data\0sensor2DataReceived\0sensor3DataReceived\0"
@@ -65,10 +70,12 @@ QT_MOC_LITERAL(27, 370, 23)
     "CADCData\0gDataReceived\0CGData\0"
     "ukDataReceived\0CUKData\0urDataReceived\0"
     "CURData\0torqueDataReceived\0CTorqueData\0"
-    "endMeasurement\0runSensorCalibration\0"
-    "runADCCalibration\0runControlTest\0"
+    "lqr1DDataReceivedSIG\0Data1D\0"
+    "lqg1DDataReceivedSIG\0endMeasurement\0"
+    "runSensorCalibration\0runADCCalibration\0"
+    "runControlTest\0runEdgeBalanceSLOT\0"
     "setTorque\0setCompFilterFlag\0flag\0"
-    "setOffsetCorrectionFlag\0"
+    "setOffsetCorrectionFlag\0setLQRFlag\0"
 };
 #undef QT_MOC_LITERAL
 
@@ -78,34 +85,38 @@ static const uint qt_meta_data_CRxThread[] = {
        7,       // revision
        0,       // classname
        0,    0, // classinfo
-      18,   14, // methods
+      22,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
-      11,       // signalCount
+      13,       // signalCount
 
  // signals: name, argc, parameters, tag, flags
-       1,    1,  104,    2, 0x06,
-       5,    1,  107,    2, 0x06,
-       6,    1,  110,    2, 0x06,
-       7,    1,  113,    2, 0x06,
-       8,    1,  116,    2, 0x06,
-       9,    1,  119,    2, 0x06,
-      10,    1,  122,    2, 0x06,
-      12,    1,  125,    2, 0x06,
-      14,    1,  128,    2, 0x06,
-      16,    1,  131,    2, 0x06,
-      18,    1,  134,    2, 0x06,
+       1,    1,  124,    2, 0x06,
+       5,    1,  127,    2, 0x06,
+       6,    1,  130,    2, 0x06,
+       7,    1,  133,    2, 0x06,
+       8,    1,  136,    2, 0x06,
+       9,    1,  139,    2, 0x06,
+      10,    1,  142,    2, 0x06,
+      12,    1,  145,    2, 0x06,
+      14,    1,  148,    2, 0x06,
+      16,    1,  151,    2, 0x06,
+      18,    1,  154,    2, 0x06,
+      20,    1,  157,    2, 0x06,
+      22,    1,  160,    2, 0x06,
 
  // slots: name, argc, parameters, tag, flags
-      20,    0,  137,    2, 0x0a,
-      21,    0,  138,    2, 0x0a,
-      22,    0,  139,    2, 0x0a,
-      23,    0,  140,    2, 0x0a,
-      24,    1,  141,    2, 0x0a,
-      25,    1,  144,    2, 0x0a,
-      27,    1,  147,    2, 0x0a,
+      23,    0,  163,    2, 0x0a,
+      24,    0,  164,    2, 0x0a,
+      25,    0,  165,    2, 0x0a,
+      26,    0,  166,    2, 0x0a,
+      27,    0,  167,    2, 0x0a,
+      28,    1,  168,    2, 0x0a,
+      29,    1,  171,    2, 0x0a,
+      31,    1,  174,    2, 0x0a,
+      32,    1,  177,    2, 0x0a,
 
  // signals: parameters
     QMetaType::Void, 0x80000000 | 3,    4,
@@ -119,15 +130,19 @@ static const uint qt_meta_data_CRxThread[] = {
     QMetaType::Void, 0x80000000 | 15,    4,
     QMetaType::Void, 0x80000000 | 17,    4,
     QMetaType::Void, 0x80000000 | 19,    4,
+    QMetaType::Void, 0x80000000 | 21,    4,
+    QMetaType::Void, 0x80000000 | 21,    4,
 
  // slots: parameters
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
+    QMetaType::Void,
     QMetaType::Void, 0x80000000 | 19,    4,
-    QMetaType::Void, QMetaType::Bool,   26,
-    QMetaType::Void, QMetaType::Bool,   26,
+    QMetaType::Void, QMetaType::Bool,   30,
+    QMetaType::Void, QMetaType::Bool,   30,
+    QMetaType::Void, QMetaType::Bool,   30,
 
        0        // eod
 };
@@ -148,13 +163,17 @@ void CRxThread::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, v
         case 8: _t->ukDataReceived((*reinterpret_cast< const CUKData(*)>(_a[1]))); break;
         case 9: _t->urDataReceived((*reinterpret_cast< const CURData(*)>(_a[1]))); break;
         case 10: _t->torqueDataReceived((*reinterpret_cast< const CTorqueData(*)>(_a[1]))); break;
-        case 11: _t->endMeasurement(); break;
-        case 12: _t->runSensorCalibration(); break;
-        case 13: _t->runADCCalibration(); break;
-        case 14: _t->runControlTest(); break;
-        case 15: _t->setTorque((*reinterpret_cast< const CTorqueData(*)>(_a[1]))); break;
-        case 16: _t->setCompFilterFlag((*reinterpret_cast< bool(*)>(_a[1]))); break;
-        case 17: _t->setOffsetCorrectionFlag((*reinterpret_cast< bool(*)>(_a[1]))); break;
+        case 11: _t->lqr1DDataReceivedSIG((*reinterpret_cast< const Data1D(*)>(_a[1]))); break;
+        case 12: _t->lqg1DDataReceivedSIG((*reinterpret_cast< const Data1D(*)>(_a[1]))); break;
+        case 13: _t->endMeasurement(); break;
+        case 14: _t->runSensorCalibration(); break;
+        case 15: _t->runADCCalibration(); break;
+        case 16: _t->runControlTest(); break;
+        case 17: _t->runEdgeBalanceSLOT(); break;
+        case 18: _t->setTorque((*reinterpret_cast< const CTorqueData(*)>(_a[1]))); break;
+        case 19: _t->setCompFilterFlag((*reinterpret_cast< bool(*)>(_a[1]))); break;
+        case 20: _t->setOffsetCorrectionFlag((*reinterpret_cast< bool(*)>(_a[1]))); break;
+        case 21: _t->setLQRFlag((*reinterpret_cast< bool(*)>(_a[1]))); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
@@ -226,6 +245,18 @@ void CRxThread::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, v
                 *result = 10;
             }
         }
+        {
+            typedef void (CRxThread::*_t)(const Data1D & );
+            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&CRxThread::lqr1DDataReceivedSIG)) {
+                *result = 11;
+            }
+        }
+        {
+            typedef void (CRxThread::*_t)(const Data1D & );
+            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&CRxThread::lqg1DDataReceivedSIG)) {
+                *result = 12;
+            }
+        }
     }
 }
 
@@ -254,13 +285,13 @@ int CRxThread::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 18)
+        if (_id < 22)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 18;
+        _id -= 22;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 18)
+        if (_id < 22)
             *reinterpret_cast<int*>(_a[0]) = -1;
-        _id -= 18;
+        _id -= 22;
     }
     return _id;
 }
@@ -340,5 +371,19 @@ void CRxThread::torqueDataReceived(const CTorqueData & _t1)
 {
     void *_a[] = { 0, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
     QMetaObject::activate(this, &staticMetaObject, 10, _a);
+}
+
+// SIGNAL 11
+void CRxThread::lqr1DDataReceivedSIG(const Data1D & _t1)
+{
+    void *_a[] = { 0, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
+    QMetaObject::activate(this, &staticMetaObject, 11, _a);
+}
+
+// SIGNAL 12
+void CRxThread::lqg1DDataReceivedSIG(const Data1D & _t1)
+{
+    void *_a[] = { 0, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
+    QMetaObject::activate(this, &staticMetaObject, 12, _a);
 }
 QT_END_MOC_NAMESPACE

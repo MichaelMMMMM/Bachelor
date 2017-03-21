@@ -19,7 +19,8 @@ public:
 		 const std::string& lFile,
 		 const std::string& aFile,
 		 const std::string& bFile,
-		 const std::string& cFile);
+		 const std::string& cFile,
+		 const std::string& tkFile);
 	TLQG(const TLQG&) = delete;
 	TLQG& operator=(const TLQG&) = delete;
 	~TLQG() = default;
@@ -29,6 +30,7 @@ private:
 	TMatrix<nrX, nrX> mAd;
 	TMatrix<nrX, nrU> mBd;
 	TMatrix<nrY, nrX> mCd;
+	TMatrix<nrX, 9U> mT_K;
 
 	TRVector<nrY> mY;
 	TRVector<nrY> mY_B;
@@ -46,15 +48,17 @@ CTorqueData TLQG<nrX, nrU, nrY>::calculateOutput(CStateData& x)
 	if(mFirstRun == true)
 	{
 		mFirstRun = false;
-		mX_B.scalarAt(1,1) = x.mGData.mG_k1;
-		mX_B.scalarAt(2,1) = x.mGData.mG_k2;
-		mX_B.scalarAt(3,1) = x.mGData.mG_k3;
-		mX_B.scalarAt(4,1) = x.mUKData.mUK_k1;
-		mX_B.scalarAt(5,1) = x.mUKData.mUK_k2;
-		mX_B.scalarAt(6,1) = x.mUKData.mUK_k3;
-		mX_B.scalarAt(7,1) = x.mURData.mUR_k1;
-		mX_B.scalarAt(8,1) = x.mURData.mUR_k2;
-		mX_B.scalarAt(9,1) = x.mURData.mUR_k3;
+		TRVector<9U> x_vec;
+		x_vec.scalarAt(1,1) = x.mGData.mG_k1;
+		x_vec.scalarAt(2,1) = x.mGData.mG_k2;
+		x_vec.scalarAt(3,1) = x.mGData.mG_k3;
+		x_vec.scalarAt(4,1) = x.mUKData.mUK_k1;
+		x_vec.scalarAt(5,1) = x.mUKData.mUK_k2;
+		x_vec.scalarAt(6,1) = x.mUKData.mUK_k3;
+		x_vec.scalarAt(7,1) = x.mURData.mUR_k1;
+		x_vec.scalarAt(8,1) = x.mURData.mUR_k2;
+		x_vec.scalarAt(9,1) = x.mURData.mUR_k3;
+		mX_B = mT_K*x_vec;
 
 		mY.scalarAt(1,1) = x.mUKData.mUK_k1;
 		mY.scalarAt(2,1) = x.mUKData.mUK_k2;
@@ -109,12 +113,14 @@ TLQG<nrX, nrU, nrY>::TLQG(const std::string& kFile,
 						  const std::string& lFile,
 						  const std::string& aFile,
 						  const std::string& bFile,
-						  const std::string& cFile) : mKd(kFile),
-						  	  	  	  	  	  	  	  mLd(lFile),
-													  mAd(aFile),
-													  mBd(bFile),
-													  mCd(cFile),
-													  mFirstRun(true)
+						  const std::string& cFile,
+						  const std::string& tkFile) : mKd(kFile),
+						  	  	  	  	  	  	  	   mLd(lFile),
+													   mAd(aFile),
+													   mBd(bFile),
+													   mCd(cFile),
+													   mT_K(tkFile),
+													   mFirstRun(true)
 {
 
 }

@@ -17,6 +17,7 @@ public:
 	void setTorque(CTorqueData& data);
 	void enableMotor();
 	void disableMotor();
+	void reset() { mSensorSystem.reset(); };
 public:
 	CHardware();
 	CHardware(const CHardware&) = delete;

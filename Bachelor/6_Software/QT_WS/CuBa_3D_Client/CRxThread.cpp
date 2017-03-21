@@ -9,7 +9,6 @@ CRxThread::CRxThread(QObject *parent) :
 }
 void CRxThread::run()
 {
-    static int counter = 0;
     CMessage msg;
     while(true)
     {
@@ -17,8 +16,6 @@ void CRxThread::run()
         {
             if(mClient.readMessage(msg))
             {
-                counter++;
-                std::cout << "Hello Rx-Thread, counter: " << counter << std::endl;
                 EEvent event = msg.getEvent();
                 switch(event)
                 {
@@ -88,6 +85,18 @@ void CRxThread::run()
                     emit torqueDataReceived(data);
                     break;
                 }
+                case EEvent::LQR_DATA_1D:
+                {
+                    Data1D data = *reinterpret_cast<Data1D*>(msg.getDataPtr());
+                    emit lqr1DDataReceivedSIG(data);
+                    break;
+                }
+                case EEvent::LQG_DATA_1D:
+                {
+                    Data1D data = *reinterpret_cast<Data1D*>(msg.getDataPtr());
+                    emit lqg1DDataReceivedSIG(data);
+                    break;
+                }
                 default:
                     break;
                 }
@@ -128,6 +137,12 @@ void CRxThread::runControlTest()
     CMessage msg(EEvent::RUN_CONTROL);
     mClient.writeMessage(msg);
 }
+void CRxThread::runEdgeBalanceSLOT()
+{
+    mConnectedFlag = mClient.connectToServer();
+    CMessage msg(EEvent::RUN_EDGE_BALANCE);
+    mClient.writeMessage(msg);
+}
 void CRxThread::setCompFilterFlag(bool flag)
 {
     CMessage msg(EEvent::COMPFILTER_ACTIVE_FLAG);
@@ -137,6 +152,12 @@ void CRxThread::setCompFilterFlag(bool flag)
 void CRxThread::setOffsetCorrectionFlag(bool flag)
 {
     CMessage msg(EEvent::OFFSETCORRECTION_ACTIVE_FLAG);
+    *reinterpret_cast<bool*>(msg.getDataPtr()) = flag;
+    mClient.writeMessage(msg);
+}
+void CRxThread::setLQRFlag(bool flag)
+{
+    CMessage msg(EEvent::LQR_LQG_FLAG);
     *reinterpret_cast<bool*>(msg.getDataPtr()) = flag;
     mClient.writeMessage(msg);
 }

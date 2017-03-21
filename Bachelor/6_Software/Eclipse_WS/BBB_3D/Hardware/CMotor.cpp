@@ -19,7 +19,7 @@ CMotor::CMotor(const std::string& pwmchipNr,
 }
 void CMotor::enableMotor()
 {
-	this->setTorque(0.0F);
+	//this->setTorque(0.0F);
 	mEnablePin.setHigh();
 }
 void CMotor::disableMotor()

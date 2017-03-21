@@ -69,7 +69,9 @@ bool CCommFSM::onRunning(CMessage& msg)
 		(EEvent::G_DATA == event) 		 ||
 		(EEvent::UK_DATA == event)  	 ||
 		(EEvent::UR_DATA == event)		 ||
-		(EEvent::TORQUE_DATA == event) )
+		(EEvent::TORQUE_DATA == event)   ||
+		(EEvent::LQR_DATA_1D == event) 	 ||
+		(EEvent::LQG_DATA_1D == event) )
 	{
 		sAction.transmitMessage(msg);
 		return true;
