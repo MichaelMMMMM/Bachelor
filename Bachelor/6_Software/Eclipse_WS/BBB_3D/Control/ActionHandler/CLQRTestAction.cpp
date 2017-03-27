@@ -94,7 +94,6 @@ void CLQRTestAction::sampleLQRTest()
 						balance_flag = true;
 						std::cout << "[*] Control-Component: Entering Balance-Area, Time: " << mTime << std::endl;
 						sHardware.enableMotor();
-						sHardware.reset();
 						//sHardware.disableMotor();
 					}
 				}

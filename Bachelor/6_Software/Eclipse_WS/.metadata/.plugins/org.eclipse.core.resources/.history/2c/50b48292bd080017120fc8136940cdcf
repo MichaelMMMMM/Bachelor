@@ -1,7 +1,0 @@
-/**
- * @file	C1DOffsetCorrection.cpp
- * @author	Michael Meindl
- * @date	14.03.2017
- * @brief	Method definitions for C1DOffsetCorrection.
- */
-#include "C1DOffsetCorrection.h"

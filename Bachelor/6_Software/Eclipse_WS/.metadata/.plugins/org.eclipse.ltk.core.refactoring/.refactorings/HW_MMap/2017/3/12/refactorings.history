@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;HW_MMap/CADC.h&apos; to &apos;CADCMMap.h&apos;" description="Rename resource &apos;CADC.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="CADC.h" name="CADCMMap.h" stamp="1490182802687" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;HW_MMap/CADC.cpp&apos; to &apos;CADCMMap.cpp&apos;" description="Rename resource &apos;CADC.cpp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="CADC.cpp" name="CADCMMap.cpp" stamp="1490182810837" updateReferences="true"/>
+</session>

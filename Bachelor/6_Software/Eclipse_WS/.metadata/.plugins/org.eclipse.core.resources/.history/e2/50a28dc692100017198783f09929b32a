@@ -1,0 +1,33 @@
+/**
+ * @file	TMatrix.h
+ * @author	Michael Meindl
+ * @date	24.03.2017
+ * @brief	Template class to utilize matrixes.
+ */
+#ifndef TMATRIX_H
+#define TMATRIX_H
+#include "TCVector.h"
+
+template<const UInt32 n_R, const UInt32 n_C>
+class TMatrix
+{
+public:
+	TMatrix<n_R, n_C> operator+(const TMatrix<n_R, n_C>& summand) const;
+	TMatrix<n_R, n_C> operator-(const TMatrix<n_R, n_C>& subtrahend) const;
+public:
+	TMatrix();
+	TMatrix(const TMatrix&) = default;
+	TMatrix& operator=(const TMatrix&) = default;
+	~TMatrix() = default;
+private:
+	TCVector<n_C> mMatrix[n_R];
+};
+
+
+template<const UInt32 n_R, const UInt32 n_C>
+TMatrix<n_R, n_C>::TMatrix()
+{
+
+}
+
+#endif

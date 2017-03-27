@@ -1,31 +1,6 @@
-15:29:59 **** Incremental Build of configuration Debug for project HW_MMap ****
+13:14:15 **** Incremental Build of configuration Debug for project HW_MMap ****
 make all 
-Building file: ../CADC.cpp
-Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"CADC.d" -MT"CADC.o" -o "CADC.o" "../CADC.cpp"
-../CADC.cpp: In constructor ‘CADC::CADC()’:
-../CADC.cpp:20:9: warning: unused variable ‘step1config’ [-Wunused-variable]
-  UInt32 step1config = *reinterpret_cast<UInt32*>(mAddrPtr + sSTEPCONFIG1_Offset);
-         ^
-../CADC.cpp:21:9: warning: unused variable ‘step1delay’ [-Wunused-variable]
-  UInt32 step1delay  = *reinterpret_cast<UInt32*>(mAddrPtr + sSTEPDELAY1_Offset);
-         ^
-../CADC.cpp:22:9: warning: unused variable ‘step2config’ [-Wunused-variable]
-  UInt32 step2config = *reinterpret_cast<UInt32*>(mAddrPtr + sSTEPCONFIG2_Offset);
-         ^
-../CADC.cpp:23:9: warning: unused variable ‘step2delay’ [-Wunused-variable]
-  UInt32 step2delay  = *reinterpret_cast<UInt32*>(mAddrPtr + sSTEPDELAY2_Offset);
-         ^
-../CADC.cpp:24:9: warning: unused variable ‘step3config’ [-Wunused-variable]
-  UInt32 step3config = *reinterpret_cast<UInt32*>(mAddrPtr + sSTEPCONFIG3_Offset);
-         ^
-Finished building: ../CADC.cpp
- 
-Building target: HW_MMap
-Invoking: Cross G++ Linker
-arm-linux-gnueabihf-g++  -o "HW_MMap"  ./Assertion.o ./CADC.o ./CSPI.o ./main.o   
-Finished building target: HW_MMap
- 
+make: Nothing to be done for `all'.
 
-15:29:59 Build Finished (took 527ms)
+13:14:15 Build Finished (took 66ms)
 

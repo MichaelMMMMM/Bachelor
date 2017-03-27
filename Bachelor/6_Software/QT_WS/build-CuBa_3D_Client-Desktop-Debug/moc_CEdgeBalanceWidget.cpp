@@ -19,8 +19,8 @@
 
 QT_BEGIN_MOC_NAMESPACE
 struct qt_meta_stringdata_CEdgeBalanceWidget_t {
-    QByteArrayData data[14];
-    char stringdata[224];
+    QByteArrayData data[15];
+    char stringdata[232];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -42,14 +42,15 @@ QT_MOC_LITERAL(9, 146, 6),
 QT_MOC_LITERAL(10, 153, 4),
 QT_MOC_LITERAL(11, 158, 19),
 QT_MOC_LITERAL(12, 178, 21),
-QT_MOC_LITERAL(13, 200, 22)
+QT_MOC_LITERAL(13, 200, 22),
+QT_MOC_LITERAL(14, 223, 7)
     },
     "CEdgeBalanceWidget\0runEdgeBalanceSIG\0"
     "\0stopEdgeBalanceSIG\0setOffsetCorrectionFlagSIG\0"
     "flag\0setLQRFlagSIG\0startButtonClickedSLOT\0"
     "lqrDataReceivedSLOT\0Data1D\0data\0"
     "lqgDataReceivedSLOT\0offsetCheckboxClicked\0"
-    "lqrCheckboxClickedSLOT\0"
+    "lqrCheckboxClickedSLOT\0saveCSV\0"
 };
 #undef QT_MOC_LITERAL
 
@@ -59,7 +60,7 @@ static const uint qt_meta_data_CEdgeBalanceWidget[] = {
        7,       // revision
        0,       // classname
        0,    0, // classinfo
-       9,   14, // methods
+      10,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -67,17 +68,18 @@ static const uint qt_meta_data_CEdgeBalanceWidget[] = {
        4,       // signalCount
 
  // signals: name, argc, parameters, tag, flags
-       1,    0,   59,    2, 0x06,
-       3,    0,   60,    2, 0x06,
-       4,    1,   61,    2, 0x06,
-       6,    1,   64,    2, 0x06,
+       1,    0,   64,    2, 0x06,
+       3,    0,   65,    2, 0x06,
+       4,    1,   66,    2, 0x06,
+       6,    1,   69,    2, 0x06,
 
  // slots: name, argc, parameters, tag, flags
-       7,    0,   67,    2, 0x0a,
-       8,    1,   68,    2, 0x0a,
-      11,    1,   71,    2, 0x0a,
-      12,    1,   74,    2, 0x0a,
-      13,    1,   77,    2, 0x0a,
+       7,    0,   72,    2, 0x0a,
+       8,    1,   73,    2, 0x0a,
+      11,    1,   76,    2, 0x0a,
+      12,    1,   79,    2, 0x0a,
+      13,    1,   82,    2, 0x0a,
+      14,    0,   85,    2, 0x0a,
 
  // signals: parameters
     QMetaType::Void,
@@ -91,6 +93,7 @@ static const uint qt_meta_data_CEdgeBalanceWidget[] = {
     QMetaType::Void, 0x80000000 | 9,   10,
     QMetaType::Void, QMetaType::Bool,    5,
     QMetaType::Void, QMetaType::Bool,    5,
+    QMetaType::Void,
 
        0        // eod
 };
@@ -109,6 +112,7 @@ void CEdgeBalanceWidget::qt_static_metacall(QObject *_o, QMetaObject::Call _c, i
         case 6: _t->lqgDataReceivedSLOT((*reinterpret_cast< const Data1D(*)>(_a[1]))); break;
         case 7: _t->offsetCheckboxClicked((*reinterpret_cast< bool(*)>(_a[1]))); break;
         case 8: _t->lqrCheckboxClickedSLOT((*reinterpret_cast< bool(*)>(_a[1]))); break;
+        case 9: _t->saveCSV(); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
@@ -166,13 +170,13 @@ int CEdgeBalanceWidget::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 9)
+        if (_id < 10)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 9;
+        _id -= 10;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 9)
+        if (_id < 10)
             *reinterpret_cast<int*>(_a[0]) = -1;
-        _id -= 9;
+        _id -= 10;
     }
     return _id;
 }

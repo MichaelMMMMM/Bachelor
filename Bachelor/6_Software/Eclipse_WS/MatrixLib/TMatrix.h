@@ -1,12 +1,12 @@
 /**
  * @file	TMatrix.h
  * @author	Michael Meindl
- * @date	3.3.2017
- * @brief	Tempalte to calculate matrix operations.
+ * @date	24.03.2017
+ * @brief	Template class to utilize matrixes.
  */
 #ifndef TMATRIX_H
 #define TMATRIX_H
-#include "Global.h"
+#include "TCVector.h"
 #include <string>
 #include <iostream>
 #include <iomanip>
@@ -18,13 +18,11 @@ class TMatrix
 {
 public:
 	void display();
-	Float32& scalarAt(UInt32 ir, UInt32 ic);
-	const Float32& scalarAt(UInt32 ir, UInt32 ic) const;
-	TMatrix& operator+(const TMatrix&);
-	TMatrix& operator-(const TMatrix&);
-
+	TCVector<n_C>& operator[](const UInt32 ic);
+	TMatrix<n_R, n_C> operator+(const TMatrix<n_R, n_C>& summand) const;
+	TMatrix<n_R, n_C> operator-(const TMatrix<n_R, n_C>& subtrahend) const;
 	template<const UInt32 n_C_new>
-	TMatrix<n_R, n_C_new> operator*(const TMatrix<n_C, n_C_new> mat);
+	TMatrix<n_R, n_C_new> operator*(TMatrix<n_C, n_C_new>& factor);
 public:
 	TMatrix();
 	TMatrix(const std::string& filename);
@@ -32,11 +30,59 @@ public:
 	TMatrix& operator=(const TMatrix&) = default;
 	~TMatrix() = default;
 private:
-	Float32 mMatrix[n_R][n_C];
+	TCVector<n_C> mMatrix[n_R];
 };
 
 template<const UInt32 n_R, const UInt32 n_C>
-TMatrix<n_R, n_C>::TMatrix(const std::string& filename) : mMatrix{0.0F}
+template<const UInt32 n_C_new>
+TMatrix<n_R, n_C_new> TMatrix<n_R, n_C>::operator*(TMatrix<n_C, n_C_new>& factor)
+{
+	TMatrix<n_R, n_C_new> ret;
+	for(UInt32 ir = 0; ir < n_R; ir++)
+	{
+		for(UInt32 ic = 0; ic < n_C_new; ic++)
+		{
+			for(UInt32 i = 0; i < n_C; i++)
+			{
+
+				ret[ir+1][ic+1] += (*this)[ir+1][i+1] * factor[i+1][ic+1];
+			}
+		}
+	}
+	return ret;
+}
+template<const UInt32 n_R, const UInt32 n_C>
+TCVector<n_C>& TMatrix<n_R, n_C>::operator[](const UInt32 i)
+{
+	return mMatrix[i-1];
+}
+template<const UInt32 n_R, const UInt32 n_C>
+TMatrix<n_R, n_C> TMatrix<n_R, n_C>::operator+(const TMatrix<n_R, n_C>& summand) const
+{
+	TMatrix<n_R, n_C> ret;
+	for(UInt32 ir = 0; ir < n_R; ir++)
+	{
+		ret.mMatrix[ir] = this->mMatrix[ir] + summand.mMatrix[ir];
+	}
+	return ret;
+}
+template<const UInt32 n_R, const UInt32 n_C>
+TMatrix<n_R, n_C> TMatrix<n_R, n_C>::operator-(const TMatrix<n_R, n_C>& subtrahend) const
+{
+	TMatrix<n_R, n_C> ret;
+	for(UInt32 ir = 0; ir < n_R; ir++)
+	{
+		ret.mMatrix[ir] = this->mMatrix[ir] - subtrahend.mMatrix[ir];
+	}
+	return ret;
+}
+template<const UInt32 n_R, const UInt32 n_C>
+TMatrix<n_R, n_C>::TMatrix()
+{
+
+}
+template<const UInt32 n_R, const UInt32 n_C>
+TMatrix<n_R, n_C>::TMatrix(const std::string& filename)
 {
 	std::ifstream stream;
 	std::string data;
@@ -48,67 +94,10 @@ TMatrix<n_R, n_C>::TMatrix(const std::string& filename) : mMatrix{0.0F}
 		for(UInt32 ic = 0; ic < n_C; ic++)
 		{
 			std::string tmp = data.substr(0, data.find(","));
-			mMatrix[ir][ic] = std::stof(tmp);
+			mMatrix[ir][ic+1] = std::stof(tmp);
 			data = data.substr(data.find(",")+1);
 		}
 	}
-}
-template<const UInt32 n_R, const UInt32 n_C>
-template<const UInt32 n_C_new>
-TMatrix<n_R, n_C_new> TMatrix<n_R, n_C>::operator*(const TMatrix<n_C, n_C_new> mat)
-{
-	TMatrix<n_R, n_C_new> newMat;
-	for(UInt32 ir = 0; ir < n_R; ir++)
-	{
-		for(UInt32 ic = 0; ic < n_C_new; ic++)
-		{
-			for(UInt32 i = 0; i < n_C; i++)
-			{
-
-				newMat.scalarAt(ir+1, ic+1) += this->mMatrix[ir][i] * mat.scalarAt(i+1, ic+1);
-			}
-		}
-	}
-	return newMat;
-}
-template<const UInt32 n_R, const UInt32 n_C>
-TMatrix<n_R, n_C>& TMatrix<n_R, n_C>::operator-(const TMatrix& mat)
-{
-	for(UInt32 ir = 0; ir < n_R; ir++)
-	{
-		for(UInt32 ic = 0; ic < n_C; ic++)
-		{
-			mMatrix[ir][ic] -= mat.mMatrix[ir][ic];
-		}
-	}
-	return *this;
-}
-template<const UInt32 n_R, const UInt32 n_C>
-TMatrix<n_R, n_C>& TMatrix<n_R, n_C>::operator+(const TMatrix& mat)
-{
-	for(UInt32 ir = 0; ir < n_R; ir++)
-	{
-		for(UInt32 ic = 0; ic < n_C; ic++)
-		{
-			mMatrix[ir][ic] += mat.mMatrix[ir][ic];
-		}
-	}
-	return *this;
-}
-template<const UInt32 n_R, const UInt32 n_C>
-Float32& TMatrix<n_R, n_C>::scalarAt(UInt32 ir, UInt32 ic)
-{
-	return mMatrix[ir-1][ic-1];
-}
-template<const UInt32 n_R, const UInt32 n_C>
-const Float32& TMatrix<n_R, n_C>::scalarAt(UInt32 ir, UInt32 ic) const
-{
-	return mMatrix[ir-1][ic-1];
-}
-template<const UInt32 n_R, const UInt32 n_C>
-TMatrix<n_R, n_C>::TMatrix() : mMatrix{0.0F}
-{
-
 }
 template<const UInt32 n_R, const UInt32 n_C>
 void TMatrix<n_R, n_C>::display()
@@ -117,10 +106,9 @@ void TMatrix<n_R, n_C>::display()
 	{
 		for(UInt32 ic = 0; ic < n_C; ic++)
 		{
-			std::cout << std::setw(6) << mMatrix[ir][ic] << " ";
+			std::cout << std::setw(10) << (*this)[ir+1][ic+1] << " ";
 		}
 		std::cout << std::endl;
 	}
 }
-
 #endif

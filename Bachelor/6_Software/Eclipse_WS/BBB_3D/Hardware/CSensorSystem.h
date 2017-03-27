@@ -9,13 +9,12 @@
 #include "CMPU9250.h"
 #include "CSwitch.h"
 #include "CSensorData.h"
-#include "CADC.h"
+#include "CADCMMap.h"
 
 class CSensorSystem
 {
 public:
 	bool readSensorData(CSensorData& data);
-	void reset() { mADC.reset(); };
 public:
 	CSensorSystem();
 	CSensorSystem(const CSensorSystem&) = delete;
@@ -24,7 +23,8 @@ public:
 private:
 	CSwitch  mSwitch;
 	CMPU9250 mMPU;
-	CADC     mADC;
+	//CADC     mADC;
+	CADCMMap mADC;
 };
 
 #endif

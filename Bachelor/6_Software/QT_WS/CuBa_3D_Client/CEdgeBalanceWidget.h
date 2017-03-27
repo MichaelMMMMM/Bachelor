@@ -22,9 +22,11 @@ public slots:
     void lqgDataReceivedSLOT(const Data1D& data);
     void offsetCheckboxClicked(bool flag);
     void lqrCheckboxClickedSLOT(bool flag);
+    void saveCSV();
 private:
     int  mDrawCounter;
     bool mRunningFlag;
+    bool mSaveFlag;
 
     QHBoxLayout*        mCentralLayoutPtr;
     QWidget*            mLeftWidgetPtr;
@@ -35,6 +37,7 @@ private:
     QPushButton*        mStartButtonPtr;
     QCheckBox*          mOffsetBoxPtr;
     QCheckBox*          mLQRBoxPtr;
+    QPushButton*        mSaveButtonPtr;
 
     QCustomPlot*        mGPlotPtr;
     QCustomPlot*        mUKPlotPtr;
@@ -43,6 +46,12 @@ private:
 
     QVector<TRVector<4U> > mLQRData;
     QVector<TRVector<4U> > mLQGData;
+
+    QVector<double>     mTime;
+    QVector<double>     mPhi;
+    QVector<double>     mUK;
+    QVector<double>     mUR;
+    QVector<double>     mTM;
 
     QVector<double>     mLQRTime;
     QVector<double>     mLQGTime;

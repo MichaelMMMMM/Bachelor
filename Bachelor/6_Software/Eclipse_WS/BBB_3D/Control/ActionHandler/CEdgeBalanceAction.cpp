@@ -18,6 +18,8 @@ CEdgeBalanceAction::CEdgeBalanceAction() : mLQG("/root/control_data/1D_K_mat.csv
 										   mSampleCounter(0)
 {
 
+	mSine.setFreq(2.0F);
+	mSine.setAmp(0.01F);
 }
 void CEdgeBalanceAction::sampleIdle()
 {
@@ -65,10 +67,6 @@ void CEdgeBalanceAction::sampleControl()
 	}
 	else
 	{
-		struct timeval timebegin, timeend;
-		long seconds, useconds;
-		gettimeofday(&timebegin, (struct timezone*)0);
-
 		CSensorData sensor_data;
 		if(sHardware.fetchSensorData(sensor_data))
 		{
@@ -93,10 +91,12 @@ void CEdgeBalanceAction::sampleControl()
 
 			sProxy.transmitLQGData1D(data, false);
 
+			Float32 u_off = mSine.getValue(mTime);
+
 			if(mLQRFlag == true)
 			{
 				CTorqueData tm;
-				tm.mTorque1 = 0.0F; tm.mTorque2 = u.scalarAt(1U, 1U); tm.mTorque3 = 0.0F;
+				tm.mTorque1 = 0.0F; tm.mTorque2 = u.scalarAt(1U, 1U) + u_off; tm.mTorque3 = 0.0F;
 				sHardware.setTorque(tm);
 			}
 			else
@@ -106,15 +106,7 @@ void CEdgeBalanceAction::sampleControl()
 				sHardware.setTorque(tm);
 			}
 		}
-		gettimeofday(&timeend, (struct timezone*)0);
-		seconds = timeend.tv_sec - timebegin.tv_sec;
-		useconds = timeend.tv_usec - timebegin.tv_usec;
-		if(useconds < 0)
-		{
-			useconds += 1000000;
-			seconds--;
-		}
-		std::cout << "seconds: " << seconds << " useconds: " << useconds << std::endl;
+		mTime += 0.02F;
 	}
 }
 void CEdgeBalanceAction::onEntryEdgeBalance()

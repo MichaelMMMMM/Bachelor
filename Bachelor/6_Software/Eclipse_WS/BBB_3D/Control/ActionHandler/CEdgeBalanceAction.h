@@ -17,6 +17,7 @@
 #include "TLQR.h"
 #include "TLQG.h"
 #include "CLQB.h"
+#include "CSineWave.h"
 
 class CEdgeBalanceAction : public CControlActionBase
 {
@@ -46,10 +47,12 @@ private:
 	C1DLPF	mXLPF;
 	CLQB mLQG;
 
-	static constexpr Float32 sMaxGValue = 0.1F;
+	static constexpr Float32 sMaxGValue = 0.15F;
 	Float32 mTime;
 	bool    mLQRFlag;
 	int mSampleCounter;
+
+	CSineWave mSine;
 
 };
 

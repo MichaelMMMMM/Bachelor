@@ -1,7 +1,11 @@
 #include "CEdgeBalanceWidget.h"
+#include <iostream>
+#include <ostream>
+#include <fstream>
+using namespace std;
 
 CEdgeBalanceWidget::CEdgeBalanceWidget(QWidget *parent) :
-    QWidget(parent), mDrawCounter(0), mRunningFlag(false)
+    QWidget(parent), mDrawCounter(0), mRunningFlag(false), mSaveFlag(false)
 {
     //Setup of the central layouts
     mCentralLayoutPtr = new QHBoxLayout;
@@ -29,6 +33,11 @@ CEdgeBalanceWidget::CEdgeBalanceWidget(QWidget *parent) :
     QObject::connect(mStartButtonPtr, SIGNAL(clicked()),
                      this, SLOT(startButtonClickedSLOT()));
     mRightLayoutPtr->addWidget(mStartButtonPtr);
+
+    mSaveButtonPtr = new QPushButton("Save Data");
+    QObject::connect(mSaveButtonPtr, SIGNAL(clicked()),
+                     this, SLOT(saveCSV()));
+    mRightLayoutPtr->addWidget(mSaveButtonPtr);
 
     mOffsetBoxPtr   = new QCheckBox("Enable Offset-Correction");
     mOffsetBoxPtr->setChecked(true);
@@ -119,6 +128,7 @@ void CEdgeBalanceWidget::startButtonClickedSLOT()
     if(mRunningFlag == false)
     {
         mRunningFlag = true;
+        mSaveFlag = false;
         mLQRData.clear();
         mLQGData.clear();
         mLQRTime.clear();
@@ -131,6 +141,12 @@ void CEdgeBalanceWidget::startButtonClickedSLOT()
         mURLQG.clear();
         mTMLQR.clear();
         mTMLQG.clear();
+
+        mTime.clear();
+        mPhi.clear();
+        mUK.clear();
+        mUR.clear();
+        mTM.clear();
 
         mGPlotPtr->xAxis->setRange(0.0, 10.0);
         mGPlotPtr->yAxis->setRange(-10.5, 10.5);
@@ -176,7 +192,67 @@ void CEdgeBalanceWidget::lqgDataReceivedSLOT(const Data1D& data)
         mTMLQG.erase(mTMLQG.begin());
     }
     this->redrawPlots();
+
+    if(mTime.length() == 0)
+    {
+        mTime.append(0.00);
+    }
+    else
+    {
+        mTime.append(mTime.last() + 0.02);
+    }
+    mPhi.append(x1);
+    mUK.append(x2);
+    mUR.append(x3);
+    mTM.append(u);
 }
+void CEdgeBalanceWidget::saveCSV()
+{
+    if(mSaveFlag == false)
+    {
+        mSaveFlag = true;
+        string data_file     = "edge_balance_data.csv";
+        ofstream stream;
+        stream.open(data_file);
+        stream << "t, phi, uk, ur, tm\n";
+
+        QVectorIterator<double> t_it(mTime);
+        QVectorIterator<double> phi_it(mPhi);
+        QVectorIterator<double> uk_it(mUK);
+        QVectorIterator<double> ur_it(mUR);
+        QVectorIterator<double> tm_it(mTM);
+
+        while(t_it.hasNext())
+        {
+            const double& t = t_it.next();
+            string tmp = to_string(t);
+            tmp.replace(tmp.find(",", 0), 1, ".");
+            stream << tmp << ", ";
+
+            const double& phi = phi_it.next();
+            tmp = to_string(phi);
+            tmp.replace(tmp.find(",", 0), 1, ".");
+            stream << tmp << ", ";
+
+            const double& uk = uk_it.next();
+            tmp = to_string(uk);
+            tmp.replace(tmp.find(",", 0), 1, ".");
+            stream << tmp << ", ";
+
+            const double& ur = ur_it.next();
+            tmp = to_string(ur);
+            tmp.replace(tmp.find(",", 0), 1, ".");
+            stream << tmp << ", ";
+
+            const double& tm = tm_it.next();
+            tmp = to_string(tm);
+            tmp.replace(tmp.find(",", 0), 1, ".");
+            stream << tmp << "\n";
+        }
+        stream.close();
+    }
+}
+
 void CEdgeBalanceWidget::lqrDataReceivedSLOT(const Data1D& data)
 {
     mLQRData.append(data);

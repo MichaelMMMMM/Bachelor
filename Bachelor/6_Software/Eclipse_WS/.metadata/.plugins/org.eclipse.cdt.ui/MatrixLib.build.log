@@ -1,6 +1,6 @@
-18:57:29 **** Incremental Build of configuration Debug for project MatrixLib ****
+14:35:40 **** Incremental Build of configuration Debug for project MatrixLib ****
 make all 
 make: Nothing to be done for `all'.
 
-18:57:29 Build Finished (took 84ms)
+14:35:40 Build Finished (took 67ms)
 

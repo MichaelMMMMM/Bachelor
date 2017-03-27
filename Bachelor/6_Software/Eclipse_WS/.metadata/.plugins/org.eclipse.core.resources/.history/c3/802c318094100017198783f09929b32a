@@ -1,0 +1,18 @@
+#include <iostream>
+#include "TMatrix.h"
+using namespace std;
+
+
+int main()
+{
+	TMatrix<3U, 3U> test1;
+	TMatrix<7U, 3U> test2("Debug/Ld_mat.csv");
+	test2.display();
+
+	for(UInt32 i = 0; i < 3; i++)
+	{
+		test1[i][i] = i+1;
+	}
+	test1.display();
+	return 0;
+}

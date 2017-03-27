@@ -1,0 +1,22 @@
+/**
+ * @file	TMatrix.h
+ * @author	Michael Meindl
+ * @date	24.03.2017
+ * @brief	Template class to utilize matrixes.
+ */
+#ifndef TMATRIX_H
+#define TMATRIX_H
+#include "TCVector.h"
+
+template<const UInt32 n_R, UInt32 n_C>
+class TMatrix
+{
+public:
+
+public:
+
+private:
+	TCVector<n_C> mMatrix[n_R];
+};
+
+#endif

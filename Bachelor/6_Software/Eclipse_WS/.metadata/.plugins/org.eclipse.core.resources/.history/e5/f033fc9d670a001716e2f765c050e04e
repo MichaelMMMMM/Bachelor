@@ -1,8 +1,0 @@
-/**
- * @file	TLQR.cpp
- * @author	Michael Meindl
- * @date	16.03.2017
- * @brief	Template specialization for TLQR.
- */
-#include "TLQR.h"
-

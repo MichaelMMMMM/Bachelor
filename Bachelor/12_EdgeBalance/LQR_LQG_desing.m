@@ -33,7 +33,7 @@ u_max = 0.11;
 R     = diag(u_max.^(-2));
 
 Kd    = dlqr(SSd.A, SSd.B, Q, R);
-Kd    = dlqr(SSd.A, SSd.B, eye(3)*1e-5, R);
+%Kd    = dlqr(SSd.A, SSd.B, eye(3)*1e-5, R);
 
 %Design the stationary Kalman-Filter
 [t_uk, uk1, uk2, uk3] = load_file('control_uk_data.csv');

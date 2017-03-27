@@ -71,6 +71,9 @@ Q = diag(xK_max(1:7).^2);
 
 %KKd = dlqr(KSSd.A, KSSd.B, Q, R);
 KKd = dlqr(KSSd.A, KSSd.B, eye(7)*0.5e-1, R);
+KKd(:, 4:7) = KKd(:, 4:7) * 1.4;
+KKd(:,4) = KKd(:,4) * 1.01;
+KKd(:,6) = KKd(:,6) * 1.01;
 Kd  = KKd * [eye(7), zeros(7,2)]*T_K;
 
 %Kd tuning

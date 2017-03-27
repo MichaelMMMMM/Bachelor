@@ -1,0 +1,101 @@
+#include "CADC.h"
+#include <iostream>
+#include <cstdio>
+#include <cstdlib>
+#include <unistd.h>
+#include <stdio.h>
+#include <fcntl.h>
+#include <sys/mman.h>
+#include "Global.h"
+
+CADC::CADC() : mMemoryFD(-1), mAddrPtr(nullptr)
+{
+	mMemoryFD = open("/dev/mem", O_RDWR);
+	sAssertion(mMemoryFD >= 0, "(CSPI::CSPI) Failed to open /dev/mem", true);
+	mAddrPtr = reinterpret_cast<UInt8*>(mmap(0, sMEM_SIZE, PROT_READ | PROT_WRITE, MAP_SHARED, mMemoryFD, sSTART_ADDR));
+	//sAssertion(reinterpret_cast<void*>(mAddrPtr) != MAP_FAILED, "(SPI::CSPI) Failed to mmap", true);
+
+	UInt32 stepConfig = *reinterpret_cast<UInt32*>(mAddrPtr + sSTEPENABLE_Offset);
+	std::cout << stepConfig << std::endl;
+	UInt32 step1config = *reinterpret_cast<UInt32*>(mAddrPtr + sSTEPCONFIG1_Offset);
+	UInt32 step1delay  = *reinterpret_cast<UInt32*>(mAddrPtr + sSTEPDELAY1_Offset);
+	UInt32 step2config = *reinterpret_cast<UInt32*>(mAddrPtr + sSTEPCONFIG2_Offset);
+	UInt32 step2delay  = *reinterpret_cast<UInt32*>(mAddrPtr + sSTEPDELAY2_Offset);
+	UInt32 step3config = *reinterpret_cast<UInt32*>(mAddrPtr + sSTEPCONFIG3_Offset);
+	UInt32 step3delay  = *reinterpret_cast<UInt32*>(mAddrPtr + sSTEPDELAY3_Offset);
+	*reinterpret_cast<UInt32*>(mAddrPtr + sSTEPENABLE_Offset) = 0b01110U;
+
+	std::cout << step3delay << std::endl;
+
+	UInt32 data;
+	UInt32 fifoCount;
+	UInt32 adcData[3];
+	while(true)
+	{
+		fifoCount = (*reinterpret_cast<UInt32*>(mAddrPtr + sFIFO1COUNT_Offset)) & 0b01111111U;
+		for(UInt32 i = 0; i < 3 ; i++)
+		{
+			fifoCount = (*reinterpret_cast<UInt32*>(mAddrPtr + sFIFO1COUNT_Offset)) &
+						0b01111111U;
+			if(fifoCount > 0U)
+			{
+				data = (*reinterpret_cast<UInt32*>(mAddrPtr + sFIFO1DATA_Offset)) &
+						0b0111111111111U;
+
+				std::cout << data << std::endl;
+			}
+		}
+
+	}
+}
+CADC::~CADC()
+{
+
+}
+void CADC::writeRegister(const UInt32 addrOffset, const UInt32 value)
+{
+	*reinterpret_cast<UInt32*>(mAddrPtr + addrOffset) = value;
+}
+UInt32 CADC::readRegister(const UInt32 addrOffset)
+{
+	return *reinterpret_cast<UInt32*>(mAddrPtr + addrOffset);
+}
+bool CADC::readADCValues(UInt16& adc1, UInt16& adc2, UInt16& adc3, bool wait)
+{
+	bool finished = false;
+	do
+	{
+		UInt32 fifo1Count = this->readRegister(sFIFO1COUNT_Offset);
+		if(fifo1Count >= 3U)
+		{
+			for(UInt32 i = 0U; i < 3U; i++)
+			{
+				UInt16 value = this->readRegister(sFIFO1DATA_Offset);
+				UInt16 id    = ( value & sIDMask) >> 16U;
+				UInt16 value = ( value & sValueMask);
+				switch(id)
+				{
+				case sChannel1ID:
+				{
+					adc1 = value;
+					break;
+				}
+				case sChannel2ID:
+				{
+					adc2 = value;
+					break;
+				}
+				case sChannel3ID:
+				{
+					adc3 = value;
+					break;
+				}
+				default:
+				{
+					break;
+				}
+				}
+			}
+		}
+	}while( (finished == false) && (wait == true));
+}
