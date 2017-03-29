@@ -1,0 +1,168 @@
+\subsection{Beschreibung von System mit Hilfe der Zustandsraumdarstellung}
+Aus dem vorherigen Kapitel sind die beiden Bewegungsgleichungen 
+\begin{equation}
+I_K \cdot \dot{u}_K = m\cdot g\cdot l\cdot s_{\varphi} - C_{\psi}\cdot u_{K} + C_{\psi} \cdot u_{R} - T_M
+\end{equation}
+\begin{equation}
+I_R\cdot \dot{u}_R = C_{\psi}\cdot u_{K} - C_{\psi}\cdot u_{R} + T_M
+\end{equation}
+hervorgegangen, welche die Systemdynamik vollständig beschreiben. Mit Hilfe der Definitionen
+\begin{equation}
+\bs{x} = \begin{bmatrix} \varphi \\ u_K \\ u_R \end{bmatrix}
+\hspace{35pt}
+\bs{y} = \begin{bmatrix} \varphi \\ u_K \\ u_R \end{bmatrix}
+\hspace{35pt}
+u = T_M
+\end{equation}
+können die linearisierten Bewegungsgleichungen in die folgende Zustandsraumdarstellung überführt werden.
+\begin{equation}
+\bs{\dot{x}} = \underbrace{\begin{bmatrix}
+0 && 1 && 0 
+\\ 
+\frac{m\cdot g\cdot l}{I_K} && \frac{-C_{\psi}}{I_K} && \frac{C_{\psi}}{I_K}
+\\
+0 && \frac{C_{\psi}}{I_R} && \frac{-C_{\psi}}{I_R}
+\end{bmatrix}}_{\equiv \bs{A}} \cdot \bs{x}
++
+\underbrace{\begin{bmatrix}
+0 \\ \frac{-1}{I_K} \\ \frac{1}{I_R}
+\end{bmatrix}}_{\equiv \bs{b}} \cdot \bs{u}
+\end{equation}
+\begin{equation}
+\bs{y} = \underbrace{\begin{bmatrix}
+1 && 0 && 0 \\ 0 && 1 && 0 \\ 0 && 0 && 1
+\end{bmatrix}}_{\equiv \bs{C}} \cdot \bs{x}
+\end{equation}
+Prinzipiell kann jedes lineare zeitinvariante System \textfrak{S}($\bs{A}$, $\bs{B}$, $\bs{C}$, $\bs{D}$) als Zustandsraumdarstellung beschreiben lassen, wobei folgendes gilt.
+\begin{equation}
+\textfrak{S} : \left\{ \begin{array}{ll}
+\bs{\dot{x}}(t) = \bs{A}\cdot \bs{x}(t) + \bs{B}\cdot \bs{u}(t) \\
+\bs{y}(t) = \bs{C}\cdot \bs{x}(t) + \bs{D}\cdot \bs{u}(t)
+\end{array}
+\right.
+\end{equation}
+Wobei $\bs{x} \in \mathbb{R}^n$ Zustandsvektor, $\bs{u} \in \mathbb{R}^r$ Eingangsvektor und $\bs{y} \in \mathbb{R}^m$ Ausgangsvektor heißt. Im weiteren Verlauf wird die Zeitabhängigkeit dieser drei Vektoren nicht mehr explizit angegeben. Des weiteren werden in dieser Arbeit lediglich nicht sprungfähige Systeme \cSS{A}{B}{C} betrachtet, deren Eingangsvektor $\bs{u}$  den Ausgangsvektor $\bs{y}$ nicht direkt beeinflusst und somit $\bs{D} = \bs{0}$ gilt.
+
+Ein großer Vorteil dieser Modellierungsform besteht darin, dass für jedes Systems unendlich viele Zustandsraumdarstellungen existieren. Dieser Umstand wird ersichtlich wenn man für die Herleitung der Bewegungsgleichungen alternative generalisierte Geschwindigkeiten wählt und diese anschließend in eine Zustandsraumdarstellung transformiert.
+\begin{equation}
+\tilde{u}_K \equiv \dot{\phi} \hspace{35pt} \tilde{u}_R \equiv \dot{\psi}
+\end{equation}
+\begin{equation}
+I_K\cdot \dot{\tilde{u}}_K = m\cdot g \cdot l \cdot sin_{\varphi} + C_{\psi}\cdot \tilde{u}_R - T_M
+\end{equation}
+\begin{equation}
+I_R\cdot \dot{\tilde{u}}_R = -\frac{I_R\cdot m\cdot g\cdot l\cdot sin_{\varphi}}{I_K} - \frac{(I_K + I_R)\cdot C_{\psi}}{I_K} + \frac{I_K + I_R}{I_K}\cdot T_M
+\end{equation}
+\begin{equation}
+\bs{\dot{\tilde{x}}} = \begin{bmatrix}
+0 && 1 && 0 
+\\
+\frac{m\cdot g\cdot l}{I_K} && 0 && \frac{C_{\psi}}{I_K}
+\\
+\frac{-I_R\cdot m\cdot g\cdot l}{I_R\cdot I_K} && 0 && \frac{-C_{\psi}(I_K+I_R)}{I_R\cdot I_K} 
+\end{bmatrix}\cdot \bs{\tilde{x}}
++
+\begin{bmatrix}
+0 \\ \frac{-1}{I_K} \\ \frac{I_K+I_R}{I_K\cdot I_R}
+\end{bmatrix} \cdot u
+\end{equation}
+\begin{equation}
+\bs{y} = \begin{bmatrix}
+1 && 0 && 0 \\
+0 && 1 && 0 \\
+0 && 1 && 1 \\
+\end{bmatrix} \cdot \bs{\tilde{x}}
+\end{equation}
+
+Sowohl die verschiedenen Bewegungsgleichungen als auch die daraus resultierenden Zustandsraumdarstellungen sind gültige Beschreibungsformen des Systems. Allgemein kann ein Zustandsraumdarstellung mit Hilfe einer Transformationsmatrix $\bs{T} \in \mathbb{R}^{n\times n}$ in eine äquivalente Darstellung überführt werden. Hierfür muss $\bs{T}$ lediglich regulär sein. Die neue Darstellung ergibt sich aus den folgenden Transformationen.
+\begin{equation}
+\bs{\tilde{x}} = \bs{T}^{-1}\cdot\bs{x} \hspace{35pt}\bs{\dot{\tilde{x}}} = \bs{T}^{-1}\cdot \bs{\dot{x}}
+\end{equation}
+\begin{equation}
+\begin{split}
+\bs{\dot{\tilde{x}}} &= \bs{T}^{-1}\bs{A}\bs{T}\cdot \bs{\tilde{x}} + \bs{T}^{-1}\cdot \bs{u} \\
+& = \bs{\tilde{A}}\cdot \bs{\tilde{x}} + \bs{\tilde{B}}\cdot \bs{u} \hspace{45pt} \vert \hspace{15pt} \bs{\tilde{A}} = \bs{T}^{-1}\bs{A}\bs{T}, \bs{\tilde{B}} = \bs{T}^{-1}\bs{B}
+\end{split}
+\end{equation}
+\begin{equation}
+\bs{y} = \bs{C}\bs{T}\cdot \bs{\tilde{x}} 
+= \bs{\tilde{C}}\cdot \bs{\tilde{x}} \hspace{45pt} \vert \hspace{15pt} \bs{\tilde{C}} = \bs{C}\bs{T}
+\end{equation}
+Mit Hilfe derartiger Transformationen kann ein beliebiges System in diverse Normalformen überführt werden, welche für die Systemanalyse und den Reglerentwurf besonders geeignet sind. Als erstes Beispiel sei die Transformation in kanonische Normalform genannt. Hierfür sei ein System \cSS{A}{B}{C} der Ordnung $n$ gegeben, dessen Systemmatrix $\bs{A}$ $n$ einfache Eigenwerte $\lambda_i$ mit den zugehörigen Eigenvektoren $\bs{v}_i$ besitzt. Sind die Eigenvektoren $\bs{v}_i$ linear unabhängig dann ist die Matrix
+\begin{equation}
+\bs{V} = \begin{bmatrix}
+\bs{v}_i & \bs{v}_2 & \hdots & \bs{v}_n 
+\end{bmatrix}
+\end{equation}
+regulär und kann somit als Transformationsmatrix verwendet werden. Die resultierende Darstellung
+\begin{equation}
+\begin{split}
+\bs{\dot{\tilde{x}}} &= \bs{V}^{-1}\bs{A}\bs{V}\cdot \bs{\tilde{x}} + \bs{V}^{-1}\bs{B}\cdot \bs{u} \\
+\bs{y} &= \bs{C}\bs{V}\cdot \bs{\tilde{x}}
+\end{split}
+\end{equation}
+heißt kanonische Normalform, wobei die Matrix $\bs{\tilde{A}}$ die folgende Form besitzt.
+\begin{equation}
+\bs{\tilde{A}} = \bs{V}^{-1}\bs{A}\bs{V} = \begin{bmatrix}
+\lambda_1 & 0 & \hdots & 0 \\
+0 & \lambda_2 & \hdots & 0 \\
+\vdots & \vdots & \ddots & \vdots \\
+0 & 0 & \hdots & \lambda_n
+\end{bmatrix}
+\end{equation}
+Folglich sind die Elemente des Zustandvektors $\bs{\tilde{x}}$ vollständig voneinander entkoppelt und werden deshalb auch als Eigenvorgänge bzw. Eigenbewegungen des Systems bezeichnet. Die vollständige Entkopplung der Zustandsgrößen ist nicht immer mögliche, für eine ausführliche Diskussion Thematik sei auf [RT1, Lunze, S.135ff] verwiesen.
+Die homogenen Lösung der kanonischen Normalform lässt sich mit Hilfe des Exponentialansatzes ermitteln.
+\begin{equation}
+\tilde{x}_{i,h}(t) = e^{\lambda_i\cdot t}\cdot \tilde{x}_i(0) \rArrow \bs{\tilde{x}}_h(t) = \begin{bmatrix}
+e^{\lambda_1\cdot t} &  & \\
+& e^{\lambda_2\cdot t}  & \\
+&  & \ddots & \\
+&  & & e^{\lambda_n\cdot t}
+\end{bmatrix}\cdot \bs{\tilde{x}}(0)
+\end{equation}
+Die Rücktransformation
+\begin{equation}
+\bs{x}_h = \bs{V}\cdot \bs{\tilde{x}}_h
+\end{equation}
+zeigt, dass der Verlauf der ursprünglichen Zustandsgrößen eine Linearkombination der kanonischen Zustandsvariablen ist. Folglich wird die homogenen Lösung eines Systems durch die Eigenwerte und -vektoren der Systemmatrix $\bs{A}$ vorgegeben. 
+Formal kann dieser Zusammenhang durch die Erweiterung des Exponentialansatzes auf vektorwertige Differentialgleichungen ermittelt werden.
+\begin{equation}
+\bs{x}(t) = e^{\bs{A}\cdot t}\cdot \bs{x}(0) + \int^t_0 e^{\bs{A}(t-\tau)}\bs{B}\cdot \bs{u}(\tau)d\tau
+\label{eq_fMat_zeitbereich}
+\end{equation}
+Die Matrix-Exponentialfunktion $e^{\bs{A}\cdot t}$ heißt Fundamentalmatrix $\bs{\Phi}(t)$ und kann über die folgende Reihenentwicklung bestimmt werden. Eine Herleitung kann in [RT2, Unbehauen, S. 6. ff] gefunden werden. 
+\begin{equation}
+\bs{\Phi}(t) = e^{\bs{A}\cdot t} = \sum^{\infty}_{k=0} \bs{A}^k\frac{t^k}{k!}
+\end{equation}
+Um einen weiteren Weg zur Ermittlung der Fundamentalmatrix und den Zusammenhang zu der Übertragungsfunktion des Systems herzustellen wird die Systemgleichung in den Bildbereich transformiert.
+\begin{equation}
+\begin{split}
+\bs{\dot{x}}(t) = \bs{A}\cdot \bs{x}(t) + \bs{B}\cdot\bs{u}(t) \myLaplace &s\cdot\bs{x}(s) - \bs{x}(t=0) = \bs{A}\cdot \bs{x}(s) + \bs{B}\cdot \bs{u}
+\\
+\leftrightarrow \hspace{15pt} &\bs{x}(s) = \underbrace{(s\cdot \bs{I} - \bs{A})^{-1}}_{\equiv \bs{\Phi}(s)}\bs{x}(t=0) + (s\cdot \bs{I}-\bs{A})^{-1}\bs{B}\cdot \bs{u}(s) 
+\\
+\leftrightarrow \hspace{15pt}&\bs{x}(s) = \bs{\Phi}(s)\cdot \bs{x}(t=0) +\bs{\Phi}(s)\bs{B}\cdot \bs{u}(s)
+\end{split}
+\label{eq_fMat_bildbereich}
+\end{equation}
+Aus dem Vergleich von (\cite{eq_fMat_bildbereich}) mit (\cite{eq_fMat_zeitbereich}) wird ersichtlich, dass die Fundamentalmatrix im Bildbereich durch die Invertierung der Matrix $s\cdot \bs{I}-\bs{A}$ berechnet werden kann. Im nächsten Schritt wird lediglich das Übertragungsverhalten eines Systems betrachtet.
+\begin{equation}
+\bs{x}(s) = \bs{\Phi}(s)\bs{B}\cdot \bs{u}(s) \hspace{35pt} \vert \hspace{15pt} \bs{x}(t=0) = 0
+\end{equation}
+\begin{equation}
+\bs{y}(s) = \bs{C}\cdot \bs{x}(s) = \underbrace{\bs{C}\bs{\Phi}(s)\bs{B}}_{\equiv \bs{G}(s)}\cdot \bs{u}(s) = \bs{G}(s)\cdot \bs{u}(s)
+\end{equation}
+Im Falle eines SISO-Systems reduzieren sich die Matrizen $\bs{C}$ und $\bs{B}$ auf die Vektoren $\bs{c^T}$ und $\bs{b}$. Somit handelt es sich bei $G(s)$ um die Übertragungsfunktion des Eingrößensystems. Bei MIMO-Systemen heißt $\bs{G}(s)$ Übertragungsfunktionmatrix, wobei die einzelnen Elemente $G_{ij}(s)$ Teilübertragungsfunktionen heißen und das E/A-Verhalten der Eingangsgröße $u_j$ auf die Ausgangsgröße $y_i$ beschreiben. Bei der Berechnung der Übertragungsmatrix $\bs{G}(s)$ stellt die Fundamentalmatrix $\bs{\Phi}(s)$ die einzige Größe dar, die von $s$ abhängt, und muss somit auch die Pole des Systems enthalten. Aus der Berechnung
+\begin{equation}
+\bs{\Phi}(s) = (s\cdot \bs{I}-\bs{A})^{-1} = \frac{1}{det(s\cdot \bs{I}  - \bs{A}}adj(s\cdot \bs{I} - \bs{A})
+\end{equation}
+folgt, dass das charakteristische Polynom
+\begin{equation}
+det(s\cdot \bs{I}-\bs{A})
+\end{equation}
+den gemeinsamen Nenner der Teilübertragungsfunktionen darstellt. Die Nullstellen des Polynoms entsprechen den Eigenwerten der Systemmatrix $\bs{A}$. Hieraus folgt, dass die Eigenwerte $\lambda_i$ eine Übermenge der Pole $s_i$ des Systems bilden, da ggf. Eigenwerte gegen  Zählernullstellen gekürzt werden können.
+Dies bedeutet, dass die Systemmatrix $\bs{A}$ nicht nur die Eigenbewegung des Systems bestimmt sondern auch zur Untersuchung der Stabilität verwendet werden kann. Allgemein ist ein System asymptotisch stabil wenn die Realteile aller Eigenwerte $\lambda_i$ der Matrix $\bs{A}$ negativ sind.
+\begin{equation}
+Re{\lambda_i} < 0
+\end{equation}
+Dieses Stabilitätskriterium stellt einen weiteren Vorteil der Systembeschreibung mittels Zustandsraumdarstellung dar. Die Systemanalyse erfolgt durch die Unterschung numerischer Matrizen, was mit Hilfe von Matlab effizient umgesetzt werden kann. Des weiteren müssen bei MIMO-Systemen mit klassischen Stabilitätskriterien alle Elemente der Übertragungsfunktionsmatrix $\bs{G}(s)$ untersucht werden. In der Zustandsraumdarstellung genügt allerdings die Analyse der Systemmatrix $\bs{A}$.

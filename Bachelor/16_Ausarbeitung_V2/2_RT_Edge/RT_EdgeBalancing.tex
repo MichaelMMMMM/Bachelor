@@ -1,0 +1,37 @@
+\documentclass{article}
+\usepackage{amsmath,mathtools}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{acronym}
+\usepackage{graphicx} 
+\usepackage{epstopdf}
+\usepackage{svg}
+\usepackage{multirow}
+\usepackage{setspace}
+\usepackage{amssymb}
+\usepackage{trfsigns}
+
+\usepackage{yfonts}
+
+\onehalfspacing
+
+%Hyperlinks package, links aus inhaltsverzeichnis
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=false, %set true if you want colored links
+    linktoc=all
+}
+%Blattformatierung
+\usepackage{geometry}
+\geometry{a4paper, top=25mm, left=30mm, right=25mm, bottom=20mm}
+
+\begin{document}
+
+\include{0_Makros}
+
+\section{Regelungstechnik}
+Nachdem die Systemdynamik mit Hilfe von Bewegungsgleichungen beschrieben wurde, besteht der nächste Schritt darin ein Regler zu entwerfen, welcher die Stabilisierung des Würfels auf einer Kante ermöglicht. Hierfür wird in diesem Abschnitt zunächst die Beschreibung eines Systems mit Hilfe der Zustandsraumdarstellung diskutiert. Anschließend der Zusammenhang zeitkontinuierlicher Systeme und deren zeitdiskreten Darstellungen ermittelt um den Entwurf von digitalen Reglern zu ermöglichen. Daraufhin werden die Vorteile von Zustandsregler gegenüber klassischen Regelungsalgorithmen verglichen und ein Regler für die Stabilisierung des Würfels auf einer Kante entworfen. Anschließend wird diese Regelungsvorschrift an der reellen Regelstrecke erprobt und validiert. Im letzten Teil werden Beobachter eingesetzt um die Auswirkungen von Messabweichungen zu kompensieren und die Anzahl der nötigen Sensoren zu reduzieren.
+
+\include{RT_1_StateSpace}
+
+\end{document}
