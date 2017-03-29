@@ -1,0 +1,100 @@
+\subsection{Entwurf von Zustandsregelungen}
+Nachdem die Grundlagen der Zustandsraumdarstellung in den vorherigen Abschnitten diskutiert wurden, dient dieser Teil dem Entwurf des letztendlichen Reglers. Hierfür wird zunächst am Beispiel des Entwurfs durch Eigenwertvorgabe der Grundgedanke und die Vorteile der Zustandsregelung aufgezeigt. Anschließend wird ein Regler nach dem Prinzip der optimalen Regelung entworfen um den Würfel auf einer Kante zu stabilisieren. Diese Ergebnisse werden an der reellen Regelstrecke überprüft.
+
+\subsection{Reglerentwurf durch Eigenwertvorgabe}
+Der Grundgedanke der Zustandsregelung besteht darin den vollständigen Zustandsvektor $\bs{x}$ zurückzuführen und durch die Multiplikation mit einer Reglermatrix $\bs{K}$ den Stellgrößenvektor $\bs{u}$ zu ermitteln. In dieser Arbeit werden lediglich Regelkreise ohne Führungsvektor ($\bs{\omega}=0)$) verwendet, weshalb auf dessen Einfluss und den Entwurf des nötigen Vorfilters $\bs{V}$ nicht weiter eingegangen wird.
+
+Aus der Abbildung gehen die Systemgleichungen des geschlossenen Regelkreises \dSS{A_g}{0}{C_g} hervor.
+\begin{equation}
+\bs{u} = -\bs{B_d}\bs{K}
+\end{equation}
+\begin{equation}
+%\textfrak{D_g} D_g
+: \left\{ \begin{array}{ll}
+\bs{{x}}(k+1) = \bs{A}\cdot \bs{x}(k) - \bs{B}\bs{K}\cdot \bs{x}(k) = \underbrace{(\bs{A}-\bs{B}\bs{K})}_{\equiv \bs{A_g}}\cdot \bs{x}(k) \\
+\bs{y}(k) = \underbrace{\bs{C}}_{\equiv \bs{C_g}}\cdot \bs{x}(k)
+\end{array}
+\right.
+\end{equation}
+Die Reglermatrix $\bs{K}$ ist nun so zu entwerfen, dass die gewünschten Eigenschaften des geschlossenen Regelkreises erreicht werden. Hierfür wird zunächst das SISO-System \dSS{A}{b}{c^T} betrachtet, wessen Systemmatrix $\bs{A}$ und Eingangsvektor $\bs{b}$ die folgende Form besitzt.
+\begin{equation}
+\bs{A} = \begin{bmatrix}
+0 & 1 & 0 & \hdots & 0 \\
+0 & 0 & 1 & \hdots & 0 \\
+\vdots & \vdots & \vdots & \ddots & \vdots \\
+-a_0 & -a_1 & -a_2 & \hdots & -a_{n-1}
+\end{bmatrix}
+\hspace{35pt}
+\bs{b} = \begin{bmatrix}
+0 \\ 0 \\ \vdots \\ 1
+\end{bmatrix}
+\end{equation}
+Diese Darstellung heißt Regelungsnormalform und kann mittels einer Zustandstransformation erreicht werden. Diese Transformation wird erst in einem späteren Abschnitt erläutert, da das Verfahren lediglich als Beispiel der Zustandsregelung deinen soll. 
+Der besondere Vorteil der Regelungsnormalform besteht darin, dass die Werte $a_i$ die Koeffizienten des charakteristischen Polynoms 
+\begin{equation}
+det(\lambda\cdot \bs{I}-\bs{A}) = \prod^n_{i=1} (\lambda-\lambda_i) = \lambda^n+a_{n-1}\cdot \lambda^{n-1} + \hdots + a_1\cdot \lambda + a_0
+\end{equation}
+der Systemmatrix $\bs{A}$ sind. Wird der Regelkreis über den Reglervekor
+\begin{equation}
+\bs{k} = \begin{bmatrix}
+k_1 & k_2 & \hdots & k_n
+\end{bmatrix}
+\end{equation}
+geschlossen, ergibt sich sich die folgende Systemmatrix $\bs{A_g}$ des geschlossenen Regelkreises.
+\begin{equation}
+\begin{split}
+\bs{A_g} = \bs{A}-\bs{b}\bs{k} &= \begin{bmatrix}
+0 & 1 & 0 & \hdots & 0 \\
+0 & 0 & 1 & \hdots & 0 \\
+\vdots & \vdots & \vdots & \ddots & \vdots \\
+-a_0 & -a_1 & -a_2 & \hdots & -a_{n-1}
+\end{bmatrix}
+-
+\begin{bmatrix}
+0 & 0 & 0 & \hdots & 0 \\
+0 & 0 & 0 & \hdots & 0 \\
+\vdots & \vdots & \vdots &  \ddots & \vdots \\
+k_1 & k_2 & k_3 & \hdots & k_n
+\end{bmatrix}
+\\
+&= \begin{bmatrix}
+0 & 1 & 0 & \hdots & 0 \\
+0 & 0 & 1 & \hdots & 0 \\
+\vdots & \vdots & \vdots & \ddots & \vdots \\
+-\overline{a}_0 & -\overline{a}_1 & -\overline{a}_2 & \hdots & -\overline{a}_{n-1}
+\end{bmatrix}
+\hspace{25pt} \vert \hspace{15pt} \overline{a}_i = a_i + k_{i+1}
+\end{split}
+\end{equation}
+Die Systemmatrix $\bs{A_g}$ des geschlossenen Regelkreises liegt nun ebenfalls in Regelungsnormalform vor, weshalb wiederum für deren charakteristisches Polynom gilt:
+\begin{equation}
+det(\lambda\cdot \bs{I}-\bs{A_g}) = \prod^n_{i=1} (\lambda-\overline{\lambda}_i) = \lambda^n+\overline{a}_{n-1}\cdot \lambda^{n-1} + \hdots + \overline{a}_1\cdot \lambda + \overline{a}_0
+\label{eq_ew_gRK}
+\end{equation}
+Werden nun die Eigenwerte $\overline{\lambda}_i$ des geschlossenen Regelkreises vorgegeben können durch (\cite{eq_ew_gRK}) die Koeffizienten $\overline{a}_i$ berechnet werden. Die Koeffizienten $a_i$ der Regelstrecke können aus der Matrix $\bs{A}$ abgelesen werden. Somit können aus der Beziehung
+\begin{equation}
+\overline{a}_i = a_i + k_i
+\end{equation}
+die einzelnen Regerfaktoren $k_i$ berechnet bzw. die folgende Vektorschreibweise verwendet werden.
+\begin{equation}
+\underbrace{
+\begin{bmatrix}
+\overline{a}_0 & \overline{a}_1 & \hdots &\overline{a}_{n-1}
+\end{bmatrix}}_{\equiv \bs{\overline{a}}}
+=
+\underbrace{
+\begin{bmatrix}
+a_0 & a_1 & \hdots & a_{n-1}
+\end{bmatrix}}_{\equiv \bs{a}}
++
+\underbrace{
+\begin{bmatrix}
+k_1 & k_2 & \hdots & k_n
+\end{bmatrix}}_{\equiv \bs{k}}
+\end{equation}
+\begin{equation}
+\bs{k} = \bs{\overline{a}} - \bs{a}
+\end{equation}
+An diesem Entwurfsverfahren werden bereits einige interessante Eigenschaften der Zustandsregelung deutlich. Zunächst können die Eigenwerte des geschlossenen Regelkreises beliebig gewählt werden wodurch das dynamische Verhalten maßgeblich bestimmt wird. Des weiteren wird der Regler durch eine Matrix-Vektor-Multiplikation realisiert. Somit werden dem Regelkreis, im Gegensatz zu PID-Reglern, keine weiteren Pole durch die Reglerdynamik hinzugefügt. Zuletzt sei die einfache Berechnung der Reglermatrix erwähnt. Sowohl die Transformation auf Regelungsnormalform als auch die Ermittlung der Regerparameter sind numerische Operationen die mit Hilfe von Matlab durchgeführt werden können.
+
+Nichtsdestotrotz wird das Entwurfsverfahren in dieser Arbeit nicht verwendet. Die Gründe hierfür sind, dass das primäre Ziel darin besteht eine robuste Regelung zur Stabilisierung des Systems zu entwerfen und nicht eine spezielle Dynamik des geschlossenen Regelkreises zu erzielen. Des weiteren können bei diesem Verfahren die Verläufe der physikalischen Größen $\varphi$, $u_K$ und $u_R$ nicht direkt beeinflusst werden. Durch die Vorgabe der Eigenwerte werden lediglich die Trajektorien der kanonischen Zustandsvariablen bestimmt, welche jeweils eine Linearkombination der ursprünglichen Zustände sind. Zuletzt fließt die Stellgröße $u$ bei dieser Vorgehensweise nicht in die Bestimmung der Reglermatrix ein. Ist die Stellgröße, wie in den hier behandelten Anwendungsfällen, begrenzt müssen diese Umstände bei dem Reglerentwurf unter Umständen beachtet werden.
