@@ -1,6 +1,25 @@
-14:35:40 **** Incremental Build of configuration Debug for project MatrixLib ****
+14:06:20 **** Incremental Build of configuration Debug for project MatrixLib ****
 make all 
-make: Nothing to be done for `all'.
+Building file: ../TMatrix.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"TMatrix.d" -MT"TMatrix.o" -o "TMatrix.o" "../TMatrix.cpp"
+Finished building: ../TMatrix.cpp
+ 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+In file included from ../main.cpp:2:0:
+../TMatrix.h:19:27: error: expected unqualified-id before ‘;’ token
+ template<const UInt32 n_C>;
+                           ^
+../TMatrix.h:20:30: error: ‘n_C’ was not declared in this scope
+ using TRVector = TMatrix<1U, n_C>;
+                              ^
+../TMatrix.h:20:33: error: template argument 2 is invalid
+ using TRVector = TMatrix<1U, n_C>;
+                                 ^
+subdir.mk:21: recipe for target 'main.o' failed
+make: *** [main.o] Error 1
 
-14:35:40 Build Finished (took 67ms)
+14:06:22 Build Finished (took 1s.181ms)
 

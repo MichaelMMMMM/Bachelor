@@ -1,0 +1,15 @@
+16:11:58 **** Incremental Build of configuration Debug for project CuBa_BBB ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/CommComp" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/lib" -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/home/michael/bbb/rootfs -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: CuBa_BBB
+Invoking: Cross G++ Linker
+arm-linux-gnueabihf-g++ -L"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB" --sysroot=/home/michael/bbb/rootfs -Wl,-rpath,/home/michael/bbb/rootfs -o "CuBa_BBB"  ./lib/AComponentBase.o ./lib/Assertion.o ./lib/CBinarySemaphore.o ./lib/CCountingSemaphore.o ./lib/CMessage.o ./lib/CMutex.o ./lib/CProxy.o ./lib/CThread.o ./lib/TMatrix.o  ./Hardware/CADC.o ./Hardware/CADCData.o ./Hardware/CADCMMap.o ./Hardware/CGPIO.o ./Hardware/CHardware.o ./Hardware/CMPU9250.o ./Hardware/CMPUData.o ./Hardware/CMotor.o ./Hardware/CPWM.o ./Hardware/CSensorData.o ./Hardware/CSensorSystem.o ./Hardware/CSwitch.o ./Hardware/CTorqueData.o  ./CommComp/CWebSocket.o ./CommComp/Util.o ./CommComp/WebSocketServer.o  ./main.o   -lpthread -l:libwebsockets.so.9
+Finished building target: CuBa_BBB
+ 
+
+16:11:59 Build Finished (took 1s.96ms)
+

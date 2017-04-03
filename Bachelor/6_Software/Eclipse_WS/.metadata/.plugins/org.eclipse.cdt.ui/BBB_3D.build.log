@@ -1,15 +1,6 @@
-15:38:03 **** Incremental Build of configuration Debug for project BBB_3D ****
+14:11:50 **** Incremental Build of configuration Debug for project BBB_3D ****
 make all 
-Building file: ../Control/ActionHandler/CEdgeBalanceAction.cpp
-Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/ActionHandler/CEdgeBalanceAction.d" -MT"Control/ActionHandler/CEdgeBalanceAction.o" -o "Control/ActionHandler/CEdgeBalanceAction.o" "../Control/ActionHandler/CEdgeBalanceAction.cpp"
-Finished building: ../Control/ActionHandler/CEdgeBalanceAction.cpp
- 
-Building target: BBB_3D
-Invoking: Cross G++ Linker
-arm-linux-gnueabihf-g++  -o "BBB_3D"  ./lib/AComponentBase.o ./lib/Assertion.o ./lib/CBinarySemaphore.o ./lib/CCountingSemaphore.o ./lib/CMessage.o ./lib/CMutex.o ./lib/CProxy.o ./lib/CThread.o  ./Hardware/CADC.o ./Hardware/CADCData.o ./Hardware/CADCMMap.o ./Hardware/CGPIO.o ./Hardware/CHardware.o ./Hardware/CMPU9250.o ./Hardware/CMPUData.o ./Hardware/CMotor.o ./Hardware/CPWM.o ./Hardware/CSensorData.o ./Hardware/CSensorSystem.o ./Hardware/CStateData.o ./Hardware/CSwitch.o ./Hardware/CTorqueData.o  ./Control/States/AState.o ./Control/States/CADCCalibration.o ./Control/States/CEdgeBalance.o ./Control/States/CLQRTest.o ./Control/States/CSensorCalibration.o  ./Control/ActionHandler/CADCCalibrationAction.o ./Control/ActionHandler/CControlAction.o ./Control/ActionHandler/CControlActionBase.o ./Control/ActionHandler/CEdgeBalanceAction.o ./Control/ActionHandler/CLQRTestAction.o ./Control/ActionHandler/CSensorCalibrationAction.o  ./Control/C1DCompFilter.o ./Control/C1DLPF.o ./Control/C1DOffsetCorrection.o ./Control/C1DStateReduction.o ./Control/CCompFilter.o ./Control/CControlComp.o ./Control/CLQB.o ./Control/CLQR.o ./Control/CMPUCalib.o ./Control/COffsetCorrection.o ./Control/CPT1.o ./Control/CPoly1.o ./Control/CSineWave.o ./Control/CStateEstimate.o ./Control/CTimerTask.o ./Control/TLQR.o  ./Comm/CCommAction.o ./Comm/CCommComponent.o ./Comm/CCommFSM.o ./Comm/CReceiveTask.o ./Comm/CServer.o  ./main.o   -lpthread
-Finished building target: BBB_3D
- 
+make: Nothing to be done for 'all'.
 
-15:38:04 Build Finished (took 724ms)
+14:11:50 Build Finished (took 74ms)
 

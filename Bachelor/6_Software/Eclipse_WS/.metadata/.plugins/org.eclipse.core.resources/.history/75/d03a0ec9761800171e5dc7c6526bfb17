@@ -1,0 +1,10 @@
+function CTestHandler()
+{
+	this.mTestPlot = new CPlot("placeholder", 2, ["phi1", "phi2"]);
+};
+CTestHandler.prototype.handleMessage = function(evt)
+{
+	var json = JSON.parse(evt.data);
+	alert("parsing done");
+	this.mTestPlot.addData([json.time, json.phi1, json.phi2]);
+};

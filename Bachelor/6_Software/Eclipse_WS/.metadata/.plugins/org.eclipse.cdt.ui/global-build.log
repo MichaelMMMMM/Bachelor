@@ -1,759 +1,134 @@
-14:15:21 **** Incremental Build of configuration Debug for project MatrixLib ****
+14:31:16 **** Incremental Build of configuration Debug for project CuBa_BBB ****
 make all 
-make: Nothing to be done for `all'.
-14:16:10 **** Incremental Build of configuration Debug for project BBB_3D ****
+make: Nothing to be done for 'all'.
+14:33:04 **** Incremental Build of configuration Debug for project CuBa_BBB ****
 make all 
-make: Nothing to be done for `all'.
-14:16:10 **** Incremental Build of configuration Debug for project MatrixLib ****
-make all 
-Building file: ../TMatrix.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"TMatrix.d" -MT"TMatrix.o" -o "TMatrix.o" "../TMatrix.cpp"
-Finished building: ../TMatrix.cpp
- 
 Building file: ../main.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/CommComp" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/lib" -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/home/michael/bbb/rootfs -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
 Finished building: ../main.cpp
  
-Building target: MatrixLib
-Invoking: GCC C++ Linker
-g++  -o "MatrixLib"  ./TMatrix.o ./main.o   
-Finished building target: MatrixLib
+Building target: CuBa_BBB
+Invoking: Cross G++ Linker
+arm-linux-gnueabihf-g++ -L"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB" --sysroot=/home/michael/bbb/rootfs -Wl,-rpath,/home/michael/bbb/rootfs -o "CuBa_BBB"  ./lib/AComponentBase.o ./lib/Assertion.o ./lib/CBinarySemaphore.o ./lib/CCountingSemaphore.o ./lib/CMessage.o ./lib/CMutex.o ./lib/CProxy.o ./lib/CThread.o ./lib/TMatrix.o  ./Hardware/CADC.o ./Hardware/CADCData.o ./Hardware/CADCMMap.o ./Hardware/CGPIO.o ./Hardware/CHardware.o ./Hardware/CMPU9250.o ./Hardware/CMPUData.o ./Hardware/CMotor.o ./Hardware/CPWM.o ./Hardware/CSensorData.o ./Hardware/CSensorSystem.o ./Hardware/CSwitch.o ./Hardware/CTorqueData.o  ./CommComp/CWebSocket.o ./CommComp/Util.o ./CommComp/WebSocketServer.o  ./main.o   -lpthread -l:libwebsockets.so.9
+Finished building target: CuBa_BBB
  
-14:16:13 **** Incremental Build of configuration Debug for project MatrixLib ****
-make all 
-make: Nothing to be done for `all'.
-14:17:34 **** Incremental Build of configuration Debug for project MatrixLib ****
+14:33:40 **** Incremental Build of configuration Debug for project CuBa_BBB ****
 make all 
 Building file: ../main.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
-In file included from ../main.cpp:2:0:
-../TMatrix.h: In instantiation of ‘TMatrix<n_R, n_C>::TMatrix(const string&) [with long unsigned int n_R = 7ul; long unsigned int n_C = 3ul; std::string = std::basic_string<char>]’:
-../main.cpp:9:36:   required from here
-../TMatrix.h:85:71: error: could not convert ‘0.0f’ from ‘float’ to ‘TCVector<3ul>’
- TMatrix<n_R, n_C>::TMatrix(const std::string& filename) : mMatrix{0.0F}
-                                                                       ^
-make: *** [main.o] Error 1
-14:17:50 **** Incremental Build of configuration Debug for project MatrixLib ****
-make all 
-Building file: ../TMatrix.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"TMatrix.d" -MT"TMatrix.o" -o "TMatrix.o" "../TMatrix.cpp"
-Finished building: ../TMatrix.cpp
- 
-Building file: ../main.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/CommComp" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/lib" -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/home/michael/bbb/rootfs -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
 Finished building: ../main.cpp
  
-Building target: MatrixLib
-Invoking: GCC C++ Linker
-g++  -o "MatrixLib"  ./TMatrix.o ./main.o   
-Finished building target: MatrixLib
+Building target: CuBa_BBB
+Invoking: Cross G++ Linker
+arm-linux-gnueabihf-g++ -L"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB" --sysroot=/home/michael/bbb/rootfs -Wl,-rpath,/home/michael/bbb/rootfs -o "CuBa_BBB"  ./lib/AComponentBase.o ./lib/Assertion.o ./lib/CBinarySemaphore.o ./lib/CCountingSemaphore.o ./lib/CMessage.o ./lib/CMutex.o ./lib/CProxy.o ./lib/CThread.o ./lib/TMatrix.o  ./Hardware/CADC.o ./Hardware/CADCData.o ./Hardware/CADCMMap.o ./Hardware/CGPIO.o ./Hardware/CHardware.o ./Hardware/CMPU9250.o ./Hardware/CMPUData.o ./Hardware/CMotor.o ./Hardware/CPWM.o ./Hardware/CSensorData.o ./Hardware/CSensorSystem.o ./Hardware/CSwitch.o ./Hardware/CTorqueData.o  ./CommComp/CWebSocket.o ./CommComp/Util.o ./CommComp/WebSocketServer.o  ./main.o   -lpthread -l:libwebsockets.so.9
+Finished building target: CuBa_BBB
  
-14:17:54 **** Incremental Build of configuration Debug for project MatrixLib ****
+14:34:36 **** Incremental Build of configuration Debug for project CuBa_BBB ****
 make all 
-make: Nothing to be done for `all'.
-14:18:04 **** Incremental Build of configuration Debug for project MatrixLib ****
+make: Nothing to be done for 'all'.
+14:34:44 **** Incremental Build of configuration Debug for project CuBa_BBB ****
 make all 
-make: Nothing to be done for `all'.
-14:18:12 **** Incremental Build of configuration Debug for project MatrixLib ****
+make: Nothing to be done for 'all'.
+14:35:15 **** Incremental Build of configuration Debug for project CuBa_BBB ****
 make all 
-Building file: ../main.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
-Finished building: ../main.cpp
- 
-Building target: MatrixLib
-Invoking: GCC C++ Linker
-g++  -o "MatrixLib"  ./TMatrix.o ./main.o   
-Finished building target: MatrixLib
- 
-14:18:15 **** Incremental Build of configuration Debug for project MatrixLib ****
-make all 
-make: Nothing to be done for `all'.
-14:18:57 **** Incremental Build of configuration Debug for project MatrixLib ****
+make: Nothing to be done for 'all'.
+14:38:35 **** Incremental Build of configuration Debug for project CuBa_BBB ****
 make all 
 Building file: ../main.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
-Finished building: ../main.cpp
- 
-Building target: MatrixLib
-Invoking: GCC C++ Linker
-g++  -o "MatrixLib"  ./TMatrix.o ./main.o   
-Finished building target: MatrixLib
- 
-14:18:59 **** Incremental Build of configuration Debug for project MatrixLib ****
-make all 
-make: Nothing to be done for `all'.
-14:19:06 **** Incremental Build of configuration Debug for project MatrixLib ****
-make all 
-Building file: ../main.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
-Finished building: ../main.cpp
- 
-Building target: MatrixLib
-Invoking: GCC C++ Linker
-g++  -o "MatrixLib"  ./TMatrix.o ./main.o   
-Finished building target: MatrixLib
- 
-14:19:21 **** Incremental Build of configuration Debug for project MatrixLib ****
-make all 
-make: Nothing to be done for `all'.
-14:19:25 **** Incremental Build of configuration Debug for project MatrixLib ****
-make all 
-Building file: ../main.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
-Finished building: ../main.cpp
- 
-Building target: MatrixLib
-Invoking: GCC C++ Linker
-g++  -o "MatrixLib"  ./TMatrix.o ./main.o   
-Finished building target: MatrixLib
- 
-14:19:26 **** Incremental Build of configuration Debug for project MatrixLib ****
-make all 
-make: Nothing to be done for `all'.
-14:19:36 **** Incremental Build of configuration Debug for project MatrixLib ****
-make all 
-Building file: ../main.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
-Finished building: ../main.cpp
- 
-Building target: MatrixLib
-Invoking: GCC C++ Linker
-g++  -o "MatrixLib"  ./TMatrix.o ./main.o   
-Finished building target: MatrixLib
- 
-14:19:42 **** Incremental Build of configuration Debug for project MatrixLib ****
-make all 
-make: Nothing to be done for `all'.
-14:20:24 **** Incremental Build of configuration Debug for project MatrixLib ****
-make all 
-Building file: ../main.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
-Finished building: ../main.cpp
- 
-Building target: MatrixLib
-Invoking: GCC C++ Linker
-g++  -o "MatrixLib"  ./TMatrix.o ./main.o   
-Finished building target: MatrixLib
- 
-14:21:44 **** Incremental Build of configuration Debug for project MatrixLib ****
-make all 
-Building file: ../TMatrix.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"TMatrix.d" -MT"TMatrix.o" -o "TMatrix.o" "../TMatrix.cpp"
-Finished building: ../TMatrix.cpp
- 
-Building file: ../main.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
-Finished building: ../main.cpp
- 
-Building target: MatrixLib
-Invoking: GCC C++ Linker
-g++  -o "MatrixLib"  ./TMatrix.o ./main.o   
-Finished building target: MatrixLib
- 
-14:21:48 **** Incremental Build of configuration Debug for project MatrixLib ****
-make all 
-make: Nothing to be done for `all'.
-14:22:08 **** Incremental Build of configuration Debug for project MatrixLib ****
-make all 
-Building file: ../main.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
-Finished building: ../main.cpp
- 
-Building target: MatrixLib
-Invoking: GCC C++ Linker
-g++  -o "MatrixLib"  ./TMatrix.o ./main.o   
-Finished building target: MatrixLib
- 
-14:22:11 **** Incremental Build of configuration Debug for project MatrixLib ****
-make all 
-make: Nothing to be done for `all'.
-14:22:21 **** Incremental Build of configuration Debug for project MatrixLib ****
-make all 
-make: Nothing to be done for `all'.
-14:23:37 **** Incremental Build of configuration Debug for project MatrixLib ****
-make all 
-Building file: ../TMatrix.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"TMatrix.d" -MT"TMatrix.o" -o "TMatrix.o" "../TMatrix.cpp"
-Finished building: ../TMatrix.cpp
- 
-Building file: ../main.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
-Finished building: ../main.cpp
- 
-Building target: MatrixLib
-Invoking: GCC C++ Linker
-g++  -o "MatrixLib"  ./TMatrix.o ./main.o   
-Finished building target: MatrixLib
- 
-14:23:52 **** Incremental Build of configuration Debug for project MatrixLib ****
-make all 
-Building file: ../main.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
-Finished building: ../main.cpp
- 
-Building target: MatrixLib
-Invoking: GCC C++ Linker
-g++  -o "MatrixLib"  ./TMatrix.o ./main.o   
-Finished building target: MatrixLib
- 
-14:23:55 **** Incremental Build of configuration Debug for project MatrixLib ****
-make all 
-make: Nothing to be done for `all'.
-14:24:15 **** Incremental Build of configuration Debug for project MatrixLib ****
-make all 
-Building file: ../main.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
-Finished building: ../main.cpp
- 
-Building target: MatrixLib
-Invoking: GCC C++ Linker
-g++  -o "MatrixLib"  ./TMatrix.o ./main.o   
-Finished building target: MatrixLib
- 
-14:25:09 **** Incremental Build of configuration Debug for project MatrixLib ****
-make all 
-Building file: ../TMatrix.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"TMatrix.d" -MT"TMatrix.o" -o "TMatrix.o" "../TMatrix.cpp"
-Finished building: ../TMatrix.cpp
- 
-Building file: ../main.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
-In file included from ../main.cpp:2:0:
-../TMatrix.h: In member function ‘void TMatrix<n_R, n_C>::display()’:
-../TMatrix.h:109:39: error: expected unqualified-id before ‘[’ token
-    std::cout << std::setw(6) << this->[ir+1][ic+1] << " ";
-                                       ^
-make: *** [main.o] Error 1
-14:25:14 **** Incremental Build of configuration Debug for project MatrixLib ****
-make all 
-Building file: ../TMatrix.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"TMatrix.d" -MT"TMatrix.o" -o "TMatrix.o" "../TMatrix.cpp"
-Finished building: ../TMatrix.cpp
- 
-Building file: ../main.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
-In file included from ../main.cpp:2:0:
-../TMatrix.h: In instantiation of ‘void TMatrix<n_R, n_C>::display() [with long unsigned int n_R = 3ul; long unsigned int n_C = 3ul]’:
-../main.cpp:13:16:   required from here
-../TMatrix.h:109:30: error: cannot bind ‘std::basic_ostream<char>’ lvalue to ‘std::basic_ostream<char>&&’
-    std::cout << std::setw(6) << this[ir+1][ic+1] << " ";
-                              ^
-In file included from /usr/include/c++/4.8/iostream:39:0,
-                 from ../main.cpp:1:
-/usr/include/c++/4.8/ostream:602:5: error:   initializing argument 1 of ‘std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&&, const _Tp&) [with _CharT = char; _Traits = std::char_traits<char>; _Tp = TCVector<3ul>]’
-     operator<<(basic_ostream<_CharT, _Traits>&& __os, const _Tp& __x)
-     ^
-make: *** [main.o] Error 1
-14:25:20 **** Incremental Build of configuration Debug for project MatrixLib ****
-make all 
-Building file: ../TMatrix.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"TMatrix.d" -MT"TMatrix.o" -o "TMatrix.o" "../TMatrix.cpp"
-Finished building: ../TMatrix.cpp
- 
-Building file: ../main.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
-Finished building: ../main.cpp
- 
-Building target: MatrixLib
-Invoking: GCC C++ Linker
-g++  -o "MatrixLib"  ./TMatrix.o ./main.o   
-Finished building target: MatrixLib
- 
-14:25:23 **** Incremental Build of configuration Debug for project MatrixLib ****
-make all 
-Building file: ../TMatrix.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"TMatrix.d" -MT"TMatrix.o" -o "TMatrix.o" "../TMatrix.cpp"
-Finished building: ../TMatrix.cpp
- 
-Building file: ../main.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
-Finished building: ../main.cpp
- 
-Building target: MatrixLib
-Invoking: GCC C++ Linker
-g++  -o "MatrixLib"  ./TMatrix.o ./main.o   
-Finished building target: MatrixLib
- 
-14:25:27 **** Incremental Build of configuration Debug for project MatrixLib ****
-make all 
-make: Nothing to be done for `all'.
-14:26:14 **** Incremental Build of configuration Debug for project MatrixLib ****
-make all 
-Building file: ../main.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
-Finished building: ../main.cpp
- 
-Building target: MatrixLib
-Invoking: GCC C++ Linker
-g++  -o "MatrixLib"  ./TMatrix.o ./main.o   
-Finished building target: MatrixLib
- 
-14:26:16 **** Incremental Build of configuration Debug for project MatrixLib ****
-make all 
-make: Nothing to be done for `all'.
-14:26:22 **** Incremental Build of configuration Debug for project MatrixLib ****
-make all 
-Building file: ../main.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
-Finished building: ../main.cpp
- 
-Building target: MatrixLib
-Invoking: GCC C++ Linker
-g++  -o "MatrixLib"  ./TMatrix.o ./main.o   
-Finished building target: MatrixLib
- 
-14:26:24 **** Incremental Build of configuration Debug for project MatrixLib ****
-make all 
-make: Nothing to be done for `all'.
-14:26:41 **** Incremental Build of configuration Debug for project MatrixLib ****
-make all 
-Building file: ../main.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
-In file included from ../main.cpp:2:0:
-../TMatrix.h: In instantiation of ‘TMatrix<n_R, n_C_new> TMatrix<n_R, n_C>::operator*(const TMatrix<n_C, n_C_new>&) const [with long unsigned int n_C_new = 3ul; long unsigned int n_R = 7ul; long unsigned int n_C = 3ul]’:
-../main.cpp:23:21:   required from here
-../TMatrix.h:48:57: error: passing ‘const TMatrix<3ul, 3ul>’ as ‘this’ argument of ‘TCVector<n_C>& TMatrix<n_R, n_C>::operator[](UInt32) [with long unsigned int n_R = 3ul; long unsigned int n_C = 3ul; UInt32 = long unsigned int]’ discards qualifiers [-fpermissive]
-     ret[ir+1][ic+1] += this->mMatrix[ir+1][i+1] * factor[ir+1][ic+1];
-                                                         ^
-../TMatrix.h:48:43: error: passing ‘const TCVector<3ul>’ as ‘this’ argument of ‘Float32& TCVector<n_C>::operator[](UInt32) [with long unsigned int n_C = 3ul; Float32 = float; UInt32 = long unsigned int]’ discards qualifiers [-fpermissive]
-     ret[ir+1][ic+1] += this->mMatrix[ir+1][i+1] * factor[ir+1][ic+1];
-                                           ^
-make: *** [main.o] Error 1
-14:27:09 **** Incremental Build of configuration Debug for project MatrixLib ****
-make all 
-Building file: ../TMatrix.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"TMatrix.d" -MT"TMatrix.o" -o "TMatrix.o" "../TMatrix.cpp"
-Finished building: ../TMatrix.cpp
- 
-Building file: ../main.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
-In file included from ../main.cpp:2:0:
-../TMatrix.h:38:23: error: prototype for ‘TMatrix<n_R, n_C_new> TMatrix<n_R, n_C>::operator*(TMatrix<n_C, n_C_new>&) const’ does not match any in class ‘TMatrix<n_R, n_C>’
- TMatrix<n_R, n_C_new> TMatrix<n_R, n_C>::operator*(TMatrix<n_C, n_C_new>& factor) const
-                       ^
-../TMatrix.h:25:24: error: candidate is: template<long unsigned int n_R, long unsigned int n_C> template<long unsigned int n_C_new> TMatrix<n_R, n_C_new> TMatrix<n_R, n_C>::operator*(const TMatrix<n_C, n_C_new>&) const
-  TMatrix<n_R, n_C_new> operator*(const TMatrix<n_C, n_C_new>& factor) const;
-                        ^
-make: *** [main.o] Error 1
-14:27:13 **** Incremental Build of configuration Debug for project MatrixLib ****
-make all 
-Building file: ../TMatrix.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"TMatrix.d" -MT"TMatrix.o" -o "TMatrix.o" "../TMatrix.cpp"
-Finished building: ../TMatrix.cpp
- 
-Building file: ../main.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
-In file included from ../main.cpp:2:0:
-../TMatrix.h:38:23: error: prototype for ‘TMatrix<n_R, n_C_new> TMatrix<n_R, n_C>::operator*(TMatrix<n_C, n_C_new>&)’ does not match any in class ‘TMatrix<n_R, n_C>’
- TMatrix<n_R, n_C_new> TMatrix<n_R, n_C>::operator*(TMatrix<n_C, n_C_new>& factor)
-                       ^
-../TMatrix.h:25:24: error: candidate is: template<long unsigned int n_R, long unsigned int n_C> template<long unsigned int n_C_new> TMatrix<n_R, n_C_new> TMatrix<n_R, n_C>::operator*(const TMatrix<n_C, n_C_new>&) const
-  TMatrix<n_R, n_C_new> operator*(const TMatrix<n_C, n_C_new>& factor) const;
-                        ^
-make: *** [main.o] Error 1
-14:27:20 **** Incremental Build of configuration Debug for project MatrixLib ****
-make all 
-Building file: ../TMatrix.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"TMatrix.d" -MT"TMatrix.o" -o "TMatrix.o" "../TMatrix.cpp"
-Finished building: ../TMatrix.cpp
- 
-Building file: ../main.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
-Finished building: ../main.cpp
- 
-Building target: MatrixLib
-Invoking: GCC C++ Linker
-g++  -o "MatrixLib"  ./TMatrix.o ./main.o   
-Finished building target: MatrixLib
- 
-14:27:24 **** Incremental Build of configuration Debug for project MatrixLib ****
-make all 
-make: Nothing to be done for `all'.
-14:27:44 **** Incremental Build of configuration Debug for project MatrixLib ****
-make all 
-Building file: ../TMatrix.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"TMatrix.d" -MT"TMatrix.o" -o "TMatrix.o" "../TMatrix.cpp"
-Finished building: ../TMatrix.cpp
- 
-Building file: ../main.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
-Finished building: ../main.cpp
- 
-Building target: MatrixLib
-Invoking: GCC C++ Linker
-g++  -o "MatrixLib"  ./TMatrix.o ./main.o   
-Finished building target: MatrixLib
- 
-14:27:46 **** Incremental Build of configuration Debug for project MatrixLib ****
-make all 
-make: Nothing to be done for `all'.
-14:28:44 **** Incremental Build of configuration Debug for project MatrixLib ****
-make all 
-Building file: ../TMatrix.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"TMatrix.d" -MT"TMatrix.o" -o "TMatrix.o" "../TMatrix.cpp"
-Finished building: ../TMatrix.cpp
- 
-Building file: ../main.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
-Finished building: ../main.cpp
- 
-Building target: MatrixLib
-Invoking: GCC C++ Linker
-g++  -o "MatrixLib"  ./TMatrix.o ./main.o   
-Finished building target: MatrixLib
- 
-14:28:48 **** Incremental Build of configuration Debug for project MatrixLib ****
-make all 
-make: Nothing to be done for `all'.
-14:28:52 **** Incremental Build of configuration Debug for project MatrixLib ****
-make all 
-make: Nothing to be done for `all'.
-14:28:59 **** Incremental Build of configuration Debug for project MatrixLib ****
-make all 
-make: Nothing to be done for `all'.
-14:29:23 **** Incremental Build of configuration Debug for project MatrixLib ****
-make all 
-make: Nothing to be done for `all'.
-14:30:01 **** Incremental Build of configuration Debug for project MatrixLib ****
-make all 
-Building file: ../TMatrix.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"TMatrix.d" -MT"TMatrix.o" -o "TMatrix.o" "../TMatrix.cpp"
-Finished building: ../TMatrix.cpp
- 
-Building file: ../main.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
-Finished building: ../main.cpp
- 
-Building target: MatrixLib
-Invoking: GCC C++ Linker
-g++  -o "MatrixLib"  ./TMatrix.o ./main.o   
-Finished building target: MatrixLib
- 
-14:30:03 **** Incremental Build of configuration Debug for project MatrixLib ****
-make all 
-make: Nothing to be done for `all'.
-14:31:38 **** Incremental Build of configuration Debug for project MatrixLib ****
-make all 
-Building file: ../main.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
-Finished building: ../main.cpp
- 
-Building target: MatrixLib
-Invoking: GCC C++ Linker
-g++  -o "MatrixLib"  ./TMatrix.o ./main.o   
-Finished building target: MatrixLib
- 
-14:31:40 **** Incremental Build of configuration Debug for project MatrixLib ****
-make all 
-make: Nothing to be done for `all'.
-14:32:05 **** Incremental Build of configuration Debug for project MatrixLib ****
-make all 
-Building file: ../main.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
-Finished building: ../main.cpp
- 
-Building target: MatrixLib
-Invoking: GCC C++ Linker
-g++  -o "MatrixLib"  ./TMatrix.o ./main.o   
-Finished building target: MatrixLib
- 
-14:32:07 **** Incremental Build of configuration Debug for project MatrixLib ****
-make all 
-make: Nothing to be done for `all'.
-14:32:30 **** Incremental Build of configuration Debug for project MatrixLib ****
-make all 
-Building file: ../main.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/CommComp" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/lib" -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/home/michael/bbb/rootfs -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
 ../main.cpp: In function ‘int main()’:
-../main.cpp:29:7: error: declaration of ‘auto test4’ has no initializer
-  auto test4;
-       ^
+../main.cpp:26:15: error: ‘TIMEOUT’ was not declared in this scope
+   socket.wait(TIMEOUT);
+               ^
 make: *** [main.o] Error 1
-14:32:38 **** Incremental Build of configuration Debug for project MatrixLib ****
+subdir.mk:18: recipe for target 'main.o' failed
+14:38:47 **** Incremental Build of configuration Debug for project CuBa_BBB ****
 make all 
 Building file: ../main.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/CommComp" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/lib" -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/home/michael/bbb/rootfs -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
 Finished building: ../main.cpp
  
-Building target: MatrixLib
-Invoking: GCC C++ Linker
-g++  -o "MatrixLib"  ./TMatrix.o ./main.o   
-Finished building target: MatrixLib
+Building target: CuBa_BBB
+Invoking: Cross G++ Linker
+arm-linux-gnueabihf-g++ -L"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB" --sysroot=/home/michael/bbb/rootfs -Wl,-rpath,/home/michael/bbb/rootfs -o "CuBa_BBB"  ./lib/AComponentBase.o ./lib/Assertion.o ./lib/CBinarySemaphore.o ./lib/CCountingSemaphore.o ./lib/CMessage.o ./lib/CMutex.o ./lib/CProxy.o ./lib/CThread.o ./lib/TMatrix.o  ./Hardware/CADC.o ./Hardware/CADCData.o ./Hardware/CADCMMap.o ./Hardware/CGPIO.o ./Hardware/CHardware.o ./Hardware/CMPU9250.o ./Hardware/CMPUData.o ./Hardware/CMotor.o ./Hardware/CPWM.o ./Hardware/CSensorData.o ./Hardware/CSensorSystem.o ./Hardware/CSwitch.o ./Hardware/CTorqueData.o  ./CommComp/CWebSocket.o ./CommComp/Util.o ./CommComp/WebSocketServer.o  ./main.o   -lpthread -l:libwebsockets.so.9
+Finished building target: CuBa_BBB
  
-14:32:40 **** Incremental Build of configuration Debug for project MatrixLib ****
+15:08:03 **** Incremental Build of configuration Debug for project CuBa_BBB ****
 make all 
-make: Nothing to be done for `all'.
-14:35:06 **** Incremental Build of configuration Debug for project BBB_3D ****
+make: Nothing to be done for 'all'.
+15:08:57 **** Incremental Build of configuration Debug for project CuBa_BBB ****
 make all 
-make: Nothing to be done for `all'.
-14:35:06 **** Incremental Build of configuration Debug for project MatrixLib ****
-make all 
-Building file: ../TMatrix.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"TMatrix.d" -MT"TMatrix.o" -o "TMatrix.o" "../TMatrix.cpp"
-Finished building: ../TMatrix.cpp
- 
-Building file: ../main.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
-Finished building: ../main.cpp
- 
-Building target: MatrixLib
-Invoking: GCC C++ Linker
-g++  -o "MatrixLib"  ./TMatrix.o ./main.o   
-Finished building target: MatrixLib
- 
-14:35:11 **** Incremental Build of configuration Debug for project MatrixLib ****
-make all 
-make: Nothing to be done for `all'.
-14:35:31 **** Incremental Build of configuration Debug for project BBB_3D ****
-make all 
-make: Nothing to be done for `all'.
-14:35:31 **** Incremental Build of configuration Debug for project MatrixLib ****
+make: Nothing to be done for 'all'.
+15:38:21 **** Incremental Build of configuration Debug for project CuBa_BBB ****
 make all 
 Building file: ../main.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/CommComp" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/lib" -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/home/michael/bbb/rootfs -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
 Finished building: ../main.cpp
  
-Building target: MatrixLib
-Invoking: GCC C++ Linker
-g++  -o "MatrixLib"  ./TMatrix.o ./main.o   
-Finished building target: MatrixLib
+Building target: CuBa_BBB
+Invoking: Cross G++ Linker
+arm-linux-gnueabihf-g++ -L"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB" --sysroot=/home/michael/bbb/rootfs -Wl,-rpath,/home/michael/bbb/rootfs -o "CuBa_BBB"  ./lib/AComponentBase.o ./lib/Assertion.o ./lib/CBinarySemaphore.o ./lib/CCountingSemaphore.o ./lib/CMessage.o ./lib/CMutex.o ./lib/CProxy.o ./lib/CThread.o ./lib/TMatrix.o  ./Hardware/CADC.o ./Hardware/CADCData.o ./Hardware/CADCMMap.o ./Hardware/CGPIO.o ./Hardware/CHardware.o ./Hardware/CMPU9250.o ./Hardware/CMPUData.o ./Hardware/CMotor.o ./Hardware/CPWM.o ./Hardware/CSensorData.o ./Hardware/CSensorSystem.o ./Hardware/CSwitch.o ./Hardware/CTorqueData.o  ./CommComp/CWebSocket.o ./CommComp/Util.o ./CommComp/WebSocketServer.o  ./main.o   -lpthread -l:libwebsockets.so.9
+Finished building target: CuBa_BBB
  
-14:35:40 **** Incremental Build of configuration Debug for project MatrixLib ****
+15:38:30 **** Incremental Build of configuration Debug for project CuBa_BBB ****
 make all 
-make: Nothing to be done for `all'.
-16:05:01 **** Incremental Build of configuration Debug for project BBB_3D ****
+make: Nothing to be done for 'all'.
+15:49:53 **** Build of configuration Debug for project CuBa_BBB ****
 make all 
-make: Nothing to be done for `all'.
-16:05:16 **** Incremental Build of configuration Debug for project BBB_3D ****
-make all 
-make: Nothing to be done for `all'.
-16:10:30 **** Incremental Build of configuration Debug for project BBB_3D ****
-make all 
-make: Nothing to be done for `all'.
-10:13:21 **** Incremental Build of configuration Debug for project BBB_3D ****
-make all 
-make: Nothing to be done for `all'.
-10:13:31 **** Incremental Build of configuration Debug for project BBB_3D ****
-make all 
-make: Nothing to be done for `all'.
-14:17:13 **** Incremental Build of configuration Debug for project BBB_3D ****
-make all 
-Building file: ../Control/States/CEdgeBalance.cpp
-Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/States/CEdgeBalance.d" -MT"Control/States/CEdgeBalance.o" -o "Control/States/CEdgeBalance.o" "../Control/States/CEdgeBalance.cpp"
-Finished building: ../Control/States/CEdgeBalance.cpp
- 
-Building file: ../Control/ActionHandler/CEdgeBalanceAction.cpp
-Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/ActionHandler/CEdgeBalanceAction.d" -MT"Control/ActionHandler/CEdgeBalanceAction.o" -o "Control/ActionHandler/CEdgeBalanceAction.o" "../Control/ActionHandler/CEdgeBalanceAction.cpp"
-Finished building: ../Control/ActionHandler/CEdgeBalanceAction.cpp
- 
-Building file: ../Control/CControlComp.cpp
-Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/CControlComp.d" -MT"Control/CControlComp.o" -o "Control/CControlComp.o" "../Control/CControlComp.cpp"
-Finished building: ../Control/CControlComp.cpp
- 
 Building file: ../main.cpp
 Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/CommComp" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/lib" -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/home/michael/bbb/rootfs -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
 Finished building: ../main.cpp
  
-Building target: BBB_3D
+Building target: CuBa_BBB
 Invoking: Cross G++ Linker
-arm-linux-gnueabihf-g++  -o "BBB_3D"  ./lib/AComponentBase.o ./lib/Assertion.o ./lib/CBinarySemaphore.o ./lib/CCountingSemaphore.o ./lib/CMessage.o ./lib/CMutex.o ./lib/CProxy.o ./lib/CThread.o  ./Hardware/CADC.o ./Hardware/CADCData.o ./Hardware/CADCMMap.o ./Hardware/CGPIO.o ./Hardware/CHardware.o ./Hardware/CMPU9250.o ./Hardware/CMPUData.o ./Hardware/CMotor.o ./Hardware/CPWM.o ./Hardware/CSensorData.o ./Hardware/CSensorSystem.o ./Hardware/CStateData.o ./Hardware/CSwitch.o ./Hardware/CTorqueData.o  ./Control/States/AState.o ./Control/States/CADCCalibration.o ./Control/States/CEdgeBalance.o ./Control/States/CLQRTest.o ./Control/States/CSensorCalibration.o  ./Control/ActionHandler/CADCCalibrationAction.o ./Control/ActionHandler/CControlAction.o ./Control/ActionHandler/CControlActionBase.o ./Control/ActionHandler/CEdgeBalanceAction.o ./Control/ActionHandler/CLQRTestAction.o ./Control/ActionHandler/CSensorCalibrationAction.o  ./Control/C1DCompFilter.o ./Control/C1DLPF.o ./Control/C1DOffsetCorrection.o ./Control/C1DStateReduction.o ./Control/CCompFilter.o ./Control/CControlComp.o ./Control/CLQB.o ./Control/CLQR.o ./Control/CMPUCalib.o ./Control/COffsetCorrection.o ./Control/CPT1.o ./Control/CPoly1.o ./Control/CStateEstimate.o ./Control/CTimerTask.o ./Control/TLQR.o  ./Comm/CCommAction.o ./Comm/CCommComponent.o ./Comm/CCommFSM.o ./Comm/CReceiveTask.o ./Comm/CServer.o  ./main.o   -lpthread
-Finished building target: BBB_3D
+arm-linux-gnueabihf-g++ -L"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB" --sysroot=/home/michael/bbb/rootfs -Wl,-rpath,/home/michael/bbb/rootfs -o "CuBa_BBB"  ./lib/AComponentBase.o ./lib/Assertion.o ./lib/CBinarySemaphore.o ./lib/CCountingSemaphore.o ./lib/CMessage.o ./lib/CMutex.o ./lib/CProxy.o ./lib/CThread.o ./lib/TMatrix.o  ./Hardware/CADC.o ./Hardware/CADCData.o ./Hardware/CADCMMap.o ./Hardware/CGPIO.o ./Hardware/CHardware.o ./Hardware/CMPU9250.o ./Hardware/CMPUData.o ./Hardware/CMotor.o ./Hardware/CPWM.o ./Hardware/CSensorData.o ./Hardware/CSensorSystem.o ./Hardware/CSwitch.o ./Hardware/CTorqueData.o  ./CommComp/CWebSocket.o ./CommComp/Util.o ./CommComp/WebSocketServer.o  ./main.o   -lpthread -l:libwebsockets.so.9
+Finished building target: CuBa_BBB
  
-14:56:04 **** Incremental Build of configuration Debug for project BBB_3D ****
+15:50:03 **** Incremental Build of configuration Debug for project CuBa_BBB ****
 make all 
-Building file: ../Control/States/CEdgeBalance.cpp
-Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/States/CEdgeBalance.d" -MT"Control/States/CEdgeBalance.o" -o "Control/States/CEdgeBalance.o" "../Control/States/CEdgeBalance.cpp"
-Finished building: ../Control/States/CEdgeBalance.cpp
- 
-Building file: ../Control/ActionHandler/CEdgeBalanceAction.cpp
-Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/ActionHandler/CEdgeBalanceAction.d" -MT"Control/ActionHandler/CEdgeBalanceAction.o" -o "Control/ActionHandler/CEdgeBalanceAction.o" "../Control/ActionHandler/CEdgeBalanceAction.cpp"
-Finished building: ../Control/ActionHandler/CEdgeBalanceAction.cpp
- 
-Building file: ../Control/CControlComp.cpp
-Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/CControlComp.d" -MT"Control/CControlComp.o" -o "Control/CControlComp.o" "../Control/CControlComp.cpp"
-Finished building: ../Control/CControlComp.cpp
- 
+make: Nothing to be done for 'all'.
+15:50:12 **** Incremental Build of configuration Debug for project CuBa_BBB ****
+make all 
+make: Nothing to be done for 'all'.
+16:10:32 **** Incremental Build of configuration Debug for project CuBa_BBB ****
+make all 
 Building file: ../main.cpp
 Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/CommComp" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/lib" -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/home/michael/bbb/rootfs -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
 Finished building: ../main.cpp
  
-Building target: BBB_3D
+Building target: CuBa_BBB
 Invoking: Cross G++ Linker
-arm-linux-gnueabihf-g++  -o "BBB_3D"  ./lib/AComponentBase.o ./lib/Assertion.o ./lib/CBinarySemaphore.o ./lib/CCountingSemaphore.o ./lib/CMessage.o ./lib/CMutex.o ./lib/CProxy.o ./lib/CThread.o  ./Hardware/CADC.o ./Hardware/CADCData.o ./Hardware/CADCMMap.o ./Hardware/CGPIO.o ./Hardware/CHardware.o ./Hardware/CMPU9250.o ./Hardware/CMPUData.o ./Hardware/CMotor.o ./Hardware/CPWM.o ./Hardware/CSensorData.o ./Hardware/CSensorSystem.o ./Hardware/CStateData.o ./Hardware/CSwitch.o ./Hardware/CTorqueData.o  ./Control/States/AState.o ./Control/States/CADCCalibration.o ./Control/States/CEdgeBalance.o ./Control/States/CLQRTest.o ./Control/States/CSensorCalibration.o  ./Control/ActionHandler/CADCCalibrationAction.o ./Control/ActionHandler/CControlAction.o ./Control/ActionHandler/CControlActionBase.o ./Control/ActionHandler/CEdgeBalanceAction.o ./Control/ActionHandler/CLQRTestAction.o ./Control/ActionHandler/CSensorCalibrationAction.o  ./Control/C1DCompFilter.o ./Control/C1DLPF.o ./Control/C1DOffsetCorrection.o ./Control/C1DStateReduction.o ./Control/CCompFilter.o ./Control/CControlComp.o ./Control/CLQB.o ./Control/CLQR.o ./Control/CMPUCalib.o ./Control/COffsetCorrection.o ./Control/CPT1.o ./Control/CPoly1.o ./Control/CStateEstimate.o ./Control/CTimerTask.o ./Control/TLQR.o  ./Comm/CCommAction.o ./Comm/CCommComponent.o ./Comm/CCommFSM.o ./Comm/CReceiveTask.o ./Comm/CServer.o  ./main.o   -lpthread
-Finished building target: BBB_3D
+arm-linux-gnueabihf-g++ -L"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB" --sysroot=/home/michael/bbb/rootfs -Wl,-rpath,/home/michael/bbb/rootfs -o "CuBa_BBB"  ./lib/AComponentBase.o ./lib/Assertion.o ./lib/CBinarySemaphore.o ./lib/CCountingSemaphore.o ./lib/CMessage.o ./lib/CMutex.o ./lib/CProxy.o ./lib/CThread.o ./lib/TMatrix.o  ./Hardware/CADC.o ./Hardware/CADCData.o ./Hardware/CADCMMap.o ./Hardware/CGPIO.o ./Hardware/CHardware.o ./Hardware/CMPU9250.o ./Hardware/CMPUData.o ./Hardware/CMotor.o ./Hardware/CPWM.o ./Hardware/CSensorData.o ./Hardware/CSensorSystem.o ./Hardware/CSwitch.o ./Hardware/CTorqueData.o  ./CommComp/CWebSocket.o ./CommComp/Util.o ./CommComp/WebSocketServer.o  ./main.o   -lpthread -l:libwebsockets.so.9
+Finished building target: CuBa_BBB
  
-14:56:16 **** Incremental Build of configuration Debug for project BBB_3D ****
+16:11:18 **** Incremental Build of configuration Debug for project CuBa_BBB ****
 make all 
-make: Nothing to be done for `all'.
-15:09:09 **** Incremental Build of configuration Debug for project BBB_3D ****
-make all 
-make: Nothing to be done for `all'.
-15:26:33 **** Incremental Build of configuration Debug for project BBB_3D ****
-make all 
-Building file: ../Control/States/CEdgeBalance.cpp
-Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/States/CEdgeBalance.d" -MT"Control/States/CEdgeBalance.o" -o "Control/States/CEdgeBalance.o" "../Control/States/CEdgeBalance.cpp"
-Finished building: ../Control/States/CEdgeBalance.cpp
- 
-Building file: ../Control/ActionHandler/CEdgeBalanceAction.cpp
-Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/ActionHandler/CEdgeBalanceAction.d" -MT"Control/ActionHandler/CEdgeBalanceAction.o" -o "Control/ActionHandler/CEdgeBalanceAction.o" "../Control/ActionHandler/CEdgeBalanceAction.cpp"
-Finished building: ../Control/ActionHandler/CEdgeBalanceAction.cpp
- 
-Building file: ../Control/CControlComp.cpp
-Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/CControlComp.d" -MT"Control/CControlComp.o" -o "Control/CControlComp.o" "../Control/CControlComp.cpp"
-Finished building: ../Control/CControlComp.cpp
- 
-Building file: ../Control/CSineWave.cpp
-Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/CSineWave.d" -MT"Control/CSineWave.o" -o "Control/CSineWave.o" "../Control/CSineWave.cpp"
-Finished building: ../Control/CSineWave.cpp
- 
 Building file: ../main.cpp
 Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/CommComp" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/lib" -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/home/michael/bbb/rootfs -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
 Finished building: ../main.cpp
  
-Building target: BBB_3D
+Building target: CuBa_BBB
 Invoking: Cross G++ Linker
-arm-linux-gnueabihf-g++  -o "BBB_3D"  ./lib/AComponentBase.o ./lib/Assertion.o ./lib/CBinarySemaphore.o ./lib/CCountingSemaphore.o ./lib/CMessage.o ./lib/CMutex.o ./lib/CProxy.o ./lib/CThread.o  ./Hardware/CADC.o ./Hardware/CADCData.o ./Hardware/CADCMMap.o ./Hardware/CGPIO.o ./Hardware/CHardware.o ./Hardware/CMPU9250.o ./Hardware/CMPUData.o ./Hardware/CMotor.o ./Hardware/CPWM.o ./Hardware/CSensorData.o ./Hardware/CSensorSystem.o ./Hardware/CStateData.o ./Hardware/CSwitch.o ./Hardware/CTorqueData.o  ./Control/States/AState.o ./Control/States/CADCCalibration.o ./Control/States/CEdgeBalance.o ./Control/States/CLQRTest.o ./Control/States/CSensorCalibration.o  ./Control/ActionHandler/CADCCalibrationAction.o ./Control/ActionHandler/CControlAction.o ./Control/ActionHandler/CControlActionBase.o ./Control/ActionHandler/CEdgeBalanceAction.o ./Control/ActionHandler/CLQRTestAction.o ./Control/ActionHandler/CSensorCalibrationAction.o  ./Control/C1DCompFilter.o ./Control/C1DLPF.o ./Control/C1DOffsetCorrection.o ./Control/C1DStateReduction.o ./Control/CCompFilter.o ./Control/CControlComp.o ./Control/CLQB.o ./Control/CLQR.o ./Control/CMPUCalib.o ./Control/COffsetCorrection.o ./Control/CPT1.o ./Control/CPoly1.o ./Control/CSineWave.o ./Control/CStateEstimate.o ./Control/CTimerTask.o ./Control/TLQR.o  ./Comm/CCommAction.o ./Comm/CCommComponent.o ./Comm/CCommFSM.o ./Comm/CReceiveTask.o ./Comm/CServer.o  ./main.o   -lpthread
-Finished building target: BBB_3D
+arm-linux-gnueabihf-g++ -L"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB" --sysroot=/home/michael/bbb/rootfs -Wl,-rpath,/home/michael/bbb/rootfs -o "CuBa_BBB"  ./lib/AComponentBase.o ./lib/Assertion.o ./lib/CBinarySemaphore.o ./lib/CCountingSemaphore.o ./lib/CMessage.o ./lib/CMutex.o ./lib/CProxy.o ./lib/CThread.o ./lib/TMatrix.o  ./Hardware/CADC.o ./Hardware/CADCData.o ./Hardware/CADCMMap.o ./Hardware/CGPIO.o ./Hardware/CHardware.o ./Hardware/CMPU9250.o ./Hardware/CMPUData.o ./Hardware/CMotor.o ./Hardware/CPWM.o ./Hardware/CSensorData.o ./Hardware/CSensorSystem.o ./Hardware/CSwitch.o ./Hardware/CTorqueData.o  ./CommComp/CWebSocket.o ./CommComp/Util.o ./CommComp/WebSocketServer.o  ./main.o   -lpthread -l:libwebsockets.so.9
+Finished building target: CuBa_BBB
  
-15:26:40 **** Incremental Build of configuration Debug for project BBB_3D ****
+16:11:58 **** Incremental Build of configuration Debug for project CuBa_BBB ****
 make all 
-make: Nothing to be done for `all'.
-15:28:03 **** Incremental Build of configuration Debug for project BBB_3D ****
-make all 
-Building file: ../Control/ActionHandler/CEdgeBalanceAction.cpp
+Building file: ../main.cpp
 Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/ActionHandler/CEdgeBalanceAction.d" -MT"Control/ActionHandler/CEdgeBalanceAction.o" -o "Control/ActionHandler/CEdgeBalanceAction.o" "../Control/ActionHandler/CEdgeBalanceAction.cpp"
-Finished building: ../Control/ActionHandler/CEdgeBalanceAction.cpp
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/CommComp" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/lib" -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/home/michael/bbb/rootfs -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
  
-Building target: BBB_3D
+Building target: CuBa_BBB
 Invoking: Cross G++ Linker
-arm-linux-gnueabihf-g++  -o "BBB_3D"  ./lib/AComponentBase.o ./lib/Assertion.o ./lib/CBinarySemaphore.o ./lib/CCountingSemaphore.o ./lib/CMessage.o ./lib/CMutex.o ./lib/CProxy.o ./lib/CThread.o  ./Hardware/CADC.o ./Hardware/CADCData.o ./Hardware/CADCMMap.o ./Hardware/CGPIO.o ./Hardware/CHardware.o ./Hardware/CMPU9250.o ./Hardware/CMPUData.o ./Hardware/CMotor.o ./Hardware/CPWM.o ./Hardware/CSensorData.o ./Hardware/CSensorSystem.o ./Hardware/CStateData.o ./Hardware/CSwitch.o ./Hardware/CTorqueData.o  ./Control/States/AState.o ./Control/States/CADCCalibration.o ./Control/States/CEdgeBalance.o ./Control/States/CLQRTest.o ./Control/States/CSensorCalibration.o  ./Control/ActionHandler/CADCCalibrationAction.o ./Control/ActionHandler/CControlAction.o ./Control/ActionHandler/CControlActionBase.o ./Control/ActionHandler/CEdgeBalanceAction.o ./Control/ActionHandler/CLQRTestAction.o ./Control/ActionHandler/CSensorCalibrationAction.o  ./Control/C1DCompFilter.o ./Control/C1DLPF.o ./Control/C1DOffsetCorrection.o ./Control/C1DStateReduction.o ./Control/CCompFilter.o ./Control/CControlComp.o ./Control/CLQB.o ./Control/CLQR.o ./Control/CMPUCalib.o ./Control/COffsetCorrection.o ./Control/CPT1.o ./Control/CPoly1.o ./Control/CSineWave.o ./Control/CStateEstimate.o ./Control/CTimerTask.o ./Control/TLQR.o  ./Comm/CCommAction.o ./Comm/CCommComponent.o ./Comm/CCommFSM.o ./Comm/CReceiveTask.o ./Comm/CServer.o  ./main.o   -lpthread
-Finished building target: BBB_3D
- 
-15:28:08 **** Incremental Build of configuration Debug for project BBB_3D ****
-make all 
-make: Nothing to be done for `all'.
-15:29:40 **** Incremental Build of configuration Debug for project BBB_3D ****
-make all 
-Building file: ../Control/ActionHandler/CEdgeBalanceAction.cpp
-Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/ActionHandler/CEdgeBalanceAction.d" -MT"Control/ActionHandler/CEdgeBalanceAction.o" -o "Control/ActionHandler/CEdgeBalanceAction.o" "../Control/ActionHandler/CEdgeBalanceAction.cpp"
-Finished building: ../Control/ActionHandler/CEdgeBalanceAction.cpp
- 
-Building target: BBB_3D
-Invoking: Cross G++ Linker
-arm-linux-gnueabihf-g++  -o "BBB_3D"  ./lib/AComponentBase.o ./lib/Assertion.o ./lib/CBinarySemaphore.o ./lib/CCountingSemaphore.o ./lib/CMessage.o ./lib/CMutex.o ./lib/CProxy.o ./lib/CThread.o  ./Hardware/CADC.o ./Hardware/CADCData.o ./Hardware/CADCMMap.o ./Hardware/CGPIO.o ./Hardware/CHardware.o ./Hardware/CMPU9250.o ./Hardware/CMPUData.o ./Hardware/CMotor.o ./Hardware/CPWM.o ./Hardware/CSensorData.o ./Hardware/CSensorSystem.o ./Hardware/CStateData.o ./Hardware/CSwitch.o ./Hardware/CTorqueData.o  ./Control/States/AState.o ./Control/States/CADCCalibration.o ./Control/States/CEdgeBalance.o ./Control/States/CLQRTest.o ./Control/States/CSensorCalibration.o  ./Control/ActionHandler/CADCCalibrationAction.o ./Control/ActionHandler/CControlAction.o ./Control/ActionHandler/CControlActionBase.o ./Control/ActionHandler/CEdgeBalanceAction.o ./Control/ActionHandler/CLQRTestAction.o ./Control/ActionHandler/CSensorCalibrationAction.o  ./Control/C1DCompFilter.o ./Control/C1DLPF.o ./Control/C1DOffsetCorrection.o ./Control/C1DStateReduction.o ./Control/CCompFilter.o ./Control/CControlComp.o ./Control/CLQB.o ./Control/CLQR.o ./Control/CMPUCalib.o ./Control/COffsetCorrection.o ./Control/CPT1.o ./Control/CPoly1.o ./Control/CSineWave.o ./Control/CStateEstimate.o ./Control/CTimerTask.o ./Control/TLQR.o  ./Comm/CCommAction.o ./Comm/CCommComponent.o ./Comm/CCommFSM.o ./Comm/CReceiveTask.o ./Comm/CServer.o  ./main.o   -lpthread
-Finished building target: BBB_3D
- 
-15:29:45 **** Incremental Build of configuration Debug for project BBB_3D ****
-make all 
-make: Nothing to be done for `all'.
-15:32:53 **** Incremental Build of configuration Debug for project BBB_3D ****
-make all 
-Building file: ../Control/ActionHandler/CEdgeBalanceAction.cpp
-Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/ActionHandler/CEdgeBalanceAction.d" -MT"Control/ActionHandler/CEdgeBalanceAction.o" -o "Control/ActionHandler/CEdgeBalanceAction.o" "../Control/ActionHandler/CEdgeBalanceAction.cpp"
-Finished building: ../Control/ActionHandler/CEdgeBalanceAction.cpp
- 
-Building target: BBB_3D
-Invoking: Cross G++ Linker
-arm-linux-gnueabihf-g++  -o "BBB_3D"  ./lib/AComponentBase.o ./lib/Assertion.o ./lib/CBinarySemaphore.o ./lib/CCountingSemaphore.o ./lib/CMessage.o ./lib/CMutex.o ./lib/CProxy.o ./lib/CThread.o  ./Hardware/CADC.o ./Hardware/CADCData.o ./Hardware/CADCMMap.o ./Hardware/CGPIO.o ./Hardware/CHardware.o ./Hardware/CMPU9250.o ./Hardware/CMPUData.o ./Hardware/CMotor.o ./Hardware/CPWM.o ./Hardware/CSensorData.o ./Hardware/CSensorSystem.o ./Hardware/CStateData.o ./Hardware/CSwitch.o ./Hardware/CTorqueData.o  ./Control/States/AState.o ./Control/States/CADCCalibration.o ./Control/States/CEdgeBalance.o ./Control/States/CLQRTest.o ./Control/States/CSensorCalibration.o  ./Control/ActionHandler/CADCCalibrationAction.o ./Control/ActionHandler/CControlAction.o ./Control/ActionHandler/CControlActionBase.o ./Control/ActionHandler/CEdgeBalanceAction.o ./Control/ActionHandler/CLQRTestAction.o ./Control/ActionHandler/CSensorCalibrationAction.o  ./Control/C1DCompFilter.o ./Control/C1DLPF.o ./Control/C1DOffsetCorrection.o ./Control/C1DStateReduction.o ./Control/CCompFilter.o ./Control/CControlComp.o ./Control/CLQB.o ./Control/CLQR.o ./Control/CMPUCalib.o ./Control/COffsetCorrection.o ./Control/CPT1.o ./Control/CPoly1.o ./Control/CSineWave.o ./Control/CStateEstimate.o ./Control/CTimerTask.o ./Control/TLQR.o  ./Comm/CCommAction.o ./Comm/CCommComponent.o ./Comm/CCommFSM.o ./Comm/CReceiveTask.o ./Comm/CServer.o  ./main.o   -lpthread
-Finished building target: BBB_3D
- 
-15:34:21 **** Incremental Build of configuration Debug for project BBB_3D ****
-make all 
-Building file: ../Control/ActionHandler/CEdgeBalanceAction.cpp
-Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/ActionHandler/CEdgeBalanceAction.d" -MT"Control/ActionHandler/CEdgeBalanceAction.o" -o "Control/ActionHandler/CEdgeBalanceAction.o" "../Control/ActionHandler/CEdgeBalanceAction.cpp"
-Finished building: ../Control/ActionHandler/CEdgeBalanceAction.cpp
- 
-Building target: BBB_3D
-Invoking: Cross G++ Linker
-arm-linux-gnueabihf-g++  -o "BBB_3D"  ./lib/AComponentBase.o ./lib/Assertion.o ./lib/CBinarySemaphore.o ./lib/CCountingSemaphore.o ./lib/CMessage.o ./lib/CMutex.o ./lib/CProxy.o ./lib/CThread.o  ./Hardware/CADC.o ./Hardware/CADCData.o ./Hardware/CADCMMap.o ./Hardware/CGPIO.o ./Hardware/CHardware.o ./Hardware/CMPU9250.o ./Hardware/CMPUData.o ./Hardware/CMotor.o ./Hardware/CPWM.o ./Hardware/CSensorData.o ./Hardware/CSensorSystem.o ./Hardware/CStateData.o ./Hardware/CSwitch.o ./Hardware/CTorqueData.o  ./Control/States/AState.o ./Control/States/CADCCalibration.o ./Control/States/CEdgeBalance.o ./Control/States/CLQRTest.o ./Control/States/CSensorCalibration.o  ./Control/ActionHandler/CADCCalibrationAction.o ./Control/ActionHandler/CControlAction.o ./Control/ActionHandler/CControlActionBase.o ./Control/ActionHandler/CEdgeBalanceAction.o ./Control/ActionHandler/CLQRTestAction.o ./Control/ActionHandler/CSensorCalibrationAction.o  ./Control/C1DCompFilter.o ./Control/C1DLPF.o ./Control/C1DOffsetCorrection.o ./Control/C1DStateReduction.o ./Control/CCompFilter.o ./Control/CControlComp.o ./Control/CLQB.o ./Control/CLQR.o ./Control/CMPUCalib.o ./Control/COffsetCorrection.o ./Control/CPT1.o ./Control/CPoly1.o ./Control/CSineWave.o ./Control/CStateEstimate.o ./Control/CTimerTask.o ./Control/TLQR.o  ./Comm/CCommAction.o ./Comm/CCommComponent.o ./Comm/CCommFSM.o ./Comm/CReceiveTask.o ./Comm/CServer.o  ./main.o   -lpthread
-Finished building target: BBB_3D
- 
-15:35:53 **** Incremental Build of configuration Debug for project BBB_3D ****
-make all 
-Building file: ../Control/ActionHandler/CEdgeBalanceAction.cpp
-Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/ActionHandler/CEdgeBalanceAction.d" -MT"Control/ActionHandler/CEdgeBalanceAction.o" -o "Control/ActionHandler/CEdgeBalanceAction.o" "../Control/ActionHandler/CEdgeBalanceAction.cpp"
-Finished building: ../Control/ActionHandler/CEdgeBalanceAction.cpp
- 
-Building target: BBB_3D
-Invoking: Cross G++ Linker
-arm-linux-gnueabihf-g++  -o "BBB_3D"  ./lib/AComponentBase.o ./lib/Assertion.o ./lib/CBinarySemaphore.o ./lib/CCountingSemaphore.o ./lib/CMessage.o ./lib/CMutex.o ./lib/CProxy.o ./lib/CThread.o  ./Hardware/CADC.o ./Hardware/CADCData.o ./Hardware/CADCMMap.o ./Hardware/CGPIO.o ./Hardware/CHardware.o ./Hardware/CMPU9250.o ./Hardware/CMPUData.o ./Hardware/CMotor.o ./Hardware/CPWM.o ./Hardware/CSensorData.o ./Hardware/CSensorSystem.o ./Hardware/CStateData.o ./Hardware/CSwitch.o ./Hardware/CTorqueData.o  ./Control/States/AState.o ./Control/States/CADCCalibration.o ./Control/States/CEdgeBalance.o ./Control/States/CLQRTest.o ./Control/States/CSensorCalibration.o  ./Control/ActionHandler/CADCCalibrationAction.o ./Control/ActionHandler/CControlAction.o ./Control/ActionHandler/CControlActionBase.o ./Control/ActionHandler/CEdgeBalanceAction.o ./Control/ActionHandler/CLQRTestAction.o ./Control/ActionHandler/CSensorCalibrationAction.o  ./Control/C1DCompFilter.o ./Control/C1DLPF.o ./Control/C1DOffsetCorrection.o ./Control/C1DStateReduction.o ./Control/CCompFilter.o ./Control/CControlComp.o ./Control/CLQB.o ./Control/CLQR.o ./Control/CMPUCalib.o ./Control/COffsetCorrection.o ./Control/CPT1.o ./Control/CPoly1.o ./Control/CSineWave.o ./Control/CStateEstimate.o ./Control/CTimerTask.o ./Control/TLQR.o  ./Comm/CCommAction.o ./Comm/CCommComponent.o ./Comm/CCommFSM.o ./Comm/CReceiveTask.o ./Comm/CServer.o  ./main.o   -lpthread
-Finished building target: BBB_3D
- 
-15:38:03 **** Incremental Build of configuration Debug for project BBB_3D ****
-make all 
-Building file: ../Control/ActionHandler/CEdgeBalanceAction.cpp
-Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/ActionHandler" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/BBB_3D/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/ActionHandler/CEdgeBalanceAction.d" -MT"Control/ActionHandler/CEdgeBalanceAction.o" -o "Control/ActionHandler/CEdgeBalanceAction.o" "../Control/ActionHandler/CEdgeBalanceAction.cpp"
-Finished building: ../Control/ActionHandler/CEdgeBalanceAction.cpp
- 
-Building target: BBB_3D
-Invoking: Cross G++ Linker
-arm-linux-gnueabihf-g++  -o "BBB_3D"  ./lib/AComponentBase.o ./lib/Assertion.o ./lib/CBinarySemaphore.o ./lib/CCountingSemaphore.o ./lib/CMessage.o ./lib/CMutex.o ./lib/CProxy.o ./lib/CThread.o  ./Hardware/CADC.o ./Hardware/CADCData.o ./Hardware/CADCMMap.o ./Hardware/CGPIO.o ./Hardware/CHardware.o ./Hardware/CMPU9250.o ./Hardware/CMPUData.o ./Hardware/CMotor.o ./Hardware/CPWM.o ./Hardware/CSensorData.o ./Hardware/CSensorSystem.o ./Hardware/CStateData.o ./Hardware/CSwitch.o ./Hardware/CTorqueData.o  ./Control/States/AState.o ./Control/States/CADCCalibration.o ./Control/States/CEdgeBalance.o ./Control/States/CLQRTest.o ./Control/States/CSensorCalibration.o  ./Control/ActionHandler/CADCCalibrationAction.o ./Control/ActionHandler/CControlAction.o ./Control/ActionHandler/CControlActionBase.o ./Control/ActionHandler/CEdgeBalanceAction.o ./Control/ActionHandler/CLQRTestAction.o ./Control/ActionHandler/CSensorCalibrationAction.o  ./Control/C1DCompFilter.o ./Control/C1DLPF.o ./Control/C1DOffsetCorrection.o ./Control/C1DStateReduction.o ./Control/CCompFilter.o ./Control/CControlComp.o ./Control/CLQB.o ./Control/CLQR.o ./Control/CMPUCalib.o ./Control/COffsetCorrection.o ./Control/CPT1.o ./Control/CPoly1.o ./Control/CSineWave.o ./Control/CStateEstimate.o ./Control/CTimerTask.o ./Control/TLQR.o  ./Comm/CCommAction.o ./Comm/CCommComponent.o ./Comm/CCommFSM.o ./Comm/CReceiveTask.o ./Comm/CServer.o  ./main.o   -lpthread
-Finished building target: BBB_3D
+arm-linux-gnueabihf-g++ -L"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB" --sysroot=/home/michael/bbb/rootfs -Wl,-rpath,/home/michael/bbb/rootfs -o "CuBa_BBB"  ./lib/AComponentBase.o ./lib/Assertion.o ./lib/CBinarySemaphore.o ./lib/CCountingSemaphore.o ./lib/CMessage.o ./lib/CMutex.o ./lib/CProxy.o ./lib/CThread.o ./lib/TMatrix.o  ./Hardware/CADC.o ./Hardware/CADCData.o ./Hardware/CADCMMap.o ./Hardware/CGPIO.o ./Hardware/CHardware.o ./Hardware/CMPU9250.o ./Hardware/CMPUData.o ./Hardware/CMotor.o ./Hardware/CPWM.o ./Hardware/CSensorData.o ./Hardware/CSensorSystem.o ./Hardware/CSwitch.o ./Hardware/CTorqueData.o  ./CommComp/CWebSocket.o ./CommComp/Util.o ./CommComp/WebSocketServer.o  ./main.o   -lpthread -l:libwebsockets.so.9
+Finished building target: CuBa_BBB
  

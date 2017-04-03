@@ -1,0 +1,16 @@
+var testHandler;// = new CTestHandler();
+var webSocket;//   = new CWebSocket(testHandler);
+
+function onLoadJS()
+{
+	testHandler = new CTestHandler();
+	webSocket   = new CWebSocket(testHandler);
+}
+function onConnectClicked()
+{
+	webSocket.init();
+}
+function onDisconnectClicked()
+{
+	webSocket.close();
+}

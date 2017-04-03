@@ -14,6 +14,12 @@
 #include <fstream>
 
 template<const UInt32 n_R, const UInt32 n_C>
+class TMatrix;
+
+template<const UInt32 n_C>;
+using TRVector = TMatrix<1U, n_C>;
+
+template<const UInt32 n_R, const UInt32 n_C>
 class TMatrix
 {
 public:

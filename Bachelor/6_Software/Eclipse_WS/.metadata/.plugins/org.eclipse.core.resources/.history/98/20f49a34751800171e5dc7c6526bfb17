@@ -1,0 +1,13 @@
+function CTestHandler()
+{
+	var mTestPlot = new CPlot("placeholder", 2, ["phi1", "phi2"]);
+	this.handleMessage([0,1,2]);
+};
+CTestHandler.prototype.handleMessage = function(data)
+{
+	alert("got data");
+	//var json = JSON.parse(data);
+	//this.mTestPlot.addData([json.time, json.phi1, json.phi2]);
+	this.mTestPlot.addData(data);
+	this.mTestPlot.addData(data),
+};

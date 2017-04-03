@@ -1,0 +1,6 @@
+#include "CWebSocket.h"
+
+int main()
+{
+	return 0;
+}

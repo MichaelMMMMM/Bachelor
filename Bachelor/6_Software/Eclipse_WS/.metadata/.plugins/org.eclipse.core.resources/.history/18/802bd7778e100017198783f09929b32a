@@ -1,7 +1,0 @@
-#include "TMatrix.h"
-
-template<const UInt32 n_R>
-Float32& TMatrix<n_R, 1U>::operator[](const UInt32 i)
-{
-	return mMatrix[n_R][0];
-}

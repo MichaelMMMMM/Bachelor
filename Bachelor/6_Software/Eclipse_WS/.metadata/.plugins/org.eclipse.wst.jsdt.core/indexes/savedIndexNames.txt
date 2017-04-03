@@ -1,0 +1,6 @@
+INDEX VERSION 1.121+/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+4140418042.index
+704651530.index
+103285230.index
+3569976759.index
+1412816498.index
