@@ -47,7 +47,7 @@
 								<option id="gnu.cpp.link.option.paths.179369559" name="Library search path (-L)" superClass="gnu.cpp.link.option.paths" useByScannerDiscovery="false" valueType="libPaths">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}}&quot;"/>
 								</option>
-								<option id="gnu.cpp.link.option.flags.1409862012" superClass="gnu.cpp.link.option.flags" useByScannerDiscovery="false" value="--sysroot=/home/michael/bbb/rootfs -Wl,-rpath,/home/michael/bbb/rootfs" valueType="string"/>
+								<option id="gnu.cpp.link.option.flags.1409862012" name="Linker flags" superClass="gnu.cpp.link.option.flags" useByScannerDiscovery="false" value="--sysroot=/home/michael/bbb/rootfs -Wl,-rpath,/home/michael/bbb/rootfs" valueType="string"/>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.739019999" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
 									<additionalInput kind="additionalinput" paths="$(LIBS)"/>

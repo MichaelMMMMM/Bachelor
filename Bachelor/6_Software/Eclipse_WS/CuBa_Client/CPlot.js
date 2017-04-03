@@ -17,7 +17,6 @@ function CPlot(placeholder, nbrOfLines, labels)
 }
 CPlot.prototype.addData = function(data)
 {
-	alert("plot");
 	this.mTime.push(data[0]);
 	for(var i = 0; i < this.mNbrOfLines; i++) 
 	{

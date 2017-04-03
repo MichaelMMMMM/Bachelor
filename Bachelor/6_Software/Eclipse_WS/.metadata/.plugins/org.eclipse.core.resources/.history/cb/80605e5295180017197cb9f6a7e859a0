@@ -1,0 +1,21 @@
+var gPhiPlot;
+var webSocket;
+
+function onLoadJS()
+{
+	webSocket   = new CWebSocket(onMessage);
+	gPhiPlot    = new CPlot()
+}
+function onMessage(evt)
+{
+	var data = JSON.parse(evt.data);
+	console.log(data);
+}
+function onConnectClicked()
+{
+	webSocket.init();
+}
+function onDisconnectClicked()
+{
+	webSocket.close();
+}

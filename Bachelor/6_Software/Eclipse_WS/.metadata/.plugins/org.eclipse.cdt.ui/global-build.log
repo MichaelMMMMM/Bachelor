@@ -1,8 +1,153 @@
-14:31:16 **** Incremental Build of configuration Debug for project CuBa_BBB ****
+19:50:21 **** Build of configuration Debug for project CuBa_BBB ****
 make all 
-make: Nothing to be done for 'all'.
-14:33:04 **** Incremental Build of configuration Debug for project CuBa_BBB ****
-make all 
+Building file: ../lib/AComponentBase.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/CommComp" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/lib" -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/home/michael/bbb/rootfs -MMD -MP -MF"lib/AComponentBase.d" -MT"lib/AComponentBase.o" -o "lib/AComponentBase.o" "../lib/AComponentBase.cpp"
+Finished building: ../lib/AComponentBase.cpp
+ 
+Building file: ../lib/Assertion.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/CommComp" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/lib" -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/home/michael/bbb/rootfs -MMD -MP -MF"lib/Assertion.d" -MT"lib/Assertion.o" -o "lib/Assertion.o" "../lib/Assertion.cpp"
+Finished building: ../lib/Assertion.cpp
+ 
+Building file: ../lib/CBinarySemaphore.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/CommComp" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/lib" -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/home/michael/bbb/rootfs -MMD -MP -MF"lib/CBinarySemaphore.d" -MT"lib/CBinarySemaphore.o" -o "lib/CBinarySemaphore.o" "../lib/CBinarySemaphore.cpp"
+Finished building: ../lib/CBinarySemaphore.cpp
+ 
+Building file: ../lib/CCountingSemaphore.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/CommComp" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/lib" -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/home/michael/bbb/rootfs -MMD -MP -MF"lib/CCountingSemaphore.d" -MT"lib/CCountingSemaphore.o" -o "lib/CCountingSemaphore.o" "../lib/CCountingSemaphore.cpp"
+Finished building: ../lib/CCountingSemaphore.cpp
+ 
+Building file: ../lib/CMessage.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/CommComp" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/lib" -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/home/michael/bbb/rootfs -MMD -MP -MF"lib/CMessage.d" -MT"lib/CMessage.o" -o "lib/CMessage.o" "../lib/CMessage.cpp"
+Finished building: ../lib/CMessage.cpp
+ 
+Building file: ../lib/CMutex.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/CommComp" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/lib" -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/home/michael/bbb/rootfs -MMD -MP -MF"lib/CMutex.d" -MT"lib/CMutex.o" -o "lib/CMutex.o" "../lib/CMutex.cpp"
+Finished building: ../lib/CMutex.cpp
+ 
+Building file: ../lib/CProxy.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/CommComp" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/lib" -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/home/michael/bbb/rootfs -MMD -MP -MF"lib/CProxy.d" -MT"lib/CProxy.o" -o "lib/CProxy.o" "../lib/CProxy.cpp"
+Finished building: ../lib/CProxy.cpp
+ 
+Building file: ../lib/CThread.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/CommComp" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/lib" -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/home/michael/bbb/rootfs -MMD -MP -MF"lib/CThread.d" -MT"lib/CThread.o" -o "lib/CThread.o" "../lib/CThread.cpp"
+Finished building: ../lib/CThread.cpp
+ 
+Building file: ../lib/TMatrix.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/CommComp" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/lib" -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/home/michael/bbb/rootfs -MMD -MP -MF"lib/TMatrix.d" -MT"lib/TMatrix.o" -o "lib/TMatrix.o" "../lib/TMatrix.cpp"
+Finished building: ../lib/TMatrix.cpp
+ 
+Building file: ../Hardware/CADC.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/CommComp" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/lib" -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/home/michael/bbb/rootfs -MMD -MP -MF"Hardware/CADC.d" -MT"Hardware/CADC.o" -o "Hardware/CADC.o" "../Hardware/CADC.cpp"
+Finished building: ../Hardware/CADC.cpp
+ 
+Building file: ../Hardware/CADCData.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/CommComp" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/lib" -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/home/michael/bbb/rootfs -MMD -MP -MF"Hardware/CADCData.d" -MT"Hardware/CADCData.o" -o "Hardware/CADCData.o" "../Hardware/CADCData.cpp"
+Finished building: ../Hardware/CADCData.cpp
+ 
+Building file: ../Hardware/CADCMMap.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/CommComp" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/lib" -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/home/michael/bbb/rootfs -MMD -MP -MF"Hardware/CADCMMap.d" -MT"Hardware/CADCMMap.o" -o "Hardware/CADCMMap.o" "../Hardware/CADCMMap.cpp"
+../Hardware/CADCMMap.cpp: In constructor ‘CADCMMap::CADCMMap()’:
+../Hardware/CADCMMap.cpp:20:9: warning: unused variable ‘test’ [-Wunused-variable]
+  UInt32 test = cBIT26 | cBIT4 | cBIT0;
+         ^
+../Hardware/CADCMMap.cpp: In member function ‘bool CADCMMap::fetchValue(CADCData&)’:
+../Hardware/CADCMMap.cpp:62:12: warning: unused variable ‘id’ [-Wunused-variable]
+     UInt16 id    = ( value & sIDMask) >> 16U;
+            ^
+../Hardware/CADCMMap.cpp:51:10: warning: unused variable ‘ctrl’ [-Wunused-variable]
+   UInt32 ctrl = this->readRegister(sCTRL_Offset);
+          ^
+../Hardware/CADCMMap.cpp:52:10: warning: unused variable ‘config1’ [-Wunused-variable]
+   UInt32 config1 = this->readRegister(sSTEPCONFIG1_Offset);
+          ^
+../Hardware/CADCMMap.cpp:53:10: warning: unused variable ‘config2’ [-Wunused-variable]
+   UInt32 config2 = this->readRegister(sSTEPCONFIG2_Offset);
+          ^
+../Hardware/CADCMMap.cpp:54:10: warning: unused variable ‘config3’ [-Wunused-variable]
+   UInt32 config3 = this->readRegister(sSTEPCONFIG3_Offset);
+          ^
+../Hardware/CADCMMap.cpp:55:10: warning: unused variable ‘stepEnable’ [-Wunused-variable]
+   UInt32 stepEnable = this->readRegister(sSTEPENABLE_Offset);
+          ^
+Finished building: ../Hardware/CADCMMap.cpp
+ 
+Building file: ../Hardware/CGPIO.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/CommComp" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/lib" -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/home/michael/bbb/rootfs -MMD -MP -MF"Hardware/CGPIO.d" -MT"Hardware/CGPIO.o" -o "Hardware/CGPIO.o" "../Hardware/CGPIO.cpp"
+Finished building: ../Hardware/CGPIO.cpp
+ 
+Building file: ../Hardware/CHardware.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/CommComp" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/lib" -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/home/michael/bbb/rootfs -MMD -MP -MF"Hardware/CHardware.d" -MT"Hardware/CHardware.o" -o "Hardware/CHardware.o" "../Hardware/CHardware.cpp"
+Finished building: ../Hardware/CHardware.cpp
+ 
+Building file: ../Hardware/CMPU9250.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/CommComp" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/lib" -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/home/michael/bbb/rootfs -MMD -MP -MF"Hardware/CMPU9250.d" -MT"Hardware/CMPU9250.o" -o "Hardware/CMPU9250.o" "../Hardware/CMPU9250.cpp"
+Finished building: ../Hardware/CMPU9250.cpp
+ 
+Building file: ../Hardware/CMPUData.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/CommComp" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/lib" -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/home/michael/bbb/rootfs -MMD -MP -MF"Hardware/CMPUData.d" -MT"Hardware/CMPUData.o" -o "Hardware/CMPUData.o" "../Hardware/CMPUData.cpp"
+Finished building: ../Hardware/CMPUData.cpp
+ 
+Building file: ../Hardware/CMotor.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/CommComp" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/lib" -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/home/michael/bbb/rootfs -MMD -MP -MF"Hardware/CMotor.d" -MT"Hardware/CMotor.o" -o "Hardware/CMotor.o" "../Hardware/CMotor.cpp"
+Finished building: ../Hardware/CMotor.cpp
+ 
+Building file: ../Hardware/CPWM.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/CommComp" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/lib" -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/home/michael/bbb/rootfs -MMD -MP -MF"Hardware/CPWM.d" -MT"Hardware/CPWM.o" -o "Hardware/CPWM.o" "../Hardware/CPWM.cpp"
+Finished building: ../Hardware/CPWM.cpp
+ 
+Building file: ../Hardware/CSensorData.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/CommComp" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/lib" -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/home/michael/bbb/rootfs -MMD -MP -MF"Hardware/CSensorData.d" -MT"Hardware/CSensorData.o" -o "Hardware/CSensorData.o" "../Hardware/CSensorData.cpp"
+Finished building: ../Hardware/CSensorData.cpp
+ 
+Building file: ../Hardware/CSensorSystem.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/CommComp" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/lib" -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/home/michael/bbb/rootfs -MMD -MP -MF"Hardware/CSensorSystem.d" -MT"Hardware/CSensorSystem.o" -o "Hardware/CSensorSystem.o" "../Hardware/CSensorSystem.cpp"
+Finished building: ../Hardware/CSensorSystem.cpp
+ 
+Building file: ../Hardware/CSwitch.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/CommComp" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/lib" -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/home/michael/bbb/rootfs -MMD -MP -MF"Hardware/CSwitch.d" -MT"Hardware/CSwitch.o" -o "Hardware/CSwitch.o" "../Hardware/CSwitch.cpp"
+Finished building: ../Hardware/CSwitch.cpp
+ 
+Building file: ../Hardware/CTorqueData.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/CommComp" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/lib" -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/home/michael/bbb/rootfs -MMD -MP -MF"Hardware/CTorqueData.d" -MT"Hardware/CTorqueData.o" -o "Hardware/CTorqueData.o" "../Hardware/CTorqueData.cpp"
+Finished building: ../Hardware/CTorqueData.cpp
+ 
+Building file: ../CommComp/CWebSocket.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/CommComp" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/lib" -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/home/michael/bbb/rootfs -MMD -MP -MF"CommComp/CWebSocket.d" -MT"CommComp/CWebSocket.o" -o "CommComp/CWebSocket.o" "../CommComp/CWebSocket.cpp"
+Finished building: ../CommComp/CWebSocket.cpp
+ 
+Building file: ../CommComp/Util.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/CommComp" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/lib" -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/home/michael/bbb/rootfs -MMD -MP -MF"CommComp/Util.d" -MT"CommComp/Util.o" -o "CommComp/Util.o" "../CommComp/Util.cpp"
+Finished building: ../CommComp/Util.cpp
+ 
+Building file: ../CommComp/WebSocketServer.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/CommComp" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/lib" -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/home/michael/bbb/rootfs -MMD -MP -MF"CommComp/WebSocketServer.d" -MT"CommComp/WebSocketServer.o" -o "CommComp/WebSocketServer.o" "../CommComp/WebSocketServer.cpp"
+Finished building: ../CommComp/WebSocketServer.cpp
+ 
 Building file: ../main.cpp
 Invoking: Cross G++ Compiler
 arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/CommComp" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/lib" -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/home/michael/bbb/rootfs -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
@@ -13,114 +158,13 @@ Invoking: Cross G++ Linker
 arm-linux-gnueabihf-g++ -L"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB" --sysroot=/home/michael/bbb/rootfs -Wl,-rpath,/home/michael/bbb/rootfs -o "CuBa_BBB"  ./lib/AComponentBase.o ./lib/Assertion.o ./lib/CBinarySemaphore.o ./lib/CCountingSemaphore.o ./lib/CMessage.o ./lib/CMutex.o ./lib/CProxy.o ./lib/CThread.o ./lib/TMatrix.o  ./Hardware/CADC.o ./Hardware/CADCData.o ./Hardware/CADCMMap.o ./Hardware/CGPIO.o ./Hardware/CHardware.o ./Hardware/CMPU9250.o ./Hardware/CMPUData.o ./Hardware/CMotor.o ./Hardware/CPWM.o ./Hardware/CSensorData.o ./Hardware/CSensorSystem.o ./Hardware/CSwitch.o ./Hardware/CTorqueData.o  ./CommComp/CWebSocket.o ./CommComp/Util.o ./CommComp/WebSocketServer.o  ./main.o   -lpthread -l:libwebsockets.so.9
 Finished building target: CuBa_BBB
  
-14:33:40 **** Incremental Build of configuration Debug for project CuBa_BBB ****
-make all 
-Building file: ../main.cpp
-Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/CommComp" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/lib" -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/home/michael/bbb/rootfs -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
-Finished building: ../main.cpp
- 
-Building target: CuBa_BBB
-Invoking: Cross G++ Linker
-arm-linux-gnueabihf-g++ -L"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB" --sysroot=/home/michael/bbb/rootfs -Wl,-rpath,/home/michael/bbb/rootfs -o "CuBa_BBB"  ./lib/AComponentBase.o ./lib/Assertion.o ./lib/CBinarySemaphore.o ./lib/CCountingSemaphore.o ./lib/CMessage.o ./lib/CMutex.o ./lib/CProxy.o ./lib/CThread.o ./lib/TMatrix.o  ./Hardware/CADC.o ./Hardware/CADCData.o ./Hardware/CADCMMap.o ./Hardware/CGPIO.o ./Hardware/CHardware.o ./Hardware/CMPU9250.o ./Hardware/CMPUData.o ./Hardware/CMotor.o ./Hardware/CPWM.o ./Hardware/CSensorData.o ./Hardware/CSensorSystem.o ./Hardware/CSwitch.o ./Hardware/CTorqueData.o  ./CommComp/CWebSocket.o ./CommComp/Util.o ./CommComp/WebSocketServer.o  ./main.o   -lpthread -l:libwebsockets.so.9
-Finished building target: CuBa_BBB
- 
-14:34:36 **** Incremental Build of configuration Debug for project CuBa_BBB ****
+19:50:34 **** Incremental Build of configuration Debug for project CuBa_BBB ****
 make all 
 make: Nothing to be done for 'all'.
-14:34:44 **** Incremental Build of configuration Debug for project CuBa_BBB ****
+19:50:41 **** Incremental Build of configuration Debug for project CuBa_BBB ****
 make all 
 make: Nothing to be done for 'all'.
-14:35:15 **** Incremental Build of configuration Debug for project CuBa_BBB ****
-make all 
-make: Nothing to be done for 'all'.
-14:38:35 **** Incremental Build of configuration Debug for project CuBa_BBB ****
-make all 
-Building file: ../main.cpp
-Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/CommComp" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/lib" -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/home/michael/bbb/rootfs -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
-../main.cpp: In function ‘int main()’:
-../main.cpp:26:15: error: ‘TIMEOUT’ was not declared in this scope
-   socket.wait(TIMEOUT);
-               ^
-make: *** [main.o] Error 1
-subdir.mk:18: recipe for target 'main.o' failed
-14:38:47 **** Incremental Build of configuration Debug for project CuBa_BBB ****
-make all 
-Building file: ../main.cpp
-Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/CommComp" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/lib" -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/home/michael/bbb/rootfs -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
-Finished building: ../main.cpp
- 
-Building target: CuBa_BBB
-Invoking: Cross G++ Linker
-arm-linux-gnueabihf-g++ -L"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB" --sysroot=/home/michael/bbb/rootfs -Wl,-rpath,/home/michael/bbb/rootfs -o "CuBa_BBB"  ./lib/AComponentBase.o ./lib/Assertion.o ./lib/CBinarySemaphore.o ./lib/CCountingSemaphore.o ./lib/CMessage.o ./lib/CMutex.o ./lib/CProxy.o ./lib/CThread.o ./lib/TMatrix.o  ./Hardware/CADC.o ./Hardware/CADCData.o ./Hardware/CADCMMap.o ./Hardware/CGPIO.o ./Hardware/CHardware.o ./Hardware/CMPU9250.o ./Hardware/CMPUData.o ./Hardware/CMotor.o ./Hardware/CPWM.o ./Hardware/CSensorData.o ./Hardware/CSensorSystem.o ./Hardware/CSwitch.o ./Hardware/CTorqueData.o  ./CommComp/CWebSocket.o ./CommComp/Util.o ./CommComp/WebSocketServer.o  ./main.o   -lpthread -l:libwebsockets.so.9
-Finished building target: CuBa_BBB
- 
-15:08:03 **** Incremental Build of configuration Debug for project CuBa_BBB ****
-make all 
-make: Nothing to be done for 'all'.
-15:08:57 **** Incremental Build of configuration Debug for project CuBa_BBB ****
-make all 
-make: Nothing to be done for 'all'.
-15:38:21 **** Incremental Build of configuration Debug for project CuBa_BBB ****
-make all 
-Building file: ../main.cpp
-Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/CommComp" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/lib" -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/home/michael/bbb/rootfs -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
-Finished building: ../main.cpp
- 
-Building target: CuBa_BBB
-Invoking: Cross G++ Linker
-arm-linux-gnueabihf-g++ -L"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB" --sysroot=/home/michael/bbb/rootfs -Wl,-rpath,/home/michael/bbb/rootfs -o "CuBa_BBB"  ./lib/AComponentBase.o ./lib/Assertion.o ./lib/CBinarySemaphore.o ./lib/CCountingSemaphore.o ./lib/CMessage.o ./lib/CMutex.o ./lib/CProxy.o ./lib/CThread.o ./lib/TMatrix.o  ./Hardware/CADC.o ./Hardware/CADCData.o ./Hardware/CADCMMap.o ./Hardware/CGPIO.o ./Hardware/CHardware.o ./Hardware/CMPU9250.o ./Hardware/CMPUData.o ./Hardware/CMotor.o ./Hardware/CPWM.o ./Hardware/CSensorData.o ./Hardware/CSensorSystem.o ./Hardware/CSwitch.o ./Hardware/CTorqueData.o  ./CommComp/CWebSocket.o ./CommComp/Util.o ./CommComp/WebSocketServer.o  ./main.o   -lpthread -l:libwebsockets.so.9
-Finished building target: CuBa_BBB
- 
-15:38:30 **** Incremental Build of configuration Debug for project CuBa_BBB ****
-make all 
-make: Nothing to be done for 'all'.
-15:49:53 **** Build of configuration Debug for project CuBa_BBB ****
-make all 
-Building file: ../main.cpp
-Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/CommComp" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/lib" -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/home/michael/bbb/rootfs -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
-Finished building: ../main.cpp
- 
-Building target: CuBa_BBB
-Invoking: Cross G++ Linker
-arm-linux-gnueabihf-g++ -L"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB" --sysroot=/home/michael/bbb/rootfs -Wl,-rpath,/home/michael/bbb/rootfs -o "CuBa_BBB"  ./lib/AComponentBase.o ./lib/Assertion.o ./lib/CBinarySemaphore.o ./lib/CCountingSemaphore.o ./lib/CMessage.o ./lib/CMutex.o ./lib/CProxy.o ./lib/CThread.o ./lib/TMatrix.o  ./Hardware/CADC.o ./Hardware/CADCData.o ./Hardware/CADCMMap.o ./Hardware/CGPIO.o ./Hardware/CHardware.o ./Hardware/CMPU9250.o ./Hardware/CMPUData.o ./Hardware/CMotor.o ./Hardware/CPWM.o ./Hardware/CSensorData.o ./Hardware/CSensorSystem.o ./Hardware/CSwitch.o ./Hardware/CTorqueData.o  ./CommComp/CWebSocket.o ./CommComp/Util.o ./CommComp/WebSocketServer.o  ./main.o   -lpthread -l:libwebsockets.so.9
-Finished building target: CuBa_BBB
- 
-15:50:03 **** Incremental Build of configuration Debug for project CuBa_BBB ****
-make all 
-make: Nothing to be done for 'all'.
-15:50:12 **** Incremental Build of configuration Debug for project CuBa_BBB ****
-make all 
-make: Nothing to be done for 'all'.
-16:10:32 **** Incremental Build of configuration Debug for project CuBa_BBB ****
-make all 
-Building file: ../main.cpp
-Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/CommComp" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/lib" -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/home/michael/bbb/rootfs -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
-Finished building: ../main.cpp
- 
-Building target: CuBa_BBB
-Invoking: Cross G++ Linker
-arm-linux-gnueabihf-g++ -L"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB" --sysroot=/home/michael/bbb/rootfs -Wl,-rpath,/home/michael/bbb/rootfs -o "CuBa_BBB"  ./lib/AComponentBase.o ./lib/Assertion.o ./lib/CBinarySemaphore.o ./lib/CCountingSemaphore.o ./lib/CMessage.o ./lib/CMutex.o ./lib/CProxy.o ./lib/CThread.o ./lib/TMatrix.o  ./Hardware/CADC.o ./Hardware/CADCData.o ./Hardware/CADCMMap.o ./Hardware/CGPIO.o ./Hardware/CHardware.o ./Hardware/CMPU9250.o ./Hardware/CMPUData.o ./Hardware/CMotor.o ./Hardware/CPWM.o ./Hardware/CSensorData.o ./Hardware/CSensorSystem.o ./Hardware/CSwitch.o ./Hardware/CTorqueData.o  ./CommComp/CWebSocket.o ./CommComp/Util.o ./CommComp/WebSocketServer.o  ./main.o   -lpthread -l:libwebsockets.so.9
-Finished building target: CuBa_BBB
- 
-16:11:18 **** Incremental Build of configuration Debug for project CuBa_BBB ****
-make all 
-Building file: ../main.cpp
-Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/CommComp" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB/lib" -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/home/michael/bbb/rootfs -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
-Finished building: ../main.cpp
- 
-Building target: CuBa_BBB
-Invoking: Cross G++ Linker
-arm-linux-gnueabihf-g++ -L"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB" --sysroot=/home/michael/bbb/rootfs -Wl,-rpath,/home/michael/bbb/rootfs -o "CuBa_BBB"  ./lib/AComponentBase.o ./lib/Assertion.o ./lib/CBinarySemaphore.o ./lib/CCountingSemaphore.o ./lib/CMessage.o ./lib/CMutex.o ./lib/CProxy.o ./lib/CThread.o ./lib/TMatrix.o  ./Hardware/CADC.o ./Hardware/CADCData.o ./Hardware/CADCMMap.o ./Hardware/CGPIO.o ./Hardware/CHardware.o ./Hardware/CMPU9250.o ./Hardware/CMPUData.o ./Hardware/CMotor.o ./Hardware/CPWM.o ./Hardware/CSensorData.o ./Hardware/CSensorSystem.o ./Hardware/CSwitch.o ./Hardware/CTorqueData.o  ./CommComp/CWebSocket.o ./CommComp/Util.o ./CommComp/WebSocketServer.o  ./main.o   -lpthread -l:libwebsockets.so.9
-Finished building target: CuBa_BBB
- 
-16:11:58 **** Incremental Build of configuration Debug for project CuBa_BBB ****
+20:01:22 **** Incremental Build of configuration Debug for project CuBa_BBB ****
 make all 
 Building file: ../main.cpp
 Invoking: Cross G++ Compiler

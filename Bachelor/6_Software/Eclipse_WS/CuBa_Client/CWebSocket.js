@@ -20,13 +20,13 @@ CWebSocket.prototype.init  = function()
 		}
 		this.mWebSocket = new WebSocket(this.mWebSocketUri);
 		this.mWebSocket.binaryType = "arraybuffer";
-		this.mWebSocket.onopen  = function(evt) {alter("connected");};
-		this.mWebSocket.onclose = function(evt) {};
+		this.mWebSocket.onopen  = function(evt) { console.log("Connection Opened!"); };
+		this.mWebSocket.onclose = function(evt) { console.log("Connection Closed!"); };
 		this.mWebSocket.onmessage = this.mMsgHandler;
 	}
 	catch(exception)
 	{
-		alert("(CWebSocket.init()) Exception: " + exception);
+		console.log("(CWebSocket.init()) Exception: " + exception);
 		
 	};
 };

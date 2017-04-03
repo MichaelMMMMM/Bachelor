@@ -26,6 +26,6 @@ int main()
 
 		socket.TriggerAllProtocolsCallback();
 		socket.wait(500);
-		usleep(1000000);
+		usleep(20000);
 	}
 }

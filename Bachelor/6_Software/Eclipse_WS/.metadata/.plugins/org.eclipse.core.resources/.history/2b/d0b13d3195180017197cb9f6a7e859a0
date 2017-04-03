@@ -1,0 +1,20 @@
+var testHandler;
+var webSocket;
+
+function onLoadJS()
+{
+	webSocket   = new CWebSocket(onMessage);
+}
+function onMessage(evt)
+{
+	var data = JSON.parse(evt.data),
+	console.log(data);
+}
+function onConnectClicked()
+{
+	webSocket.init();
+}
+function onDisconnectClicked()
+{
+	webSocket.close();
+}

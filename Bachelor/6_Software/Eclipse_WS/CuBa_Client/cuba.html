@@ -2,45 +2,7 @@
 <html>
 	<head>
 		<title>CuBa</title>
-		<style>
-		body 
-		{
-			background-color: linen;
-		}
-		p
-		{
-			background-color: linen;
-			border-style: dotted;
-			border-color: red;
-			border-thickness: 1pt;
-			padding: 5pt;
-			margin: 15pt;
-		}
-		ul
-		{
-			list-style-type: none;
-			margin: 0;
-			margin-top: 10px;
-			margin-bottom: 10px;
-			padding: 0;
-			overflow: hidden;
-			background-color: #5F5F5F;
-		}
-		li
-		{
-			float: left;
-			display: block;
-			width: 60px;
-			text-align: center;
-			text-decoration: none;
-			padding: 14px 16px;
-			color: white;
-		}
-		li:hover
-		{
-			background-color: #111;
-		}
-		</style>
+	<link href="cubastyle.css" rel="stylesheet" type="text/css">
 	<link href="flot/examples.css" rel="stylesheet" type="text/css">
 	<script type="text/javascript" src="flot/jquery.js"></script>
 	<script type="text/javascript" src="flot/jquery.flot.js"></script>
@@ -52,11 +14,38 @@
 	</head>
 	
 	<body onLoad="onLoadJS()">
-		<h1>CuBa</h1>
-		<ul>
-			<li onClick="onConnectClicked()">Connect</li>
-			<li onClick="onDisconnectClicked()">Disconnect</li>
+		<h1 class="titlebar"><font color=#191970>E</font>mbedded 
+				     <font color=#191970>M</font>echatronics 
+				     <font color=#191970>L</font>ab:
+				     <span style="display:inline-block; width: 10px;"></span>      
+				     <font size=45pt><font color=#191970>C</font>u<font color=#191970>B</font>a</font></h1>
+		<ul class="navbar">
+			<li class="navbar">Demo</li>
+			<li class="navbar">Sensor Calibration</li>
 		</ul>
-		<div id="placeholder" class="demo-container"></div>
+
+		<div class="control">
+			<ul class="controlbar">
+				<li class="controlbar" onClick="onConnectClicked()">Connect</li>
+				<li class="controlbar" onClick="onDisconnectClicked()">Disconnect</li>
+				<li class="controlbar">Run Demo</li>
+			</ul>
+		</div>
+
+		<div class="main">
+			<div class="plotcontainer" style="width:30%;height:300px">
+				<div id="placeholder" class="plotholder"></div>  
+			</div>
+			<div class="plotcontainer" style="width:30%;height:300px">
+				<div id="placeholder2" class="plotholder"></div>
+			</div>
+			<div class="plotcontainer" style="width:30%; height:300px">
+				<div id="placeholder3" class="plotholder"></div>
+			</div>
+		</div>
+
+
+
+
 	</body>
 </html>

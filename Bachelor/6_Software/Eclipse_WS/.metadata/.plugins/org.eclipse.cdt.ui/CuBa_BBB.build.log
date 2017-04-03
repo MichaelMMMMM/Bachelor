@@ -1,4 +1,4 @@
-16:11:58 **** Incremental Build of configuration Debug for project CuBa_BBB ****
+20:01:22 **** Incremental Build of configuration Debug for project CuBa_BBB ****
 make all 
 Building file: ../main.cpp
 Invoking: Cross G++ Compiler
@@ -11,5 +11,5 @@ arm-linux-gnueabihf-g++ -L"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Ec
 Finished building target: CuBa_BBB
  
 
-16:11:59 Build Finished (took 1s.96ms)
+20:01:23 Build Finished (took 581ms)
 
