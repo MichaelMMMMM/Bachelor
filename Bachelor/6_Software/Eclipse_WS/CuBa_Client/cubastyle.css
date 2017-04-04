@@ -54,6 +54,12 @@ li.navbar:hover
 {
 	background-color: #111;
 }
+li.navbar a
+{
+	display: block;
+	text-decoration: none;
+	color: white;
+}
 h1.titlebar
 {
 	font: arial;

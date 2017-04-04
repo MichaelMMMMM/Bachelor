@@ -24,12 +24,12 @@ static void adcSystemTest();
 
 int main()
 {
-	//motorTest();
+	motorTest();
 	//mpuTest();
 	//switchTest();
 	//multipleMPUTest();
 	//multipleSensorTimeTest();
-	sensorSystemTest();
+	//sensorSystemTest();
 	//adcTest();
 	//torqueTest();
 	//adcSystemTest();

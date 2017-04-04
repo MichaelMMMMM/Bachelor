@@ -37,4 +37,13 @@ CWebSocket.prototype.close = function()
 		this.mWebSocket.close();
 	}
 };
+CWebSocket.prototype.isOpen = function()
+{
+	if(this.mWebSocket == null)
+	{
+		return false;
+	}
+	var ret = this.mWebSocket.readyState == 1;
+	return ret;
+}
 

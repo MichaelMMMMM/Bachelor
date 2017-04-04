@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CuBa</title>
+	<link href="cubastyle.css" rel="stylesheet" type="text/css">
+	<link href="flot/examples.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="flot/jquery.js"></script>
+	<script type="text/javascript" src="flot/jquery.flot.js"></script>
+	<script type="text/javascript" src="float/jquery.float.axislabels.js"></script>
+	<script type="text/javascript" src="CPlot.js"></script>
+	<script type="text/javascript" src="CTestHandler.js"></script>
+	<script type="text/javascript" src="CWebSocket.js"></script>
+	<script type="text/javascript" src="SensorCalibration/sensorcalibration.js"></script>
+	</head>
+	
+	<body onLoad="onLoadJS()">
+		<h1 class="titlebar"><font color=#191970>E</font>mbedded 
+				     <font color=#191970>M</font>echatronics 
+				     <font color=#191970>L</font>ab:
+				     <span style="display:inline-block; width: 10px;"></span>      
+				     <font size=45pt><font color=#191970>C</font>u<font color=#191970>B</font>a</font></h1>
+		<ul class="navbar">
+			<li class="navbar"><a href="./cuba.html">Demo</a></li>
+			<li class="navbar"><a href="./sensorcalibration.html">Sensor Calibration</a></li>
+		</ul>
+
+		<div class="control">
+			<ul class="controlbar">
+				<li id="ConnectButtonID" class="controlbar" onClick="onConnectClicked()">Connect</li>
+			</ul>
+		</div>
+
+		<div class="main">
+			<div class="plotcontainer" style="width:45%;height:300px">
+				<div id="Sensor1PlotID" class="plotholder"></div>  
+			</div>
+			<div class="plotcontainer" style="width:45%;height:300px">
+				<div id="Sensor2PlotID" class="plotholder"></div>
+			</div>
+			<div class="plotcontainer" style="width:45%; height:300px">
+				<div id="Sensor3PlotID" class="plotholder"></div>
+			</div>
+			<div class="plotcontainer" style="width:45%; height:300px">
+				<div id="Sensor4PlotID" class="plotholder"></div>
+			</div>
+			<div class="plotcontainer" style="width:45%; height:300px">
+				<div id="Sensor5PlotID" class="plotholder"></div>
+			</div>
+			<div class="plotcontainer" style="width:45%; height:300px">
+				<div id="Sensor6PlotID" class="plotholder"></div>
+			</div>
+		</div>
+
+
+
+
+	</body>
+</html>
