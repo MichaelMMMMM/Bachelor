@@ -1,0 +1,36 @@
+\def\presuper#1#2%
+	{\mathop{}%
+	\mathopen{\vphantom{#2}}^{#1}%
+	\kern-\scriptspace%
+	#2}
+%Display vecotr in a reference frame
+\newcommand{\vecBS}[4]{\presuper{#1}{\begin{pmatrix}
+#2 \\ #3 \\ #4
+\end{pmatrix}}}
+%Boldsymbol shortcut
+\newcommand{\bs}[1]{\boldsymbol{#1}}
+%Bezugssystemdefinition
+\newcommand{\defBS}[1]{\{#1\} [ \bs{e}_{{#1}_1},\bs{e}_{{#1}_2}, \bs{e}_{{#1}_3} ]}
+%Projektionsmatrix
+\newcommand{\pMat}[2]{\presuper{#1}{\bs{P}}^{#2}}
+%Differenation in Respekt zu BS
+\newcommand{\diffIn}[3]{\frac{\presuper{#1}{d{#2}}}{d#3}}
+\newcommand{\partialDiffIn}[3]{\frac{\presuper{#1}{\partial{#2}}}{\partial #3}}
+%Geschwindigkeit/Beschleunigung
+\newcommand{\vel}[3]{\presuper{#1}{\bs{#2}}^{#3}}
+
+%Rightarrow with spaceing
+\newcommand{\rArrow}{\hspace{5pt}\rightarrow\hspace{5pt}}
+%Inneres Produkt
+\newcommand{\inProd}[2]{\langle {#1}, {#2} \rangle}
+
+%System macro
+%\newcommand{\cSS}[3]{\textfrak{S}($\bs{#1}$,$\bs{#2}$,$\bs{#3}$)}
+\newcommand{\cSS}[3]{S($\bs{#1}$,$\bs{#2}$,$\bs{#3}$)}
+
+%\newcommand{\dSS}[3]{\textfrak{D}($\bs{#1}$,$\bs{#2}$,$\bs{#3}$)}
+\newcommand{\dSS}[3]{D($\bs{#1}$,$\bs{#2}$,$\bs{#3}$)}
+
+%Laplace transform sign with spaces
+%\newcommand{\myLaplace}{\hspace{15pt}\laplace\hspace{15pt}}
+\newcommand{\myLaplace}{\hspace{15pt} - \hspace{15pt}}
