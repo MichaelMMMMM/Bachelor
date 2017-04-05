@@ -18,11 +18,13 @@ SOURCES += main.cpp \
     CExperimentWidget.cpp \
     CSensorCalibration.cpp \
     QCustomPlot.cpp \
-    CPlot.cpp
+    CPlot.cpp \
+    CADCCalibration.cpp
 
 HEADERS  += \
     CMainWindow.h \
     CExperimentWidget.h \
     CSensorCalibration.h \
     QCustomPlot.h \
-    CPlot.h
+    CPlot.h \
+    CADCCalibration.h

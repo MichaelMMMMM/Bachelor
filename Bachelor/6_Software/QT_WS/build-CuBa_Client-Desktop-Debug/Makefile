@@ -53,20 +53,24 @@ SOURCES       = ../CuBa_Client/main.cpp \
 		../CuBa_Client/CExperimentWidget.cpp \
 		../CuBa_Client/CSensorCalibration.cpp \
 		../CuBa_Client/QCustomPlot.cpp \
-		../CuBa_Client/CPlot.cpp moc_CMainWindow.cpp \
+		../CuBa_Client/CPlot.cpp \
+		../CuBa_Client/CADCCalibration.cpp moc_CMainWindow.cpp \
 		moc_CExperimentWidget.cpp \
 		moc_CSensorCalibration.cpp \
-		moc_QCustomPlot.cpp
+		moc_QCustomPlot.cpp \
+		moc_CADCCalibration.cpp
 OBJECTS       = main.o \
 		CMainWindow.o \
 		CExperimentWidget.o \
 		CSensorCalibration.o \
 		QCustomPlot.o \
 		CPlot.o \
+		CADCCalibration.o \
 		moc_CMainWindow.o \
 		moc_CExperimentWidget.o \
 		moc_CSensorCalibration.o \
-		moc_QCustomPlot.o
+		moc_QCustomPlot.o \
+		moc_CADCCalibration.o
 DIST          = /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/spec_pre.prf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/common/unix.conf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/common/linux.conf \
@@ -132,12 +136,14 @@ DIST          = /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/spec_pre.prf \
 		../CuBa_Client/CExperimentWidget.h \
 		../CuBa_Client/CSensorCalibration.h \
 		../CuBa_Client/QCustomPlot.h \
-		../CuBa_Client/CPlot.h ../CuBa_Client/main.cpp \
+		../CuBa_Client/CPlot.h \
+		../CuBa_Client/CADCCalibration.h ../CuBa_Client/main.cpp \
 		../CuBa_Client/CMainWindow.cpp \
 		../CuBa_Client/CExperimentWidget.cpp \
 		../CuBa_Client/CSensorCalibration.cpp \
 		../CuBa_Client/QCustomPlot.cpp \
-		../CuBa_Client/CPlot.cpp
+		../CuBa_Client/CPlot.cpp \
+		../CuBa_Client/CADCCalibration.cpp
 QMAKE_TARGET  = CuBa_Client
 DESTDIR       = #avoid trailing-slash linebreak
 TARGET        = CuBa_Client
@@ -315,8 +321,8 @@ dist: distdir FORCE
 distdir: FORCE
 	@test -d $(DISTDIR) || mkdir -p $(DISTDIR)
 	$(COPY_FILE) --parents $(DIST) $(DISTDIR)/
-	$(COPY_FILE) --parents ../CuBa_Client/CMainWindow.h ../CuBa_Client/CExperimentWidget.h ../CuBa_Client/CSensorCalibration.h ../CuBa_Client/QCustomPlot.h ../CuBa_Client/CPlot.h $(DISTDIR)/
-	$(COPY_FILE) --parents ../CuBa_Client/main.cpp ../CuBa_Client/CMainWindow.cpp ../CuBa_Client/CExperimentWidget.cpp ../CuBa_Client/CSensorCalibration.cpp ../CuBa_Client/QCustomPlot.cpp ../CuBa_Client/CPlot.cpp $(DISTDIR)/
+	$(COPY_FILE) --parents ../CuBa_Client/CMainWindow.h ../CuBa_Client/CExperimentWidget.h ../CuBa_Client/CSensorCalibration.h ../CuBa_Client/QCustomPlot.h ../CuBa_Client/CPlot.h ../CuBa_Client/CADCCalibration.h $(DISTDIR)/
+	$(COPY_FILE) --parents ../CuBa_Client/main.cpp ../CuBa_Client/CMainWindow.cpp ../CuBa_Client/CExperimentWidget.cpp ../CuBa_Client/CSensorCalibration.cpp ../CuBa_Client/QCustomPlot.cpp ../CuBa_Client/CPlot.cpp ../CuBa_Client/CADCCalibration.cpp $(DISTDIR)/
 
 
 clean: compiler_clean 
@@ -339,13 +345,14 @@ check: first
 
 compiler_rcc_make_all:
 compiler_rcc_clean:
-compiler_moc_header_make_all: moc_CMainWindow.cpp moc_CExperimentWidget.cpp moc_CSensorCalibration.cpp moc_QCustomPlot.cpp
+compiler_moc_header_make_all: moc_CMainWindow.cpp moc_CExperimentWidget.cpp moc_CSensorCalibration.cpp moc_QCustomPlot.cpp moc_CADCCalibration.cpp
 compiler_moc_header_clean:
-	-$(DEL_FILE) moc_CMainWindow.cpp moc_CExperimentWidget.cpp moc_CSensorCalibration.cpp moc_QCustomPlot.cpp
+	-$(DEL_FILE) moc_CMainWindow.cpp moc_CExperimentWidget.cpp moc_CSensorCalibration.cpp moc_QCustomPlot.cpp moc_CADCCalibration.cpp
 moc_CMainWindow.cpp: ../CuBa_Client/CSensorCalibration.h \
 		../CuBa_Client/CExperimentWidget.h \
 		../CuBa_Client/CPlot.h \
 		../CuBa_Client/QCustomPlot.h \
+		../CuBa_Client/CADCCalibration.h \
 		../CuBa_Client/CMainWindow.h
 	/usr/lib/x86_64-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64 -I/home/michael/Desktop/Bachelor/Bachelor/6_Software/QT_WS/CuBa_Client -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I/usr/include/c++/5 -I/usr/include/x86_64-linux-gnu/c++/5 -I/usr/include/c++/5/backward -I/usr/lib/gcc/x86_64-linux-gnu/5/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include ../CuBa_Client/CMainWindow.h -o moc_CMainWindow.cpp
 
@@ -360,6 +367,12 @@ moc_CSensorCalibration.cpp: ../CuBa_Client/CExperimentWidget.h \
 
 moc_QCustomPlot.cpp: ../CuBa_Client/QCustomPlot.h
 	/usr/lib/x86_64-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64 -I/home/michael/Desktop/Bachelor/Bachelor/6_Software/QT_WS/CuBa_Client -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I/usr/include/c++/5 -I/usr/include/x86_64-linux-gnu/c++/5 -I/usr/include/c++/5/backward -I/usr/lib/gcc/x86_64-linux-gnu/5/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include ../CuBa_Client/QCustomPlot.h -o moc_QCustomPlot.cpp
+
+moc_CADCCalibration.cpp: ../CuBa_Client/CExperimentWidget.h \
+		../CuBa_Client/CPlot.h \
+		../CuBa_Client/QCustomPlot.h \
+		../CuBa_Client/CADCCalibration.h
+	/usr/lib/x86_64-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64 -I/home/michael/Desktop/Bachelor/Bachelor/6_Software/QT_WS/CuBa_Client -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I/usr/include/c++/5 -I/usr/include/x86_64-linux-gnu/c++/5 -I/usr/include/c++/5/backward -I/usr/lib/gcc/x86_64-linux-gnu/5/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include ../CuBa_Client/CADCCalibration.h -o moc_CADCCalibration.cpp
 
 compiler_moc_source_make_all:
 compiler_moc_source_clean:
@@ -379,14 +392,16 @@ main.o: ../CuBa_Client/main.cpp ../CuBa_Client/CMainWindow.h \
 		../CuBa_Client/CSensorCalibration.h \
 		../CuBa_Client/CExperimentWidget.h \
 		../CuBa_Client/CPlot.h \
-		../CuBa_Client/QCustomPlot.h
+		../CuBa_Client/QCustomPlot.h \
+		../CuBa_Client/CADCCalibration.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o ../CuBa_Client/main.cpp
 
 CMainWindow.o: ../CuBa_Client/CMainWindow.cpp ../CuBa_Client/CMainWindow.h \
 		../CuBa_Client/CSensorCalibration.h \
 		../CuBa_Client/CExperimentWidget.h \
 		../CuBa_Client/CPlot.h \
-		../CuBa_Client/QCustomPlot.h
+		../CuBa_Client/QCustomPlot.h \
+		../CuBa_Client/CADCCalibration.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o CMainWindow.o ../CuBa_Client/CMainWindow.cpp
 
 CExperimentWidget.o: ../CuBa_Client/CExperimentWidget.cpp ../CuBa_Client/CExperimentWidget.h
@@ -398,12 +413,18 @@ CSensorCalibration.o: ../CuBa_Client/CSensorCalibration.cpp ../CuBa_Client/CSens
 		../CuBa_Client/QCustomPlot.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o CSensorCalibration.o ../CuBa_Client/CSensorCalibration.cpp
 
-QCustomPlot.o: ../CuBa_Client/QCustomPlot.cpp 
+QCustomPlot.o: ../CuBa_Client/QCustomPlot.cpp ../CuBa_Client/QCustomPlot.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o QCustomPlot.o ../CuBa_Client/QCustomPlot.cpp
 
 CPlot.o: ../CuBa_Client/CPlot.cpp ../CuBa_Client/CPlot.h \
 		../CuBa_Client/QCustomPlot.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o CPlot.o ../CuBa_Client/CPlot.cpp
+
+CADCCalibration.o: ../CuBa_Client/CADCCalibration.cpp ../CuBa_Client/CADCCalibration.h \
+		../CuBa_Client/CExperimentWidget.h \
+		../CuBa_Client/CPlot.h \
+		../CuBa_Client/QCustomPlot.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o CADCCalibration.o ../CuBa_Client/CADCCalibration.cpp
 
 moc_CMainWindow.o: moc_CMainWindow.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_CMainWindow.o moc_CMainWindow.cpp
@@ -416,6 +437,9 @@ moc_CSensorCalibration.o: moc_CSensorCalibration.cpp
 
 moc_QCustomPlot.o: moc_QCustomPlot.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_QCustomPlot.o moc_QCustomPlot.cpp
+
+moc_CADCCalibration.o: moc_CADCCalibration.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_CADCCalibration.o moc_CADCCalibration.cpp
 
 ####### Install
 

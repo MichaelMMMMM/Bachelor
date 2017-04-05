@@ -19,8 +19,8 @@
 
 QT_BEGIN_MOC_NAMESPACE
 struct qt_meta_stringdata_CSensorCalibration_t {
-    QByteArrayData data[12];
-    char stringdata0[257];
+    QByteArrayData data[13];
+    char stringdata0[266];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -40,7 +40,8 @@ QT_MOC_LITERAL(7, 136, 23), // "sensor4DataReceivedSLOT"
 QT_MOC_LITERAL(8, 160, 23), // "sensor5DataReceivedSLOT"
 QT_MOC_LITERAL(9, 184, 23), // "sensor6DataReceivedSLOT"
 QT_MOC_LITERAL(10, 208, 22), // "startButtonClickedSLOT"
-QT_MOC_LITERAL(11, 231, 25) // "numberOfValuesChangedSLOT"
+QT_MOC_LITERAL(11, 231, 25), // "numberOfValuesChangedSLOT"
+QT_MOC_LITERAL(12, 257, 8) // "newValue"
 
     },
     "CSensorCalibration\0startSensorCalibrationSIG\0"
@@ -48,7 +49,7 @@ QT_MOC_LITERAL(11, 231, 25) // "numberOfValuesChangedSLOT"
     "sensor2DataReceivedSLOT\0sensor3DataReceivedSLOT\0"
     "sensor4DataReceivedSLOT\0sensor5DataReceivedSLOT\0"
     "sensor6DataReceivedSLOT\0startButtonClickedSLOT\0"
-    "numberOfValuesChangedSLOT"
+    "numberOfValuesChangedSLOT\0newValue"
 };
 #undef QT_MOC_LITERAL
 
@@ -77,7 +78,7 @@ static const uint qt_meta_data_CSensorCalibration[] = {
        8,    0,   70,    2, 0x0a /* Public */,
        9,    0,   71,    2, 0x0a /* Public */,
       10,    0,   72,    2, 0x0a /* Public */,
-      11,    0,   73,    2, 0x0a /* Public */,
+      11,    1,   73,    2, 0x0a /* Public */,
 
  // signals: parameters
     QMetaType::Void,
@@ -91,7 +92,7 @@ static const uint qt_meta_data_CSensorCalibration[] = {
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
-    QMetaType::Void,
+    QMetaType::Void, QMetaType::Int,   12,
 
        0        // eod
 };
@@ -111,7 +112,7 @@ void CSensorCalibration::qt_static_metacall(QObject *_o, QMetaObject::Call _c, i
         case 6: _t->sensor5DataReceivedSLOT(); break;
         case 7: _t->sensor6DataReceivedSLOT(); break;
         case 8: _t->startButtonClickedSLOT(); break;
-        case 9: _t->numberOfValuesChangedSLOT(); break;
+        case 9: _t->numberOfValuesChangedSLOT((*reinterpret_cast< int(*)>(_a[1]))); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
@@ -130,7 +131,6 @@ void CSensorCalibration::qt_static_metacall(QObject *_o, QMetaObject::Call _c, i
             }
         }
     }
-    Q_UNUSED(_a);
 }
 
 const QMetaObject CSensorCalibration::staticMetaObject = {
