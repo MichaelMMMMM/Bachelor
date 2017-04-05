@@ -1,4 +1,4 @@
-\documentclass{article}
+\documentclass[11pt]{book}
 \usepackage{amsmath,mathtools}
 \usepackage[utf8]{inputenc}
 \usepackage[ngerman]{babel}
@@ -7,13 +7,13 @@
 \usepackage{epstopdf}
 \usepackage{svg}
 \usepackage{multirow}
-%\usepackage{setspace}
 \usepackage{amssymb}
-%\usepackage{trfsigns}
+\usepackage{trfsigns}
+\usepackage{setspace}
+\usepackage{yfonts}
 
-%\usepackage{yfonts}
+\onehalfspacing
 
-%\onehalfspacing
 
 %Hyperlinks package, links aus inhaltsverzeichnis
 \usepackage{hyperref}
@@ -25,11 +25,33 @@
 \usepackage{geometry}
 \geometry{a4paper, top=25mm, left=30mm, right=25mm, bottom=20mm}
 
+%Listing
+\usepackage{courier}
+\usepackage{listings}
+\usepackage{color}
+ \lstset{
+   frame=tb,
+   framexleftmargin=2.5em,
+   basicstyle=\small\linespread{0.9}\bfseries\ttfamily,
+   emph={square}, 
+   emphstyle=\color{blue}\texttt,
+   emph={[2]root,base},
+   emphstyle={[2]\color{yac}\texttt},
+   showstringspaces=false,
+   flexiblecolumns=false,
+   tabsize=2,
+   numbers=left,
+   numberstyle=\small\bfseries\ttfamily,
+   numberblanklines=false,
+   stepnumber=1,
+   numbersep=10pt,
+   xleftmargin=25pt
+ }
 \begin{document}
 
 \include{0_Makros}
 
-\section{Regelungstechnik}
+\chapter{Regelungstechnik}
 Nachdem die Systemdynamik mit Hilfe von Bewegungsgleichungen beschrieben wurde, besteht der nächste Schritt darin ein Regler zu entwerfen, welcher die Stabilisierung des Würfels auf einer Kante ermöglicht. Hierfür wird in diesem Abschnitt zunächst die Beschreibung eines Systems mit Hilfe der Zustandsraumdarstellung diskutiert. Anschließend der Zusammenhang zeitkontinuierlicher Systeme und deren zeitdiskreten Darstellungen ermittelt um den Entwurf von digitalen Reglern zu ermöglichen. Daraufhin werden die Vorteile von Zustandsregler gegenüber klassischen Regelungsalgorithmen verglichen und ein Regler für die Stabilisierung des Würfels auf einer Kante entworfen. Anschließend wird diese Regelungsvorschrift an der reellen Regelstrecke erprobt und validiert. Im letzten Teil werden Beobachter eingesetzt um die Auswirkungen von Messabweichungen zu kompensieren und die Anzahl der nötigen Sensoren zu reduzieren.
 
 \include{RT_1_StateSpace}

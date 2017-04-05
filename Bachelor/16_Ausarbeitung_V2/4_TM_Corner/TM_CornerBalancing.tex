@@ -1,0 +1,67 @@
+\documentclass[11pt]{book}
+\usepackage{amsmath,mathtools}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{acronym}
+\usepackage{graphicx} 
+\usepackage{epstopdf}
+\usepackage{svg}
+\usepackage{multirow}
+\usepackage{amssymb}
+\usepackage{trfsigns}
+\usepackage{setspace}
+\usepackage{yfonts}
+
+\onehalfspacing
+
+
+%Hyperlinks package, links aus inhaltsverzeichnis
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=false, %set true if you want colored links
+    linktoc=all
+}
+%Blattformatierung
+\usepackage{geometry}
+\geometry{a4paper, top=25mm, left=30mm, right=25mm, bottom=20mm}
+
+%Listing
+\usepackage{courier}
+\usepackage{listings}
+\usepackage{color}
+ \lstset{
+   frame=tb,
+   framexleftmargin=2.5em,
+   basicstyle=\small\linespread{0.9}\bfseries\ttfamily,
+   emph={square}, 
+   emphstyle=\color{blue}\texttt,
+   emph={[2]root,base},
+   emphstyle={[2]\color{yac}\texttt},
+   showstringspaces=false,
+   flexiblecolumns=false,
+   tabsize=2,
+   numbers=left,
+   numberstyle=\small\bfseries\ttfamily,
+   numberblanklines=false,
+   stepnumber=1,
+   numbersep=10pt,
+   xleftmargin=25pt
+ }
+
+\begin{document}
+
+\include{0_Makros}
+
+\chapter{Modellbildung Würfel auf Ecke}
+Das nächste Ziel besteht darin ein Regelungskonzept zu entwickeln, welches das Balancieren des Würfels auf einer Ecke ermöglicht. Hierfür werden drei Motor verwendet, wodurch das gesamte System über sechs Freiheitsgrade verfügt. Die Vorgehensweise erfolgt analog zu dem Reglerentwurf der Würfelseite. Somit besteht der erste Schritt in dem Entwurf eines mechanischen Modells, welches wiederum zu einer Zustandsraumdarstellung führt, die als Grundlage für den Reglerentwurf verwendet wird.
+Zu Beginn dieses Kapitels werden die Systemparameter vorgestellt, deren Bestimmung diskutiert und erste Annahmen getroffen um die weitere Modellbildung zu vereinfachen. Im zweiten Abschnitt wird die Kinematik des Systems untersucht. Hierbei werden zunächst die nötigen Bezugssysteme und generalisierten Koordinaten definiert, die anschließend für die Bestimmung der generalisierten und partiellen Geschwindigkeiten benötigt werden.
+Der nächste Abschnitt widmet sich der Kinematik. Hierunter fallen sowohl die wirkenden Kräfte und die draus resultierenden Drehmomente als auch die Trägheitsmomente der Körper. Daraus werden die generalisierten Kräfte und Trägheitskräfte ermittelt, welche nach Kanes Gleichungen auf die Bewegungsgleichungen führen. Diese werden anschließend in eine Zustandsraumdarstellung überführt.
+
+\include{TM_1_Systemparameter}
+
+\include{TM_2_Kinematik}
+
+\include{TM_3_Kinetik}
+
+
+\end{document}
