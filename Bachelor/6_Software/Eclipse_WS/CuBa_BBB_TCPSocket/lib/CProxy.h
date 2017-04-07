@@ -25,6 +25,8 @@ public:
 	bool clientConnect(bool waitForever);
 	bool clientDisconnect(bool waitForever);
 	bool routeClientMessage(CMessage& msg, bool waitForever);
+	bool transmitSensorData(UInt32 sensorIndex, Float32 time, CMPUData& data, bool waitForever);
+	bool transmitADCData(Float32 time, CADCData& data, bool waitForever);
 private:
 	CProxy();
 	CProxy(const CProxy&) = delete;

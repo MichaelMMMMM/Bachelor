@@ -14,10 +14,8 @@ CControlAction::CControlAction()
 void CControlAction::entryStandby()
 {
 	std::cout << "[*] Control-Comp: Entering Standby . . . " << std::endl;
-	sTimerTask.pause(true);
 }
 void CControlAction::exitStandby()
 {
 	std::cout << "[*] Control-Comp: Exiting Standby . . . " << std::endl;
-	sTimerTask.resume(true);
 }

@@ -1,0 +1,13 @@
+/**
+ * @file	TSubState.h
+ * @author	Michael Meindl
+ * @date	5.4.2017
+ * @brief	Template class for simple sub states.
+ */
+#ifndef TSUBSTATE_H
+#define	TSUBSTATE_H
+#include "AState.h"
+
+
+
+#endif

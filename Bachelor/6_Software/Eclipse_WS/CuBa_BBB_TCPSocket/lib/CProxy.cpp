@@ -54,3 +54,40 @@ bool CProxy::routeClientMessage(CMessage& msg, bool waitForever)
 {
 	return mControlPtr->mQueue.pushBack(msg, waitForever);
 }
+bool CProxy::transmitSensorData(UInt32 sensorIndex, Float32 time, CMPUData& data, bool waitForever)
+{
+	CMessage msg;
+	switch(sensorIndex)
+	{
+	case 1U:
+		msg = CMessage(EEvent::SENSOR1DATA, time);
+		break;
+	case 2U:
+		msg = CMessage(EEvent::SENSOR2DATA, time);
+		break;
+	case 3U:
+		msg = CMessage(EEvent::SENSOR3DATA, time);
+		break;
+	case 4U:
+		msg = CMessage(EEvent::SENSOR4DATA, time);
+		break;
+	case 5U:
+		msg = CMessage(EEvent::SENSOR5DATA, time);
+		break;
+	case 6U:
+		msg = CMessage(EEvent::SENSOR6DATA, time);
+		break;
+	default:
+		return false;
+	}
+
+	*reinterpret_cast<CMPUData*>(msg.getDataPtr()) = data;
+	return mCommPtr->mQueue.pushBack(msg, waitForever);
+}
+bool CProxy::transmitADCData(Float32 time, CADCData& data, bool waitForever)
+{
+	CMessage msg(EEvent::ADCDATA, time);
+	*reinterpret_cast<CADCData*>(msg.getDataPtr()) = data;
+	return mCommPtr->mQueue.pushBack(msg, waitForever);
+}
+

@@ -26,6 +26,7 @@ void CReceiveTask::run()
 		if(mServer.waitForClient())
 		{
 			mProxyPtr->clientConnect(true);
+			std::cout << "[*] Comm-Comp: Client connected " << std::endl;
 		}
 
 		while(mServer.receiveMessage(msg))

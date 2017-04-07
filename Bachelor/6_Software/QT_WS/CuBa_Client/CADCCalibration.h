@@ -2,12 +2,18 @@
 #define CADCCALIBRATION_H
 #include "CExperimentWidget.h"
 #include "CPlot.h"
+#include "CADCData.h"
 
 class CADCCalibration : public CExperimentWidget
 {
     Q_OBJECT
+signals:
+    void startADCCalibrationSIG();
+    void endMeasurementSIG();
 public slots:
     void numberOfValuesChangedSLOT(int newValue);
+    void startButtonClickedLSLOT();
+    void adcDataReceivedSLOT(double time, const CADCData&);
 public:
     CADCCalibration();
 private:
@@ -15,6 +21,7 @@ private:
     void createControls();
 private:
     int mNumberOfValues;
+    int mReceivedValues;
 
     QPushButton* mStartButtonPtr;
 

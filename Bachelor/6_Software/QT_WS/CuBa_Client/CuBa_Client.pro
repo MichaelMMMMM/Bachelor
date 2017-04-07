@@ -19,7 +19,13 @@ SOURCES += main.cpp \
     CSensorCalibration.cpp \
     QCustomPlot.cpp \
     CPlot.cpp \
-    CADCCalibration.cpp
+    CADCCalibration.cpp \
+    Assertion.cpp \
+    CClient.cpp \
+    CMessage.cpp \
+    CMPUData.cpp \
+    CRxThread.cpp \
+    CADCData.cpp
 
 HEADERS  += \
     CMainWindow.h \
@@ -27,4 +33,13 @@ HEADERS  += \
     CSensorCalibration.h \
     QCustomPlot.h \
     CPlot.h \
-    CADCCalibration.h
+    CADCCalibration.h \
+    Assertion.h \
+    CClient.h \
+    CMessage.h \
+    CMPUData.h \
+    CRxThread.h \
+    Global.h \
+    TMatrix.h \
+    EEvent.h \
+    CADCData.h

@@ -1,0 +1,14 @@
+/**
+ * @file	CSensorCalibrationAction.cpp
+ * @author	Michael Meindl
+ * @date	5.4.2017
+ * @brief	Method defitions for CSensorCalibrationAction.
+ */
+#include "CSensorCalibration.h"
+#include <iostream>
+
+void CSensorCalibrationAction::entrySensorCalibration()
+{
+	std::cout << "[*] Control-Comp: Entering Sensor-Calibration . . . " << std::endl;
+	sTimerTask.setPeriodMS(20);
+}

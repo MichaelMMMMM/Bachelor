@@ -1,6 +1,7 @@
 #include "CADCCalibration.h"
 
-CADCCalibration::CADCCalibration() : mNumberOfValues(500)
+CADCCalibration::CADCCalibration() : mNumberOfValues(500),
+                                     mReceivedValues(0)
 {
     this->createControls();
     this->createPlots();
@@ -8,6 +9,8 @@ CADCCalibration::CADCCalibration() : mNumberOfValues(500)
 void CADCCalibration::createControls()
 {
     mStartButtonPtr     = new QPushButton("Start Measurement");
+    QObject::connect(mStartButtonPtr, SIGNAL(clicked()),
+                     this, SLOT(startButtonClickedLSLOT()));
     mControlLayoutPtr->addWidget(mStartButtonPtr);
 
     mValuesLayoutPtr    = new QHBoxLayout;
@@ -42,4 +45,33 @@ void CADCCalibration::createPlots()
 void CADCCalibration::numberOfValuesChangedSLOT(int newValue)
 {
     mNumberOfValues = newValue;
+}
+void CADCCalibration::startButtonClickedLSLOT()
+{
+    emit startADCCalibrationSIG();
+    mADC1PlotPtr->reset();
+    mADC2PlotPtr->reset();
+    mADC3PlotPtr->reset();
+    mReceivedValues = 0;
+}
+void CADCCalibration::adcDataReceivedSLOT(double time, const CADCData& data)
+{
+    QVector<double> data1; data1.append(static_cast<double>(data.mADC1Value));
+    QVector<double> data2; data2.append(static_cast<double>(data.mADC2Value));
+    QVector<double> data3; data3.append(static_cast<double>(data.mADC3Value));
+
+    mADC1PlotPtr->addData(time, data1);
+    mADC2PlotPtr->addData(time, data2);
+    mADC3PlotPtr->addData(time, data3);
+
+    mReceivedValues++;
+    if(mReceivedValues >= mNumberOfValues)
+    {
+        emit endMeasurementSIG();
+        QVector<std::string> varNames;
+        varNames.append("adc");
+        mADC1PlotPtr->saveCSV("ADCCalibration/adc1data.csv", varNames);
+        mADC2PlotPtr->saveCSV("ADCCalibration/adc2data.csv", varNames);
+        mADC3PlotPtr->saveCSV("ADCCalibration/adc3data.csv", varNames);
+    }
 }

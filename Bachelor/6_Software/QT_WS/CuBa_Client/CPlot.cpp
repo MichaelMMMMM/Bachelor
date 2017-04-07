@@ -1,11 +1,16 @@
 #include "CPlot.h"
+#include <iostream>
+#include <ostream>
+#include <fstream>
+using namespace std;
 
 CPlot::CPlot(int nbrOfLines,
              const QString& yLabel,
              const QString& plotTitle,
              QVector<QString>& legend,
              QVector<QPen>& lineColors) : mNumberOfLines(nbrOfLines),
-                                          mDrawCounter(0)
+                                          mDrawCounter(0),
+                                          mSavedFlag(false)
 {
     mPlotPtr = new QCustomPlot;
     mPlotPtr->xAxis->setLabel("Time  in seconds");
@@ -52,16 +57,70 @@ void CPlot::addData(double time, QVector<double> &data)
     if(mDrawCounter >= 0)
     {
         mDrawCounter = 0;
-
+        double min =  1000000;
+        double max = -1000000;
         for(int i = 0; i < mNumberOfLines; i++)
         {
+            double max_i = *std::max_element(mDisplayData.at(i).begin(),
+                                             mDisplayData.at(i).end());
+            max = max > max_i ? max : max_i;
+            double min_i = *std::min_element(mDisplayData.at(i).begin(),
+                                             mDisplayData.at(i).end());
+            min = min < min_i ? min : min_i;
             mPlotPtr->graph(i)->setData(mDisplayTime, mDisplayData.at(i));
         }
+        mPlotPtr->xAxis->setRange(mDisplayTime.first(), mDisplayTime.last());
+        mPlotPtr->yAxis->setRange(min*1.1, max*1.1);
         mPlotPtr->replot();
     }
 }
-
+void CPlot::reset()
+{
+    mSavedFlag = false;
+    mDisplayTime.clear();
+    mTime.clear();
+    for(int i = 0; i < mNumberOfLines; i++)
+    {
+        mDisplayData[i].clear();
+        mData[i].clear();
+        mPlotPtr->graph(i)->setData(mDisplayTime, mDisplayData.at(i));
+    }
+    mPlotPtr->xAxis->setRange(0.0, 5.0);
+    mPlotPtr->yAxis->setRange(0.0, 5.0);
+    mPlotPtr->replot();
+}
 QCustomPlot* CPlot::getPlotPtr()
 {
     return mPlotPtr;
+}
+void CPlot::saveCSV(const std::string& filename,
+                    const QVector<std::string>& varNames)
+{
+    if(mSavedFlag == false)
+    {
+        mSavedFlag = true;
+        ofstream stream;
+        stream.open(filename);
+        stream << "t";
+        for(int i = 0; i < mNumberOfLines; i++)
+        {
+            stream << ", " << varNames[i];
+        }
+        stream << "\n";
+
+        for(int k = 0; k < mTime.length(); k++)
+        {
+            string tmp = to_string(mTime[k]);
+            tmp.replace(tmp.find(",", 0), 1, ".");
+            stream << tmp;
+            for(int i = 0; i < mNumberOfLines; i++)
+            {
+                tmp = to_string(mData[i].at(k));
+                tmp.replace(tmp.find(",", 0), 1, ".");
+                stream << ", " << tmp;
+            }
+            stream << "\n";
+        }
+        stream.close();
+    }
 }

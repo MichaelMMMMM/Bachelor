@@ -11,9 +11,11 @@
 #include "TTypeList.h"
 #include "TLinHierarchy.h"
 #include "TStateHolder.h"
+#include "CSensorCalibration.h"
+#include "CADCCalibration.h"
 
 
-//using StateList = TYPELIST_4(CSensorCalibration, CADCCalibration, CLQRTest, CEdgeBalance);
+using StateList = TYPELIST_2(CSensorCalibration, CADCCalibration);
 
 class CControlComp : public AComponentBase
 {
@@ -26,8 +28,7 @@ public:
 	CControlComp& operator=(const CControlComp&) = delete;
 	~CControlComp() = default;
 private:
-	//TODO: Implement the FSM
-	//TFSM<TLinHierarchy<StateList, TStateHolder> > mFSM;
+	TFSM<TLinHierarchy<StateList, TStateHolder> > mFSM;
 };
 
 #endif

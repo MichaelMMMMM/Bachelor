@@ -2,6 +2,7 @@
 #define CMAINWINDOW_H
 #include <QMainWindow>
 #include <QStackedWidget>
+#include <CRxThread.h>
 #include "CSensorCalibration.h"
 #include "CADCCalibration.h"
 
@@ -16,7 +17,9 @@ public:
     ~CMainWindow();
 private:
     void createToolbar();
+    void createRxThread();
 private:
+    CRxThread*          mRxThreadPtr;
     QStackedWidget*     mStackedWidgetPtr;
 
     QWidget*            mDummyPtr;

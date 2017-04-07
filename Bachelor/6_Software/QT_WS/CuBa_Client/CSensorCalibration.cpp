@@ -1,6 +1,6 @@
 #include "CSensorCalibration.h"
 
-CSensorCalibration::CSensorCalibration() : mNumberOfValues(500)
+CSensorCalibration::CSensorCalibration() : mNumberOfValues(500), mReceivedValues(0)
 {
     this->createPlots();
     this->createControls();
@@ -30,6 +30,8 @@ void CSensorCalibration::createPlots()
 void CSensorCalibration::createControls()
 {
     mStartButtonPtr     = new QPushButton("Start Measurement");
+    QObject::connect(mStartButtonPtr, SIGNAL(clicked()),
+                     this, SLOT(startButtonClickedSLOT()));
     mControlLayoutPtr->addWidget(mStartButtonPtr);
 
     mValuesLayoutPtr    = new QHBoxLayout;
@@ -47,33 +49,97 @@ void CSensorCalibration::createControls()
     QObject::connect(mValuesSpinBoxPtr, SIGNAL(valueChanged(int)),
                      this, SLOT(numberOfValuesChangedSLOT(int)));
 }
-void CSensorCalibration::sensor1DataReceivedSLOT()
+void CSensorCalibration::sensor1DataReceivedSLOT(double time, const CMPUData& data)
 {
+    QVector<double> dataVector;
+    dataVector.append(static_cast<double>(data.mA_x));
+    dataVector.append(static_cast<double>(data.mA_y));
+    dataVector.append(static_cast<double>(data.mA_z));
+    dataVector.append(static_cast<double>(data.mW_x));
+    dataVector.append(static_cast<double>(data.mW_y));
+    dataVector.append(static_cast<double>(data.mW_z));
+    mSensor1PlotPtr->addData(time, dataVector);
 
+    mReceivedValues++;
+    if(mReceivedValues >= mNumberOfValues)
+    {
+        emit endMeasurementSIG();
+        QVector<std::string> varNames;
+        varNames.append("a_x"); varNames.append("a_y"); varNames.append("a_z");
+        varNames.append("w_x"); varNames.append("w_y"); varNames.append("w_z");
+        mSensor1PlotPtr->saveCSV("SensorCalibration/sensor1data.csv", varNames);
+        mSensor2PlotPtr->saveCSV("SensorCalibration/sensor2data.csv", varNames);
+        mSensor3PlotPtr->saveCSV("SensorCalibration/sensor3data.csv", varNames);
+        mSensor4PlotPtr->saveCSV("SensorCalibration/sensor4data.csv", varNames);
+        mSensor5PlotPtr->saveCSV("SensorCalibration/sensor5data.csv", varNames);
+        mSensor6PlotPtr->saveCSV("SensorCalibration/sensor6data.csv", varNames);
+    }
 }
-void CSensorCalibration::sensor2DataReceivedSLOT()
+void CSensorCalibration::sensor2DataReceivedSLOT(double time, const CMPUData& data)
 {
-
+    QVector<double> dataVector;
+    dataVector.append(static_cast<double>(data.mA_x));
+    dataVector.append(static_cast<double>(data.mA_y));
+    dataVector.append(static_cast<double>(data.mA_z));
+    dataVector.append(static_cast<double>(data.mW_x));
+    dataVector.append(static_cast<double>(data.mW_y));
+    dataVector.append(static_cast<double>(data.mW_z));
+    mSensor2PlotPtr->addData(time, dataVector);
 }
-void CSensorCalibration::sensor3DataReceivedSLOT()
+void CSensorCalibration::sensor3DataReceivedSLOT(double time, const CMPUData& data)
 {
-
+    QVector<double> dataVector;
+    dataVector.append(static_cast<double>(data.mA_x));
+    dataVector.append(static_cast<double>(data.mA_y));
+    dataVector.append(static_cast<double>(data.mA_z));
+    dataVector.append(static_cast<double>(data.mW_x));
+    dataVector.append(static_cast<double>(data.mW_y));
+    dataVector.append(static_cast<double>(data.mW_z));
+    mSensor3PlotPtr->addData(time, dataVector);
 }
-void CSensorCalibration::sensor4DataReceivedSLOT()
+void CSensorCalibration::sensor4DataReceivedSLOT(double time, const CMPUData& data)
 {
-
+    QVector<double> dataVector;
+    dataVector.append(static_cast<double>(data.mA_x));
+    dataVector.append(static_cast<double>(data.mA_y));
+    dataVector.append(static_cast<double>(data.mA_z));
+    dataVector.append(static_cast<double>(data.mW_x));
+    dataVector.append(static_cast<double>(data.mW_y));
+    dataVector.append(static_cast<double>(data.mW_z));
+    mSensor4PlotPtr->addData(time, dataVector);
 }
-void CSensorCalibration::sensor5DataReceivedSLOT()
+void CSensorCalibration::sensor5DataReceivedSLOT(double time, const CMPUData& data)
 {
-
+    QVector<double> dataVector;
+    dataVector.append(static_cast<double>(data.mA_x));
+    dataVector.append(static_cast<double>(data.mA_y));
+    dataVector.append(static_cast<double>(data.mA_z));
+    dataVector.append(static_cast<double>(data.mW_x));
+    dataVector.append(static_cast<double>(data.mW_y));
+    dataVector.append(static_cast<double>(data.mW_z));
+    mSensor5PlotPtr->addData(time, dataVector);
 }
-void CSensorCalibration::sensor6DataReceivedSLOT()
+void CSensorCalibration::sensor6DataReceivedSLOT(double time, const CMPUData& data)
 {
-
+    QVector<double> dataVector;
+    dataVector.append(static_cast<double>(data.mA_x));
+    dataVector.append(static_cast<double>(data.mA_y));
+    dataVector.append(static_cast<double>(data.mA_z));
+    dataVector.append(static_cast<double>(data.mW_x));
+    dataVector.append(static_cast<double>(data.mW_y));
+    dataVector.append(static_cast<double>(data.mW_z));
+    mSensor6PlotPtr->addData(time, dataVector);
 }
 void CSensorCalibration::startButtonClickedSLOT()
 {
-
+    mReceivedValues = 0;
+    mSensor1PlotPtr->reset();
+    mSensor2PlotPtr->reset();
+    mSensor3PlotPtr->reset();
+    mSensor4PlotPtr->reset();
+    mSensor5PlotPtr->reset();
+    mSensor6PlotPtr->reset();
+    emit startSensorCalibrationSIG();
 }
 void CSensorCalibration::numberOfValuesChangedSLOT(int newValue)
 {

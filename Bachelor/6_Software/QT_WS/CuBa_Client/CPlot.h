@@ -7,7 +7,10 @@
 class CPlot
 {
 public:
+    void saveCSV(const std::string& filename,
+                 const QVector<std::string>& varNames);
     void addData(double time, QVector<double>& data);
+    void reset();
     QCustomPlot* getPlotPtr();
 public:
     CPlot(int nbrOfLines,
@@ -18,6 +21,7 @@ public:
 private:
     int mNumberOfLines;
     int mDrawCounter;
+    bool mSavedFlag;
     QVector<double>     mTime;
     QVector<double>     mDisplayTime;
     QVector<QVector<double> >     mData;

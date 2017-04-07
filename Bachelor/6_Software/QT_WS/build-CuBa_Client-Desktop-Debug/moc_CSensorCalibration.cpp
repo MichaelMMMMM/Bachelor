@@ -19,8 +19,8 @@
 
 QT_BEGIN_MOC_NAMESPACE
 struct qt_meta_stringdata_CSensorCalibration_t {
-    QByteArrayData data[13];
-    char stringdata0[266];
+    QByteArrayData data[15];
+    char stringdata0[280];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -34,22 +34,25 @@ QT_MOC_LITERAL(1, 19, 25), // "startSensorCalibrationSIG"
 QT_MOC_LITERAL(2, 45, 0), // ""
 QT_MOC_LITERAL(3, 46, 17), // "endMeasurementSIG"
 QT_MOC_LITERAL(4, 64, 23), // "sensor1DataReceivedSLOT"
-QT_MOC_LITERAL(5, 88, 23), // "sensor2DataReceivedSLOT"
-QT_MOC_LITERAL(6, 112, 23), // "sensor3DataReceivedSLOT"
-QT_MOC_LITERAL(7, 136, 23), // "sensor4DataReceivedSLOT"
-QT_MOC_LITERAL(8, 160, 23), // "sensor5DataReceivedSLOT"
-QT_MOC_LITERAL(9, 184, 23), // "sensor6DataReceivedSLOT"
-QT_MOC_LITERAL(10, 208, 22), // "startButtonClickedSLOT"
-QT_MOC_LITERAL(11, 231, 25), // "numberOfValuesChangedSLOT"
-QT_MOC_LITERAL(12, 257, 8) // "newValue"
+QT_MOC_LITERAL(5, 88, 4), // "time"
+QT_MOC_LITERAL(6, 93, 8), // "CMPUData"
+QT_MOC_LITERAL(7, 102, 23), // "sensor2DataReceivedSLOT"
+QT_MOC_LITERAL(8, 126, 23), // "sensor3DataReceivedSLOT"
+QT_MOC_LITERAL(9, 150, 23), // "sensor4DataReceivedSLOT"
+QT_MOC_LITERAL(10, 174, 23), // "sensor5DataReceivedSLOT"
+QT_MOC_LITERAL(11, 198, 23), // "sensor6DataReceivedSLOT"
+QT_MOC_LITERAL(12, 222, 22), // "startButtonClickedSLOT"
+QT_MOC_LITERAL(13, 245, 25), // "numberOfValuesChangedSLOT"
+QT_MOC_LITERAL(14, 271, 8) // "newValue"
 
     },
     "CSensorCalibration\0startSensorCalibrationSIG\0"
     "\0endMeasurementSIG\0sensor1DataReceivedSLOT\0"
-    "sensor2DataReceivedSLOT\0sensor3DataReceivedSLOT\0"
-    "sensor4DataReceivedSLOT\0sensor5DataReceivedSLOT\0"
-    "sensor6DataReceivedSLOT\0startButtonClickedSLOT\0"
-    "numberOfValuesChangedSLOT\0newValue"
+    "time\0CMPUData\0sensor2DataReceivedSLOT\0"
+    "sensor3DataReceivedSLOT\0sensor4DataReceivedSLOT\0"
+    "sensor5DataReceivedSLOT\0sensor6DataReceivedSLOT\0"
+    "startButtonClickedSLOT\0numberOfValuesChangedSLOT\0"
+    "newValue"
 };
 #undef QT_MOC_LITERAL
 
@@ -71,28 +74,28 @@ static const uint qt_meta_data_CSensorCalibration[] = {
        3,    0,   65,    2, 0x06 /* Public */,
 
  // slots: name, argc, parameters, tag, flags
-       4,    0,   66,    2, 0x0a /* Public */,
-       5,    0,   67,    2, 0x0a /* Public */,
-       6,    0,   68,    2, 0x0a /* Public */,
-       7,    0,   69,    2, 0x0a /* Public */,
-       8,    0,   70,    2, 0x0a /* Public */,
-       9,    0,   71,    2, 0x0a /* Public */,
-      10,    0,   72,    2, 0x0a /* Public */,
-      11,    1,   73,    2, 0x0a /* Public */,
+       4,    2,   66,    2, 0x0a /* Public */,
+       7,    2,   71,    2, 0x0a /* Public */,
+       8,    2,   76,    2, 0x0a /* Public */,
+       9,    2,   81,    2, 0x0a /* Public */,
+      10,    2,   86,    2, 0x0a /* Public */,
+      11,    2,   91,    2, 0x0a /* Public */,
+      12,    0,   96,    2, 0x0a /* Public */,
+      13,    1,   97,    2, 0x0a /* Public */,
 
  // signals: parameters
     QMetaType::Void,
     QMetaType::Void,
 
  // slots: parameters
+    QMetaType::Void, QMetaType::Double, 0x80000000 | 6,    5,    2,
+    QMetaType::Void, QMetaType::Double, 0x80000000 | 6,    5,    2,
+    QMetaType::Void, QMetaType::Double, 0x80000000 | 6,    5,    2,
+    QMetaType::Void, QMetaType::Double, 0x80000000 | 6,    5,    2,
+    QMetaType::Void, QMetaType::Double, 0x80000000 | 6,    5,    2,
+    QMetaType::Void, QMetaType::Double, 0x80000000 | 6,    5,    2,
     QMetaType::Void,
-    QMetaType::Void,
-    QMetaType::Void,
-    QMetaType::Void,
-    QMetaType::Void,
-    QMetaType::Void,
-    QMetaType::Void,
-    QMetaType::Void, QMetaType::Int,   12,
+    QMetaType::Void, QMetaType::Int,   14,
 
        0        // eod
 };
@@ -105,12 +108,12 @@ void CSensorCalibration::qt_static_metacall(QObject *_o, QMetaObject::Call _c, i
         switch (_id) {
         case 0: _t->startSensorCalibrationSIG(); break;
         case 1: _t->endMeasurementSIG(); break;
-        case 2: _t->sensor1DataReceivedSLOT(); break;
-        case 3: _t->sensor2DataReceivedSLOT(); break;
-        case 4: _t->sensor3DataReceivedSLOT(); break;
-        case 5: _t->sensor4DataReceivedSLOT(); break;
-        case 6: _t->sensor5DataReceivedSLOT(); break;
-        case 7: _t->sensor6DataReceivedSLOT(); break;
+        case 2: _t->sensor1DataReceivedSLOT((*reinterpret_cast< double(*)>(_a[1])),(*reinterpret_cast< const CMPUData(*)>(_a[2]))); break;
+        case 3: _t->sensor2DataReceivedSLOT((*reinterpret_cast< double(*)>(_a[1])),(*reinterpret_cast< const CMPUData(*)>(_a[2]))); break;
+        case 4: _t->sensor3DataReceivedSLOT((*reinterpret_cast< double(*)>(_a[1])),(*reinterpret_cast< const CMPUData(*)>(_a[2]))); break;
+        case 5: _t->sensor4DataReceivedSLOT((*reinterpret_cast< double(*)>(_a[1])),(*reinterpret_cast< const CMPUData(*)>(_a[2]))); break;
+        case 6: _t->sensor5DataReceivedSLOT((*reinterpret_cast< double(*)>(_a[1])),(*reinterpret_cast< const CMPUData(*)>(_a[2]))); break;
+        case 7: _t->sensor6DataReceivedSLOT((*reinterpret_cast< double(*)>(_a[1])),(*reinterpret_cast< const CMPUData(*)>(_a[2]))); break;
         case 8: _t->startButtonClickedSLOT(); break;
         case 9: _t->numberOfValuesChangedSLOT((*reinterpret_cast< int(*)>(_a[1]))); break;
         default: ;

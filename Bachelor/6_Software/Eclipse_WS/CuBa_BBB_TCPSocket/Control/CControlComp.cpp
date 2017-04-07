@@ -21,7 +21,7 @@ void CControlComp::run()
 	{
 		if(mQueue.popFront(msg, true))
 		{
-			//mFSM.dispatch(msg);
+			mFSM.dispatch(msg);
 		}
 	}
 }

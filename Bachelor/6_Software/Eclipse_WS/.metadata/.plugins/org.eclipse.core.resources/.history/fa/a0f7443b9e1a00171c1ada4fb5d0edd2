@@ -1,0 +1,28 @@
+/**
+ * @file	EEvent.h
+ * @author	Michael Meindl
+ * @date	08.02.2017
+ * @brief	Enumeration for the events.
+ */
+#ifndef EEVENT_H
+#define EEVENT_H
+#include "Global.h"
+
+enum class EEvent : UInt32
+{
+	DEFAULT_IGNORE,
+	INIT,
+	EXIT,
+	CLIENT_CONNECT,
+	CLIENT_DISCONNECT,
+	TIMER_TICK,
+	RUN_SENSOR_CALIBRATION,
+	TRANSMIT_SENSOR1DATA,
+	TRANSMIT_SENSOR2DATA,
+	TRANSMIT_SENSOR3DATA,
+	TRANSMIT_SENSOR4DATA,
+	TRANSMIT_SENSOR5DATA,
+	TRANSMIT_SENSOR6DATA
+};
+
+#endif

@@ -59,7 +59,17 @@ bool CCommFSM::onRunning(CMessage& msg)
 		mState = sInitial;
 		return true;
 	}
-	//TODO: Check events which shall be transmited
+	if( (EEvent::SENSOR1DATA == event) ||
+		(EEvent::SENSOR2DATA == event) ||
+		(EEvent::SENSOR3DATA == event) ||
+		(EEvent::SENSOR4DATA == event) ||
+		(EEvent::SENSOR5DATA == event) ||
+		(EEvent::SENSOR6DATA == event) ||
+		(EEvent::ADCDATA == event))
+	{
+		sAction.transmitMessage(msg);
+		return true;
+	}
 	if(EEvent::CLIENT_DISCONNECT == event)
 	{
 		sAction.exitRunning();

@@ -1,0 +1,32 @@
+/**
+ * @file	CSensorCalibrationAction.cpp
+ * @author	Michael Meindl
+ * @date	5.4.2017
+ * @brief	Method defitions for CSensorCalibrationAction.
+ */
+#include "CSensorCalibration.h"
+#include <iostream>
+
+CSensorCalibrationAction::CSensorCalibrationAction() : mTime(0.0F)
+{
+
+}
+void CSensorCalibrationAction::entrySensorCalibration()
+{
+	sTimerTask.setPeriodMS(20);
+	sTimerTask.resume(true);
+	std::cout << "[*] Control-Comp: Entering Sensor-Calibration . . . " << std::endl;
+}
+void CSensorCalibrationAction::exitSensorCalibration()
+{
+	sTimerTask.pause(true);
+	std::cout << "[*] Control-Comp: Exiting Sensor-Calibration . . . " << std::endl;
+}
+void CSensorCalibrationAction::sampleSensorCalibration()
+{
+	CSensorData data;
+	if(sHardware.fetchSensorData(data))
+	{
+		sProxy.transmitSensorData(1, )
+	}
+}
