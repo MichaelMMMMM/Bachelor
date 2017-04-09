@@ -1,0 +1,50 @@
+\section{Verifizierung des Reglers an der Regelstrecke}
+Die letztendliche Aufgabe besteht darin einen Regler zu entwerfen, damit der Würfel auf einer Kante balanciert. Hierfür wird ein linear quadratisch optimaler Regler entworfen, wobei die Gewichtsmatrizen
+\begin{equation}
+\bs{Q} = \begin{bmatrix}
+\varphi^{-2}_{max} & 0 & 0 \\
+0 & u^{-2}_{K,max} & 0 \\
+0 & 0 & u^{-2}_{R,max}
+\end{bmatrix}
+\hspace{35pt}
+\bs{R} = \begin{bmatrix} T^{-2}_{M,max} \end{bmatrix}
+\end{equation}
+verwendet werden. Daraus resultiert das Gütekriterium
+\begin{equation}
+J = \sum^{\infty}_{k=0}\left( \frac{\varphi^2}{\varphi^2_{max}} + \frac{u_K^2}{u^2_{K,max}} + \frac{u^2_{R}}{u^2_{R,max}} + \frac{T_M^2}{T^2_{M,max}}\right)\,.
+\end{equation}
+Somit werden der Zustandsvektor und die Stellgröße quadratisch über ihren maximalen Wert minimiert. Der daraus resultierende Regelkreis besitzt die Eigenwerte
+\begin{equation}
+\lambda_1 = 0,7895 \hspace{35pt} \lambda_{2,3} = 0,8830 \pm 0,0087j
+\end{equation}
+und ist somit asymptotisch stabil. Im nächsten Schritt wird der Regler an der realen Regelstrecke validiert. Abbildung hier zeigt den Verlauf der Zustands- und Stellgröße, wobei das System bei dem Zeitpunk yy durch eine äußere Störung erregt wurde.
+
+placeholder plot
+
+\newpage
+Die Abbildungen zeigen, dass der Regler das System nicht in die Ruhelage $\bs{x}=\bs{0}$ überführt, sondern die Schwungmasse mit konstanter Geschwindigkeit rotiert. Dieser Umstand ist darauf zurückzuführen, dass der Zustandsvektor mit einem systematischen Messfehler erfasst wird. Im Modell wird diese Gegebenheit durch die Einführung der Zustandsgrößen
+\begin{equation}
+\bs{\hat{x}} = \begin{pmatrix}
+\hat{\varphi} \\ \hat{u}_K \\ \hat{u}_R
+\end{pmatrix}
+\end{equation}
+erfasst, welche die jeweiligen Messabweichungen darstellen. Der Ausgangsvektor $\bs{y}$ stellt die Messwerte dar und wird durch die Summe des ursprünglichen Zustandvektors $\bs{x}$ und der Messabweichungen $\bs{\hat{x}}$ berechnet. Aus diesen Überlegungen ergibt sich für den offenen Regelkreis das System
+\begin{equation}
+\textfrak{D}_0 \equiv \left\{ \begin{array}{ll}
+\bs{x}_o(k+1) = \underbrace{\begin{bmatrix}
+\bs{A} & \bs{0}^{3x3} \\ \bs{0}^{3x3} & \bs{I}^{3x3}\end{bmatrix}}_{\equiv \bs{A}_o}\cdot \underbrace{\begin{bmatrix}
+\bs{x} \\ \bs{\hat{x}}
+\end{bmatrix}}_{\equiv \bs{x}_0}(k) + \underbrace{\begin{bmatrix}
+\bs{b} \\ \bs{0}^3 \end{bmatrix}}_{\equiv \bs{b}_o} \cdot u(k)
+\\
+\bs{y}(k) = \begin{bmatrix}
+\bs{I}^{3x3} & \bs{I}^{3x3}\end{bmatrix}\cdot \bs{x}_o(k)
+\end{array}
+\right. \,.
+\end{equation}
+Das Reglergesetz ergibt sich nun aus dem Produkt des Reglervektors $\bs{k}^T$ und des Ausgangsvektors $\bs{y}$.
+\begin{equation}
+u = \bs{k}^T\cdot \bs{y} = \bs{k}^T \cdot (\bs{x} + \bs{\hat{x}}) = \underbrace{\begin{bmatrix}
+\bs{k}^T & \bs{k}^T
+\end{bmatrix}}_{\equiv \bs{k}^T_o} \cdot \bs{x}_o
+\end{equation}
