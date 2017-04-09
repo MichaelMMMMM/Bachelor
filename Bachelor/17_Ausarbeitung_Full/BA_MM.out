@@ -6,13 +6,16 @@
 \BOOKMARK [1][-]{section.2.2}{Zustandsraumdarstellung f\374r zeitdiskrete Systeme}{chapter.2}% 6
 \BOOKMARK [1][-]{section.2.3}{Entwurf von Zustandsregelungen}{chapter.2}% 7
 \BOOKMARK [2][-]{subsection.2.3.1}{Reglerentwurf durch Eigenwertvorgabe}{section.2.3}% 8
-\BOOKMARK [0][-]{chapter.3}{Software}{}% 9
-\BOOKMARK [1][-]{section.3.1}{Zielplattform, Sensorik und Aktorik}{chapter.3}% 10
-\BOOKMARK [2][-]{subsection.3.1.1}{Peripherie}{section.3.1}% 11
-\BOOKMARK [1][-]{section.3.2}{Implementierung des Signalflusses}{chapter.3}% 12
-\BOOKMARK [1][-]{section.3.3}{Komponentenarchitektur f\374r mechatronische Anwendungen}{chapter.3}% 13
-\BOOKMARK [1][-]{section.3.4}{Entwurf der Regelungskomponente}{chapter.3}% 14
-\BOOKMARK [0][-]{chapter.4}{Modellbildung W\374rfel auf Ecke}{}% 15
-\BOOKMARK [1][-]{section.4.1}{Systemparameter}{chapter.4}% 16
-\BOOKMARK [1][-]{section.4.2}{Untersuchung der Kinematik}{chapter.4}% 17
-\BOOKMARK [1][-]{section.4.3}{Untersuchung der Kinetik}{chapter.4}% 18
+\BOOKMARK [2][-]{subsection.2.3.2}{Linear quadratisch optimale Regelung}{section.2.3}% 9
+\BOOKMARK [1][-]{section.2.4}{Verifizierung des Reglers an der Regelstrecke}{chapter.2}% 10
+\BOOKMARK [0][-]{chapter.3}{Software}{}% 11
+\BOOKMARK [1][-]{section.3.1}{Zielplattform, Sensorik und Aktorik}{chapter.3}% 12
+\BOOKMARK [2][-]{subsection.3.1.1}{Peripherie}{section.3.1}% 13
+\BOOKMARK [1][-]{section.3.2}{Implementierung des Signalflusses}{chapter.3}% 14
+\BOOKMARK [1][-]{section.3.3}{Komponentenarchitektur f\374r mechatronische Anwendungen}{chapter.3}% 15
+\BOOKMARK [1][-]{section.3.4}{Entwurf der Regelungskomponente}{chapter.3}% 16
+\BOOKMARK [0][-]{chapter.4}{Modellbildung W\374rfel auf Ecke}{}% 17
+\BOOKMARK [1][-]{section.4.1}{Systemparameter}{chapter.4}% 18
+\BOOKMARK [1][-]{section.4.2}{Untersuchung der Kinematik}{chapter.4}% 19
+\BOOKMARK [2][-]{subsection.4.2.1}{Untersuchung der Kinematik}{section.4.2}% 20
+\BOOKMARK [1][-]{section.4.3}{Untersuchung der Kinetik}{chapter.4}% 21
