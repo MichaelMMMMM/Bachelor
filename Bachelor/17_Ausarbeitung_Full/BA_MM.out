@@ -8,14 +8,17 @@
 \BOOKMARK [2][-]{subsection.2.3.1}{Reglerentwurf durch Eigenwertvorgabe}{section.2.3}% 8
 \BOOKMARK [2][-]{subsection.2.3.2}{Linear quadratisch optimale Regelung}{section.2.3}% 9
 \BOOKMARK [1][-]{section.2.4}{Verifizierung des Reglers an der Regelstrecke}{chapter.2}% 10
-\BOOKMARK [0][-]{chapter.3}{Software}{}% 11
-\BOOKMARK [1][-]{section.3.1}{Zielplattform, Sensorik und Aktorik}{chapter.3}% 12
-\BOOKMARK [2][-]{subsection.3.1.1}{Peripherie}{section.3.1}% 13
-\BOOKMARK [1][-]{section.3.2}{Implementierung des Signalflusses}{chapter.3}% 14
-\BOOKMARK [1][-]{section.3.3}{Komponentenarchitektur f\374r mechatronische Anwendungen}{chapter.3}% 15
-\BOOKMARK [1][-]{section.3.4}{Entwurf der Regelungskomponente}{chapter.3}% 16
-\BOOKMARK [0][-]{chapter.4}{Modellbildung W\374rfel auf Ecke}{}% 17
-\BOOKMARK [1][-]{section.4.1}{Systemparameter}{chapter.4}% 18
-\BOOKMARK [1][-]{section.4.2}{Untersuchung der Kinematik}{chapter.4}% 19
-\BOOKMARK [2][-]{subsection.4.2.1}{Untersuchung der Kinematik}{section.4.2}% 20
-\BOOKMARK [1][-]{section.4.3}{Untersuchung der Kinetik}{chapter.4}% 21
+\BOOKMARK [1][-]{section.2.5}{Beobachtung der Messabweichungen}{chapter.2}% 11
+\BOOKMARK [0][-]{chapter.3}{Modellbildung W\374rfel auf Ecke}{}% 12
+\BOOKMARK [1][-]{section.3.1}{Systemparameter}{chapter.3}% 13
+\BOOKMARK [1][-]{section.3.2}{Untersuchung der Kinematik}{chapter.3}% 14
+\BOOKMARK [1][-]{section.3.3}{Untersuchung der Kinetik}{chapter.3}% 15
+\BOOKMARK [0][-]{chapter.4}{Erfassung der Zustandsgr\366\337en}{}% 16
+\BOOKMARK [1][-]{section.4.1}{Winkelsch\344tzung}{chapter.4}% 17
+\BOOKMARK [1][-]{section.4.2}{Justierung der Sensoren}{chapter.4}% 18
+\BOOKMARK [0][-]{chapter.5}{Software}{}% 19
+\BOOKMARK [1][-]{section.5.1}{Zielplattform, Sensorik und Aktorik}{chapter.5}% 20
+\BOOKMARK [2][-]{subsection.5.1.1}{Peripherie}{section.5.1}% 21
+\BOOKMARK [1][-]{section.5.2}{Implementierung des Signalflusses}{chapter.5}% 22
+\BOOKMARK [1][-]{section.5.3}{Komponentenarchitektur f\374r mechatronische Anwendungen}{chapter.5}% 23
+\BOOKMARK [1][-]{section.5.4}{Entwurf der Regelungskomponente}{chapter.5}% 24

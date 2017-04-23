@@ -2,21 +2,25 @@
 \include{0_Format}
 
 \makeatletter
-\def\input@path{{1_TM_Edge/}{2_RT_Edge/}{3_SW/}{4_TM_Corner/}}
+\def\input@path{{1_TM_Edge/}{2_RT_Edge/}{3_SW/}{4_TM_Corner/}{5_Sensorik/}}
 \makeatother
-
 \graphicspath{{1_TM_Edge/}{2_RT_Edge/}{3_SW/}{4_TM_Corner/}}
 
+\input{0_0_Deckblatt}
 \begin{document}
+
+\maketitle
+
 \tableofcontents
 
 \include{1_TM_Edge/TM_EdgeBalancing}
 
 \include{RT_EdgeBalancing}
 
-\include{3_SW/Software}
-
 \include{4_TM_Corner/TM_CornerBalancing}
 
+\include{5_Sensorik/Sensorik}
+
+\include{3_SW/Software}
 
 \end{document}

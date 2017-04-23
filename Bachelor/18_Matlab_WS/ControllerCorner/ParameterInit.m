@@ -46,9 +46,8 @@ A = [zeros(3,3), dPhiMat, zeros(3,3);
      I_K_inv*dGMat, -C_psi*I_K_inv, C_psi*I_K_inv;
      zeros(3,3), C_psi*I_R_inv, -C_psi*I_R_inv];
 B = [zeros(3,3); -I_K_inv; I_R_inv];
-C = [zeros(3,3), eye(3), zeros(3,3);
-     zeros(3,6), eye(3)];
-D = zeros(6,3);
+C = [zeros(8,1), eye(8)];
+D = zeros(8,3);
 
 SSc = ss(A, B, C, D);
 SSd = c2d(SSc, Ta, 'zoh');
