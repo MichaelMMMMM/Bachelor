@@ -56,31 +56,31 @@ SSd = c2d(SSc, Ta, 'zoh');
 [KSSd, T_K] = minreal(SSd);
 
 phi_max   = degtorad(5);
-u_K_max = degtorad(20);
+u_K_max = degtorad(5);
 u_R_max = degtorad(2000*2*pi/60);
-T_max   = 0.01;
+T_max   = 0.011;
 x_max = [0; phi_max; phi_max; u_K_max; u_K_max; u_K_max; u_R_max; u_R_max; u_R_max];
 xK_max = T_K * x_max;
 
 Q = diag(xK_max(1:7).^(-2));
 R = eye(3)*T_max^(-2);
 
-x_max = [0;1;1;0.05;0.05;0.05;0.000001;0.000001;0.000001]*15;
-xK_max = T_K * x_max;
-Q = diag(xK_max(1:7).^2);
+% x_max = [0;1;1;0.05;0.05;0.05;0.0005;0.0005;0.0005];
+% xK_max = T_K * x_max;
+% Q = diag(xK_max(1:7).^2);
 
-%KKd = dlqr(KSSd.A, KSSd.B, Q, R);
-KKd = dlqr(KSSd.A, KSSd.B, eye(7)*0.5e-1, R);
+%KKd = dlqr(KSSd.A, KSSd.B, Q*5e-4, R);
+KKd = dlqr(KSSd.A, KSSd.B, eye(7)*8e-3, R);
 KKd(:, 4:7) = KKd(:, 4:7) * 1.4;
 KKd(:,4) = KKd(:,4) * 1.01;
 KKd(:,6) = KKd(:,6) * 1.01;
 Kd  = KKd * [eye(7), zeros(7,2)]*T_K;
-
-%Kd tuning
+% 
+% %Kd tuning
 Kd(:,3) = Kd(:,3)*1.5;
-Kd(1,4) = Kd(1,4)*2;
-Kd(2,5) = Kd(2,5)*2;
-Kd(3,6) = Kd(3,6)*2;
+Kd(1,4) = Kd(1,4)*1.5;
+Kd(2,5) = Kd(2,5)*1.5;
+Kd(3,6) = Kd(3,6)*1.5;
 
 csvwrite('config/3D_K_mat.csv', Kd);
 

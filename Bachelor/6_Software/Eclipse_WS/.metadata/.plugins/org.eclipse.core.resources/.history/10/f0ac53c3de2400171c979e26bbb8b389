@@ -1,0 +1,11 @@
+/**
+ * @file	C1DControlSystem.h
+ * @author	Michael Meindl
+ * @date	19.04.2017
+ * @brief	Class to handle the switching between the different control approaches for edge balancing.
+ */
+#ifndef C1DCONTROLSYSTEM_H
+#define C1DCONTROLSYTSEM_H
+#include "E1DControlSystem.h"
+
+#endif

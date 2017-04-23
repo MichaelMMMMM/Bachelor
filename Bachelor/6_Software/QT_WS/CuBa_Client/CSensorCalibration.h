@@ -31,11 +31,20 @@ private:
     int mNumberOfValues;
     int mReceivedValues;
 
+
     QPushButton* mStartButtonPtr;
 
     QHBoxLayout* mValuesLayoutPtr;
     QLabel*      mValuesLabelPtr;
     QSpinBox*    mValuesSpinBoxPtr;
+
+    QHBoxLayout* mPhiLayoutPtr;
+    QLabel*      mPhiLabelPtr;
+    QSpinBox*    mPhiSpinBoxPtr;
+
+    QHBoxLayout* mDegLayoutPtr;
+    QLabel*      mDegLabelPtr;
+    QSpinBox*    mDegSpinBoxPtr;
 
     CPlot*  mSensor1PlotPtr;
     CPlot*  mSensor2PlotPtr;

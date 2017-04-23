@@ -1,0 +1,12 @@
+/**
+ * @file	C1DControlSystem.cpp
+ * @author	Michael Meindl
+ * @date	19.04.2017
+ * @brief	Method definitions for C1DControlSystem.
+ */
+#include "C1DControlSystem.h"
+
+C1DControlSystem::C1DControlSystem() :
+{
+
+}

@@ -1,0 +1,22 @@
+/**
+ * @file	C1DControlSystem.cpp
+ * @author	Michael Meindl
+ * @date	19.04.2017
+ * @brief	Method definitions for C1DControlSystem.
+ */
+#include "C1DControlSystem.h"
+
+C1DControlSystem::C1DControlSystem() : mActiveSystem(E1DControlSystem::COMP_LQR)
+{
+
+}
+const C1DControlSystem::OutputType& C1DControlSystem::calcOutput(const C1DControlSystem::InputType& input)
+{
+	mCompLQR.calcOutput(input);
+	mPhiObsLQR.calcOutput(input);
+
+	mOutput[0] = mCompLQR.getValue();
+	mOutput[1] = mPhiObsLQR.getValue();
+
+	return mOutput[static_cast<UInt32>(mActiveSystem)];
+}

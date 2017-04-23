@@ -1,0 +1,6 @@
+\section{Justierung der Sensoren}
+Bisher wurden die Anzeigewerte der Sensoren als Beschleunigungswerte betrachtet. Allerdings geben die Sensormodule ihre Messwerte in digitaler 2K-Darstellung aus, weshalb eine Ausgleichsfunktion bestimmt werden muss um die Anzeigewerte in die entsprechende SI-Einheit zu überführen. Im ersten Schritt wird die Annahme getroffen, dass die Anzeigewerte proportional zu den Beschleunigungswerten und von einer systematischen Messabweichung überlagert sind. Um diese Fehler auszugleichen wird ein Polynom erster Ordnung verwendet, welches den digitalen Anzeigewert $x$ als Argument entgegennimmt und den entsprechenden Beschleunigungswert $y$ in $m/s^2$ zurückgibt.
+\begin{equation}
+y = p_1\cdot x + p_2
+\end{equation}
+Mit diesem Ansatz muss für jede Messachse der Sensoren 

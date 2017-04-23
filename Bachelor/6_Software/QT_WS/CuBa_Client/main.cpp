@@ -2,6 +2,8 @@
 #include <QApplication>
 #include "CMPUData.h"
 #include "CADCData.h"
+#include "TMatrix.h"
+#include <QVector>
 
 int main(int argc, char *argv[])
 {
@@ -9,6 +11,7 @@ int main(int argc, char *argv[])
 
     qRegisterMetaType<CMPUData>("CMPUData");
     qRegisterMetaType<CADCData>("CADCData");
+    qRegisterMetaType<QVector<double> >("Qvector<double>");
 
     CMainWindow w;
     w.show();

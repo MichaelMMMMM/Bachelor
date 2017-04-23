@@ -2,11 +2,11 @@
 #include "CControlComp.h"
 #include "CCommComponent.h"
 #include "CThread.h"
-#include "CADC.h"
-
+#include "TObserver.h"
 
 int main()
 {
+	TObserver<3U, 2U, 1U> test;
 	CControlComp controlComp;
 	CCommComponent commComp;
 

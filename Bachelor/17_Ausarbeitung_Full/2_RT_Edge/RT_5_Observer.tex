@@ -1,0 +1,32 @@
+\section{Beobachtung der Messabweichungen}
+Prinzipiell ist es möglich die Messabweichungen von $\varphi$ und $u_K$ empirisch zu ermitteln. Allerdings ist die Annahme, dass es sich bei den Messabweichungen um Konstanten handelt, kritisch zu betrachten. Die Ursache der Messfehler wird im Modell nicht erfasst. Werden die Größen $\bs{\hat{x}}$ von einer Zeitfunktion verursacht so werden diese ebenfalls zeitvariant. Allerdings ist die exakte Modellierung aufwendig und führt zu einer Erhöhung der Modellordnung. Um diese Problemtaik zu vermeiden wird ein Luenberger-Beobachter verwendet, welcher die Messfehler ermittelt.
+
+Hierfür müssen zunächst die Begriffe der Steuer- und Beobachtbarkeit geklärt werden. Bei den Zustandsgrößen $\bs{\hat{x}}$ handelt es sich um so genannte nicht steuerbare Eigenvorgänge. Die Begründung liegt einerseits darin, dass die unteren drei Elemente des Eingangvektors $\bs{b}$ gleich null sind. Folglich wirkt die Stellgröße nicht direkt auf die Zustände ein. Andererseits beeinflusst keiner der Zustände $\bs{x}$ die Messabweichungen, weshalb keine indirekte Steuerung über die Stellgröße erfolgen kann. Allgemein gilt:
+\begin{quote}
+"\ Ein System $\Sigma$ heißt vollständig steuerbar, wenn es in endlicher Zeit $t_e$ von jedem beliebigen Anfangszustand $\bs{x}_0$ durch eine geeignet gewählte Eingangsgröße $\bs{u}_{[0,t_e]}$ in einen beliebig vorgegebenen Endzustand $\bs{x}(t_e)$ überführt werden kann."
+\signed{LunzeRT2, S. 64}
+\end{quote}
+Zur Prüfung der Steuerbarkeit kann das Kalmankriterium angewandt werden [Lunze RT2, S.65ff]. Die nicht Steuerbarkeit der Messabweichungen begründet, weshalb kein Regler verwendet werden kann um diese zu eliminieren. Allerdings sind diese beobachtbar. Das heißt sie können aus dem Verlauf des Ausgangs- und Stellvektors rekonstruiert werden.
+\begin{quote}
+"\ Ein System $\Sigma = (\bs{A},\bs{B},\bs{C})$ hießt vollständig beobachtbar, wenn der Anfangszustand $\bs{x}_0$ aus dem über einem endlichen Intervall $[0,t_e]$ bekannten Verlauf der Eingangsgröße $\bs{u}_{[0,t_e]}$ und der Ausgangsgröße $\bs{y}_{[0,t_e]}$ bestimmt werden kann. "
+\signed{LunzeRT2, S. 92}
+\end{quote}
+Zu der Prüfung der Beobachtbarkeit kann ebenfalls das Kalmankriterium genutzt werden [LunzeRT2, S.93ff]. Da das System $\overline{\textfrak{D}}_o$ vollständig beobachtbar ist, kann ein Luenberger-Beobachter verwendet werden um den Zustandsvektor $\bs{x}_o$ zu schätzen. Das Grundprizip der Beobachtung besteht darin, parallel zu der Regelstrecke das Modell zu berechnen und daraus den Zustandsvektor zu schätzen. Die Problematik dieses Ansatz besteht darin, dass ein beliebiger Modellfehler zu einem, mit der Zeit zunehmenden, Schätzfehler führt. Deshalb wir das in der Regelungstechnik bewährte Prinzip der Fehlerrückführung übernommen. Da der Zustandsvektor $\bs{x}$ der Regelstrecke nicht zur Verfügung steht wird die Differenz
+\begin{equation}
+\delta\bs{y} = \bs{y} - \bs{\hat{y}}
+\end{equation}
+der Ausgangsgrößen berechnet. Diese fließt über die Beobachtermatrix $\bs{L}$ in den Schätzwert $\bs{\hat{x}}$ des Zustandes ein.
+
+BILD
+
+Um das Verhalten des Beobachters zu untersuchen wird der Schätzfehler $\bs{e} = \bs{x} - \bs{\hat{x}}$ betrachtet.
+\begin{equation}
+\begin{split}
+\bs{e}(k+1) &= \bs{x}(k+1) - \bs{\hat{x}}(k+1) \\
+&= [\bs{A}\cdot \bs{x}(k) + \bs{B}\cdot \bs{u}(k)] - [\bs{A}\cdot \bs{\hat{x}}(k) + \bs{B}\cdot \bs{u}(k) +\bs{L}\bs{\hat{y}}(k)]
+\\
+&= [\bs{A}\cdot (\bs{x}(k) - \bs{\hat{x}}(k))] - \bs{L}\bs{C}\cdot[\bs{x}(k)-\bs{\hat{x}}(k)] 
+\\
+&= \bs{A}\cdot \bs{e}(k) - \bs{LC}\cdot\bs{e}(k) = (\bs{A}-\bs{LC})\cdot \bs{e}(k)
+\end{split}
+\end{equation}

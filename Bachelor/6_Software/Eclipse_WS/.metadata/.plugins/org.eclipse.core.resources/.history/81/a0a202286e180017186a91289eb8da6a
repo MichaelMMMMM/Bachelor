@@ -1,7 +1,0 @@
-var testHandler = new CTestHandler();
-var webSocket   = new CWebSocket(testHandler);
-
-function onLoadJS()
-{
-	myPlot = new CPlot("placeholder", 3, ["plot1", "plot2", "plot3"]);
-}

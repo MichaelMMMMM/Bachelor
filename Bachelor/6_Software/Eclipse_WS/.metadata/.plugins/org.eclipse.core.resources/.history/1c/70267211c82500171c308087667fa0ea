@@ -1,0 +1,38 @@
+/**
+ * @file	CCornerBalanceAction.h
+ * @author	Michael Meindl
+ * @date	20.04.2017
+ * @brief	Action handler for Corner-Balancing.
+ */
+#ifndef CCORNERBALANCINGACTION_H
+#define CCORNERBALANCINGACTION_H
+#include "TLinHierarchy.h"
+#include "TActionHolder.h"
+#include "C3DStateEstimate.h"
+#include "CF1Calib.h"
+#include "C3DOffsetCorrection.h"
+#include "C3DCompFilter.h"
+#include "TLQR.h"
+
+class CCornerBalanceAction
+{
+public:
+	void entryCornerBalance();
+	void exitCornerBalance();
+	void entryIdle();
+	void exitIdle();
+	void entryBalance();
+	void exitBalance();
+
+	bool inBalanceArea();
+public:
+	CCornerBalanceAction();
+	CCornerBalanceAction(const CCornerBalanceAction&) = delete;
+	CCornerBalanceAction& operator=(const CCornerBalanceAction&) = delete;
+	~CCornerBalanceAction() = default;
+private:
+	using Controller = TLQR<9U, 3U>;
+	using ActionList = TYPELIST_5(CF1Calib, C3DStateEstimate, C3DOffsetCorrection, C3DCompFilter, Controller);
+};
+
+#endif

@@ -8,8 +8,10 @@ class CPlot
 {
 public:
     void saveCSV(const std::string& filename,
-                 const QVector<std::string>& varNames);
+                 const QVector<std::string>& varNames,
+                 bool force = false);
     void addData(double time, QVector<double>& data);
+    void addData(double time, double data, int graphIndex);
     void reset();
     QCustomPlot* getPlotPtr();
 public:

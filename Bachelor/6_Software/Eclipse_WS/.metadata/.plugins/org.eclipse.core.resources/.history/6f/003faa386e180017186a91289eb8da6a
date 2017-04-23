@@ -1,7 +1,0 @@
-var testHandler = new CTestHandler();
-var webSocket   = new CWebSocket(testHandler);
-
-function onLoadJS()
-{
-	webSocket.init();
-}

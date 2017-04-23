@@ -1,0 +1,8 @@
+/**
+ * @file	C1DPhiObsLQR.cpp
+ * @author	Michael Meindl
+ * @date	19.04.2017
+ * @brief	Method definitions for C1DPhiObsLQR.h
+ */
+#include "C1DPhiObsLQR.h"
+

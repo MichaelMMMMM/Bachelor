@@ -1,0 +1,65 @@
+/**
+ * @file	CEdgeBalance.cpp
+ * @author	Michael Meindl
+ * @date	18.04.2017
+ * @brief	Method definitions for CEdgeBalance.
+ */
+#include "CEdgeBalance.h"
+
+CEdgeBalance::CEdgeBalance() : mState(sInitial)
+{
+
+}
+bool CEdgeBalance::dispatch(CMessage& msg)
+{
+	return (this->*mState)(msg);
+}
+bool CEdgeBalance::tryEntry(CMessage& msg, AState*& statePtr)
+{
+	EEvent event = msg.getEvent();
+	if(EEvent::RUN_EDGE_BALANCE == event)
+	{
+		statePtr = this;
+		return true;
+	}
+	return false;
+}
+void CEdgeBalance::onEntry()
+{
+	CMessage init(EEvent::INIT);
+	this->dispatch(init);
+}
+void CEdgeBalance::onExit()
+{
+	CMessage exit(EEvent::EXIT);
+	this->dispatch(exit);
+}
+bool CEdgeBalance::onInitial(CMessage& msg)
+{
+	EEvent event = msg.getEvent();
+	if(EEvent::INIT == event)
+	{
+		mState = sIdle;
+		mAction.entryIdle();
+		return true;
+	}
+	return false;
+}
+bool CEdgeBalance::onIdle(CMessage& msg)
+{
+	EEvent event = msg.getEvent();
+	if(EEvent::EIXT == event)
+	{
+		mAction.exitIdle();
+		mState = sInitial;
+		return true;
+	}
+	if(EEvent::TIMER_TICK == event)
+	{
+		mAction.sample();
+		if(mAction.inBalanceArea())
+		{
+			sInternalQueue = CMessage(EEvent::IN_BALANCE_AREA);
+		}
+	}
+}

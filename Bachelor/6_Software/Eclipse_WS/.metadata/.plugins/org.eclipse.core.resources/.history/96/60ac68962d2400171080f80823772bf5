@@ -1,0 +1,12 @@
+/**
+ * @file	C3DStateEstiamte.cpp
+ * @author	Michael Meindl
+ * @date	18.04.2017
+ * @brief	Method definitions for C3DStateEstimate.
+ */
+#include "C3DStateEstimate.h"
+
+C3DStateEstimate::C3DStateEstimate() : mBx{0.0F}, mBy{0.0F}, mBz{0.0F}
+{
+
+}

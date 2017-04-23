@@ -60,12 +60,16 @@ SOURCES       = ../CuBa_Client/main.cpp \
 		../CuBa_Client/CMessage.cpp \
 		../CuBa_Client/CMPUData.cpp \
 		../CuBa_Client/CRxThread.cpp \
-		../CuBa_Client/CADCData.cpp moc_CMainWindow.cpp \
+		../CuBa_Client/CADCData.cpp \
+		../CuBa_Client/CEdgeBalance.cpp \
+		../CuBa_Client/CCornerBalance.cpp moc_CMainWindow.cpp \
 		moc_CExperimentWidget.cpp \
 		moc_CSensorCalibration.cpp \
 		moc_QCustomPlot.cpp \
 		moc_CADCCalibration.cpp \
-		moc_CRxThread.cpp
+		moc_CRxThread.cpp \
+		moc_CEdgeBalance.cpp \
+		moc_CCornerBalance.cpp
 OBJECTS       = main.o \
 		CMainWindow.o \
 		CExperimentWidget.o \
@@ -79,12 +83,16 @@ OBJECTS       = main.o \
 		CMPUData.o \
 		CRxThread.o \
 		CADCData.o \
+		CEdgeBalance.o \
+		CCornerBalance.o \
 		moc_CMainWindow.o \
 		moc_CExperimentWidget.o \
 		moc_CSensorCalibration.o \
 		moc_QCustomPlot.o \
 		moc_CADCCalibration.o \
-		moc_CRxThread.o
+		moc_CRxThread.o \
+		moc_CEdgeBalance.o \
+		moc_CCornerBalance.o
 DIST          = /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/spec_pre.prf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/common/unix.conf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/common/linux.conf \
@@ -160,7 +168,10 @@ DIST          = /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/spec_pre.prf \
 		../CuBa_Client/Global.h \
 		../CuBa_Client/TMatrix.h \
 		../CuBa_Client/EEvent.h \
-		../CuBa_Client/CADCData.h ../CuBa_Client/main.cpp \
+		../CuBa_Client/CADCData.h \
+		../CuBa_Client/CEdgeBalance.h \
+		../CuBa_Client/E1DControlSystem.h \
+		../CuBa_Client/CCornerBalance.h ../CuBa_Client/main.cpp \
 		../CuBa_Client/CMainWindow.cpp \
 		../CuBa_Client/CExperimentWidget.cpp \
 		../CuBa_Client/CSensorCalibration.cpp \
@@ -172,7 +183,9 @@ DIST          = /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/spec_pre.prf \
 		../CuBa_Client/CMessage.cpp \
 		../CuBa_Client/CMPUData.cpp \
 		../CuBa_Client/CRxThread.cpp \
-		../CuBa_Client/CADCData.cpp
+		../CuBa_Client/CADCData.cpp \
+		../CuBa_Client/CEdgeBalance.cpp \
+		../CuBa_Client/CCornerBalance.cpp
 QMAKE_TARGET  = CuBa_Client
 DESTDIR       = #avoid trailing-slash linebreak
 TARGET        = CuBa_Client
@@ -350,8 +363,8 @@ dist: distdir FORCE
 distdir: FORCE
 	@test -d $(DISTDIR) || mkdir -p $(DISTDIR)
 	$(COPY_FILE) --parents $(DIST) $(DISTDIR)/
-	$(COPY_FILE) --parents ../CuBa_Client/CMainWindow.h ../CuBa_Client/CExperimentWidget.h ../CuBa_Client/CSensorCalibration.h ../CuBa_Client/QCustomPlot.h ../CuBa_Client/CPlot.h ../CuBa_Client/CADCCalibration.h ../CuBa_Client/Assertion.h ../CuBa_Client/CClient.h ../CuBa_Client/CMessage.h ../CuBa_Client/CMPUData.h ../CuBa_Client/CRxThread.h ../CuBa_Client/Global.h ../CuBa_Client/TMatrix.h ../CuBa_Client/EEvent.h ../CuBa_Client/CADCData.h $(DISTDIR)/
-	$(COPY_FILE) --parents ../CuBa_Client/main.cpp ../CuBa_Client/CMainWindow.cpp ../CuBa_Client/CExperimentWidget.cpp ../CuBa_Client/CSensorCalibration.cpp ../CuBa_Client/QCustomPlot.cpp ../CuBa_Client/CPlot.cpp ../CuBa_Client/CADCCalibration.cpp ../CuBa_Client/Assertion.cpp ../CuBa_Client/CClient.cpp ../CuBa_Client/CMessage.cpp ../CuBa_Client/CMPUData.cpp ../CuBa_Client/CRxThread.cpp ../CuBa_Client/CADCData.cpp $(DISTDIR)/
+	$(COPY_FILE) --parents ../CuBa_Client/CMainWindow.h ../CuBa_Client/CExperimentWidget.h ../CuBa_Client/CSensorCalibration.h ../CuBa_Client/QCustomPlot.h ../CuBa_Client/CPlot.h ../CuBa_Client/CADCCalibration.h ../CuBa_Client/Assertion.h ../CuBa_Client/CClient.h ../CuBa_Client/CMessage.h ../CuBa_Client/CMPUData.h ../CuBa_Client/CRxThread.h ../CuBa_Client/Global.h ../CuBa_Client/TMatrix.h ../CuBa_Client/EEvent.h ../CuBa_Client/CADCData.h ../CuBa_Client/CEdgeBalance.h ../CuBa_Client/E1DControlSystem.h ../CuBa_Client/CCornerBalance.h $(DISTDIR)/
+	$(COPY_FILE) --parents ../CuBa_Client/main.cpp ../CuBa_Client/CMainWindow.cpp ../CuBa_Client/CExperimentWidget.cpp ../CuBa_Client/CSensorCalibration.cpp ../CuBa_Client/QCustomPlot.cpp ../CuBa_Client/CPlot.cpp ../CuBa_Client/CADCCalibration.cpp ../CuBa_Client/Assertion.cpp ../CuBa_Client/CClient.cpp ../CuBa_Client/CMessage.cpp ../CuBa_Client/CMPUData.cpp ../CuBa_Client/CRxThread.cpp ../CuBa_Client/CADCData.cpp ../CuBa_Client/CEdgeBalance.cpp ../CuBa_Client/CCornerBalance.cpp $(DISTDIR)/
 
 
 clean: compiler_clean 
@@ -374,9 +387,9 @@ check: first
 
 compiler_rcc_make_all:
 compiler_rcc_clean:
-compiler_moc_header_make_all: moc_CMainWindow.cpp moc_CExperimentWidget.cpp moc_CSensorCalibration.cpp moc_QCustomPlot.cpp moc_CADCCalibration.cpp moc_CRxThread.cpp
+compiler_moc_header_make_all: moc_CMainWindow.cpp moc_CExperimentWidget.cpp moc_CSensorCalibration.cpp moc_QCustomPlot.cpp moc_CADCCalibration.cpp moc_CRxThread.cpp moc_CEdgeBalance.cpp moc_CCornerBalance.cpp
 compiler_moc_header_clean:
-	-$(DEL_FILE) moc_CMainWindow.cpp moc_CExperimentWidget.cpp moc_CSensorCalibration.cpp moc_QCustomPlot.cpp moc_CADCCalibration.cpp moc_CRxThread.cpp
+	-$(DEL_FILE) moc_CMainWindow.cpp moc_CExperimentWidget.cpp moc_CSensorCalibration.cpp moc_QCustomPlot.cpp moc_CADCCalibration.cpp moc_CRxThread.cpp moc_CEdgeBalance.cpp moc_CCornerBalance.cpp
 moc_CMainWindow.cpp: ../CuBa_Client/CRxThread.h \
 		../CuBa_Client/CClient.h \
 		../CuBa_Client/CMessage.h \
@@ -385,11 +398,13 @@ moc_CMainWindow.cpp: ../CuBa_Client/CRxThread.h \
 		../CuBa_Client/EEvent.h \
 		../CuBa_Client/CMPUData.h \
 		../CuBa_Client/CADCData.h \
+		../CuBa_Client/E1DControlSystem.h \
 		../CuBa_Client/CSensorCalibration.h \
 		../CuBa_Client/CExperimentWidget.h \
 		../CuBa_Client/CPlot.h \
 		../CuBa_Client/QCustomPlot.h \
 		../CuBa_Client/CADCCalibration.h \
+		../CuBa_Client/CEdgeBalance.h \
 		../CuBa_Client/CMainWindow.h
 	/usr/lib/x86_64-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64 -I/home/michael/Desktop/Bachelor/Bachelor/6_Software/QT_WS/CuBa_Client -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I/usr/include/c++/5 -I/usr/include/x86_64-linux-gnu/c++/5 -I/usr/include/c++/5/backward -I/usr/lib/gcc/x86_64-linux-gnu/5/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include ../CuBa_Client/CMainWindow.h -o moc_CMainWindow.cpp
 
@@ -424,8 +439,24 @@ moc_CRxThread.cpp: ../CuBa_Client/CClient.h \
 		../CuBa_Client/EEvent.h \
 		../CuBa_Client/CMPUData.h \
 		../CuBa_Client/CADCData.h \
+		../CuBa_Client/E1DControlSystem.h \
 		../CuBa_Client/CRxThread.h
 	/usr/lib/x86_64-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64 -I/home/michael/Desktop/Bachelor/Bachelor/6_Software/QT_WS/CuBa_Client -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I/usr/include/c++/5 -I/usr/include/x86_64-linux-gnu/c++/5 -I/usr/include/c++/5/backward -I/usr/lib/gcc/x86_64-linux-gnu/5/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include ../CuBa_Client/CRxThread.h -o moc_CRxThread.cpp
+
+moc_CEdgeBalance.cpp: ../CuBa_Client/CExperimentWidget.h \
+		../CuBa_Client/CPlot.h \
+		../CuBa_Client/QCustomPlot.h \
+		../CuBa_Client/E1DControlSystem.h \
+		../CuBa_Client/Global.h \
+		../CuBa_Client/Assertion.h \
+		../CuBa_Client/CEdgeBalance.h
+	/usr/lib/x86_64-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64 -I/home/michael/Desktop/Bachelor/Bachelor/6_Software/QT_WS/CuBa_Client -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I/usr/include/c++/5 -I/usr/include/x86_64-linux-gnu/c++/5 -I/usr/include/c++/5/backward -I/usr/lib/gcc/x86_64-linux-gnu/5/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include ../CuBa_Client/CEdgeBalance.h -o moc_CEdgeBalance.cpp
+
+moc_CCornerBalance.cpp: ../CuBa_Client/CExperimentWidget.h \
+		../CuBa_Client/CPlot.h \
+		../CuBa_Client/QCustomPlot.h \
+		../CuBa_Client/CCornerBalance.h
+	/usr/lib/x86_64-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64 -I/home/michael/Desktop/Bachelor/Bachelor/6_Software/QT_WS/CuBa_Client -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I/usr/include/c++/5 -I/usr/include/x86_64-linux-gnu/c++/5 -I/usr/include/c++/5/backward -I/usr/lib/gcc/x86_64-linux-gnu/5/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include ../CuBa_Client/CCornerBalance.h -o moc_CCornerBalance.cpp
 
 compiler_moc_source_make_all:
 compiler_moc_source_clean:
@@ -450,11 +481,14 @@ main.o: ../CuBa_Client/main.cpp ../CuBa_Client/CMainWindow.h \
 		../CuBa_Client/EEvent.h \
 		../CuBa_Client/CMPUData.h \
 		../CuBa_Client/CADCData.h \
+		../CuBa_Client/E1DControlSystem.h \
 		../CuBa_Client/CSensorCalibration.h \
 		../CuBa_Client/CExperimentWidget.h \
 		../CuBa_Client/CPlot.h \
 		../CuBa_Client/QCustomPlot.h \
-		../CuBa_Client/CADCCalibration.h
+		../CuBa_Client/CADCCalibration.h \
+		../CuBa_Client/CEdgeBalance.h \
+		../CuBa_Client/TMatrix.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o ../CuBa_Client/main.cpp
 
 CMainWindow.o: ../CuBa_Client/CMainWindow.cpp ../CuBa_Client/CMainWindow.h \
@@ -466,11 +500,13 @@ CMainWindow.o: ../CuBa_Client/CMainWindow.cpp ../CuBa_Client/CMainWindow.h \
 		../CuBa_Client/EEvent.h \
 		../CuBa_Client/CMPUData.h \
 		../CuBa_Client/CADCData.h \
+		../CuBa_Client/E1DControlSystem.h \
 		../CuBa_Client/CSensorCalibration.h \
 		../CuBa_Client/CExperimentWidget.h \
 		../CuBa_Client/CPlot.h \
 		../CuBa_Client/QCustomPlot.h \
-		../CuBa_Client/CADCCalibration.h
+		../CuBa_Client/CADCCalibration.h \
+		../CuBa_Client/CEdgeBalance.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o CMainWindow.o ../CuBa_Client/CMainWindow.cpp
 
 CExperimentWidget.o: ../CuBa_Client/CExperimentWidget.cpp ../CuBa_Client/CExperimentWidget.h
@@ -529,13 +565,29 @@ CRxThread.o: ../CuBa_Client/CRxThread.cpp ../CuBa_Client/CRxThread.h \
 		../CuBa_Client/Assertion.h \
 		../CuBa_Client/EEvent.h \
 		../CuBa_Client/CMPUData.h \
-		../CuBa_Client/CADCData.h
+		../CuBa_Client/CADCData.h \
+		../CuBa_Client/E1DControlSystem.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o CRxThread.o ../CuBa_Client/CRxThread.cpp
 
 CADCData.o: ../CuBa_Client/CADCData.cpp ../CuBa_Client/CADCData.h \
 		../CuBa_Client/Global.h \
 		../CuBa_Client/Assertion.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o CADCData.o ../CuBa_Client/CADCData.cpp
+
+CEdgeBalance.o: ../CuBa_Client/CEdgeBalance.cpp ../CuBa_Client/CEdgeBalance.h \
+		../CuBa_Client/CExperimentWidget.h \
+		../CuBa_Client/CPlot.h \
+		../CuBa_Client/QCustomPlot.h \
+		../CuBa_Client/E1DControlSystem.h \
+		../CuBa_Client/Global.h \
+		../CuBa_Client/Assertion.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o CEdgeBalance.o ../CuBa_Client/CEdgeBalance.cpp
+
+CCornerBalance.o: ../CuBa_Client/CCornerBalance.cpp ../CuBa_Client/CCornerBalance.h \
+		../CuBa_Client/CExperimentWidget.h \
+		../CuBa_Client/CPlot.h \
+		../CuBa_Client/QCustomPlot.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o CCornerBalance.o ../CuBa_Client/CCornerBalance.cpp
 
 moc_CMainWindow.o: moc_CMainWindow.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_CMainWindow.o moc_CMainWindow.cpp
@@ -554,6 +606,12 @@ moc_CADCCalibration.o: moc_CADCCalibration.cpp
 
 moc_CRxThread.o: moc_CRxThread.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_CRxThread.o moc_CRxThread.cpp
+
+moc_CEdgeBalance.o: moc_CEdgeBalance.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_CEdgeBalance.o moc_CEdgeBalance.cpp
+
+moc_CCornerBalance.o: moc_CCornerBalance.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_CCornerBalance.o moc_CCornerBalance.cpp
 
 ####### Install
 

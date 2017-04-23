@@ -59,13 +59,20 @@ bool CCommFSM::onRunning(CMessage& msg)
 		mState = sInitial;
 		return true;
 	}
-	if( (EEvent::SENSOR1DATA == event) ||
-		(EEvent::SENSOR2DATA == event) ||
-		(EEvent::SENSOR3DATA == event) ||
-		(EEvent::SENSOR4DATA == event) ||
-		(EEvent::SENSOR5DATA == event) ||
-		(EEvent::SENSOR6DATA == event) ||
-		(EEvent::ADCDATA == event))
+	if( (EEvent::SENSOR1DATA == event) 			||
+		(EEvent::SENSOR2DATA == event) 			||
+		(EEvent::SENSOR3DATA == event) 			||
+		(EEvent::SENSOR4DATA == event) 			||
+		(EEvent::SENSOR5DATA == event) 			||
+		(EEvent::SENSOR6DATA == event) 			||
+		(EEvent::ADCDATA == event)	   			||
+		(EEvent::PHIOBSLQR_1D_DATA == event)    ||
+		(EEvent::OFFSETOBSLQR_1D_DATA == event) ||
+		(EEvent::COMPLQR_3D_PHI == event)		||
+		(EEvent::COMPLQR_3D_UK == event) 		||
+		(EEvent::COMPLQR_3D_UR == event) 		||
+		(EEvent::COMPLQR_3D_TM == event)		||
+		(EEvent::COMPLQR_1D_DATA == event))
 	{
 		sAction.transmitMessage(msg);
 		return true;

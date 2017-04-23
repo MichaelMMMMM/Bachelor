@@ -35,3 +35,17 @@ void CSensorData::display()
 	cout << "ADC Data:        ";
 	mADCData.display();
 }
+CSensorFloatData::CSensorFloatData() : mST1_A{0.0F},
+									   mST2_A{0.0F},
+									   mST3_A{0.0F},
+									   mST4_A{0.0F},
+									   mS1_W{0.0F},
+									   mS2_W{0.0F},
+									   mS3_W{0.0F},
+									   mS4_W{0.0F},
+									   mS5_W{0.0F},
+									   mS6_W{0.0F},
+									   mADC{0.0F}
+{
+
+}

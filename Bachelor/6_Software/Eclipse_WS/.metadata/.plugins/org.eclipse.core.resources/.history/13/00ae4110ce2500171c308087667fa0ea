@@ -1,0 +1,44 @@
+/**
+ * @file	CCornerBalance.cpp
+ * @author	Michael Meindl
+ * @date	20.04.2017
+ * @brief	Method definitions for CCornerBalance.
+ */
+#include "CCornerBalance.h"
+
+CCornerBalance::CCornerBalance() : mState(sInitial)
+{
+
+}
+bool CCornerBalance::dispatch(CMessage& msg)
+{
+	bool consumed = (this->*mState)(msg);
+
+	if(consumed == false)
+	{
+
+	}
+	return consumed;
+}
+bool CCornerBalance::tryEntry(CMessage& msg, AState*& statePtr)
+{
+	EEvent event = msg.getEvent();
+	if(EEvent::RUN_CORNER_BALANCE == event)
+	{
+		statePtr = this;
+		return true;
+	}
+	return false;
+}
+void CCornerBalance::onEntry()
+{
+	mAction.entryCornerBalance();
+	CMessage init(EEvent::INIT);
+	this->dispatch(init);
+}
+void CCornerBalance::onExit()
+{
+	CMessage exit(EEvent::EXIT);
+	this->dispatch(exit);
+	mAction.exitCornerBalance();
+}

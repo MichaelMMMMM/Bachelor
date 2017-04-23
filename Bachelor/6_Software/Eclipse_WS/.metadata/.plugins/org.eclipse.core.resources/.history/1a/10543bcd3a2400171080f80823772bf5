@@ -1,0 +1,19 @@
+/**
+ * @file	TLQR.h
+ * @author	Michael Meindl
+ * @date	18.04.2017
+ * @brief	Template class to calcualte the state controller.
+ */
+#ifndef TLQR_H
+#define TLQR_H
+#include "TMatrix.h"
+
+template<UInt32 nbrX, UInt32 nbrU>
+class TLQR
+{
+public:
+	using InputType		= TRVector<nbrX>;
+	using OutputType	= TRVector<nbrU>;
+};
+
+#endif

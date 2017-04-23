@@ -1,0 +1,31 @@
+/**
+ * @file	C1DOffsetObsLQR.cpp
+ * @author	Michael Meindl
+ * @date	19.04.2017
+ * @brief	Method definitions for C1DOffsetObsLQR.
+ */
+#include "C1DOffsetObsLQR.h"
+
+C1DOffsetObsLQR::C1DOffsetObsLQR()
+{
+	mLQR.init("config/Edge_Kd.csv");
+	mObserver.init("config/Edge_Ao.csv",
+				   "config/Edge_Bo.csv",
+				   "config/Edge_Co.csv",
+				   "config/Edge_Lo.csv");
+}
+const C1DOffsetObsLQR::OutputType& C1DOffsetObsLQR::calcOutput(const C1DOffsetObsLQR::InputType& input)
+{
+	auto y   = mCompFilter.calcOutput(input);
+	auto x_o = mObserver.calcOutput(y);
+	TRVector<3U> x;
+	x[1][1]  = y[1][1] - x_o[4][1];
+	x[2][1]  = y[2][1] - x_o[5][1];
+	x[3][1]  = y[3][1] - x_o[6][1];
+	mOutput  = mLQR.calcOutput(x);
+	return mOutput;
+}
+const C1DOffsetObsLQR::OutputType& C1DOffsetObsLQR::getValue() const
+{
+	return mOutput;
+}

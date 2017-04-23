@@ -27,6 +27,13 @@ public:
 	bool routeClientMessage(CMessage& msg, bool waitForever);
 	bool transmitSensorData(UInt32 sensorIndex, Float32 time, CMPUData& data, bool waitForever);
 	bool transmitADCData(Float32 time, CADCData& data, bool waitForever);
+	bool transmit1DCompLQRData(Float32 time, TRVector<4U>& data, bool waitForever);
+	bool transmit1DPhiObsLQRData(Float32 time, TRVector<4U>& data, bool waitForever);
+	bool transmit1DOffsetObsLQRData(Float32 time, TRVector<4U>& data, bool waitForever);
+	bool transmit3DCompLQRPhi(Float32 time, TRVector<2U>& data, bool waitForever);
+	bool transmit3DCompLQRUK(Float32 time, TRVector<3U>& data, bool waitForever);
+	bool transmit3DCompLQRUR(Float32 time, TRVector<3U>& data, bool waitForever);
+	bool transmit3DCompLQRTM(Float32 time, TRVector<3U>& data, bool waitForever);
 private:
 	CProxy();
 	CProxy(const CProxy&) = delete;

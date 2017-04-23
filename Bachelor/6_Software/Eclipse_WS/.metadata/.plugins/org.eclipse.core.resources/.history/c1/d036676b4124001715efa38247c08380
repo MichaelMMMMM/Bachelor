@@ -1,0 +1,11 @@
+/**
+ * @file	CEdgeBalance.h
+ * @author	Michael Meindl
+ * @date	18.04.2017
+ * @brief	State to handle the edge balancing.
+ */
+#ifndef CEDGEBALANCE_H
+#define CEDGEBALANCE_H
+#include "AState.h"
+
+#endif

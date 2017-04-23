@@ -1,0 +1,40 @@
+/**
+ * @file	C3DStateEstiamte.cpp
+ * @author	Michael Meindl
+ * @date	18.04.2017
+ * @brief	Method definitions for C3DStateEstimate.
+ */
+#include "C3DStateEstimate.h"
+
+C3DStateEstimate::C3DStateEstimate() : mBx{0.0F}, mBy{0.0F}, mBz{0.0F}
+{
+
+}
+const C3DStateEstimate::OutputType& C3DStateEstimate::calcOutput(const C3DStateEstimate::InputType& input)
+{
+	this->estimatePhi(input);
+	this->estimateUK(input);
+	this->estimateUR(input);
+
+	return mOutput;
+}
+void C3DStateEstimate::estimatePhi(const C3DStateEstimate::InputType& input)
+{
+
+}
+void C3DStateEstimate::estimateUK(const C3DStateEstimate::InputType& input)
+{
+	mOutput[4] = (input.mS1_W[0] + input.mS2_W[0] + input.mS3_W[0] +
+				  input.mS4_W[0] + input.mS5_W[0] + input.mS6_W[0]) / 6.0F;
+	mOutput[5] = (input.mS1_W[1] + input.mS2_W[1] + input.mS3_W[1] +
+				  input.mS4_W[1] + input.mS5_W[1] + input.mS6_W[1]) / 6.0F;
+	mOutput[6] = (input.mS1_W[2] + input.mS2_W[2] + input.mS3_W[2] +
+				  input.mS4_W[2] + input.mS5_W[2] + input.mS6_W[2]) / 6.0F;
+}
+void C3DStateEstimate::estimateUR(const C3DStateEstimate::InputType& input)
+{
+	for(UInt32 n = 0U; n < 3U; n++)
+	{
+		mOutput[7U+n][1] = input.mADC[n] + mOutput[4U+n];
+	}
+}

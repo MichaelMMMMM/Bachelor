@@ -1,0 +1,7 @@
+/**
+ * @file	C1DOffsetObsLQR.cpp
+ * @author	Michael Meindl
+ * @date	19.04.2017
+ * @brief	Method definitions for C1DOffsetObsLQR.
+ */
+#include "C1DOffsetObsLQR.h"

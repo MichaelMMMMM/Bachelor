@@ -1,4 +1,6 @@
 #include "CSensorCalibration.h"
+#include <cstdlib>
+#include <string>
 
 CSensorCalibration::CSensorCalibration() : mNumberOfValues(500), mReceivedValues(0)
 {
@@ -44,6 +46,27 @@ void CSensorCalibration::createControls()
     mValuesLayoutPtr->addWidget(mValuesSpinBoxPtr);
     mControlLayoutPtr->addLayout(mValuesLayoutPtr);
 
+    mPhiLayoutPtr       = new QHBoxLayout;
+    mPhiLabelPtr        = new QLabel("Phi-Index");
+    mPhiSpinBoxPtr      = new QSpinBox;
+    mPhiSpinBoxPtr->setMaximum(3);
+    mPhiSpinBoxPtr->setMinimum(1);
+    mPhiSpinBoxPtr->setValue(1);
+    mPhiLayoutPtr->addWidget(mPhiLabelPtr);
+    mPhiLayoutPtr->addWidget(mPhiSpinBoxPtr);
+    mControlLayoutPtr->addLayout(mPhiLayoutPtr);
+
+    mDegLayoutPtr       = new QHBoxLayout;
+    mDegLabelPtr        = new QLabel("Angle");
+    mDegSpinBoxPtr      = new QSpinBox;
+    mDegSpinBoxPtr->setMaximum(90);
+    mDegSpinBoxPtr->setMinimum(-90);
+    mDegSpinBoxPtr->setValue(0);
+    mDegSpinBoxPtr->setSingleStep(15);
+    mDegLayoutPtr->addWidget(mDegLabelPtr);
+    mDegLayoutPtr->addWidget(mDegSpinBoxPtr);
+    mControlLayoutPtr->addLayout(mDegLayoutPtr);
+
     mControlLayoutPtr->addStretch();
 
     QObject::connect(mValuesSpinBoxPtr, SIGNAL(valueChanged(int)),
@@ -67,12 +90,14 @@ void CSensorCalibration::sensor1DataReceivedSLOT(double time, const CMPUData& da
         QVector<std::string> varNames;
         varNames.append("a_x"); varNames.append("a_y"); varNames.append("a_z");
         varNames.append("w_x"); varNames.append("w_y"); varNames.append("w_z");
-        mSensor1PlotPtr->saveCSV("SensorCalibration/sensor1data.csv", varNames);
-        mSensor2PlotPtr->saveCSV("SensorCalibration/sensor2data.csv", varNames);
-        mSensor3PlotPtr->saveCSV("SensorCalibration/sensor3data.csv", varNames);
-        mSensor4PlotPtr->saveCSV("SensorCalibration/sensor4data.csv", varNames);
-        mSensor5PlotPtr->saveCSV("SensorCalibration/sensor5data.csv", varNames);
-        mSensor6PlotPtr->saveCSV("SensorCalibration/sensor6data.csv", varNames);
+        std::string appendix = "_phi" + std::to_string(mPhiSpinBoxPtr->value()) + "_" + std::to_string(mDegSpinBoxPtr->value()) + ".csv";
+        //QString appendix = "_phi" + QString(std::to_string(mPhiSpinBoxPtr->value())) + "_" + QString(std::to_string(mDegSpinBoxPtr->value())) + ".csv";
+        mSensor1PlotPtr->saveCSV( "SensorCalibration/s1" + appendix, varNames);
+        mSensor2PlotPtr->saveCSV( "SensorCalibration/s2" + appendix, varNames);
+        mSensor3PlotPtr->saveCSV( "SensorCalibration/s3" + appendix, varNames);
+        mSensor4PlotPtr->saveCSV( "SensorCalibration/s4" + appendix, varNames);
+        mSensor5PlotPtr->saveCSV( "SensorCalibration/s5" + appendix, varNames);
+        mSensor6PlotPtr->saveCSV( "SensorCalibration/s6" + appendix, varNames);
     }
 }
 void CSensorCalibration::sensor2DataReceivedSLOT(double time, const CMPUData& data)

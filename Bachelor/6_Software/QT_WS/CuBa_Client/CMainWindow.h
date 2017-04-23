@@ -5,6 +5,8 @@
 #include <CRxThread.h>
 #include "CSensorCalibration.h"
 #include "CADCCalibration.h"
+#include "CEdgeBalance.h"
+#include "CCornerBalance.h"
 
 class CMainWindow : public QMainWindow
 {
@@ -12,6 +14,8 @@ class CMainWindow : public QMainWindow
 public slots:
     void selectSensorCalibrationSLOT();
     void selectADCCalibrationSLOT();
+    void selectEdgeBalanceSLOT();
+    void selectCornerBalanceSLOT();
 public:
     CMainWindow(QWidget *parent = 0);
     ~CMainWindow();
@@ -25,6 +29,8 @@ private:
     QWidget*            mDummyPtr;
     CSensorCalibration* mSensorCalibrationPtr;
     CADCCalibration*    mADCCalibrationPtr;
+    CEdgeBalance*       mEdgeBalancePtr;
+    CCornerBalance*     mCornerBalancePtr;
 };
 
 #endif // CMAINWINDOW_H

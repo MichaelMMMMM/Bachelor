@@ -1,0 +1,61 @@
+/**
+ * @file	CSensorData.cpp
+ * @author	Michael Meindl
+ * @date	07.02.2017
+ * @brief	Method definitions for CSensorData.
+ */
+#include "CSensorData.h"
+#include <iostream>
+using namespace std;
+
+CSensorData::CSensorData()
+{
+
+}
+void CSensorData::display()
+{
+	cout << "Sensor 1 Data:   ";
+	mSensor1Data.display();
+
+	cout << "Sensor 2 Data:   ";
+	mSensor2Data.display();
+
+	cout << "Sensor 3 Data:   ";
+	mSensor3Data.display();
+
+	cout << "Sensor 4 Data:   ";
+	mSensor4Data.display();
+
+	cout << "Sensor 5 Data:   ";
+	mSensor5Data.display();
+
+	cout << "Sensor 6 Data:   ";
+	mSensor6Data.display();
+
+	cout << "ADC Data:        ";
+	mADCData.display();
+}
+CSensorFloatData::CSensorFloatData() : mST1_A{0.0F},
+									   mST2_A{0.0F},
+									   mST3_A{0.0F},
+									   mST4_A{0.0F},
+									   mS1_W{0.0F},
+									   mS2_W{0.0F},
+									   mS3_W{0.0F},
+									   mS4_W{0.0F},
+									   mS5_W{0.0F},
+									   mS6_W{0.0F},
+									   mADC{0.0F}
+{
+	Float32	mST1_A[3];		///! Array holding x,y,z accelerations of the artificial sensor 1
+	Float32 mST2_A[3];		///! Array holding x,y,z accelerations of the artificial sensor 2
+	Float32 mST3_A[3];		///! Array holding x,y,z accelerations of the artificial sensor 3
+	Float32 mST4_A[3];		///! Array holding x,y,z accelerations of the artificial sensor 4
+	Float32 mS1_W[3];		///! Array holding x,y,z angular velocities of sensor 1
+	Float32 mS2_W[3];		///! Array holding x,y,z angular velocities of sensor 2
+	Float32 mS3_W[3];		///! Array holding x,y,z angular velocities of sensor 3
+	Float32 mS4_W[3];		///! Array holding x,y,z angular velocities of sensor 4
+	Float32 mS5_W[3];		///! Array holding x,y,z angular velocities of sensor 5
+	Float32 mS6_W[3];		///! Array holding x,y,z angular velocities of sensor 6
+	Float32 mADC[3];		///! Array holding angular velocities from the ADC-Values
+}

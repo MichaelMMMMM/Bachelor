@@ -1,0 +1,12 @@
+/**
+ * @file	CEdgeBalanceAction.h
+ * @author	Michael Meindl
+ * @date	18.04.2017
+ * @brief	Action handler for balancing on the edge.
+ */
+#ifndef CEDGEBALANCEACTION_H
+#define CEDGEBALANCEACTION_H
+#include "TLinHierachy.h"
+
+
+#endif

@@ -32,8 +32,8 @@ private:
 	static constexpr Float32 sPi		   = 3.141592653589793F;
 	static constexpr Float32 sG_0         = -5.6638F;
 	static constexpr Float32 sG_k1_Offset  = 0.0F;
-	static constexpr Float32 sG_k2_Offset  = -0.615479708670387F - 0.072F;
-	static constexpr Float32 sG_k3_Offset  = 0.785398163397448F  + 0.065F;
+	static constexpr Float32 sG_k2_Offset  = -0.615479708670387F - 0.025F;
+	static constexpr Float32 sG_k3_Offset  = 0.785398163397448F + 0.043F;//  + 0.065F;
 	static constexpr Float32 sUK_k1_Offset = 0.0020673F;
 	static constexpr Float32 sUK_k2_Offset = 0.0010100F;
 	static constexpr Float32 sUK_k3_Offset = 0.0018871F;

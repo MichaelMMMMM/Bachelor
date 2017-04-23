@@ -1,8 +1,0 @@
-#include "CWebSocket.h"
-
-int main()
-{
-	CWebSocket socket(18000);
-	socket.run();
-	return 0;
-}

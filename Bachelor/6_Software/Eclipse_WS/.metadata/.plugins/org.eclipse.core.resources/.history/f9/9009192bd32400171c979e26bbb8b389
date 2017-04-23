@@ -1,0 +1,15 @@
+/**
+ * @file	C1DCompLQR.h
+ * @author	Michael Meindl
+ * @date	19.04.2017
+ * @brief	Subsystem to handle the signal flow of Complementary-Filter->LQR->Saturation.
+ */
+#ifndef C1DCOMPLQR_H
+#define C1DCOMPLQR_H
+#include "TLinHierachy.h"
+#include "TActionHolder.h"
+#include "TLQR.h"
+#include "C1DCompFilter.h"
+#include
+
+#endif

@@ -22,7 +22,8 @@ public:
 	TMatrix<n_R, n_C> operator+(const TMatrix<n_R, n_C>& summand) const;
 	TMatrix<n_R, n_C> operator-(const TMatrix<n_R, n_C>& subtrahend) const;
 	template<const UInt32 n_C_new>
-	TMatrix<n_R, n_C_new> operator*(TMatrix<n_C, n_C_new>& factor);
+	TMatrix<n_R, n_C_new> operator*(const TMatrix<n_C, n_C_new>& factor);
+	TMatrix<n_R, n_C> operator*(Float32 factor);
 public:
 	TMatrix();
 	TMatrix(const std::string& filename);
@@ -33,13 +34,14 @@ private:
 	TCVector<n_C> mMatrix[n_R];
 };
 
-template<UInt32 n_C>
-using TRVector = TMatrix<1U, n_C>;
+template<UInt32 n_R>
+using TRVector = TMatrix<n_R, 1>;
 
 template<const UInt32 n_R, const UInt32 n_C>
 template<const UInt32 n_C_new>
-TMatrix<n_R, n_C_new> TMatrix<n_R, n_C>::operator*(TMatrix<n_C, n_C_new>& factor)
+TMatrix<n_R, n_C_new> TMatrix<n_R, n_C>::operator*(const TMatrix<n_C, n_C_new>& f)
 {
+	TMatrix<n_C, n_C_new> factor = f;
 	TMatrix<n_R, n_C_new> ret;
 	for(UInt32 ir = 0; ir < n_R; ir++)
 	{
@@ -51,6 +53,16 @@ TMatrix<n_R, n_C_new> TMatrix<n_R, n_C>::operator*(TMatrix<n_C, n_C_new>& factor
 				ret[ir+1][ic+1] += (*this)[ir+1][i+1] * factor[i+1][ic+1];
 			}
 		}
+	}
+	return ret;
+}
+template<const UInt32 n_R, const UInt32 n_C>
+TMatrix<n_R, n_C> TMatrix<n_R, n_C>::operator*(Float32 factor)
+{
+	TMatrix<n_R, n_C> ret;
+	for(UInt32 ir = 0; ir < n_R; ir++)
+	{
+		ret.mMatrix[ir] = this->mMatrix[ir] * factor;
 	}
 	return ret;
 }

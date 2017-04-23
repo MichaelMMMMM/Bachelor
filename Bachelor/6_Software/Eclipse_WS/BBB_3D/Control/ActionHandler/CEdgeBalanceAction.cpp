@@ -91,7 +91,7 @@ void CEdgeBalanceAction::sampleControl()
 
 			sProxy.transmitLQGData1D(data, false);
 
-			Float32 u_off = mSine.getValue(mTime);
+			Float32 u_off = 0.0F;//mSine.getValue(mTime);
 
 			if(mLQRFlag == true)
 			{

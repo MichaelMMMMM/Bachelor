@@ -1,0 +1,37 @@
+/**
+ * @file	CEdgeBalanceAction.h
+ * @author	Michael Meindl
+ * @date	18.04.2017
+ * @brief	Action handler for balancing on the edge.
+ */
+#ifndef CEDGEBALANCEACTION_H
+#define CEDGEBALANCEACTION_H
+#include "TLinHierarchy.h"
+#include "CHardware.h"
+#include "CF1Calib.h"
+#include "C3DStateEstimate.h"
+#include "C1DStateReduction.h"
+#include "C1DCompFilter.h"
+#include "TLQR.h"
+
+class CEdgeBalanceAction
+{
+public:
+	void entryEdgeBalance();
+	void exitEdgeBalance();
+	void entryIdle();
+	void exitIdle();
+	void entryBalance();
+	void exitBalance();
+public:
+	CEdgeBalanceAction();
+	CEdgeBalanceAction(const CEdgeBalanceAction&) = delete;
+	CEdgeBalanceAction& operator=(const CEdgeBalanceAction&) = delete;
+	~CEdgeBalanceAction() = default;
+private:
+	using Controller = TLQR<3U, 1U>;
+	using ActionList = TYPELIST_6(CF1Calib, C3DStateEstimate, C1DStateReduction, C1DCompFilter, Controller);
+};
+
+
+#endif

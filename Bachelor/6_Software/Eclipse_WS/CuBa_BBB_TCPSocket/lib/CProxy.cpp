@@ -90,4 +90,68 @@ bool CProxy::transmitADCData(Float32 time, CADCData& data, bool waitForever)
 	*reinterpret_cast<CADCData*>(msg.getDataPtr()) = data;
 	return mCommPtr->mQueue.pushBack(msg, waitForever);
 }
-
+bool CProxy::transmit1DCompLQRData(Float32 time, TRVector<4U>& data, bool waitForever)
+{
+	CMessage msg(EEvent::COMPLQR_1D_DATA, time);
+	Float32* ptr = reinterpret_cast<Float32*>(msg.getDataPtr());
+	ptr[0] = data[1][1];
+	ptr[1] = data[2][1];
+	ptr[2] = data[3][1];
+	ptr[3] = data[4][1];
+	return mCommPtr->mQueue.pushBack(msg, waitForever);
+}
+bool CProxy::transmit1DPhiObsLQRData(Float32 time, TRVector<4U>& data, bool waitForever)
+{
+	CMessage msg(EEvent::PHIOBSLQR_1D_DATA, time);
+	Float32* ptr = reinterpret_cast<Float32*>(msg.getDataPtr());
+	ptr[0] = data[1][1];
+	ptr[1] = data[2][1];
+	ptr[2] = data[3][1];
+	ptr[3] = data[4][1];
+	return mCommPtr->mQueue.pushBack(msg, waitForever);
+}
+bool CProxy::transmit1DOffsetObsLQRData(Float32 time, TRVector<4U>& data, bool waitForever)
+{
+	CMessage msg(EEvent::OFFSETOBSLQR_1D_DATA, time);
+	Float32* ptr = reinterpret_cast<Float32*>(msg.getDataPtr());
+	ptr[0] = data[1][1];
+	ptr[1] = data[2][1];
+	ptr[2] = data[3][1];
+	ptr[3] = data[4][1];
+	return mCommPtr->mQueue.pushBack(msg, waitForever);
+}
+bool CProxy::transmit3DCompLQRPhi(Float32 time, TRVector<2U>& data, bool waitForever)
+{
+	CMessage msg(EEvent::COMPLQR_3D_PHI, time);
+	Float32* ptr = reinterpret_cast<Float32*>(msg.getDataPtr());
+	ptr[0] = data[1][1];
+	ptr[1] = data[2][1];
+	return mCommPtr->mQueue.pushBack(msg, waitForever);
+}
+bool CProxy::transmit3DCompLQRUK(Float32 time, TRVector<3U>& data, bool waitForever)
+{
+	CMessage msg(EEvent::COMPLQR_3D_UK, time);
+	Float32* ptr = reinterpret_cast<Float32*>(msg.getDataPtr());
+	ptr[0] = data[1][1];
+	ptr[1] = data[2][1];
+	ptr[2] = data[3][1];
+	return mCommPtr->mQueue.pushBack(msg, waitForever);
+}
+bool CProxy::transmit3DCompLQRUR(Float32 time, TRVector<3U>& data, bool waitForever)
+{
+	CMessage msg(EEvent::COMPLQR_3D_UR, time);
+	Float32* ptr = reinterpret_cast<Float32*>(msg.getDataPtr());
+	ptr[0] = data[1][1];
+	ptr[1] = data[2][1];
+	ptr[2] = data[3][1];
+	return mCommPtr->mQueue.pushBack(msg, waitForever);
+}
+bool CProxy::transmit3DCompLQRTM(Float32 time, TRVector<3U>& data, bool waitForever)
+{
+	CMessage msg(EEvent::COMPLQR_3D_TM, time);
+	Float32* ptr = reinterpret_cast<Float32*>(msg.getDataPtr());
+	ptr[0] = data[1][1];
+	ptr[1] = data[2][1];
+	ptr[2] = data[3][1];
+	return mCommPtr->mQueue.pushBack(msg, waitForever);
+}

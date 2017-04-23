@@ -1,6 +1,6 @@
-10:11:22 **** Incremental Build of configuration Debug for project HWTest_3D ****
+12:55:34 **** Incremental Build of configuration Debug for project HWTest_3D ****
 make all 
 make: Nothing to be done for 'all'.
 
-10:11:22 Build Finished (took 95ms)
+12:55:34 Build Finished (took 81ms)
 

@@ -1,0 +1,61 @@
+/**
+ * @file	CEdgeBalanceAction.cpp
+ * @author	Michael Meindl
+ * @date	18.04.2017
+ * @brief	Method definitions for CEdgeBalanceAction.
+ **/
+#include "CEdgeBalanceAction.h"
+#include <iostream>
+
+CEdgeBalanceAction::CEdgeBalanceAction() : mTime(0.0F)
+{
+	mSignalFlow.TLQR<3U, 1U>::init("config/Edge_Kd.csv");
+}
+void CEdgeBalanceAction::entryBalance()
+{
+	std::cout << "[*] Control-Comp: Entering Edge-Balance/Balance . . . " << std::endl;
+	sHardware.enableMotor();
+}
+void CEdgeBalanceAction::exitBalance()
+{
+	std::cout << "[*] Control-Comp: Exiting Edge-Balance/Balance . . . " << std::endl;
+	sHardware.disableMotor();
+}
+void CEdgeBalanceAction::entryEdgeBalance()
+{
+	std::cout << "[*] Control-Comp: Entering Edge-Balance . . . " << std::endl;
+	mTime = 0.0F;
+	sTimerTask.setPeriodMS(20);
+	sTimerTask.resume(true);
+}
+void CEdgeBalanceAction::exitEdgeBalance()
+{
+	std::cout << "[*] Control-Comp: Exiting Edge-Balance . . . " << std::endl;
+	sTimerTask.pause(true);
+}
+void CEdgeBalanceAction::entryIdle()
+{
+	std::cout << "[*] Control-Comp: Entering Edge-Balance/Idle . . . " << std::endl;
+}
+void CEdgeBalanceAction::exitIdle()
+{
+	std::cout << "[*] Control-Comp: Exiting Edge-Balance/Idle . . . " << std::endl;
+}
+void CEdgeBalanceAction::sample()
+{
+	CSensorData sensor_data;
+	if(sHardware.fetchSensorData(sensor_data))
+	{
+		mSignalFlow.calcOutput(sensor_data);
+	}
+	else
+	{
+		std::cout << "[*] Control-Comp: Failed to read Sensor-Values . . . " << std::endl;
+	}
+}
+bool CEdgeBalanceAction::inBalanceArea()
+{
+	TRVector<3U> copy = mSignalFlow.C1DCompFilter::getValue();
+	Float32 phi       = copy[1][1] > 0.0F ? copy[1][1] : -copy[1][1];
+	phi			      = phi
+}

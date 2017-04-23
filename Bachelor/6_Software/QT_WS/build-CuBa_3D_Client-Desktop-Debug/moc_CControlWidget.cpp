@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'CControlWidget.h'
 **
-** Created by: The Qt Meta Object Compiler version 67 (Qt 5.2.1)
+** Created by: The Qt Meta Object Compiler version 67 (Qt 5.5.1)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
@@ -12,7 +12,7 @@
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'CControlWidget.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 67
-#error "This file was generated using the moc from 5.2.1. It"
+#error "This file was generated using the moc from 5.5.1. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
@@ -20,37 +20,38 @@
 QT_BEGIN_MOC_NAMESPACE
 struct qt_meta_stringdata_CControlWidget_t {
     QByteArrayData data[22];
-    char stringdata[286];
+    char stringdata0[285];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-    offsetof(qt_meta_stringdata_CControlWidget_t, stringdata) + ofs \
-        - idx * sizeof(QByteArrayData) \
+    qptrdiff(offsetof(qt_meta_stringdata_CControlWidget_t, stringdata0) + ofs \
+        - idx * sizeof(QByteArrayData)) \
     )
 static const qt_meta_stringdata_CControlWidget_t qt_meta_stringdata_CControlWidget = {
     {
-QT_MOC_LITERAL(0, 0, 14),
-QT_MOC_LITERAL(1, 15, 14),
-QT_MOC_LITERAL(2, 30, 0),
-QT_MOC_LITERAL(3, 31, 15),
-QT_MOC_LITERAL(4, 47, 17),
-QT_MOC_LITERAL(5, 65, 4),
-QT_MOC_LITERAL(6, 70, 19),
-QT_MOC_LITERAL(7, 90, 18),
-QT_MOC_LITERAL(8, 109, 13),
-QT_MOC_LITERAL(9, 123, 6),
-QT_MOC_LITERAL(10, 130, 4),
-QT_MOC_LITERAL(11, 135, 14),
-QT_MOC_LITERAL(12, 150, 7),
-QT_MOC_LITERAL(13, 158, 14),
-QT_MOC_LITERAL(14, 173, 7),
-QT_MOC_LITERAL(15, 181, 18),
-QT_MOC_LITERAL(16, 200, 11),
-QT_MOC_LITERAL(17, 212, 15),
-QT_MOC_LITERAL(18, 228, 5),
-QT_MOC_LITERAL(19, 234, 8),
-QT_MOC_LITERAL(20, 243, 22),
-QT_MOC_LITERAL(21, 266, 18)
+QT_MOC_LITERAL(0, 0, 14), // "CControlWidget"
+QT_MOC_LITERAL(1, 15, 14), // "runControlTest"
+QT_MOC_LITERAL(2, 30, 0), // ""
+QT_MOC_LITERAL(3, 31, 15), // "stopControlTest"
+QT_MOC_LITERAL(4, 47, 17), // "setCompFilterFlag"
+QT_MOC_LITERAL(5, 65, 4), // "flag"
+QT_MOC_LITERAL(6, 70, 19), // "setOffsetFilterFlag"
+QT_MOC_LITERAL(7, 90, 18), // "startButtonClicked"
+QT_MOC_LITERAL(8, 109, 13), // "gDataReceived"
+QT_MOC_LITERAL(9, 123, 6), // "CGData"
+QT_MOC_LITERAL(10, 130, 4), // "data"
+QT_MOC_LITERAL(11, 135, 14), // "ukDataReceived"
+QT_MOC_LITERAL(12, 150, 7), // "CUKData"
+QT_MOC_LITERAL(13, 158, 14), // "urDataReceived"
+QT_MOC_LITERAL(14, 173, 7), // "CURData"
+QT_MOC_LITERAL(15, 181, 18), // "torqueDataReceived"
+QT_MOC_LITERAL(16, 200, 11), // "CTorqueData"
+QT_MOC_LITERAL(17, 212, 15), // "gDisplayClicked"
+QT_MOC_LITERAL(18, 228, 5), // "state"
+QT_MOC_LITERAL(19, 234, 8), // "saveData"
+QT_MOC_LITERAL(20, 243, 22), // "onCompFilterBoxClicked"
+QT_MOC_LITERAL(21, 266, 18) // "onOffsetBoxClicked"
+
     },
     "CControlWidget\0runControlTest\0\0"
     "stopControlTest\0setCompFilterFlag\0"
@@ -59,7 +60,7 @@ QT_MOC_LITERAL(21, 266, 18)
     "CUKData\0urDataReceived\0CURData\0"
     "torqueDataReceived\0CTorqueData\0"
     "gDisplayClicked\0state\0saveData\0"
-    "onCompFilterBoxClicked\0onOffsetBoxClicked\0"
+    "onCompFilterBoxClicked\0onOffsetBoxClicked"
 };
 #undef QT_MOC_LITERAL
 
@@ -77,21 +78,21 @@ static const uint qt_meta_data_CControlWidget[] = {
        4,       // signalCount
 
  // signals: name, argc, parameters, tag, flags
-       1,    0,   79,    2, 0x06,
-       3,    0,   80,    2, 0x06,
-       4,    1,   81,    2, 0x06,
-       6,    1,   84,    2, 0x06,
+       1,    0,   79,    2, 0x06 /* Public */,
+       3,    0,   80,    2, 0x06 /* Public */,
+       4,    1,   81,    2, 0x06 /* Public */,
+       6,    1,   84,    2, 0x06 /* Public */,
 
  // slots: name, argc, parameters, tag, flags
-       7,    0,   87,    2, 0x0a,
-       8,    1,   88,    2, 0x0a,
-      11,    1,   91,    2, 0x0a,
-      13,    1,   94,    2, 0x0a,
-      15,    1,   97,    2, 0x0a,
-      17,    1,  100,    2, 0x0a,
-      19,    0,  103,    2, 0x0a,
-      20,    0,  104,    2, 0x0a,
-      21,    0,  105,    2, 0x0a,
+       7,    0,   87,    2, 0x0a /* Public */,
+       8,    1,   88,    2, 0x0a /* Public */,
+      11,    1,   91,    2, 0x0a /* Public */,
+      13,    1,   94,    2, 0x0a /* Public */,
+      15,    1,   97,    2, 0x0a /* Public */,
+      17,    1,  100,    2, 0x0a /* Public */,
+      19,    0,  103,    2, 0x0a /* Public */,
+      20,    0,  104,    2, 0x0a /* Public */,
+      21,    0,  105,    2, 0x0a /* Public */,
 
  // signals: parameters
     QMetaType::Void,
@@ -117,6 +118,7 @@ void CControlWidget::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
         CControlWidget *_t = static_cast<CControlWidget *>(_o);
+        Q_UNUSED(_t)
         switch (_id) {
         case 0: _t->runControlTest(); break;
         case 1: _t->stopControlTest(); break;
@@ -165,7 +167,7 @@ void CControlWidget::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
 
 const QMetaObject CControlWidget::staticMetaObject = {
     { &QWidget::staticMetaObject, qt_meta_stringdata_CControlWidget.data,
-      qt_meta_data_CControlWidget,  qt_static_metacall, 0, 0}
+      qt_meta_data_CControlWidget,  qt_static_metacall, Q_NULLPTR, Q_NULLPTR}
 };
 
 
@@ -176,8 +178,8 @@ const QMetaObject *CControlWidget::metaObject() const
 
 void *CControlWidget::qt_metacast(const char *_clname)
 {
-    if (!_clname) return 0;
-    if (!strcmp(_clname, qt_meta_stringdata_CControlWidget.stringdata))
+    if (!_clname) return Q_NULLPTR;
+    if (!strcmp(_clname, qt_meta_stringdata_CControlWidget.stringdata0))
         return static_cast<void*>(const_cast< CControlWidget*>(this));
     return QWidget::qt_metacast(_clname);
 }
@@ -202,26 +204,26 @@ int CControlWidget::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 // SIGNAL 0
 void CControlWidget::runControlTest()
 {
-    QMetaObject::activate(this, &staticMetaObject, 0, 0);
+    QMetaObject::activate(this, &staticMetaObject, 0, Q_NULLPTR);
 }
 
 // SIGNAL 1
 void CControlWidget::stopControlTest()
 {
-    QMetaObject::activate(this, &staticMetaObject, 1, 0);
+    QMetaObject::activate(this, &staticMetaObject, 1, Q_NULLPTR);
 }
 
 // SIGNAL 2
 void CControlWidget::setCompFilterFlag(bool _t1)
 {
-    void *_a[] = { 0, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
+    void *_a[] = { Q_NULLPTR, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
     QMetaObject::activate(this, &staticMetaObject, 2, _a);
 }
 
 // SIGNAL 3
 void CControlWidget::setOffsetFilterFlag(bool _t1)
 {
-    void *_a[] = { 0, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
+    void *_a[] = { Q_NULLPTR, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
     QMetaObject::activate(this, &staticMetaObject, 3, _a);
 }
 QT_END_MOC_NAMESPACE

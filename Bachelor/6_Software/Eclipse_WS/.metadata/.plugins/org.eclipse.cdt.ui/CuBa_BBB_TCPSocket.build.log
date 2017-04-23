@@ -1,15 +1,6 @@
-14:55:50 **** Incremental Build of configuration Debug for project CuBa_BBB_TCPSocket ****
+16:45:22 **** Incremental Build of configuration Debug for project CuBa_BBB_TCPSocket ****
 make all 
-Building file: ../Comm/CCommFSM.cpp
-Invoking: Cross G++ Compiler
-arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/Control/Action" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Comm/CCommFSM.d" -MT"Comm/CCommFSM.o" -o "Comm/CCommFSM.o" "../Comm/CCommFSM.cpp"
-Finished building: ../Comm/CCommFSM.cpp
- 
-Building target: CuBa_BBB_TCPSocket
-Invoking: Cross G++ Linker
-arm-linux-gnueabihf-g++  -o "CuBa_BBB_TCPSocket"  ./lib/AComponentBase.o ./lib/Assertion.o ./lib/CBinarySemaphore.o ./lib/CCountingSemaphore.o ./lib/CMessage.o ./lib/CMutex.o ./lib/CProxy.o ./lib/CThread.o ./lib/TMatrix.o  ./Hardware/CADC.o ./Hardware/CADCData.o ./Hardware/CADCMMap.o ./Hardware/CGPIO.o ./Hardware/CHardware.o ./Hardware/CMPU9250.o ./Hardware/CMPUData.o ./Hardware/CMotor.o ./Hardware/CPWM.o ./Hardware/CSensorData.o ./Hardware/CSensorSystem.o ./Hardware/CSwitch.o ./Hardware/CTorqueData.o  ./Control/States/AState.o ./Control/States/CADCCalibration.o ./Control/States/CSensorCalibration.o  ./Control/Action/CADCCalibrationAction.o ./Control/Action/CControlAction.o ./Control/Action/CControlActionBase.o ./Control/Action/CSensorCalibrationAction.o  ./Control/CControlComp.o ./Control/CTimerTask.o  ./Comm/CCommAction.o ./Comm/CCommComponent.o ./Comm/CCommFSM.o ./Comm/CReceiveTask.o ./Comm/CServer.o  ./main.o   -lpthread
-Finished building target: CuBa_BBB_TCPSocket
- 
+make: Nothing to be done for 'all'.
 
-14:55:51 Build Finished (took 746ms)
+16:45:23 Build Finished (took 140ms)
 

@@ -25,7 +25,9 @@ SOURCES += main.cpp \
     CMessage.cpp \
     CMPUData.cpp \
     CRxThread.cpp \
-    CADCData.cpp
+    CADCData.cpp \
+    CEdgeBalance.cpp \
+    CCornerBalance.cpp
 
 HEADERS  += \
     CMainWindow.h \
@@ -42,4 +44,7 @@ HEADERS  += \
     Global.h \
     TMatrix.h \
     EEvent.h \
-    CADCData.h
+    CADCData.h \
+    CEdgeBalance.h \
+    E1DControlSystem.h \
+    CCornerBalance.h

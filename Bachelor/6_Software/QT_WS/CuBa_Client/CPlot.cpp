@@ -54,7 +54,7 @@ void CPlot::addData(double time, QVector<double> &data)
     }
 
     mDrawCounter++;
-    if(mDrawCounter >= 0)
+    if(mDrawCounter >= 10)
     {
         mDrawCounter = 0;
         double min =  1000000;
@@ -70,10 +70,66 @@ void CPlot::addData(double time, QVector<double> &data)
             mPlotPtr->graph(i)->setData(mDisplayTime, mDisplayData.at(i));
         }
         mPlotPtr->xAxis->setRange(mDisplayTime.first(), mDisplayTime.last());
-        mPlotPtr->yAxis->setRange(min*1.1, max*1.1);
+        min = min > 0.0 ? min / 1.05 : min * 1.05;
+        max = max > 0.0 ? max * 1.05 : max / 1.05;
+        mPlotPtr->yAxis->setRange(min, max);
         mPlotPtr->replot();
     }
 }
+void CPlot::addData(double time, double data, int graphIndex)
+{
+    if(mTime.length() > 0)
+    {
+        if(static_cast<int>(mTime.last()*50) != static_cast<int>(time*50))
+        {
+            mTime.append(time);
+            mDisplayTime.append(time);
+        }
+
+        QVector<double>& dataVec = mData[graphIndex];
+        dataVec.append(data);
+        mDisplayData[graphIndex].append(data);
+
+        if(mDisplayTime.length() >= 500)
+        {
+            mDisplayTime.erase(mDisplayTime.begin());
+        }
+        if(mDisplayData[graphIndex].length() >= 500)
+        {
+            mDisplayData[graphIndex].erase(mDisplayData[graphIndex].begin());
+        }
+    }
+    else
+    {
+        mTime.append(time);
+        mDisplayTime.append(time);
+        mDisplayData[graphIndex].append(data);
+    }
+
+    mDrawCounter++;
+    if(mDrawCounter >= 10)
+    {
+        mDrawCounter = 0;
+        double min =  1000000;
+        double max = -1000000;
+        for(int i = 0; i < mNumberOfLines; i++)
+        {
+            double max_i = *std::max_element(mDisplayData.at(i).begin(),
+                                             mDisplayData.at(i).end());
+            max = max > max_i ? max : max_i;
+            double min_i = *std::min_element(mDisplayData.at(i).begin(),
+                                             mDisplayData.at(i).end());
+            min = min < min_i ? min : min_i;
+            mPlotPtr->graph(i)->setData(mDisplayTime, mDisplayData.at(i));
+        }
+        mPlotPtr->xAxis->setRange(mDisplayTime.first(), mDisplayTime.last());
+        min = min > 0.0 ? min / 1.05 : min * 1.05;
+        max = max > 0.0 ? max * 1.05 : max / 1.05;
+        mPlotPtr->yAxis->setRange(min, max);
+        mPlotPtr->replot();
+    }
+}
+
 void CPlot::reset()
 {
     mSavedFlag = false;
@@ -94,9 +150,10 @@ QCustomPlot* CPlot::getPlotPtr()
     return mPlotPtr;
 }
 void CPlot::saveCSV(const std::string& filename,
-                    const QVector<std::string>& varNames)
+                    const QVector<std::string>& varNames,
+                    bool force)
 {
-    if(mSavedFlag == false)
+    if( (mSavedFlag == false) || (force == true) )
     {
         mSavedFlag = true;
         ofstream stream;

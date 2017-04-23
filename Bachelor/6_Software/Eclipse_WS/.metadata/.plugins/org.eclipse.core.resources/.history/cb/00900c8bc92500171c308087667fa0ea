@@ -1,0 +1,48 @@
+/**
+ * @file	CCornerBalanceAction.cpp
+ * @author	Michael Meindl
+ * @date	20.04.2017
+ * @brief	Method definitions for CCornerBalanceAction.
+ */
+#include "CCornerBalanceAction.h"
+#include <iostream>
+
+CCornerBalanceAction::CCornerBalanceAction() : mTime(0.0F)
+{
+	mSignalFlow.TLQR<9U, 3U>::init("config/Corner_Kd.csv");
+}
+void CCornerBalanceAction::entryCornerBalance()
+{
+	std::cout << "[*] Control-Comp: Entering Corner-Balance . . . " << std::endl;
+	mTime = 0.0F;
+	sTimerTask.setPeriodMS(20);
+	sTimerTask.resume(true);
+	mSignalFlow.C3DCompFilter::reset();
+}
+void CCornerBalanceAction::exitCornerBalance()
+{
+	std::cout << "[*] Control-Comp: Exiting Corner-Balance . . . " << std::endl;
+	sTimerTask.pause(true);
+}
+void CCornerBalanceAction::entryIdle()
+{
+	std::cout << "[*] Control-Comp: Entering Corner-Balance/Idle . . ." << std::endl;
+}
+void CCornerBalanceAction::exitIdle()
+{
+	std::cout << "[*] Control-Comp: Exiting Corner-Balance/Idle . . . " << std::endl;
+}
+void CCornerBalanceAction::entryBalance()
+{
+	std::cout << "[*] Control-Comp: Entering Corner-Balance/Balance . . . " << std::endl;
+	sHardware.enableMotor();
+}
+void CCornerBalanceAction::exitBalance()
+{
+	std::cout << "[*] Control-Comp: Exiting Corner-Balance/Balance . . . " << std::endl;
+	sHardware.disableMotor();
+}
+bool CCornerBalanceAction::setTorques()
+{
+
+}

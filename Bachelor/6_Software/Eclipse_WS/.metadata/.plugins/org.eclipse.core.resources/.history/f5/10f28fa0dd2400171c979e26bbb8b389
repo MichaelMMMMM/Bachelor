@@ -1,0 +1,17 @@
+/**
+ * @file	C1DPhiObsLQR.cpp
+ * @author	Michael Meindl
+ * @date	19.04.2017
+ * @brief	Method definitions for C1DPhiObsLQR.h
+ */
+#include "C1DPhiObsLQR.h"
+
+C1DPhiObsLQR::C1DPhiObsLQR()
+{
+	mSignalFlow.TLQR<3U, 1U>::init("config/Edge_Kd.csv");
+	mSignalFlow.TObserver<3U, 2U, 1U>::init("config/Edge_Ad.csv",
+											"config/Edge_Bd.csv",
+											"config/Edge_Cd.csv",
+											"config/Edge_Ld.csv");
+	mSignalFlow.C1DCMat::init("config/Edge_Cd.csv");
+}
