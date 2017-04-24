@@ -1,6 +1,6 @@
 ParameterInit;
 
-x_max = [degtorad(10); degtorad(60); 500*2*pi/60];
+x_max = [degtorad(15); degtorad(60); 500*2*pi/60];
 Q     = diag(x_max.^(-2));
 u_max = 0.11;
 R     = diag(u_max.^(-2));

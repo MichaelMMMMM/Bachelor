@@ -6,6 +6,11 @@ T_K         = inv(T_K);     %Matlab things
 T_max = 0.1;
 R = eye(3)*T_max^(-2);
 
+xMax = [0; degtorad(10); degtorad(10); degtorad(60)*ones(3,1); 500*ones(3,1)];
+xMax = [eye(7), zeros(7,2)]/T_K*xMax;
+Q_max = diag(xMax)^(-2);
+K_unlimited = dlqr(KSSd.A, KSSd.B, Q_max, R) * [eye(7), zeros(7,2)]/T_K;
+
 qDiag = [1;1;1;1;1;1;1];
 KKd = dlqr(KSSd.A, KSSd.B, diag(qDiag)*7e-4, R);
 Kd  = KKd * [eye(7), zeros(7,2)]/T_K;
