@@ -6,18 +6,21 @@ T_K         = inv(T_K);     %Matlab things
 T_max = 0.1;
 R = eye(3)*T_max^(-2);
 
-xMax = [0; degtorad(10); degtorad(10); degtorad(60)*ones(3,1); 500*ones(3,1)];
+xMax = [0; degtorad(5); degtorad(25); degtorad(60)*ones(3,1); 500*ones(3,1)];
 xMax = [eye(7), zeros(7,2)]/T_K*xMax;
 Q_max = diag(xMax)^(-2);
 K_unlimited = dlqr(KSSd.A, KSSd.B, Q_max, R) * [eye(7), zeros(7,2)]/T_K;
+K_limited   = dlqr(KSSd.A, KSSd.B, Q_max*1e-1,R) * [eye(7), zeros(7,2)]/T_K;
+
 
 qDiag = [1;1;1;1;1;1;1];
 KKd = dlqr(KSSd.A, KSSd.B, diag(qDiag)*7e-4, R);
 Kd  = KKd * [eye(7), zeros(7,2)]/T_K;
-Kd(:,3) = Kd(:,3) * 2.5;
-Kd(1,4) = Kd(1,4) * 2;
-Kd(2,5) = Kd(2,5) * 2;
-Kd(3,6) = Kd(3,6) * 2;
+% Kd(:,3) = Kd(:,3) * 2.5;
+% Kd(1,4) = Kd(1,4) * 1.1;
+% Kd(2,5) = Kd(2,5) * 1.1;
+% Kd(3,6) = Kd(3,6) * 1.1;
+KKTest = [KKd, ones(3,1)*0.5];
 
 csvwrite('config/Corner_Kd.csv', Kd);
 
@@ -26,9 +29,6 @@ A = SSd.A; B = SSd.B; C = [zeros(8,1),eye(8)];
 A_K = T_K\A*T_K; B_K = T_K\B; C_K = C*T_K;
 %[V, J] = jordan(A);
 load('system_data/V_J_opensys.mat');
-A_J = V\A*V;
-B_J = V\B;
-C_J = C*V;
 
 %Closed loop system
 Ag = A-B*Kd; Bg = B; Cg = C; Dg = zeros(8,3);

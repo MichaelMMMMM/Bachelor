@@ -27,8 +27,8 @@ private:
 
 	static constexpr Float32 sPi		    = 3.141592653589793F;
 	static constexpr Float32 sX1_Offset	   	= 0.0F;
-	static constexpr Float32 sX2_Offset		= -0.615479708570387F + 0.016F;
-	static constexpr Float32 sX3_Offset		= 0.785398163397448F  - 0.02F;
+	static constexpr Float32 sX2_Offset		= -0.615479708570387F + 0.011F;
+	static constexpr Float32 sX3_Offset		= 0.785398163397448F  - 0.01F;
 	static constexpr Float32 sX4_Offset		= 0.0F;
 	static constexpr Float32 sX5_Offset		= 0.0F;
 	static constexpr Float32 sX6_Offset		= 0.0F;
