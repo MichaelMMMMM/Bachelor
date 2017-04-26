@@ -1,5 +1,8 @@
-function [ emllegend ] = emlLegend( legendEntriesCell )
+function [ emllegend ] = emlLegend( legendEntriesCell , location)
+if (nargin < 2)
+    location = 'nw';
+end
 emllegend = legend(legendEntriesCell, 'interpreter', 'latex',...
-                   'FontSize', 14, 'Location', 'nw');
+                   'FontSize', 14, 'Location', location);
 end
 

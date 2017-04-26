@@ -24,3 +24,5 @@ gyroTilt    = [0; 0; 0];
 %GyroError   = double(subs(A_P_K, phi, degtorad(gyroTilt)));
 AccelError = eye(3);
 GyroError  = eye(3);
+
+stop_time = 10;
