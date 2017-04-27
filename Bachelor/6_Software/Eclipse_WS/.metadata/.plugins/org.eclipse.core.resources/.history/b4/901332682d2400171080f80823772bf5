@@ -1,8 +1,0 @@
-/**
- * @file	C3DStateEstiamte.cpp
- * @author	Michael Meindl
- * @date	18.04.2017
- * @brief	Method definitions for C3DStateEstimate.
- */
-#include "C3DStateEstimate.h"
-

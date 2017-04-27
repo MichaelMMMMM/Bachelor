@@ -1,2 +1,7 @@
-Kd = dlqr(Q = I*7e-4, R=I*1/T_max² | T_max = 0.1);
-t_0 = 3.98, t_e = 38.64;
+xMax = [0; degtorad(5); degtorad(5); degtorad(10)*ones(3,1); 500*ones(3,1)]*5;
+xMax = [eye(7), zeros(7,2)]/T_K*xMax;
+Q_max = diag(xMax)^(-2);
+K_limited   = dlqr(KSSd.A, KSSd.B, Q_max,R) * [eye(7), zeros(7,2)]/T_K;
+
+[*] Control-Comp: Entering Corner-Balance/Balance . . . Time: 4.24
+[*] Control-Comp: Exiting Corner-Balance/Balance . . . Time: 45.4809

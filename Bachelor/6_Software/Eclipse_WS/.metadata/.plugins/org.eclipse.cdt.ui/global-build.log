@@ -4026,3 +4026,105 @@ Finished building target: CuBa_BBB_TCPSocket
 15:30:44 **** Incremental Build of configuration Debug for project CuBa_BBB_TCPSocket ****
 make all 
 make: Nothing to be done for 'all'.
+08:13:53 **** Incremental Build of configuration Debug for project CuBa_BBB_TCPSocket ****
+make all 
+make: Nothing to be done for 'all'.
+08:14:06 **** Incremental Build of configuration Debug for project CuBa_BBB_TCPSocket ****
+make all 
+make: Nothing to be done for 'all'.
+08:48:47 **** Incremental Build of configuration Debug for project CuBa_BBB_TCPSocket ****
+make all 
+Building file: ../ControlLib/C3DOffsetCorrection.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/ControlLib" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/Control/Action" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ControlLib/C3DOffsetCorrection.d" -MT"ControlLib/C3DOffsetCorrection.o" -o "ControlLib/C3DOffsetCorrection.o" "../ControlLib/C3DOffsetCorrection.cpp"
+Finished building: ../ControlLib/C3DOffsetCorrection.cpp
+ 
+Building file: ../Control/States/CCornerBalance.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/ControlLib" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/Control/Action" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/States/CCornerBalance.d" -MT"Control/States/CCornerBalance.o" -o "Control/States/CCornerBalance.o" "../Control/States/CCornerBalance.cpp"
+Finished building: ../Control/States/CCornerBalance.cpp
+ 
+Building file: ../Control/Action/CCornerBalanceAction.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/ControlLib" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/Control/Action" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/Action/CCornerBalanceAction.d" -MT"Control/Action/CCornerBalanceAction.o" -o "Control/Action/CCornerBalanceAction.o" "../Control/Action/CCornerBalanceAction.cpp"
+Finished building: ../Control/Action/CCornerBalanceAction.cpp
+ 
+Building file: ../Control/CControlComp.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/ControlLib" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/Control/Action" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/CControlComp.d" -MT"Control/CControlComp.o" -o "Control/CControlComp.o" "../Control/CControlComp.cpp"
+Finished building: ../Control/CControlComp.cpp
+ 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/ControlLib" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/Control/Action" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: CuBa_BBB_TCPSocket
+Invoking: Cross G++ Linker
+arm-linux-gnueabihf-g++  -o "CuBa_BBB_TCPSocket"  ./lib/AComponentBase.o ./lib/Assertion.o ./lib/CBinarySemaphore.o ./lib/CCountingSemaphore.o ./lib/CMessage.o ./lib/CMutex.o ./lib/CProxy.o ./lib/CThread.o ./lib/TMatrix.o  ./Hardware/CADC.o ./Hardware/CADCData.o ./Hardware/CADCMMap.o ./Hardware/CGPIO.o ./Hardware/CHardware.o ./Hardware/CMPU9250.o ./Hardware/CMPUData.o ./Hardware/CMotor.o ./Hardware/CPWM.o ./Hardware/CSensorData.o ./Hardware/CSensorSystem.o ./Hardware/CSwitch.o ./Hardware/CTorqueData.o  ./ControlLib/C1DCMat.o ./ControlLib/C1DCompFilter.o ./ControlLib/C1DCompLQR.o ./ControlLib/C1DControlSystem.o ./ControlLib/C1DOffsetCorrection.o ./ControlLib/C1DOffsetObsLQR.o ./ControlLib/C1DPhiObsLQR.o ./ControlLib/C1DStateReduction.o ./ControlLib/C3DCompFilter.o ./ControlLib/C3DOffsetCorrection.o ./ControlLib/C3DStateEstimate.o ./ControlLib/CF1Calib.o ./ControlLib/CPoly1F1.o  ./Control/States/AState.o ./Control/States/CADCCalibration.o ./Control/States/CCornerBalance.o ./Control/States/CEdgeBalance.o ./Control/States/CSensorCalibration.o  ./Control/Action/CADCCalibrationAction.o ./Control/Action/CControlAction.o ./Control/Action/CControlActionBase.o ./Control/Action/CCornerBalanceAction.o ./Control/Action/CEdgeBalanceAction.o ./Control/Action/CSensorCalibrationAction.o  ./Control/CControlComp.o ./Control/CTimerTask.o  ./Comm/CCommAction.o ./Comm/CCommComponent.o ./Comm/CCommFSM.o ./Comm/CReceiveTask.o ./Comm/CServer.o  ./main.o   -lpthread
+Finished building target: CuBa_BBB_TCPSocket
+ 
+08:49:47 **** Incremental Build of configuration Debug for project CuBa_BBB_TCPSocket ****
+make all 
+Building file: ../ControlLib/C3DOffsetCorrection.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/ControlLib" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/Control/Action" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ControlLib/C3DOffsetCorrection.d" -MT"ControlLib/C3DOffsetCorrection.o" -o "ControlLib/C3DOffsetCorrection.o" "../ControlLib/C3DOffsetCorrection.cpp"
+Finished building: ../ControlLib/C3DOffsetCorrection.cpp
+ 
+Building file: ../Control/States/CCornerBalance.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/ControlLib" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/Control/Action" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/States/CCornerBalance.d" -MT"Control/States/CCornerBalance.o" -o "Control/States/CCornerBalance.o" "../Control/States/CCornerBalance.cpp"
+Finished building: ../Control/States/CCornerBalance.cpp
+ 
+Building file: ../Control/Action/CCornerBalanceAction.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/ControlLib" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/Control/Action" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/Action/CCornerBalanceAction.d" -MT"Control/Action/CCornerBalanceAction.o" -o "Control/Action/CCornerBalanceAction.o" "../Control/Action/CCornerBalanceAction.cpp"
+Finished building: ../Control/Action/CCornerBalanceAction.cpp
+ 
+Building file: ../Control/CControlComp.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/ControlLib" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/Control/Action" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/CControlComp.d" -MT"Control/CControlComp.o" -o "Control/CControlComp.o" "../Control/CControlComp.cpp"
+Finished building: ../Control/CControlComp.cpp
+ 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/ControlLib" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/Control/Action" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: CuBa_BBB_TCPSocket
+Invoking: Cross G++ Linker
+arm-linux-gnueabihf-g++  -o "CuBa_BBB_TCPSocket"  ./lib/AComponentBase.o ./lib/Assertion.o ./lib/CBinarySemaphore.o ./lib/CCountingSemaphore.o ./lib/CMessage.o ./lib/CMutex.o ./lib/CProxy.o ./lib/CThread.o ./lib/TMatrix.o  ./Hardware/CADC.o ./Hardware/CADCData.o ./Hardware/CADCMMap.o ./Hardware/CGPIO.o ./Hardware/CHardware.o ./Hardware/CMPU9250.o ./Hardware/CMPUData.o ./Hardware/CMotor.o ./Hardware/CPWM.o ./Hardware/CSensorData.o ./Hardware/CSensorSystem.o ./Hardware/CSwitch.o ./Hardware/CTorqueData.o  ./ControlLib/C1DCMat.o ./ControlLib/C1DCompFilter.o ./ControlLib/C1DCompLQR.o ./ControlLib/C1DControlSystem.o ./ControlLib/C1DOffsetCorrection.o ./ControlLib/C1DOffsetObsLQR.o ./ControlLib/C1DPhiObsLQR.o ./ControlLib/C1DStateReduction.o ./ControlLib/C3DCompFilter.o ./ControlLib/C3DOffsetCorrection.o ./ControlLib/C3DStateEstimate.o ./ControlLib/CF1Calib.o ./ControlLib/CPoly1F1.o  ./Control/States/AState.o ./Control/States/CADCCalibration.o ./Control/States/CCornerBalance.o ./Control/States/CEdgeBalance.o ./Control/States/CSensorCalibration.o  ./Control/Action/CADCCalibrationAction.o ./Control/Action/CControlAction.o ./Control/Action/CControlActionBase.o ./Control/Action/CCornerBalanceAction.o ./Control/Action/CEdgeBalanceAction.o ./Control/Action/CSensorCalibrationAction.o  ./Control/CControlComp.o ./Control/CTimerTask.o  ./Comm/CCommAction.o ./Comm/CCommComponent.o ./Comm/CCommFSM.o ./Comm/CReceiveTask.o ./Comm/CServer.o  ./main.o   -lpthread
+Finished building target: CuBa_BBB_TCPSocket
+ 
+09:05:35 **** Incremental Build of configuration Debug for project CuBa_BBB_TCPSocket ****
+make all 
+Building file: ../ControlLib/C3DOffsetCorrection.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/ControlLib" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/Control/Action" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ControlLib/C3DOffsetCorrection.d" -MT"ControlLib/C3DOffsetCorrection.o" -o "ControlLib/C3DOffsetCorrection.o" "../ControlLib/C3DOffsetCorrection.cpp"
+Finished building: ../ControlLib/C3DOffsetCorrection.cpp
+ 
+Building file: ../Control/States/CCornerBalance.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/ControlLib" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/Control/Action" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/States/CCornerBalance.d" -MT"Control/States/CCornerBalance.o" -o "Control/States/CCornerBalance.o" "../Control/States/CCornerBalance.cpp"
+Finished building: ../Control/States/CCornerBalance.cpp
+ 
+Building file: ../Control/Action/CCornerBalanceAction.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/ControlLib" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/Control/Action" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/Action/CCornerBalanceAction.d" -MT"Control/Action/CCornerBalanceAction.o" -o "Control/Action/CCornerBalanceAction.o" "../Control/Action/CCornerBalanceAction.cpp"
+Finished building: ../Control/Action/CCornerBalanceAction.cpp
+ 
+Building file: ../Control/CControlComp.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/ControlLib" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/Control/Action" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Control/CControlComp.d" -MT"Control/CControlComp.o" -o "Control/CControlComp.o" "../Control/CControlComp.cpp"
+Finished building: ../Control/CControlComp.cpp
+ 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -std=c++11 -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/Comm" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/ControlLib" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/Control/Action" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/Control/States" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/Control" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/Hardware" -I"/home/michael/Desktop/Bachelor/Bachelor/6_Software/Eclipse_WS/CuBa_BBB_TCPSocket/lib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: CuBa_BBB_TCPSocket
+Invoking: Cross G++ Linker
+arm-linux-gnueabihf-g++  -o "CuBa_BBB_TCPSocket"  ./lib/AComponentBase.o ./lib/Assertion.o ./lib/CBinarySemaphore.o ./lib/CCountingSemaphore.o ./lib/CMessage.o ./lib/CMutex.o ./lib/CProxy.o ./lib/CThread.o ./lib/TMatrix.o  ./Hardware/CADC.o ./Hardware/CADCData.o ./Hardware/CADCMMap.o ./Hardware/CGPIO.o ./Hardware/CHardware.o ./Hardware/CMPU9250.o ./Hardware/CMPUData.o ./Hardware/CMotor.o ./Hardware/CPWM.o ./Hardware/CSensorData.o ./Hardware/CSensorSystem.o ./Hardware/CSwitch.o ./Hardware/CTorqueData.o  ./ControlLib/C1DCMat.o ./ControlLib/C1DCompFilter.o ./ControlLib/C1DCompLQR.o ./ControlLib/C1DControlSystem.o ./ControlLib/C1DOffsetCorrection.o ./ControlLib/C1DOffsetObsLQR.o ./ControlLib/C1DPhiObsLQR.o ./ControlLib/C1DStateReduction.o ./ControlLib/C3DCompFilter.o ./ControlLib/C3DOffsetCorrection.o ./ControlLib/C3DStateEstimate.o ./ControlLib/CF1Calib.o ./ControlLib/CPoly1F1.o  ./Control/States/AState.o ./Control/States/CADCCalibration.o ./Control/States/CCornerBalance.o ./Control/States/CEdgeBalance.o ./Control/States/CSensorCalibration.o  ./Control/Action/CADCCalibrationAction.o ./Control/Action/CControlAction.o ./Control/Action/CControlActionBase.o ./Control/Action/CCornerBalanceAction.o ./Control/Action/CEdgeBalanceAction.o ./Control/Action/CSensorCalibrationAction.o  ./Control/CControlComp.o ./Control/CTimerTask.o  ./Comm/CCommAction.o ./Comm/CCommComponent.o ./Comm/CCommFSM.o ./Comm/CReceiveTask.o ./Comm/CServer.o  ./main.o   -lpthread
+Finished building target: CuBa_BBB_TCPSocket
+ 
