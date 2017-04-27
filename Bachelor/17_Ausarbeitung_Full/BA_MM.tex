@@ -2,9 +2,9 @@
 \include{0_Format}
 
 \makeatletter
-\def\input@path{{1_TM_Edge/}{2_RT_Edge/}{3_SW/}{4_TM_Corner/}{5_Sensorik/}}
+\def\input@path{{1_TM_Edge/}{2_RT_Edge/}{3_SW/}{4_TM_Corner/}{5_Sensorik/}{6_RT_Corner/}}
 \makeatother
-\graphicspath{{1_TM_Edge/}{2_RT_Edge/}{3_SW/}{4_TM_Corner/}}
+\graphicspath{{1_TM_Edge/}{2_RT_Edge/}{3_SW/}{4_TM_Corner/}{6_RT_Corner/}}
 
 \input{0_0_Deckblatt}
 \begin{document}
@@ -18,6 +18,8 @@
 \include{RT_EdgeBalancing}
 
 \include{4_TM_Corner/TM_CornerBalancing}
+
+\include{6_RT_Corner/RT_CornerBalancing}
 
 \include{5_Sensorik/Sensorik}
 

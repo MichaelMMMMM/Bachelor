@@ -13,6 +13,7 @@ Kd = K_unlimited;
 x0 = [0; 0.11; 0.08; zeros(6,1)];
 
 stop_time = 10;
+saturation_select = SATURATION_OFF;
 sim('LIN_Corner.slx');
 
 t_x = x_sim.time;

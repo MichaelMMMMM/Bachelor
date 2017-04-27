@@ -13,12 +13,15 @@
 \BOOKMARK [1][-]{section.3.1}{Systemparameter}{chapter.3}% 13
 \BOOKMARK [1][-]{section.3.2}{Untersuchung der Kinematik}{chapter.3}% 14
 \BOOKMARK [1][-]{section.3.3}{Untersuchung der Kinetik}{chapter.3}% 15
-\BOOKMARK [0][-]{chapter.4}{Erfassung der Zustandsgr\366\337en}{}% 16
-\BOOKMARK [1][-]{section.4.1}{Winkelsch\344tzung}{chapter.4}% 17
-\BOOKMARK [1][-]{section.4.2}{Justierung der Sensoren}{chapter.4}% 18
-\BOOKMARK [0][-]{chapter.5}{Software}{}% 19
-\BOOKMARK [1][-]{section.5.1}{Zielplattform, Sensorik und Aktorik}{chapter.5}% 20
-\BOOKMARK [2][-]{subsection.5.1.1}{Peripherie}{section.5.1}% 21
-\BOOKMARK [1][-]{section.5.2}{Implementierung des Signalflusses}{chapter.5}% 22
-\BOOKMARK [1][-]{section.5.3}{Komponentenarchitektur f\374r mechatronische Anwendungen}{chapter.5}% 23
-\BOOKMARK [1][-]{section.5.4}{Entwurf der Regelungskomponente}{chapter.5}% 24
+\BOOKMARK [0][-]{chapter.4}{Reglerentwurf f\374r das Balancieren auf einer Ecke}{}% 16
+\BOOKMARK [1][-]{section.4.1}{Modell basierter Reglerentwurf}{chapter.4}% 17
+\BOOKMARK [1][-]{section.4.2}{Untersuchung der Stellgr\366\337enbeschr\344nkung}{chapter.4}% 18
+\BOOKMARK [0][-]{chapter.5}{Erfassung der Zustandsgr\366\337en}{}% 19
+\BOOKMARK [1][-]{section.5.1}{Winkelsch\344tzung}{chapter.5}% 20
+\BOOKMARK [1][-]{section.5.2}{Justierung der Sensoren}{chapter.5}% 21
+\BOOKMARK [0][-]{chapter.6}{Software}{}% 22
+\BOOKMARK [1][-]{section.6.1}{Zielplattform, Sensorik und Aktorik}{chapter.6}% 23
+\BOOKMARK [2][-]{subsection.6.1.1}{Peripherie}{section.6.1}% 24
+\BOOKMARK [1][-]{section.6.2}{Implementierung des Signalflusses}{chapter.6}% 25
+\BOOKMARK [1][-]{section.6.3}{Komponentenarchitektur f\374r mechatronische Anwendungen}{chapter.6}% 26
+\BOOKMARK [1][-]{section.6.4}{Entwurf der Regelungskomponente}{chapter.6}% 27

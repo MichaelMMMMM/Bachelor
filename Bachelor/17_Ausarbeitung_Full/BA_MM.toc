@@ -14,12 +14,15 @@
 \contentsline {section}{\numberline {3.1}Systemparameter}{30}{section.3.1}
 \contentsline {section}{\numberline {3.2}Untersuchung der Kinematik}{32}{section.3.2}
 \contentsline {section}{\numberline {3.3}Untersuchung der Kinetik}{36}{section.3.3}
-\contentsline {chapter}{\numberline {4}Erfassung der Zustandsgr\IeC {\"o}\IeC {\ss }en}{43}{chapter.4}
-\contentsline {section}{\numberline {4.1}Winkelsch\IeC {\"a}tzung}{44}{section.4.1}
-\contentsline {section}{\numberline {4.2}Justierung der Sensoren}{48}{section.4.2}
-\contentsline {chapter}{\numberline {5}Software}{49}{chapter.5}
-\contentsline {section}{\numberline {5.1}Zielplattform, Sensorik und Aktorik}{50}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Peripherie}{50}{subsection.5.1.1}
-\contentsline {section}{\numberline {5.2}Implementierung des Signalflusses}{53}{section.5.2}
-\contentsline {section}{\numberline {5.3}Komponentenarchitektur f\IeC {\"u}r mechatronische Anwendungen}{58}{section.5.3}
-\contentsline {section}{\numberline {5.4}Entwurf der Regelungskomponente}{61}{section.5.4}
+\contentsline {chapter}{\numberline {4}Reglerentwurf f\IeC {\"u}r das Balancieren auf einer Ecke}{43}{chapter.4}
+\contentsline {section}{\numberline {4.1}Modell basierter Reglerentwurf}{44}{section.4.1}
+\contentsline {section}{\numberline {4.2}Untersuchung der Stellgr\IeC {\"o}\IeC {\ss }enbeschr\IeC {\"a}nkung}{50}{section.4.2}
+\contentsline {chapter}{\numberline {5}Erfassung der Zustandsgr\IeC {\"o}\IeC {\ss }en}{53}{chapter.5}
+\contentsline {section}{\numberline {5.1}Winkelsch\IeC {\"a}tzung}{54}{section.5.1}
+\contentsline {section}{\numberline {5.2}Justierung der Sensoren}{58}{section.5.2}
+\contentsline {chapter}{\numberline {6}Software}{59}{chapter.6}
+\contentsline {section}{\numberline {6.1}Zielplattform, Sensorik und Aktorik}{60}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Peripherie}{60}{subsection.6.1.1}
+\contentsline {section}{\numberline {6.2}Implementierung des Signalflusses}{63}{section.6.2}
+\contentsline {section}{\numberline {6.3}Komponentenarchitektur f\IeC {\"u}r mechatronische Anwendungen}{68}{section.6.3}
+\contentsline {section}{\numberline {6.4}Entwurf der Regelungskomponente}{71}{section.6.4}
