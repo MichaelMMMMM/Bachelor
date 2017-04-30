@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2017.1.27)  26 APR 2017 22:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2017.1.27)  29 APR 2017 18:18
 entering extended mode
 **./BA_MM.tex
 (BA_MM.tex
@@ -805,10 +805,10 @@ File: listings.cfg 2015/06/04 1.6 listings configuration
 ))
 Package: listings 2015/06/04 1.6 (Carsten Heinz)
 
-(0_Makros.tex)) (0_0_Deckblatt.tex) (BA_MM.aux (1_TM_Edge/TM_EdgeBalancing.aux)
-(RT_EdgeBalancing.aux) (4_TM_Corner/TM_CornerBalancing.aux)
-(6_RT_Corner/RT_CornerBalancing.aux) (5_Sensorik/Sensorik.aux)
-(3_SW/Software.aux))
+(0_Makros.tex)) (0_0_Deckblatt.tex) (BA_MM.aux (0_Introduction/Introduction.aux
+) (1_TM_Edge/TM_EdgeBalancing.aux) (RT_EdgeBalancing.aux)
+(4_TM_Corner/TM_CornerBalancing.aux) (6_RT_Corner/RT_CornerBalancing.aux)
+(5_Sensorik/Sensorik.aux) (3_SW/Software.aux))
 \openout1 = `BA_MM.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
@@ -929,11 +929,11 @@ Package babel Info: Redefining ngerman shorthand "~
 
 ]
 (BA_MM.toc
-LaTeX Font Info:    Try loading font information for U+msa on input line 3.
+LaTeX Font Info:    Try loading font information for U+msa on input line 4.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 3.
+LaTeX Font Info:    Try loading font information for U+msb on input line 4.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -950,116 +950,28 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 16.
  [3]
-\openout2 = `1_TM_Edge/TM_EdgeBalancing.aux'.
+\openout2 = `0_Introduction/Introduction.aux'.
 
 
-(1_TM_Edge/TM_EdgeBalancing.tex
+(0_Introduction/Introduction.tex
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 6.
+(babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 6.
+(babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 6.
+(babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 6.
+(babel)             in language  on input line 1.
  [4
 
 
 ]
 Kapitel 1.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 6.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 6.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 9.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 9.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 9.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 9.
-[5] (1_TM_Edge/TM_1_Kinematik.tex
-Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
-
-<1_TM_Edge/img/ModellWuerfelseite.pdf, id=196, 963.6pt x 542.025pt>
-File: 1_TM_Edge/img/ModellWuerfelseite.pdf Graphic file (type pdf)
-
-<use 1_TM_Edge/img/ModellWuerfelseite.pdf>
-Package pdftex.def Info: 1_TM_Edge/img/ModellWuerfelseite.pdf used on input lin
-e 5.
-(pdftex.def)             Requested size: 264.61333pt x 250.08806pt.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 15.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 15.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 15.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 15.
- [6 <./1_TM_Edge/img/ModellWuerfelseite.pdf>]
-Overfull \hbox (16.14676pt too wide) in paragraph at lines 38--38
-[] 
- []
-
-
-LaTeX Warning: Citation `skizze_dynamik_edge' on page 7 undefined on input line
- 49.
-
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 50.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 50.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 50.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 50.
-[7]
-
-LaTeX Warning: Citation `skizze_dynamik_edge' on page 8 undefined on input line
- 59.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 69.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 69.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 69.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 69.
- [8])
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 11.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 11.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 11.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 11.
-
-[9] (1_TM_Edge/TM_2_Kinetik.tex
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 1.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 28.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 28.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 28.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 28.
- [10]))
+)
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 16.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1068,11 +980,10 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 16.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 16.
+ [5]
+\openout2 = `1_TM_Edge/TM_EdgeBalancing.aux'.
 
-[11]
-\openout2 = `RT_EdgeBalancing.aux'.
-
- (2_RT_Edge/RT_EdgeBalancing.tex
+ (1_TM_Edge/TM_EdgeBalancing.tex
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 6.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1081,7 +992,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 6.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 6.
- [12
+ [6
 
 
 
@@ -1099,7 +1010,127 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 9.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 9.
-[13] (2_RT_Edge/RT_1_StateSpace.tex
+[7] (1_TM_Edge/TM_1_Kinematik.tex
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1.
+
+<1_TM_Edge/img/ModellWuerfelseite.pdf, id=211, 963.6pt x 542.025pt>
+File: 1_TM_Edge/img/ModellWuerfelseite.pdf Graphic file (type pdf)
+
+<use 1_TM_Edge/img/ModellWuerfelseite.pdf>
+Package pdftex.def Info: 1_TM_Edge/img/ModellWuerfelseite.pdf used on input lin
+e 5.
+(pdftex.def)             Requested size: 264.61333pt x 250.08806pt.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 15.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 15.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 15.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 15.
+ [8 <./1_TM_Edge/img/ModellWuerfelseite.pdf>]
+Overfull \hbox (16.14676pt too wide) in paragraph at lines 38--38
+[] 
+ []
+
+
+LaTeX Warning: Citation `skizze_dynamik_edge' on page 9 undefined on input line
+ 49.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 50.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 50.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 50.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 50.
+[9]
+
+LaTeX Warning: Citation `skizze_dynamik_edge' on page 10 undefined on input lin
+e 59.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 69.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 69.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 69.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 69.
+ [10])
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 11.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 11.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 11.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 11.
+
+[11] (1_TM_Edge/TM_2_Kinetik.tex
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 28.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 28.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 28.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 28.
+ [12]))
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 18.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 18.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 18.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 18.
+
+[13]
+\openout2 = `RT_EdgeBalancing.aux'.
+
+ (2_RT_Edge/RT_EdgeBalancing.tex
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 6.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 6.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 6.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 6.
+ [14
+
+
+
+]
+Kapitel 3.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 6.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 6.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 9.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 9.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 9.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 9.
+[15] (2_RT_Edge/RT_1_StateSpace.tex
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1115,7 +1146,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 70.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 70.
- [14]
+ [16]
 Overfull \hbox (1.1072pt too wide) in paragraph at lines 79--80
 \OT1/cmr/m/n/10.95 Zu-stands-raum-dar-stel-lung mit Hil-fe ei-ner Trans-for-ma-
 ti-ons-ma-trix $[] \OMS/cmsy/m/n/10.95 2 \U/msb/m/n/10.95 R[]$ \OT1/cmr/m/n/10.
@@ -1133,13 +1164,13 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 124.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 124.
- [15]
+ [17]
 
-LaTeX Warning: Citation `eq_fMat_bildbereich' on page 16 undefined on input lin
+LaTeX Warning: Citation `eq_fMat_bildbereich' on page 18 undefined on input lin
 e 150.
 
 
-LaTeX Warning: Citation `eq_fMat_zeitbereich' on page 16 undefined on input lin
+LaTeX Warning: Citation `eq_fMat_zeitbereich' on page 18 undefined on input lin
 e 150.
 
 
@@ -1153,7 +1184,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 158.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 158.
- [16])
+ [18])
 Overfull \hbox (33.3309pt too wide) in paragraph at lines 169--11
 \OT1/cmr/m/n/10.95 MIMO-Systemen mit klas-si-schen Sta-bi-lit[]atskriterien al-
 le Ele-men-te der []Ubertragungsfunktionsmatrix
@@ -1167,7 +1198,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 11.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 11.
-[17] (2_RT_Edge/RT_2_DiscreteStateSpace.tex
+[19] (2_RT_Edge/RT_2_DiscreteStateSpace.tex
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1178,7 +1209,7 @@ Overfull \hbox (53.2148pt too wide) in paragraph at lines 23--23
  []
 
 
-LaTeX Warning: Citation `eq_abs_z' on page 18 undefined on input line 35.
+LaTeX Warning: Citation `eq_abs_z' on page 20 undefined on input line 35.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1191,9 +1222,9 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 39.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 39.
- [18]
+ [20]
 
-LaTeX Warning: Citation `eq_discrete_ss' on page 19 undefined on input line 55.
+LaTeX Warning: Citation `eq_discrete_ss' on page 21 undefined on input line 55.
 
 
 )
@@ -1205,7 +1236,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 13.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 13.
- [19] (2_RT_Edge/RT_3_ControllerDesign.tex
+ [21] (2_RT_Edge/RT_3_ControllerDesign.tex
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1232,9 +1263,9 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 68.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 68.
- [20]
+ [22]
 
-LaTeX Warning: Citation `eq_ew_gRK' on page 21 undefined on input line 74.
+LaTeX Warning: Citation `eq_ew_gRK' on page 23 undefined on input line 74.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1247,7 +1278,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 101.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 101.
- [21]
+ [23]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 102.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1261,7 +1292,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 124.
 
-[22])
+[24])
 Overfull \hbox (21.53632pt too wide) in paragraph at lines 126--15
 \OT1/cmr/m/n/10.95 gr[]oe wi-der-spie-gelt. Folg-lich be-ein-flusst das Ent-wu
 rfs-ver-fah-ren nicht di-rekt die St[]orempfindlichkeit
@@ -1275,7 +1306,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 15.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 15.
-[23] (2_RT_Edge/RT_4_ControllerApplication.tex
+[25] (2_RT_Edge/RT_4_ControllerApplication.tex
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1288,7 +1319,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 24.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 24.
- [24]
+ [26]
 
 Package amsmath Warning: Cannot use `split' here;
 (amsmath)                trying to recover with `aligned' on input line 42.
@@ -1308,7 +1339,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 78.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 78.
- [25])
+ [27])
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 17.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1318,7 +1349,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 17.
 
-[26] (2_RT_Edge/RT_5_Observer.tex
+[28] (2_RT_Edge/RT_5_Observer.tex
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1331,21 +1362,21 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 32.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 32.
- [27]))
+ [29]))
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 18.
+(babel)             in language  on input line 20.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 18.
+(babel)             in language  on input line 20.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 18.
+(babel)             in language  on input line 20.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 18.
- [28]
+(babel)             in language  on input line 20.
+ [30]
 \openout2 = `4_TM_Corner/TM_CornerBalancing.aux'.
 
 
 (4_TM_Corner/TM_CornerBalancing.tex
-Kapitel 3.
+Kapitel 4.
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 6.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1358,7 +1389,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 10.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 10.
-[29
+[31
 
 
 
@@ -1385,7 +1416,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 50.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 50.
- [30]
+ [32]
 Overfull \hbox (15.6831pt too wide) detected at line 62
 [][][][] \OT1/cmr/m/n/10.95 = [] = [] [\OML/cmm/m/it/10.95 kg \OMS/cmsy/m/n/10.
 95  \OML/cmm/m/it/10.95 m[]\OT1/cmr/m/n/10.95 ]
@@ -1400,13 +1431,13 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 12.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 12.
- [31] (4_TM_Corner/TM_2_Kinematik.tex
+ [33] (4_TM_Corner/TM_2_Kinematik.tex
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
 
-<4_TM_Corner/img/MechAufbau3D.pdf, id=447, 963.6pt x 542.025pt>
+<4_TM_Corner/img/MechAufbau3D.pdf, id=461, 963.6pt x 542.025pt>
 File: 4_TM_Corner/img/MechAufbau3D.pdf Graphic file (type pdf)
 
 <use 4_TM_Corner/img/MechAufbau3D.pdf>
@@ -1431,7 +1462,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 27.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 27.
- [32 <./4_TM_Corner/img/MechAufbau3D.pdf>]
+ [34 <./4_TM_Corner/img/MechAufbau3D.pdf>]
 Overfull \hbox (6.10982pt too wide) in paragraph at lines 32--33
 []\OT1/cmr/m/n/10.95 Die Po-si-ti-on und Aus-rich-tung des Sys-tems wird von de
 n sechs Win-keln $\OML/cmm/m/it/10.95 '[]$ \OT1/cmr/m/n/10.95 und $\OML/cmm/m/i
@@ -1446,7 +1477,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 56.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 56.
-[33])
+[35])
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
@@ -1457,7 +1488,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 14.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 14.
- [34]
+ [36]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 14.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1467,7 +1498,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 14.
 
-[35] (4_TM_Corner/TM_3_Kinetik.tex
+[37] (4_TM_Corner/TM_3_Kinetik.tex
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1483,7 +1514,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 51.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 51.
- [36]
+ [38]
 Overfull \hbox (15.45291pt too wide) in paragraph at lines 51--53
 \OT1/cmr/m/n/10.95 den um die Be-we-gungs-glei-chun-gen zu be-stim-men. Hierf[]
 ur wer-den zun[]achst die Tr[]agheitsmomente
@@ -1500,32 +1531,32 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 72.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 72.
- [37]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 94.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 94.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 94.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 94.
- [38]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 119.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 119.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 119.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 119.
  [39]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 94.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 94.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 94.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 94.
+ [40]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 119.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 119.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 119.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 119.
+ [41]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 169.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 169.
@@ -1533,7 +1564,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 169.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 169.
- [40]
+ [42]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
@@ -1544,21 +1575,21 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 243.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 243.
- [41]))
+ [43]))
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 20.
+(babel)             in language  on input line 22.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 20.
+(babel)             in language  on input line 22.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 20.
+(babel)             in language  on input line 22.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 20.
+(babel)             in language  on input line 22.
 
-[42]
+[44]
 \openout2 = `6_RT_Corner/RT_CornerBalancing.aux'.
 
  (6_RT_Corner/RT_CornerBalancing.tex
-Kapitel 4.
+Kapitel 5.
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 6.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1571,7 +1602,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 9.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 9.
-[43
+[45
 
 
 
@@ -1595,9 +1626,9 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 59.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 59.
-[44]
+[46]
 
-LaTeX Warning: Citation `eq_xred' on page 45 undefined on input line 72.
+LaTeX Warning: Citation `eq_xred' on page 47 undefined on input line 72.
 
 Package epstopdf Info: Source file: <6_RT_Corner/img/lin_sim1_phi.eps>
 (epstopdf)                    date: 2017-04-26 18:35:43
@@ -1611,7 +1642,7 @@ i-eps-converted-to.pdf 6_RT_Corner/img/lin_sim1_phi.eps>
 (epstopdf)             \includegraphics on input line 86.
 Package epstopdf Info: Output file is already uptodate.
 
-<6_RT_Corner/img/lin_sim1_phi-eps-converted-to.pdf, id=610, 371.3875pt x 308.15
+<6_RT_Corner/img/lin_sim1_phi-eps-converted-to.pdf, id=624, 371.3875pt x 308.15
 125pt>
 File: 6_RT_Corner/img/lin_sim1_phi-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -1631,7 +1662,7 @@ to.pdf>
 (epstopdf)             \includegraphics on input line 87.
 Package epstopdf Info: Output file is already uptodate.
 
-<6_RT_Corner/img/lin_sim1_uk-eps-converted-to.pdf, id=611, 371.3875pt x 308.151
+<6_RT_Corner/img/lin_sim1_uk-eps-converted-to.pdf, id=625, 371.3875pt x 308.151
 25pt>
 File: 6_RT_Corner/img/lin_sim1_uk-eps-converted-to.pdf Graphic file (type pdf)
  <use 6_RT_Corner/img/lin_sim1_uk-eps-converted-to.pdf>
@@ -1650,7 +1681,7 @@ to.pdf>
 (epstopdf)             \includegraphics on input line 90.
 Package epstopdf Info: Output file is already uptodate.
 
-<6_RT_Corner/img/lin_sim1_ur-eps-converted-to.pdf, id=612, 374.39874pt x 308.15
+<6_RT_Corner/img/lin_sim1_ur-eps-converted-to.pdf, id=626, 374.39874pt x 308.15
 125pt>
 File: 6_RT_Corner/img/lin_sim1_ur-eps-converted-to.pdf Graphic file (type pdf)
  <use 6_RT_Corner/img/lin_sim1_ur-eps-converted-to.pdf>
@@ -1669,7 +1700,7 @@ to.pdf>
 (epstopdf)             \includegraphics on input line 91.
 Package epstopdf Info: Output file is already uptodate.
 
-<6_RT_Corner/img/lin_sim1_tm-eps-converted-to.pdf, id=613, 371.3875pt x 308.151
+<6_RT_Corner/img/lin_sim1_tm-eps-converted-to.pdf, id=627, 371.3875pt x 308.151
 25pt>
 File: 6_RT_Corner/img/lin_sim1_tm-eps-converted-to.pdf Graphic file (type pdf)
  <use 6_RT_Corner/img/lin_sim1_tm-eps-converted-to.pdf>
@@ -1687,7 +1718,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 100.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 100.
- [45]
+ [47]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 115.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1697,7 +1728,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 115.
 
-[46 <./6_RT_Corner/img/lin_sim1_phi-eps-converted-to.pdf> <./6_RT_Corner/img/li
+[48 <./6_RT_Corner/img/lin_sim1_phi-eps-converted-to.pdf> <./6_RT_Corner/img/li
 n_sim1_uk-eps-converted-to.pdf> <./6_RT_Corner/img/lin_sim1_ur-eps-converted-to
 .pdf> <./6_RT_Corner/img/lin_sim1_tm-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <6_RT_Corner/img/lin_sim2_phi.eps>
@@ -1712,7 +1743,7 @@ i-eps-converted-to.pdf 6_RT_Corner/img/lin_sim2_phi.eps>
 (epstopdf)             \includegraphics on input line 118.
 Package epstopdf Info: Output file is already uptodate.
 
-<6_RT_Corner/img/lin_sim2_phi-eps-converted-to.pdf, id=643, 368.37625pt x 308.1
+<6_RT_Corner/img/lin_sim2_phi-eps-converted-to.pdf, id=657, 368.37625pt x 308.1
 5125pt>
 File: 6_RT_Corner/img/lin_sim2_phi-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -1732,7 +1763,7 @@ to.pdf>
 (epstopdf)             \includegraphics on input line 119.
 Package epstopdf Info: Output file is already uptodate.
 
-<6_RT_Corner/img/lin_sim2_uk-eps-converted-to.pdf, id=644, 363.3575pt x 308.151
+<6_RT_Corner/img/lin_sim2_uk-eps-converted-to.pdf, id=658, 363.3575pt x 308.151
 25pt>
 File: 6_RT_Corner/img/lin_sim2_uk-eps-converted-to.pdf Graphic file (type pdf)
  <use 6_RT_Corner/img/lin_sim2_uk-eps-converted-to.pdf>
@@ -1751,7 +1782,7 @@ to.pdf>
 (epstopdf)             \includegraphics on input line 122.
 Package epstopdf Info: Output file is already uptodate.
 
-<6_RT_Corner/img/lin_sim2_ur-eps-converted-to.pdf, id=645, 374.39874pt x 308.15
+<6_RT_Corner/img/lin_sim2_ur-eps-converted-to.pdf, id=659, 374.39874pt x 308.15
 125pt>
 File: 6_RT_Corner/img/lin_sim2_ur-eps-converted-to.pdf Graphic file (type pdf)
  <use 6_RT_Corner/img/lin_sim2_ur-eps-converted-to.pdf>
@@ -1770,7 +1801,7 @@ to.pdf>
 (epstopdf)             \includegraphics on input line 123.
 Package epstopdf Info: Output file is already uptodate.
 
-<6_RT_Corner/img/lin_sim2_tm-eps-converted-to.pdf, id=646, 371.3875pt x 308.151
+<6_RT_Corner/img/lin_sim2_tm-eps-converted-to.pdf, id=660, 371.3875pt x 308.151
 25pt>
 File: 6_RT_Corner/img/lin_sim2_tm-eps-converted-to.pdf Graphic file (type pdf)
  <use 6_RT_Corner/img/lin_sim2_tm-eps-converted-to.pdf>
@@ -1788,7 +1819,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 140.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 140.
- [47
+ [49
 
  <./6_RT_Corner/img/lin_sim2_phi-eps-converted-to.pdf> <./6_RT_Corner/img/lin_s
 im2_uk-eps-converted-to.pdf> <./6_RT_Corner/img/lin_sim2_ur-eps-converted-to.pd
@@ -1803,7 +1834,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 11.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 11.
- [48]
+ [50]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 11.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1813,7 +1844,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 11.
 
-[49] (6_RT_Corner/1_SaturationProblem.tex
+[51] (6_RT_Corner/1_SaturationProblem.tex
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1829,17 +1860,17 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 32.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 32.
- [50]))
+ [52]))
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 22.
+(babel)             in language  on input line 24.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 22.
+(babel)             in language  on input line 24.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 22.
+(babel)             in language  on input line 24.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 22.
+(babel)             in language  on input line 24.
 
-[51]
+[53]
 \openout2 = `5_Sensorik/Sensorik.aux'.
 
  (5_Sensorik/Sensorik.tex
@@ -1851,96 +1882,64 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 6.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 6.
- [52
+ [54
 
 
 
 ]
-Kapitel 5.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 6.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 6.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 7.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 7.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 7.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 7.
-[53] (5_Sensorik/SEN_1_PhiEstimate.tex
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 1.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 42.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 42.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 42.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 42.
- [54]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 69.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 69.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 69.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 69.
- [55]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 144.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 144.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 144.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 144.
- [56])
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 9.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 9.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 9.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 9.
-
-[57] (5_Sensorik/SEN_2_Calibration.tex
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 1.
-))
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 24.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 24.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 24.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 24.
- [58]
-\openout2 = `3_SW/Software.aux'.
-
- (3_SW/Software.tex
 Kapitel 6.
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 6.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 6.
 Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 7.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 7.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 7.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 7.
+[55] (5_Sensorik/SEN_1_PhiEstimate.tex
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 42.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 42.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 42.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 42.
+ [56]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 69.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 69.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 69.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 69.
+ [57]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 144.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 144.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 144.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 144.
+ [58])
+Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 9.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 9.
@@ -1948,7 +1947,39 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 9.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 9.
-[59
+
+[59] (5_Sensorik/SEN_2_Calibration.tex
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1.
+))
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 26.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 26.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 26.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 26.
+ [60]
+\openout2 = `3_SW/Software.aux'.
+
+ (3_SW/Software.tex
+Kapitel 7.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 6.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 6.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 9.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 9.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 9.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 9.
+[61
 
 
 
@@ -1962,7 +1993,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 6.
 
-<3_SW/img/SW_0_Sensoren_BSB.pdf, id=751, 621.07031pt x 341.02406pt>
+<3_SW/img/SW_0_Sensoren_BSB.pdf, id=766, 621.07031pt x 341.02406pt>
 File: 3_SW/img/SW_0_Sensoren_BSB.pdf Graphic file (type pdf)
 
 <use 3_SW/img/SW_0_Sensoren_BSB.pdf>
@@ -1976,22 +2007,22 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 16.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 16.
- [60 <./3_SW/img/SW_0_Sensoren_BSB.pdf>]
-<3_SW/img/SW_0_Sensoren_KD.pdf, id=765, 606.76688pt x 341.02406pt>
+ [62 <./3_SW/img/SW_0_Sensoren_BSB.pdf>]
+<3_SW/img/SW_0_Sensoren_KD.pdf, id=780, 606.76688pt x 341.02406pt>
 File: 3_SW/img/SW_0_Sensoren_KD.pdf Graphic file (type pdf)
 
 <use 3_SW/img/SW_0_Sensoren_KD.pdf>
 Package pdftex.def Info: 3_SW/img/SW_0_Sensoren_KD.pdf used on input line 20.
 (pdftex.def)             Requested size: 308.71106pt x 173.50888pt.
 
-<3_SW/img/SW_0_Motoren_BSB.pdf, id=766, 566.115pt x 124.96687pt>
+<3_SW/img/SW_0_Motoren_BSB.pdf, id=781, 566.115pt x 124.96687pt>
 File: 3_SW/img/SW_0_Motoren_BSB.pdf Graphic file (type pdf)
 
 <use 3_SW/img/SW_0_Motoren_BSB.pdf>
 Package pdftex.def Info: 3_SW/img/SW_0_Motoren_BSB.pdf used on input line 27.
 (pdftex.def)             Requested size: 308.71106pt x 68.1485pt.
 
-<3_SW/img/SW_0_Hardware_KD.pdf, id=767, 582.67688pt x 383.93437pt>
+<3_SW/img/SW_0_Hardware_KD.pdf, id=782, 582.67688pt x 383.93437pt>
 File: 3_SW/img/SW_0_Hardware_KD.pdf Graphic file (type pdf)
 
 <use 3_SW/img/SW_0_Hardware_KD.pdf>
@@ -2009,7 +2040,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 11.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 11.
-[61 <./3_SW/img/SW_0_Sensoren_KD.pdf>]
+[63 <./3_SW/img/SW_0_Sensoren_KD.pdf>]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 11.
 Package babel Info: Redefining ngerman shorthand "~
@@ -2018,7 +2049,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 11.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 11.
- [62 <./3_SW/img/SW_0_Motoren_BSB.pdf> <./3_SW/img/SW_0_Hardware_KD.pdf
+ [64 <./3_SW/img/SW_0_Motoren_BSB.pdf> <./3_SW/img/SW_0_Hardware_KD.pdf
 
 pdfTeX warning: pdflatex (file ./3_SW/img/SW_0_Hardware_KD.pdf): PDF inclusion:
  multiple pdfs with page group included in a single page
@@ -2028,7 +2059,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
 
-<3_SW/img/SW_1_Signalfluss_BSB.pdf, id=811, 710.655pt x 124.96687pt>
+<3_SW/img/SW_1_Signalfluss_BSB.pdf, id=825, 710.655pt x 124.96687pt>
 File: 3_SW/img/SW_1_Signalfluss_BSB.pdf Graphic file (type pdf)
 
 <use 3_SW/img/SW_1_Signalfluss_BSB.pdf>
@@ -2050,7 +2081,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 43.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 43.
- [63 <./3_SW/img/SW_1_Signalfluss_BSB.pdf>]
+ [65 <./3_SW/img/SW_1_Signalfluss_BSB.pdf>]
 Overfull \hbox (9.9866pt too wide) in paragraph at lines 59--60
 [][][][][][][][][][][][][][][][][][][][] 
  []
@@ -2063,12 +2094,12 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 86.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 86.
-[64]
+[66]
 Overfull \hbox (33.98685pt too wide) in paragraph at lines 96--97
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-<3_SW/img/SW_1_Signalfluss_KD.pdf, id=900, 582.67688pt x 383.93437pt>
+<3_SW/img/SW_1_Signalfluss_KD.pdf, id=914, 582.67688pt x 383.93437pt>
 File: 3_SW/img/SW_1_Signalfluss_KD.pdf Graphic file (type pdf)
 
 <use 3_SW/img/SW_1_Signalfluss_KD.pdf>
@@ -2087,7 +2118,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 128.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 128.
-[65])
+[67])
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 13.
 Package babel Info: Redefining ngerman shorthand "~
@@ -2096,7 +2127,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 13.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 13.
- [66 <./3_SW/img/SW_1_Signalfluss_KD.pdf>]
+ [68 <./3_SW/img/SW_1_Signalfluss_KD.pdf>]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 13.
 Package babel Info: Redefining ngerman shorthand "~
@@ -2105,14 +2136,14 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 13.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 13.
- [67]
+ [69]
 (3_SW/SW_2_KomponentenArchitektur.tex
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
 
-<3_SW/img/SW_1_KA_BSB.pdf, id=979, 810.77907pt x 341.02406pt>
+<3_SW/img/SW_1_KA_BSB.pdf, id=993, 810.77907pt x 341.02406pt>
 File: 3_SW/img/SW_1_KA_BSB.pdf Graphic file (type pdf)
 
 <use 3_SW/img/SW_1_KA_BSB.pdf>
@@ -2124,7 +2155,7 @@ Overfull \hbox (0.48918pt too wide) in paragraph at lines 2--10
 rt. Um ei-ne ef-fi-zi-en-te Ver-suchs-durchf[]uhrung
  []
 
-<3_SW/img/SW_1_KA_KD.pdf, id=980, 606.76688pt x 341.02406pt>
+<3_SW/img/SW_1_KA_KD.pdf, id=994, 606.76688pt x 341.02406pt>
 File: 3_SW/img/SW_1_KA_KD.pdf Graphic file (type pdf)
 
 <use 3_SW/img/SW_1_KA_KD.pdf>
@@ -2138,7 +2169,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 17.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 17.
- [68 <./3_SW/img/SW_1_KA_BSB.pdf>]
+ [70 <./3_SW/img/SW_1_KA_BSB.pdf>]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 42.
 Package babel Info: Redefining ngerman shorthand "~
@@ -2147,7 +2178,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 42.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 42.
- [69 <./3_SW/img/SW_1_KA_KD.pdf>])
+ [71 <./3_SW/img/SW_1_KA_KD.pdf>])
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 15.
 Package babel Info: Redefining ngerman shorthand "~
@@ -2156,13 +2187,13 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 15.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 15.
- [70] (3_SW/SW_3_RegelungsKomponente.tex
+ [72] (3_SW/SW_3_RegelungsKomponente.tex
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
 
-<3_SW/img/SW_2_ControlComp_SC.pdf, id=1043, 483.30562pt x 255.95625pt>
+<3_SW/img/SW_2_ControlComp_SC.pdf, id=1057, 483.30562pt x 255.95625pt>
 File: 3_SW/img/SW_2_ControlComp_SC.pdf Graphic file (type pdf)
 
 <use 3_SW/img/SW_2_ControlComp_SC.pdf>
@@ -2177,7 +2208,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 30.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 30.
- [71 <./3_SW/img/SW_2_ControlComp_SC.pdf>]
+ [73 <./3_SW/img/SW_2_ControlComp_SC.pdf>]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 85.
 Package babel Info: Redefining ngerman shorthand "~
@@ -2186,62 +2217,62 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 85.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 85.
- [72]
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 110.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 110.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 110.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 110.
- [73]
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 154.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 154.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 154.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 154.
  [74]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 209.
+(babel)             in language  on input line 110.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 209.
+(babel)             in language  on input line 110.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 209.
+(babel)             in language  on input line 110.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 209.
+(babel)             in language  on input line 110.
  [75]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 267.
+(babel)             in language  on input line 154.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 267.
+(babel)             in language  on input line 154.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 267.
+(babel)             in language  on input line 154.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 267.
- [76]))
+(babel)             in language  on input line 154.
+ [76]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 26.
+(babel)             in language  on input line 209.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 26.
+(babel)             in language  on input line 209.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 26.
+(babel)             in language  on input line 209.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 26.
+(babel)             in language  on input line 209.
  [77]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 28.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 28.
- (BA_MM.aux (1_TM_Edge/TM_EdgeBalancing.aux)
-(RT_EdgeBalancing.aux) (4_TM_Corner/TM_CornerBalancing.aux)
-(6_RT_Corner/RT_CornerBalancing.aux) (5_Sensorik/Sensorik.aux)
-(3_SW/Software.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 28.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 28.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 267.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 267.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 267.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 267.
+ [78]))
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 28.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 28.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 28.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 28.
+ [79]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 30.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 30.
+ (BA_MM.aux (0_Introduction/Introduction.aux)
+(1_TM_Edge/TM_EdgeBalancing.aux) (RT_EdgeBalancing.aux)
+(4_TM_Corner/TM_CornerBalancing.aux) (6_RT_Corner/RT_CornerBalancing.aux)
+(5_Sensorik/Sensorik.aux) (3_SW/Software.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 30.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 30.
 Package rerunfilecheck Info: File `BA_MM.out' has not changed.
-(rerunfilecheck)             Checksum: 34AF56365A833F2E9CEAD64D121BED76;2100.
+(rerunfilecheck)             Checksum: A0D3BB331B87173BEE646EAECE996C5B;2147.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -2250,13 +2281,13 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 28.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 30.
  ) 
 Here is how much of TeX's memory you used:
- 13201 strings out of 493333
- 193779 string characters out of 3139200
- 313717 words of memory out of 3000000
- 15639 multiletter control sequences out of 15000+200000
+ 13214 strings out of 493333
+ 194056 string characters out of 3139200
+ 314245 words of memory out of 3000000
+ 15641 multiletter control sequences out of 15000+200000
  20626 words of font info for 74 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  72i,44n,100p,1919b,1869s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2289,9 +2320,9 @@ amsfonts/latxfont/lcircle1.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
 amsfonts/symbols/msam10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
 fonts/symbols/msbm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/courier/u
 crb8a.pfb>
-Output written on BA_MM.pdf (77 pages, 4119550 bytes).
+Output written on BA_MM.pdf (79 pages, 4123619 bytes).
 PDF statistics:
- 1562 PDF objects out of 1728 (max. 8388607)
- 720 named destinations out of 1000 (max. 500000)
- 324 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1579 PDF objects out of 1728 (max. 8388607)
+ 723 named destinations out of 1000 (max. 500000)
+ 332 words of extra memory for PDF output out of 10000 (max. 10000000)
 

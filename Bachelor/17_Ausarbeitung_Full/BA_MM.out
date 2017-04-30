@@ -1,27 +1,28 @@
-\BOOKMARK [0][-]{chapter.1}{Modellbildung W\374rfel auf Kante}{}% 1
-\BOOKMARK [1][-]{section.1.1}{Untersuchung der Kinematik}{chapter.1}% 2
-\BOOKMARK [1][-]{section.1.2}{Untersuchung der Kinetik}{chapter.1}% 3
-\BOOKMARK [0][-]{chapter.2}{Regelungstechnik}{}% 4
-\BOOKMARK [1][-]{section.2.1}{Zustandsraumdarstellung f\374r kontinuierliche Systeme}{chapter.2}% 5
-\BOOKMARK [1][-]{section.2.2}{Zustandsraumdarstellung f\374r zeitdiskrete Systeme}{chapter.2}% 6
-\BOOKMARK [1][-]{section.2.3}{Entwurf von Zustandsregelungen}{chapter.2}% 7
-\BOOKMARK [2][-]{subsection.2.3.1}{Reglerentwurf durch Eigenwertvorgabe}{section.2.3}% 8
-\BOOKMARK [2][-]{subsection.2.3.2}{Linear quadratisch optimale Regelung}{section.2.3}% 9
-\BOOKMARK [1][-]{section.2.4}{Verifizierung des Reglers an der Regelstrecke}{chapter.2}% 10
-\BOOKMARK [1][-]{section.2.5}{Beobachtung der Messabweichungen}{chapter.2}% 11
-\BOOKMARK [0][-]{chapter.3}{Modellbildung W\374rfel auf Ecke}{}% 12
-\BOOKMARK [1][-]{section.3.1}{Systemparameter}{chapter.3}% 13
-\BOOKMARK [1][-]{section.3.2}{Untersuchung der Kinematik}{chapter.3}% 14
-\BOOKMARK [1][-]{section.3.3}{Untersuchung der Kinetik}{chapter.3}% 15
-\BOOKMARK [0][-]{chapter.4}{Reglerentwurf f\374r das Balancieren auf einer Ecke}{}% 16
-\BOOKMARK [1][-]{section.4.1}{Modell basierter Reglerentwurf}{chapter.4}% 17
-\BOOKMARK [1][-]{section.4.2}{Untersuchung der Stellgr\366\337enbeschr\344nkung}{chapter.4}% 18
-\BOOKMARK [0][-]{chapter.5}{Erfassung der Zustandsgr\366\337en}{}% 19
-\BOOKMARK [1][-]{section.5.1}{Winkelsch\344tzung}{chapter.5}% 20
-\BOOKMARK [1][-]{section.5.2}{Justierung der Sensoren}{chapter.5}% 21
-\BOOKMARK [0][-]{chapter.6}{Software}{}% 22
-\BOOKMARK [1][-]{section.6.1}{Zielplattform, Sensorik und Aktorik}{chapter.6}% 23
-\BOOKMARK [2][-]{subsection.6.1.1}{Peripherie}{section.6.1}% 24
-\BOOKMARK [1][-]{section.6.2}{Implementierung des Signalflusses}{chapter.6}% 25
-\BOOKMARK [1][-]{section.6.3}{Komponentenarchitektur f\374r mechatronische Anwendungen}{chapter.6}% 26
-\BOOKMARK [1][-]{section.6.4}{Entwurf der Regelungskomponente}{chapter.6}% 27
+\BOOKMARK [0][-]{chapter.1}{Einleitung}{}% 1
+\BOOKMARK [0][-]{chapter.2}{Modellbildung W\374rfel auf Kante}{}% 2
+\BOOKMARK [1][-]{section.2.1}{Untersuchung der Kinematik}{chapter.2}% 3
+\BOOKMARK [1][-]{section.2.2}{Untersuchung der Kinetik}{chapter.2}% 4
+\BOOKMARK [0][-]{chapter.3}{Regelungstechnik}{}% 5
+\BOOKMARK [1][-]{section.3.1}{Zustandsraumdarstellung f\374r kontinuierliche Systeme}{chapter.3}% 6
+\BOOKMARK [1][-]{section.3.2}{Zustandsraumdarstellung f\374r zeitdiskrete Systeme}{chapter.3}% 7
+\BOOKMARK [1][-]{section.3.3}{Entwurf von Zustandsregelungen}{chapter.3}% 8
+\BOOKMARK [2][-]{subsection.3.3.1}{Reglerentwurf durch Eigenwertvorgabe}{section.3.3}% 9
+\BOOKMARK [2][-]{subsection.3.3.2}{Linear quadratisch optimale Regelung}{section.3.3}% 10
+\BOOKMARK [1][-]{section.3.4}{Verifizierung des Reglers an der Regelstrecke}{chapter.3}% 11
+\BOOKMARK [1][-]{section.3.5}{Beobachtung der Messabweichungen}{chapter.3}% 12
+\BOOKMARK [0][-]{chapter.4}{Modellbildung W\374rfel auf Ecke}{}% 13
+\BOOKMARK [1][-]{section.4.1}{Systemparameter}{chapter.4}% 14
+\BOOKMARK [1][-]{section.4.2}{Untersuchung der Kinematik}{chapter.4}% 15
+\BOOKMARK [1][-]{section.4.3}{Untersuchung der Kinetik}{chapter.4}% 16
+\BOOKMARK [0][-]{chapter.5}{Reglerentwurf f\374r das Balancieren auf einer Ecke}{}% 17
+\BOOKMARK [1][-]{section.5.1}{Modell basierter Reglerentwurf}{chapter.5}% 18
+\BOOKMARK [1][-]{section.5.2}{Untersuchung der Stellgr\366\337enbeschr\344nkung}{chapter.5}% 19
+\BOOKMARK [0][-]{chapter.6}{Erfassung der Zustandsgr\366\337en}{}% 20
+\BOOKMARK [1][-]{section.6.1}{Winkelsch\344tzung}{chapter.6}% 21
+\BOOKMARK [1][-]{section.6.2}{Justierung der Sensoren}{chapter.6}% 22
+\BOOKMARK [0][-]{chapter.7}{Software}{}% 23
+\BOOKMARK [1][-]{section.7.1}{Zielplattform, Sensorik und Aktorik}{chapter.7}% 24
+\BOOKMARK [2][-]{subsection.7.1.1}{Peripherie}{section.7.1}% 25
+\BOOKMARK [1][-]{section.7.2}{Implementierung des Signalflusses}{chapter.7}% 26
+\BOOKMARK [1][-]{section.7.3}{Komponentenarchitektur f\374r mechatronische Anwendungen}{chapter.7}% 27
+\BOOKMARK [1][-]{section.7.4}{Entwurf der Regelungskomponente}{chapter.7}% 28
