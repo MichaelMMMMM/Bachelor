@@ -11,10 +11,7 @@ Zur Prüfung der Steuerbarkeit kann das Kalmankriterium angewandt werden [Lunze 
 "\ Ein System $\Sigma = (\bs{A},\bs{B},\bs{C})$ hießt vollständig beobachtbar, wenn der Anfangszustand $\bs{x}_0$ aus dem über einem endlichen Intervall $[0,t_e]$ bekannten Verlauf der Eingangsgröße $\bs{u}_{[0,t_e]}$ und der Ausgangsgröße $\bs{y}_{[0,t_e]}$ bestimmt werden kann. "
 \signed{LunzeRT2, S. 92}
 \end{quote}
-Zu der Prüfung der Beobachtbarkeit kann ebenfalls das Kalmankriterium genutzt werden [LunzeRT2, S.93ff]. Da das System $\overline{\textfrak{D}}_o$ vollständig beobachtbar ist, kann ein Luenberger-Beobachter verwendet werden um den Zustandsvektor $\bs{x}_o$ zu schätzen. Das Grundprizip der Beobachtung besteht darin, parallel zu der Regelstrecke das Modell zu berechnen und daraus den Zustandsvektor zu schätzen. Die Problematik dieses Ansatz besteht darin, dass ein beliebiger Modellfehler zu einem, mit der Zeit zunehmenden, Schätzfehler führt. Deshalb wir das in der Regelungstechnik bewährte Prinzip der Fehlerrückführung übernommen. Da der Zustandsvektor $\bs{x}$ der Regelstrecke nicht zur Verfügung steht wird die Differenz
-\begin{equation}
-\delta\bs{y} = \bs{y} - \bs{\hat{y}}
-\end{equation}
+Zu der Prüfung der Beobachtbarkeit kann ebenfalls das Kalmankriterium genutzt werden [LunzeRT2, S.93ff]. Da das System $\overline{\textfrak{D}}_o$ vollständig beobachtbar ist, kann ein Luenberger-Beobachter verwendet werden um den Zustandsvektor $\bs{x}_o$ zu schätzen. Das Grundprizip der Beobachtung besteht darin, parallel zu der Regelstrecke das Modell zu berechnen und daraus den Zustandsvektor zu schätzen. Die Problematik dieses Ansatz besteht darin, dass ein beliebiger Modellfehler zu einem, mit der Zeit zunehmenden, Schätzfehler führt. Deshalb wir das in der Regelungstechnik bewährte Prinzip der Fehlerrückführung übernommen. Da der Zustandsvektor $\bs{x}$ der Regelstrecke nicht zur Verfügung steht wird die Differenz $\delta\bs{y} = \bs{y} - \bs{\hat{y}}$
 der Ausgangsgrößen berechnet. Diese fließt über die Beobachtermatrix $\bs{L}$ in den Schätzwert $\bs{\hat{x}}$ des Zustandes ein.
 
 BILD

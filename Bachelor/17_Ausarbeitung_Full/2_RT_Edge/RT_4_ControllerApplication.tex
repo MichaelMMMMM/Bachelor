@@ -17,11 +17,17 @@ Somit werden der Zustandsvektor und die Stellgröße quadratisch über ihren max
 \begin{equation}
 \lambda_1 = 0,7895 \hspace{35pt} \lambda_{2,3} = 0,8830 \pm 0,0087j
 \end{equation}
-und ist somit asymptotisch stabil. Im nächsten Schritt wird der Regler an der realen Regelstrecke validiert. Abbildung hier zeigt den Verlauf der Zustands- und Stellgröße, wobei das System bei dem Zeitpunk yy durch eine äußere Störung erregt wurde.
+und ist somit asymptotisch stabil. Im nächsten Schritt wird der Regler an der realen Regelstrecke validiert. Die folgende Abbildung zeigt den Verlauf der Zustands- und Stellgröße, wobei das System bei dem Zeitpunk $t\approx 15$ durch eine äußere Störung erregt wurde.
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.45\linewidth]{img/edge_exp1_phi.eps}
+\includegraphics[width=0.45\linewidth]{img/edge_exp1_uk.eps}
+\vspace{0.5cm}
 
-placeholder plot
+\includegraphics[width=0.45\linewidth]{img/edge_exp1_ur.eps}
+\includegraphics[width=0.45\linewidth]{img/edge_exp1_tm.eps}
+\end{figure}
 
-\newpage
 Die Abbildungen zeigen, dass der Regler das System nicht in die Ruhelage $\bs{x}=\bs{0}$ überführt, sondern die Schwungmasse mit konstanter Geschwindigkeit rotiert. Dieser Umstand ist darauf zurückzuführen, dass der Zustandsvektor mit einem systematischen Messfehler erfasst wird. Im Modell wird diese Gegebenheit durch die Einführung der Zustandsgrößen
 \begin{equation}
 \bs{\hat{x}} = \begin{pmatrix}
@@ -84,6 +90,22 @@ Interessant ist hierbei die Form der Transformationsmatrix
 \end{bmatrix}
 \,.
 \end{equation}
-Zunächst geht aus den unteren drei Zeilen hervor, dass es sich bei den Messabweichungen $\bs{\hat{x}}$ um kanonische Zustandsvariablen handelt. Des weiteren bleiben die Eigenvektoren $\bs{V}$ des ursprünglichen Systems $\overline{\textfrak{D}}$ und somit auch dessen Eigenbewegung erhalten. Die Messabweichungen wirken lediglich über die Faktoren $\gamma_i$ auf die Geschwindigkeit $u_R$ des Schwungmasse ein. Unter der Annahme, dass die Messabweichungen konstant sind, führen diese zu einer verbleibenden Bewegung der Schwungmasse. Deshalb muss die vorherige Stabilitäsaussage auf das Gebiet der Zustands- und Stellgrößen begrenzt werden für welche die Stellgröße nicht begrenzt ist. Beispielsweise kann das System nicht mehr stabilsiert werden, wenn der Messfehler so groß ist, dass $\bs{\gamma}\cdot \bs{\hat{x}}$ die maximale Drehzahl des Motors überschreitet.
+Zunächst geht aus den unteren drei Zeilen hervor, dass es sich bei den Messabweichungen $\bs{\hat{x}}$ um kanonische Zustandsvariablen handelt. Des weiteren bleiben die Eigenvektoren $\bs{V}$ des ursprünglichen Systems $\overline{\textfrak{D}}$ und somit auch dessen Eigenbewegung erhalten. Die Messabweichungen wirken lediglich über die Faktoren $\gamma_i$ auf die Geschwindigkeit $u_R$ des Schwungmasse ein. Unter der Annahme, dass die Messabweichungen konstant sind, führen diese zu einer verbleibenden Bewegung der Schwungmasse. Deshalb muss die vorherige Stabilitäsaussage auf das Gebiet der Zustands- und Stellgrößen begrenzt werden für welche die Stellgröße nicht begrenzt ist. Beispielsweise kann das System nicht mehr stabilisiert werden, wenn der Messfehler so groß ist, dass $\bs{\gamma}\cdot \bs{\hat{x}}$ die maximale Drehzahl des Motors überschreitet.
 
-Hier gehört ein versuch rein der dieses Theorie untermauert. Nach diesem Modell geht phi gegen null folgich ist der Anzeigewert am ende reine Messabweichung, die kann ich händisch korrigieren, dann sollte die Schwungmasse langsamer rotieren.
+Da der Winkel $\varphi$ nach wie vor asymptotisch stabil ist entspricht der Endwert der gemessenen Größe $\bs{y}(1)$ der Messabweichung.
+\begin{equation}
+\bs{y}(1) = \varphi + \hat{\varphi} \rightarrow \lim_{k\rightarrow\infty}\bs{y}(1) = \hat{\varphi}
+\end{equation}
+Deshalb wird zunächst die Messabweichung $\hat{\varphi}$ bestimmt und in einem anschließenden Versuch korrigiert. Nach dem Modell ist zu erwarten, dass die Schwungmasse nahe zum Stillstand kommt. Dies ist darin begründet, dass lediglich die Messabweichung $\varphi$ korrigiert wird, diese allerdings den größten Einfluss auf den Endwert des Systems hat.
+\begin{figure}[h!]
+\includegraphics[width=0.45\linewidth]{img/edge_exp2_phi.eps}
+\includegraphics[width=0.45\linewidth]{img/edge_exp2_uk.eps}
+\end{figure}
+\begin{figure}[h!]
+\includegraphics[width=0.45\linewidth]{img/edge_exp2_ur.eps}
+\includegraphics[width=0.45\linewidth]{img/edge_exp2_tm.eps}
+\label{plot_edge_exp2}
+\caption{Verlauf der Zustandsgrößen bei korrigierten Messabweichungen}
+\end{figure}
+\newpage
+Abbildung (\ref{plot_edge_exp2}) zeigt den Verlauf der Zustandsgrößen, wobei zu dem Zeitpunkt $t=15$ die Messabweichung korrigiert wurde. Daraufhin nimmt die Geschwindigkeit $u_R$ der Schwungmasse deutlich ab.
