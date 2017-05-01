@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.31)  9 APR 2017 10:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.31)  30 APR 2017 10:18
 entering extended mode
 **./Software.tex
 (Software.tex
@@ -724,7 +724,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip52
 )
-Package hyperref Info: Option `colorlinks' set `false' on input line 23.
+Package hyperref Info: Option `colorlinks' set `false' on input line 24.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
 Package: geometry 2010/09/12 v5.6 Page Geometry
@@ -889,7 +889,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 6.
 
-<img/SW_0_Sensoren_BSB.pdf, id=34, 621.07031pt x 341.02406pt>
+<img/SW_0_Sensoren_BSB.pdf, id=38, 621.07031pt x 341.02406pt>
 File: img/SW_0_Sensoren_BSB.pdf Graphic file (type pdf)
 
 <use img/SW_0_Sensoren_BSB.pdf>
@@ -904,21 +904,21 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 16.
  [2 <./img/SW_0_Sensoren_BSB.pdf>]
-<img/SW_0_Sensoren_KD.pdf, id=49, 606.76688pt x 341.02406pt>
+<img/SW_0_Sensoren_KD.pdf, id=53, 606.76688pt x 341.02406pt>
 File: img/SW_0_Sensoren_KD.pdf Graphic file (type pdf)
 
 <use img/SW_0_Sensoren_KD.pdf>
 Package pdftex.def Info: img/SW_0_Sensoren_KD.pdf used on input line 20.
 (pdftex.def)             Requested size: 308.71106pt x 173.50888pt.
 
-<img/SW_0_Motoren_BSB.pdf, id=50, 566.115pt x 124.96687pt>
+<img/SW_0_Motoren_BSB.pdf, id=54, 566.115pt x 124.96687pt>
 File: img/SW_0_Motoren_BSB.pdf Graphic file (type pdf)
 
 <use img/SW_0_Motoren_BSB.pdf>
 Package pdftex.def Info: img/SW_0_Motoren_BSB.pdf used on input line 27.
 (pdftex.def)             Requested size: 308.71106pt x 68.1485pt.
 
-<img/SW_0_Hardware_KD.pdf, id=51, 582.67688pt x 383.93437pt>
+<img/SW_0_Hardware_KD.pdf, id=55, 582.67688pt x 383.93437pt>
 File: img/SW_0_Hardware_KD.pdf Graphic file (type pdf)
 
 <use img/SW_0_Hardware_KD.pdf>
@@ -955,7 +955,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
 
-<img/SW_1_Signalfluss_BSB.pdf, id=95, 710.655pt x 124.96687pt>
+<img/SW_1_Signalfluss_BSB.pdf, id=99, 710.655pt x 124.96687pt>
 File: img/SW_1_Signalfluss_BSB.pdf Graphic file (type pdf)
 
 <use img/SW_1_Signalfluss_BSB.pdf>
@@ -994,7 +994,7 @@ Overfull \hbox (33.98685pt too wide) in paragraph at lines 96--97
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-<img/SW_1_Signalfluss_KD.pdf, id=184, 582.67688pt x 383.93437pt>
+<img/SW_1_Signalfluss_KD.pdf, id=188, 582.67688pt x 383.93437pt>
 File: img/SW_1_Signalfluss_KD.pdf Graphic file (type pdf)
 
 <use img/SW_1_Signalfluss_KD.pdf>
@@ -1036,7 +1036,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
 
-<img/SW_1_KA_BSB.pdf, id=263, 810.77907pt x 341.02406pt>
+<img/SW_1_KA_BSB.pdf, id=267, 810.77907pt x 341.02406pt>
 File: img/SW_1_KA_BSB.pdf Graphic file (type pdf)
 
 <use img/SW_1_KA_BSB.pdf>
@@ -1048,7 +1048,7 @@ Overfull \hbox (0.48918pt too wide) in paragraph at lines 2--10
 rt. Um ei-ne ef-fi-zi-en-te Ver-suchs-durchf[]uhrung
  []
 
-<img/SW_1_KA_KD.pdf, id=264, 606.76688pt x 341.02406pt>
+<img/SW_1_KA_KD.pdf, id=268, 606.76688pt x 341.02406pt>
 File: img/SW_1_KA_KD.pdf Graphic file (type pdf)
 
 <use img/SW_1_KA_KD.pdf>
@@ -1086,7 +1086,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
 
-<img/SW_2_ControlComp_SC.pdf, id=327, 483.30562pt x 255.95625pt>
+<img/SW_2_ControlComp_SC.pdf, id=331, 483.30562pt x 255.95625pt>
 File: img/SW_2_ControlComp_SC.pdf Graphic file (type pdf)
 
 <use img/SW_2_ControlComp_SC.pdf>
@@ -1147,30 +1147,60 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 267.
  [18])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 19.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 19.
+(babel)             in language  on input line 17.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 19.
+(babel)             in language  on input line 17.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 19.
+(babel)             in language  on input line 17.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 19.
- [19]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 19.
- (Software.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 19.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 19.
+(babel)             in language  on input line 17.
+ [19] (SW_4_KommunikationsKomponente.tex
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1.
+
+<img/SW_4_CommComp_SC.pdf, id=606, 368.1253pt x 164.86594pt>
+File: img/SW_4_CommComp_SC.pdf Graphic file (type pdf)
+
+<use img/SW_4_CommComp_SC.pdf>
+Package pdftex.def Info: img/SW_4_CommComp_SC.pdf used on input line 7.
+(pdftex.def)             Requested size: 308.71106pt x 138.26755pt.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 25.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 25.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 25.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 25.
+ [20 <./img/SW_4_CommComp_SC.pdf>])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 21.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 21.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 21.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 21.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 21.
+ [21]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 21.
+
+(Software.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 21.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 21.
 Package rerunfilecheck Info: File `Software.out' has not changed.
-(rerunfilecheck)             Checksum: F685418939C6C8E76E3DD615A727F38A;451.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 19.
+(rerunfilecheck)             Checksum: 7D2E63B73C6AC811EDE44984B689F366;534.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 21.
  )
-(\end occurred when \ifx on line 18 was incomplete) 
+(\end occurred when \ifx on line 20 was incomplete) 
 Here is how much of TeX's memory you used:
- 11872 strings out of 493333
- 172747 string characters out of 3139200
- 314763 words of memory out of 3000000
- 14781 multiletter control sequences out of 15000+200000
+ 11931 strings out of 493333
+ 173781 string characters out of 3139200
+ 314820 words of memory out of 3000000
+ 14804 multiletter control sequences out of 15000+200000
  7585 words of font info for 27 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  46i,7n,44p,1414b,1868s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1180,9 +1210,9 @@ sfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
 m/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl10.
 pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/
 Program Files/MiKTeX 2.9/fonts/type1/urw/courier/ucrb8a.pfb>
-Output written on Software.pdf (19 pages, 1949392 bytes).
+Output written on Software.pdf (21 pages, 2111961 bytes).
 PDF statistics:
- 707 PDF objects out of 1000 (max. 8388607)
- 417 named destinations out of 1000 (max. 500000)
- 94 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 765 PDF objects out of 1000 (max. 8388607)
+ 449 named destinations out of 1000 (max. 500000)
+ 107 words of extra memory for PDF output out of 10000 (max. 10000000)
 

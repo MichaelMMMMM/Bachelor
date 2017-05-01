@@ -1,28 +1,30 @@
 \select@language {ngerman}
-\contentsline {chapter}{\numberline {1}Modellbildung W\IeC {\"u}rfel auf Kante}{5}{chapter.1}
-\contentsline {section}{\numberline {1.1}Untersuchung der Kinematik}{6}{section.1.1}
-\contentsline {section}{\numberline {1.2}Untersuchung der Kinetik}{10}{section.1.2}
-\contentsline {chapter}{\numberline {2}Regelungstechnik}{13}{chapter.2}
-\contentsline {section}{\numberline {2.1}Zustandsraumdarstellung f\IeC {\"u}r kontinuierliche Systeme}{14}{section.2.1}
-\contentsline {section}{\numberline {2.2}Zustandsraumdarstellung f\IeC {\"u}r zeitdiskrete Systeme}{18}{section.2.2}
-\contentsline {section}{\numberline {2.3}Entwurf von Zustandsregelungen}{20}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Reglerentwurf durch Eigenwertvorgabe}{20}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Linear quadratisch optimale Regelung}{22}{subsection.2.3.2}
-\contentsline {section}{\numberline {2.4}Verifizierung des Reglers an der Regelstrecke}{24}{section.2.4}
-\contentsline {section}{\numberline {2.5}Beobachtung der Messabweichungen}{27}{section.2.5}
-\contentsline {chapter}{\numberline {3}Modellbildung W\IeC {\"u}rfel auf Ecke}{29}{chapter.3}
-\contentsline {section}{\numberline {3.1}Systemparameter}{30}{section.3.1}
-\contentsline {section}{\numberline {3.2}Untersuchung der Kinematik}{32}{section.3.2}
-\contentsline {section}{\numberline {3.3}Untersuchung der Kinetik}{36}{section.3.3}
-\contentsline {chapter}{\numberline {4}Reglerentwurf f\IeC {\"u}r das Balancieren auf einer Ecke}{43}{chapter.4}
-\contentsline {section}{\numberline {4.1}Modell basierter Reglerentwurf}{44}{section.4.1}
-\contentsline {section}{\numberline {4.2}Untersuchung der Stellgr\IeC {\"o}\IeC {\ss }enbeschr\IeC {\"a}nkung}{50}{section.4.2}
-\contentsline {chapter}{\numberline {5}Erfassung der Zustandsgr\IeC {\"o}\IeC {\ss }en}{53}{chapter.5}
-\contentsline {section}{\numberline {5.1}Winkelsch\IeC {\"a}tzung}{54}{section.5.1}
-\contentsline {section}{\numberline {5.2}Justierung der Sensoren}{58}{section.5.2}
-\contentsline {chapter}{\numberline {6}Software}{59}{chapter.6}
-\contentsline {section}{\numberline {6.1}Zielplattform, Sensorik und Aktorik}{60}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}Peripherie}{60}{subsection.6.1.1}
-\contentsline {section}{\numberline {6.2}Implementierung des Signalflusses}{63}{section.6.2}
-\contentsline {section}{\numberline {6.3}Komponentenarchitektur f\IeC {\"u}r mechatronische Anwendungen}{68}{section.6.3}
-\contentsline {section}{\numberline {6.4}Entwurf der Regelungskomponente}{71}{section.6.4}
+\contentsline {chapter}{\numberline {1}Einleitung}{5}{chapter.1}
+\contentsline {chapter}{\numberline {2}Modellbildung W\IeC {\"u}rfel auf Kante}{7}{chapter.2}
+\contentsline {section}{\numberline {2.1}Untersuchung der Kinematik}{8}{section.2.1}
+\contentsline {section}{\numberline {2.2}Untersuchung der Kinetik}{12}{section.2.2}
+\contentsline {chapter}{\numberline {3}Regelungstechnik}{15}{chapter.3}
+\contentsline {section}{\numberline {3.1}Zustandsraumdarstellung f\IeC {\"u}r kontinuierliche Systeme}{16}{section.3.1}
+\contentsline {section}{\numberline {3.2}Zustandsraumdarstellung f\IeC {\"u}r zeitdiskrete Systeme}{20}{section.3.2}
+\contentsline {section}{\numberline {3.3}Entwurf von Zustandsregelungen}{22}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Reglerentwurf durch Eigenwertvorgabe}{22}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Linear quadratisch optimale Regelung}{24}{subsection.3.3.2}
+\contentsline {section}{\numberline {3.4}Verifizierung des Reglers an der Regelstrecke}{26}{section.3.4}
+\contentsline {section}{\numberline {3.5}Beobachtung der Messabweichungen}{29}{section.3.5}
+\contentsline {chapter}{\numberline {4}Modellbildung W\IeC {\"u}rfel auf Ecke}{31}{chapter.4}
+\contentsline {section}{\numberline {4.1}Systemparameter}{32}{section.4.1}
+\contentsline {section}{\numberline {4.2}Untersuchung der Kinematik}{34}{section.4.2}
+\contentsline {section}{\numberline {4.3}Untersuchung der Kinetik}{38}{section.4.3}
+\contentsline {chapter}{\numberline {5}Reglerentwurf f\IeC {\"u}r das Balancieren auf einer Ecke}{45}{chapter.5}
+\contentsline {section}{\numberline {5.1}Modell basierter Reglerentwurf}{46}{section.5.1}
+\contentsline {section}{\numberline {5.2}Untersuchung der Stellgr\IeC {\"o}\IeC {\ss }enbeschr\IeC {\"a}nkung}{52}{section.5.2}
+\contentsline {chapter}{\numberline {6}Erfassung der Zustandsgr\IeC {\"o}\IeC {\ss }en}{55}{chapter.6}
+\contentsline {section}{\numberline {6.1}Winkelsch\IeC {\"a}tzung}{56}{section.6.1}
+\contentsline {section}{\numberline {6.2}Justierung der Sensoren}{60}{section.6.2}
+\contentsline {chapter}{\numberline {7}Software}{61}{chapter.7}
+\contentsline {section}{\numberline {7.1}Zielplattform, Sensorik und Aktorik}{62}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}Peripherie}{62}{subsection.7.1.1}
+\contentsline {section}{\numberline {7.2}Implementierung des Signalflusses}{65}{section.7.2}
+\contentsline {section}{\numberline {7.3}Komponentenarchitektur f\IeC {\"u}r mechatronische Anwendungen}{70}{section.7.3}
+\contentsline {section}{\numberline {7.4}Entwurf der Regelungskomponente}{73}{section.7.4}
+\contentsline {section}{\numberline {7.5}Entwurf der Kommunikationskomponente}{80}{section.7.5}
