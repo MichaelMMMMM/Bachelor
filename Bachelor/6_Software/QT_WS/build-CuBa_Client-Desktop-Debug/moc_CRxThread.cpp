@@ -21,7 +21,7 @@
 QT_BEGIN_MOC_NAMESPACE
 struct qt_meta_stringdata_CRxThread_t {
     QByteArrayData data[36];
-    char stringdata0[586];
+    char stringdata0[584];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -46,26 +46,26 @@ QT_MOC_LITERAL(12, 169, 8), // "CADCData"
 QT_MOC_LITERAL(13, 178, 24), // "CompLQR1DDataReceivedSIG"
 QT_MOC_LITERAL(14, 203, 15), // "QVector<double>"
 QT_MOC_LITERAL(15, 219, 25), // "PhiObsLQR1DDataReceiveSIG"
-QT_MOC_LITERAL(16, 245, 29), // "OffsetObsLQR1DDataReceivedSIG"
-QT_MOC_LITERAL(17, 275, 23), // "CompLQR3DPhiReceivedSIG"
-QT_MOC_LITERAL(18, 299, 3), // "phi"
-QT_MOC_LITERAL(19, 303, 22), // "CompLQR3DUKReceivedSIG"
-QT_MOC_LITERAL(20, 326, 2), // "uk"
-QT_MOC_LITERAL(21, 329, 22), // "CompLQR3DURReceivedSIG"
-QT_MOC_LITERAL(22, 352, 2), // "ur"
-QT_MOC_LITERAL(23, 355, 22), // "CompLQR3DTMReceivedSIG"
-QT_MOC_LITERAL(24, 378, 2), // "tm"
-QT_MOC_LITERAL(25, 381, 14), // "endMeasurement"
-QT_MOC_LITERAL(26, 396, 20), // "runSensorCalibration"
-QT_MOC_LITERAL(27, 417, 21), // "runADCCalibrationSLOT"
-QT_MOC_LITERAL(28, 439, 18), // "runEdgeBalanceSLOT"
-QT_MOC_LITERAL(29, 458, 20), // "runCornerBalanceSLOT"
-QT_MOC_LITERAL(30, 479, 16), // "setPhiOffsetSLOT"
-QT_MOC_LITERAL(31, 496, 15), // "setUKOffsetSLOT"
-QT_MOC_LITERAL(32, 512, 15), // "setUROffsetSLOT"
-QT_MOC_LITERAL(33, 528, 23), // "selectControlSystemSLOT"
-QT_MOC_LITERAL(34, 552, 16), // "E1DControlSystem"
-QT_MOC_LITERAL(35, 569, 16) // "reloadConfigSLOT"
+QT_MOC_LITERAL(16, 245, 27), // "FullObsLQR1DDataReceivedSIG"
+QT_MOC_LITERAL(17, 273, 23), // "CompLQR3DPhiReceivedSIG"
+QT_MOC_LITERAL(18, 297, 3), // "phi"
+QT_MOC_LITERAL(19, 301, 22), // "CompLQR3DUKReceivedSIG"
+QT_MOC_LITERAL(20, 324, 2), // "uk"
+QT_MOC_LITERAL(21, 327, 22), // "CompLQR3DURReceivedSIG"
+QT_MOC_LITERAL(22, 350, 2), // "ur"
+QT_MOC_LITERAL(23, 353, 22), // "CompLQR3DTMReceivedSIG"
+QT_MOC_LITERAL(24, 376, 2), // "tm"
+QT_MOC_LITERAL(25, 379, 14), // "endMeasurement"
+QT_MOC_LITERAL(26, 394, 20), // "runSensorCalibration"
+QT_MOC_LITERAL(27, 415, 21), // "runADCCalibrationSLOT"
+QT_MOC_LITERAL(28, 437, 18), // "runEdgeBalanceSLOT"
+QT_MOC_LITERAL(29, 456, 20), // "runCornerBalanceSLOT"
+QT_MOC_LITERAL(30, 477, 16), // "setPhiOffsetSLOT"
+QT_MOC_LITERAL(31, 494, 15), // "setUKOffsetSLOT"
+QT_MOC_LITERAL(32, 510, 15), // "setUROffsetSLOT"
+QT_MOC_LITERAL(33, 526, 23), // "selectControlSystemSLOT"
+QT_MOC_LITERAL(34, 550, 16), // "E1DControlSystem"
+QT_MOC_LITERAL(35, 567, 16) // "reloadConfigSLOT"
 
     },
     "CRxThread\0sensor1DataReceived\0\0time\0"
@@ -75,7 +75,7 @@ QT_MOC_LITERAL(35, 569, 16) // "reloadConfigSLOT"
     "adcDataReceivedSIG\0CADCData\0"
     "CompLQR1DDataReceivedSIG\0QVector<double>\0"
     "PhiObsLQR1DDataReceiveSIG\0"
-    "OffsetObsLQR1DDataReceivedSIG\0"
+    "FullObsLQR1DDataReceivedSIG\0"
     "CompLQR3DPhiReceivedSIG\0phi\0"
     "CompLQR3DUKReceivedSIG\0uk\0"
     "CompLQR3DURReceivedSIG\0ur\0"
@@ -175,7 +175,7 @@ void CRxThread::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, v
         case 6: _t->adcDataReceivedSIG((*reinterpret_cast< double(*)>(_a[1])),(*reinterpret_cast< const CADCData(*)>(_a[2]))); break;
         case 7: _t->CompLQR1DDataReceivedSIG((*reinterpret_cast< double(*)>(_a[1])),(*reinterpret_cast< QVector<double>(*)>(_a[2]))); break;
         case 8: _t->PhiObsLQR1DDataReceiveSIG((*reinterpret_cast< double(*)>(_a[1])),(*reinterpret_cast< QVector<double>(*)>(_a[2]))); break;
-        case 9: _t->OffsetObsLQR1DDataReceivedSIG((*reinterpret_cast< double(*)>(_a[1])),(*reinterpret_cast< QVector<double>(*)>(_a[2]))); break;
+        case 9: _t->FullObsLQR1DDataReceivedSIG((*reinterpret_cast< double(*)>(_a[1])),(*reinterpret_cast< QVector<double>(*)>(_a[2]))); break;
         case 10: _t->CompLQR3DPhiReceivedSIG((*reinterpret_cast< double(*)>(_a[1])),(*reinterpret_cast< QVector<double>(*)>(_a[2]))); break;
         case 11: _t->CompLQR3DUKReceivedSIG((*reinterpret_cast< double(*)>(_a[1])),(*reinterpret_cast< QVector<double>(*)>(_a[2]))); break;
         case 12: _t->CompLQR3DURReceivedSIG((*reinterpret_cast< double(*)>(_a[1])),(*reinterpret_cast< QVector<double>(*)>(_a[2]))); break;
@@ -304,7 +304,7 @@ void CRxThread::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, v
         }
         {
             typedef void (CRxThread::*_t)(double , QVector<double> );
-            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&CRxThread::OffsetObsLQR1DDataReceivedSIG)) {
+            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&CRxThread::FullObsLQR1DDataReceivedSIG)) {
                 *result = 9;
             }
         }
@@ -435,7 +435,7 @@ void CRxThread::PhiObsLQR1DDataReceiveSIG(double _t1, QVector<double> _t2)
 }
 
 // SIGNAL 9
-void CRxThread::OffsetObsLQR1DDataReceivedSIG(double _t1, QVector<double> _t2)
+void CRxThread::FullObsLQR1DDataReceivedSIG(double _t1, QVector<double> _t2)
 {
     void *_a[] = { Q_NULLPTR, const_cast<void*>(reinterpret_cast<const void*>(&_t1)), const_cast<void*>(reinterpret_cast<const void*>(&_t2)) };
     QMetaObject::activate(this, &staticMetaObject, 9, _a);

@@ -85,8 +85,8 @@ void CMainWindow::createRxThread()
                      mEdgeBalancePtr, SLOT(compLQR1DDataReceivedSLOT(double,QVector<double>)));
     QObject::connect(mRxThreadPtr, SIGNAL(PhiObsLQR1DDataReceiveSIG(double,QVector<double>)),
                      mEdgeBalancePtr, SLOT(phiObsLQR1DDataReceivedSLOT(double,QVector<double>)));
-    QObject::connect(mRxThreadPtr, SIGNAL(OffsetObsLQR1DDataReceivedSIG(double,QVector<double>)),
-                     mEdgeBalancePtr, SLOT(offsetObsLQR1DDataReceivedSLOT(double,QVector<double>)));
+    QObject::connect(mRxThreadPtr, SIGNAL(FullObsLQR1DDataReceivedSIG(double,QVector<double>)),
+                     mEdgeBalancePtr, SLOT(fullObsLQR1DDataReceivedSLOT(double,QVector<double>)));
     QObject::connect(mEdgeBalancePtr, SIGNAL(setPhiOffsetSIG(double)),
                      mRxThreadPtr, SLOT(setPhiOffsetSLOT(double)));
     QObject::connect(mEdgeBalancePtr, SIGNAL(setUKOffsetSIG(double)),
@@ -95,6 +95,8 @@ void CMainWindow::createRxThread()
                      mRxThreadPtr, SLOT(setUROffsetSLOT(double)));
     QObject::connect(mEdgeBalancePtr, SIGNAL(selectControlSystemSIG(E1DControlSystem)),
                      mRxThreadPtr, SLOT(selectControlSystemSLOT(E1DControlSystem)));
+    QObject::connect(mEdgeBalancePtr, SIGNAL(updateConfigSIG()),
+                     mRxThreadPtr, SLOT(reloadConfigSLOT()));
 
     //Corner-Balance
     QObject::connect(mCornerBalancePtr, SIGNAL(runCornerBalanceSIG()),

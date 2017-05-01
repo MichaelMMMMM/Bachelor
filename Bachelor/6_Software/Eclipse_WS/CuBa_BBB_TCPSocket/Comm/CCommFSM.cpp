@@ -67,7 +67,7 @@ bool CCommFSM::onRunning(CMessage& msg)
 		(EEvent::SENSOR6DATA == event) 			||
 		(EEvent::ADCDATA == event)	   			||
 		(EEvent::PHIOBSLQR_1D_DATA == event)    ||
-		(EEvent::OFFSETOBSLQR_1D_DATA == event) ||
+		(EEvent::FULLOBSLQR_1D_DATA == event)   ||
 		(EEvent::COMPLQR_3D_PHI == event)		||
 		(EEvent::COMPLQR_3D_UK == event) 		||
 		(EEvent::COMPLQR_3D_UR == event) 		||

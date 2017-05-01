@@ -23,6 +23,7 @@ public:
 	const OutputType& getValue() const;
 	const TRVector<3U>& getX() const;
 	void setControllerActive(bool active);
+	void updateConfig();
 public:
 	C1DCompLQR();
 	C1DCompLQR(const C1DCompLQR&) = delete;

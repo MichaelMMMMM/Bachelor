@@ -34,6 +34,7 @@ public:
 	void setUKOffset(Float32 offset);
 	void setUROffset(Float32 offset);
 	void selectControlSystem(E1DControlSystem sys);
+	void updateConfig();
 public:
 	CEdgeBalanceAction();
 	CEdgeBalanceAction(const CEdgeBalanceAction&) = delete;
@@ -41,6 +42,7 @@ public:
 	~CEdgeBalanceAction() = default;
 private:
 	Float32 mTime;
+	UInt32  mEntryCounter;
 
 	using ActionList = TYPELIST_5(CF1Calib, C3DStateEstimate, C1DStateReduction,C1DOffsetCorrection, C1DControlSystem);
 	TLinHierarchy<ActionList, TActionHolder> mSignalFlow;

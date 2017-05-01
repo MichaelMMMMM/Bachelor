@@ -9,7 +9,7 @@
 #include "E1DControlSystem.h"
 #include "C1DCompLQR.h"
 #include "C1DPhiObsLQR.h"
-#include "C1DOffsetObsLQR.h"
+#include "C1DFullObserverLQR.h"
 
 class C1DControlSystem
 {
@@ -23,9 +23,10 @@ public:
 	void setControlSystem(E1DControlSystem system);
 	void activateControllers();
 	void deactivateControllers();
+	void updateConfig();
 	TRVector<4U> getCompLQRData();
 	TRVector<4U> getPhiObsLQRData();
-	TRVector<4U> getOffsetObsLQRData();
+	TRVector<4U> getFullObsLQRData();
 public:
 	C1DControlSystem();
 	C1DControlSystem(const C1DControlSystem&) = delete;
@@ -36,9 +37,9 @@ private:
 
 	E1DControlSystem mActiveSystem;
 
-	C1DCompLQR   	mCompLQR;
-	C1DPhiObsLQR 	mPhiObsLQR;
-	C1DOffsetObsLQR mOffsetObsLQR;
+	C1DCompLQR   	   mCompLQR;
+	C1DPhiObsLQR 	   mPhiObsLQR;
+	C1DFullObserverLQR mFullObsLQR;
 };
 
 #endif

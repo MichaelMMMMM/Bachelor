@@ -36,6 +36,11 @@ bool CEdgeBalance::dispatch(CMessage& msg)
 			mAction.selectControlSystem(*reinterpret_cast<E1DControlSystem*>(msg.getDataPtr()));
 			return true;
 		}
+		if(EEvent::RELOAD_CONFIG == event)
+		{
+			mAction.updateConfig();
+			return true;
+		}
 	}
 	return consumed;
 }

@@ -13,6 +13,7 @@ public:
     void addData(double time, QVector<double>& data);
     void addData(double time, double data, int graphIndex);
     void reset();
+    void setDisplayFlag(bool flag, int index);
     QCustomPlot* getPlotPtr();
 public:
     CPlot(int nbrOfLines,
@@ -30,6 +31,7 @@ private:
     QVector<QVector<double> >     mDisplayData;
 
     QCustomPlot* mPlotPtr;
+    bool*        mDisplayFlagsPtr;
 };
 
 #endif // CPLOT_H

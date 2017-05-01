@@ -85,7 +85,7 @@ void CRxThread::run()
                     emit PhiObsLQR1DDataReceiveSIG(time, data);
                     break;
                 }
-                case EEvent::OFFSETOBSLQR_1D_DATA:
+                case EEvent::FULLOBSLQR_1D_DATA:
                 {
                     QVector<double> data;
                     Float32* ptr = reinterpret_cast<Float32*>(msg.getDataPtr());
@@ -93,7 +93,7 @@ void CRxThread::run()
                     data.append(static_cast<double>(ptr[1]));
                     data.append(static_cast<double>(ptr[2]));
                     data.append(static_cast<double>(ptr[3]));
-                    emit OffsetObsLQR1DDataReceivedSIG(time, data);
+                    emit FullObsLQR1DDataReceivedSIG(time, data);
                     break;
                 }
                 case EEvent::COMPLQR_3D_PHI:

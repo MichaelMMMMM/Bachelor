@@ -1,0 +1,12 @@
+/**
+ * @file	C1DFullObserverLQR.cpp
+ * @author	Michael Meindl
+ * @date	01.05.2017
+ * @brief	Method definitions for C1DFullObserverLQR.
+ */
+#include "C1DFullObserverLQR.h"
+
+C1DFullObserverLQR::C1DFullObserverLQR()
+{
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;CuBa_BBB_TCPSocket/ControlLib/C1DFullObserver.h&apos; to &apos;C1DFullObserverLQR.h&apos;" description="Rename resource &apos;C1DFullObserver.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="ControlLib/C1DFullObserver.h" name="C1DFullObserverLQR.h" stamp="1493622857582" updateReferences="true"/>
+</session>

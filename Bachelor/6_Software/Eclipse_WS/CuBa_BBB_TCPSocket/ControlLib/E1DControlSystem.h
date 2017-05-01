@@ -12,7 +12,7 @@ enum class E1DControlSystem : UInt32
 {
 	COMP_LQR 		= 0U,
 	PHI_OBS_LQR 	= 1U,
-	OFFSET_OBS_LQR 	= 2U
+	FULL_OBS_LQR	= 2U
 };
 
 #endif

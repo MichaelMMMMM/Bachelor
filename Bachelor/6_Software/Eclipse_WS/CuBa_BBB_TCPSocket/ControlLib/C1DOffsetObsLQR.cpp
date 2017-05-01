@@ -7,7 +7,16 @@
 #include "C1DOffsetObsLQR.h"
 #include <iostream>
 
-C1DOffsetObsLQR::C1DOffsetObsLQR() : mActive(false)
+C1DOffsetObsLQR::C1DOffsetObsLQR() : mActive(false), mPhiOffFilter(0.05F),
+								     mUKOffFilter(0.05F), mUROffFilter(0.05F)
+{
+	mLQR.init("config/Edge_Kd.csv");
+	mObserver.init("config/Edge_Ao.csv",
+				   "config/Edge_Bo.csv",
+				   "config/Edge_Co.csv",
+				   "config/Edge_Lo.csv");
+}
+void C1DOffsetObsLQR::updateConfig()
 {
 	mLQR.init("config/Edge_Kd.csv");
 	mObserver.init("config/Edge_Ao.csv",
@@ -22,11 +31,14 @@ const C1DOffsetObsLQR::OutputType& C1DOffsetObsLQR::calcOutput(const C1DOffsetOb
 		auto y   = mCompFilter.calcOutput(input);
 		auto x_o = mObserver.calcOutput(y);
 		TRVector<3U> x;
-		x[1][1]  = y[1][1] - x_o[4][1];
-		x[2][1]  = y[2][1] - x_o[5][1];
-		x[3][1]  = y[3][1] - x_o[6][1];
-		mOutput  = mLQR.calcOutput(y);
-
+		auto phi_off = mPhiOffFilter.calculateOutput(x_o[1][1]);
+		auto uk_off  = mUKOffFilter.calculateOutput(x_o[2][1]);
+		auto ur_off  = mUROffFilter.calculateOutput(x_o[3][1]);
+		x[1][1]  = y[1][1] - phi_off;
+		x[2][1]  = y[2][1] - uk_off;
+		x[3][1]  = y[3][1] - ur_off;
+		mOutput  = mLQR.calcOutput(x);
+		std::cout << std::setw(10) << phi_off << std::setw(10) << uk_off << std::setw(10) << ur_off << std::endl;
 	}
 	return mOutput;
 }
@@ -40,21 +52,19 @@ void C1DOffsetObsLQR::setObsU(const TRVector<1U>& u)
 }
 TRVector<3U> C1DOffsetObsLQR::getOffsets()
 {
-	auto x_o = mObserver.getValue();
 	TRVector<3U> ret;
-	ret[1][1] = x_o[4][1];
-	ret[2][1] = x_o[5][1];
-	ret[3][1] = x_o[6][1];
+	ret[1][1] = mPhiOffFilter.getValue();
+	ret[2][1] = mUKOffFilter.getValue();
+	ret[3][1] = mUROffFilter.getValue();
 	return ret;
 }
 TRVector<3U> C1DOffsetObsLQR::getX()
 {
-	auto x_o = mObserver.getValue();
 	auto y   = mCompFilter.getValue();
 	TRVector<3U> ret;
-	ret[1][1] = y[1][1] - x_o[4][1];
-	ret[2][1] = y[2][1] - x_o[5][1];
-	ret[3][1] = y[3][1] - x_o[6][1];
+	ret[1][1] = y[1][1] - mPhiOffFilter.getValue();
+	ret[2][1] = y[2][1] - mUKOffFilter.getValue();
+	ret[3][1] = y[3][1] - mUROffFilter.getValue();
 	return ret;
 }
 void C1DOffsetObsLQR::setControllerActive(bool active)

@@ -7,9 +7,14 @@
 #include "CEdgeBalanceAction.h"
 #include <iostream>
 
-CEdgeBalanceAction::CEdgeBalanceAction() : mTime(0.0F)
+CEdgeBalanceAction::CEdgeBalanceAction() : mTime(0.0F), mEntryCounter(1U)
 {
 
+}
+void CEdgeBalanceAction::updateConfig()
+{
+	std::cout << "[*] Control-Comp: Reloading Configuration . . .  " << std::endl;
+	mSignalFlow.C1DControlSystem::updateConfig();
 }
 void CEdgeBalanceAction::entryBalance()
 {
@@ -55,8 +60,8 @@ void CEdgeBalanceAction::sample()
 		sProxy.transmit1DCompLQRData(mTime, data, false);
 		data      = mSignalFlow.C1DControlSystem::getPhiObsLQRData();
 		sProxy.transmit1DPhiObsLQRData(mTime, data, false);
-		data      = mSignalFlow.C1DControlSystem::getOffsetObsLQRData();
-		sProxy.transmit1DOffsetObsLQRData(mTime, data, false);
+		data      = mSignalFlow.C1DControlSystem::getFullObsLQRData();
+		sProxy.transmit1DFullObsLQRData(mTime, data, false);
 	}
 	else
 	{
@@ -68,7 +73,19 @@ bool CEdgeBalanceAction::inBalanceArea()
 {
 	auto x = mSignalFlow.C1DControlSystem::getCompLQRData();
 	Float32 phi       = x[1][1] > 0.0F ? x[1][1] : -x[1][1];
-	return phi < sPhiMax;
+	if(phi < sPhiMax)
+	{
+		mEntryCounter++;
+		if(mEntryCounter >= 50U)
+		{
+			return true;
+		}
+	}
+	else
+	{
+		mEntryCounter = 0U;
+	}
+	return false;
 }
 void CEdgeBalanceAction::setTorques()
 {
@@ -102,8 +119,8 @@ void CEdgeBalanceAction::selectControlSystem(E1DControlSystem sys)
 	case E1DControlSystem::PHI_OBS_LQR:
 		std::cout << "[*] Control-Comp: Select 1D-Control-System: Phi-Observer + LQR . .  ." << std::endl;
 		break;
-	case E1DControlSystem::OFFSET_OBS_LQR:
-		std::cout << "[*] Control-Comp: Select 1D-Control-System: Offset-Observer + Comp-Filter + LQR . . . " << std::endl;
+	case E1DControlSystem::FULL_OBS_LQR:
+		std::cout << "[*] Control-Comp: Select 1D-Control-System: Comp-Filter + Full-State-Observer + LQR . . . " << std::endl;
 		break;
 	default:
 		break;

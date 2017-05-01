@@ -12,6 +12,10 @@ C1DCompLQR::C1DCompLQR()
 	mSignalFlow.TSaturation<1U>::setMaximum(0.11F);
 	mSignalFlow.TSaturation<1U>::setMinimum(-0.11F);
 }
+void C1DCompLQR::updateConfig()
+{
+	mSignalFlow.TLQR<3U, 1U>::init("config/Edge_Kd.csv");
+}
 const C1DCompLQR::OutputType& C1DCompLQR::calcOutput(const C1DCompLQR::InputType& input)
 {
 	mSignalFlow.calcOutput(input);

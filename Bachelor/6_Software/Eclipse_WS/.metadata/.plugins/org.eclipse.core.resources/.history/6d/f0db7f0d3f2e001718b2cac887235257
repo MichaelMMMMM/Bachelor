@@ -1,0 +1,38 @@
+/**
+ * @file	C1DFullObserverLQR.cpp
+ * @author	Michael Meindl
+ * @date	01.05.2017
+ * @brief	Method definitions for C1DFullObserverLQR.
+ */
+#include "C1DFullObserverLQR.h"
+
+C1DFullObserverLQR::C1DFullObserverLQR()
+{
+	mSignalFlow.TObserver<3U, 3U, 1U>::init("config/Edge_Afull.csv",
+											"config/Edge_Bfull.csv",
+											"config/Edge_Cfull.csv",
+											"config/Edge_Lfull.csv");
+	mSignalFlow.TLQR<3U, 1U>::init("config/Edge_Kd.csv");
+}
+const C1DFullObserverLQR::OutputType& C1DFullObserverLQR::calcOutput(const C1DFullObserverLQR::InputType& in)
+{
+	mSignalFlow.calcOutput(in);
+	mOutput = mSignalFlow.TSaturation<1U>::getValue();
+	return mOutput;
+}
+const C1DFullObserverLQR::OutputType& C1DFullObserverLQR::getValue() const
+{
+	return mOutput;
+}
+void C1DFullObserverLQR::updateConfig()
+{
+	mSignalFlow.TObserver<3U, 3U, 1U>::init("config/Edge_Afull.csv",
+											"config/Edge_Bfull.csv",
+											"config/Edge_Cfull.csv",
+											"config/Edge_Lfull.csv");
+	mSignalFlow.TLQR<3U, 1U>::init("config/Edge_Kd.csv");
+}
+TRVector<3U> C1DFullObserverLQR::getX()
+{
+	return mSignalFlow.TObserver<3U, 3U, 1U>::getValue();
+}

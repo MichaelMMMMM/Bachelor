@@ -24,7 +24,7 @@ signals:
 
     void CompLQR1DDataReceivedSIG(double time, QVector<double> data);
     void PhiObsLQR1DDataReceiveSIG(double time, QVector<double> data);
-    void OffsetObsLQR1DDataReceivedSIG(double time, QVector<double> data);
+    void FullObsLQR1DDataReceivedSIG(double time, QVector<double> data);
 
     void CompLQR3DPhiReceivedSIG(double time, QVector<double> phi);
     void CompLQR3DUKReceivedSIG(double time, QVector<double> uk);

@@ -12,6 +12,7 @@
 #include "TSaturation.h"
 #include "TObserver.h"
 #include "C1DCompFilter.h"
+#include "CPT1.h"
 
 class C1DOffsetObsLQR
 {
@@ -25,6 +26,7 @@ public:
 	TRVector<3U> getOffsets();
 	void setControllerActive(bool active);
 	TRVector<3U> getX();
+	void updateConfig();
 public:
 	C1DOffsetObsLQR();
 	C1DOffsetObsLQR(const C1DOffsetObsLQR&) = delete;
@@ -34,6 +36,10 @@ private:
 	OutputType mOutput;
 
 	bool mActive;
+
+	CPT1	mPhiOffFilter;
+	CPT1	mUKOffFilter;
+	CPT1	mUROffFilter;
 
 	C1DCompFilter         mCompFilter;
 	TObserver<6U, 3U, 1U> mObserver;

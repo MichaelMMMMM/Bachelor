@@ -21,6 +21,8 @@ CPlot::CPlot(int nbrOfLines,
     title->setFont(QFont("sans", 12, QFont::Bold));
     mPlotPtr->plotLayout()->insertRow(0);
     mPlotPtr->plotLayout()->addElement(0,0, title);
+    mPlotPtr->axisRect()->insetLayout()->setInsetAlignment(0, Qt::AlignLeft|Qt::AlignTop);
+    mDisplayFlagsPtr = new bool[nbrOfLines];
 
     for(int i = 0; i < mNumberOfLines; i++)
     {
@@ -30,9 +32,15 @@ CPlot::CPlot(int nbrOfLines,
         mPlotPtr->graph(i)->setPen(lineColors.at(i));
         mData.append(QVector<double>());
         mDisplayData.append(QVector<double>());
+        mDisplayFlagsPtr[i] = true;
     }
     mPlotPtr->legend->setVisible(true);
 }
+void CPlot::setDisplayFlag(bool flag, int index)
+{
+    mDisplayFlagsPtr[index] = flag;
+}
+
 void CPlot::addData(double time, QVector<double> &data)
 {
     mTime.append(time);
@@ -61,13 +69,16 @@ void CPlot::addData(double time, QVector<double> &data)
         double max = -1000000;
         for(int i = 0; i < mNumberOfLines; i++)
         {
-            double max_i = *std::max_element(mDisplayData.at(i).begin(),
-                                             mDisplayData.at(i).end());
-            max = max > max_i ? max : max_i;
-            double min_i = *std::min_element(mDisplayData.at(i).begin(),
-                                             mDisplayData.at(i).end());
-            min = min < min_i ? min : min_i;
-            mPlotPtr->graph(i)->setData(mDisplayTime, mDisplayData.at(i));
+            if(mDisplayFlagsPtr[i] == true)
+            {
+                double max_i = *std::max_element(mDisplayData.at(i).begin(),
+                                                 mDisplayData.at(i).end());
+                max = max > max_i ? max : max_i;
+                double min_i = *std::min_element(mDisplayData.at(i).begin(),
+                                                 mDisplayData.at(i).end());
+                min = min < min_i ? min : min_i;
+                mPlotPtr->graph(i)->setData(mDisplayTime, mDisplayData.at(i));
+            }
         }
         mPlotPtr->xAxis->setRange(mDisplayTime.first(), mDisplayTime.last());
         min = min > 0.0 ? min / 1.05 : min * 1.05;
@@ -114,13 +125,16 @@ void CPlot::addData(double time, double data, int graphIndex)
         double max = -1000000;
         for(int i = 0; i < mNumberOfLines; i++)
         {
-            double max_i = *std::max_element(mDisplayData.at(i).begin(),
-                                             mDisplayData.at(i).end());
-            max = max > max_i ? max : max_i;
-            double min_i = *std::min_element(mDisplayData.at(i).begin(),
-                                             mDisplayData.at(i).end());
-            min = min < min_i ? min : min_i;
-            mPlotPtr->graph(i)->setData(mDisplayTime, mDisplayData.at(i));
+            if(mDisplayFlagsPtr[i] == true)
+            {
+                double max_i = *std::max_element(mDisplayData.at(i).begin(),
+                                                 mDisplayData.at(i).end());
+                max = max > max_i ? max : max_i;
+                double min_i = *std::min_element(mDisplayData.at(i).begin(),
+                                                 mDisplayData.at(i).end());
+                min = min < min_i ? min : min_i;
+                mPlotPtr->graph(i)->setData(mDisplayTime, mDisplayData.at(i));
+            }
         }
         mPlotPtr->xAxis->setRange(mDisplayTime.first(), mDisplayTime.last());
         min = min > 0.0 ? min / 1.05 : min * 1.05;

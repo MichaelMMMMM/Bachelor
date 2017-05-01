@@ -17,14 +17,17 @@ signals:
     void setUKOffsetSIG(double);
     void setUROffsetSIG(double);
     void selectControlSystemSIG(E1DControlSystem);
+    void updateConfigSIG();
 public slots:
     void compLQR1DDataReceivedSLOT(double time, QVector<double> data);
     void phiObsLQR1DDataReceivedSLOT(double time, QVector<double> data);
-    void offsetObsLQR1DDataReceivedSLOT(double time, QVector<double> data);
+    void fullObsLQR1DDataReceivedSLOT(double time, QVector<double> data);
     void startButtonSLOT();
     void saveButtonSLOT();
     void offsetButtonSLOT();
     void controlRadioButtonSLOT();
+    void updateConfigButtonSLOT();
+    void displayButtonSLOT();
 public:
     CEdgeBalance();
 private:
@@ -40,8 +43,8 @@ private:
     CPlot*  mUPlotPtr;
 
     QPushButton* mStartButtonPtr;
-
     QPushButton* mSaveButtonPtr;
+    QPushButton* mUpdateConfigButtonPtr;
 
     QFrame*         mOffsetWidgetPtr;
     QVBoxLayout*    mOffsetLayoutPtr;
@@ -62,6 +65,12 @@ private:
 
     QRadioButton*   mCompLQRButtonPtr;
     QRadioButton*   mPhiObsLQRButtonPtr;
+    QRadioButton*   mFullObsLQRButtonPtr;
+
+    QVBoxLayout*    mDisplayLayoutPtr;
+    QCheckBox*      mCompDisplayPtr;
+    QCheckBox*      mPhiObsDisplayPtr;
+    QCheckBox*      mFullObsDisplayPtr;
 };
 
 #endif // CEDGEBALANCE_H
