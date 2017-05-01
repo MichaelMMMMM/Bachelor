@@ -6,6 +6,7 @@
  **/
 #include "CEdgeBalanceAction.h"
 #include <iostream>
+#include <cmath>
 
 CEdgeBalanceAction::CEdgeBalanceAction() : mTime(0.0F), mEntryCounter(1U)
 {
@@ -60,6 +61,10 @@ void CEdgeBalanceAction::sample()
 		sProxy.transmit1DCompLQRData(mTime, data, false);
 		data      = mSignalFlow.C1DControlSystem::getPhiObsLQRData();
 		sProxy.transmit1DPhiObsLQRData(mTime, data, false);
+		if(std::isnan(data[3][1]))
+		{
+			std::cout << "[*] X3 is not a number!" << std::endl;
+		}
 		data      = mSignalFlow.C1DControlSystem::getFullObsLQRData();
 		sProxy.transmit1DFullObsLQRData(mTime, data, false);
 	}

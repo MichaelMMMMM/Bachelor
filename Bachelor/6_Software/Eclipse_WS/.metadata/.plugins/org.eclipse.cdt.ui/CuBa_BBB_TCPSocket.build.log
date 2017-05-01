@@ -1,6 +1,6 @@
-10:44:40 **** Incremental Build of configuration Debug for project CuBa_BBB_TCPSocket ****
+16:30:55 **** Incremental Build of configuration Debug for project CuBa_BBB_TCPSocket ****
 make all 
 make: Nothing to be done for 'all'.
 
-10:44:40 Build Finished (took 104ms)
+16:30:55 Build Finished (took 127ms)
 
