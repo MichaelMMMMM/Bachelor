@@ -16,13 +16,16 @@
 \BOOKMARK [0][-]{chapter.5}{Reglerentwurf f\374r das Balancieren auf einer Ecke}{}% 16
 \BOOKMARK [1][-]{section.5.1}{Modell basierter Reglerentwurf}{chapter.5}% 17
 \BOOKMARK [1][-]{section.5.2}{Untersuchung der Stellgr\366\337enbeschr\344nkung}{chapter.5}% 18
-\BOOKMARK [0][-]{chapter.6}{Erfassung der Zustandsgr\366\337en}{}% 19
-\BOOKMARK [1][-]{section.6.1}{Winkelsch\344tzung}{chapter.6}% 20
-\BOOKMARK [1][-]{section.6.2}{Komplement\344rfilter f\374r die Winkel bold0mu mumu eqxred}{chapter.6}% 21
-\BOOKMARK [0][-]{chapter.7}{Software}{}% 22
-\BOOKMARK [1][-]{section.7.1}{Zielplattform, Sensorik und Aktorik}{chapter.7}% 23
-\BOOKMARK [2][-]{subsection.7.1.1}{Peripherie}{section.7.1}% 24
-\BOOKMARK [1][-]{section.7.2}{Implementierung des Signalflusses}{chapter.7}% 25
-\BOOKMARK [1][-]{section.7.3}{Komponentenarchitektur f\374r mechatronische Anwendungen}{chapter.7}% 26
-\BOOKMARK [1][-]{section.7.4}{Entwurf der Regelungskomponente}{chapter.7}% 27
-\BOOKMARK [1][-]{section.7.5}{Entwurf der Kommunikationskomponente}{chapter.7}% 28
+\BOOKMARK [1][-]{section.5.3}{Eprobung des Reglers an der Regelstrecke}{chapter.5}% 19
+\BOOKMARK [0][-]{chapter.6}{Erfassung der Zustandsgr\366\337en}{}% 20
+\BOOKMARK [1][-]{section.6.1}{Verwendete Sensorik}{chapter.6}% 21
+\BOOKMARK [1][-]{section.6.2}{Winkelsch\344tzung}{chapter.6}% 22
+\BOOKMARK [1][-]{section.6.3}{Komplement\344rfilter f\374r die Winkel bold0mu mumu eqxred}{chapter.6}% 23
+\BOOKMARK [1][-]{section.6.4}{Beobachter zur Ermittlung von }{chapter.6}% 24
+\BOOKMARK [0][-]{chapter.7}{Software}{}% 25
+\BOOKMARK [1][-]{section.7.1}{Zielplattform, Sensorik und Aktorik}{chapter.7}% 26
+\BOOKMARK [2][-]{subsection.7.1.1}{Peripherie}{section.7.1}% 27
+\BOOKMARK [1][-]{section.7.2}{Implementierung des Signalflusses}{chapter.7}% 28
+\BOOKMARK [1][-]{section.7.3}{Komponentenarchitektur f\374r mechatronische Anwendungen}{chapter.7}% 29
+\BOOKMARK [1][-]{section.7.4}{Entwurf der Regelungskomponente}{chapter.7}% 30
+\BOOKMARK [1][-]{section.7.5}{Entwurf der Kommunikationskomponente}{chapter.7}% 31

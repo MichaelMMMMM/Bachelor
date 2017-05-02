@@ -53,6 +53,46 @@ emlYLabel('$T_{Mi}$ in Newtonmeter');
 emlLegend({'$T_{M1}$', '$T_{M2}$', '$T_{M3}$'}, 'ne');
 print('plots/exp1_tm.eps', '-depsc');
 
+%Spektral plots
+PHI2 = fftshift(fft(xcorr(phi2)));
+PHI3 = fftshift(fft(xcorr(phi3)));
+UK1  = fftshift(fft(xcorr(uk1)));
+UK2  = fftshift(fft(xcorr(uk2)));
+UK3  = fftshift(fft(xcorr(uk3)));
+UR1  = fftshift(fft(xcorr(ur1)));
+UR2  = fftshift(fft(xcorr(ur2)));
+UR3  = fftshift(fft(xcorr(ur3)));
+TM1  = fftshift(fft(xcorr(tm1)));
+TM2  = fftshift(fft(xcorr(tm2)));
+TM3  = fftshift(fft(xcorr(tm3)));
+n  = length(PHI2);
+fa = 50;
+df = fa/n;
+f  = -fa/2+df/2:df:fa/2-df/2;
+
+emlFigure(); stem(f, abs(PHI2)); grid;
+emlTitle('LDS-Spektrum von $\varphi_2$');
+emlFigure(); stem(f, abs(PHI3)); grid;
+emlTitle('LDS-Spektrum von $\varphi_3$');
+emlFigure(); stem(f, abs(UK1)); grid;
+emlTitle('LDS-Spektrum von $u_{K1}$');
+emlFigure(); stem(f, abs(UK2)); grid;
+emlTitle('LDS-Spektrum von $u_{K2}$');
+emlFigure(); stem(f, abs(UK3)); grid;
+emlTitle('LDS-Spektrum von $u_{K3}$');
+emlFigure(); stem(f, abs(UR1)); grid;
+emlTitle('LDS-Spektrum von $u_{R1}$');
+emlFigure(); stem(f, abs(UR2)); grid;
+emlTitle('LDS-Spektrum von $u_{R2}$');
+emlFigure(); stem(f, abs(UR3)); grid;
+emlTitle('LDS-Spektrum von $u_{R3}$');
+emlFigure(); stem(f, abs(TM1)); grid;
+emlTitle('LDS-Spektrum von $T_{M1}$');
+emlFigure(); stem(f, abs(TM2)); grid;
+emlTitle('LDS-Spektrum von $T_{M2}$');
+emlFigure(); stem(f, abs(TM3)); grid;
+emlTitle('LDS-Spektrum von $T_{M3}$');
+
 %---------------------------------------------------%
 % Experiment 2.2                                    %
 % Controller-Design:                                %

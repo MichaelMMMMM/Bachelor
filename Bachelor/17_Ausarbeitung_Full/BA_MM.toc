@@ -17,13 +17,16 @@
 \contentsline {chapter}{\numberline {5}Reglerentwurf f\IeC {\"u}r das Balancieren auf einer Ecke}{45}{chapter.5}
 \contentsline {section}{\numberline {5.1}Modell basierter Reglerentwurf}{46}{section.5.1}
 \contentsline {section}{\numberline {5.2}Untersuchung der Stellgr\IeC {\"o}\IeC {\ss }enbeschr\IeC {\"a}nkung}{52}{section.5.2}
-\contentsline {chapter}{\numberline {6}Erfassung der Zustandsgr\IeC {\"o}\IeC {\ss }en}{55}{chapter.6}
-\contentsline {section}{\numberline {6.1}Winkelsch\IeC {\"a}tzung}{56}{section.6.1}
-\contentsline {section}{\numberline {6.2}Komplement\IeC {\"a}rfilter f\IeC {\"u}r die Winkel $\boldsymbol {\varphi }$}{60}{section.6.2}
-\contentsline {chapter}{\numberline {7}Software}{63}{chapter.7}
-\contentsline {section}{\numberline {7.1}Zielplattform, Sensorik und Aktorik}{64}{section.7.1}
-\contentsline {subsection}{\numberline {7.1.1}Peripherie}{64}{subsection.7.1.1}
-\contentsline {section}{\numberline {7.2}Implementierung des Signalflusses}{67}{section.7.2}
-\contentsline {section}{\numberline {7.3}Komponentenarchitektur f\IeC {\"u}r mechatronische Anwendungen}{72}{section.7.3}
-\contentsline {section}{\numberline {7.4}Entwurf der Regelungskomponente}{75}{section.7.4}
-\contentsline {section}{\numberline {7.5}Entwurf der Kommunikationskomponente}{82}{section.7.5}
+\contentsline {section}{\numberline {5.3}Eprobung des Reglers an der Regelstrecke}{54}{section.5.3}
+\contentsline {chapter}{\numberline {6}Erfassung der Zustandsgr\IeC {\"o}\IeC {\ss }en}{57}{chapter.6}
+\contentsline {section}{\numberline {6.1}Verwendete Sensorik}{58}{section.6.1}
+\contentsline {section}{\numberline {6.2}Winkelsch\IeC {\"a}tzung}{59}{section.6.2}
+\contentsline {section}{\numberline {6.3}Komplement\IeC {\"a}rfilter f\IeC {\"u}r die Winkel $\boldsymbol {\varphi }$}{63}{section.6.3}
+\contentsline {section}{\numberline {6.4}Beobachter zur Ermittlung von $\varphi $}{65}{section.6.4}
+\contentsline {chapter}{\numberline {7}Software}{69}{chapter.7}
+\contentsline {section}{\numberline {7.1}Zielplattform, Sensorik und Aktorik}{70}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}Peripherie}{70}{subsection.7.1.1}
+\contentsline {section}{\numberline {7.2}Implementierung des Signalflusses}{73}{section.7.2}
+\contentsline {section}{\numberline {7.3}Komponentenarchitektur f\IeC {\"u}r mechatronische Anwendungen}{78}{section.7.3}
+\contentsline {section}{\numberline {7.4}Entwurf der Regelungskomponente}{81}{section.7.4}
+\contentsline {section}{\numberline {7.5}Entwurf der Kommunikationskomponente}{88}{section.7.5}
