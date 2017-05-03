@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.31)  2 MAY 2017 15:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.31)  3 MAY 2017 11:17
 entering extended mode
 **./BA_MM.tex
 (BA_MM.tex
@@ -2198,7 +2198,34 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1.
+
 )
+Underfull \vbox (badness 1342) has occurred while \output is active []
+
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 10.
 Package babel Info: Redefining ngerman shorthand "~
@@ -2207,45 +2234,72 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 10.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 10.
- [58] (5_Sensorik/SEN_1_PhiEstimate.tex
+ [58]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 10.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 10.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 10.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 10.
+
+[59] (5_Sensorik/SEN_1_PhiEstimate.tex
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
 
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\varphi' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1.
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 42.
+(babel)             in language  on input line 43.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 42.
+(babel)             in language  on input line 43.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 42.
+(babel)             in language  on input line 43.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 42.
- [59]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 73.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 73.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 73.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 73.
+(babel)             in language  on input line 43.
  [60]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 147.
+(babel)             in language  on input line 74.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 147.
+(babel)             in language  on input line 74.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 147.
+(babel)             in language  on input line 74.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 147.
- [61])
+(babel)             in language  on input line 74.
+ [61]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 148.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 148.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 148.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 148.
+ [62])
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 12.
 Package babel Info: Redefining ngerman shorthand "~
@@ -2255,7 +2309,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 12.
 
-[62] (5_Sensorik/SEN_2_CompFilter.tex
+[63] (5_Sensorik/SEN_2_CompFilter.tex
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
@@ -2512,9 +2566,9 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 44.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 44.
- [63]
+ [64]
 
-LaTeX Warning: Reference `section_corner_balance_test' on page 64 undefined on 
+LaTeX Warning: Reference `section_corner_balance_test' on page 65 undefined on 
 input line 45.
 
 )
@@ -2526,7 +2580,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 14.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 14.
- [64] (5_Sensorik/SEN_3_PhiObserver.tex
+ [65] (5_Sensorik/SEN_3_PhiObserver.tex
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
@@ -2556,7 +2610,7 @@ i-eps-converted-to.pdf 5_Sensorik/img/edge_exp3_phi.eps>
 (epstopdf)             \includegraphics on input line 37.
 Package epstopdf Info: Output file is already uptodate.
 
-<5_Sensorik/img/edge_exp3_phi-eps-converted-to.pdf, id=868, 365.365pt x 308.151
+<5_Sensorik/img/edge_exp3_phi-eps-converted-to.pdf, id=882, 365.365pt x 308.151
 25pt>
 File: 5_Sensorik/img/edge_exp3_phi-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -2576,7 +2630,7 @@ to.pdf>
 (epstopdf)             \includegraphics on input line 38.
 Package epstopdf Info: Output file is already uptodate.
 
-<5_Sensorik/img/edge_exp3_uk-eps-converted-to.pdf, id=869, 376.40625pt x 308.15
+<5_Sensorik/img/edge_exp3_uk-eps-converted-to.pdf, id=883, 376.40625pt x 308.15
 125pt>
 File: 5_Sensorik/img/edge_exp3_uk-eps-converted-to.pdf Graphic file (type pdf)
  <use 5_Sensorik/img/edge_exp3_uk-eps-converted-to.pdf>
@@ -2595,7 +2649,7 @@ to.pdf>
 (epstopdf)             \includegraphics on input line 41.
 Package epstopdf Info: Output file is already uptodate.
 
-<5_Sensorik/img/edge_exp3_ur-eps-converted-to.pdf, id=870, 368.37625pt x 308.15
+<5_Sensorik/img/edge_exp3_ur-eps-converted-to.pdf, id=884, 368.37625pt x 308.15
 125pt>
 File: 5_Sensorik/img/edge_exp3_ur-eps-converted-to.pdf Graphic file (type pdf)
  <use 5_Sensorik/img/edge_exp3_ur-eps-converted-to.pdf>
@@ -2614,7 +2668,7 @@ to.pdf>
 (epstopdf)             \includegraphics on input line 42.
 Package epstopdf Info: Output file is already uptodate.
 
-<5_Sensorik/img/edge_exp3_tm-eps-converted-to.pdf, id=871, 381.425pt x 308.1512
+<5_Sensorik/img/edge_exp3_tm-eps-converted-to.pdf, id=885, 381.425pt x 308.1512
 5pt>
 File: 5_Sensorik/img/edge_exp3_tm-eps-converted-to.pdf Graphic file (type pdf)
  <use 5_Sensorik/img/edge_exp3_tm-eps-converted-to.pdf>
@@ -2632,7 +2686,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 46.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 46.
- [65])
+ [66])
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 16.
 Package babel Info: Redefining ngerman shorthand "~
@@ -2642,7 +2696,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 16.
 
-[66 <./5_Sensorik/img/edge_exp3_phi-eps-converted-to.pdf> <./5_Sensorik/img/edg
+[67 <./5_Sensorik/img/edge_exp3_phi-eps-converted-to.pdf> <./5_Sensorik/img/edg
 e_exp3_uk-eps-converted-to.pdf> <./5_Sensorik/img/edge_exp3_ur-eps-converted-to
 .pdf> <./5_Sensorik/img/edge_exp3_tm-eps-converted-to.pdf>])
 Package babel Info: Redefining ngerman shorthand "|
@@ -2653,24 +2707,11 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 26.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 26.
- [67]
+ [68]
 \openout2 = `3_SW/Software.aux'.
 
 
 (3_SW/Software.tex
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 6.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 6.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 6.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 6.
- [68
-
-
-
-]
 Kapitel 7.
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 6.
@@ -2684,7 +2725,11 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 9.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 9.
-[69] (3_SW/SW_0_Zielplattform.tex
+[69
+
+
+
+] (3_SW/SW_0_Zielplattform.tex
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
@@ -2694,7 +2739,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 6.
 
-<3_SW/img/SW_0_Sensoren_BSB.pdf, id=911, 621.07031pt x 341.02406pt>
+<3_SW/img/SW_0_Sensoren_BSB.pdf, id=920, 621.07031pt x 341.02406pt>
 File: 3_SW/img/SW_0_Sensoren_BSB.pdf Graphic file (type pdf)
 
 <use 3_SW/img/SW_0_Sensoren_BSB.pdf>
@@ -2709,21 +2754,21 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 16.
  [70 <./3_SW/img/SW_0_Sensoren_BSB.pdf>]
-<3_SW/img/SW_0_Sensoren_KD.pdf, id=925, 606.76688pt x 341.02406pt>
+<3_SW/img/SW_0_Sensoren_KD.pdf, id=934, 606.76688pt x 341.02406pt>
 File: 3_SW/img/SW_0_Sensoren_KD.pdf Graphic file (type pdf)
 
 <use 3_SW/img/SW_0_Sensoren_KD.pdf>
 Package pdftex.def Info: 3_SW/img/SW_0_Sensoren_KD.pdf used on input line 20.
 (pdftex.def)             Requested size: 308.71106pt x 173.50888pt.
 
-<3_SW/img/SW_0_Motoren_BSB.pdf, id=926, 566.115pt x 124.96687pt>
+<3_SW/img/SW_0_Motoren_BSB.pdf, id=935, 566.115pt x 124.96687pt>
 File: 3_SW/img/SW_0_Motoren_BSB.pdf Graphic file (type pdf)
 
 <use 3_SW/img/SW_0_Motoren_BSB.pdf>
 Package pdftex.def Info: 3_SW/img/SW_0_Motoren_BSB.pdf used on input line 27.
 (pdftex.def)             Requested size: 308.71106pt x 68.1485pt.
 
-<3_SW/img/SW_0_Hardware_KD.pdf, id=927, 582.67688pt x 383.93437pt>
+<3_SW/img/SW_0_Hardware_KD.pdf, id=936, 582.67688pt x 383.93437pt>
 File: 3_SW/img/SW_0_Hardware_KD.pdf Graphic file (type pdf)
 
 <use 3_SW/img/SW_0_Hardware_KD.pdf>
@@ -2760,7 +2805,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
 
-<3_SW/img/SW_1_Signalfluss_BSB.pdf, id=970, 710.655pt x 124.96687pt>
+<3_SW/img/SW_1_Signalfluss_BSB.pdf, id=979, 710.655pt x 124.96687pt>
 File: 3_SW/img/SW_1_Signalfluss_BSB.pdf Graphic file (type pdf)
 
 <use 3_SW/img/SW_1_Signalfluss_BSB.pdf>
@@ -2800,7 +2845,7 @@ Overfull \hbox (33.98685pt too wide) in paragraph at lines 96--97
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-<3_SW/img/SW_1_Signalfluss_KD.pdf, id=1060, 582.67688pt x 383.93437pt>
+<3_SW/img/SW_1_Signalfluss_KD.pdf, id=1069, 582.67688pt x 383.93437pt>
 File: 3_SW/img/SW_1_Signalfluss_KD.pdf Graphic file (type pdf)
 
 <use 3_SW/img/SW_1_Signalfluss_KD.pdf>
@@ -2844,7 +2889,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
 
-<3_SW/img/SW_1_KA_BSB.pdf, id=1138, 810.77907pt x 341.02406pt>
+<3_SW/img/SW_1_KA_BSB.pdf, id=1147, 810.77907pt x 341.02406pt>
 File: 3_SW/img/SW_1_KA_BSB.pdf Graphic file (type pdf)
 
 <use 3_SW/img/SW_1_KA_BSB.pdf>
@@ -2856,7 +2901,7 @@ Overfull \hbox (0.48918pt too wide) in paragraph at lines 2--10
 rt. Um ei-ne ef-fi-zi-en-te Ver-suchs-durchf[]uhrung
  []
 
-<3_SW/img/SW_1_KA_KD.pdf, id=1139, 606.76688pt x 341.02406pt>
+<3_SW/img/SW_1_KA_KD.pdf, id=1148, 606.76688pt x 341.02406pt>
 File: 3_SW/img/SW_1_KA_KD.pdf Graphic file (type pdf)
 
 <use 3_SW/img/SW_1_KA_KD.pdf>
@@ -2894,7 +2939,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
 
-<3_SW/img/SW_2_ControlComp_SC.pdf, id=1203, 483.30562pt x 255.95625pt>
+<3_SW/img/SW_2_ControlComp_SC.pdf, id=1212, 483.30562pt x 255.95625pt>
 File: 3_SW/img/SW_2_ControlComp_SC.pdf Graphic file (type pdf)
 
 <use 3_SW/img/SW_2_ControlComp_SC.pdf>
@@ -2969,7 +3014,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
 
-<3_SW/img/SW_4_CommComp_SC.pdf, id=1477, 368.1253pt x 164.86594pt>
+<3_SW/img/SW_4_CommComp_SC.pdf, id=1486, 368.1253pt x 164.86594pt>
 File: 3_SW/img/SW_4_CommComp_SC.pdf Graphic file (type pdf)
 
 <use 3_SW/img/SW_4_CommComp_SC.pdf>
@@ -3003,7 +3048,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 30.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 30.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 30.
 Package rerunfilecheck Info: File `BA_MM.out' has not changed.
-(rerunfilecheck)             Checksum: 1C7402D921F12FE824224BE4315D44A3;2420.
+(rerunfilecheck)             Checksum: 19875117D40738F68F177B51B4BC0FA6;2456.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -3015,8 +3060,8 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 30.
  ) 
 Here is how much of TeX's memory you used:
- 12791 strings out of 493333
- 192051 string characters out of 3139200
+ 12798 strings out of 493333
+ 192148 string characters out of 3139200
  319625 words of memory out of 3000000
  15144 multiletter control sequences out of 15000+200000
  25073 words of font info for 91 fonts, out of 3000000 for 9000
@@ -3052,9 +3097,9 @@ amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
 /symbols/msam10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/sy
 mbols/msbm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/courier/ucrb8a.pf
 b>
-Output written on BA_MM.pdf (89 pages, 5045185 bytes).
+Output written on BA_MM.pdf (89 pages, 5053754 bytes).
 PDF statistics:
- 1784 PDF objects out of 2073 (max. 8388607)
- 775 named destinations out of 1000 (max. 500000)
+ 1794 PDF objects out of 2073 (max. 8388607)
+ 782 named destinations out of 1000 (max. 500000)
  461 words of extra memory for PDF output out of 10000 (max. 10000000)
 

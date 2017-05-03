@@ -1,4 +1,4 @@
-\section{Winkelschätzung}
+\section{Bestimmung der Winkel $\varphi_i$}
 Ein relevantes Problem stellt die Bestimmung der Winkel $\bs{\varphi}$ dar welche nur indirekt über die Beschleunigungssensoren ermittelt werden können. Die Messwerte $\bs{s}$ der Beschleunigungssensoren setzten sich aus der resultierenden Beschleunigung $\vel{A}{a}{S_i}$ und dem überlagerten Erdbeschleunigungsvektor $\bs{g}$ zusammen.
 Zunächst wird der Fall betrachtet, dass die Messachsen der Sensoren mit dem körperfesten Bezugssystem $K$ zusammenfallen.
 \begin{equation}
@@ -10,9 +10,9 @@ Unter der Annahme, dass der Würfel nicht bewegt wird verschwindet der Einfluss 
 \end{equation}
 Nun können die Winkel $\varphi_2$ und $\varphi_3$ aus den Komponenten des Messvektor $\bs{s}$ ermittelt werden.
 \begin{equation}
-\varphi_2 = -asin(\frac{\inProd{\bs{s}_i}{\bs{k}_3}}{\norm{\bs{g}}}
+\varphi_2 = -\text{asin}\left(\frac{\inProd{\bs{s}_i}{\bs{k}_3}}{\norm{\bs{g}}}\right)
 \hspace{35pt}
-\varphi_3 = -atan(\frac{\inProd{\bs{s}_i}{\bs{k}_2}}{\inProd{\bs{s}_i}{\bs{k}_3}}
+\varphi_3 = -\text{atan}\left(\frac{\inProd{\bs{s}_i}{\bs{k}_2}}{\inProd{\bs{s}_i}{\bs{k}_3}}\right)
 \end{equation}
 Der Winkel $\varphi_1$ kann nicht aus dem Erdbeschleunigungsvektor ermittelt werden.  Jedoch schränkt dieser Umstand das Gesamtsystem nicht ein, da die Größe $\varphi_1$ keinen Einfluss auf die Systemdynamik hat. Um die Winkelschätzung auf den Fall des bewegten Würfels zu erweitern wird im nächsten Schritt die Beschleunigung $\vel{A}{a}{S_i}$ betrachtet. Da der Würfel eine rein rotatorische Bewegung durchführt genügt die Untersuchung der Winkelbeschleunigung und -geschwindigkeit [Kane S. 30].
 \begin{equation}
@@ -32,6 +32,7 @@ Wird nun die Summe der Beschleunigungswerte $\bs{s}_i$ berechnet, welche mit dem
 &= \left(\kProdMat{\vel{A}{\alpha}{K}} + \kProdMat{\vel{A}{\omega}{K}}^2\right) \cdot \sum^6_{i=1}b_i\cdot \bs{r}_{S_i} + \bs{g}\cdot \sum^6_{i=1}b_i \,.
 \end{split}
 \end{equation}
+
 Werden die Faktoren $b_i$ so gewählt, dass 
 \begin{equation}
 \sum^6_{i=1}b_i\cdot \bs{r}_{S_i} \hspace{35pt} \vert \hspace{15pt} \sum^6_{i=1}b_i \neq 0

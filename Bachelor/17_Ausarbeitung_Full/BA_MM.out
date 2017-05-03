@@ -18,8 +18,8 @@
 \BOOKMARK [1][-]{section.5.2}{Untersuchung der Stellgr\366\337enbeschr\344nkung}{chapter.5}% 18
 \BOOKMARK [1][-]{section.5.3}{Eprobung des Reglers an der Regelstrecke}{chapter.5}% 19
 \BOOKMARK [0][-]{chapter.6}{Erfassung der Zustandsgr\366\337en}{}% 20
-\BOOKMARK [1][-]{section.6.1}{Verwendete Sensorik}{chapter.6}% 21
-\BOOKMARK [1][-]{section.6.2}{Winkelsch\344tzung}{chapter.6}% 22
+\BOOKMARK [1][-]{section.6.1}{Bestimmung der Winkelgeschwindigkeiten uKi und uRi}{chapter.6}% 21
+\BOOKMARK [1][-]{section.6.2}{Bestimmung der Winkel i}{chapter.6}% 22
 \BOOKMARK [1][-]{section.6.3}{Komplement\344rfilter f\374r die Winkel bold0mu mumu eqxred}{chapter.6}% 23
 \BOOKMARK [1][-]{section.6.4}{Beobachter zur Ermittlung von }{chapter.6}% 24
 \BOOKMARK [0][-]{chapter.7}{Software}{}% 25
