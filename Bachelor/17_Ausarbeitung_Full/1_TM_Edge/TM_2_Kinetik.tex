@@ -1,11 +1,11 @@
 \section{Untersuchung der Kinetik}
-Im nächsten Schritt wird die Kinematik des Systems untersucht, um die Bewegungsgleichungen herzuleiten. Hierfür werden zunächst die Drehmomente analysiert, welche auf den Würfelgehäuse und die Schwungmasse wirken. Letztere wird einerseits von dem Motormoment $\bs{T}^{R/M}_M$ beschleunigt, andererseits wirkt ein verzögerndes Reibmoment $\bs{T}^{R/M}_M$. Das Reibmoment wird als proportional zu der Winkelgeschwindigkeit $\dot{\psi}$ modelliert.
+Im nächsten Schritt wird die Kinematik des Systems untersucht, um die Bewegungsgleichungen herzuleiten. Hierfür werden zunächst die Drehmomente analysiert, welche auf den Würfelgehäuse und die Schwungmasse wirken. Letztere wird einerseits von dem Motormoment $\bs{T}^{R/M}_M$ beschleunigt, andererseits wirkt ein verzögerndes Reibmoment $\bs{T}^{R/M}_R$. Das Reibmoment wird als proportional zu der Winkelgeschwindigkeit $\dot{\psi}$ modelliert.
 \begin{equation}
 \bs{T}^{R/M} = \bs{T}^{R/M}_M + \bs{T}^{R/M}_R = [T_M - C_{\psi}(u_2 - u_1)]\cdot \bs{k}_3
 \end{equation}
-Das Motor- und Reibmoment wirken an dem Verbindungspunkt zwischen Schwungmasse und Würfelgehäuse. Deshalb beeinflussen die beiden den Würfelkörper in umgekehrter Richtung. Des weiteren wird das Würfelgehäuse von dem Gravitationsmoment $\bs{T}^{K/O}_G$ beschleunigt. Die Summe der Komponenten ergibt das resultierende Drehmoment $\bs{T}^{K/O}$.
+Das Motor- und Reibmoment wirken an dem Verbindungspunkt zwischen Schwungmasse und Würfelgehäuse. Deshalb beeinflussen die beiden den Würfelkörper in umgekehrter Richtung. Des weiteren wird das Würfelgehäuse von dem Gravitationsmoment $\bs{T}^{K/O}_G$ beschleunigt. Die Summe der Komponenten ergibt das resultierende Drehmoment 
 \begin{equation}
-\bs{T}^{K/O} = T^{K/O}_G - \bs{T}^{R/M}_M - \bs{t}^{R/M}_R = [m\cdot g\cdot l_C\cdot s_{\varphi} - T_M + C_{\psi}(u_2 - u_1)] \cdot \bs{k}_3
+\bs{T}^{K/O} = T^{K/O}_G - \bs{T}^{R/M}_M - \bs{T}^{R/M}_R = [m\cdot g\cdot l_C\cdot s_{\varphi} - T_M + C_{\psi}(u_2 - u_1)] \cdot \bs{k}_3\,.
 \end{equation}
 Um die Bewegungsgleichungen zu ermitteln, werden die generalisierten aktiven Kräfte $F_i$ benötigt. Hierfür werden die Skalarprodukte der Drehmomente, welche auf die Körper wirken, und die partiellen Winkelgeschwindigkeiten, des entsprechenden Körpers, berechnet. Die Summe über alle Körper ergibt die generalisierte aktive Kraft $F_i$.
 \begin{equation}
@@ -18,13 +18,13 @@ F_2 &= \inProd{\bs{T}^{K/O}}{\vel{A}{\omega}{K}_2} + \inProd{\bs{T}^{R/M}}{\vel{
 \end{equation}
 Die partiellen Geschwindigkeiten können als Bewegungsrichtungen der Körper interpretiert werden. Somit stellen die generalisierten Kräfte $F_i$ den Beitrag der Drehmomente in die jeweilige Bewegungsrichtung wieder.
 
-Als Gegenstück zu den generalisierten aktiven Kräften müssen nun die generalisierten Trägheitskräfte $F^*_i$ ermittelt werden. Das resultierende Trägheitsmoment der Schwungmasse ergibt sich aus dem Produkt des Skalars $I_R$, welcher das Massenträgheitsmoment des Körpers relativ zu $M$ beschreibt, und der Winkelbeschleunigung $\vel{A}{\alpha}{R}$.\footnote{Die hier verwendete Berechnung ist nicht allgemeingültig. Für gewöhnlich wird zur Berechnung der Trägheitsmomente ein Trägheitstensor $\bs{I}$ verwendet. Die in einem späteren Kapitel erläutert.}
+Als Gegenstück zu den generalisierten aktiven Kräften müssen nun die generalisierten Trägheitskräfte $F^*_i$ ermittelt werden. Das resultierende Trägheitsmoment der Schwungmasse ergibt sich aus dem Produkt des Skalars $I_R$, welcher das Massenträgheitsmoment des Körpers relativ zu $M$ beschreibt, und der Winkelbeschleunigung $\vel{A}{\alpha}{R}$.\footnote{Die hier verwendete Berechnung ist nur für die eindimensionale Bewegung gültig. Für die Berechnung der Trägheitsmomente wird im allgemeinen ein Trägheitstensor $\bs{I}$ verwendet.}
 \begin{equation}
 \bs{T}^{R/M}_* = -I_R\cdot \vecBS{K}{0}{0}{\dot{u}_2}
 \end{equation}
 Das Trägheitsmoment des Würfelkörpers berechnet sich aus dessen Trägheitsskalar $I_K$ und der Winkelbeschleunigung $\vel{A}{\alpha}{K}$. Die Größe $I_K$ ist die Summe des Massenträgheitsmoments des Würfelgehäuses $I^{GH/O}$ und dem Einfluss der Schwungmasse, wleche dabei als Punkt mit der Masse $m_R$ und dem Abstand $l_{MO}$ betrachtet wird.
 \begin{equation}
-\bs{T}^{K/O}_* = -(I^{GH/O} + m_R\cdot l^2_{MO})\cdot \vecBS{K}{0}{0}{\dot{u}_1} = -I_K\cdot \vecBS{K}{0}{0}{\dot{u}_1}
+\bs{T}^{K/O}_* = -\underbrace{(I^{GH/O} + m_R\cdot l^2_{MO})}_{\equiv I_K}\cdot \vecBS{K}{0}{0}{\dot{u}_1} = -I_K\cdot \vecBS{K}{0}{0}{\dot{u}_1}
 \end{equation}
 Die generalisierten Trägheitskräfte $F^*_i$ werden wieder aus der folgenden Summe von Skalarprodukten berechnet.
 \begin{equation}
@@ -42,13 +42,11 @@ F_1 + F^*_1 = 0 &\hspace{15pt}\leftrightarrow\hspace{15pt} I_K\cdot \dot{u}_1 = 
 F_2 + F^*_2 = 0 &\hspace{15pt}\leftrightarrow\hspace{15pt} I_R\cdot \dot{u}_2 = T_M - C_{\psi}(u_2 - u_1)
 \end{split}
 \end{equation}
-
-
 Rückblickend kann Kanes Methodik in die folgenden Schritte unterteilt werden. Zunächst wird die Kinematik des Systems analysiert, wobei die Körper mit Hilfe von Bezugssystemen modelliert werden. Die Definition von generalisierten Geschwindigkeiten ermöglicht die Bestimmung der partiellen Geschwindigkeiten, wodurch die Bewegung des Systems in eine Art Betrag und Richtung unterteilt wird. Anschließend werden die partiellen Geschwindigkeiten genutzt um die wirkenden Kräfte und Trägheitskräfte in die Bewegungsrichtungen zu projizieren. Hieraus resultieren die generalisierten aktiven Kräfte und generalisierten Trägheitskräfte, welche mittels Kanes Gleichung auf die gesuchten Bewegungsgleichungen führen.
 
 Um die Bedeutung der generalisierten Geschwindigkeiten zu verdeutlichen wird der Fall betrachtet, dass die folgende Definition gewählt wird.
 \begin{equation}
-\tilde{u}_1 \equiv \dot{\varphi} \hspace{35pt} \tilde{u}_2 \equiv \dot{\psi}
+\tilde{u}_1 = \tilde{u}_K \equiv \dot{\varphi} \hspace{35pt} \tilde{u}_2 = \tilde{u}_R \equiv \dot{\psi}
 \end{equation}
 \begin{equation}
 \begin{split}
@@ -64,11 +62,9 @@ Um die Bedeutung der generalisierten Geschwindigkeiten zu verdeutlichen wird der
 \tilde{F}^*_1 = -I_R\cdot (\dot{\tilde{u}}_1 + \dot{\tilde{u}}_2) - I_K\cdot \dot{\tilde{u}}_1 &\hspace{35pt} \tilde{F}^*_2 = -I_R\cdot (\dot{\tilde{u}}_1 + \dot{\tilde{u}}_2)
 \end{split}
 \end{equation}
-\begin{equation}
-\begin{split}
-\tilde{F}_1 + \tilde{F}^*_1 = 0 &\hspace{15pt}\leftrightarrow\hspace{15pt} I_k\cdot \dot{\tilde{u}}_1 + I_R\cdot (\dot{\tilde{u}}_1+\dot{\tilde{u}}_2) = m\cdot g\cdot l_C\cdot s_{\varphi} 
+\begin{align}
+\tilde{F}_1 + \tilde{F}^*_1 = 0 &\hspace{15pt}\leftrightarrow\hspace{15pt} I_k\cdot \dot{\tilde{u}}_1 + I_R\cdot (\dot{\tilde{u}}_1+\dot{\tilde{u}}_2) = m\cdot g\cdot l_C\cdot s_{\varphi} \label{tilde_bwg_1}
 \\
-\tilde{F}_2 + \tilde{F}^*_2 = 0 &\hspace{15pt}\leftrightarrow\hspace{15pt} I_R\cdot (\dot{\tilde{u}}_1+\dot{\tilde{u}}_2) = T_M - C_{\psi}(\dot{\tilde{u}}_2 - \dot{\tilde{u}}_1)
-\end{split}
-\end{equation}
-Dieses Beispiel zeigt, dass die Wahl der generalisierten Geschwindigkeiten eine direkte Auswirkung auf die Form der resultierenden Bewegungsgleichungen hat. Zwar kann die letztere mittels $u_1 = \tilde{u}_1 \ ,\ u_2 = \tilde{u}_1 + \tilde{u}_2$ und dem Einsetzen der zweiten in die erste Gleichung in die ursprüngliche Form überführt werden. Allerdings stellt die Modellierung des Würfels auf einer Ecke einen Anwendungsfall dar, bei dem der Berechnungsaufwand durch eine geschickte Wahl der generalisierten Geschwindigkeiten drastisch reduziert werden kann.
+\tilde{F}_2 + \tilde{F}^*_2 = 0 &\hspace{15pt}\leftrightarrow\hspace{15pt} I_R\cdot (\dot{\tilde{u}}_1+\dot{\tilde{u}}_2) = T_M - C_{\psi}(\dot{\tilde{u}}_2 - \dot{\tilde{u}}_1) \label{tilde_bwg_2}
+\end{align}
+Dieses Beispiel zeigt, dass die Wahl der generalisierten Geschwindigkeiten eine direkte Auswirkung auf die Form der resultierenden Bewegungsgleichungen hat. Zwar kann die letztere mittels $u_1 = \tilde{u}_1 \ ,\ u_2 = \tilde{u}_1 + \tilde{u}_2$ und dem Einsetzen der Gleichung (\ref{tilde_bwg_2}) in die Gleichung (\ref{tilde_bwg_1}) in die ursprüngliche Form überführt werden. Allerdings stellt die Modellierung des Würfels auf einer Ecke einen Anwendungsfall dar, bei dem der Berechnungsaufwand durch eine geschickte Wahl der generalisierten Geschwindigkeiten deutlich reduziert werden kann.

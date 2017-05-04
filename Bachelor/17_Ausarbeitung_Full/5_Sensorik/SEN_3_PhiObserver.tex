@@ -13,10 +13,12 @@ In dem letzten Abschnitt sind die Nachteile des Komplementärfilters aufgezeigt 
 \label{eq_edge_system}
 \end{equation}
 betrachtet, wobei lediglich die Zustandsgrößen $u_K$ und $u_R$ messbar seine. Aus dem Kalmankriterium ergibt sich, dass das System vollständig beobachtbar ist. D.h. der Verlauf der Zustandsgrößen kann aus dem Ausgangsvektor und der Eingangsgröße rekonstruiert werden. Hierfür wird ein Luenberger-Beobachter verwendet. Das Grundprinzip des Beobachters besteht darin einen Schätzwert $\bs{\hat{x}}$ aus dem Modell (\ref{eq_edge_system}) zu berechnen. Bei diesem Ansatz führt bereits eine minimale Abweichung zwischen dem Modell und dem realen System zu einem kontinuierlich zunehmenden Schätzfehler. Um diesen Fehler zu eliminieren wird das in der Regelungstechnik bewährte Konzept der Fehlerrückführung verwendet. Da der Zustandsvektor nicht messbar ist wird  die Differenz $\Delta \bs{y}$ der Ausgangsvektoren über die so genannte Beobachtermatrix $\bs{L}$ zurückgeführt.
-\begin{figure}
-
+\begin{figure}[h!]
+\centering
+\includegraphics[width=1\linewidth, trim={1cm 1cm 1cm 1cm}, clip]{img/Observer}
 \caption{Blockschaltbild des Luenberger-Beobachters, Quelle: eigene Darstellung}
 \end{figure}
+
 Um das Verhalten des Beobachters zu untersuchen wird der Schätzfehler $\bs{e}(k) = \bs{x}(k) - \bs{\hat{x}}(k)$ betrachtet.
 \begin{equation}
 \begin{split}
@@ -33,13 +35,14 @@ Hieraus folgt, dass der Verlauf des Schätzfehlers $\bs{e}(k)$ ein geschlossenen
 \left\vert \lambda_i\left\{\bs{A}^T-\bs{C}^T\bs{L}^T\right\}\right\vert \overset{!}< 1
 \end{equation}
 formuliert werden. Diese Problemstellung entspricht der Entwurfsaufgabe eines gewöhnlichen Zustandsreglers, weshalb die bereits vorgestellten Verfahren für den Reglerentwurf auch für die Bestimmung der Beobachtermatrix $\bs{L}$ verwendet werden können. Für diesen Anwendungsfall wird der Beobachter optimal im Sinne des quadratischen Gütekriteriums entworfen. Als Gewichtungsmatrix $\bs{R}$ wird die Kovarianzmatrix des Ausgangvektors $\bs{y}$ verwendet. Die Matrix $\bs{Q}$ wird empirisch ermittelt. Prinzipiell unterliegt der Beobachter keiner Stellgrößenbeschränkung, da die Rückführung von $\Delta\bs{y}$ digital berechnet wird. Allerdings wirkt ein Messrauschen proportional zu $\bs{L}$ auf den Schätzwert $\bs{\hat{x}}$ ein. Aus diesem Grund werden die Elemente der Gewichtungsmatrix $\bs{Q}$ möglichst klein gewählt. Die folgenden Abbildung zeigen den Verlauf des System, wobei der Regler mit Hilfe des geschätzten Zustandvektors $\bs{\hat{x}}$ berechnet wird. Die folgende Abbildung zeigt den Verlauf der Zustandsgrößen und der Stellgröße im geschlossenen Regelkreis, wobei der Regler mittels des geschätzten Zustandvektors $\bs{\hat{x}}$ berechnet wurde.
-\begin{figure}[h!]
-\includegraphics[width=0.45\linewidth]{img/edge_exp3_phi.eps}
-\includegraphics[width=0.45\linewidth]{img/edge_exp3_uk.eps}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.43\linewidth]{img/edge_exp3_phi.eps}
+\includegraphics[width=0.43\linewidth]{img/edge_exp3_uk.eps}
 \vspace{0.5cm}
 
-\includegraphics[width=0.45\linewidth]{img/edge_exp3_ur.eps}
-\includegraphics[width=0.45\linewidth]{img/edge_exp3_tm.eps}
+\includegraphics[width=0.43\linewidth]{img/edge_exp3_ur.eps}
+\includegraphics[width=0.43\linewidth]{img/edge_exp3_tm.eps}
 \label{plots_phiobs}
 \caption{Verlauf des geschätzten Zustandvektors und der Stellgröße, Quelle: eigene Darstellung}
 \end{figure}

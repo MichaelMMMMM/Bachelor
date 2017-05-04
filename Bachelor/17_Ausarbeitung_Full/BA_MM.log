@@ -1,8 +1,8 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2017.1.27)  3 MAY 2017 20:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.31)  4 MAY 2017 16:00
 entering extended mode
 **./BA_MM.tex
 (BA_MM.tex
-LaTeX2e <2016/03/31> patch level 3
+LaTeX2e <2017/01/01> patch level 1
 Babel <3.9r> and hyphenation patterns for 75 language(s) loaded.
 \@input{0_Format.aux}
 \openout2 = `0_Format.aux'.
@@ -26,7 +26,7 @@ File: bk11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \bibindent=\dimen102
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
-Package: amsmath 2016/06/28 v2.15d AMS math features
+Package: amsmath 2016/11/05 v2.16a AMS math features
 \@mathmargin=\skip43
 
 For additional information on amsmath, use the `?' option.
@@ -46,20 +46,20 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count88
-LaTeX Info: Redefining \frac on input line 199.
+LaTeX Info: Redefining \frac on input line 213.
 \uproot@=\count89
 \leftroot@=\count90
-LaTeX Info: Redefining \overline on input line 297.
+LaTeX Info: Redefining \overline on input line 375.
 \classnum@=\count91
 \DOTSCASE@=\count92
-LaTeX Info: Redefining \ldots on input line 394.
-LaTeX Info: Redefining \dots on input line 397.
-LaTeX Info: Redefining \cdots on input line 518.
+LaTeX Info: Redefining \ldots on input line 472.
+LaTeX Info: Redefining \dots on input line 475.
+LaTeX Info: Redefining \cdots on input line 596.
 \Mathstrutbox@=\box26
 \strutbox@=\box27
 \big@size=\dimen105
-LaTeX Font Info:    Redeclaring font encoding OML on input line 634.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 635.
+LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 \macc@depth=\count93
 \c@MaxMatrixCols=\count94
 \dotsspace@=\muskip10
@@ -80,8 +80,8 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 635.
 \multlinegap=\skip44
 \multlinetaggap=\skip45
 \mathdisplay@stack=\toks18
-LaTeX Info: Redefining \[ on input line 2739.
-LaTeX Info: Redefining \] on input line 2740.
+LaTeX Info: Redefining \[ on input line 2817.
+LaTeX Info: Redefining \] on input line 2818.
 )
 (C:\Users\ich\AppData\Roaming\MiKTeX\2.9\tex\latex\mathtools\mathtools.sty
 Package: mathtools 2015/11/12 v1.18 mathematical typesetting tools
@@ -477,7 +477,7 @@ Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
-Package: graphics 2016/07/10 v1.0t Standard LaTeX Graphics (DPC,SPQR)
+Package: graphics 2016/10/09 v1.0u Standard LaTeX Graphics (DPC,SPQR)
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
@@ -488,7 +488,7 @@ File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 Package graphics Info: Driver file: pdftex.def on input line 99.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def"
-File: pdftex.def 2016/07/10 v0.06j Graphics/color for pdfTeX
+File: pdftex.def 2017/01/12 v0.06k Graphics/color for pdfTeX
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
 Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
@@ -551,62 +551,28 @@ G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 ))
 (C:\Users\ich\AppData\Roaming\MiKTeX\2.9\tex\latex\svg\svg.sty
-Package: svg 2012/09/05 v1.0 SVG inclusion and extraction
+Package: svg 2017/03/28 v2.00a (include SVG pictures)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\xkeyval\xkeyval.sty"
-Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+(C:\Users\ich\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\scrbase.sty
+Package: scrbase 2017/01/03 v3.22 KOMA-Script package (KOMA-Script-independent 
+basics and keyval usage)
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\xkeyval.tex"
-("C:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\xkvutils.tex"
-\XKV@toks=\toks23
-\XKV@tempa@toks=\toks24
+(C:\Users\ich\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\scrlfile.sty
+Package: scrlfile 2017/01/03 v3.22 KOMA-Script package (loading files)
+
+Package scrlfile, 2017/01/03 v3.22 KOMA-Script package (loading files)
+                  Copyright (C) Markus Kohm
+
+)) ("C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\XKV@depth=\count108
-File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
-))
-(C:\Users\ich\AppData\Roaming\MiKTeX\2.9\tex\latex\subfig\subfig.sty
-Package: subfig 2005/06/28 ver: 1.3 subfig package
-
-(C:\Users\ich\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption.sty
-Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
-
-(C:\Users\ich\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption3.sty
-Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
-Package caption3 Info: TeX engine: e-TeX on input line 67.
-\captionmargin=\dimen124
-\captionmargin@=\dimen125
-\captionwidth=\dimen126
-\caption@tempdima=\dimen127
-\caption@indent=\dimen128
-\caption@parindent=\dimen129
-\caption@hangindent=\dimen130
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\shellesc.sty"
+Package: shellesc 2016/06/07 v0.02a unified shell escape interface for LaTeX
+Package shellesc Info: Restricted shell escape enabled on input line 69.
 )
-\c@ContinuedFloat=\count109
+\c@svg@param@lastpage=\count108
+\c@svg@param@currpage=\count109
 )
-\c@KVtest=\count110
-\sf@farskip=\skip50
-\sf@captopadj=\dimen131
-\sf@capskip=\skip51
-\sf@nearskip=\skip52
-\c@subfigure=\count111
-\c@subfigure@save=\count112
-\c@lofdepth=\count113
-\c@subtable=\count114
-\c@subtable@save=\count115
-\c@lotdepth=\count116
-\sf@top=\skip53
-\sf@bottom=\skip54
-)
-(C:\Users\ich\AppData\Roaming\MiKTeX\2.9\tex\latex\import\import.sty
-Package: import 2009/03/23  v 5.1
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\transparent.sty"
-Package: transparent 2016/05/16 v1.1 Transparency via pdfTeX's color stack (HO)
-
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty"
-Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
-))
 (C:\Users\ich\AppData\Roaming\MiKTeX\2.9\tex\latex\xcolor\xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 
@@ -624,17 +590,19 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
-\SVG@out@width=\skip55
-\SVG@out@height=\skip56
-\c@svgfigure=\count117
-)
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\transparent.sty"
+Package: transparent 2016/05/16 v1.1 Transparency via pdfTeX's color stack (HO)
+
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty"
+Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
+))
 ("C:\Program Files\MiKTeX 2.9\tex\latex\multirow\multirow.sty"
-Package: multirow 2016/10/11 v2.1 Span multiple rows of a table
-\multirow@colwidth=\skip57
-\multirow@cnta=\count118
-\multirow@cntb=\count119
-\multirow@dima=\skip58
-\bigstrutjot=\dimen132
+Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
+\multirow@colwidth=\skip50
+\multirow@cntb=\count110
+\multirow@dima=\skip51
+\bigstrutjot=\dimen124
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
@@ -658,6 +626,20 @@ Now handling font encoding LY ...
 ... no UTF-8 mapping file for font encoding LY
 Now handling font encoding LYG ...
 ... no UTF-8 mapping file for font encoding LYG
+)
+(C:\Users\ich\AppData\Roaming\MiKTeX\2.9\tex\latex\nomencl\nomencl.sty
+Package: nomencl 2005/09/22 v4.2 Nomenclature package (LN)
+\nomlabelwidth=\dimen125
+\nom@tempdim=\dimen126
+\nomitemsep=\skip52
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count111
+\float@exts=\toks23
+\float@box=\box28
+\@float@everytoks=\toks24
+\@floatcapt=\box29
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
 Package: hyperref 2016/06/24 v6.83q Hypertext links for LaTeX
@@ -696,19 +678,16 @@ Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
 Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
 Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
-Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
-)
-\@linkdim=\dimen133
-\Hy@linkcounter=\count120
-\Hy@pagecounter=\count121
+\@linkdim=\dimen127
+\Hy@linkcounter=\count112
+\Hy@pagecounter=\count113
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
 File: pd1enc.def 2016/06/24 v6.83q Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count122
+\Hy@SavedSpaceFactor=\count114
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg"
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -720,17 +699,17 @@ Package hyperref Info: Plain pages OFF on input line 4501.
 Package hyperref Info: Backreferencing OFF on input line 4506.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4735.
-\c@Hy@tempcnt=\count123
+\c@Hy@tempcnt=\count115
 
 (C:\Users\ich\AppData\Roaming\MiKTeX\2.9\tex\latex\url\url.sty
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5088.
-\XeTeXLinkMargin=\dimen134
-\Fld@menulength=\count124
-\Field@Width=\dimen135
-\Fld@charsize=\dimen136
+\XeTeXLinkMargin=\dimen128
+\Fld@menulength=\count116
+\Field@Width=\dimen129
+\Fld@charsize=\dimen130
 Package hyperref Info: Hyper figures OFF on input line 6342.
 Package hyperref Info: Link nesting OFF on input line 6347.
 Package hyperref Info: Hyper index ON on input line 6350.
@@ -740,40 +719,40 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6367.
 Package hyperref Info: PDF/A mode OFF on input line 6372.
 LaTeX Info: Redefining \ref on input line 6412.
 LaTeX Info: Redefining \pageref on input line 6416.
-\Hy@abspage=\count125
-\c@Item=\count126
-\c@Hfootnote=\count127
+\Hy@abspage=\count117
+\c@Item=\count118
+\c@Hfootnote=\count119
 )
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def"
 File: hpdftex.def 2016/06/24 v6.83q Hyperref driver for pdfTeX
-\Fld@listcount=\count128
-\c@bookmark@seq@number=\count129
+\Fld@listcount=\count120
+\c@bookmark@seq@number=\count121
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
-\Hy@SectionHShift=\skip59
+\Hy@SectionHShift=\skip53
 )
-Package hyperref Info: Option `colorlinks' set `false' on input line 25.
+Package hyperref Info: Option `colorlinks' set `false' on input line 27.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
 Package: geometry 2010/09/12 v5.6 Page Geometry
-\Gm@cnth=\count130
-\Gm@cntv=\count131
-\c@Gm@tempcnt=\count132
-\Gm@bindingoffset=\dimen137
-\Gm@wd@mp=\dimen138
-\Gm@odd@mp=\dimen139
-\Gm@even@mp=\dimen140
-\Gm@layoutwidth=\dimen141
-\Gm@layoutheight=\dimen142
-\Gm@layouthoffset=\dimen143
-\Gm@layoutvoffset=\dimen144
+\Gm@cnth=\count122
+\Gm@cntv=\count123
+\c@Gm@tempcnt=\count124
+\Gm@bindingoffset=\dimen131
+\Gm@wd@mp=\dimen132
+\Gm@odd@mp=\dimen133
+\Gm@even@mp=\dimen134
+\Gm@layoutwidth=\dimen135
+\Gm@layoutheight=\dimen136
+\Gm@layouthoffset=\dimen137
+\Gm@layoutvoffset=\dimen138
 \Gm@dimlist=\toks25
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
@@ -781,31 +760,35 @@ Package: geometry 2010/09/12 v5.6 Page Geometry
 Package: courier 2005/04/12 PSNFSS-v9.2a (WaS) 
 )
 (C:\Users\ich\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\listings.sty
-\lst@mode=\count133
-\lst@gtempboxa=\box28
+\lst@mode=\count125
+\lst@gtempboxa=\box30
 \lst@token=\toks26
-\lst@length=\count134
-\lst@currlwidth=\dimen145
-\lst@column=\count135
-\lst@pos=\count136
-\lst@lostspace=\dimen146
-\lst@width=\dimen147
-\lst@newlines=\count137
-\lst@lineno=\count138
-\lst@maxwidth=\dimen148
+\lst@length=\count126
+\lst@currlwidth=\dimen139
+\lst@column=\count127
+\lst@pos=\count128
+\lst@lostspace=\dimen140
+\lst@width=\dimen141
+\lst@newlines=\count129
+\lst@lineno=\count130
+\lst@maxwidth=\dimen142
 
 (C:\Users\ich\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstmisc.sty
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
-\c@lstnumber=\count139
-\lst@skipnumbers=\count140
-\lst@framebox=\box29
+\c@lstnumber=\count131
+\lst@skipnumbers=\count132
+\lst@framebox=\box31
 )
 (C:\Users\ich\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\listings.cfg
 File: listings.cfg 2015/06/04 1.6 listings configuration
 ))
 Package: listings 2015/06/04 1.6 (Carsten Heinz)
 
-(0_Makros.tex)) (0_0_Deckblatt.tex) (BA_MM.aux)
+(0_Makros.tex)) (0_0_Deckblatt.tex) (BA_MM.aux (0_1_Acronym.aux)
+(0_2_Nomenclature.aux) (0_Introduction/Introduction.aux)
+(1_TM_Edge/TM_EdgeBalancing.aux) (2_RT_Edge/RT_EdgeBalancing.aux)
+(4_TM_Corner/TM_CornerBalancing.aux) (6_RT_Corner/RT_CornerBalancing.aux)
+(5_Sensorik/Sensorik.aux) (3_SW/Software.aux))
 \openout1 = `BA_MM.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
@@ -829,24 +812,19 @@ LaTeX Font Info:    ... okay on input line 10.
 
 (C:\Users\ich\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count141
-\scratchdimen=\dimen149
-\scratchbox=\box30
-\nofMPsegments=\count142
-\nofMParguments=\count143
+\scratchcounter=\count133
+\scratchdimen=\dimen143
+\scratchbox=\box32
+\nofMPsegments=\count134
+\nofMParguments=\count135
 \everyMPshowfont=\toks27
-\MPscratchCnt=\count144
-\MPscratchDim=\dimen150
-\MPnumerator=\count145
-\makeMPintoPDFobject=\count146
+\MPscratchCnt=\count136
+\MPscratchDim=\dimen144
+\MPnumerator=\count137
+\makeMPintoPDFobject=\count138
 \everyMPtoPDFconversion=\toks28
 )
-Package caption Info: Begin \AtBeginDocument code.
-Package caption Info: subfig package v1.3 is loaded.
-Package caption Info: hyperref package is loaded.
-Package caption Info: listings package is loaded.
-Package caption Info: End \AtBeginDocument code.
-\AtBeginShipoutBox=\box31
+\AtBeginShipoutBox=\box33
 Package hyperref Info: Link coloring OFF on input line 10.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -854,7 +832,7 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count147
+\c@section@level=\count139
 )
 LaTeX Info: Redefining \ref on input line 10.
 LaTeX Info: Redefining \pageref on input line 10.
@@ -899,7 +877,7 @@ LaTeX Info: Redefining \nameref on input line 10.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c@lstlisting=\count148
+\c@lstlisting=\count140
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 12.
 Package babel Info: Redefining ngerman shorthand "~
@@ -925,9 +903,25 @@ Package babel Info: Redefining ngerman shorthand "~
  [2
 
 ]
+(BA_MM.toc
+LaTeX Font Info:    Try loading font information for U+msa on input line 4.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 4.
 
-Package hyperref Warning: old toc file detected, not used; run LaTeX again.
-
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 33.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 33.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 33.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 33.
+ [3])
 \tf@toc=\write5
 \openout5 = `BA_MM.toc'.
 
@@ -939,7 +933,25 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 16.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 16.
-[3]
+ [4]
+\openout2 = `0_1_Acronym.aux'.
+
+
+(0_1_Acronym.tex)
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 16.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 16.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 16.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 16.
+ [5
+
+]
+\openout2 = `0_2_Nomenclature.aux'.
+
+ (0_2_Nomenclature.tex)
 \openout2 = `0_Introduction/Introduction.aux'.
 
  (0_Introduction/Introduction.tex
@@ -951,7 +963,11 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
- [4
+
+[6
+
+
+
 
 
 ]
@@ -960,37 +976,29 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
-LaTeX Font Info:    Try loading font information for U+msa on input line 2.
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 2.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
+Package acronym Info: Label `acro:BBB' newly defined as it shall be overridden
+although it is yet undefined on input line 4.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 8.
+(babel)             in language  on input line 9.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 8.
+(babel)             in language  on input line 9.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 8.
+(babel)             in language  on input line 9.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 8.
- [5])
+(babel)             in language  on input line 9.
+[7])
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 16.
+(babel)             in language  on input line 20.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 16.
+(babel)             in language  on input line 20.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 16.
+(babel)             in language  on input line 20.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 16.
- [6]
+(babel)             in language  on input line 20.
+ [8]
 \openout2 = `1_TM_Edge/TM_EdgeBalancing.aux'.
 
-
-(1_TM_Edge/TM_EdgeBalancing.tex
+ (1_TM_Edge/TM_EdgeBalancing.tex
 Kapitel 2.
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 6.
@@ -1004,7 +1012,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 9.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 9.
-[7
+[9
 
 
 
@@ -1014,7 +1022,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
 
-<1_TM_Edge/img/ModellWuerfelseite.pdf, id=166, 963.6pt x 542.025pt>
+<1_TM_Edge/img/ModellWuerfelseite.pdf, id=252, 963.6pt x 542.025pt>
 File: 1_TM_Edge/img/ModellWuerfelseite.pdf Graphic file (type pdf)
 
 <use 1_TM_Edge/img/ModellWuerfelseite.pdf>
@@ -1022,47 +1030,34 @@ Package pdftex.def Info: 1_TM_Edge/img/ModellWuerfelseite.pdf used on input lin
 e 5.
 (pdftex.def)             Requested size: 264.61333pt x 250.08806pt.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 15.
+(babel)             in language  on input line 17.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 15.
+(babel)             in language  on input line 17.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 15.
+(babel)             in language  on input line 17.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 15.
- [8 <./1_TM_Edge/img/ModellWuerfelseite.pdf>]
-Overfull \hbox (16.14676pt too wide) in paragraph at lines 38--38
-[] 
- []
-
-
-LaTeX Warning: Citation `skizze_dynamik_edge' on page 9 undefined on input line
- 49.
-
+(babel)             in language  on input line 17.
+ [10 <./1_TM_Edge/img/ModellWuerfelseite.pdf>]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 50.
+(babel)             in language  on input line 54.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 50.
+(babel)             in language  on input line 54.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 50.
+(babel)             in language  on input line 54.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 50.
-[9]
-
-LaTeX Warning: Citation `skizze_dynamik_edge' on page 10 undefined on input lin
-e 59.
-
-
+(babel)             in language  on input line 54.
+ [11]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 69.
+(babel)             in language  on input line 68.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 69.
+(babel)             in language  on input line 68.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 69.
+(babel)             in language  on input line 68.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 69.
- [10])
+(babel)             in language  on input line 68.
+ [12])
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 11.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1072,7 +1067,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 11.
 
-[11] (1_TM_Edge/TM_2_Kinetik.tex
+[13] (1_TM_Edge/TM_2_Kinetik.tex
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1088,18 +1083,18 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 28.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 28.
- [12]))
+ [14]))
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 18.
+(babel)             in language  on input line 22.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 18.
+(babel)             in language  on input line 22.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 18.
+(babel)             in language  on input line 22.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 18.
+(babel)             in language  on input line 22.
 
-[13]
-\openout2 = `RT_EdgeBalancing.aux'.
+[15]
+\openout2 = `2_RT_Edge/RT_EdgeBalancing.aux'.
 
  (2_RT_Edge/RT_EdgeBalancing.tex
 Package babel Info: Redefining ngerman shorthand "|
@@ -1110,7 +1105,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 6.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 6.
- [14
+ [16
 
 
 
@@ -1128,7 +1123,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 9.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 9.
-[15] (2_RT_Edge/RT_1_StateSpace.tex
+[17] (2_RT_Edge/RT_1_StateSpace.tex
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1137,95 +1132,62 @@ Package babel Info: Redefining ngerman shorthand "~
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 70.
+(babel)             in language  on input line 72.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 70.
+(babel)             in language  on input line 72.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 70.
+(babel)             in language  on input line 72.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 70.
- [16]
-Overfull \hbox (1.1072pt too wide) in paragraph at lines 79--80
-\OT1/cmr/m/n/10.95 Zu-stands-raum-dar-stel-lung mit Hil-fe ei-ner Trans-for-ma-
-ti-ons-ma-trix $[] \OMS/cmsy/m/n/10.95 2 \U/msb/m/n/10.95 R[]$ \OT1/cmr/m/n/10.
-95 in ei-ne []aquivalente
- []
-
-
+(babel)             in language  on input line 72.
+ [18]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 124.
+(babel)             in language  on input line 115.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 124.
+(babel)             in language  on input line 115.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 124.
+(babel)             in language  on input line 115.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 124.
- [17]
-
-LaTeX Warning: Citation `eq_fMat_bildbereich' on page 18 undefined on input lin
-e 150.
-
-
-LaTeX Warning: Citation `eq_fMat_zeitbereich' on page 18 undefined on input lin
-e 150.
-
-
+(babel)             in language  on input line 115.
+ [19]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 158.
+(babel)             in language  on input line 156.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 158.
+(babel)             in language  on input line 156.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 158.
+(babel)             in language  on input line 156.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 158.
- [18])
-Overfull \hbox (33.3309pt too wide) in paragraph at lines 169--11
-\OT1/cmr/m/n/10.95 MIMO-Systemen mit klas-si-schen Sta-bi-lit[]atskriterien al-
-le Ele-men-te der []Ubertragungsfunktionsmatrix
- []
+(babel)             in language  on input line 156.
+ [20])
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 11.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 11.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 11.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 11.
 
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 11.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 11.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 11.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 11.
-[19] (2_RT_Edge/RT_2_DiscreteStateSpace.tex
+[21] (2_RT_Edge/RT_2_DiscreteStateSpace.tex
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
 
-Overfull \hbox (53.2148pt too wide) in paragraph at lines 23--23
-[] 
- []
-
-
-LaTeX Warning: Citation `eq_abs_z' on page 20 undefined on input line 35.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 2103) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 39.
+(babel)             in language  on input line 38.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 39.
+(babel)             in language  on input line 38.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 39.
+(babel)             in language  on input line 38.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 39.
- [20]
-
-LaTeX Warning: Citation `eq_discrete_ss' on page 21 undefined on input line 55.
-
-
-)
+(babel)             in language  on input line 38.
+ [22])
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 13.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1234,7 +1196,8 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 13.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 13.
- [21] (2_RT_Edge/RT_3_ControllerDesign.tex
+
+[23] (2_RT_Edge/RT_3_ControllerDesign.tex
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1244,58 +1207,53 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 4.
 
-Overfull \hbox (8.59854pt too wide) in paragraph at lines 7--8
-[]\OT1/cmr/m/n/10.95 Aus der Ab-bil-dung ge-hen die Sys-tem-glei-chun-gen des g
-e-schlos-se-nen Re-gel-krei-ses \LY/yfrak/m/n/10.95 D\OT1/cmr/m/n/10.95 ($[]$,$
-[]$,$[]$)
- []
+<2_RT_Edge/img/RT_ClosedLoop.pdf, id=423, 963.6pt x 542.025pt>
+File: 2_RT_Edge/img/RT_ClosedLoop.pdf Graphic file (type pdf)
 
-
-Underfull \vbox (badness 1552) has occurred while \output is active []
-
+<use 2_RT_Edge/img/RT_ClosedLoop.pdf>
+Package pdftex.def Info: 2_RT_Edge/img/RT_ClosedLoop.pdf used on input line 8.
+(pdftex.def)             Requested size: 352.81552pt x 158.24393pt.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 68.
+(babel)             in language  on input line 37.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 68.
+(babel)             in language  on input line 37.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 68.
+(babel)             in language  on input line 37.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 68.
- [22]
-
-LaTeX Warning: Citation `eq_ew_gRK' on page 23 undefined on input line 74.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 101.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 101.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 101.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 101.
- [23]
+(babel)             in language  on input line 37.
+ [24 <./2_RT_Edge/img/RT_ClosedLoop.pdf>]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 102.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 102.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 124.
+(babel)             in language  on input line 102.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 124.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 124.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 124.
+(babel)             in language  on input line 102.
 
-[24])
-Overfull \hbox (21.53632pt too wide) in paragraph at lines 126--15
-\OT1/cmr/m/n/10.95 gr[]oe wi-der-spie-gelt. Folg-lich be-ein-flusst das Ent-wu
-rfs-ver-fah-ren nicht di-rekt die St[]orempfindlichkeit
- []
-
+[25]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 105.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 105.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 119.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 119.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 119.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 119.
+ [26]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 141.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 141.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 141.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 141.
+ [27])
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 15.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1304,24 +1262,24 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 15.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 15.
-[25] (2_RT_Edge/RT_4_ControllerApplication.tex
+ [28] (2_RT_Edge/RT_4_ControllerApplication.tex
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
 Package epstopdf Info: Source file: <2_RT_Edge/img/edge_exp1_phi.eps>
-(epstopdf)                    date: 2017-05-01 18:10:12
+(epstopdf)                    date: 2017-05-01 11:16:11
 (epstopdf)                    size: 62024 bytes
 (epstopdf)             Output file: <2_RT_Edge/img/edge_exp1_phi-eps-converted-
 to.pdf>
-(epstopdf)                    date: 2017-05-01 18:10:12
+(epstopdf)                    date: 2017-05-01 11:23:56
 (epstopdf)                    size: 23690 bytes
 (epstopdf)             Command: <epstopdf --outfile=2_RT_Edge/img/edge_exp1_phi
 -eps-converted-to.pdf 2_RT_Edge/img/edge_exp1_phi.eps>
 (epstopdf)             \includegraphics on input line 23.
 Package epstopdf Info: Output file is already uptodate.
 
-<2_RT_Edge/img/edge_exp1_phi-eps-converted-to.pdf, id=364, 386.44376pt x 329.23
+<2_RT_Edge/img/edge_exp1_phi-eps-converted-to.pdf, id=487, 386.44376pt x 329.23
 pt>
 File: 2_RT_Edge/img/edge_exp1_phi-eps-converted-to.pdf Graphic file (type pdf)
  <use 2_RT_Edge/img/edge_exp1_phi-eps-converted-to.pdf>
@@ -1329,18 +1287,18 @@ Package pdftex.def Info: 2_RT_Edge/img/edge_exp1_phi-eps-converted-to.pdf used
 on input line 23.
 (pdftex.def)             Requested size: 198.45662pt x 169.07558pt.
 Package epstopdf Info: Source file: <2_RT_Edge/img/edge_exp1_uk.eps>
-(epstopdf)                    date: 2017-05-01 18:10:12
+(epstopdf)                    date: 2017-05-01 11:16:11
 (epstopdf)                    size: 78941 bytes
 (epstopdf)             Output file: <2_RT_Edge/img/edge_exp1_uk-eps-converted-t
 o.pdf>
-(epstopdf)                    date: 2017-05-01 18:10:12
+(epstopdf)                    date: 2017-05-01 11:23:57
 (epstopdf)                    size: 31078 bytes
 (epstopdf)             Command: <epstopdf --outfile=2_RT_Edge/img/edge_exp1_uk-
 eps-converted-to.pdf 2_RT_Edge/img/edge_exp1_uk.eps>
 (epstopdf)             \includegraphics on input line 24.
 Package epstopdf Info: Output file is already uptodate.
 
-<2_RT_Edge/img/edge_exp1_uk-eps-converted-to.pdf, id=365, 377.41pt x 308.15125p
+<2_RT_Edge/img/edge_exp1_uk-eps-converted-to.pdf, id=488, 377.41pt x 308.15125p
 t>
 File: 2_RT_Edge/img/edge_exp1_uk-eps-converted-to.pdf Graphic file (type pdf)
  <use 2_RT_Edge/img/edge_exp1_uk-eps-converted-to.pdf>
@@ -1348,18 +1306,18 @@ Package pdftex.def Info: 2_RT_Edge/img/edge_exp1_uk-eps-converted-to.pdf used o
 n input line 24.
 (pdftex.def)             Requested size: 198.45662pt x 162.03572pt.
 Package epstopdf Info: Source file: <2_RT_Edge/img/edge_exp1_ur.eps>
-(epstopdf)                    date: 2017-05-01 18:10:12
+(epstopdf)                    date: 2017-05-01 11:16:11
 (epstopdf)                    size: 80724 bytes
 (epstopdf)             Output file: <2_RT_Edge/img/edge_exp1_ur-eps-converted-t
 o.pdf>
-(epstopdf)                    date: 2017-05-01 18:10:12
+(epstopdf)                    date: 2017-05-01 11:23:58
 (epstopdf)                    size: 31663 bytes
 (epstopdf)             Command: <epstopdf --outfile=2_RT_Edge/img/edge_exp1_ur-
 eps-converted-to.pdf 2_RT_Edge/img/edge_exp1_ur.eps>
 (epstopdf)             \includegraphics on input line 27.
 Package epstopdf Info: Output file is already uptodate.
 
-<2_RT_Edge/img/edge_exp1_ur-eps-converted-to.pdf, id=366, 375.4025pt x 329.23pt
+<2_RT_Edge/img/edge_exp1_ur-eps-converted-to.pdf, id=489, 375.4025pt x 329.23pt
 >
 File: 2_RT_Edge/img/edge_exp1_ur-eps-converted-to.pdf Graphic file (type pdf)
  <use 2_RT_Edge/img/edge_exp1_ur-eps-converted-to.pdf>
@@ -1367,176 +1325,166 @@ Package pdftex.def Info: 2_RT_Edge/img/edge_exp1_ur-eps-converted-to.pdf used o
 n input line 27.
 (pdftex.def)             Requested size: 198.45662pt x 174.04898pt.
 Package epstopdf Info: Source file: <2_RT_Edge/img/edge_exp1_tm.eps>
-(epstopdf)                    date: 2017-05-01 18:10:12
+(epstopdf)                    date: 2017-05-01 11:16:11
 (epstopdf)                    size: 68027 bytes
 (epstopdf)             Output file: <2_RT_Edge/img/edge_exp1_tm-eps-converted-t
 o.pdf>
-(epstopdf)                    date: 2017-05-01 18:10:12
+(epstopdf)                    date: 2017-05-01 11:23:59
 (epstopdf)                    size: 25379 bytes
 (epstopdf)             Command: <epstopdf --outfile=2_RT_Edge/img/edge_exp1_tm-
 eps-converted-to.pdf 2_RT_Edge/img/edge_exp1_tm.eps>
 (epstopdf)             \includegraphics on input line 28.
 Package epstopdf Info: Output file is already uptodate.
 
-<2_RT_Edge/img/edge_exp1_tm-eps-converted-to.pdf, id=367, 383.4325pt x 329.23pt
+<2_RT_Edge/img/edge_exp1_tm-eps-converted-to.pdf, id=490, 383.4325pt x 329.23pt
 >
 File: 2_RT_Edge/img/edge_exp1_tm-eps-converted-to.pdf Graphic file (type pdf)
  <use 2_RT_Edge/img/edge_exp1_tm-eps-converted-to.pdf>
 Package pdftex.def Info: 2_RT_Edge/img/edge_exp1_tm-eps-converted-to.pdf used o
 n input line 28.
 (pdftex.def)             Requested size: 198.45662pt x 170.40182pt.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 32.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 32.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 32.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 32.
- [26 <./2_RT_Edge/img/edge_exp1_phi-eps-converted-to.pdf> <./2_RT_Edge/img/edge
-_exp1_uk-eps-converted-to.pdf> <./2_RT_Edge/img/edge_exp1_ur-eps-converted-to.p
-df> <./2_RT_Edge/img/edge_exp1_tm-eps-converted-to.pdf>]
 
-Package amsmath Warning: Cannot use `split' here;
-(amsmath)                trying to recover with `aligned' on input line 48.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 Package amsmath Warning: Cannot use `split' here;
-(amsmath)                trying to recover with `aligned' on input line 66.
+(amsmath)                trying to recover with `aligned' on input line 49.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 84.
+(babel)             in language  on input line 57.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 84.
+(babel)             in language  on input line 57.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 84.
+(babel)             in language  on input line 57.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 84.
- [27]
+(babel)             in language  on input line 57.
+ [29]
+
+Package amsmath Warning: Cannot use `split' here;
+(amsmath)                trying to recover with `aligned' on input line 67.
+
+
+Underfull \vbox (badness 8151) has occurred while \output is active []
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 85.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 85.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 85.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 85.
+ [30 <./2_RT_Edge/img/edge_exp1_phi-eps-converted-to.pdf> <./2_RT_Edge/img/edge
+_exp1_uk-eps-converted-to.pdf> <./2_RT_Edge/img/edge_exp1_ur-eps-converted-to.p
+df> <./2_RT_Edge/img/edge_exp1_tm-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <2_RT_Edge/img/edge_exp2_phi.eps>
-(epstopdf)                    date: 2017-05-01 18:10:12
+(epstopdf)                    date: 2017-05-01 11:16:11
 (epstopdf)                    size: 67175 bytes
 (epstopdf)             Output file: <2_RT_Edge/img/edge_exp2_phi-eps-converted-
 to.pdf>
-(epstopdf)                    date: 2017-05-01 18:10:12
+(epstopdf)                    date: 2017-05-01 12:37:19
 (epstopdf)                    size: 25648 bytes
 (epstopdf)             Command: <epstopdf --outfile=2_RT_Edge/img/edge_exp2_phi
 -eps-converted-to.pdf 2_RT_Edge/img/edge_exp2_phi.eps>
-(epstopdf)             \includegraphics on input line 101.
+(epstopdf)             \includegraphics on input line 104.
 Package epstopdf Info: Output file is already uptodate.
 
-<2_RT_Edge/img/edge_exp2_phi-eps-converted-to.pdf, id=397, 391.4625pt x 329.23p
+<2_RT_Edge/img/edge_exp2_phi-eps-converted-to.pdf, id=520, 391.4625pt x 329.23p
 t>
 File: 2_RT_Edge/img/edge_exp2_phi-eps-converted-to.pdf Graphic file (type pdf)
  <use 2_RT_Edge/img/edge_exp2_phi-eps-converted-to.pdf>
 Package pdftex.def Info: 2_RT_Edge/img/edge_exp2_phi-eps-converted-to.pdf used 
-on input line 101.
+on input line 104.
 (pdftex.def)             Requested size: 198.45662pt x 166.91039pt.
 Package epstopdf Info: Source file: <2_RT_Edge/img/edge_exp2_uk.eps>
-(epstopdf)                    date: 2017-05-01 18:10:12
+(epstopdf)                    date: 2017-05-01 11:16:11
 (epstopdf)                    size: 84934 bytes
 (epstopdf)             Output file: <2_RT_Edge/img/edge_exp2_uk-eps-converted-t
 o.pdf>
-(epstopdf)                    date: 2017-05-01 18:10:12
+(epstopdf)                    date: 2017-05-01 12:37:20
 (epstopdf)                    size: 32942 bytes
 (epstopdf)             Command: <epstopdf --outfile=2_RT_Edge/img/edge_exp2_uk-
 eps-converted-to.pdf 2_RT_Edge/img/edge_exp2_uk.eps>
-(epstopdf)             \includegraphics on input line 102.
+(epstopdf)             \includegraphics on input line 105.
 Package epstopdf Info: Output file is already uptodate.
 
-<2_RT_Edge/img/edge_exp2_uk-eps-converted-to.pdf, id=398, 386.44376pt x 329.23p
+<2_RT_Edge/img/edge_exp2_uk-eps-converted-to.pdf, id=521, 386.44376pt x 329.23p
 t>
 File: 2_RT_Edge/img/edge_exp2_uk-eps-converted-to.pdf Graphic file (type pdf)
  <use 2_RT_Edge/img/edge_exp2_uk-eps-converted-to.pdf>
 Package pdftex.def Info: 2_RT_Edge/img/edge_exp2_uk-eps-converted-to.pdf used o
-n input line 102.
+n input line 105.
 (pdftex.def)             Requested size: 198.45662pt x 169.07558pt.
 Package epstopdf Info: Source file: <2_RT_Edge/img/edge_exp2_ur.eps>
-(epstopdf)                    date: 2017-05-01 18:10:12
+(epstopdf)                    date: 2017-05-01 11:16:11
 (epstopdf)                    size: 85084 bytes
 (epstopdf)             Output file: <2_RT_Edge/img/edge_exp2_ur-eps-converted-t
 o.pdf>
-(epstopdf)                    date: 2017-05-01 18:10:12
+(epstopdf)                    date: 2017-05-01 12:37:21
 (epstopdf)                    size: 33274 bytes
 (epstopdf)             Command: <epstopdf --outfile=2_RT_Edge/img/edge_exp2_ur-
 eps-converted-to.pdf 2_RT_Edge/img/edge_exp2_ur.eps>
-(epstopdf)             \includegraphics on input line 105.
+(epstopdf)             \includegraphics on input line 110.
 Package epstopdf Info: Output file is already uptodate.
 
-<2_RT_Edge/img/edge_exp2_ur-eps-converted-to.pdf, id=399, 371.3875pt x 308.1512
+<2_RT_Edge/img/edge_exp2_ur-eps-converted-to.pdf, id=522, 371.3875pt x 308.1512
 5pt>
 File: 2_RT_Edge/img/edge_exp2_ur-eps-converted-to.pdf Graphic file (type pdf)
  <use 2_RT_Edge/img/edge_exp2_ur-eps-converted-to.pdf>
 Package pdftex.def Info: 2_RT_Edge/img/edge_exp2_ur-eps-converted-to.pdf used o
-n input line 105.
+n input line 110.
 (pdftex.def)             Requested size: 198.45662pt x 164.66885pt.
 Package epstopdf Info: Source file: <2_RT_Edge/img/edge_exp2_tm.eps>
-(epstopdf)                    date: 2017-05-01 18:10:12
+(epstopdf)                    date: 2017-05-01 11:16:11
 (epstopdf)                    size: 71952 bytes
 (epstopdf)             Output file: <2_RT_Edge/img/edge_exp2_tm-eps-converted-t
 o.pdf>
-(epstopdf)                    date: 2017-05-01 18:10:12
+(epstopdf)                    date: 2017-05-01 12:37:22
 (epstopdf)                    size: 27135 bytes
 (epstopdf)             Command: <epstopdf --outfile=2_RT_Edge/img/edge_exp2_tm-
 eps-converted-to.pdf 2_RT_Edge/img/edge_exp2_tm.eps>
-(epstopdf)             \includegraphics on input line 106.
+(epstopdf)             \includegraphics on input line 111.
 Package epstopdf Info: Output file is already uptodate.
 
-<2_RT_Edge/img/edge_exp2_tm-eps-converted-to.pdf, id=400, 385.44pt x 329.23pt>
+<2_RT_Edge/img/edge_exp2_tm-eps-converted-to.pdf, id=523, 385.44pt x 329.23pt>
 File: 2_RT_Edge/img/edge_exp2_tm-eps-converted-to.pdf Graphic file (type pdf)
 
 <use 2_RT_Edge/img/edge_exp2_tm-eps-converted-to.pdf>
 Package pdftex.def Info: 2_RT_Edge/img/edge_exp2_tm-eps-converted-to.pdf used o
-n input line 106.
+n input line 111.
 (pdftex.def)             Requested size: 198.45662pt x 169.51263pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 110.
+(babel)             in language  on input line 115.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 110.
+(babel)             in language  on input line 115.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 110.
+(babel)             in language  on input line 115.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 110.
-[28 <./2_RT_Edge/img/edge_exp2_phi-eps-converted-to.pdf> <./2_RT_Edge/img/edge_
-exp2_uk-eps-converted-to.pdf>]
-
-LaTeX Warning: Reference `plot_edge_exp2' on page 29 undefined on input line 11
-1.
-
-)
+(babel)             in language  on input line 115.
+[31 <./2_RT_Edge/img/edge_exp2_phi-eps-converted-to.pdf> <./2_RT_Edge/img/edge_
+exp2_uk-eps-converted-to.pdf>]))
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 17.
+(babel)             in language  on input line 24.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 17.
+(babel)             in language  on input line 24.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 17.
+(babel)             in language  on input line 24.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 17.
- [29 <./2_RT_Edge/img/edge_exp2_ur-eps-converted-to.pdf> <./2_RT_Edge/img/edge_
-exp2_tm-eps-converted-to.pdf>])
+(babel)             in language  on input line 24.
+ [32 <./2_RT_Edge/img/edge_exp2_ur-eps-converted-to.pdf> <./2_RT_Edge/img/edge_
+exp2_tm-eps-converted-to.pdf>]
 \openout2 = `4_TM_Corner/TM_CornerBalancing.aux'.
 
- (4_TM_Corner/TM_CornerBalancing.tex
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 6.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 6.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 6.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 6.
- [30
 
-
-
-]
+(4_TM_Corner/TM_CornerBalancing.tex
 Kapitel 4.
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 6.
@@ -1550,7 +1498,11 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 10.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 10.
-[31] (4_TM_Corner/TM_1_Systemparameter.tex
+[33
+
+
+
+] (4_TM_Corner/TM_1_Systemparameter.tex
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1573,7 +1525,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 50.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 50.
- [32]
+ [34]
 Overfull \hbox (15.6831pt too wide) detected at line 62
 [][][][] \OT1/cmr/m/n/10.95 = [] = [] [\OML/cmm/m/it/10.95 kg \OMS/cmsy/m/n/10.
 95  \OML/cmm/m/it/10.95 m[]\OT1/cmr/m/n/10.95 ]
@@ -1588,13 +1540,13 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 12.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 12.
- [33] (4_TM_Corner/TM_2_Kinematik.tex
+ [35] (4_TM_Corner/TM_2_Kinematik.tex
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
 
-<4_TM_Corner/img/MechAufbau3D.pdf, id=451, 963.6pt x 542.025pt>
+<4_TM_Corner/img/MechAufbau3D.pdf, id=572, 963.6pt x 542.025pt>
 File: 4_TM_Corner/img/MechAufbau3D.pdf Graphic file (type pdf)
 
 <use 4_TM_Corner/img/MechAufbau3D.pdf>
@@ -1619,7 +1571,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 27.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 27.
- [34 <./4_TM_Corner/img/MechAufbau3D.pdf>]
+ [36 <./4_TM_Corner/img/MechAufbau3D.pdf>]
 Overfull \hbox (6.10982pt too wide) in paragraph at lines 32--33
 []\OT1/cmr/m/n/10.95 Die Po-si-ti-on und Aus-rich-tung des Sys-tems wird von de
 n sechs Win-keln $\OML/cmm/m/it/10.95 '[]$ \OT1/cmr/m/n/10.95 und $\OML/cmm/m/i
@@ -1634,7 +1586,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 56.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 56.
-[35])
+[37])
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
@@ -1645,7 +1597,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 14.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 14.
- [36]
+ [38]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 14.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1655,7 +1607,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 14.
 
-[37] (4_TM_Corner/TM_3_Kinetik.tex
+[39] (4_TM_Corner/TM_3_Kinetik.tex
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1671,7 +1623,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 51.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 51.
- [38]
+ [40]
 Overfull \hbox (15.45291pt too wide) in paragraph at lines 51--53
 \OT1/cmr/m/n/10.95 den um die Be-we-gungs-glei-chun-gen zu be-stim-men. Hierf[]
 ur wer-den zun[]achst die Tr[]agheitsmomente
@@ -1688,32 +1640,32 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 72.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 72.
- [39]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 94.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 94.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 94.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 94.
- [40]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 119.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 119.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 119.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 119.
  [41]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 94.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 94.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 94.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 94.
+ [42]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 119.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 119.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 119.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 119.
+ [43]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 169.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 169.
@@ -1721,7 +1673,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 169.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 169.
- [42]
+ [44]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
@@ -1732,29 +1684,17 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 243.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 243.
- [43]
-
-LaTeX Warning: Reference `eq_ZRD3D_zeile1' on page 44 undefined on input line 2
-54.
-
-
-LaTeX Warning: Reference `eq_ZRD3D_zeile2' on page 44 undefined on input line 2
-54.
-
-
-LaTeX Warning: Reference `eq_ZRD3D_zeile3' on page 44 undefined on input line 2
-54.
-
-))
+ [45]))
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 22.
+(babel)             in language  on input line 26.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 22.
+(babel)             in language  on input line 26.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 22.
+(babel)             in language  on input line 26.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 22.
- [44]
+(babel)             in language  on input line 26.
+
+[46]
 \openout2 = `6_RT_Corner/RT_CornerBalancing.aux'.
 
  (6_RT_Corner/RT_CornerBalancing.tex
@@ -1771,7 +1711,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 9.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 9.
-[45
+[47
 
 
 
@@ -1795,23 +1735,23 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 59.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 59.
-[46]
+[48]
 
-LaTeX Warning: Citation `eq_xred' on page 47 undefined on input line 72.
+LaTeX Warning: Citation `eq_xred' on page 49 undefined on input line 72.
 
 Package epstopdf Info: Source file: <6_RT_Corner/img/lin_sim1_phi.eps>
-(epstopdf)                    date: 2017-04-26 18:35:43
-(epstopdf)                    size: 616802 bytes
+(epstopdf)                    date: 2017-04-25 16:31:31
+(epstopdf)                    size: 585249 bytes
 (epstopdf)             Output file: <6_RT_Corner/img/lin_sim1_phi-eps-converted
 -to.pdf>
-(epstopdf)                    date: 2017-04-26 18:35:43
+(epstopdf)                    date: 2017-04-25 16:31:47
 (epstopdf)                    size: 95910 bytes
 (epstopdf)             Command: <epstopdf --outfile=6_RT_Corner/img/lin_sim1_ph
 i-eps-converted-to.pdf 6_RT_Corner/img/lin_sim1_phi.eps>
 (epstopdf)             \includegraphics on input line 86.
 Package epstopdf Info: Output file is already uptodate.
 
-<6_RT_Corner/img/lin_sim1_phi-eps-converted-to.pdf, id=611, 371.3875pt x 308.15
+<6_RT_Corner/img/lin_sim1_phi-eps-converted-to.pdf, id=735, 371.3875pt x 308.15
 125pt>
 File: 6_RT_Corner/img/lin_sim1_phi-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -1820,18 +1760,18 @@ Package pdftex.def Info: 6_RT_Corner/img/lin_sim1_phi-eps-converted-to.pdf used
  on input line 86.
 (pdftex.def)             Requested size: 198.45662pt x 164.66885pt.
 Package epstopdf Info: Source file: <6_RT_Corner/img/lin_sim1_uk.eps>
-(epstopdf)                    date: 2017-04-26 18:35:43
-(epstopdf)                    size: 642050 bytes
+(epstopdf)                    date: 2017-04-25 16:31:32
+(epstopdf)                    size: 609885 bytes
 (epstopdf)             Output file: <6_RT_Corner/img/lin_sim1_uk-eps-converted-
 to.pdf>
-(epstopdf)                    date: 2017-04-26 18:35:43
+(epstopdf)                    date: 2017-04-25 16:31:48
 (epstopdf)                    size: 211033 bytes
 (epstopdf)             Command: <epstopdf --outfile=6_RT_Corner/img/lin_sim1_uk
 -eps-converted-to.pdf 6_RT_Corner/img/lin_sim1_uk.eps>
 (epstopdf)             \includegraphics on input line 87.
 Package epstopdf Info: Output file is already uptodate.
 
-<6_RT_Corner/img/lin_sim1_uk-eps-converted-to.pdf, id=612, 371.3875pt x 308.151
+<6_RT_Corner/img/lin_sim1_uk-eps-converted-to.pdf, id=736, 371.3875pt x 308.151
 25pt>
 File: 6_RT_Corner/img/lin_sim1_uk-eps-converted-to.pdf Graphic file (type pdf)
  <use 6_RT_Corner/img/lin_sim1_uk-eps-converted-to.pdf>
@@ -1839,18 +1779,18 @@ Package pdftex.def Info: 6_RT_Corner/img/lin_sim1_uk-eps-converted-to.pdf used
 on input line 87.
 (pdftex.def)             Requested size: 198.45662pt x 164.66885pt.
 Package epstopdf Info: Source file: <6_RT_Corner/img/lin_sim1_ur.eps>
-(epstopdf)                    date: 2017-04-26 18:35:43
-(epstopdf)                    size: 642425 bytes
+(epstopdf)                    date: 2017-04-25 16:31:33
+(epstopdf)                    size: 610240 bytes
 (epstopdf)             Output file: <6_RT_Corner/img/lin_sim1_ur-eps-converted-
 to.pdf>
-(epstopdf)                    date: 2017-04-26 18:35:43
+(epstopdf)                    date: 2017-04-25 16:31:50
 (epstopdf)                    size: 192870 bytes
 (epstopdf)             Command: <epstopdf --outfile=6_RT_Corner/img/lin_sim1_ur
 -eps-converted-to.pdf 6_RT_Corner/img/lin_sim1_ur.eps>
 (epstopdf)             \includegraphics on input line 90.
 Package epstopdf Info: Output file is already uptodate.
 
-<6_RT_Corner/img/lin_sim1_ur-eps-converted-to.pdf, id=613, 374.39874pt x 308.15
+<6_RT_Corner/img/lin_sim1_ur-eps-converted-to.pdf, id=737, 374.39874pt x 308.15
 125pt>
 File: 6_RT_Corner/img/lin_sim1_ur-eps-converted-to.pdf Graphic file (type pdf)
  <use 6_RT_Corner/img/lin_sim1_ur-eps-converted-to.pdf>
@@ -1858,18 +1798,18 @@ Package pdftex.def Info: 6_RT_Corner/img/lin_sim1_ur-eps-converted-to.pdf used
 on input line 90.
 (pdftex.def)             Requested size: 198.45662pt x 163.34288pt.
 Package epstopdf Info: Source file: <6_RT_Corner/img/lin_sim1_tm.eps>
-(epstopdf)                    date: 2017-04-26 18:35:43
-(epstopdf)                    size: 95739 bytes
+(epstopdf)                    date: 2017-04-25 16:31:34
+(epstopdf)                    size: 92419 bytes
 (epstopdf)             Output file: <6_RT_Corner/img/lin_sim1_tm-eps-converted-
 to.pdf>
-(epstopdf)                    date: 2017-04-26 18:35:43
+(epstopdf)                    date: 2017-04-25 16:31:50
 (epstopdf)                    size: 34183 bytes
 (epstopdf)             Command: <epstopdf --outfile=6_RT_Corner/img/lin_sim1_tm
 -eps-converted-to.pdf 6_RT_Corner/img/lin_sim1_tm.eps>
 (epstopdf)             \includegraphics on input line 91.
 Package epstopdf Info: Output file is already uptodate.
 
-<6_RT_Corner/img/lin_sim1_tm-eps-converted-to.pdf, id=614, 371.3875pt x 308.151
+<6_RT_Corner/img/lin_sim1_tm-eps-converted-to.pdf, id=738, 371.3875pt x 308.151
 25pt>
 File: 6_RT_Corner/img/lin_sim1_tm-eps-converted-to.pdf Graphic file (type pdf)
  <use 6_RT_Corner/img/lin_sim1_tm-eps-converted-to.pdf>
@@ -1887,7 +1827,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 100.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 100.
- [47]
+ [49]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 115.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1897,22 +1837,22 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 115.
 
-[48 <./6_RT_Corner/img/lin_sim1_phi-eps-converted-to.pdf> <./6_RT_Corner/img/li
+[50 <./6_RT_Corner/img/lin_sim1_phi-eps-converted-to.pdf> <./6_RT_Corner/img/li
 n_sim1_uk-eps-converted-to.pdf> <./6_RT_Corner/img/lin_sim1_ur-eps-converted-to
 .pdf> <./6_RT_Corner/img/lin_sim1_tm-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <6_RT_Corner/img/lin_sim2_phi.eps>
-(epstopdf)                    date: 2017-04-26 18:35:43
-(epstopdf)                    size: 587009 bytes
+(epstopdf)                    date: 2017-04-26 09:27:15
+(epstopdf)                    size: 555444 bytes
 (epstopdf)             Output file: <6_RT_Corner/img/lin_sim2_phi-eps-converted
 -to.pdf>
-(epstopdf)                    date: 2017-04-26 18:35:43
+(epstopdf)                    date: 2017-04-26 09:28:11
 (epstopdf)                    size: 89769 bytes
 (epstopdf)             Command: <epstopdf --outfile=6_RT_Corner/img/lin_sim2_ph
 i-eps-converted-to.pdf 6_RT_Corner/img/lin_sim2_phi.eps>
 (epstopdf)             \includegraphics on input line 118.
 Package epstopdf Info: Output file is already uptodate.
 
-<6_RT_Corner/img/lin_sim2_phi-eps-converted-to.pdf, id=644, 368.37625pt x 308.1
+<6_RT_Corner/img/lin_sim2_phi-eps-converted-to.pdf, id=768, 368.37625pt x 308.1
 5125pt>
 File: 6_RT_Corner/img/lin_sim2_phi-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -1921,18 +1861,18 @@ Package pdftex.def Info: 6_RT_Corner/img/lin_sim2_phi-eps-converted-to.pdf used
  on input line 118.
 (pdftex.def)             Requested size: 198.45662pt x 166.00891pt.
 Package epstopdf Info: Source file: <6_RT_Corner/img/lin_sim2_uk.eps>
-(epstopdf)                    date: 2017-04-26 18:35:43
-(epstopdf)                    size: 642352 bytes
+(epstopdf)                    date: 2017-04-26 09:27:16
+(epstopdf)                    size: 610184 bytes
 (epstopdf)             Output file: <6_RT_Corner/img/lin_sim2_uk-eps-converted-
 to.pdf>
-(epstopdf)                    date: 2017-04-26 18:35:43
+(epstopdf)                    date: 2017-04-26 09:28:12
 (epstopdf)                    size: 214094 bytes
 (epstopdf)             Command: <epstopdf --outfile=6_RT_Corner/img/lin_sim2_uk
 -eps-converted-to.pdf 6_RT_Corner/img/lin_sim2_uk.eps>
 (epstopdf)             \includegraphics on input line 119.
 Package epstopdf Info: Output file is already uptodate.
 
-<6_RT_Corner/img/lin_sim2_uk-eps-converted-to.pdf, id=645, 363.3575pt x 308.151
+<6_RT_Corner/img/lin_sim2_uk-eps-converted-to.pdf, id=769, 363.3575pt x 308.151
 25pt>
 File: 6_RT_Corner/img/lin_sim2_uk-eps-converted-to.pdf Graphic file (type pdf)
  <use 6_RT_Corner/img/lin_sim2_uk-eps-converted-to.pdf>
@@ -1940,18 +1880,18 @@ Package pdftex.def Info: 6_RT_Corner/img/lin_sim2_uk-eps-converted-to.pdf used
 on input line 119.
 (pdftex.def)             Requested size: 198.45662pt x 168.3082pt.
 Package epstopdf Info: Source file: <6_RT_Corner/img/lin_sim2_ur.eps>
-(epstopdf)                    date: 2017-04-26 18:35:43
-(epstopdf)                    size: 623374 bytes
+(epstopdf)                    date: 2017-04-26 09:27:17
+(epstopdf)                    size: 591183 bytes
 (epstopdf)             Output file: <6_RT_Corner/img/lin_sim2_ur-eps-converted-
 to.pdf>
-(epstopdf)                    date: 2017-04-26 18:35:43
+(epstopdf)                    date: 2017-04-26 09:28:14
 (epstopdf)                    size: 203420 bytes
 (epstopdf)             Command: <epstopdf --outfile=6_RT_Corner/img/lin_sim2_ur
 -eps-converted-to.pdf 6_RT_Corner/img/lin_sim2_ur.eps>
 (epstopdf)             \includegraphics on input line 122.
 Package epstopdf Info: Output file is already uptodate.
 
-<6_RT_Corner/img/lin_sim2_ur-eps-converted-to.pdf, id=646, 374.39874pt x 308.15
+<6_RT_Corner/img/lin_sim2_ur-eps-converted-to.pdf, id=770, 374.39874pt x 308.15
 125pt>
 File: 6_RT_Corner/img/lin_sim2_ur-eps-converted-to.pdf Graphic file (type pdf)
  <use 6_RT_Corner/img/lin_sim2_ur-eps-converted-to.pdf>
@@ -1959,18 +1899,18 @@ Package pdftex.def Info: 6_RT_Corner/img/lin_sim2_ur-eps-converted-to.pdf used
 on input line 122.
 (pdftex.def)             Requested size: 198.45662pt x 163.34288pt.
 Package epstopdf Info: Source file: <6_RT_Corner/img/lin_sim2_tm.eps>
-(epstopdf)                    date: 2017-04-26 18:35:43
-(epstopdf)                    size: 97603 bytes
+(epstopdf)                    date: 2017-04-26 09:27:18
+(epstopdf)                    size: 94271 bytes
 (epstopdf)             Output file: <6_RT_Corner/img/lin_sim2_tm-eps-converted-
 to.pdf>
-(epstopdf)                    date: 2017-04-26 18:35:43
+(epstopdf)                    date: 2017-04-26 09:28:14
 (epstopdf)                    size: 36001 bytes
 (epstopdf)             Command: <epstopdf --outfile=6_RT_Corner/img/lin_sim2_tm
 -eps-converted-to.pdf 6_RT_Corner/img/lin_sim2_tm.eps>
 (epstopdf)             \includegraphics on input line 123.
 Package epstopdf Info: Output file is already uptodate.
 
-<6_RT_Corner/img/lin_sim2_tm-eps-converted-to.pdf, id=647, 371.3875pt x 308.151
+<6_RT_Corner/img/lin_sim2_tm-eps-converted-to.pdf, id=771, 371.3875pt x 308.151
 25pt>
 File: 6_RT_Corner/img/lin_sim2_tm-eps-converted-to.pdf Graphic file (type pdf)
  <use 6_RT_Corner/img/lin_sim2_tm-eps-converted-to.pdf>
@@ -1988,7 +1928,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 140.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 140.
- [49
+ [51
 
  <./6_RT_Corner/img/lin_sim2_phi-eps-converted-to.pdf> <./6_RT_Corner/img/lin_s
 im2_uk-eps-converted-to.pdf> <./6_RT_Corner/img/lin_sim2_ur-eps-converted-to.pd
@@ -2003,7 +1943,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 11.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 11.
- [50]
+ [52]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 11.
 Package babel Info: Redefining ngerman shorthand "~
@@ -2013,7 +1953,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 11.
 
-[51] (6_RT_Corner/1_SaturationProblem.tex
+[53] (6_RT_Corner/1_SaturationProblem.tex
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
@@ -2029,7 +1969,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 32.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 32.
- [52])
+ [54])
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 13.
 Package babel Info: Redefining ngerman shorthand "~
@@ -2039,24 +1979,24 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 13.
 
-[53] (6_RT_Corner/2_Application.tex
+[55] (6_RT_Corner/2_Application.tex
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
 Package epstopdf Info: Source file: <6_RT_Corner/img/exp1_phi.eps>
-(epstopdf)                    date: 2017-05-03 17:38:39
+(epstopdf)                    date: 2017-04-30 08:24:21
 (epstopdf)                    size: 112708 bytes
 (epstopdf)             Output file: <6_RT_Corner/img/exp1_phi-eps-converted-to.
 pdf>
-(epstopdf)                    date: 2017-05-03 17:38:39
+(epstopdf)                    date: 2017-05-02 12:59:26
 (epstopdf)                    size: 43021 bytes
 (epstopdf)             Command: <epstopdf --outfile=6_RT_Corner/img/exp1_phi-ep
 s-converted-to.pdf 6_RT_Corner/img/exp1_phi.eps>
 (epstopdf)             \includegraphics on input line 13.
 Package epstopdf Info: Output file is already uptodate.
 
-<6_RT_Corner/img/exp1_phi-eps-converted-to.pdf, id=696, 385.44pt x 329.23pt>
+<6_RT_Corner/img/exp1_phi-eps-converted-to.pdf, id=819, 385.44pt x 329.23pt>
 File: 6_RT_Corner/img/exp1_phi-eps-converted-to.pdf Graphic file (type pdf)
 
 <use 6_RT_Corner/img/exp1_phi-eps-converted-to.pdf>
@@ -2064,18 +2004,18 @@ Package pdftex.def Info: 6_RT_Corner/img/exp1_phi-eps-converted-to.pdf used on
 input line 13.
 (pdftex.def)             Requested size: 198.45662pt x 169.51263pt.
 Package epstopdf Info: Source file: <6_RT_Corner/img/exp1_uk.eps>
-(epstopdf)                    date: 2017-05-03 17:38:39
+(epstopdf)                    date: 2017-04-30 08:24:21
 (epstopdf)                    size: 158206 bytes
 (epstopdf)             Output file: <6_RT_Corner/img/exp1_uk-eps-converted-to.p
 df>
-(epstopdf)                    date: 2017-05-03 17:38:39
+(epstopdf)                    date: 2017-05-02 12:59:27
 (epstopdf)                    size: 61605 bytes
 (epstopdf)             Command: <epstopdf --outfile=6_RT_Corner/img/exp1_uk-eps
 -converted-to.pdf 6_RT_Corner/img/exp1_uk.eps>
 (epstopdf)             \includegraphics on input line 14.
 Package epstopdf Info: Output file is already uptodate.
 
-<6_RT_Corner/img/exp1_uk-eps-converted-to.pdf, id=697, 380.42125pt x 329.23pt>
+<6_RT_Corner/img/exp1_uk-eps-converted-to.pdf, id=820, 380.42125pt x 329.23pt>
 File: 6_RT_Corner/img/exp1_uk-eps-converted-to.pdf Graphic file (type pdf)
 
 <use 6_RT_Corner/img/exp1_uk-eps-converted-to.pdf>
@@ -2083,18 +2023,18 @@ Package pdftex.def Info: 6_RT_Corner/img/exp1_uk-eps-converted-to.pdf used on i
 nput line 14.
 (pdftex.def)             Requested size: 198.45662pt x 171.75317pt.
 Package epstopdf Info: Source file: <6_RT_Corner/img/exp1_ur.eps>
-(epstopdf)                    date: 2017-05-03 17:38:39
+(epstopdf)                    date: 2017-04-30 08:24:21
 (epstopdf)                    size: 159013 bytes
 (epstopdf)             Output file: <6_RT_Corner/img/exp1_ur-eps-converted-to.p
 df>
-(epstopdf)                    date: 2017-05-03 17:38:39
+(epstopdf)                    date: 2017-05-02 12:59:28
 (epstopdf)                    size: 62447 bytes
 (epstopdf)             Command: <epstopdf --outfile=6_RT_Corner/img/exp1_ur-eps
 -converted-to.pdf 6_RT_Corner/img/exp1_ur.eps>
 (epstopdf)             \includegraphics on input line 17.
 Package epstopdf Info: Output file is already uptodate.
 
-<6_RT_Corner/img/exp1_ur-eps-converted-to.pdf, id=698, 383.4325pt x 329.23pt>
+<6_RT_Corner/img/exp1_ur-eps-converted-to.pdf, id=821, 383.4325pt x 329.23pt>
 File: 6_RT_Corner/img/exp1_ur-eps-converted-to.pdf Graphic file (type pdf)
 
 <use 6_RT_Corner/img/exp1_ur-eps-converted-to.pdf>
@@ -2102,18 +2042,18 @@ Package pdftex.def Info: 6_RT_Corner/img/exp1_ur-eps-converted-to.pdf used on i
 nput line 17.
 (pdftex.def)             Requested size: 198.45662pt x 170.40182pt.
 Package epstopdf Info: Source file: <6_RT_Corner/img/exp1_tm.eps>
-(epstopdf)                    date: 2017-05-03 17:38:39
+(epstopdf)                    date: 2017-04-30 08:24:21
 (epstopdf)                    size: 146591 bytes
 (epstopdf)             Output file: <6_RT_Corner/img/exp1_tm-eps-converted-to.p
 df>
-(epstopdf)                    date: 2017-05-03 17:38:39
+(epstopdf)                    date: 2017-05-02 12:59:30
 (epstopdf)                    size: 55507 bytes
 (epstopdf)             Command: <epstopdf --outfile=6_RT_Corner/img/exp1_tm-eps
 -converted-to.pdf 6_RT_Corner/img/exp1_tm.eps>
 (epstopdf)             \includegraphics on input line 18.
 Package epstopdf Info: Output file is already uptodate.
 
-<6_RT_Corner/img/exp1_tm-eps-converted-to.pdf, id=699, 385.44pt x 329.23pt>
+<6_RT_Corner/img/exp1_tm-eps-converted-to.pdf, id=822, 385.44pt x 329.23pt>
 File: 6_RT_Corner/img/exp1_tm-eps-converted-to.pdf Graphic file (type pdf)
 
 <use 6_RT_Corner/img/exp1_tm-eps-converted-to.pdf>
@@ -2121,18 +2061,18 @@ Package pdftex.def Info: 6_RT_Corner/img/exp1_tm-eps-converted-to.pdf used on i
 nput line 18.
 (pdftex.def)             Requested size: 198.45662pt x 169.51263pt.
 Package epstopdf Info: Source file: <6_RT_Corner/img/exp2_phi.eps>
-(epstopdf)                    date: 2017-05-03 17:38:39
+(epstopdf)                    date: 2017-04-30 08:24:21
 (epstopdf)                    size: 94914 bytes
 (epstopdf)             Output file: <6_RT_Corner/img/exp2_phi-eps-converted-to.
 pdf>
-(epstopdf)                    date: 2017-05-03 17:38:39
+(epstopdf)                    date: 2017-05-02 14:32:45
 (epstopdf)                    size: 36531 bytes
 (epstopdf)             Command: <epstopdf --outfile=6_RT_Corner/img/exp2_phi-ep
 s-converted-to.pdf 6_RT_Corner/img/exp2_phi.eps>
 (epstopdf)             \includegraphics on input line 25.
 Package epstopdf Info: Output file is already uptodate.
 
-<6_RT_Corner/img/exp2_phi-eps-converted-to.pdf, id=700, 385.44pt x 329.23pt>
+<6_RT_Corner/img/exp2_phi-eps-converted-to.pdf, id=823, 385.44pt x 329.23pt>
 File: 6_RT_Corner/img/exp2_phi-eps-converted-to.pdf Graphic file (type pdf)
 
 <use 6_RT_Corner/img/exp2_phi-eps-converted-to.pdf>
@@ -2140,18 +2080,18 @@ Package pdftex.def Info: 6_RT_Corner/img/exp2_phi-eps-converted-to.pdf used on
 input line 25.
 (pdftex.def)             Requested size: 198.45662pt x 169.51263pt.
 Package epstopdf Info: Source file: <6_RT_Corner/img/exp2_uk.eps>
-(epstopdf)                    date: 2017-05-03 17:38:39
+(epstopdf)                    date: 2017-04-30 08:24:21
 (epstopdf)                    size: 130066 bytes
 (epstopdf)             Output file: <6_RT_Corner/img/exp2_uk-eps-converted-to.p
 df>
-(epstopdf)                    date: 2017-05-03 17:38:39
+(epstopdf)                    date: 2017-05-02 14:32:46
 (epstopdf)                    size: 50933 bytes
 (epstopdf)             Command: <epstopdf --outfile=6_RT_Corner/img/exp2_uk-eps
 -converted-to.pdf 6_RT_Corner/img/exp2_uk.eps>
 (epstopdf)             \includegraphics on input line 26.
 Package epstopdf Info: Output file is already uptodate.
 
-<6_RT_Corner/img/exp2_uk-eps-converted-to.pdf, id=701, 380.42125pt x 308.15125p
+<6_RT_Corner/img/exp2_uk-eps-converted-to.pdf, id=824, 380.42125pt x 308.15125p
 t>
 File: 6_RT_Corner/img/exp2_uk-eps-converted-to.pdf Graphic file (type pdf)
  <use 6_RT_Corner/img/exp2_uk-eps-converted-to.pdf>
@@ -2159,18 +2099,18 @@ Package pdftex.def Info: 6_RT_Corner/img/exp2_uk-eps-converted-to.pdf used on i
 nput line 26.
 (pdftex.def)             Requested size: 198.45662pt x 160.75677pt.
 Package epstopdf Info: Source file: <6_RT_Corner/img/exp2_ur.eps>
-(epstopdf)                    date: 2017-05-03 17:38:39
+(epstopdf)                    date: 2017-04-30 08:24:21
 (epstopdf)                    size: 130617 bytes
 (epstopdf)             Output file: <6_RT_Corner/img/exp2_ur-eps-converted-to.p
 df>
-(epstopdf)                    date: 2017-05-03 17:38:39
+(epstopdf)                    date: 2017-05-02 14:32:47
 (epstopdf)                    size: 51895 bytes
 (epstopdf)             Command: <epstopdf --outfile=6_RT_Corner/img/exp2_ur-eps
 -converted-to.pdf 6_RT_Corner/img/exp2_ur.eps>
 (epstopdf)             \includegraphics on input line 29.
 Package epstopdf Info: Output file is already uptodate.
 
-<6_RT_Corner/img/exp2_ur-eps-converted-to.pdf, id=702, 383.4325pt x 329.23pt>
+<6_RT_Corner/img/exp2_ur-eps-converted-to.pdf, id=825, 383.4325pt x 329.23pt>
 File: 6_RT_Corner/img/exp2_ur-eps-converted-to.pdf Graphic file (type pdf)
 
 <use 6_RT_Corner/img/exp2_ur-eps-converted-to.pdf>
@@ -2178,18 +2118,18 @@ Package pdftex.def Info: 6_RT_Corner/img/exp2_ur-eps-converted-to.pdf used on i
 nput line 29.
 (pdftex.def)             Requested size: 198.45662pt x 170.40182pt.
 Package epstopdf Info: Source file: <6_RT_Corner/img/exp2_tm.eps>
-(epstopdf)                    date: 2017-05-03 17:38:39
+(epstopdf)                    date: 2017-04-30 08:24:21
 (epstopdf)                    size: 119146 bytes
 (epstopdf)             Output file: <6_RT_Corner/img/exp2_tm-eps-converted-to.p
 df>
-(epstopdf)                    date: 2017-05-03 17:38:39
+(epstopdf)                    date: 2017-05-02 14:32:48
 (epstopdf)                    size: 45492 bytes
 (epstopdf)             Command: <epstopdf --outfile=6_RT_Corner/img/exp2_tm-eps
 -converted-to.pdf 6_RT_Corner/img/exp2_tm.eps>
 (epstopdf)             \includegraphics on input line 30.
 Package epstopdf Info: Output file is already uptodate.
 
-<6_RT_Corner/img/exp2_tm-eps-converted-to.pdf, id=703, 385.44pt x 329.23pt>
+<6_RT_Corner/img/exp2_tm-eps-converted-to.pdf, id=826, 385.44pt x 329.23pt>
 File: 6_RT_Corner/img/exp2_tm-eps-converted-to.pdf Graphic file (type pdf)
 
 <use 6_RT_Corner/img/exp2_tm-eps-converted-to.pdf>
@@ -2204,11 +2144,9 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 34.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 34.
- [54 <./6_RT_Corner/img/exp1_phi-eps-converted-to.pdf> <./6_RT_Corner/img/exp1_
+ [56 <./6_RT_Corner/img/exp1_phi-eps-converted-to.pdf> <./6_RT_Corner/img/exp1_
 uk-eps-converted-to.pdf> <./6_RT_Corner/img/exp1_ur-eps-converted-to.pdf> <./6_
 RT_Corner/img/exp1_tm-eps-converted-to.pdf>]
-Underfull \vbox (badness 1221) has occurred while \output is active []
-
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 34.
 Package babel Info: Redefining ngerman shorthand "~
@@ -2217,21 +2155,22 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 34.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 34.
- [55 <./6_RT_Corner/img/exp2_phi-eps-converted-to.pdf> <./6_RT_Corner/img/exp2_
+ [57 <./6_RT_Corner/img/exp2_phi-eps-converted-to.pdf> <./6_RT_Corner/img/exp2_
 uk-eps-converted-to.pdf> <./6_RT_Corner/img/exp2_ur-eps-converted-to.pdf> <./6_
 RT_Corner/img/exp2_tm-eps-converted-to.pdf>]))
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 24.
+(babel)             in language  on input line 28.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 24.
+(babel)             in language  on input line 28.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 24.
+(babel)             in language  on input line 28.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 24.
- [56]
+(babel)             in language  on input line 28.
+ [58]
 \openout2 = `5_Sensorik/Sensorik.aux'.
 
- (5_Sensorik/Sensorik.tex
+
+(5_Sensorik/Sensorik.tex
 Kapitel 6.
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 6.
@@ -2245,7 +2184,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 8.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 8.
-[57
+[59
 
 
 
@@ -2290,7 +2229,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 10.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 10.
- [58]
+ [60]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 10.
 Package babel Info: Redefining ngerman shorthand "~
@@ -2300,7 +2239,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 10.
 
-[59] (5_Sensorik/SEN_1_PhiEstimate.tex
+[61] (5_Sensorik/SEN_1_PhiEstimate.tex
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
@@ -2333,7 +2272,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 43.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 43.
- [60]
+ [62]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
@@ -2344,7 +2283,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 74.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 74.
- [61]
+ [63]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
@@ -2355,7 +2294,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 148.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 148.
- [62])
+ [64])
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 12.
 Package babel Info: Redefining ngerman shorthand "~
@@ -2365,7 +2304,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 12.
 
-[63] (5_Sensorik/SEN_2_CompFilter.tex
+[65] (5_Sensorik/SEN_2_CompFilter.tex
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
@@ -2611,24 +2550,23 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 1.
 
+<5_Sensorik/img/CompFilter.pdf, id=927, 963.6pt x 542.025pt>
+File: 5_Sensorik/img/CompFilter.pdf Graphic file (type pdf)
 
-LaTeX Warning: Reference `bsb_kompfilter' on page 64 undefined on input line 19
-.
-
-
-Underfull \vbox (badness 3769) has occurred while \output is active []
-
+<use 5_Sensorik/img/CompFilter.pdf>
+Package pdftex.def Info: 5_Sensorik/img/CompFilter.pdf used on input line 14.
+(pdftex.def)             Requested size: 441.01773pt x 127.3974pt.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 44.
+(babel)             in language  on input line 30.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 44.
+(babel)             in language  on input line 30.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 44.
+(babel)             in language  on input line 30.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 44.
- [64]
+(babel)             in language  on input line 30.
+ [66 <./5_Sensorik/img/CompFilter.pdf>]
 
-LaTeX Warning: Reference `section_corner_balance_test' on page 65 undefined on 
+LaTeX Warning: Reference `section_corner_balance_test' on page 67 undefined on 
 input line 45.
 
 )
@@ -2640,7 +2578,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 14.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 14.
- [65] (5_Sensorik/SEN_3_PhiObserver.tex
+ [67] (5_Sensorik/SEN_3_PhiObserver.tex
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
@@ -2658,96 +2596,101 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 1.
 
+<5_Sensorik/img/Observer.pdf, id=960, 963.6pt x 542.025pt>
+File: 5_Sensorik/img/Observer.pdf Graphic file (type pdf)
 
-LaTeX Warning: Reference `eq_edge_system' on page 66 undefined on input line 15
-.
-
+<use 5_Sensorik/img/Observer.pdf>
+Package pdftex.def Info: 5_Sensorik/img/Observer.pdf used on input line 18.
+(pdftex.def)             Requested size: 441.01773pt x 235.96368pt.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 34.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 34.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 34.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 34.
+ [68 <./5_Sensorik/img/Observer.pdf>]
 Package epstopdf Info: Source file: <5_Sensorik/img/edge_exp3_phi.eps>
-(epstopdf)                    date: 2017-05-01 18:22:39
-(epstopdf)                    size: 68979 bytes
+(epstopdf)                    date: 2017-05-01 21:18:32
+(epstopdf)                    size: 71081 bytes
 (epstopdf)             Output file: <5_Sensorik/img/edge_exp3_phi-eps-converted
 -to.pdf>
-(epstopdf)                    date: 2017-05-01 18:24:33
+(epstopdf)                    date: 2017-05-01 21:18:32
 (epstopdf)                    size: 27188 bytes
 (epstopdf)             Command: <epstopdf --outfile=5_Sensorik/img/edge_exp3_ph
 i-eps-converted-to.pdf 5_Sensorik/img/edge_exp3_phi.eps>
-(epstopdf)             \includegraphics on input line 37.
+(epstopdf)             \includegraphics on input line 40.
 Package epstopdf Info: Output file is already uptodate.
 
-<5_Sensorik/img/edge_exp3_phi-eps-converted-to.pdf, id=818, 365.365pt x 308.151
+<5_Sensorik/img/edge_exp3_phi-eps-converted-to.pdf, id=988, 365.365pt x 308.151
 25pt>
 File: 5_Sensorik/img/edge_exp3_phi-eps-converted-to.pdf Graphic file (type pdf)
 
  <use 5_Sensorik/img/edge_exp3_phi-eps-converted-to.pdf>
 Package pdftex.def Info: 5_Sensorik/img/edge_exp3_phi-eps-converted-to.pdf used
- on input line 37.
-(pdftex.def)             Requested size: 198.45662pt x 167.3772pt.
+ on input line 40.
+(pdftex.def)             Requested size: 189.63438pt x 159.93863pt.
 Package epstopdf Info: Source file: <5_Sensorik/img/edge_exp3_uk.eps>
-(epstopdf)                    date: 2017-05-01 18:22:39
-(epstopdf)                    size: 81087 bytes
+(epstopdf)                    date: 2017-05-01 21:18:33
+(epstopdf)                    size: 83652 bytes
 (epstopdf)             Output file: <5_Sensorik/img/edge_exp3_uk-eps-converted-
 to.pdf>
-(epstopdf)                    date: 2017-05-01 18:24:34
+(epstopdf)                    date: 2017-05-01 21:18:33
 (epstopdf)                    size: 33778 bytes
 (epstopdf)             Command: <epstopdf --outfile=5_Sensorik/img/edge_exp3_uk
 -eps-converted-to.pdf 5_Sensorik/img/edge_exp3_uk.eps>
-(epstopdf)             \includegraphics on input line 38.
+(epstopdf)             \includegraphics on input line 41.
 Package epstopdf Info: Output file is already uptodate.
 
-<5_Sensorik/img/edge_exp3_uk-eps-converted-to.pdf, id=819, 376.40625pt x 308.15
+<5_Sensorik/img/edge_exp3_uk-eps-converted-to.pdf, id=989, 376.40625pt x 308.15
 125pt>
 File: 5_Sensorik/img/edge_exp3_uk-eps-converted-to.pdf Graphic file (type pdf)
  <use 5_Sensorik/img/edge_exp3_uk-eps-converted-to.pdf>
 Package pdftex.def Info: 5_Sensorik/img/edge_exp3_uk-eps-converted-to.pdf used 
-on input line 38.
-(pdftex.def)             Requested size: 198.45662pt x 162.473pt.
+on input line 41.
+(pdftex.def)             Requested size: 189.63438pt x 155.25073pt.
 Package epstopdf Info: Source file: <5_Sensorik/img/edge_exp3_ur.eps>
-(epstopdf)                    date: 2017-05-01 18:22:39
-(epstopdf)                    size: 82891 bytes
+(epstopdf)                    date: 2017-05-01 21:18:33
+(epstopdf)                    size: 85489 bytes
 (epstopdf)             Output file: <5_Sensorik/img/edge_exp3_ur-eps-converted-
 to.pdf>
-(epstopdf)                    date: 2017-05-01 18:24:34
+(epstopdf)                    date: 2017-05-01 21:18:33
 (epstopdf)                    size: 34497 bytes
 (epstopdf)             Command: <epstopdf --outfile=5_Sensorik/img/edge_exp3_ur
 -eps-converted-to.pdf 5_Sensorik/img/edge_exp3_ur.eps>
-(epstopdf)             \includegraphics on input line 41.
+(epstopdf)             \includegraphics on input line 44.
 Package epstopdf Info: Output file is already uptodate.
 
-<5_Sensorik/img/edge_exp3_ur-eps-converted-to.pdf, id=820, 368.37625pt x 308.15
+<5_Sensorik/img/edge_exp3_ur-eps-converted-to.pdf, id=990, 368.37625pt x 308.15
 125pt>
 File: 5_Sensorik/img/edge_exp3_ur-eps-converted-to.pdf Graphic file (type pdf)
  <use 5_Sensorik/img/edge_exp3_ur-eps-converted-to.pdf>
 Package pdftex.def Info: 5_Sensorik/img/edge_exp3_ur-eps-converted-to.pdf used 
-on input line 41.
-(pdftex.def)             Requested size: 198.45662pt x 166.00891pt.
+on input line 44.
+(pdftex.def)             Requested size: 189.63438pt x 158.63147pt.
 Package epstopdf Info: Source file: <5_Sensorik/img/edge_exp3_tm.eps>
-(epstopdf)                    date: 2017-05-01 18:22:39
-(epstopdf)                    size: 72491 bytes
+(epstopdf)                    date: 2017-05-01 21:18:33
+(epstopdf)                    size: 74724 bytes
 (epstopdf)             Output file: <5_Sensorik/img/edge_exp3_tm-eps-converted-
 to.pdf>
-(epstopdf)                    date: 2017-05-01 18:24:35
+(epstopdf)                    date: 2017-05-01 21:18:33
 (epstopdf)                    size: 28426 bytes
 (epstopdf)             Command: <epstopdf --outfile=5_Sensorik/img/edge_exp3_tm
 -eps-converted-to.pdf 5_Sensorik/img/edge_exp3_tm.eps>
-(epstopdf)             \includegraphics on input line 42.
+(epstopdf)             \includegraphics on input line 45.
 Package epstopdf Info: Output file is already uptodate.
 
-<5_Sensorik/img/edge_exp3_tm-eps-converted-to.pdf, id=821, 381.425pt x 308.1512
+<5_Sensorik/img/edge_exp3_tm-eps-converted-to.pdf, id=991, 381.425pt x 308.1512
 5pt>
 File: 5_Sensorik/img/edge_exp3_tm-eps-converted-to.pdf Graphic file (type pdf)
  <use 5_Sensorik/img/edge_exp3_tm-eps-converted-to.pdf>
 Package pdftex.def Info: 5_Sensorik/img/edge_exp3_tm-eps-converted-to.pdf used 
-on input line 42.
-(pdftex.def)             Requested size: 198.45662pt x 160.3289pt.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 46.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 46.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 46.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 46.
- [66])
+on input line 45.
+(pdftex.def)             Requested size: 189.63438pt x 153.20537pt.
+)
+Underfull \vbox (badness 2173) has occurred while \output is active []
+
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 16.
 Package babel Info: Redefining ngerman shorthand "~
@@ -2756,18 +2699,18 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 16.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 16.
- [67 <./5_Sensorik/img/edge_exp3_phi-eps-converted-to.pdf> <./5_Sensorik/img/ed
+ [69 <./5_Sensorik/img/edge_exp3_phi-eps-converted-to.pdf> <./5_Sensorik/img/ed
 ge_exp3_uk-eps-converted-to.pdf> <./5_Sensorik/img/edge_exp3_ur-eps-converted-t
 o.pdf> <./5_Sensorik/img/edge_exp3_tm-eps-converted-to.pdf>])
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 26.
+(babel)             in language  on input line 30.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 26.
+(babel)             in language  on input line 30.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 26.
+(babel)             in language  on input line 30.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 26.
- [68]
+(babel)             in language  on input line 30.
+ [70]
 \openout2 = `3_SW/Software.aux'.
 
  (3_SW/Software.tex
@@ -2784,7 +2727,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 9.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 9.
-[69
+[71
 
 
 
@@ -2797,8 +2740,12 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 6.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 6.
+Package acronym Info: Label `acro:SPI' newly defined as it shall be overridden
+although it is yet undefined on input line 7.
+Package acronym Info: Label `acro:CS' newly defined as it shall be overridden
+although it is yet undefined on input line 7.
 
-<3_SW/img/SW_0_Sensoren_BSB.pdf, id=856, 621.07031pt x 341.02406pt>
+<3_SW/img/SW_0_Sensoren_BSB.pdf, id=1024, 621.07031pt x 341.02406pt>
 File: 3_SW/img/SW_0_Sensoren_BSB.pdf Graphic file (type pdf)
 
 <use 3_SW/img/SW_0_Sensoren_BSB.pdf>
@@ -2812,22 +2759,26 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 16.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 16.
- [70 <./3_SW/img/SW_0_Sensoren_BSB.pdf>]
-<3_SW/img/SW_0_Sensoren_KD.pdf, id=870, 606.76688pt x 341.02406pt>
+ [72 <./3_SW/img/SW_0_Sensoren_BSB.pdf>]
+<3_SW/img/SW_0_Sensoren_KD.pdf, id=1044, 606.76688pt x 341.02406pt>
 File: 3_SW/img/SW_0_Sensoren_KD.pdf Graphic file (type pdf)
 
 <use 3_SW/img/SW_0_Sensoren_KD.pdf>
 Package pdftex.def Info: 3_SW/img/SW_0_Sensoren_KD.pdf used on input line 20.
 (pdftex.def)             Requested size: 308.71106pt x 173.50888pt.
+Package acronym Info: Label `acro:PWM' newly defined as it shall be overridden
+although it is yet undefined on input line 24.
 
-<3_SW/img/SW_0_Motoren_BSB.pdf, id=871, 566.115pt x 124.96687pt>
+<3_SW/img/SW_0_Motoren_BSB.pdf, id=1047, 566.115pt x 124.96687pt>
 File: 3_SW/img/SW_0_Motoren_BSB.pdf Graphic file (type pdf)
 
 <use 3_SW/img/SW_0_Motoren_BSB.pdf>
 Package pdftex.def Info: 3_SW/img/SW_0_Motoren_BSB.pdf used on input line 27.
 (pdftex.def)             Requested size: 308.71106pt x 68.1485pt.
+Package acronym Info: Label `acro:ADC' newly defined as it shall be overridden
+although it is yet undefined on input line 30.
 
-<3_SW/img/SW_0_Hardware_KD.pdf, id=872, 582.67688pt x 383.93437pt>
+<3_SW/img/SW_0_Hardware_KD.pdf, id=1052, 582.67688pt x 383.93437pt>
 File: 3_SW/img/SW_0_Hardware_KD.pdf Graphic file (type pdf)
 
 <use 3_SW/img/SW_0_Hardware_KD.pdf>
@@ -2845,7 +2796,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 11.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 11.
-[71 <./3_SW/img/SW_0_Sensoren_KD.pdf>]
+[73 <./3_SW/img/SW_0_Sensoren_KD.pdf>]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 11.
 Package babel Info: Redefining ngerman shorthand "~
@@ -2854,7 +2805,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 11.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 11.
- [72 <./3_SW/img/SW_0_Motoren_BSB.pdf> <./3_SW/img/SW_0_Hardware_KD.pdf
+ [74 <./3_SW/img/SW_0_Motoren_BSB.pdf> <./3_SW/img/SW_0_Hardware_KD.pdf
 
 pdfTeX warning: pdflatex (file ./3_SW/img/SW_0_Hardware_KD.pdf): PDF inclusion:
  multiple pdfs with page group included in a single page
@@ -2864,7 +2815,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
 
-<3_SW/img/SW_1_Signalfluss_BSB.pdf, id=915, 710.655pt x 124.96687pt>
+<3_SW/img/SW_1_Signalfluss_BSB.pdf, id=1098, 710.655pt x 124.96687pt>
 File: 3_SW/img/SW_1_Signalfluss_BSB.pdf Graphic file (type pdf)
 
 <use 3_SW/img/SW_1_Signalfluss_BSB.pdf>
@@ -2886,7 +2837,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 43.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 43.
- [73 <./3_SW/img/SW_1_Signalfluss_BSB.pdf>]
+ [75 <./3_SW/img/SW_1_Signalfluss_BSB.pdf>]
 Overfull \hbox (9.9866pt too wide) in paragraph at lines 59--60
 [][][][][][][][][][][][][][][][][][][][] 
  []
@@ -2899,12 +2850,12 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 86.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 86.
-[74]
+[76]
 Overfull \hbox (33.98685pt too wide) in paragraph at lines 96--97
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-<3_SW/img/SW_1_Signalfluss_KD.pdf, id=1005, 582.67688pt x 383.93437pt>
+<3_SW/img/SW_1_Signalfluss_KD.pdf, id=1187, 582.67688pt x 383.93437pt>
 File: 3_SW/img/SW_1_Signalfluss_KD.pdf Graphic file (type pdf)
 
 <use 3_SW/img/SW_1_Signalfluss_KD.pdf>
@@ -2923,7 +2874,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 128.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 128.
-[75])
+[77])
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 13.
 Package babel Info: Redefining ngerman shorthand "~
@@ -2932,7 +2883,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 13.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 13.
- [76 <./3_SW/img/SW_1_Signalfluss_KD.pdf>]
+ [78 <./3_SW/img/SW_1_Signalfluss_KD.pdf>]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 13.
 Package babel Info: Redefining ngerman shorthand "~
@@ -2941,14 +2892,14 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 13.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 13.
- [77]
+ [79]
 (3_SW/SW_2_KomponentenArchitektur.tex
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
 
-<3_SW/img/SW_1_KA_BSB.pdf, id=1083, 810.77907pt x 341.02406pt>
+<3_SW/img/SW_1_KA_BSB.pdf, id=1266, 810.77907pt x 341.02406pt>
 File: 3_SW/img/SW_1_KA_BSB.pdf Graphic file (type pdf)
 
 <use 3_SW/img/SW_1_KA_BSB.pdf>
@@ -2960,7 +2911,7 @@ Overfull \hbox (0.48918pt too wide) in paragraph at lines 2--10
 rt. Um ei-ne ef-fi-zi-en-te Ver-suchs-durchf[]uhrung
  []
 
-<3_SW/img/SW_1_KA_KD.pdf, id=1084, 606.76688pt x 341.02406pt>
+<3_SW/img/SW_1_KA_KD.pdf, id=1267, 606.76688pt x 341.02406pt>
 File: 3_SW/img/SW_1_KA_KD.pdf Graphic file (type pdf)
 
 <use 3_SW/img/SW_1_KA_KD.pdf>
@@ -2974,7 +2925,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 17.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 17.
- [78 <./3_SW/img/SW_1_KA_BSB.pdf>]
+ [80 <./3_SW/img/SW_1_KA_BSB.pdf>]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 42.
 Package babel Info: Redefining ngerman shorthand "~
@@ -2983,7 +2934,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 42.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 42.
- [79 <./3_SW/img/SW_1_KA_KD.pdf>])
+ [81 <./3_SW/img/SW_1_KA_KD.pdf>])
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 15.
 Package babel Info: Redefining ngerman shorthand "~
@@ -2992,13 +2943,13 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 15.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 15.
- [80] (3_SW/SW_3_RegelungsKomponente.tex
+ [82] (3_SW/SW_3_RegelungsKomponente.tex
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
 
-<3_SW/img/SW_2_ControlComp_SC.pdf, id=1148, 483.30562pt x 255.95625pt>
+<3_SW/img/SW_2_ControlComp_SC.pdf, id=1330, 483.30562pt x 255.95625pt>
 File: 3_SW/img/SW_2_ControlComp_SC.pdf Graphic file (type pdf)
 
 <use 3_SW/img/SW_2_ControlComp_SC.pdf>
@@ -3013,7 +2964,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 30.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 30.
- [81 <./3_SW/img/SW_2_ControlComp_SC.pdf>]
+ [83 <./3_SW/img/SW_2_ControlComp_SC.pdf>]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 85.
 Package babel Info: Redefining ngerman shorthand "~
@@ -3022,35 +2973,35 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 85.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 85.
- [82]
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 110.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 110.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 110.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 110.
- [83]
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 154.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 154.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 154.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 154.
  [84]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 209.
+(babel)             in language  on input line 110.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 209.
+(babel)             in language  on input line 110.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 209.
+(babel)             in language  on input line 110.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 209.
+(babel)             in language  on input line 110.
  [85]
 Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 154.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 154.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 154.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 154.
+ [86]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 209.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 209.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 209.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 209.
+ [87]
+Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 267.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 267.
@@ -3058,7 +3009,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 267.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 267.
- [86])
+ [88])
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 17.
 Package babel Info: Redefining ngerman shorthand "~
@@ -3067,13 +3018,13 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 17.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 17.
- [87] (3_SW/SW_4_KommunikationsKomponente.tex
+ [89] (3_SW/SW_4_KommunikationsKomponente.tex
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
 
-<3_SW/img/SW_4_CommComp_SC.pdf, id=1422, 368.1253pt x 164.86594pt>
+<3_SW/img/SW_4_CommComp_SC.pdf, id=1604, 368.1253pt x 164.86594pt>
 File: 3_SW/img/SW_4_CommComp_SC.pdf Graphic file (type pdf)
 
 <use 3_SW/img/SW_4_CommComp_SC.pdf>
@@ -3087,7 +3038,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 25.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 25.
- [88 <./3_SW/img/SW_4_CommComp_SC.pdf>])
+ [90 <./3_SW/img/SW_4_CommComp_SC.pdf>])
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 19.
 Package babel Info: Redefining ngerman shorthand "~
@@ -3097,7 +3048,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 19.
 
-[89] (3_SW/SW_5_DesktopClient.tex
+[91] (3_SW/SW_5_DesktopClient.tex
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
@@ -3110,31 +3061,26 @@ er An-wen-dung, wel-che in ei-ner gew[]ohnlichen
 
 ))
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 28.
+(babel)             in language  on input line 32.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 28.
+(babel)             in language  on input line 32.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 28.
+(babel)             in language  on input line 32.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 28.
- [90]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 30.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 30.
- (BA_MM.aux (0_Introduction/Introduction.aux)
-(1_TM_Edge/TM_EdgeBalancing.aux) (RT_EdgeBalancing.aux)
-(4_TM_Corner/TM_CornerBalancing.aux) (6_RT_Corner/RT_CornerBalancing.aux)
-(5_Sensorik/Sensorik.aux) (3_SW/Software.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 30.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 30.
+(babel)             in language  on input line 32.
+ [92]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 34.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 34.
+ (BA_MM.aux (0_1_Acronym.aux) (0_2_Nomenclature.aux)
+(0_Introduction/Introduction.aux) (1_TM_Edge/TM_EdgeBalancing.aux)
+(2_RT_Edge/RT_EdgeBalancing.aux) (4_TM_Corner/TM_CornerBalancing.aux)
+(6_RT_Corner/RT_CornerBalancing.aux) (5_Sensorik/Sensorik.aux)
+(3_SW/Software.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 34.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 34.
+Package rerunfilecheck Info: File `BA_MM.out' has not changed.
+(rerunfilecheck)             Checksum: 85FBBC84716BF2C52C4EBBCF22B7EC07;2532.
 
-
-Package rerunfilecheck Warning: File `BA_MM.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `BA_MM.out':
-(rerunfilecheck)             Before: 19875117D40738F68F177B51B4BC0FA6;2456
-(rerunfilecheck)             After:  85FBBC84716BF2C52C4EBBCF22B7EC07;2532.
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 4.0pt have occurred.
@@ -3142,19 +3088,16 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 30.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 34.
  ) 
 Here is how much of TeX's memory you used:
- 13414 strings out of 493333
- 199823 string characters out of 3139200
- 309703 words of memory out of 3000000
- 15754 multiletter control sequences out of 15000+200000
+ 13043 strings out of 493333
+ 195758 string characters out of 3139200
+ 323168 words of memory out of 3000000
+ 15340 multiletter control sequences out of 15000+200000
  25073 words of font info for 91 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,44n,100p,1919b,1869s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 46i,44n,44p,1919b,1868s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc} <C:\Users\ich\AppDa
 ta\Local\MiKTeX\2.9\fonts\pk\ljfour\public\yfrak\dpi657\yfrak.pk><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKT
@@ -3185,9 +3128,9 @@ amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
 /symbols/msam10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/sy
 mbols/msbm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/courier/ucrb8a.pf
 b>
-Output written on BA_MM.pdf (90 pages, 5036309 bytes).
+Output written on BA_MM.pdf (92 pages, 6065235 bytes).
 PDF statistics:
- 1736 PDF objects out of 2073 (max. 8388607)
- 788 named destinations out of 1000 (max. 500000)
- 461 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1921 PDF objects out of 2073 (max. 8388607)
+ 803 named destinations out of 1000 (max. 500000)
+ 502 words of extra memory for PDF output out of 10000 (max. 10000000)
 

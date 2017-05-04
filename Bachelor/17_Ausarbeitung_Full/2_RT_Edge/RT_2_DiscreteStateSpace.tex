@@ -1,30 +1,29 @@
 \section{Zustandsraumdarstellung für zeitdiskrete Systeme}
-Bisher wurden ausschließlich zeitkontinuierliche Systeme betrachtet. Allerdings wird der Regler mit Hilfe eines Digitalrechners implementiert und stellt somit ein zeitdiskretes Systems dar. Derartige Systeme werden in Form von Differenzengleichungen beschrieben, die ebenfalls in eine Zustandsraumdarstellung gebracht werden können. Hierbei wird lediglich der Integrierer durch ein vektorielles Totzeitglied ersetzt, welches eine Abtastperiode repräsentiert. Somit gilt für ein diskretes System \dSS{A_d}{B_d}{C_d}:
+Bisher wurden ausschließlich zeitkontinuierliche Systeme betrachtet. Allerdings wird der Regler mit Hilfe eines Digitalrechners implementiert und stellt somit ein zeitdiskretes Systems dar. Derartige Systeme werden in Form von Differenzengleichungen beschrieben, die ebenfalls in eine Zustandsraumdarstellung überführt werden können. Hierbei wird lediglich der Integrierer durch ein vektorielles Totzeitglied ersetzt, welches eine Abtastperiode darstellt. Somit gilt für ein diskretes System 
 \begin{equation}
-\textfrak{D} 
-: \left\{ \begin{array}{ll}
-\bs{{x}}(k+1) = \bs{A}\cdot \bs{x}(k) + \bs{B}\cdot \bs{u}(k) \\
-\bs{y}(k) = \bs{C}\cdot \bs{x}(k)
+\textfrak{D} : \left\{ \begin{array}{ll}
+\bs{{x}}(k+1) = \bs{A_d}\cdot \bs{x}(k) + \bs{B_d}\cdot \bs{u}(k) \\
+\bs{y}(k) = \bs{C_d}\cdot \bs{x}(k)
 \end{array}
 \right.
 \label{eq_discrete_ss}
 \end{equation}
-Die Ergebnisse aus dem vorherigen Abschnitt können auf diskrete Systeme übertragen werden. Hierfür wird zunächst die Z-Transformierte der Systemgleichung gebildet.
-\begin{equation}
-\begin{split}
-\bs{x}(k+1) = \bs{A_d}\cdot \bs{x}(k)+\bs{B_d}\cdot \bs{u}(k) &\myLaplace z\cdot \bs{x}(z)-z\cdot \bs{x}(t=0) = \bs{A_d}\cdot \bs{x}(z) + \bs{B_d}\cdot \bs{u}(z)
+Die Ergebnisse aus dem vorherigen Abschnitt können auf diskrete Systeme übertragen werden. Hierfür wird zunächst die Z-Transformierte der Systemgleichung betrachtet.
+\begin{align}
+\bs{x}(k+1) &= \bs{A}\cdot \bs{x}(k)+\bs{B}\cdot \bs{u}(k)
+\nonumber
+\\ \myLaplace  &z\cdot \left[\bs{x}(z)- \bs{x}(t=0)\right] = \bs{A_d}\cdot \bs{x}(z) + \bs{B_d}\cdot \bs{u}(z) \nonumber
 \\
-&\hspace{15pt}\leftrightarrow\hspace{15pt}
-(z\cdot\bs{I}-\bs{A_d})\bs{x}(z) = z\cdot \bs{x}(t=0)+\bs{B_d}\cdot \bs{u}(z)
+\hspace{15pt}\leftrightarrow\hspace{20pt}
+&(z\cdot\bs{I}-\bs{A_d})\bs{x}(z) = z\cdot \bs{x}(t=0)+\bs{B_d}\cdot \bs{u}(z) \nonumber
 \\
-&\hspace{15pt}\leftrightarrow\hspace{15pt}
-\bs{x}(z) = \underbrace{(z\cdot\bs{I}-\bs{A_d})^{-1}}_{\equiv \bs{\Phi_d}(z)}\cdot z\cdot \bs{x}(t=0) + (z\cdot \bs{I}-\bs{A_d})^{-1}\bs{B_d}\cdot \bs{u}(z)
-\end{split}
-\end{equation}
+\hspace{15pt}\leftrightarrow\hspace{20pt}
+&\bs{x}(z) = \underbrace{(z\cdot\bs{I}-\bs{A_d})^{-1}}_{\equiv \bs{\Phi_d}(z)}\cdot z\cdot \bs{x}(t=0) + (z\cdot \bs{I}-\bs{A_d})^{-1}\bs{B_d}\cdot \bs{u}(z)
+\end{align}
 \begin{equation}
 \bs{y}(z) = \bs{C_d}\cdot \bs{x}(z) = \underbrace{\bs{C_d}\bs{\Phi_d}(z)\bs{B_d}}_{\equiv \bs{G_d}(z)}\cdot \bs{u}(z)
 \end{equation}
-An Hand der obigen Gleichungen ist leicht zu erkennen, dass sowohl die Fundamentalmatrix $\bs{\Phi_d}(z)$ als auch die Übertragungsfunktionmatrix $\bs{G_d}(z)$ analog zu zeitkontinuierlichen Systemen berechnet wird. Deshalb behalten die Eigenwerte und -vektoren der Systemmatrix $\bs{A_d}$ ihre Bedeutung bei der Systemenanalyse. Lediglich die Interpretation muss durch den Zusammenhang der Laplace- und Z-Transformation angepasst werden.
+An Hand der obigen Gleichungen ist leicht zu erkennen, dass sowohl die Fundamentalmatrix $\bs{\Phi_d}(z)$ als auch die Übertragungsfunktionmatrix $\bs{G_d}(z)$ analog zu zeitkontinuierlichen Systemen berechnet wird. Deshalb behalten die Eigenwerte und -vektoren der Systemmatrix $\bs{A_d}$ ihre Bedeutung für die Systemenanalyse. Lediglich die Interpretation muss durch den Zusammenhang der Laplace- und Z-Transformation angepasst werden.
 \begin{equation}
 z = e^{T\cdot s} \hspace{35pt} s = \sigma + j\cdot \omega
 \end{equation}
@@ -32,8 +31,10 @@ z = e^{T\cdot s} \hspace{35pt} s = \sigma + j\cdot \omega
 \vert z \vert = e^{T\cdot \sigma} \hspace{35pt} \phi = \omega\cdot T
 \label{eq_abs_z}
 \end{equation}
-Stabilitätsbedingung für kontinuierliche Systeme ist, dass die Realteile aller Eigenwerte $\lambda_i$ negativ sind. Aus (\cite{eq_abs_z}) folgt, dass der Betrag der diskreten Eigenwerte im Einheitskreis liegen muss, damit diese Forderung erfüllt ist. Des weiteren führen diskrete Eigenwerte, die nahe am Ursprung liegen, zu einer schnelleren Systemdynamik. Somit bringt Zustandsraumdarstellung für diskrete Systeme die gleichen Vorteile mit sich wie bei zeitkontinuierlichen Systemen.
-Allerdings handelt es sich bei der Regelstrecke nach wie vor um ein kontinuerliches System, lediglich der Regler stellt ein diskretes System dar. Durch die Abtastung werden kontinuierliche Zustandssignale in Zahlenfolgen überführt. Die Stellgröße wird in Form eines Halteglieds nullter Ordnung realisiert. Um den geschlossenen Regelkreis einheitlich zu beschreiben, muss deshalb die kontinuierliche Zustandsarumdarstellung der Regelstrecke in eine diskrete transformiert werden. Hierzu wird zunächst die Lösung eines kontinuierlichen Systems \cSS{A}{B}{C} betrachtet. Herleitung aus [RT2, Unbehauen]
+Stabilitätsbedingung für kontinuierliche Systeme ist, dass die Realteile aller Eigenwerte $\lambda_i$ negativ sind. Aus (\ref{eq_abs_z}) folgt, dass der Betrag der diskreten Eigenwerte im Einheitskreis liegen muss, damit diese Forderung erfüllt ist. Des weiteren führen diskrete Eigenwerte, die nahe am Ursprung liegen, zu einer schnelleren Systemdynamik. Somit bringt Zustandsraumdarstellung für diskrete Systeme die gleichen Vorteile mit sich wie bei zeitkontinuierlichen Systemen.
+Allerdings handelt es sich bei der Regelstrecke nach wie vor um ein kontinuerliches System, lediglich der Regler stellt ein diskretes System dar. Die Schnittstelle zwischen der kontinuierlichen Strecke und dem diskreten Regler ist einerseits ein Abtastglied, welches den Zustandsvektors $\bs{x}(t)$ in die Zahlenfolge $\bs{x}(k)$ überführt. Andererseits wird die Folge der Stellgröße $\bs{u}(k)$ mit Hilfe eines Halteglieds nullter Ordnung als eine kontinuierliche Treppenfunktion moduliert.
+
+Um den geschlossenen Regelkreis einheitlich zu beschreiben, muss deshalb die kontinuierliche Zustandsarumdarstellung der Regelstrecke in eine diskrete transformiert werden. Hierzu wird zunächst die Lösung eines kontinuierlichen Systems \cSS{A}{B}{C} betrachtet.\footnote{Die folgende Herleitung und Erklärung ist nach ([RT2, Unbehauen, S. 170 f.) paraphrasiert.} Herleitung aus [RT2, Unbehauen]
 \begin{equation}
 \bs{x}(t) = e^{\bs{A}\cdot t}\cdot \bs{x}(t_0) + \int^t_0 e^{\bs{A}(t-\tau)}\bs{B}\cdot \bs{u}(\tau)d\tau
 \end{equation}
@@ -52,7 +53,7 @@ Die Lösung des Integrals führt auf:
 \begin{equation}
 \bs{x}([k+1]T) = e^{\bs{A}T}\cdot \bs{x}(kT) + e^{\bs{A}T}(\bs{I}-e^{-\bs{A}T})\bs{A}^{-1}\bs{B}\cdot \bs{u}(kT)
 \end{equation}
-Diese Lösung stellt den Zusammenhang zwischen der kontinuierlichen und diskreten Zustandsraumdarstellung dar. Wobei der Vergleich mit (\cite{eq_discrete_ss}) folgenden Werte für die Matrizen des diskreten Systems \dSS{A_d}{B_d}{C_d} liefert.
+Diese Lösung stellt den Zusammenhang zwischen der kontinuierlichen und diskreten Zustandsraumdarstellung dar. Wobei der Vergleich mit (\ref{eq_discrete_ss}) folgenden Werte für die Matrizen des diskreten Systems \dSS{A_d}{B_d}{C_d} liefert.
 \begin{equation}
 \bs{A_d} = e^{\bs{A}T} \hspace{35pt} \bs{B_d} = (e^{\bs{A}T}-\bs{I})\bs{A}^{-1}\bs{B} \hspace{35pt} \bs{C_d} = \bs{C}
 \end{equation}
