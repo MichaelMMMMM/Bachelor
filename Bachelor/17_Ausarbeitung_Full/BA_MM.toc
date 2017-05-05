@@ -31,3 +31,4 @@
 \contentsline {section}{\numberline {7.4}Entwurf der Regelungskomponente}{83}{section.7.4}
 \contentsline {section}{\numberline {7.5}Entwurf der Kommunikationskomponente}{90}{section.7.5}
 \contentsline {section}{\numberline {7.6}Aufbau der Desktop-Anwendung}{92}{section.7.6}
+\contentsline {chapter}{\numberline {8}Zusammenfassung und Ausblick}{93}{chapter.8}
