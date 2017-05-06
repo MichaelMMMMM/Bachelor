@@ -150,7 +150,7 @@ Wird der Zustandsvektor $\bs{x}_{K,end}$ aus den Endwerten der Teilsysteme zusam
 \begin{equation}
 \begin{split}
 \bs{x}\idx{end} &= \bs{T}\idx{K}\cdot \begin{bmatrix}
-\bs{x}\idx{M,end} \\ x\idx{\overline{S}} \\ x\idx{\overline{B}}
+\bs{x}\idx{M,end} \\ x_{\overline{\text{S}}} \\ x_{\overline{\text{B}}}
 \end{bmatrix} 
 \\
 &= \begin{bmatrix}
@@ -158,16 +158,16 @@ Wird der Zustandsvektor $\bs{x}_{K,end}$ aus den Endwerten der Teilsysteme zusam
 \end{bmatrix}^T
 \end{split}
 \end{equation}
-Dieses Ergebnis besagt, dass das System des Würfels ein Ruhelagenkontinuum besitzt. Die Winkel $\overline{\varphi}_2$ und $\overline{\varphi}_3$ konvergieren stets gegen null, was der aufrechten Position des Würfels auf einer Ecke entspricht. Allerdings rotiert der Würfel dabei mit einer konstanten, von $x_{\overline{S}}$ abhängigen Geschwindigkeit um seine Raumdiagonale. Des weiteren rotieren die drei Schwungmassen mit einer konstanten Endgeschwindigkeit, welche ebenfalls von $x_{\overline{S}}$ abhängt. In diesem Zusammenhang kann auch die nicht Steuerbarkeit des Zustandes $x_{\overline{S}}$ erklärt werden. Angenommen der Würfel rotiert in einer Ruhelage des Kontinuums mit einer konstanten Winkelgeschwindigkeit
+Dieses Ergebnis besagt, dass das System des Würfels ein Ruhelagenkontinuum besitzt. Die Winkel $\overline{\varphi}_2$ und $\overline{\varphi}_3$ konvergieren stets gegen null, was der aufrechten Position des Würfels auf einer Ecke entspricht. Allerdings rotiert der Würfel dabei mit einer konstanten, von $x_{\overline{\text{S}}}$ abhängigen Geschwindigkeit um seine Raumdiagonale. Des weiteren rotieren die drei Schwungmassen mit einer konstanten Endgeschwindigkeit, welche ebenfalls von $x_{\overline{\text{S}}}$ abhängt. In diesem Zusammenhang kann auch die nicht Steuerbarkeit des Zustandes $x_{\overline{\text{S}}}$ erklärt werden. Angenommen der Würfel rotiert in einer Ruhelage des Kontinuums mit einer konstanten Winkelgeschwindigkeit
 \begin{equation}
-\vel{A}{\omega}{K} = \vecBS{K}{u_{end}}{u_{end}}{u_{end}}\,.
+\vel{A}{\omega}{K} = \vecBS{K}{u\idx{end}}{u\idx{end}}{u\idx{end}}\,.
 \end{equation}
 Nun ist es zwar möglich diese Rotation durch ein parallel gerichtetes Motormoment
 \begin{equation}
 \bs{T}_M = \vecBS{K}{T}{T}{T}
 \end{equation}
-zu beeinflussen, allerdings werden dadurch zwangsläufig die Winkelgeschwindigkeiten $\bs{u}_R$ der Schwungmassen beeinflusst. Somit ist es nicht möglich die Rotation des Würfels um seine Raumdiagonale unabhängig von der Bewegung der Schwungmassen zu beeinflussen, was wiederum gegen die Forderung der vollständigen Steuerbarkeit eines Systems verstößt. Dieses Ergebnis ist kritisch zu betrachtet, da hier lediglich ein linearisiertes System untersucht wurde. Um eine finale Aussage über die Steuerbarkeit des Systems zu treffen, müssen dessen nicht lineare Bewegungsgleichung auf geprüft werden. Da es sich bei dem Würfel um ein eingangslineares System handelt ist dessen Prüfung auf Steuerbarkeit analytisch möglich [Adamy, S.155ff]. Diese Untersuchung wird in dieser Arbeit allerdings nicht durchgeführt, da an der realen Regelstrecke lediglich Anfangszustände mit
+zu beeinflussen, allerdings werden dadurch zwangsläufig die Winkelgeschwindigkeiten $\bs{u}\idx{R}$ der Schwungmassen beeinflusst. Somit ist es nicht möglich die Rotation des Würfels um seine Raumdiagonale unabhängig von der Bewegung der Schwungmassen zu beeinflussen, was wiederum gegen die Forderung der vollständigen Steuerbarkeit eines Systems verstößt. Dieses Ergebnis ist kritisch zu betrachtet, da hier lediglich ein linearisiertes System untersucht wurde. Um eine finale Aussage über die Steuerbarkeit des Systems zu treffen, müssen dessen nicht lineare Bewegungsgleichung auf geprüft werden. Da es sich bei dem Würfel um ein eingangslineares System handelt ist dessen Prüfung auf Steuerbarkeit analytisch möglich [Adamy, S.155ff]. Diese Untersuchung wird in dieser Arbeit allerdings nicht durchgeführt, da an der realen Regelstrecke lediglich Anfangszustände mit
 \begin{equation}
-\bs{\overline{\varphi}} \neq \bs{0} \hspace{35pt} \bs{u}_K \approx \bs{0} \hspace{35pt} \bs{u}_R \approx \bs{0}
+\bs{\overline{\varphi}} \neq \bs{0} \hspace{35pt} \bs{u}\idx{K} \approx \bs{0} \hspace{35pt} \bs{u}\idx{R} \approx \bs{0}
 \end{equation}
-untersucht werden und der nicht steuerbare Zustand $x_{\overline{S}}$ somit nicht besonders ins Gewicht fällt.
+untersucht werden und der nicht steuerbare Zustand $x_{\overline{\text{S}}}$ somit nicht weiter ins Gewicht fällt.

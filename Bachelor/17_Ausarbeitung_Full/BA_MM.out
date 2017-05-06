@@ -23,15 +23,14 @@
 \BOOKMARK [0][-]{chapter.6}{Erfassung der Zustandsgr\366\337en}{}% 23
 \BOOKMARK [1][-]{section.6.1}{Bestimmung der Winkelgeschwindigkeiten uKi und uRi}{chapter.6}% 24
 \BOOKMARK [1][-]{section.6.2}{Bestimmung der Winkel i}{chapter.6}% 25
-\BOOKMARK [1][-]{section.6.3}{Komplement\344rfilter f\374r die Winkel bold0mu mumu eqxred}{chapter.6}% 26
+\BOOKMARK [1][-]{section.6.3}{Komplement\344rfilter f\374r die Winkel bold0mu mumu Ortseifen}{chapter.6}% 26
 \BOOKMARK [1][-]{section.6.4}{Beobachter zur Ermittlung von }{chapter.6}% 27
 \BOOKMARK [0][-]{chapter.7}{Software}{}% 28
 \BOOKMARK [1][-]{section.7.1}{Zielplattform, Sensorik und Aktorik}{chapter.7}% 29
-\BOOKMARK [2][-]{subsection.7.1.1}{Peripherie}{section.7.1}% 30
-\BOOKMARK [1][-]{section.7.2}{Implementierung des Signalflusses}{chapter.7}% 31
-\BOOKMARK [1][-]{section.7.3}{Komponentenarchitektur f\374r mechatronische Anwendungen}{chapter.7}% 32
-\BOOKMARK [1][-]{section.7.4}{Entwurf der Regelungskomponente}{chapter.7}% 33
-\BOOKMARK [1][-]{section.7.5}{Entwurf der Kommunikationskomponente}{chapter.7}% 34
-\BOOKMARK [1][-]{section.7.6}{Aufbau der Desktop-Anwendung}{chapter.7}% 35
-\BOOKMARK [0][-]{chapter.8}{Zusammenfassung und Ausblick}{}% 36
-\BOOKMARK [0][-]{chapter*.14}{Literaturverzeichnis}{}% 37
+\BOOKMARK [1][-]{section.7.2}{Implementierung des Signalflusses}{chapter.7}% 30
+\BOOKMARK [1][-]{section.7.3}{Komponentenarchitektur f\374r mechatronische Anwendungen}{chapter.7}% 31
+\BOOKMARK [1][-]{section.7.4}{Entwurf der Regelungskomponente}{chapter.7}% 32
+\BOOKMARK [1][-]{section.7.5}{Entwurf der Kommunikationskomponente}{chapter.7}% 33
+\BOOKMARK [1][-]{section.7.6}{Aufbau der Desktop-Anwendung}{chapter.7}% 34
+\BOOKMARK [0][-]{chapter.8}{Zusammenfassung und Ausblick}{}% 35
+\BOOKMARK [0][-]{chapter*.38}{Literaturverzeichnis}{}% 36

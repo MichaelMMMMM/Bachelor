@@ -1,30 +1,32 @@
 \select@language {ngerman}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Kinematikplan des W\IeC {\"u}rfels auf einer Kante, Quelle: eigene Darstellung}}{4}{figure.2.1}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Kinematikplan des W\IeC {\"u}rfels auf einer Kante, Quelle: eigene Darstellung\relax }}{4}{figure.caption.10}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Signalfluss des geschlossenen Regelkreises, Quelle: eigene Darstellung}}{18}{figure.3.1}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Verlauf der Zustands- und Stellgr\IeC {\"o}\IeC {\ss }en bei dem Versuch an der Regelstrecke.}}{24}{figure.3.2}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Verlauf von $\varphi $ und $u_K$ bei korrigierten Messabweichungen}}{25}{figure.3.3}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Verlauf von $u_R$ und $T_M$ bei korrigierten Messabweichungen}}{26}{figure.3.4}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Signalfluss des geschlossenen Regelkreises, Quelle: eigene Darstellung\relax }}{18}{figure.caption.11}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Verlauf der Zustands- und Stellgr\IeC {\"o}\IeC {\ss }en bei dem Versuch an der Regelstrecke.\relax }}{24}{figure.caption.12}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Verlauf von $\varphi $ und $u_K$ bei korrigierten Messabweichungen\relax }}{25}{figure.caption.13}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Verlauf von $u_R$ und $T_M$ bei korrigierten Messabweichungen\relax }}{26}{figure.caption.14}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Mechanische Skizze des W\IeC {\"u}rfels}}{30}{figure.4.1}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Mechanische Skizze des W\IeC {\"u}rfels\relax }}{30}{figure.caption.15}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Systemverhalten des geschlossenen Regelkreises, Quelle: eigene Darstellung}}{50}{figure.5.1}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Verhalten des geschlossenen Regelkreises mit angepasstem Regler, Quelle: eigene Darstellung}}{51}{figure.5.2}
+\contentsline {figure}{\numberline {5.0}{\ignorespaces Verlauf des Systems in der Simulation mit $x_{\overline {S}}=0$\relax }}{44}{figure.caption.17}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Verlauf des Systems in der Simulation mit $x_{\overline {S}}\not =0$\relax }}{45}{figure.caption.18}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Systemverhalten des geschlossenen Regelkreises, Quelle: eigene Darstellung\relax }}{49}{figure.caption.19}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Verhalten des geschlossenen Regelkreises mit angepasstem Regler, Quelle: eigene Darstellung\relax }}{50}{figure.caption.20}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Blockschaltbild Komplement\IeC {\"a}rfilter, Quelle: eigene Darstellung}}{60}{figure.6.1}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Blockschaltbild des Luenberger-Beobachters, Quelle: eigene Darstellung}}{62}{figure.6.2}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Verlauf des gesch\IeC {\"a}tzten Zustandvektors und der Stellgr\IeC {\"o}\IeC {\ss }e, Quelle: eigene Darstellung}}{63}{figure.6.3}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Blockschaltbild Komplement\IeC {\"a}rfilter\relax }}{59}{figure.caption.21}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Blockschaltbild des Luenberger-Beobachters\relax }}{61}{figure.caption.22}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Verlauf des gesch\IeC {\"a}tzten Zustandvektors und der Stellgr\IeC {\"o}\IeC {\ss }e\relax }}{62}{figure.caption.23}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Blockschaltbild Sensorkommunikation, Quelle: eigene Darstellung}}{66}{figure.7.1}
-\contentsline {figure}{\numberline {7.2}{\ignorespaces Klassendiagramm der Sensorschnittstelle, Quelle: eigene Darstellung}}{67}{figure.7.2}
-\contentsline {figure}{\numberline {7.3}{\ignorespaces Blockschaltbild der Motoransteuerung, Quelle: eigene Darstellung}}{68}{figure.7.3}
-\contentsline {figure}{\numberline {7.4}{\ignorespaces Klassendiagramm der Hardwareansteuerung, Quelle: eigene Darstellung}}{68}{figure.7.4}
-\contentsline {figure}{\numberline {7.5}{\ignorespaces Blockschaltbild des Signalflusses, Quelle: eigene Darstellung}}{69}{figure.7.5}
-\contentsline {figure}{\numberline {7.6}{\ignorespaces Klassendiagramm der generierten Hierarchie, Quelle: eigene Darstellung}}{72}{figure.7.6}
-\contentsline {figure}{\numberline {7.7}{\ignorespaces Blockschaltbild Gesamtsystem, Quelle: eigene Darstellung}}{74}{figure.7.7}
-\contentsline {figure}{\numberline {7.8}{\ignorespaces Klassendiagramm der Komponenten, Quelle: eigene Darstellung}}{75}{figure.7.8}
-\contentsline {figure}{\numberline {7.9}{\ignorespaces Zustandsdiagramm der Kontrol-Komponente, Quelle: eigene Darstellung}}{77}{figure.7.9}
-\contentsline {figure}{\numberline {7.10}{\ignorespaces Zustandsdiagramm der Kommunikations-Komponente, Quelle: eigene Darstellung}}{84}{figure.7.10}
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Blockschaltbild Sensorkommunikation\relax }}{66}{figure.caption.26}
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Klassendiagramm der Sensorschnittstelle\relax }}{67}{figure.caption.27}
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Blockschaltbild der Motoransteuerung\relax }}{67}{figure.caption.29}
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Klassendiagramm der Hardwareansteuerung\relax }}{68}{figure.caption.31}
+\contentsline {figure}{\numberline {7.5}{\ignorespaces Blockschaltbild des Signalflusses\relax }}{69}{figure.caption.32}
+\contentsline {figure}{\numberline {7.6}{\ignorespaces Klassendiagramm der generierten Hierarchie\relax }}{72}{figure.caption.33}
+\contentsline {figure}{\numberline {7.7}{\ignorespaces Blockschaltbild Gesamtsystem\relax }}{74}{figure.caption.34}
+\contentsline {figure}{\numberline {7.8}{\ignorespaces Klassendiagramm der Komponenten\relax }}{75}{figure.caption.35}
+\contentsline {figure}{\numberline {7.9}{\ignorespaces Zustandsdiagramm der Kontrol-Komponente\relax }}{77}{figure.caption.36}
+\contentsline {figure}{\numberline {7.10}{\ignorespaces Zustandsdiagramm der Kommunikations-Komponente\relax }}{84}{figure.caption.37}
 \addvspace {10\p@ }

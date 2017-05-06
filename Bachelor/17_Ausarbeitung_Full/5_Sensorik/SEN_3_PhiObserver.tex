@@ -16,7 +16,7 @@ betrachtet, wobei lediglich die Zustandsgrößen $u_K$ und $u_R$ messbar seine. 
 \begin{figure}[h!]
 \centering
 \includegraphics[width=1\linewidth, trim={1cm 1cm 1cm 1cm}, clip]{img/Observer}
-\caption{Blockschaltbild des Luenberger-Beobachters, Quelle: eigene Darstellung}
+\caption{Blockschaltbild des Luenberger-Beobachters}
 \end{figure}
 
 Um das Verhalten des Beobachters zu untersuchen wird der Schätzfehler $\bs{e}(k) = \bs{x}(k) - \bs{\hat{x}}(k)$ betrachtet.
@@ -44,7 +44,7 @@ formuliert werden. Diese Problemstellung entspricht der Entwurfsaufgabe eines ge
 \includegraphics[width=0.43\linewidth]{img/edge_exp3_ur.eps}
 \includegraphics[width=0.43\linewidth]{img/edge_exp3_tm.eps}
 \label{plots_phiobs}
-\caption{Verlauf des geschätzten Zustandvektors und der Stellgröße, Quelle: eigene Darstellung}
+\caption{Verlauf des geschätzten Zustandvektors und der Stellgröße}
 \end{figure}
 
 Der Versuch zeigt, dass das System mit dem Beobachter lediglich grenzstabil ist und mit einer konstanten Amplitude oszilliert. Eine mögliche Begründung für dieses Verhalten ist die Wahl der Beobachtermatrix. Um den Einfluss des Messrauschens zu minimieren wurde die Gewichtungsmatrix $\bs{Q}$ so gewählt, dass eine Beobachtermatrix mit relativ kleinen Elementen resultiert. Hieraus folgt, dass die Eigenwerte des Beobachters nahe an dem Einheitskreis liegen und somit bereits kleine Ungenauigkeiten in den Modellparametern genügen um grenzstabile Eigenwerte zu erhalten. Werden die Eigenwerte des Beobachters näher zu dem Urpsrung gerückt wird der Beobachter allerdings instabil, da das Messrauschen den Schätzwert $\bs{\hat{x}}$ zu stark beeinflusst. Dieses Problem ist darauf zurückzuführen, dass der Luenberger-Beobachter für ein deterministisches System entworfen wird und die stochastischen Störung lediglich indirekt bei dem Entwurfsverfahren berücksichtigt werden. Eine Lösung für dieses Problem stellt das Kalman-Filter dar, welches für die Beobachtung von linearen, zeitvarianten und stochastisch gestörten Systemen genutzt werden kann. Des weiteren bestehen Erweiterung wie das Extended-Kalman-Filter um das Konzept auf nichtlineare Systeme zu übertragen. 

@@ -1,8 +1,8 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.31)  4 MAY 2017 10:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2017.1.27)  6 MAY 2017 20:53
 entering extended mode
 **./Sensorik.tex
 (Sensorik.tex
-LaTeX2e <2017/01/01> patch level 1
+LaTeX2e <2016/03/31> patch level 3
 Babel <3.9r> and hyphenation patterns for 75 language(s) loaded.
 \@input{0_Format.aux}
 \openout2 = `0_Format.aux'.
@@ -26,7 +26,7 @@ File: bk11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \bibindent=\dimen102
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
-Package: amsmath 2016/11/05 v2.16a AMS math features
+Package: amsmath 2016/06/28 v2.15d AMS math features
 \@mathmargin=\skip43
 
 For additional information on amsmath, use the `?' option.
@@ -46,20 +46,20 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count88
-LaTeX Info: Redefining \frac on input line 213.
+LaTeX Info: Redefining \frac on input line 199.
 \uproot@=\count89
 \leftroot@=\count90
-LaTeX Info: Redefining \overline on input line 375.
+LaTeX Info: Redefining \overline on input line 297.
 \classnum@=\count91
 \DOTSCASE@=\count92
-LaTeX Info: Redefining \ldots on input line 472.
-LaTeX Info: Redefining \dots on input line 475.
-LaTeX Info: Redefining \cdots on input line 596.
+LaTeX Info: Redefining \ldots on input line 394.
+LaTeX Info: Redefining \dots on input line 397.
+LaTeX Info: Redefining \cdots on input line 518.
 \Mathstrutbox@=\box26
 \strutbox@=\box27
 \big@size=\dimen105
-LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
+LaTeX Font Info:    Redeclaring font encoding OML on input line 634.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 635.
 \macc@depth=\count93
 \c@MaxMatrixCols=\count94
 \dotsspace@=\muskip10
@@ -80,8 +80,8 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 \multlinegap=\skip44
 \multlinetaggap=\skip45
 \mathdisplay@stack=\toks18
-LaTeX Info: Redefining \[ on input line 2817.
-LaTeX Info: Redefining \] on input line 2818.
+LaTeX Info: Redefining \[ on input line 2739.
+LaTeX Info: Redefining \] on input line 2740.
 )
 (C:\Users\ich\AppData\Roaming\MiKTeX\2.9\tex\latex\mathtools\mathtools.sty
 Package: mathtools 2015/11/12 v1.18 mathematical typesetting tools
@@ -477,7 +477,7 @@ Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
-Package: graphics 2016/10/09 v1.0u Standard LaTeX Graphics (DPC,SPQR)
+Package: graphics 2016/07/10 v1.0t Standard LaTeX Graphics (DPC,SPQR)
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
@@ -488,7 +488,7 @@ File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 Package graphics Info: Driver file: pdftex.def on input line 99.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def"
-File: pdftex.def 2017/01/12 v0.06k Graphics/color for pdfTeX
+File: pdftex.def 2016/07/10 v0.06j Graphics/color for pdfTeX
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
 Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
@@ -551,28 +551,62 @@ G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 ))
 (C:\Users\ich\AppData\Roaming\MiKTeX\2.9\tex\latex\svg\svg.sty
-Package: svg 2017/03/28 v2.00a (include SVG pictures)
+Package: svg 2012/09/05 v1.0 SVG inclusion and extraction
 
-(C:\Users\ich\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\scrbase.sty
-Package: scrbase 2017/01/03 v3.22 KOMA-Script package (KOMA-Script-independent 
-basics and keyval usage)
+("C:\Program Files\MiKTeX 2.9\tex\latex\xkeyval\xkeyval.sty"
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 
-(C:\Users\ich\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\scrlfile.sty
-Package: scrlfile 2017/01/03 v3.22 KOMA-Script package (loading files)
-
-Package scrlfile, 2017/01/03 v3.22 KOMA-Script package (loading files)
-                  Copyright (C) Markus Kohm
-
-)) ("C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
-Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+("C:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\xkeyval.tex"
+("C:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\xkvutils.tex"
+\XKV@toks=\toks23
+\XKV@tempa@toks=\toks24
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\tools\shellesc.sty"
-Package: shellesc 2016/06/07 v0.02a unified shell escape interface for LaTeX
-Package shellesc Info: Restricted shell escape enabled on input line 69.
+\XKV@depth=\count108
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(C:\Users\ich\AppData\Roaming\MiKTeX\2.9\tex\latex\subfig\subfig.sty
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+
+(C:\Users\ich\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption.sty
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+
+(C:\Users\ich\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption3.sty
+Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
+\captionmargin=\dimen124
+\captionmargin@=\dimen125
+\captionwidth=\dimen126
+\caption@tempdima=\dimen127
+\caption@indent=\dimen128
+\caption@parindent=\dimen129
+\caption@hangindent=\dimen130
 )
-\c@svg@param@lastpage=\count108
-\c@svg@param@currpage=\count109
+\c@ContinuedFloat=\count109
 )
+\c@KVtest=\count110
+\sf@farskip=\skip50
+\sf@captopadj=\dimen131
+\sf@capskip=\skip51
+\sf@nearskip=\skip52
+\c@subfigure=\count111
+\c@subfigure@save=\count112
+\c@lofdepth=\count113
+\c@subtable=\count114
+\c@subtable@save=\count115
+\c@lotdepth=\count116
+\sf@top=\skip53
+\sf@bottom=\skip54
+)
+(C:\Users\ich\AppData\Roaming\MiKTeX\2.9\tex\latex\import\import.sty
+Package: import 2009/03/23  v 5.1
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\transparent.sty"
+Package: transparent 2016/05/16 v1.1 Transparency via pdfTeX's color stack (HO)
+
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty"
+Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
+))
 (C:\Users\ich\AppData\Roaming\MiKTeX\2.9\tex\latex\xcolor\xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 
@@ -590,19 +624,17 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\transparent.sty"
-Package: transparent 2016/05/16 v1.1 Transparency via pdfTeX's color stack (HO)
-
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty"
-Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
-))
+\SVG@out@width=\skip55
+\SVG@out@height=\skip56
+\c@svgfigure=\count117
+)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\multirow\multirow.sty"
-Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
-\multirow@colwidth=\skip50
-\multirow@cntb=\count110
-\multirow@dima=\skip51
-\bigstrutjot=\dimen124
+Package: multirow 2016/10/11 v2.1 Span multiple rows of a table
+\multirow@colwidth=\skip57
+\multirow@cnta=\count118
+\multirow@cntb=\count119
+\multirow@dima=\skip58
+\bigstrutjot=\dimen132
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
@@ -629,17 +661,44 @@ Now handling font encoding LYG ...
 )
 (C:\Users\ich\AppData\Roaming\MiKTeX\2.9\tex\latex\nomencl\nomencl.sty
 Package: nomencl 2005/09/22 v4.2 Nomenclature package (LN)
-\nomlabelwidth=\dimen125
-\nom@tempdim=\dimen126
-\nomitemsep=\skip52
+\nomlabelwidth=\dimen133
+\nom@tempdim=\dimen134
+\nomitemsep=\skip59
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\float\float.sty"
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count111
-\float@exts=\toks23
+\c@float@type=\count120
+\float@exts=\toks25
 \float@box=\box28
-\@float@everytoks=\toks24
+\@float@everytoks=\toks26
 \@floatcapt=\box29
+)
+(C:\Users\ich\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\scrpage2.sty
+Package: scrpage2 2017/01/03 v3.22 KOMA-Script package (page head and foot)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\afterpage.sty"
+Package: afterpage 2014/10/28 v1.08 After-Page Package (DPC)
+\AP@output=\toks27
+\AP@partial=\box30
+\AP@footins=\box31
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\longtable.sty"
+Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
+\LTleft=\skip60
+\LTright=\skip61
+\LTpre=\skip62
+\LTpost=\skip63
+\LTchunksize=\count121
+\LTcapwidth=\dimen135
+\LT@head=\box32
+\LT@firsthead=\box33
+\LT@foot=\box34
+\LT@lastfoot=\box35
+\LT@cols=\count122
+\LT@rows=\count123
+\c@LT@tables=\count124
+\c@LT@chunks=\count125
+\LT@p@ftn=\toks28
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
 Package: hyperref 2016/06/24 v6.83q Hypertext links for LaTeX
@@ -673,21 +732,24 @@ Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
 Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
 Package: xcolor-patch 2016/05/16 xcolor patch
 Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
-Package atveryend Info: \enddocument detected (standard20110627).
+Package atveryend Info: \AP@enddocument detected (standard20110627).
 Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
 Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
 Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
 )
-\@linkdim=\dimen127
-\Hy@linkcounter=\count112
-\Hy@pagecounter=\count113
+("C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\@linkdim=\dimen136
+\Hy@linkcounter=\count126
+\Hy@pagecounter=\count127
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
 File: pd1enc.def 2016/06/24 v6.83q Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count114
+\Hy@SavedSpaceFactor=\count128
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg"
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -699,17 +761,17 @@ Package hyperref Info: Plain pages OFF on input line 4501.
 Package hyperref Info: Backreferencing OFF on input line 4506.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4735.
-\c@Hy@tempcnt=\count115
+\c@Hy@tempcnt=\count129
 
 (C:\Users\ich\AppData\Roaming\MiKTeX\2.9\tex\latex\url\url.sty
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5088.
-\XeTeXLinkMargin=\dimen128
-\Fld@menulength=\count116
-\Field@Width=\dimen129
-\Fld@charsize=\dimen130
+\XeTeXLinkMargin=\dimen137
+\Fld@menulength=\count130
+\Field@Width=\dimen138
+\Fld@charsize=\dimen139
 Package hyperref Info: Hyper figures OFF on input line 6342.
 Package hyperref Info: Link nesting OFF on input line 6347.
 Package hyperref Info: Hyper index ON on input line 6350.
@@ -719,65 +781,65 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6367.
 Package hyperref Info: PDF/A mode OFF on input line 6372.
 LaTeX Info: Redefining \ref on input line 6412.
 LaTeX Info: Redefining \pageref on input line 6416.
-\Hy@abspage=\count117
-\c@Item=\count118
-\c@Hfootnote=\count119
+\Hy@abspage=\count131
+\c@Item=\count132
+\c@Hfootnote=\count133
 )
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def"
 File: hpdftex.def 2016/06/24 v6.83q Hyperref driver for pdfTeX
-\Fld@listcount=\count120
-\c@bookmark@seq@number=\count121
+\Fld@listcount=\count134
+\c@bookmark@seq@number=\count135
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
-\Hy@SectionHShift=\skip53
+\Hy@SectionHShift=\skip64
 )
-Package hyperref Info: Option `colorlinks' set `false' on input line 27.
+Package hyperref Info: Option `colorlinks' set `false' on input line 31.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
 Package: geometry 2010/09/12 v5.6 Page Geometry
-\Gm@cnth=\count122
-\Gm@cntv=\count123
-\c@Gm@tempcnt=\count124
-\Gm@bindingoffset=\dimen131
-\Gm@wd@mp=\dimen132
-\Gm@odd@mp=\dimen133
-\Gm@even@mp=\dimen134
-\Gm@layoutwidth=\dimen135
-\Gm@layoutheight=\dimen136
-\Gm@layouthoffset=\dimen137
-\Gm@layoutvoffset=\dimen138
-\Gm@dimlist=\toks25
+\Gm@cnth=\count136
+\Gm@cntv=\count137
+\c@Gm@tempcnt=\count138
+\Gm@bindingoffset=\dimen140
+\Gm@wd@mp=\dimen141
+\Gm@odd@mp=\dimen142
+\Gm@even@mp=\dimen143
+\Gm@layoutwidth=\dimen144
+\Gm@layoutheight=\dimen145
+\Gm@layouthoffset=\dimen146
+\Gm@layoutvoffset=\dimen147
+\Gm@dimlist=\toks29
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\courier.sty"
 Package: courier 2005/04/12 PSNFSS-v9.2a (WaS) 
 )
 (C:\Users\ich\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\listings.sty
-\lst@mode=\count125
-\lst@gtempboxa=\box30
-\lst@token=\toks26
-\lst@length=\count126
-\lst@currlwidth=\dimen139
-\lst@column=\count127
-\lst@pos=\count128
-\lst@lostspace=\dimen140
-\lst@width=\dimen141
-\lst@newlines=\count129
-\lst@lineno=\count130
-\lst@maxwidth=\dimen142
+\lst@mode=\count139
+\lst@gtempboxa=\box36
+\lst@token=\toks30
+\lst@length=\count140
+\lst@currlwidth=\dimen148
+\lst@column=\count141
+\lst@pos=\count142
+\lst@lostspace=\dimen149
+\lst@width=\dimen150
+\lst@newlines=\count143
+\lst@lineno=\count144
+\lst@maxwidth=\dimen151
 
 (C:\Users\ich\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstmisc.sty
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
-\c@lstnumber=\count131
-\lst@skipnumbers=\count132
-\lst@framebox=\box31
+\c@lstnumber=\count145
+\lst@skipnumbers=\count146
+\lst@framebox=\box37
 )
 (C:\Users\ich\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\listings.cfg
 File: listings.cfg 2015/06/04 1.6 listings configuration
@@ -808,27 +870,46 @@ LaTeX Font Info:    ... okay on input line 3.
 
 (C:\Users\ich\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count133
-\scratchdimen=\dimen143
-\scratchbox=\box32
-\nofMPsegments=\count134
-\nofMParguments=\count135
-\everyMPshowfont=\toks27
-\MPscratchCnt=\count136
-\MPscratchDim=\dimen144
-\MPnumerator=\count137
-\makeMPintoPDFobject=\count138
-\everyMPtoPDFconversion=\toks28
+\scratchcounter=\count147
+\scratchdimen=\dimen152
+\scratchbox=\box38
+\nofMPsegments=\count148
+\nofMParguments=\count149
+\everyMPshowfont=\toks31
+\MPscratchCnt=\count150
+\MPscratchDim=\dimen153
+\MPnumerator=\count151
+\makeMPintoPDFobject=\count152
+\everyMPtoPDFconversion=\toks32
 )
-\AtBeginShipoutBox=\box33
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
+Package caption Info: longtable package is loaded.
+ (C:\Users\ich\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\ltcaption.sty
+Package: ltcaption 2013/06/09 v1.4-94 longtable captions (AR)
+)
+Package caption Info: End \AtBeginDocument code.
+
+
+Package scrpage2 Warning: seems you are using a constant headheight.
+(scrpage2)                If you get overfull \vbox warnings at almost every
+(scrpage2)                page, you should increase headheight e.g. writing
+(scrpage2)                 \setlength{\headheight}{1.1\baselineskip}
+(scrpage2)                into the preamble of your document.
+(scrpage2)                A better solution would be to use typearea package.
+
+\AtBeginShipoutBox=\box39
 Package hyperref Info: Link coloring OFF on input line 3.
- ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count139
+\c@section@level=\count153
 )
 LaTeX Info: Redefining \ref on input line 3.
 LaTeX Info: Redefining \pageref on input line 3.
@@ -873,7 +954,7 @@ LaTeX Info: Redefining \nameref on input line 3.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c@lstlisting=\count140
+\c@lstlisting=\count154
 Kapitel 1.
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 6.
@@ -932,18 +1013,18 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 1.
 
-)
-Underfull \vbox (badness 1342) has occurred while \output is active []
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 10.
+(babel)             in language  on input line 39.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 10.
+(babel)             in language  on input line 39.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 10.
+(babel)             in language  on input line 39.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 10.
- [2]
+(babel)             in language  on input line 39.
+ [2])
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 10.
 Package babel Info: Redefining ngerman shorthand "~
@@ -990,25 +1071,14 @@ Package babel Info: Redefining ngerman shorthand "~
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 74.
+(babel)             in language  on input line 80.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 74.
+(babel)             in language  on input line 80.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 74.
+(babel)             in language  on input line 80.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 74.
- [5]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 148.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 148.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 148.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 148.
- [6])
+(babel)             in language  on input line 80.
+ [5])
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 12.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1018,7 +1088,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 12.
 
-[7] (SEN_2_CompFilter.tex
+[6] (SEN_2_CompFilter.tex
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1260,11 +1330,20 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 1.
 
-<img/CompFilter.pdf, id=100, 963.6pt x 542.025pt>
+<img/CompFilter.pdf, id=92, 963.6pt x 542.025pt>
 File: img/CompFilter.pdf Graphic file (type pdf)
  <use img/CompFilter.pdf>
 Package pdftex.def Info: img/CompFilter.pdf used on input line 14.
 (pdftex.def)             Requested size: 441.01773pt x 127.3974pt.
+
+
+Package caption Warning: \label without proper reference on input line 15.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `bsb_kompfilter' on page 7 undefined on input line 19.
+
+
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 30.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1273,10 +1352,9 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 30.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 30.
+[7 <./img/CompFilter.pdf>]
 
-[8 <./img/CompFilter.pdf>]
-
-LaTeX Warning: Reference `section_corner_balance_test' on page 9 undefined on i
+LaTeX Warning: Reference `section_corner_balance_test' on page 8 undefined on i
 nput line 45.
 
 )
@@ -1288,7 +1366,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 14.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 14.
- [9] (SEN_3_PhiObserver.tex
+ [8] (SEN_3_PhiObserver.tex
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1306,7 +1384,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 1.
 
-<img/Observer.pdf, id=134, 963.6pt x 542.025pt>
+<img/Observer.pdf, id=127, 963.6pt x 542.025pt>
 File: img/Observer.pdf Graphic file (type pdf)
  <use img/Observer.pdf>
 Package pdftex.def Info: img/Observer.pdf used on input line 18.
@@ -1319,19 +1397,19 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 34.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 34.
- [10 <./img/Observer.pdf>]
+ [9 <./img/Observer.pdf>]
 Package epstopdf Info: Source file: <img/edge_exp3_phi.eps>
-(epstopdf)                    date: 2017-05-01 21:18:32
-(epstopdf)                    size: 71081 bytes
+(epstopdf)                    date: 2017-05-01 18:22:39
+(epstopdf)                    size: 68979 bytes
 (epstopdf)             Output file: <img/edge_exp3_phi-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-05-01 21:18:32
+(epstopdf)                    date: 2017-05-01 18:24:33
 (epstopdf)                    size: 27188 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/edge_exp3_phi-eps-conve
 rted-to.pdf img/edge_exp3_phi.eps>
 (epstopdf)             \includegraphics on input line 40.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/edge_exp3_phi-eps-converted-to.pdf, id=163, 365.365pt x 308.15125pt>
+<img/edge_exp3_phi-eps-converted-to.pdf, id=156, 365.365pt x 308.15125pt>
 File: img/edge_exp3_phi-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/edge_exp3_phi-eps-converted-to.pdf>
@@ -1339,17 +1417,17 @@ Package pdftex.def Info: img/edge_exp3_phi-eps-converted-to.pdf used on input l
 ine 40.
 (pdftex.def)             Requested size: 189.63438pt x 159.93863pt.
 Package epstopdf Info: Source file: <img/edge_exp3_uk.eps>
-(epstopdf)                    date: 2017-05-01 21:18:33
-(epstopdf)                    size: 83652 bytes
+(epstopdf)                    date: 2017-05-01 18:22:39
+(epstopdf)                    size: 81087 bytes
 (epstopdf)             Output file: <img/edge_exp3_uk-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-05-01 21:18:33
+(epstopdf)                    date: 2017-05-01 18:24:34
 (epstopdf)                    size: 33778 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/edge_exp3_uk-eps-conver
 ted-to.pdf img/edge_exp3_uk.eps>
 (epstopdf)             \includegraphics on input line 41.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/edge_exp3_uk-eps-converted-to.pdf, id=164, 376.40625pt x 308.15125pt>
+<img/edge_exp3_uk-eps-converted-to.pdf, id=157, 376.40625pt x 308.15125pt>
 File: img/edge_exp3_uk-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/edge_exp3_uk-eps-converted-to.pdf>
@@ -1357,17 +1435,17 @@ Package pdftex.def Info: img/edge_exp3_uk-eps-converted-to.pdf used on input li
 ne 41.
 (pdftex.def)             Requested size: 189.63438pt x 155.25073pt.
 Package epstopdf Info: Source file: <img/edge_exp3_ur.eps>
-(epstopdf)                    date: 2017-05-01 21:18:33
-(epstopdf)                    size: 85489 bytes
+(epstopdf)                    date: 2017-05-01 18:22:39
+(epstopdf)                    size: 82891 bytes
 (epstopdf)             Output file: <img/edge_exp3_ur-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-05-01 21:18:33
+(epstopdf)                    date: 2017-05-01 18:24:34
 (epstopdf)                    size: 34497 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/edge_exp3_ur-eps-conver
 ted-to.pdf img/edge_exp3_ur.eps>
 (epstopdf)             \includegraphics on input line 44.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/edge_exp3_ur-eps-converted-to.pdf, id=165, 368.37625pt x 308.15125pt>
+<img/edge_exp3_ur-eps-converted-to.pdf, id=158, 368.37625pt x 308.15125pt>
 File: img/edge_exp3_ur-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/edge_exp3_ur-eps-converted-to.pdf>
@@ -1375,17 +1453,17 @@ Package pdftex.def Info: img/edge_exp3_ur-eps-converted-to.pdf used on input li
 ne 44.
 (pdftex.def)             Requested size: 189.63438pt x 158.63147pt.
 Package epstopdf Info: Source file: <img/edge_exp3_tm.eps>
-(epstopdf)                    date: 2017-05-01 21:18:33
-(epstopdf)                    size: 74724 bytes
+(epstopdf)                    date: 2017-05-01 18:22:39
+(epstopdf)                    size: 72491 bytes
 (epstopdf)             Output file: <img/edge_exp3_tm-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-05-01 21:18:33
+(epstopdf)                    date: 2017-05-01 18:24:35
 (epstopdf)                    size: 28426 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/edge_exp3_tm-eps-conver
 ted-to.pdf img/edge_exp3_tm.eps>
 (epstopdf)             \includegraphics on input line 45.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/edge_exp3_tm-eps-converted-to.pdf, id=166, 381.425pt x 308.15125pt>
+<img/edge_exp3_tm-eps-converted-to.pdf, id=159, 381.425pt x 308.15125pt>
 File: img/edge_exp3_tm-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/edge_exp3_tm-eps-converted-to.pdf>
@@ -1393,8 +1471,6 @@ Package pdftex.def Info: img/edge_exp3_tm-eps-converted-to.pdf used on input li
 ne 45.
 (pdftex.def)             Requested size: 189.63438pt x 153.20537pt.
 )
-Underfull \vbox (badness 2173) has occurred while \output is active []
-
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 16.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1403,7 +1479,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 16.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 16.
- [11 <./img/edge_exp3_phi-eps-converted-to.pdf> <./img/edge_exp3_uk-eps-convert
+ [10 <./img/edge_exp3_phi-eps-converted-to.pdf> <./img/edge_exp3_uk-eps-convert
 ed-to.pdf> <./img/edge_exp3_ur-eps-converted-to.pdf> <./img/edge_exp3_tm-eps-co
 nverted-to.pdf>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 19.
@@ -1415,13 +1491,13 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 19.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 19.
- [12]
+ [11]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 19.
  (Sensorik.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 19.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 19.
 Package rerunfilecheck Info: File `Sensorik.out' has not changed.
-(rerunfilecheck)             Checksum: BE4D53B14E01FFF60FC14459CA486787;414.
+(rerunfilecheck)             Checksum: BA40F98449BF2B029230947185DA35AD;448.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -1434,13 +1510,13 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 19.
  )
 (\end occurred when \ifx on line 18 was incomplete) 
 Here is how much of TeX's memory you used:
- 11257 strings out of 493333
- 165197 string characters out of 3139200
- 302950 words of memory out of 3000000
- 14488 multiletter control sequences out of 15000+200000
+ 12340 strings out of 493333
+ 180623 string characters out of 3139200
+ 307285 words of memory out of 3000000
+ 15548 multiletter control sequences out of 15000+200000
  20566 words of font info for 76 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 46i,27n,44p,1368b,395s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 72i,27n,100p,1402b,395s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\ich\AppData\Local
 \MiKTeX\2.9\fonts\pk\ljfour\public\yfrak\dpi657\yfrak.pk><C:/Program Files/MiKT
 eX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/f
@@ -1459,9 +1535,9 @@ amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
 m/cmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl10.p
 fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/P
 rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on Sensorik.pdf (12 pages, 1001655 bytes).
+Output written on Sensorik.pdf (11 pages, 1001200 bytes).
 PDF statistics:
- 264 PDF objects out of 1000 (max. 8388607)
- 57 named destinations out of 1000 (max. 500000)
+ 256 PDF objects out of 1000 (max. 8388607)
+ 53 named destinations out of 1000 (max. 500000)
  83 words of extra memory for PDF output out of 10000 (max. 10000000)
 

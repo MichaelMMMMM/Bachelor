@@ -4,11 +4,11 @@ Zunächst wird eine, auf den Sensorwerten basierende, Zustandsschätzung durchge
 \begin{figure}[!h]
 \centering
 \includegraphics[width=\linewidth]{img/SW_1_Signalfluss_BSB.pdf}
-\caption{Blockschaltbild des Signalflusses, Quelle: eigene Darstellung}
+\caption{Blockschaltbild des Signalflusses}
 \end{figure}
 
 Für die Implementierung werden die Signale als Datenobjekte implementiert. Das heßt es werden Strukturen oder Klassen entworfen, welche die Daten enthalten und ggf. Methoden für den Zugriff oder Bearbeitung bieten. Für dieses Beispiel repräsentieren die Strukturen \textit{SSensorData} und \textit{SStateVector} den Sensor- bzw. Zustandsvektor. Für die Modellierung der Stellgröße genügt eine \textit{float}-Variable.
-\begin{lstlisting}
+\begin{lstlisting}[caption={Beispielhafte Implementierung eines Datenobjektes},captionpos=b]
 struct SSensorData
 {
 	Float32 mS1;
@@ -23,7 +23,7 @@ struct SStateVector
 using UType = Float32;
 \end{lstlisting}
 Die Systeme im Signalfluss werden als Klassen implementiert, die als Aktionsobjekte bezeichnet werden. Die Klassen werden nach dem folgenden Schema entworfen, wobei als Beispiel ein Objekt zur Filter Zustandsschätzung aufgezeigt wird.
-\begin{lstlisting}
+\begin{lstlisting}[caption={Beispielhafte Implementierung eines Aktionsobjektes},captionpos=b]
 class CStateEstimate
 {
 public:
@@ -40,7 +40,7 @@ private:
 Die Aktionsobjekte definieren zunächst ihren Ein- und Ausgangstyp. Die Berechnung des Systems erfolgt über die Methode \textit{calcOutput()}.
 Nun müssen die Aktionsobjekte zu dem vorgegebenen Signalfluss zusammengefasst werden. Um diesen Schritt im Entwicklungsprozess zu erleichtern, soll ein Konzept implementiert werden, dem eine Typenliste der Aktionsobjekte übergeben wird und daraus das Blockschaltbild erzeugt.
 Für die Implementierung der Typenliste wird der Ansatz nach [ModernCppDes] verwendet. Zunächst wird die leere Struktur \textit{CNullType} definiert, welche als Terminierungssymbol in der Typenliste fungiert. Die Liste wird mit Hilfe der Templatestruktur \textit{TTypeList} implementiert, welche als Parameter einen Anfangs- und Endtypen entgegennimmt.
-\begin{lstlisting}
+\begin{lstlisting}[caption={Implementierung der Typenlist},captionpos=b]
 struct CNullType{};
 
 template<class HeadType, class TailType>
@@ -51,14 +51,14 @@ struct TTypeList
 };
 \end{lstlisting}
 Die obige Implementierung unterstützt lediglich Listen der Länge zwei. Deshalb werden Makros verwendet, die rekursive Intanszierungen des Templates nutzen um die Listen beliebiger Länge zu erhalten. Mittels dieser Makros kann dann auch die Typenliste der Aktionsobjekte erzeugt werden.
-\begin{lstlisting}
+\begin{lstlisting}[caption={Definition und Aufruf der Makors für verlängerte Typenlisten},captionpos=b]
 #define TYPELIST_1(T1)         TTypeList<T1, CNullType>
 #define TYPELIST_2(T1, T2) 	   TTypeList<T1, TYPELIST_1(T2)>
 #define TYPELIST_3(T1, T2, T3) TTypeList<T1, TYPELIST_2(T2, T3)>
 ...
 using ActionObjList = TYPELIST_3(CStateEstimate, CFilter, CController);
 \end{lstlisting}
-Um nun die Aktionstypen zu einem Signalfluss-Objekt zusammenzufügen, wird das Muster der linearen Typenhierachie nach  [ModernCppDesign] angewandt. Dessen Aufbau erinnert an eine verkettete Liste, wobei allerdings Typen durch Vererbung verknüpft werden. Die Templateklasse \textit{TActionHolder} wird als Träger für die Aktionsobjekte entworfen.\begin{lstlisting}
+Um nun die Aktionstypen zu einem Signalfluss-Objekt zusammenzufügen, wird das Muster der linearen Typenhierachie nach  [ModernCppDesign] angewandt. Dessen Aufbau erinnert an eine verkettete Liste, wobei allerdings Typen durch Vererbung verknüpft werden. Die Templateklasse \textit{TActionHolder} wird als Träger für die Aktionsobjekte entworfen.\begin{lstlisting}[caption={Implementierung der Trägerklasse für Aktionsobjekte},captionpos=b]
 template<class ActionObj, class Base>
 class TActionHolder : public Base, public ActionObj
 {
@@ -85,22 +85,25 @@ Im allgemeinen Fall wird dem Template der Typ eines Aktionobjektes \textit{Actio
 Des weiteren besteht eine Templatespezialisierung für den Fall, dass ein Aktionstyp und \textit{CNullType}, der das Ende der Typenliste signalisiert, übergeben werden. Nun wird in der \textit{calcOutput()}-Methode lediglich das Aktionsobjekt berechnet, da das Ende der Typenliste und somit des Signalflusses erreicht ist.
 
 Die zweite Templateklasse ist \textit{TLinHierachy}, mit dem folgenden Prototyp.
-\begin{lstlisting}
+\begin{lstlisting}[caption={Deklaration der Templateklasse für lineare Hierarchien},captionpos=b]
 template<class TList,
          template<AtomicType, class Base> class Unit,
          class Root = CNullType>
 class TLinHierachy;
 \end{lstlisting}
 Der erste Templateparameter ist die Typenliste, welche die zu generierende Typenhierachie vorgibt. Der zweite Parameter ist eine Templateklasse, die als Träger der Objekte aus der Typenliste agiert. In diesem Anwendungsfall wird die zuvor definierte Templateklasse \textit{TActionHolder} verwendet. Der letzte Parameter ist der Terminierungstyp der Hierarchie, welcher als Standardargument \textit{CNullType} übergeben wird. Analog zu \textit{TActionHolder} werden durch Spezialisierungen zwei Fälle unterschieden. Zunächst sei der Fall betrachtet, dass der Parameter \textit{TList} eine Typenliste aus zwei beliebigen Typen ist.
-\begin{lstlisting}
-template<class T1, class T2, template<class, class> class Unit, class Root>
+\begin{lstlisting}[caption={Erste Templatespezialisierung der linearen Hierarchie},captionpos=b]
+template<class T1, 
+         class T2, 
+         template<class, class> class Unit, 
+         class Root>
 class TLinHierachy<TTypeList<T1, T2>, Unit, Root>
 	: public Unit<T1, TLinHierachy<T2, Unit, Root> >
 {};
 \end{lstlisting}
 Diese Instanziierung wird solange genutzt bist das Ende der ursprünglichen Typenliste erreicht ist. Die instantiierte Klasse von \textit{TLinHierachy}, ist eine leere Klasse die von \textit{Unit} erbt. \textit{Unit} wird wiederum mit \textit{TLinHierachy} instantiiert, wobei lediglich der zweite Parameter \textit{T2} übergeben wird. Dadurch wird die ursprüngliche Typenliste schrittweise abgearbeitet.
 Die zweite Templatespezialisierung wird genutzt um die Generation am Ende der Typenliste zu terminieren. Dies ist der Fall wenn \textit{TLinHierachy} mit einer Typeliste der Länge eins instantiiert wird.
-\begin{lstlisting}
+\begin{lstlisting}[caption={Zweite Templatespezialisierung der linearen Hierarchie},captionpos=b]
 template<class T, template<class, class> class Unit, class Root>
 class TLinHierachy<TYPELIST_1(T), Unit, Root>
 	: public Unit<T, Root>
@@ -110,22 +113,22 @@ Für das hier aufgeführte Beispiel ergibt sich die folgende Vererbungshierarchi
 \begin{figure}[!h]
 \centering
 \includegraphics[width=0.7\linewidth]{img/SW_1_Signalfluss_KD.pdf}
-\caption{Klassendiagramm der generierten Hierarchie, Quelle: eigene Darstellung}
+\caption{Klassendiagramm der generierten Hierarchie}
 \end{figure}
 Der Vorteil dieses Konzept, welches mit einem nicht zu vernachlässigenden Programmieraufwand verbunden ist, zeigt sich bei der letztendlichen Nutzung. Sind die Aktionsobjekte definiert können sie in wenigen Zeilen zu dem Signalfluss zusammengesetzt werden.
-\begin{lstlisting}
+\begin{lstlisting}[caption={Anwendungsbeispiel der linearen Hierarchie},captionpos=b]
 using ActionList = TYPELIST_3(CStateEstimate, CFilter, CController);
 using SignalFlow = TLinHierachy<ActionList, TActionHandler>;
 SignalFlow mySF;
 \end{lstlisting}
-Sollen nun im Projektverlauf einzelne Elemente ausgetauscht oder erweitert werden muss lediglich die Typendefinition von \textit{ActionList} geändert werden. Da die Hierachie mittels Vererbung realisiert wird, können durch die Angabe des Namensraum die Methoden aller Elternklassen verwendet werden. Beispielsweise zeigt der folgende Ausschnitt die Abfrage aller berechneten Signale.
-\begin{lstlisting}
+Sollen nun im Projektverlauf einzelne Elemente ausgetauscht oder erweitert werden muss lediglich die Typendefinition von \textit{ActionList} geändert werden. Da die Hierarchie mittels Vererbung realisiert wird, können durch die Angabe des Namensraum die Methoden aller Elternklassen verwendet werden. Beispielsweise zeigt der folgende Ausschnitt die Abfrage aller berechneten Signale.
+\begin{lstlisting}[caption={Beispiel für den Zugriff auf Aktionsobjekte in der Hierarchie},captionpos=b]
 SStateVector x_estimate = mySF.CStateEstimate::getValue();
 SStateVector x_filtered = mySF.CFilter::getValue();
 UType        u          = mySF.CController::getValue();
 \end{lstlisting}
 Ebenso können zur Laufzeit konfigurierbare Elemente oder Verzweigungen implementiert werden. Angenommen zur Filterung sollen entweder ein Komplementär-Filter (\textit{CCompFilter}) oder ein Tiefpass erster Ordnung (\textit{CPT1}) genutzt werden. Dann kann eine Klasse \textit{CFilterSystem} aus diesen beiden komponiert werden, die zusätzliche Methoden zur Filterauswahl bietet.
-\begin{lstlisting}
+\begin{lstlisting}[caption={Beispiel für die komponierte Aktionsobjekte},captionpos=b]
 class CFilterSystem
 {
 public:

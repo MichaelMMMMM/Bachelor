@@ -19,20 +19,19 @@
 \contentsline {section}{\numberline {4.3}Untersuchung der Kinetik}{33}{section.4.3}
 \contentsline {chapter}{\numberline {5}Reglerentwurf f\IeC {\"u}r das Balancieren auf einer Ecke}{41}{chapter.5}
 \contentsline {section}{\numberline {5.1}Modell basierter Reglerentwurf}{42}{section.5.1}
-\contentsline {section}{\numberline {5.2}Untersuchung der Stellgr\IeC {\"o}\IeC {\ss }enbeschr\IeC {\"a}nkung}{48}{section.5.2}
-\contentsline {section}{\numberline {5.3}Eprobung des Reglers an der Regelstrecke}{50}{section.5.3}
+\contentsline {section}{\numberline {5.2}Untersuchung der Stellgr\IeC {\"o}\IeC {\ss }enbeschr\IeC {\"a}nkung}{47}{section.5.2}
+\contentsline {section}{\numberline {5.3}Eprobung des Reglers an der Regelstrecke}{49}{section.5.3}
 \contentsline {chapter}{\numberline {6}Erfassung der Zustandsgr\IeC {\"o}\IeC {\ss }en}{53}{chapter.6}
 \contentsline {section}{\numberline {6.1}Bestimmung der Winkelgeschwindigkeiten $u_{Ki}$ und $u_{Ri}$}{54}{section.6.1}
 \contentsline {section}{\numberline {6.2}Bestimmung der Winkel $\varphi _i$}{56}{section.6.2}
-\contentsline {section}{\numberline {6.3}Komplement\IeC {\"a}rfilter f\IeC {\"u}r die Winkel $\boldsymbol {\varphi }$}{60}{section.6.3}
-\contentsline {section}{\numberline {6.4}Beobachter zur Ermittlung von $\varphi $}{62}{section.6.4}
+\contentsline {section}{\numberline {6.3}Komplement\IeC {\"a}rfilter f\IeC {\"u}r die Winkel $\boldsymbol {\varphi }$}{59}{section.6.3}
+\contentsline {section}{\numberline {6.4}Beobachter zur Ermittlung von $\varphi $}{61}{section.6.4}
 \contentsline {chapter}{\numberline {7}Software}{65}{chapter.7}
 \contentsline {section}{\numberline {7.1}Zielplattform, Sensorik und Aktorik}{66}{section.7.1}
-\contentsline {subsection}{\numberline {7.1.1}Peripherie}{66}{subsection.7.1.1}
 \contentsline {section}{\numberline {7.2}Implementierung des Signalflusses}{69}{section.7.2}
 \contentsline {section}{\numberline {7.3}Komponentenarchitektur f\IeC {\"u}r mechatronische Anwendungen}{74}{section.7.3}
 \contentsline {section}{\numberline {7.4}Entwurf der Regelungskomponente}{77}{section.7.4}
 \contentsline {section}{\numberline {7.5}Entwurf der Kommunikationskomponente}{84}{section.7.5}
 \contentsline {section}{\numberline {7.6}Aufbau der Desktop-Anwendung}{86}{section.7.6}
 \contentsline {chapter}{\numberline {8}Zusammenfassung und Ausblick}{87}{chapter.8}
-\contentsline {chapter}{Literaturverzeichnis}{91}{chapter*.14}
+\contentsline {chapter}{Literaturverzeichnis}{91}{chapter*.38}

@@ -2,42 +2,43 @@
 Für die Berechnung des Reglers ist der Zustandsvektor $\bs{x}$ erforderlich. Dieser setzt sich aus den Vektoren
 \begin{equation}
 \bs{\varphi} = \begin{bmatrix}
-\varphi_1 \\ \varphi_2 \\ \varphi_3
+\varphi\idx1 \\ \varphi\idx2 \\ \varphi\idx3
 \end{bmatrix}, \hspace{15pt}
-\bs{u}_K = \begin{bmatrix}
-u_{K1} \\ u_{K2} \\ u_{K3}
+\bs{u}\idx{K} = \begin{bmatrix}
+u\idx{K1} \\ u\idx{K2} \\ u\idx{K3}
 \end{bmatrix}
 , \hspace{15pt}
-\bs{u}_R = \begin{bmatrix}
-u_{R1} \\ u_{R2} \\ u_{R3}
+\bs{u}\idx{R} = \begin{bmatrix}
+u\idx{R1} \\ u\idx{R2} \\ u\idx{R3}
 \end{bmatrix}
 \end{equation}
-zusammen.\footnote{Für die Erfassung der Zustandsgrößen werden die Winkel $\varphi_i$ betrachtet. Der Regler verwendet allerdings die Abweichung $\overline{\varphi}_i$ der Winkel von dem Arbeitspunkt. Deshalb wird der Arbeitspunkt von den Winkelwerten abgezogen bevor der Regler berechnet wird.} Um die Zustandsgrößen zu messen bzw. zu schätzen sind in dem Würfelgehäuse sechs MPU9050-Module montiert [Datenblatt], welche sowohl einen Beschleunigungs- als auch Drehratensensor besitzen. Die Drehratensensoren erfassen deren Winkelgeschwindigkeiten in die Richtung dreier Messachsen, welche paarweise orthogonal sind. Die drei Messwerte werden zu einem Vektor $\bs{\omega}_i$ zusammengefasst. Um die Sensoren in das mechanische Modell zu integrieren, werden deren Messachsen als Vektorbasis des Bezugssystem $S_i, i \in \left\{1, 2, 3, 4, 5, 6\right\}$ definiert. Somit sind die Anzeigewerte der Drehratensensoren die Komponenten der absoluten Winkelgeschwindigkeiten aus Perspektive von $S_i$
+zusammen.\footnote{Für die Erfassung der Zustandsgrößen werden die Winkel $\varphi_i$ betrachtet. Der Regler verwendet allerdings die Abweichung $\overline{\varphi}_i$ der Winkel von dem Arbeitspunkt. Deshalb wird der Arbeitspunkt von den Winkelwerten abgezogen bevor der Regler berechnet wird.} Um die Zustandsgrößen zu messen bzw. zu schätzen sind in dem Würfelgehäuse sechs MPU9050-Module montiert [Datenblatt], welche sowohl einen Beschleunigungs- als auch Drehratensensor besitzen. Die Drehratensensoren erfassen deren Winkelgeschwindigkeiten in die Richtung dreier Messachsen, welche paarweise orthogonal zueinander stehen. Die drei Messwerte werden zu einem Vektor $\bs{\omega}_i$ zusammengefasst. Um die Sensoren in das mechanische Modell zu integrieren, werden deren Messachsen als Vektorbasis des Bezugssystem $S_i, i \in \left\{1, 2, 3, 4, 5, 6\right\}$ definiert. Somit sind die Anzeigewerte der Drehratensensoren die Komponenten der absoluten Winkelgeschwindigkeiten aus Perspektive von $S_i$
 \begin{equation}
 \bs{\omega}_i = \begin{bmatrix}
-\omega_{ix} \\ \omega_{iy} \\ \omega_{iz}
-\end{bmatrix} = \vecBS{S_i}{\omega_{ix}}{\omega_{iy}}{\omega_{iz}}\,.
+\omega_{i\text{x}} \\ \omega_{i\text{y}} \\ \omega_{i\text{z}}
+\end{bmatrix} = \vecBS{S_i}{\omega_{i\text{x}}}{\omega_{i\text{y}}}{\omega_{i\text{z}}}\,.
 \end{equation}
 Da die Sensoren auf dem Würfelkörper fixiert sind, stimmen deren absolute Winkelgeschwindigkeiten mit der des Würfelkörpers überein.
 \begin{equation}
-\vel{A}{\omega}{S_i} = \vel{A}{\omega}{K} = \vecBS{K}{u_{K1}}{u_{K2}}{u_{K3}}
+\vel{A}{\omega}{S_i} = \vel{A}{\omega}{K} = \vecBS{K}{u\idx{K1}}{u\idx{K2}}{u\idx{K3}}
 \end{equation}
 Somit müssen lediglich die Abbildungmatrizen $\pMat{S_i}{K}$ bestimmt werden, um aus den Messwerten die Zustandsgrößen $\bs{u}_K$ zu berechnen. Da die Sensoren so montiert sind, dass deren Messachsen parallel zu den Würfelkanten liegen, können die Projektionsmatrizen an Hand des Aufbaus bestimmt werden.\footnote{Hier wird die Annahme getroffen, dass die Messachsen parallel zu den Würfelkanten stehen. In der Realität besteht durch Fertigungstoleranzen Abweichungen, welcher hier nicht berücksichtigt werden.}
 \begin{equation}
 \pMat{S_{1,2}}{K} = \begin{bmatrix}
-0 & 0 & 0 \\ 1 & 1 & \\ 0 & 0 & 0
+0 & 1 & 0 \\ 1 & 0 & 0\\ 0 & 0 & 1
 \end{bmatrix}, \hspace{15pt}
 \pMat{S_{3,4}}{K} = \begin{bmatrix}
-0 & 0 & 0 \\ 1 & 1 & \\ 0 & 0 & 0
+0 & 0 & 1 \\ 0 & 1 & 0\\ 1 & 0 & 0
 \end{bmatrix}, \hspace{15pt}
 \pMat{S_{5,6}}{K} = \begin{bmatrix}
-0 & 0 & 0 \\ 1 & 1 & \\ 0 & 0 & 0
+1 & 0 & 0 \\ 0 & 0 & 1\\ 0 & 1 & 0
 \end{bmatrix}
 \end{equation}
 Der letztendliche Messwert $\bs{u}_K$ wird durch den Mittelwert der sechs Drehratensensoren gebildet.
+\pagebreak
 
 Die Zustände $u_{Ri}$ ergeben sich aus der Summe
 \begin{equation}
-u_{Ri} = u_{Ki} + \dot{\psi}_i\,.
+u_{Ri} = u_{\text{K}i} + \dot{\psi}_i\,.
 \end{equation}
-Da die Größen $u_{Ki}$ mittels der Drehratensensoren bestimmt werden müssen im nächsten Schritt die Ableitungen $\dot{\psi}_i$ ermittelt werden. Diese stellen die relative Winkelgeschwindigkeiten der Schwungmassen in Drehrichtung der Motoren dar. Hierfür sind in den Motoren Hall-Sensoren integriert, welche von den Motortreibern ausgewertet werden. Die Motortreiber geben wiederum ein Spannungssignal aus, das proportional zu $\dot{\psi}_i$ ist. Diese Signale werden mit den Werten $u_{Ki}$ addiert um daraus $u_{Ri}$ zu erhalten.
+Da die Größen $u_{\text{K}i}$ mittels der Drehratensensoren bestimmt werden, müssen im nächsten Schritt die Ableitungen $\dot{\psi}_i$ ermittelt werden. Diese stellen die relative Winkelgeschwindigkeiten der Schwungmassen in Drehrichtung der Motoren dar. Hierfür sind in den Motoren Hall-Sensoren integriert, welche von den Motortreibern ausgewertet werden. Die Motortreiber geben wiederum ein Spannungssignal aus, das proportional zu $\dot{\psi}_i$ ist. Diese Signale werden mit den Werten $u_{\text{K}i}$ addiert um daraus $u_{\text{R}i}$ zu erhalten.

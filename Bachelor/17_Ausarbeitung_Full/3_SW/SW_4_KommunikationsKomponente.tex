@@ -5,12 +5,12 @@ Der Kontrollfluss der Kommunikationskomponente wird ebenfalls als Zustandsmaschi
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.7\linewidth]{img/SW_4_CommComp_SC.pdf}
-\caption{Zustandsdiagramm der Kommunikations-Komponente, Quelle: eigene Darstellung}
+\caption{Zustandsdiagramm der Kommunikations-Komponente}
 \end{figure}
 Für die Implementierung der Zustandsmaschine wird die objektorientierte Methode nach Samek verwendet (Abschnitt...). An dieser Stelle werden keine Templates verwendet, da die Maschine lediglich zwei Unterstände besitzt. Des weiteren ist nicht zu erwarten, dass sich das Zustandsdiagramm im Entwicklungsprozess verändert.
 
 Der Actionhandler der Zustandsmaschine besitzt eine Instanz der Klasse \textit{CServer}, welche die nötigen Serverfunktionalitäten bereitstellt.
-\begin{lstlisting}
+\begin{lstlisting}[caption={Implementierung der Server-Klasse},captionpos=b]
 class CServer
 {
 public:
@@ -24,7 +24,7 @@ public:
 In der \textit{waitForClient()}-Methode wird der aufrufende Thread blockiert bis ein Client eine Verbindung aufbaut. Anschließend können mittels der Methoden \textit{transmitMessage()} und \textit{receiveMessage()} Nachrichten versendet bzw. empfangen werden. Da es sich bei einer TCP/IP-Verbindung um einen Bytestream handelt wird der Typ \textit{CMessage} als Datenpaket in der Übertragung verwendet. Das heißt das lediglich Instanzen von \textit{CMessage} übermittelt werden, wobei die Objekte byteweise versendet und empfangen werden. Im Anschluss werden die einzelnen Bytes wieder zu einer Instanz von \textit{CMessage} zusammengesetzt.
 
 Da das Versenden und Empfangen von Nachrichten parallel erfolgen soll, wird die Kommunikationskomponente um einen zweiten Thread erweitert. Dieser wird in der Klasse \textit{CReceiveTask} implementiert, welche von \textit{IRunnable} erbt. Dieser Thread ist sowohl für das Empfangen von Nachrichten als auch die Annahme von Verbindungsanfragen zuständig.
-\begin{lstlisting}
+\begin{lstlisting}[caption={Implementierung des Receive-Tasks},captionpos=b]
 void CReceiveTask::run()
 {
 	while(true)
