@@ -24,13 +24,13 @@ Aus dem letzten Kapitel ist die Zustandsgleichung
 T_{M1} \\ T_{M2} \\ T_{M3}
 \end{bmatrix}}_{=\bs{u}}
 \end{equation}
-hervorgegangen. Der Ausgangsvektor $\bs{y}\in \mathcal{R}^8$ enhält alle Zustandsgrößen bis auf den Winkel $\varphi_1$, da dieser nicht aus den Sensordaten ermittelt werden kann.
+hervorgegangen. Der Ausgangsvektor $\bs{y}\in \mathbb{R}^8$ enhält alle Zustandsgrößen bis auf den Winkel $\varphi_1$, da dieser nicht aus den Sensordaten ermittelt werden kann.
 \begin{equation}
 \bs{y} = \underbrace{\begin{bmatrix}
 \bs{0}^8 & \bs{I}^{8\times 8}
 \end{bmatrix}}_{\equiv \bs{C}_c} \cdot \bs{x}
 \end{equation}
-Im nächsten Schritt wird das kontinuierliche System \cSS{A_c}{B_c}{C_c} in das diskrete System \dSS{A}{B}{C} überführt. Hierfür wird die Abtastrate $f_a = 50Hz$ verwendet.
+Im nächsten Schritt wird das kontinuierliche System \cSS{A_c}{B_c}{C_c} in das diskrete System \dSS{A}{B}{C} überführt. Hierfür wird die Abtastrate $f_a = 50\text{ Hz}$ verwendet.
 Anschließend wird das System mittels der Kalmankriterien auf Steuer- und Beobachtbarkeit geprüft. Hieraus folgt, dass das System sowohl einen nicht steuerbaren als auch einen nicht beobachtbaren Zustand besitzt. Eine Voraussetzung für den Entwurf eines Zustandreglers besteht darin, dass das System vollständig steuer- und beobachtbar ist. Deshalb kann das System \dSS{A}{B}{C} nicht direkt für den Reglerentwurf verwendet werden. Zunächst muss eine Minimalrealisierung \dSS{A_M}{B_M}{C_M} gefunden werden, welche nur den steuer- und beobachtbaren Unterraum des Systems enthält. Um eine Minimalrealisierung des Systems zu erhalten wird es in eine so genannte Kalman-Dekomposition \dSS{A_K}{B_K}{C_K} überführt. Die hierfür nötige Transformationsmatrix $\bs{T}_K$ wird mittels der Matlab-Funktion \textit{minreal()} bestimmt.
 \begin{equation}
 \bs{x}_K = \bs{T}^{-1}_K\cdot \bs{x}\hspace{25pt} \bs{A}_K = \bs{T}^{-1}_K\cdot \bs{A}\cdot \bs{T}_K \hspace{25pt} \bs{B}_K = \bs{T}^{-1}_K\cdot \bs{B} \hspace{25pt} \bs{C}_K = \bs{C}\cdot \bs{T}_K
@@ -55,41 +55,45 @@ Anschließend wird das System mittels der Kalmankriterien auf Steuer- und Beobac
 \bs{C}_M  & \bs{c}_{\overline{S}} & \bs{0}^8
 \end{bmatrix}}_{=\bs{C}_K}\cdot \bs{x}_K(k)
 \end{equation}
-Die Kalman-Dekomposition \textfrak{D}$_K$($\bs{A}_K$,$\bs{B}_K$,$\bs{C}_K$) setzt sich aus der Minimalrealisierung \textfrak{D}$_M$($\bs{A}_M$,$\bs{B}_M$,$\bs{C}_M$, dem nicht steuerbaren Teilsystem \textfrak{D}$_{\overline{S}}$($a_{\overline{S}}$,$\bs{0}^{3\times 1}$,$\bs{c}_{\overline{S}}$) und dem nicht beobachtbaren Teilsystem \textfrak{D}$_{\overline{B}}$($a_{\overline{B}}$,$\bs{b}^T_{\overline{B}}$,$\bs{0}^{8\times 1}$) zusammen.\footnote{Die hier gezeigt Dekomposition stellt nicht den allgemein gültigen Fall dar, der ein weiteres Teilsystem weder steuer- noch beobachtbaren Zustände enthält [Lunze RT2, S.108ff]} Prinzipiell kann nun für das System \textfrak{D}$_M$ ein Zustandsregler entwickelt werden, der zu einem asymptotischen System führt. Allerdings ist dabei zu beachten, dass die Teilsysteme \textfrak{D}$_M$, \textfrak{D}$_{\overline{S}}$ und \textfrak{D}$_{\overline{B}}$ nicht voneinander entkoppelt sind. Die Abhängigkeiten zwischen den Teilsystemen werden von den den Größen $\bs{a}_{M/\overline{S}}$, $\bs{a}_{\overline{B}}/M$ und $a_{\overline{B}/\overline{S}}$ beschrieben. Da der Zustandsregler lediglich die Eigenwerte des Teilsystem \textfrak{D}$_M$ beeinflussen kann, muss zusätzlich die Stabilität der Teilsysteme \textfrak{D}$_{\overline{S}}$ und \textfrak{D}$_{\overline{B}}$ geprüft werden. In diesem Kontext wird der Begriff der Stabilisierbarkeit verwendet, wobei ein System stabilisierbar heißt wenn all seine Eigenvorgänge, die nicht Teil seines vollständig steuer- und beobachtbaren Unterraums sind, asymptotisch stabil sind. In diesem Anwendungsfall handelt es sich bei \textfrak{D}$_{\overline{S}}$ und \textfrak{D}$_{\overline{B}}$ um Systeme erster Ordnung, derer Eigenwert $\lambda_{\overline{S}}$ bzw. $\lambda_{\overline{B}}$ auf dem Einheitskreis liegt.
+Die Kalman-Dekomposition \textfrak{D}$_K$($\bs{A}_K$,$\bs{B}_K$,$\bs{C}_K$) setzt sich aus der Minimalrealisierung \textfrak{D}$_M$ ($\bs{A}_M$, $\bs{B}_M$, $\bs{C}_M$), dem nicht steuerbaren Teilsystem \textfrak{D}$_{\overline{S}}$($a_{\overline{S}}$, $\bs{0}^{3\times 1}$, $\bs{c}_{\overline{S}}$) und dem nicht beobachtbaren Teilsystem \textfrak{D}$_{\overline{B}}$($a_{\overline{B}}$, $\bs{b}^T_{\overline{B}}$, $\bs{0}^{8\times 1}$) zusammen.\footnote{Die hier gezeigt Dekomposition stellt nicht den allgemein gültigen Fall dar, der ein weiteres Teilsystem weder steuer- noch beobachtbaren Zustände enthält [Lunze RT2, S.108ff]} Prinzipiell kann nun für das System \textfrak{D}$_M$ ein Zustandsregler entwickelt werden, der zu einem asymptotischen System führt. Allerdings ist dabei zu beachten, dass die Teilsysteme \textfrak{D}$_M$, \textfrak{D}$_{\overline{S}}$ und \textfrak{D}$_{\overline{B}}$ nicht voneinander entkoppelt sind. Die Abhängigkeiten zwischen den Teilsystemen werden von den Größen $\bs{a}_{M/\overline{S}}$, $\bs{a}_{\overline{B}}/M$ und $a_{\overline{B}/\overline{S}}$ beschrieben. Da der Zustandsregler lediglich die Eigenwerte des Teilsystem \textfrak{D}$_M$ beeinflussen kann, muss zusätzlich die Stabilität der Teilsysteme \textfrak{D}$_{\overline{S}}$ und \textfrak{D}$_{\overline{B}}$ geprüft werden. In diesem Kontext wird der Begriff der Stabilisierbarkeit verwendet, wobei ein System stabilisierbar heißt wenn all seine Eigenvorgänge, die nicht Teil seines vollständig steuer- und beobachtbaren Unterraums sind, asymptotisch stabil sind. In diesem Anwendungsfall handelt es sich bei \textfrak{D}$_{\overline{S}}$ und \textfrak{D}$_{\overline{B}}$ um Systeme erster Ordnung, derer Eigenwert $\lambda_{\overline{S}}$ bzw. $\lambda_{\overline{B}}$ auf dem Einheitskreis liegen.
 \begin{equation}
 \lambda_{\overline{S}} = \lambda_{\overline{B}} = 1
 \end{equation}
-Somit sind die beiden Teilsysteme grenzstabil. Um den Verlauf und Einfluss der Zustände $x_{\overline{S}}$ und $x_{\overline{B}}$ nachzuvollziehen wird zunächst ein Regler für die Minimalrealisierung \textfrak{D}$_M$ entworfen und in einer Simulation erprobt. Für die Bestimmung der Reglermatrix $\bs{K}_M$ wird das LQR-Verfahren angewandt, wobei die Gewichtungsmatrizen $\bs{Q}$ und $\bs{R}$ in Diagonalform gewählt werden. Als Diagonalelemente werden die Kehrwerte der maximal zulässigen Zustandsgrößen im Quadrat verwendet. Hierbei ist zu beachten, dass der Reglerentwurf für das System \textfrak{D}$_M$ durchgeführt wird. Deshalb muss der maximale Zustandsvektor $\bs{x}_{max}$ in dessen Darstellung transformiert werden. Hierfür wird mit der Transformationsmatrix $\bs{T}^{-1}_K$ und einer nicht regulären Reduktionsmatrix multipliziert.
+Somit sind die beiden Teilsysteme grenzstabil. Um den Verlauf und Einfluss der Zustände $x_{\overline{S}}$ und $x_{\overline{B}}$ nachzuvollziehen wird zunächst ein Regler für die Minimalrealisierung \textfrak{D}$_M$ entworfen und in einer Simulation erprobt. Für die Bestimmung der Reglermatrix $\bs{K}_M$ wird das LQR-Verfahren angewandt, wobei die Gewichtungsmatrizen $\bs{Q}$ und $\bs{R}$ in Diagonalform gewählt werden. Als Diagonalelemente werden die Kehrwerte der maximal zulässigen Zustandsgrößen im Quadrat verwendet. Hierbei ist zu beachten, dass der Reglerentwurf für das System \textfrak{D}$_M$ durchgeführt wird. Deshalb muss der maximale Zustandsvektor $\bs{x}_{max}$ in dessen Darstellung transformiert werden. Hierfür wird mit der Transformationsmatrix $\bs{T}^{-1}_K$ und einer nicht regulären Reduktionsmatrix multipliziert
 \begin{equation}
-\bs{x}_{M,max} = \begin{bmatrix}
+\bs{x}_{\text{M,max}} = \begin{bmatrix}
 \bs{I}^{7\times 7} & \bs{0}^{7\times 2}
-\end{bmatrix}\cdot \bs{T}^{-1}_K \cdot \bs{x}_{max}
+\end{bmatrix}\cdot \bs{T}^{-1}_K \cdot \bs{x}_{max} \,.
 \label{eq_xred}
 \end{equation}
 \begin{equation}
-\bs{Q} = diag(\bs{x}_{M,max})^{-2} \hspace{35pt} \bs{R} = diag(\bs{u}_{max})^{-2}
+\bs{Q} = \text{diag}(\bs{x}_{M,max})^{-2} \hspace{35pt} \bs{R} = \text{diag}(\bs{u}_{max})^{-2}
 \end{equation}
-In der Simulation wird für die Regelstrecke das kontinuierliche System \textfrak{S}$_C$($\bs{A}_C$,$\bs{B}_C$,$\bs{C}_C$) verwendet. Für die Implementierung des Reglers ist ebenfalls in (\cite{eq_xred}) beschriebene Transformation nötig.
+In der Simulation wird für die Regelstrecke das kontinuierliche System \textfrak{S}$_C$($\bs{A}_C$,$\bs{B}_C$,$\bs{C}_C$) verwendet. Für die Implementierung des Reglers ist ebenfalls die in (\ref{eq_xred}) beschriebene Transformation nötig.
 \begin{equation}
 \bs{u}(k) = -\underbrace{\bs{K}_M\cdot \begin{bmatrix}
 \bs{I}^{7\times 7} & \bs{0}^{7\times 2}
 \end{bmatrix} \cdot \bs{T}^{-1}_K}_{\equiv \bs{K}} \cdot \bs{x}(k)
 \end{equation}
-Die folgenden Abbildungen zeigen den Verlauf der Zustandsgrößen $\bs{\overline{\varphi}}$, $\bs{u}_K$ und $\bs{u}_R$ sowie der Stellgrößen $\bs{T}_M$ bei dem Anfangszustand
+Die folgenden Abbildungen zeigen den Verlauf des Systems bei dem Anfangszustand
 \begin{equation}
 \bs{x}(0) = \begin{bmatrix}
-0 \\ 0.11 \\ 0.08 \\ \bs{0}^{6\times 1}
-\end{bmatrix}\,.
+0 & 0.11 & 0.08 & \bs{0}^{6\times 1}
+\end{bmatrix}^T \,.
 \end{equation}
+
 \begin{figure}[!ht]
 \centering
-\includegraphics[width=0.45\linewidth]{img/lin_sim1_phi.eps}\hspace{1cm}
-\includegraphics[width=0.45\linewidth]{img/lin_sim1_uk.eps}
-\vspace{1cm}
-
-\includegraphics[width=0.45\linewidth]{img/lin_sim1_ur.eps}\hspace{1cm}
-\includegraphics[width=0.45\linewidth]{img/lin_sim1_tm.eps}
+\includegraphics[width=0.45\textwidth]{img/lin_sim1_phi.eps}\hspace{1cm}
+\includegraphics[width=0.45\textwidth]{img/lin_sim1_uk.eps}
 \end{figure}
+\begin{figure}[!ht]\ContinuedFloat
+\centering
+\includegraphics[width=0.45\textwidth]{img/lin_sim1_ur.eps}\hspace{1cm}
+\includegraphics[width=0.45\textwidth]{img/lin_sim1_tm.eps}
+\caption{Verlauf des Systems in der Simulation mit $x_{\overline{S}}=0$}
+\end{figure}
+\pagebreak
 Die Simulation zeigt, dass alle Zustandsgrößen bis auf den Winkel $\varphi_1$ gegen null konvergieren. Folglich ist anzunehmen, dass der Zustand $\varphi_1$ nicht teil der Minimalrealisierung \textfrak{D}$_M$ ist. Diese Vermutung lässt sich mittels der Matrizen $\bs{C}_C$ und $\bs{A}_C$ bestätigen. Die erste Spalte der Matrix $\bs{C}_C$ ist ein Nullvektor und somit beeinflusst $\varphi_1$ den Ausgangsvektor $\bs{y}$ nicht. Eine solche Zustandsvariable wird auch als nicht ausgangsverbunden bezeichnet. Des weiteren hat der Zustand $\varphi_1$ keine Auswirkung auf die Systemdynamik. Dies ist auf die erste Spalte der Systemmatrix $\bs{A}_C$
 \begin{equation}
 \bs{A}_C(:,1) = \begin{bmatrix}
@@ -117,10 +121,11 @@ bildet den Zustandsvektor $\bs{x}$ in die Variable $x_{\overline{S}}$ ab. Diese 
 \centering
 \includegraphics[width=0.45\linewidth]{img/lin_sim2_phi.eps}\hspace{1cm}
 \includegraphics[width=0.45\linewidth]{img/lin_sim2_uk.eps}
-\vspace{1cm}
+\vspace{0.5cm}
 
 \includegraphics[width=0.45\linewidth]{img/lin_sim2_ur.eps}\hspace{1cm}
 \includegraphics[width=0.45\linewidth]{img/lin_sim2_tm.eps}
+\caption{Verlauf des Systems in der Simulation mit $x_{\overline{S}}\neq0$}
 \end{figure}
 Die Simulation zeigt, dass die Winkel $\varphi_2$ und $\varphi_3$ nach wie vor asymptotisch stabil sind. Allerdings konvergieren die Winkelgeschwindigkeiten $\bs{u}_K$ gegen den gleichen Endwert $u_{Ke}\neq 0$. Mittels der Winkelgeschwindigkeit
 \begin{equation}
@@ -135,7 +140,7 @@ Mit Hilfe des Endwertsatzes kann das Konvergenzverhalten bestimmt werden.
 \begin{split}
 z\cdot \bs{X}_M(z) &= \left(\bs{A}_M - \bs{B}_M\cdot \bs{K}_M\right)\cdot \bs{X}_M(z)  + \bs{a}_{M/\overline{S}}\cdot X_{\overline{S}}(z)
 \\
-\leftrightarrow \bs{X}_M(z) &= \left[z\cdot \bs{I} - \left(\bs{A}_M - \bs{B}_M\cdot \bs{K}_M\right) \right] ^{-1} \cdot \bs{a}_{M/\overline{S}}\cdot \underbrace{X_{\overline{S}}(z)}_{= \frac{z}{z-1}\cdot x_{\overline{S}}(t=0)}
+\leftrightarrow \bs{X}_M(z) &= \left[z\cdot \bs{I} - \left(\bs{A}_M - \bs{B}_M\cdot \bs{K}_M\right) \right] ^{-1} \cdot \bs{a}_{M/\overline{S}}\cdot X_{\overline{S}}(z)
 \end{split}
 \end{equation}
 \begin{equation}
@@ -144,12 +149,12 @@ z\cdot \bs{X}_M(z) &= \left(\bs{A}_M - \bs{B}_M\cdot \bs{K}_M\right)\cdot \bs{X}
 Wird der Zustandsvektor $\bs{x}_{K,end}$ aus den Endwerten der Teilsysteme zusammengesetzt kann dieser in den ursprünglichen Zustandsraum transformiert werden.
 \begin{equation}
 \begin{split}
-\bs{x}_{end} &= \bs{T}_K\cdot \begin{bmatrix}
-\bs{x}_{M,end} \\ x_{\overline{S}} \\ x_{\overline{B}}
+\bs{x}\idx{end} &= \bs{T}\idx{K}\cdot \begin{bmatrix}
+\bs{x}\idx{M,end} \\ x\idx{\overline{S}} \\ x\idx{\overline{B}}
 \end{bmatrix} 
 \\
 &= \begin{bmatrix}
-\varphi_1 & 0 & 0 & 5{,}4 x_{\overline{S}} & 5{,}4 x_{\overline{S}} & 5{,}4x_{\overline{S}} & -306{,}9 x_{\overline{S}} & -298{,}2 x_{\overline{S}} & -272{,}1 x_{\overline{S}}
+\varphi_1 & 0 & 0 & 5{,}4 x_{\overline{\text{S}}} & 5{,}4 x_{\overline{\text{S}}} & 5{,}4x_{\overline{\text{S}}} & -306{,}9 x_{\overline{\text{S}}} & -298{,}2 x_{\overline{\text{S}}} & -272{,}1 x_{\overline{\text{S}}}
 \end{bmatrix}^T
 \end{split}
 \end{equation}

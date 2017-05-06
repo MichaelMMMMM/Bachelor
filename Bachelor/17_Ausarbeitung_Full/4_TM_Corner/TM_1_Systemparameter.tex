@@ -1,74 +1,78 @@
-\section{Systemparameter}
-Zunächst soll die Parameter des mechanischen Systems vorgestellt und diskutiert werden. Das System setzt sich aus drei Schwungmassen und dem Würfelkörper. Unter dem Würfelkörper ist das Würfelgehäuse inklusive der montierten Motoren, Sensoren und Elektrik zu verstehen und wird mit $K$ bezeichnet. Bei der Herleitung der Bewegungsgleichungen wird die Annahme getroffen, dass der Würfelkörper nicht translativ bewegt wird, sondern lediglich um Punkt $O$ rotiert. Der Punkt $O$ ist hierbei die Ecke auf welcher der Würfel balanciert. Des weiteren beschreiben alle Ortsvektoren den Vektor von $O$ zu dem jeweiligen Zielpunkt. Die drei Schwungmassen $R_i$ sind mit jeweils einem rotatorischem Freiheitsgrad auf den Motorwellen gelagert. Die Position der Lagerung wird mit $M_i$ bezeichnet und fällt auf Grund des symmetrischen Aufbau der Schwungmassen mit deren Schwerpunkt zusammen.
-Die Massen $m_R$ und Trägheitstensoren $\bs{I}^{Ri/Mi}$ der Schwungmassen werden mit Hilfe der CAD-Anwendung ermittelt, wobei die Trägheitstensoren relativ zu den Punkten $M_i$ berechnet werden.
+\section{Systemparameter}\label{TM_3D_Systemparameter}
+Zunächst werden die Parameter des mechanischen Systems vorgestellt. Das System setzt sich aus drei Schwungmassen und dem Würfelkörper zusammen. Unter dem Würfelkörper ist das Würfelgehäuse inklusive der montierten Motoren, Sensoren und Elektrik zu verstehen und wird mit $K$ bezeichnet. Bei der Herleitung der Bewegungsgleichungen wird die Annahme getroffen, dass der Würfelkörper nicht translativ bewegt wird, sondern lediglich um Punkt $O$ rotiert. Der Punkt $O$ ist hierbei die Ecke auf welcher der Würfel balanciert. Des weiteren beschreiben alle Ortsvektoren den Vektor von $O$ zu dem jeweiligen Zielpunkt. Die drei Schwungmassen $R_i$ sind mit jeweils einem rotatorischem Freiheitsgrad auf den Motorwellen gelagert. Die Position der Lagerung wird mit $M_i$ bezeichnet und fällt auf Grund des symmetrischen Aufbau der Schwungmassen mit deren Schwerpunkt zusammen.
+Die Massen
 \begin{equation}
-m_R = 0,155 [kg]
-\end{equation} 
-Die Trägheitstensoren werden dabei aus der Perspektive des körperfesten Bezugssystem $K$ ermittelt, welches in den folgenden Abschnitt näher erläutert wird. Für den Tensor der Schwungmasse $R_1$ ergibt sich der folgende Wert.
+m_R = 0{,}155\text{ kg}
+\end{equation}
+und Trägheitstensoren $\bs{I}^{Ri/Mi}$ der Schwungmassen werden mit Hilfe der CAD-Anwendung ermittelt. 
+Die Trägheitstensoren werden dabei aus der Perspektive des körperfesten Bezugssystem $K$ relativ zu den Punkten $M_i$ bestimmt. Für den Trägheitstensor der Schwungmasse $R_1$ ergibt sich der Wert
 \begin{equation}
- \bs{I}^{R1/M1} = \begin{pmatrix}
-3.358\cdot 10^{-4} & 2,641\cdot 10^{-11} & 0 \\
-2,651\cdot 10^{-11} & 1,961\cdot 10^{-4} & 4,527\cdot 10^{-9} \\
-0 & 4.527\cdot 10^{-9} & 1,691\cdot 10^{-4}
-\end{pmatrix}[kg\cdot m^2]
+ \bs{I}^{R1/M1} = \begin{bmatrix}
+3.358\cdot 10^{-4} & 2{,}641\cdot 10^{-11} & 0 
+\\
+2{,}651\cdot 10^{-11} & 1{,}961\cdot 10^{-4} & 4{,}527\cdot 10^{-9} 
+\\
+0 & 4.527\cdot 10^{-9} & 1{,}691\cdot 10^{-4}
+\end{bmatrix} \text{ kg}\cdot \text{m}^2 \,.
 \end{equation}
 Hieran ist zu erkennen, dass die Vektorbasis des Bezugssystem $K$ nahezu den Haupträgheitsachsen der Schwungmasse entspricht, da die Devitationsmomente um die Größenordnung $10^{5}$ kleiner als die Haupträgheitsmomente sind. Deshalb wird bei der  
-folgenden Untersuchung die Annahme getroffen, dass die Devitationsmomente vernachlässigt werden können. 
+folgenden Untersuchung die Annahme getroffen, dass die Devitationsmomente vernachlässigt werden können und es gilt 
 \begin{equation}
 \begin{split}
-\bs{I}^{R1/M1} &= \begin{pmatrix}
+\bs{I}^{R1/M1} &\equiv \begin{bmatrix}
 I^{R1}_{11} & 0 & 0 \\ 0 & I^{R1}_{22} & 0 \\ 0 & 0 & I^{R1}_{33}
-\end{pmatrix} = 
-\begin{pmatrix}
+\end{bmatrix} = 
+\begin{bmatrix}
 3.358\cdot 10^{-4} & 0 & 0 \\
-0 & 1,961\cdot 10^{-4} & 0 \\
-0 & 0 & 1,691\cdot 10^{-4}
-\end{pmatrix}[kg\cdot m^2]
+0 & 1{,}961\cdot 10^{-4} & 0 \\
+0 & 0 & 1{,}691\cdot 10^{-4}
+\end{bmatrix} \text{ kg}\cdot \text{m}^2
 \\
-\bs{I}^{R2/M2} &= \begin{pmatrix}
+\bs{I}^{R2/M2} &\equiv \begin{bmatrix}
 I^{R2}_{11} & 0 & 0 \\ 0 & I^{R2}_{22} & 0 \\ 0 & 0 & I^{R2}_{33}
-\end{pmatrix} = 
-\begin{pmatrix}
-1,691\cdot 10^{-4} & 0 & 0 \\
+\end{bmatrix} = 
+\begin{bmatrix}
+1{,}691\cdot 10^{-4} & 0 & 0 \\
 0 & 3.358\cdot 10^{-4} & 0 \\
-0 & 0 & 1,961\cdot 10^{-4}
-\end{pmatrix}[kg\cdot m^2]
+0 & 0 & 1{,}961\cdot 10^{-4}
+\end{bmatrix} \text{ kg}\cdot \text{m}^2
 \\
-\bs{I}^{R3/M3} &= \begin{pmatrix}
+\bs{I}^{R3/M3} &\equiv \begin{bmatrix}
 I^{R3}_{11} & 0 & 0 \\ 0 & I^{R3}_{22} & 0 \\ 0 & 0 & I^{R3}_{33}
-\end{pmatrix} = 
-\begin{pmatrix}
-1,961\cdot 10^{-4} & 0 & 0 \\
-0 & 1,691\cdot 10^{-4} & 0 \\
+\end{bmatrix} = 
+\begin{bmatrix}
+1{,}961\cdot 10^{-4} & 0 & 0 \\
+0 & 1{,}691\cdot 10^{-4} & 0 \\
 0 & 0 & 3.358\cdot 10^{-4}
-\end{pmatrix}[kg\cdot m^2]
+\end{bmatrix} \text{ kg}\cdot \text{m}^2 \,.
 \end{split}
 \end{equation}
-Für die Masse $m_K$ und den Trägheitstensor $\bs{I}^{GH/O}$ des Würfelkörpers um den Punkt $O$ aus Perspektive des Bezugssystem $K$ ergeben sich die folgenden Werte. Bei der Berechnung der des Tensors $\bs{I}^{GH/O}$ wird der Einfluss der Schwungmassen nicht beachtet, dies erfolgt bei der Berechnung der Trägheitsmomente in den folgenden Abschnitten.
+Für die Masse des Würfelkörpers $m_K$ und des Gesamtsystems $m$ ergibt sich
 \begin{equation}
-m_K = 1.07[kg]
+m_K = 1{,}07 \text{ kg} \hspace{35pt} m = m_K + 3\cdot m_R = 1{,}532 \text{ kg}\,.
 \end{equation}
+Bei der Berechnung des Trägheittensors $\bs{I}^{GH/0}$ des Würfelkörpers um den Punkt $O$ wird der Einfluss der Schwungmassen nicht beachtet. Dies erfolgt bei der Berechnung der Trägheitsmomente in den folgenden Abschnitten. Somit ergibt sich für den Trägheitstensor
 \begin{equation}
-\bs{I}^{GH/O} = \begin{pmatrix}
-I^{GH/O}_{11} & I^{GH/O}_{12} & I^{GH/O}_{13} \\
-I^{GH/O}_{21} & I^{GH/O}_{22} & I^{GH/O}_{23} \\
-I^{GH/O}_{31} & I^{GH/O}_{32} & I^{GH/O}_{33}
-\end{pmatrix} =
-\begin{pmatrix}
-1,520\cdot 10^{-2} & -5,201\cdot 10^{-3} & 5,375\cdot 10^{-3} \\
--5,201\cdot 10^{-3} & 1,52\cdot 10^{-2} & 5,225\cdot 10^{-3} \\
-5,375\cdot 10^{-3} & 5,225\cdot 10^{-3} & 1,542\cdot 10^{-2}
-\end{pmatrix}[kg\cdot m^2]
+\begin{split}
+\bs{I}^{GH/O} &= \begin{bmatrix}
+I^{GH}_{11} & I^{GH}_{12} & I^{GH}_{13} \\
+I^{GH}_{21} & I^{GH}_{22} & I^{GH}_{23} \\
+I^{GH}_{31} & I^{GH}_{32} & I^{GH}_{33}
+\end{bmatrix} \\
+&=
+\begin{bmatrix}
+1{,}520\cdot 10^{-2} & -5{,}201\cdot 10^{-3} & 5{,}375\cdot 10^{-3} \\
+-5{,}201\cdot 10^{-3} & 1{,}52\cdot 10^{-2} & 5{,}225\cdot 10^{-3} \\
+5{,}375\cdot 10^{-3} & 5{,}225\cdot 10^{-3} & 1{,}542\cdot 10^{-2}
+\end{bmatrix}\text{ kg}\cdot \text{m}^2 \,.
+\end{split}
 \end{equation}
-Für die Masse $m$ des Gesamtsystems folgt
+Der Ortsvektor $\bs{c}$ des Schwerpunkt des Gesamtsystems wird ebenfalls numerisch ermittelt. Da sich die Komponenten des Ortsvektors $\bs{c}$ lediglich um $10^{-1}\text{mm}$ unterscheiden werden diese als identischen angenommen.
 \begin{equation}
-m = 1,532[kg].
+\bs{c} = \vecBS{K}{-6,61}{-6,60}{-6,57}\text{ cm} \approx \vecBS{K}{l_C}{l_C}{l_C} \hspace{15pt} \vert \hspace{15pt} l_C = 6,6\text{ cm}
 \end{equation}
-Der Ortsvektor $\bs{c}$ des Schwerpunkt des Gesamtsystems wird ebenfalls numerisch ermittelt. Da sich die Komponenten des Ortsvektors $\bs{c}$ lediglich um $10^{-1}mm$ unterscheiden werden diese als identischen angenommen.
+Des weiteren entsteht durch die Bewegung der Schwungmassen ein Reibmoment,welches als proportional zu den Winkelgeschwindigkeiten der Schwungmassen modelliert wird. Für Proportionalitätsfaktor $C_{\psi}$ wurde experimentell der  Wert 
 \begin{equation}
-\bs{c} = \vecBS{K}{-6,61}{-6,60}{-6,57}[cm] \approx \vecBS{K}{l_C}{l_C}{l_C} \hspace{15pt} \vert \hspace{15pt} l_C = 6,6[cm]
+C_{\psi} = 3,1176\cdot 10^{-5}\text{ kg}\cdot \text{m}^2 \cdot \text{s}^{-1}
 \end{equation}
-Des weiteren entsteht durch die Bewegung der Schwungmassen ein Reibmoment, welches analog zu dem Modell der Würfelseite, als proportional zu den Winkelgeschwindigkeiten der Schwungmassen modelliert wird. Für Proportionalitätsfaktor $C_{\psi}$ wurde experimentell der folgende Wert ermittelt.
-\begin{equation}
-C_{\psi} = 3,1176\cdot 10^{-5}[kg\cdot m^2 \cdot s^{-1}]
-\end{equation}
+ermittelt.

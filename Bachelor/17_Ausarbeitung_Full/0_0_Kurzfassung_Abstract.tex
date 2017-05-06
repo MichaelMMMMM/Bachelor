@@ -5,13 +5,27 @@
 %\clearscrheadfoot                  % Alles auf "" setzen
 %------------------------------------------------------------------------------
 
-\section*{Kurzfassung\\Modellbasierter Entwurf und Embedded Implementierung eines Mehrgrößenreglers für einen balancierenden Würfel} \label{Kurzfassung}
-Hallo
+\section*{Kurzfassung\\ \begin{center}
+Modellbasierter Entwurf und Embedded Implementierung eines Mehrgrößenreglers für einen balancierenden Würfel
+\end{center} } \label{Kurzfassung}
+Die vorliegende Arbeit beschäftigt sich mit der Entwicklung eines Mehrgrößenreglers um einen Würfel auf einer seiner Ecken zu balancieren. In dem Würfel der Kantenlänge $15\text{cm}$ sind drei Motoren mit Schwungmassen montiert, welche als Stellgröße des Regelkreises dienen. Zuerst wird der Fall des auf einer Kante balancierenden Würfels betrachtet. Hierfür werden mittels Kanes Methodik die Bewegungsgleichungen des Systems hergleitet. Diese werden im Anschluss in eine linearisierte Zustandsraumdarstellung überführt, welche für den Entwurf des Zustandreglers verwendet wird. Daraufhin wird der Regler an der Strecke validiert. 
 
+Im nächsten Schritt werden die Bewegungsgleichungen des auf einer Ecke stehenden Würfels ermittelt, wofür ebenfalls Kanes Methodik verwendet wird. Anschließend wird die Steuer- und Beobachtbarkeit des im Arbeitspunkt linearisierten System untersucht. Unter Beachtung der Direktionalitätsproblematik wird ein LQ-Regler entworfen und an der Regelstrecke erprobt. An Hand der experimentell gewonnen Ergebnisse wird der Regler verbessert.
+
+Des weiteren wird ein Konzept entwickelt um die Zustandsgrößen zu messen. Hierfür wird Verfahren vorgestellt um die Ausrichtung des Würfels mittels der Beschleunigungssensoren zu schätzen. Des weiteren wird ein Komplementärfilter verwendet um die Signalgüte zu erhöhen.
+
+Der letzte Teil der Arbeit beschäftigt sich mit der Implementierung des Regelungskonzeptes auf einer Embedded Zielplattform. Hierbei wird ein Ansatz der Template-Meta-Program-mierung vorgestellt um den Aufwand für die Implementierung des Kontroll- und Signalflusses zu minimieren. Des weiteren wird eine Komponentenarchitektur entworfen, welche als Grundlage für mechatronische Anwendung wiederverwendet werden kann. Zuletzt wird eine TCP/IP-Verbindung als Kommunikationsweg zwischen der Ziel- und Entwicklungsplattform verwendet. Für letztere wird eine, auf Qt basierende, Anwendung entwickelt, welche relevante Versuchsdaten visualisiert und die Steuerung des Versuchsablaufes ermöglicht.
 \newpage
 
-\section*{Abstract\\Model-Based Design and Embedded Implementation of a Multivariable Controller for a Balancing Cube} \label{Abstract}
-Hello
+\section*{Abstract\\
+\begin{center}Model-Based Design and Embedded Implementation of a Multivariable Controller for a Balancing Cube\end{center}} \label{Abstract}
+The presented work focuses on the development of a multivariable controller  to make a cube balance on one of its corners. The first part presents the development of a controller to make the cube balance on one of its edges. First Kane's Method is used in order to obtain the equations of motion. These are transformed into a linear statespace presentation of the system. This model is used to design an LQR-based controller. Lastly the stability of the closed loop system is empirically proven.
+
+Afterwards the equations of motion for the cube standing on one of its corners are derived using Kane's method. Linearization in the operating point leads to a statespace representation of the system. Afterwards the non controll- and observeable subspaces of the system are analysed. Elimination of the corresponding states yields a minimal realisation of the systems which is used to design an LQ-based controller. While doing so the limitations of the motor torques have to be considered to avoid issues of directional change. This controller is tested on the plant and based on the empircal results the controller is further improved.
+
+The next part of this work presents a method for measuring the satevector. Obtaining the orientation of the cube states a difficult problem as the corresponding angles can not be measured. Therefor an algorithm is presented in order to estimate the angles based on the accelerationsignals. Additionally a complementary filter is implemented to reduce measurement noise.
+
+In the last part the implementation of the controller is examined. In this respect the goal is to develop a framework which may be reused for a variety of applications in mechatronics. This is achieved by introducing a component architecture which separates the major tasks of the application. One of these tasks handles both the control logic and algorithms of the different experiments. An approach, which is based on template-meta-programming, is presented in order to minimize the effort implementing these experiments. The second task consists of communicating with an application which is executed on a development plattform. This application holds a graphical user interface visualizing data from the experiments and allowing the user to configure the experiment during runtime.
 
 
 \cleardoublepage

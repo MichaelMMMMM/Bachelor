@@ -3,9 +3,7 @@
 % Nomenklatur
 %
 %==============================================================
-\chapter*{Nomenklatur%
-  \footnote{ das ist hier nur beispielhaft; es werden sonst nur (alle) tatsächlich genutzte Zeichen aufgeführt!\\
-	beim Sortieren: erst kleine, dann große Buchstaben.} }%
+\chapter*{Nomenklatur}
   \label{Nomenklatur}%
    % Die folgende Zeile erzwingt einen Eintag ins Inhaltsverz.
   \addcontentsline{toc}{chapter}{Nomenklatur}%
@@ -14,102 +12,60 @@
 \markright{Nomenklatur}
 \markleft{Nomenklatur}
 %\ohead[]{\headmark}
-%\begin{longtable}{p{3cm} p{2cm} p{\textwidth}}  % ACHTUNG Breite
-\begin{longtable}{p{0.15\textwidth} p{0.15\textwidth} p{0.6\textwidth}}  % ACHTUNG Breite 0.9
+\begin{longtable}{p{0.15\textwidth} p{0.75\textwidth}}  % ACHTUNG Breite 0.9
 %-----------------------------------------------
-\multicolumn{3}{l}{%
-\textbf{\textsf{\large Lateinische Formelzeichen}}
+\multicolumn{2}{l}{%
+\textbf{\textsf{\large Schreibeweise mathematischer Symbole}}
 }\\
-%-----------------------------------------------
-%
-%----Große Buchstaben----
-&&\\
-%----kleine Buchstaben----
-$g_i$                     & {m/s$^2$}       & Vektor der Schwerkraft    \\
-$k$                       & {m$^2$/s$^2$}   & turbulente kinetische Energie \\
-$l$                       &   m                & Längenmaß \\
-$\dot m$                  &   kg/s             & Massenstrom \\
-$p$                       &   N/m$^2$          & Druck \\
-$R$                      &   -                 &  Residuenmatrix   \\
-{\textbf{R}}             & kJ/(kmol K)         & Universelle Gaskonstante \\
-$s$ 										& 	{J/(kg~K)}         & spezifische Entropie \\
-$ S $                    & J/K                 & Entropie \\
-$S_{ij}$                 &   1/s               &  Scherrate   \\
-$t$                       &   s                & Zeit \\
-$ T $                    & K                   & Temperatur \\
-$u,v,w$                   &   m/s              & Geschwindigkeitskomponente \\
-                      & & \\ % LEERZEILE
-
-%----Griechische Buchstaben-----------------------------------------------------------------------
-\\
-\multicolumn{3}{l}{%
-\textbf{\textsf{\large Griechische Formelzeichen}}
- }\\
-$\alpha$                &    -                & allgemeine Zustandsgröße \\
-$\beta^*$               &    -                & Konstante des Turbulenzmodells \\
-$\xi$                   &    kg/kg            & Massenanteil\\
-$\sigma_i$              &    -                & Konstante des Turbulenzmodells \\
-$\tau_{ij}$             &    N/m$^2$          & Spannungstensor   \\
-$\omega$                &    1/s              & Frequenz der turbulenten Schwankung   \\
-$\Phi$                  &    -                & allgemeine Konstante des Turbulenzmodells   \\
-
- & & \\ 
-%--------------------------------------------------------------------------
-\\
-\multicolumn{3}{l}{%
-\textbf{\textsf{\large Indizes}}
+$\bs{a}$ & Vektor wird fett und klein geschrieben \\
+$\bs{a}^T$ & Transponierter von Vektor $\bs{a}$ \\
+$\bs{A}$ & Matrix wird fett und groß geschrieben \\
+$\bs{A}^T$ & Transponierte der Matrix $\bs{A}$ \\
+$\inProd{\bs{a}}{\bs{b}}$ & Skalarprodukt der Vektoren $\bs{a}$ und $\bs{b}$ \\
+                      &  \\ % LEERZEILE
+\multicolumn{2}{l}{%
+\textbf{\textsf{\large Symbole der technischen Mechanik}}
 }\\
-%-----------------------------------------------
-bulk                   & & mittlere Geschwindigkeit \\ 
-$i$                    & & Richtungsindex, Spezies \\ 
-$j$                    & & Summationsindex, Element \\ 
-$n$                    & & Zeitschritt \\
-t                      & & turbulent, total, tangential \\
-U                      & & Umgebung \\
-                       & & \\ %LEERZEILE
-%--------------------------------------------------------------------------
+$\vel{A}{v}{B}$ & Geschwindigkeit von $B$ relativ zu $A$ \\
+$\vel{A}{a}{B}$ & Beschleunigung von $B$ relativ zu $A$ \\
+$\vel{A}{\omega}{B}$ & Winkelgeschwindigkeit von $B$ relativ zu $A$ \\
+$\vel{A}{\alpha}{B}$ & Winkelbeschleunigung von $B$ relativ zu $A$ \\\
+$q$ & Generalisierte Koordinate \\
+$u$ & Generalisierte Geschwindigkeit \\
+$\vel{A}{v}{B}_i$ & Partielle Geschwindigkeit $i$ von $B$ relativ zu $A$ \\
+$\vel{A}{\omega}{B}_i$ & Partielle Winkelgeschwindigkeit $i$ von $B$ relativ zu $A$ \\
+$F$ & Generalisierte aktive Kraft \\
+$F^*$ & Generalisierte Trägheitskraft \\
+$\bs{T}^{A/B}$ & Auf $A$ wirkendes Drehmoment mit dem Drehpunkt $B$ \\
+$\bs{T}^{A/B}_*$ & Auf $A$ wirkendes Trägheitsmoment mit dem Drehpunkt $B$ \\
+$I$ & Trägheitsskalar bzw. Massenträgheitsmoment \\
+$\bs{I}$ & Trägheitstensor \\
 \newpage
-\multicolumn{3}{l}{%
-\textbf{\textsf{\large Besondere Zeichen}}
+\multicolumn{2}{l}{%
+\textbf{\textsf{\large Symbole der Regelungstechnik}}
 }\\
-%---------------------------------------------
-$\mathrm{d}$        & &      steiles d: vollständiges Differenzial\\  
-$\partial$   & &      partieller Differentialoperator\\
-$\Delta$     & &      Differenz\\
- $:=$         & &      definiert durch\\
-$\equiv$     & &      identisch\\
-$\propto$    & &      proportional\\
-$\approx$    & &      etwa \\
-(1.1)        & &      Gleichungsnummer, die erste Zahl gibt die\\
-             &&         Nummer des Kapitels an, die zweite Zahl ist fortlaufend im Kapitel\\
-$[12]$       & &      Nummer im Quellenverzeichnis\\             
-
- & & \\ % LEERZEILE
-
-%--------------------------------------------------------------------------
+\textfrak{S} & Zeitkontinuierliches System \\
+\textfrak{D} & Zeitdiskretes System \\
+$\bs{x}$	 & Zustandsvektor \\
+$\bs{u}$	 & Eingangsvektor \\
+$\bs{y}$     & Ausgangsvektor \\
+$\bs{A}$     & Systemmatrix \\
+$\bs{B}$	 & Eingangsmatrix \\
+$\bs{C}$	 & Ausgangsmatrix \\
+$\bs{K}$	 & Reglermatrix \\
+$\bs{L}$	 & Beobachtermatrix \\
+$\bs{0}^{i\times j}$ & Nullmatrix des Raumes $\mathbb{R}^{i\times j}$ \\
+$\bs{I}^{i\times i}$ & Einheitsmatrix des Raumes $\mathbb{R}^{i\times i}$ \\
 \\
-\multicolumn{3}{l}{%
-\textbf{\textsf{\large Dimensionslose Kennzahlen}}
+\multicolumn{2}{l}{%
+\textbf{\textsf{\large Abkürzungsverzeichnis}}
 }\\
-%---------------------------------------------
-$\mathit{Re} := w L /\nu$  & &   Reynolds-Zahl\\
- & & \\ % LEERZEILE
-
-%---------------------------------------------
-\\
-\multicolumn{3}{l}{%
-\textbf{\textsf{\large Abkürzungen\footnote{Abkürzungen, die bereits im Duden stehen, werden nicht aufgeführt. }}}
-}\\
-%---------------------------------------------
-
-HsKA     & & Hochschule Karlsruhe -- Technik und Wirtschaft\\
-IKKU     & & Institut für Kälte-, Klima- und Umwelttechnik\\
-IMP      & & Institute of Materials and Processes\\
-MMT      & & Maschinenbau und Mechatronik \\
-PDF      & & Portable Document Format \\ 
-RKS      & & Redlich-Kwong-Soave \\
-%SST      & & Shear Stress Transport \\
-%TKE      & & Turbulente Kinetische Energie \\
+SISO 		& Single-Input-Single-Output \\
+MIMO		& Multiple-Input-Multiple-Output \\
+SPI			& Serial Peripheral Interface \\
+CS			& Chip-Select \\
+ADC			& Analog-to-Digital Converter \\
+GPIO		& General Purpose Input/Output \\
 
 
 \end{longtable}

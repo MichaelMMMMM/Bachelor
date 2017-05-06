@@ -1,5 +1,7 @@
 \select@language {ngerman}
-\contentsline {chapter}{Nomenklatur}{xix}{chapter*.10}
+\contentsline {chapter}{Abbildungsverzeichnis}{xi}{chapter*.6}
+\contentsline {chapter}{Listings}{xiii}{chapter*.7}
+\contentsline {chapter}{Nomenklatur}{xv}{chapter*.8}
 \contentsline {chapter}{\numberline {1}Einleitung}{1}{chapter.1}
 \contentsline {chapter}{\numberline {2}Modellbildung W\IeC {\"u}rfel auf Kante}{3}{chapter.2}
 \contentsline {section}{\numberline {2.1}Untersuchung der Kinematik}{4}{section.2.1}
@@ -14,7 +16,7 @@
 \contentsline {chapter}{\numberline {4}Modellbildung W\IeC {\"u}rfel auf Ecke}{27}{chapter.4}
 \contentsline {section}{\numberline {4.1}Systemparameter}{28}{section.4.1}
 \contentsline {section}{\numberline {4.2}Untersuchung der Kinematik}{30}{section.4.2}
-\contentsline {section}{\numberline {4.3}Untersuchung der Kinetik}{34}{section.4.3}
+\contentsline {section}{\numberline {4.3}Untersuchung der Kinetik}{33}{section.4.3}
 \contentsline {chapter}{\numberline {5}Reglerentwurf f\IeC {\"u}r das Balancieren auf einer Ecke}{41}{chapter.5}
 \contentsline {section}{\numberline {5.1}Modell basierter Reglerentwurf}{42}{section.5.1}
 \contentsline {section}{\numberline {5.2}Untersuchung der Stellgr\IeC {\"o}\IeC {\ss }enbeschr\IeC {\"a}nkung}{48}{section.5.2}
@@ -33,3 +35,4 @@
 \contentsline {section}{\numberline {7.5}Entwurf der Kommunikationskomponente}{84}{section.7.5}
 \contentsline {section}{\numberline {7.6}Aufbau der Desktop-Anwendung}{86}{section.7.6}
 \contentsline {chapter}{\numberline {8}Zusammenfassung und Ausblick}{87}{chapter.8}
+\contentsline {chapter}{Literaturverzeichnis}{91}{chapter*.14}
