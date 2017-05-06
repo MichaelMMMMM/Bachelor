@@ -8,15 +8,31 @@
 
 \input{0_0_Deckblatt}
 \begin{document}
-
+\frontmatter
+\pagestyle{scrheadings}
+\clearscrheadfoot
+\setheadsepline{0pt}
+\setfootsepline{0pt}
 \maketitle
+\afterpage{\null\newpage}
 
+\include{0_0_Erklaerung}
+\include{0_0_Danksagung}
+\include{0_0_Kurzfassung_Abstract}
+\ohead{\pagemark}
 \tableofcontents
+\listoffigures\addcontentsline{toc}{chapter}{Tabellenverzeichnis}
+\chapter*{}\lstlistoflistings\label{Listings}
+\include{0_0_Nomenklatur}
 
-\include{0_1_Acronym}
-\include{0_2_Nomenclature}
-
-
+\mainmatter
+\pagestyle{scrheadings}
+\clearscrheadfoot
+\setfootsepline{1pt}
+\setheadsepline{1pt}
+\ohead{\pagemark}
+\ihead{\headmark}
+\automark[subsection]{section}
 \include{0_Introduction/Introduction}
 
 \include{1_TM_Edge/TM_EdgeBalancing}
