@@ -29,9 +29,9 @@
 \contentsline {chapter}{\numberline {7}Software}{65}{chapter.7}
 \contentsline {section}{\numberline {7.1}Zielplattform, Sensorik und Aktorik}{66}{section.7.1}
 \contentsline {section}{\numberline {7.2}Implementierung des Signalflusses}{69}{section.7.2}
-\contentsline {section}{\numberline {7.3}Komponentenarchitektur f\IeC {\"u}r mechatronische Anwendungen}{74}{section.7.3}
+\contentsline {section}{\numberline {7.3}Aufbau der Komponentenarchitektur}{74}{section.7.3}
 \contentsline {section}{\numberline {7.4}Entwurf der Regelungskomponente}{77}{section.7.4}
 \contentsline {section}{\numberline {7.5}Entwurf der Kommunikationskomponente}{84}{section.7.5}
 \contentsline {section}{\numberline {7.6}Aufbau der Desktop-Anwendung}{86}{section.7.6}
 \contentsline {chapter}{\numberline {8}Zusammenfassung und Ausblick}{87}{chapter.8}
-\contentsline {chapter}{Literaturverzeichnis}{91}{chapter*.38}
+\contentsline {chapter}{Literaturverzeichnis}{91}{chapter*.34}

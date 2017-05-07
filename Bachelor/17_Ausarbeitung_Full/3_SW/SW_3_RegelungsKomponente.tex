@@ -7,10 +7,10 @@ Prinzipiell lässt sich der logische Ablauf der Komponente mit einem einfachen Z
 \caption{Zustandsdiagramm der Kontrol-Komponente}
 \end{figure}
 
-Ein solches Zustandsdiagramm kann z.B. mit einer objektorientierten Adaption der Methode von Samek [Wie Kapitel14] implementiert werden. Hierbei werden Zustände als Methoden der FSM realisiert, wobei für Oberzustände eigene Klassen entworfen werden, die wiederum Methoden für die jeweiligen Unterzustände besitzen. Die Referenzierung des aktuellen Zustandes erfolgt über einen Funktionenzeiger, der auf die Methode des entsprechenden Zustandes gerichtet ist. 
+Ein solches Zustandsdiagramm kann z.B. mit einer objektorientierten Adaption der Methode von Samek (\cite{Wietzke1}, S. 246 ff.) implementiert werden. Hierbei werden Zustände als Methoden der FSM realisiert, wobei für Oberzustände eigene Klassen entworfen werden, die wiederum Methoden für die jeweiligen Unterzustände besitzen. Die Referenzierung des aktuellen Zustandes erfolgt über einen Funktionenzeiger, der auf die Methode des entsprechenden Zustandes gerichtet ist. 
 
 Als Basis der Typenhierachie dient die abstrakte Klasse \textit{AState}, welche den Zustandstypen als Methodenzeiger definiert, eine Standardimplementierung der \textit{dispatch()}-Methode vorgibt und statische Membervariablen deklariert um die Verarbeitung interner Events zu ermöglichen.
-\begin{lstlisting}[caption={Implementierung der abstrakten Zustandsklasse},captionpos=b]
+\begin{lstlisting}[caption={Abstrakte Basisklasse für die Zustände},captionpos=b]
 class AState
 {
 protected:
@@ -36,7 +36,7 @@ bool AState::dispatch(CMessage& msg)
 }
 \end{lstlisting} 
 
-Die auszuführenden Aktionen, wie z.B. die Berechnung des Regelkreises, werden in der Klasse \textit{CActionHandler} gekapselt. Dadurch erfolgt eine klare Trennung des Kontroll- und Signalflusses. Prinzipiell besitzt \textit{CActionHandler} Methoden, die jeweils beim Betreten und Verlassen der Zustände aufgerufen wird. Zusätzlich kann er um nötige Hilfsmethoden erweitert werden.
+Die auszuführenden Aktionen, wie z.B. die Berechnung des Regelkreises, werden in der Klasse \textit{CActionHandler} gekapselt (\cite{Wietzke1}, S. 225). Dadurch erfolgt eine klare Trennung des Kontroll- und Signalflusses. Prinzipiell besitzt \textit{CActionHandler} Methoden, die jeweils beim Betreten und Verlassen der Zustände aufgerufen wird. Zusätzlich kann er um nötige Hilfsmethoden erweitert werden.
 \begin{lstlisting}[caption={Beispielhafte Implementierung des Actionhandlers},captionpos=b]
 class CActionHandler
 {
@@ -58,8 +58,8 @@ private:
 	ConrnerBalacingSF mCornerBalacingSF;
 };
 \end{lstlisting}
-Für die Zeitgebung wird einer separater Timer-Task \textit{CTimerTask} verwendet, der von \textit{CActionHandler} verwaltet wird. Die Timerklasse kann mittels der Methoden \textit{pause()} und \textit{resume()} pausiert bzw. gestartet werden. Während der Ausführung schläft der Timer für eine konfigurierbare Abtastzeit und erzeugt anschließend über den Proxy ein \textit{TIMERTICK}-Event, welches an die Regelungskomponente weitergeleitet wird.
-\begin{lstlisting}[caption={Implementierung des Timer-Tasks},captionpos=b]
+Für die Zeitgebung wird einer separater Timer-Task \textit{CTimerTask} verwendet, der von \textit{CActionHandler} verwaltet wird. Die Timerklasse kann mittels der Methoden \textit{pause()} und \textit{resume()} pausiert bzw. gestartet werden. Während der Ausführung schläft der Timer für eine konfigurierbare Abtastzeit und erzeugt anschließend über den Proxy ein \textit{TimerTick}-Event, welches an die Regelungskomponente weitergeleitet wird.
+\begin{lstlisting}[caption={Aufbau des Timer-Tasks},captionpos=b]
 class CTimerTask : public IRunnable
 {
 public:
@@ -83,9 +83,9 @@ private:
 	CProxy*          mProxyPtr;
 };
 \end{lstlisting}
-Der Ansatz nach Samek bringt bei diesen Anwendungsfall einen Nachteil mit sich. Für die meisten Versuche genügt eine simple Kontrolllogik, weshalb diese meisten als einfacher Unterzustand realisiert werden. Das hat eine flache Zustandshierarchie zur Folge, die der Anzahl von Versuchen entsprechend breit ist. In der Implementierung resultiert hieraus eine Umfangreiche Klasse \textit{CFSM}, da diese für jeden Unterzustand um eine Methode erweitert wird. Ebenso nimmt der Umfang der Klasse \textit{CActionHandler} mit der Anzahl der Versuche kontinuierlich zu. Dieses Problem kann zwar durch die Aufteilung in mehrere Actionhandler vermieden werden, allerdings wird dadurch die Komplexität von \textit{CFSM} weiter erhöht. Diese Problematik wird dadurch verschärft, dass es sich bei der Zustandsmaschine um den Kern der Anwendung und somit kritischsten Abschnitt der Anwendung handelt. Die zu Grunde liegende Komponentenarchitektur wird zu Projektbeginn erstellt und danach kaum manipuliert. Die dagegen wird während des Projektsverlauf ständig manipuliert, weshalb eine unübersichtliche Implementierung besonders negativ auffällt. Deshalb wird im nächsten Schritte eine alternative Vorgehensweise vorgestellt, die sich die spezielle Struktur des Zustandsdiagrammes zu Nutze macht um eine übersichtliche Implementierung zu schaffen.
+Der Ansatz nach Samek bringt bei diesen Anwendungsfall einen Nachteil mit sich. Für die meisten Versuche genügt eine simple Kontrolllogik, weshalb diese als einfacher Unterzustand realisiert werden. Das hat eine flache Zustandshierarchie zur Folge, die der Anzahl von Versuchen entsprechend breit ist. In der Implementierung resultiert hieraus eine umfangreiche Klasse \textit{CFSM}, da diese für jeden Unterzustand um eine Methode erweitert wird. Ebenso nimmt der Umfang der Klasse \textit{CActionHandler} mit der Anzahl der Versuche kontinuierlich zu. Dieses Problem kann zwar durch die Aufteilung in mehrere Actionhandler vermieden werden, allerdings wird dadurch die Komplexität von \textit{CFSM} weiter erhöht. Diese Problematik wird dadurch verschärft, dass es sich bei der Zustandsmaschine um den Kern der Anwendung und somit kritischen Abschnitt der Anwendung handelt. Die zu Grunde liegende Komponentenarchitektur wird zu Projektbeginn erstellt und danach kaum manipuliert. Im Gegensatz dazu wird die Zustandmaschine während des Projektsverlaufes ständig verändert und erweitert, weshalb eine unübersichtliche Implementierung besonders negativ auffällt. Aus diesem Grund wird im nächsten Schritt eine alternative Vorgehensweise vorgestellt, die sich die spezielle Struktur des Zustandsdiagrammes zu Nutze macht um eine effiziente Implementierung zu schaffen.
 
-Zunächst sei angemerkt, dass es nicht möglich ist direkt zwischen zwei Versuchszuständen zu wechseln. Ein Versuchszustand kann nur aus dem Zustand \textit{Standby} betreten werden. Des weiteren wird nach dem Verlassen eines Versuchszustandes immer in \textit{Standby} gewechselt. Dadurch kann die Kontrolllogik der Zustandsmaschine verallgemeinert werden. Ist der momentane Unterzustand nicht \textit{Standby} und es trifft ein \textit{StopExperiment}-Event ein, so wird der Zustand verlassen und in \textit{Standby} gewechselt. Befindet sich die FSM in \textit{Standby} wird bei Eintreffen eines Events geprüft ob ein Zustandswechsel erfolgen muss. Diese Prüfung kann an die Zustände abgegeben werden. Somit stellt in diesem Fall die Zustandsmaschine lediglich eine Anfrage an alle Versuchszustände ob diese betreten werden möchten.
+Zunächst sei angemerkt, dass es nicht möglich ist direkt zwischen zwei Versuchszuständen zu wechseln. Ein Versuchszustand kann nur aus dem Zustand \textit{Standby} betreten werden. Des weiteren wird nach dem Verlassen eines Versuchszustandes immer in \textit{Standby} gewechselt. Dadurch kann die Kontrolllogik der Zustandsmaschine verallgemeinert werden. Ist der momentane Unterzustand nicht \textit{Standby} und es trifft ein \textit{StopExperiment}-Event ein, so wird der Zustand verlassen und in \textit{Standby} gewechselt. Befindet sich die FSM in \textit{Standby} wird bei Eintreffen eines Events geprüft ob ein Zustandswechsel erfolgen muss. Diese Prüfung kann an die Zustände abgegeben werden. Somit stellt die Zustandsmaschine in diesem Fall lediglich eine Anfrage an alle Versuchszustände ob diese betreten werden möchten.
 
 Die Implementierung der Zustandsmaschine setzt sich folglich aus einem \textit{Standby}-Zustand und einer Liste von Versuchszuständen zusammen. Um eine übersichtliche Codestruktur zu erhalten werden diese als Klassen entworfen, die von der abstrakten Basisklasse \textit{AState} erben.
 \begin{lstlisting}[caption={Angepasste Implementierung der abstrakten Zustandsklasse},captionpos=b]
@@ -114,9 +114,9 @@ bool CSensorCalibration::tryEntry(CMessage& msg, AState*& statePtr)
 	return false;
 }
 \end{lstlisting}
-Das zweite Argument ist eine Zeigerreferenz auf den Zustandsreiger der FSM. Falls ein zustand betreten werden soll überschreibt er die Referenz mit seinem this-Zeiger und gibt \textit{true} zurück um den Konsum des Events zu signalisieren. Die Methoden \textit{onEntry()} und \textit{onExit()} werden zum Betreten bzw. Verlassen des Zustandes verwendet. Um auch die auszuführenden Aktionen zu trennen, wird für jede Zustandsklasse ein Actionhandler implementiert. Diese erben von der Klasse \textit{CActionBase}, die gemeinsame Ressourcen als statische Membervariablen deklariert. Ein Beispiel wären hierfür Instanzen der Klassen \textit{CHardware} oder \textit{CTimerTask}.
+Das zweite Argument ist eine Zeigerreferenz auf den Zustandszeiger der FSM. Falls ein Zustand betreten werden soll überschreibt er die Referenz mit seinem this-Zeiger und gibt \textit{true} zurück um den Konsum des Events zu signalisieren. Die Methoden \textit{onEntry()} und \textit{onExit()} werden zum Betreten bzw. Verlassen des Zustandes verwendet. Um auch die auszuführenden Aktionen zu trennen, wird für jede Zustandsklasse ein Actionhandler implementiert. Diese erben von der Klasse \textit{CActionBase}, die gemeinsame Ressourcen als statische Membervariablen deklariert. Ein Beispiel wären hierfür Instanzen der Klassen \textit{CHardware} oder \textit{CTimerTask}.
 
-Um die Zustandsklassen zu einer Liste zusammenzufassen wird wieder eine lineare Templatehierachie verwendet. Hierfür müss zunächst ein Trägerobjekt \textit{TStateHolder} entworfen werden. 
+Um die Zustandsklassen zu einer Liste zusammenzufassen wird wieder eine lineare Typenhierarchie verwendet. Hierfür muss zunächst ein Trägerobjekt \textit{TStateHolder} entworfen werden. 
 \begin{lstlisting}[caption={Implementierung der Trägerklasse für Zustände},captionpos=b]
 template<class State, class Base>
 class TStateHolder : public Base
@@ -145,8 +145,8 @@ private:
 	State mState;
 };
 \end{lstlisting}
-Analog zu \textit{TActionHolder} wird mittels einer Templatespezialisierung unterschieden ob das Ende der Typenliste erreicht ist. Ist dies nicht der Fall wird zunächst geprüft ob der getragene Zustand betreten werden soll. Trifft dies nicht zu wird  die \textit{tryEntry()}-Methode des nächsten Elements in der Hierarchie aufgerufen. Ein Unterschied zu \textit{TActionHolder} ist, dass eine Komposition aus dem Zustandsobjekt verwendet wird. Dadurch werden die Methoden des Zustandes geschützt. Die FSM kann lediglich auf den, über den Zustandszeiger referenzierten, Zustand zugreifen.
-Die Implementierung der Zustandsmaschine basiert ebenfalls auf einem Template, welchem die Typenliste der Versuchszustände übergeben wird. Des weiteren erbt die Templateklasse von \textit{AState} um zugriff auf die interne Queue zu erhalten.
+Analog zu \textit{TActionHolder} wird mittels einer Templatespezialisierung unterschieden ob das Ende der Typenliste erreicht ist. Ist dies nicht der Fall wird zunächst geprüft ob der getragene Zustand betreten werden soll. Trifft dies nicht zu wird  die \textit{tryEntry()}-Methode des nächsten Elements in der Hierarchie aufgerufen. Ein Unterschied zu \textit{TActionHolder} ist, dass eine Komposition aus dem Zustandsobjekt verwendet wird. Dadurch werden die Methoden des Zustandes geschützt. Die FSM kann lediglich auf den, über ihren Zustandszeiger referenzierten, Zustand zugreifen.
+Die Implementierung der Zustandsmaschine basiert ebenfalls auf einem Template, welchem die Typenliste der Versuchszustände übergeben wird. Des weiteren erbt die Templateklasse von \textit{AState} um Zugriff auf die interne Queue zu erhalten.
 \begin{lstlisting}[caption={Implementierung der Templateklasse für die Zustandsmaschine},captionpos=b]
 template<class StateList>
 class TFSM : public AState
@@ -164,7 +164,7 @@ private:
 	CAction                mAction;
 };
 \end{lstlisting}
-Neben dem Interface von \textit{AState} besitzt die Klasse zwei weitere Methoden. Wobei die erste den Zustand \textit{Standby} repräsentiert. Die zweite Methode wird genutzt um nicht konsumierte Events, was für gewöhnlich einem Fehlverhalten der FSM entspricht, abfängt. Zunächst wird die \textit{dispatch()}-Methode betrachtet. Hier wird zunächst der aktuelle Unterzustand aufgerufen. Falls das Ereignis nicht konsumiert und es sich um \textit{StopExperiment} handelt, wird der aktuelle Unterzustand verlassen und in \textit{Standby gewechselt}. Zuletzt wird die interne Queue abgearbeitet.
+Neben dem Interface von \textit{AState} besitzt die Klasse zwei weitere Methoden. Wobei die erste den Zustand \textit{Standby} repräsentiert. Die zweite Methode wird genutzt um nicht konsumierte Events, was für gewöhnlich einem Fehlverhalten der FSM entspricht, abfängt. Zunächst wird die \textit{dispatch()}-Methode betrachtet. Zu Beginn wird der aktuelle Unterzustand aufgerufen. Falls das Ereignis nicht konsumiert wird und es sich um \textit{StopExperiment} handelt, wird der aktuelle Unterzustand verlassen und in \textit{Standby gewechselt}. Zuletzt wird die interne Queue abgearbeitet.
 \begin{lstlisting}[caption={Definition der Methode \textit{dispatch()}},captionpos=b]
 template<class StateList>
 bool TFSM<StateList>::dispatch(CMessage& msg)
@@ -228,7 +228,7 @@ using StateList  = TYPELIST_4(CSensorCalib, CADCCalib,
 using ControlFSM = TFSM<StateList>;
 ControlFSM myFSM;
 \end{lstlisting}
-Sollen weitere Zustände hinzugefügt oder entfernt werden muss lediglich die Typdefinition von \textit{StateList} angepasst werden. Um Coderedundanzen zu vermeiden kann für die Unterzustände auch eine Templateklasse entworfen werden, die das Eintrittsereignis und den Actionhandler als Parameter entgegenimmt. Die Unterzustände spezialisieren dann lediglich die Methoden \textit{dispatch()}, \textit{onEntry()} und \textit{onExit()}.
+Sollen weitere Zustände hinzugefügt oder entfernt werden muss lediglich die Typdefinition von \textit{StateList} angepasst werden. Um Coderedundanzen zu vermeiden kann für die Unterzustände auch eine Templateklasse entworfen werden, die das Eintrittsereignis und den Actionhandler als Parameter entgegennimmt. 
 \begin{lstlisting}[caption={Templateklasse für einfache Versuchszustände},captionpos=b]
 /* TSubState.h */
 template<const EEvent entryEvent, class Action>
@@ -251,7 +251,7 @@ private:
 	Action mAction;
 };
 \end{lstlisting}
-
+Die Unterzustände spezialisieren dann lediglich die Methoden \textit{dispatch()}, \textit{onEntry()} und \textit{onExit()}, wie das folgende Beispiel zeigt.
 \begin{lstlisting}[caption={Beispielhafte Instantiierung des Versuchstemplate},captionpos=b]
 /* CADCCalib.cpp */
 using CADCCalib = TSubState<EEvent::RunADCCalib, CADCCalibAction>;
