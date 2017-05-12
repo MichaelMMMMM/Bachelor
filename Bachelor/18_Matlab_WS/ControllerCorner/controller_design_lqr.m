@@ -20,10 +20,10 @@ K_fixed(3,6) = K_fixed(3,6)*2;
 qDiag = [1;1;1;1;1;1;1];
 KKd = dlqr(KSSd.A, KSSd.B, diag(qDiag)*7e-4, R);
 Kd  = KKd * [eye(7), zeros(7,2)]/T_K;
-Kd(:,3) = Kd(:,3) * 2;
-Kd(1,4) = Kd(1,4) * 2;
-Kd(2,5) = Kd(2,5) * 2;
-Kd(3,6) = Kd(3,6) * 2;
+Kd(:,3) = Kd(:,3) * 1.8;
+Kd(1,4) = Kd(1,4) * 1.8;
+Kd(2,5) = Kd(2,5) * 1.8;
+Kd(3,6) = Kd(3,6) * 1.8;
 KKTest = [KKd, ones(3,1)*0.5];
 
 csvwrite('config/Corner_Kd.csv', Kd);

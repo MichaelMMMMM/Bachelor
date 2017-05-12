@@ -73,28 +73,6 @@ bool CADCMMap::readADCValues(UInt16& adc1, UInt16& adc2, UInt16& adc3, bool wait
 				default:
 					break;
 				}
-//				switch(id)
-//				{
-//				case sChannel1ID:
-//				{
-//					adc1 = value;
-//					break;
-//				}
-//				case sChannel2ID:
-//				{
-//					adc2 = value;
-//					break;
-//				}
-//				case sChannel3ID:
-//				{
-//					adc3 = value;
-//					break;
-//				}
-//				default:
-//				{
-//					break;
-//				}
-//				}
 			}
 		}
 	}while( (finished == false) && (wait == true));
