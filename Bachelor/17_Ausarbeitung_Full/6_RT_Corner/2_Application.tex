@@ -2,9 +2,9 @@
 Der nächste Schritt besteht darin die Ergebnisse der letzten Abschnitte an der Regelstrecke zu erproben. Hierfür wird der in der Simulation optimierte Regler verwendet. Dieser führt zu den Eigenwerten
 \begin{equation}
 \begin{split}
-\lambda_1 = 1 \hspace{15pt} \lambda_2 = 0{,}7714 \hspace{15pt} &\lambda_3 = 0{,}7767 \hspace{15pt} \lambda_4 = 0{,}8454
+\lambda\idx1 = 1 \hspace{15pt} \lambda\idx2 = 0{,}7714 \hspace{15pt} &\lambda\idx3 = 0{,}7767 \hspace{15pt} \lambda\idx4 = 0{,}8454
 \\
-\lambda_{5,6} = 0{,}8524\pm0{,}0014j \hspace{15pt} &\lambda_{7,8} = 0{,}8543 \hspace{15pt} \lambda_9 = 1 \,.
+\lambda\idx{5,6} = 0{,}8524\pm0{,}0014j \hspace{15pt} &\lambda\idx{7,8} = 0{,}8543 \hspace{15pt} \lambda\idx9 = 1 \,.
 \end{split}
 \label{eq_ew1_corner}
 \end{equation}
@@ -21,7 +21,7 @@ Die folgenden Abbildung zeigen den Verlauf der Zustandsgrößen und der Stellgr�
 \end{figure}
 Das Experiment zeigt, dass der Regler den Würfel auf einer Ecke stabilisiert. Allerdings ist das System nicht asymptotisch stabil sondern oszilliert mit einer konstanten Amplitude. Eine mögliche Erklärung für diese Verhalten liegt in der Modellgüte. Um die Direktionalitätsproblematik zu lösen wurde ein Regler gewählt, welcher die Eigenwerte des geschlossenen Kreises nahe an den Einheitskreis legt. Sind nun die Systemparameter des Modells fehlerbehaftet ist es möglich, dass die Eigenwerte des realen Regelkreises weiter  an den Einheitskreis rücken. In diesem Fall können bereits kleinen Anregungen wie z.B. ein in dem Modell nicht erfasstes System- oder Messrauschen zu einer verbleibenden Schwingung führen. Des weiteren ist der Einfluss der Nichtlinearitäten zu nennen, welche die Auswirkungen der Modellungenauigkeiten zusätzlich beeinflussen können. 
 
-Um die Reglergüte zu verbessern werden zunächst die Versuchsergebnisse betrachtet. Besonders deutlich ist einerseits die Schwingung des Winkels $\varphi_3$. Des weiteren sind die Signale $u_{Ki}(t)$ nahezu identisch. Dies entspricht einer Rotation des Würfels um seine Raumdiagonale. Um diese Oszillationen zu dämpfen werden einzelne Elemente der Reglermatrix schrittweise erhöht und die Veränderung empirisch überprüft. Die veränderten Elemente sind einerseits die Spalte $\bs{K}(:,3)$, welche den Einfluss des Winkels $\varphi_3$ auf den Regler wiedergibt. Andererseits werden die Elemente $\bs{K}(1,4)$, $\bs{K}(2,5)$ und $\bs{K}(3,6)$ erhöht, welche den Einfluss der Winkelgeschwindigkeit in Richtung der Raumdiagonalen wiedergeben. Die Erhöhung dieser Elemente führt dazu, dass die Eigenwerte der zugehörigen Eigenbewegungen näher an den Ursprung gerückt werden. Die folgenden Abbildungen zeigen das Verhalten des geschlossenen Regelkreises, wobei die genannten Elemente der Reglermatrix um den Faktor zwei erhöht wurden.
+Um die Reglergüte zu verbessern werden zunächst die Versuchsergebnisse betrachtet. Besonders deutlich ist einerseits die Schwingung des Winkels $\varphi\idx3$. Des weiteren sind die Signale $u_{\text{K}i}(t)$ nahezu identisch. Dies entspricht einer Rotation des Würfels um seine Raumdiagonale. Um diese Oszillationen zu dämpfen werden einzelne Elemente der Reglermatrix schrittweise erhöht und die Veränderung empirisch überprüft. Die veränderten Elemente sind einerseits die Spalte $\bs{K}(:,3)$, welche den Einfluss des Winkels $\varphi\idx3$ auf den Regler wiedergibt. Andererseits werden die Elemente $\bs{K}(1,4)$, $\bs{K}(2,5)$ und $\bs{K}(3,6)$ erhöht, welche den Einfluss der Winkelgeschwindigkeit in Richtung der Raumdiagonalen wiedergeben. Die Erhöhung dieser Elemente führt dazu, dass die Eigenwerte der zugehörigen Eigenbewegungen näher an den Ursprung gerückt werden. Die folgenden Abbildungen zeigen das Verhalten des geschlossenen Regelkreises, wobei die genannten Elemente der Reglermatrix um den Faktor zwei erhöht wurden.
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.45\textwidth]{img/exp2_phi.eps}

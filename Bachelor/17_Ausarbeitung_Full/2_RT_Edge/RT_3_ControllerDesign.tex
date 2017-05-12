@@ -8,12 +8,12 @@ Der Grundgedanke der Zustandsregelung besteht darin den vollständigen Zustandsv
 \includegraphics[width=0.8\linewidth, trim={3.5cm 3.5cm 3.5cm 3.5cm}, clip]{img/RT_ClosedLoop}
 \caption{Signalfluss des geschlossenen Regelkreises, Quelle: eigene Darstellung}
 \end{figure}
-Aus der Abbildung gehen die Systemgleichungen des geschlossenen Regelkreises \dSS{\overline{A}}{0}{\overline{C}} hervor.
+Aus der Abbildung gehen die Systemgleichungen des geschlossenen Regelkreises $\overline{\textfrak{D}}$($\overline{\bs{A}}$,$\bs{0}$, $\overline{\bs{C}}$) hervor.
 \begin{equation}
 \bs{u}(k) = -\bs{B}\bs{K}\cdot\bs{x}(k)
 \end{equation}
 \begin{equation}
-\textfrak{D}_g
+\overline{\textfrak{D}}
 : \left\{ \begin{array}{ll}
 \bs{{x}}(k+1) &= \bs{A}\cdot \bs{x}(k) - \bs{B}\bs{K}\cdot \bs{x}(k) = \underbrace{(\bs{A}-\bs{B}\bs{K})}_{\equiv \bs{\overline{A}}}\cdot \bs{x}(k) \\
 \bs{y}(k) &= \underbrace{\bs{C}}_{\equiv \bs{\overline{C}}}\cdot \bs{x}(k)
@@ -26,7 +26,7 @@ Die Reglermatrix $\bs{K}$ ist nun so zu entwerfen, dass die gewünschten Eigensc
 0 & 1 & 0 & \hdots & 0 \\
 0 & 0 & 1 & \hdots & 0 \\
 \vdots & \vdots & \vdots & \ddots & \vdots \\
--a_0 & -a_1 & -a_2 & \hdots & -a_{n-1}
+-a\idx0 & -a\idx1 & -a\idx2 & \hdots & -a_{n-1}
 \end{bmatrix}
 \hspace{35pt}
 \bs{b} = \begin{bmatrix}
@@ -35,7 +35,7 @@ Die Reglermatrix $\bs{K}$ ist nun so zu entwerfen, dass die gewünschten Eigensc
 \end{equation}
 Diese Darstellung heißt Regelungsnormalform und kann mittels einer Zustandstransformation erreicht werden. Diese Transformation wird hier nicht näher erläutert, da das Verfahren lediglich als Beispiel der Zustandsregelung dienen soll.\footnote{Die Bestimmung der Transformationsmatrix und der Erweiterung des Entwurfsverfahren durch Eigenwertvorgabe kann in (RT2, Lunze, S. 245) nachgelesen werden.} Der besondere Vorteil der Regelungsnormalform besteht darin, dass die Werte $a_i$ die Koeffizienten des charakteristischen Polynoms 
 \begin{equation}
-det(\lambda\cdot \bs{I}-\bs{A}) = \prod^n_{i=1} (\lambda-\lambda_i) = \lambda^n+a_{n-1}\cdot \lambda^{n-1} + \hdots + a_1\cdot \lambda + a_0
+\text{det}(\lambda\cdot \bs{I}-\bs{A}) = \prod^n_{i=1} (\lambda-\lambda_i) = \lambda^n+a_{n-1}\cdot \lambda^{n-1} + \hdots + a\idx1\cdot \lambda + a\idx0
 \end{equation}
 der Systemmatrix $\bs{A}$ sind. Wird der Regelkreis über den Reglervektor
 \begin{equation}
@@ -46,32 +46,32 @@ k_1 & k_2 & \hdots & k_n
 geschlossen, ergibt sich sich die  Systemmatrix $\bs{\overline{A}}$ des geschlossenen Regelkreises
 \begin{equation}
 \begin{split}
-\bs{A_g} = \bs{A}-\bs{b}\bs{k} &= \begin{bmatrix}
+\bs{\overline{A}} = \bs{A}-\bs{b}\bs{k} &= \begin{bmatrix}
 0 & 1 & 0 & \hdots & 0 \\
 0 & 0 & 1 & \hdots & 0 \\
 \vdots & \vdots & \vdots & \ddots & \vdots \\
--a_0 & -a_1 & -a_2 & \hdots & -a_{n-1}
+-a\idx0 & -a\idx1 & -a\idx2 & \hdots & -a_{n-1}
 \end{bmatrix}
 -
 \begin{bmatrix}
 0 & 0 & 0 & \hdots & 0 \\
 0 & 0 & 0 & \hdots & 0 \\
 \vdots & \vdots & \vdots &  \ddots & \vdots \\
-k_1 & k_2 & k_3 & \hdots & k_n
+k\idx1 & k\idx2 & k\idx3 & \hdots & k_n
 \end{bmatrix}
 \\
 &= \begin{bmatrix}
 0 & 1 & 0 & \hdots & 0 \\
 0 & 0 & 1 & \hdots & 0 \\
 \vdots & \vdots & \vdots & \ddots & \vdots \\
--\overline{a}_0 & -\overline{a}_1 & -\overline{a}_2 & \hdots & -\overline{a}_{n-1}
+-\overline{a}\idx0 & -\overline{a}\idx1 & -\overline{a}\idx2 & \hdots & -\overline{a}_{n-1}
 \end{bmatrix}
 \hspace{25pt} \vert \hspace{15pt} \overline{a}_i = a_i + k_{i+1} \,.
 \end{split}
 \end{equation}
 Die Systemmatrix $\bs{\overline{A}}$ des geschlossenen Regelkreises liegt nun ebenfalls in Regelungsnormalform vor, weshalb wiederum für deren charakteristisches Polynom
 \begin{equation}
-det(\lambda\cdot \bs{I}-\bs{A_g}) = \prod^n_{i=1} (\lambda-\overline{\lambda}_i) = \lambda^n+\overline{a}_{n-1}\cdot \lambda^{n-1} + \hdots + \overline{a}_1\cdot \lambda + \overline{a}_0
+\text{det}(\lambda\cdot \bs{I}-\bs{\overline{A}}) = \prod^n_{i=1} (\lambda-\overline{\lambda}_i) = \lambda^n+\overline{a}_{n-1}\cdot \lambda^{n-1} + \hdots + \overline{a}\idx1\cdot \lambda + \overline{a}\idx0
 \label{eq_ew_gRK}
 \end{equation}
 gilt. Werden nun die Eigenwerte $\overline{\lambda}_i$ des geschlossenen Regelkreises vorgegeben können durch (\ref{eq_ew_gRK}) die Koeffizienten $\overline{a}_i$ berechnet werden. Die Koeffizienten $a_i$ der Regelstrecke werden aus der Matrix $\bs{A}$ abgelesen werden. Somit können aus der Beziehung
@@ -105,7 +105,7 @@ Dennoch wird das Entwurfsverfahren in dieser Arbeit nicht verwendet. Die Gründe
 \subsection{Linear quadratisch optimale Regelung}
 Im vorherigen Abschnitt wurden die Nachteile der Eigewertvorgabe aufgezeigt, weshalb hier der Entwurf eines linear quadratisch optimalen Reglers vorgestellt und an der realen Regelstrecke appliziert wird. Der Grundgedanke der optimalen Regelung ist es ein Regelgesetz zu entwerfen, welches zu einem geschlossenen Regelkreis führt, der im Sinne eines Gütekriteriums optimal ist. Hier wird das linear quadratische Gütekriterium
 \begin{equation}
-J = \sum^{\infty}_{k=0} [\bs{x}^T(k)\cdot \bs{Q} \cdot \bs{x}(k) + \bs{u}^T(k)\cdot \bs{R}\cdot \bs{u}(k)]
+J = \sum^{\infty}_{k=0} \left[\bs{x}^T(k)\cdot \bs{Q} \cdot \bs{x}(k) + \bs{u}^T(k)\cdot \bs{R}\cdot \bs{u}(k)\right]
 \end{equation}
 verwendet. Die Matrizen $\bs{Q}$ und $\bs{R}$ dienen der Gewichtung des Zustands- bzw. Stellvektors und müssen positiv semidefinit bzw. definit sein. Durch die Gewichtungsmatrizen ist es möglich Forderung an den ursprünglichen Zustands- und Stellvektor direkt in den Reglerentwurf einfließen zu lassen. Der letztendliche Regler ergibt sich aus der Lösung des Optimierungsproblems, dass $J$ minimal wird. Nach [Ludyk, S.177] gilt für die Reglermatrix
 \begin{equation}
@@ -120,14 +120,14 @@ bestimmt wird. Ähnlich wie bei dem Entwurf durch Eigenwertvorgabe besteht ein V
 Hierfür müssen zunächst die Begriffe der Steuerbarkeit und Beobachtbarkeit erklärt werden. Bei einem vollständig steuerbaren System kann, durch eine passende Wahl des Stellvektors $\bs{u}$, der Zustandsvektor $\bs{x}$ in einen beliebigen Wert überführt werden. Zum Beispiel ist ein SISO-System in kanonischer Normalform mit einfachen Eigenwerten steuerbar, wenn alle Elemente $b_{i}$ des Einganvektors $\bs{\tilde{b}}$ ungleich null sind. Ist eines der Elemente $b_{i}$ gleich null kann der zugehörige Zustand $\tilde{x}_i$ nicht durch die Eingangsgröße beeinflusst werden und ist somit nicht steuerbar. Folglich kann auch dieser Eigenwert durch einen Regler nicht beeinflusst werden. Die Definition der Steuerbarkeit lautet:
 
 \begin{quote}
-"\ Ein System $\Sigma$ heißt vollständig steuerbar, wenn es in endlicher Zeit $t_e$ von jedem beliebigen Anfangszustand $\bs{x}_0$ durch eine geeignet gewählte Eingangsgröße $\bs{u}_{[0,t_e]}$ in einen beliebig vorgegebenen Endzustand $\bs{x}(t_e)$ überführt werden kann."
+\glqq Ein System $\Sigma$ heißt vollständig steuerbar, wenn es in endlicher Zeit $t_e$ von jedem beliebigen Anfangszustand $\bs{x}_0$ durch eine geeignet gewählte Eingangsgröße $\bs{u}_{[0,t_e]}$ in einen beliebig vorgegebenen Endzustand $\bs{x}(t_e)$ überführt werden kann.\grqq
 \signed{LunzeRT2, S. 64}
 \end{quote}
 
 Umgekehrt beschreibt die Beobachtbarkeit die Möglichkeit den Zustandsvektor eines Systems aus dem Verlauf des Eingang- und Ausgangvektors zu rekonstruieren.
 
 \begin{quote}
-"\ Ein System $\Sigma = (\bs{A},\bs{B},\bs{C})$ hießt vollständig beobachtbar, wenn der Anfangszustand $\bs{x}_0$ aus dem über einem endlichen Intervall $[0,t_e]$ bekannten Verlauf der Eingangsgröße $\bs{u}_{[0,t_e]}$ und der Ausgangsgröße $\bs{y}_{[0,t_e]}$ bestimmt werden kann. "
+\glqq Ein System $\Sigma = (\bs{A},\bs{B},\bs{C})$ hießt vollständig beobachtbar, wenn der Anfangszustand $\bs{x}_0$ aus dem über einem endlichen Intervall $[0,t_e]$ bekannten Verlauf der Eingangsgröße $\bs{u}_{[0,t_e]}$ und der Ausgangsgröße $\bs{y}_{[0,t_e]}$ bestimmt werden kann.\grqq
 \signed{LunzeRT2, S. 92}
 \end{quote}
 

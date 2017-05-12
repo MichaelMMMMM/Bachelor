@@ -4,26 +4,26 @@ Bisher wurden ausschließlich zeitkontinuierliche Systeme betrachtet. Allerdings
 \textfrak{D} : \left\{ \begin{array}{ll}
 \bs{{x}}(k+1) = \bs{A_d}\cdot \bs{x}(k) + \bs{B_d}\cdot \bs{u}(k) \\
 \bs{y}(k) = \bs{C_d}\cdot \bs{x}(k)
-\end{array}
+\end{array}\,.
 \right.
 \label{eq_discrete_ss}
 \end{equation}
 Die Ergebnisse aus dem vorherigen Abschnitt können auf diskrete Systeme übertragen werden. Hierfür wird zunächst die Z-Transformierte der Systemgleichung betrachtet.
 \begin{align}
-\bs{x}(k+1) &= \bs{A}\cdot \bs{x}(k)+\bs{B}\cdot \bs{u}(k)
+\bs{x}(k+1) &= \bs{A}\idx{d}\cdot \bs{x}(k)+\bs{B}\idx{d}\cdot \bs{u}(k)
 \nonumber
-\\ \myLaplace  &z\cdot \left[\bs{x}(z)- \bs{x}(t=0)\right] = \bs{A_d}\cdot \bs{x}(z) + \bs{B_d}\cdot \bs{u}(z) \nonumber
+\\ \myLaplace  &z\cdot \left[\bs{x}(z)- \bs{x}(t=0)\right] = \bs{A}\idx{d}\cdot \bs{x}(z) + \bs{B}\idx{d}\cdot \bs{u}(z) \nonumber
 \\
 \hspace{15pt}\leftrightarrow\hspace{20pt}
-&(z\cdot\bs{I}-\bs{A_d})\bs{x}(z) = z\cdot \bs{x}(t=0)+\bs{B_d}\cdot \bs{u}(z) \nonumber
+&(z\cdot\bs{I}-\bs{A}\idx{d})\bs{x}(z) = z\cdot \bs{x}(t=0)+\bs{B}\idx{d}\cdot \bs{u}(z) \nonumber
 \\
 \hspace{15pt}\leftrightarrow\hspace{20pt}
-&\bs{x}(z) = \underbrace{(z\cdot\bs{I}-\bs{A_d})^{-1}}_{\equiv \bs{\Phi_d}(z)}\cdot z\cdot \bs{x}(t=0) + (z\cdot \bs{I}-\bs{A_d})^{-1}\bs{B_d}\cdot \bs{u}(z)
+&\bs{x}(z) = \underbrace{(z\cdot\bs{I}-\bs{A}\idx{d})^{-1}}_{\equiv \bs{\Phi}\idx{d}(z)}\cdot z\cdot \bs{x}(t=0) + (z\cdot \bs{I}-\bs{A}\idx{d})^{-1}\bs{B}\idx{d}\cdot \bs{u}(z)
 \end{align}
 \begin{equation}
-\bs{y}(z) = \bs{C_d}\cdot \bs{x}(z) = \underbrace{\bs{C_d}\bs{\Phi_d}(z)\bs{B_d}}_{\equiv \bs{G_d}(z)}\cdot \bs{u}(z)
+\bs{y}(z) = \bs{C}\idx{d}\cdot \bs{x}(z) = \underbrace{\bs{C}\idx{d}\bs{\Phi}\idx{d}(z)\bs{B}\idx{d}}_{\equiv \bs{G}\idx{d}(z)}\cdot \bs{u}(z)
 \end{equation}
-An Hand der obigen Gleichungen ist leicht zu erkennen, dass sowohl die Fundamentalmatrix $\bs{\Phi_d}(z)$ als auch die Übertragungsfunktionmatrix $\bs{G_d}(z)$ analog zu zeitkontinuierlichen Systemen berechnet wird. Deshalb behalten die Eigenwerte und -vektoren der Systemmatrix $\bs{A_d}$ ihre Bedeutung für die Systemenanalyse. Lediglich die Interpretation muss durch den Zusammenhang der Laplace- und Z-Transformation angepasst werden.
+An Hand der obigen Gleichungen ist leicht zu erkennen, dass sowohl die Fundamentalmatrix $\bs{\Phi}\idx{d}(z)$ als auch die Übertragungsfunktionmatrix $\bs{G}\idx{d}(z)$ analog zu zeitkontinuierlichen Systemen berechnet wird. Deshalb behalten die Eigenwerte und -vektoren der Systemmatrix $\bs{A}\idx{d}$ ihre Bedeutung für die Systemenanalyse. Lediglich die Interpretation muss durch den Zusammenhang der Laplace- und Z-Transformation angepasst werden.
 \begin{equation}
 z = e^{T\cdot s} \hspace{35pt} s = \sigma + j\cdot \omega
 \end{equation}
@@ -34,7 +34,7 @@ z = e^{T\cdot s} \hspace{35pt} s = \sigma + j\cdot \omega
 Stabilitätsbedingung für kontinuierliche Systeme ist, dass die Realteile aller Eigenwerte $\lambda_i$ negativ sind. Aus (\ref{eq_abs_z}) folgt, dass der Betrag der diskreten Eigenwerte im Einheitskreis liegen muss, damit diese Forderung erfüllt ist. Des weiteren führen diskrete Eigenwerte, die nahe am Ursprung liegen, zu einer schnelleren Systemdynamik. Somit bringt Zustandsraumdarstellung für diskrete Systeme die gleichen Vorteile mit sich wie bei zeitkontinuierlichen Systemen.
 Allerdings handelt es sich bei der Regelstrecke nach wie vor um ein kontinuerliches System, lediglich der Regler stellt ein diskretes System dar. Die Schnittstelle zwischen der kontinuierlichen Strecke und dem diskreten Regler ist einerseits ein Abtastglied, welches den Zustandsvektors $\bs{x}(t)$ in die Zahlenfolge $\bs{x}(k)$ überführt. Andererseits wird die Folge der Stellgröße $\bs{u}(k)$ mit Hilfe eines Halteglieds nullter Ordnung als eine kontinuierliche Treppenfunktion moduliert.
 
-Um den geschlossenen Regelkreis einheitlich zu beschreiben, muss deshalb die kontinuierliche Zustandsarumdarstellung der Regelstrecke in eine diskrete transformiert werden. Hierzu wird zunächst die Lösung eines kontinuierlichen Systems \cSS{A}{B}{C} betrachtet.\footnote{Die folgende Herleitung und Erklärung ist nach ([RT2, Unbehauen, S. 170 f.) paraphrasiert.} Herleitung aus [RT2, Unbehauen]
+Um den geschlossenen Regelkreis einheitlich zu beschreiben, muss deshalb die kontinuierliche Zustandsarumdarstellung der Regelstrecke in eine diskrete transformiert werden. Hierzu wird zunächst die Lösung eines kontinuierlichen Systems \cSS{A}{B}{C} betrachtet.\footnote{Die folgende Herleitung und Erklärung ist nach ([RT2, Unbehauen, S. 170 f.) paraphrasiert.}
 \begin{equation}
 \bs{x}(t) = e^{\bs{A}\cdot t}\cdot \bs{x}(t_0) + \int^t_0 e^{\bs{A}(t-\tau)}\bs{B}\cdot \bs{u}(\tau)d\tau
 \end{equation}
@@ -49,13 +49,13 @@ Um das Integral zu lösen muss der Verlauf von $\bs{u}$ zwischen den Abtastpunkt
 \begin{equation}
 \bs{u}(kT+t) = \bs{u}(kT) \hspace{35pt} \vert \hspace{15pt} 0 \leqslant t < T
 \end{equation}
-Die Lösung des Integrals führt auf:
+Die Lösung des Integrals führt auf
 \begin{equation}
-\bs{x}([k+1]T) = e^{\bs{A}T}\cdot \bs{x}(kT) + e^{\bs{A}T}(\bs{I}-e^{-\bs{A}T})\bs{A}^{-1}\bs{B}\cdot \bs{u}(kT)
+\bs{x}([k+1]T) = e^{\bs{A}T}\cdot \bs{x}(kT) + e^{\bs{A}T}(\bs{I}-e^{-\bs{A}T})\bs{A}^{-1}\bs{B}\cdot \bs{u}(kT)\,.
 \end{equation}
-Diese Lösung stellt den Zusammenhang zwischen der kontinuierlichen und diskreten Zustandsraumdarstellung dar. Wobei der Vergleich mit (\ref{eq_discrete_ss}) folgenden Werte für die Matrizen des diskreten Systems \dSS{A_d}{B_d}{C_d} liefert.
+Diese Lösung stellt den Zusammenhang zwischen der kontinuierlichen und diskreten Zustandsraumdarstellung dar. Wobei der Vergleich mit (\ref{eq_discrete_ss}) folgenden Werte für die Matrizen des diskreten Systems \dSS{A\idx{d}}{B\idx{d}}{C\idx{d}} liefert.
 \begin{equation}
-\bs{A_d} = e^{\bs{A}T} \hspace{35pt} \bs{B_d} = (e^{\bs{A}T}-\bs{I})\bs{A}^{-1}\bs{B} \hspace{35pt} \bs{C_d} = \bs{C}
+\bs{A}\idx{d} = e^{\bs{A}T} \hspace{35pt} \bs{B}\idx{d} = (e^{\bs{A}T}-\bs{I})\bs{A}^{-1}\bs{B} \hspace{35pt} \bs{C}\idx{d} = \bs{C}
 \end{equation}
 Mit der Definition
 \begin{equation}
@@ -63,6 +63,6 @@ Mit der Definition
 \end{equation}
 kann die Definition vereinfacht und die Berechnung der inversen Matrix vermieden werden.
 \begin{equation}
-\bs{A_d} = \bs{I}+\bs{S}\bs{A}\hspace{35pt} \bs{B_d} = \bs{SB}
+\bs{A}\idx{d} = \bs{I}+\bs{S}\bs{A}\hspace{35pt} \bs{B}\idx{d} = \bs{SB}
 \end{equation}
 Die Matrix $\bs{S}$ beschreibt einerseits den Einfluss des Halteglieds auf den Regelkreis, andererseits ermöglicht sie die Überführung in eine diskrete Darstellung, welche nötig ist um die Regelstrecke und den Regler in einer einheitlichen Form zu beschreiben. 
