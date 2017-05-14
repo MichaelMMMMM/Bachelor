@@ -6,7 +6,7 @@ Der Grundgedanke der Zustandsregelung besteht darin den vollständigen Zustandsv
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.8\linewidth, trim={3.5cm 3.5cm 3.5cm 3.5cm}, clip]{img/RT_ClosedLoop}
-\caption{Signalfluss des geschlossenen Regelkreises, Quelle: eigene Darstellung}
+\caption{Signalfluss des geschlossenen Regelkreises}
 \end{figure}
 Aus der Abbildung gehen die Systemgleichungen des geschlossenen Regelkreises $\overline{\textfrak{D}}$($\overline{\bs{A}}$,$\bs{0}$, $\overline{\bs{C}}$) hervor.
 \begin{equation}
@@ -33,7 +33,7 @@ Die Reglermatrix $\bs{K}$ ist nun so zu entwerfen, dass die gewünschten Eigensc
 0 \\ 0 \\ \vdots \\ 1
 \end{bmatrix}
 \end{equation}
-Diese Darstellung heißt Regelungsnormalform und kann mittels einer Zustandstransformation erreicht werden. Diese Transformation wird hier nicht näher erläutert, da das Verfahren lediglich als Beispiel der Zustandsregelung dienen soll.\footnote{Die Bestimmung der Transformationsmatrix und der Erweiterung des Entwurfsverfahren durch Eigenwertvorgabe kann in (RT2, Lunze, S. 245) nachgelesen werden.} Der besondere Vorteil der Regelungsnormalform besteht darin, dass die Werte $a_i$ die Koeffizienten des charakteristischen Polynoms 
+Diese Darstellung heißt Regelungsnormalform und kann mittels einer Zustandstransformation erreicht werden. Diese Transformation wird hier nicht näher erläutert, da das Verfahren lediglich als Beispiel der Zustandsregelung dienen soll.\footnote{Die Bestimmung der Transformationsmatrix und der Erweiterung des Entwurfsverfahren durch Eigenwertvorgabe kann in \cite[S. 245]{LunzeRT2} nachgelesen werden.} Der besondere Vorteil der Regelungsnormalform besteht darin, dass die Werte $a_i$ die Koeffizienten des charakteristischen Polynoms 
 \begin{equation}
 \text{det}(\lambda\cdot \bs{I}-\bs{A}) = \prod^n_{i=1} (\lambda-\lambda_i) = \lambda^n+a_{n-1}\cdot \lambda^{n-1} + \hdots + a\idx1\cdot \lambda + a\idx0
 \end{equation}
@@ -78,7 +78,7 @@ gilt. Werden nun die Eigenwerte $\overline{\lambda}_i$ des geschlossenen Regelkr
 \begin{equation}
 \overline{a}_i = a_i + k_i
 \end{equation}
-die einzelnen Regerfaktoren $k_i$ berechnet werden. Diese führen in dem geschlossenen Regelkreis auf die vorgegebenen Eigenwerte $\overline{\lambda}_i$. Alternativ kann auch die folgende Vektorschreibweise verwendet werden.
+die einzelnen Reglerfaktoren $k_i$ berechnet werden. Diese führen in dem geschlossenen Regelkreis auf die vorgegebenen Eigenwerte $\overline{\lambda}_i$. Alternativ kann auch die folgende Vektorschreibweise verwendet werden.
 \begin{equation}
 \underbrace{
 \begin{bmatrix}
@@ -103,11 +103,11 @@ An diesem Entwurfsverfahren werden bereits einige interessante Eigenschaften der
 Dennoch wird das Entwurfsverfahren in dieser Arbeit nicht verwendet. Die Gründe hierfür sind, dass das primäre Ziel darin besteht eine robuste Regelung zur Stabilisierung des Systems zu entwerfen und nicht eine spezielle Dynamik des geschlossenen Regelkreises zu erzielen. Des weiteren können bei diesem Verfahren die Verläufe der physikalischen Größen $\varphi$, $u_K$ und $u_R$ nicht direkt beeinflusst werden. Durch die Vorgabe der Eigenwerte werden lediglich die Trajektorien der kanonischen Zustandsvariablen bestimmt, welche jeweils eine Linearkombination der ursprünglichen Zustände sind. Des weiteren fließt die Stellgröße $u$ bei dieser Vorgehensweise nicht in die Bestimmung der Reglermatrix ein. Ist die Stellgröße, wie in den hier behandelten Anwendungsfällen, begrenzt müssen diese Umstände bei dem Reglerentwurf beachtet werden.
 
 \subsection{Linear quadratisch optimale Regelung}
-Im vorherigen Abschnitt wurden die Nachteile der Eigewertvorgabe aufgezeigt, weshalb hier der Entwurf eines linear quadratisch optimalen Reglers vorgestellt und an der realen Regelstrecke appliziert wird. Der Grundgedanke der optimalen Regelung ist es ein Regelgesetz zu entwerfen, welches zu einem geschlossenen Regelkreis führt, der im Sinne eines Gütekriteriums optimal ist. Hier wird das linear quadratische Gütekriterium
+Im vorherigen Abschnitt wurden die Nachteile der Eigenwertvorgabe aufgezeigt, weshalb hier der Entwurf eines linear quadratisch optimalen Reglers vorgestellt und an der realen Regelstrecke appliziert wird. Der Grundgedanke der optimalen Regelung ist es ein Regelgesetz zu entwerfen, welches zu einem geschlossenen Regelkreis führt, der im Sinne eines Gütekriteriums optimal ist. Hier wird das linear quadratische Gütekriterium
 \begin{equation}
 J = \sum^{\infty}_{k=0} \left[\bs{x}^T(k)\cdot \bs{Q} \cdot \bs{x}(k) + \bs{u}^T(k)\cdot \bs{R}\cdot \bs{u}(k)\right]
 \end{equation}
-verwendet. Die Matrizen $\bs{Q}$ und $\bs{R}$ dienen der Gewichtung des Zustands- bzw. Stellvektors und müssen positiv semidefinit bzw. definit sein. Durch die Gewichtungsmatrizen ist es möglich Forderung an den ursprünglichen Zustands- und Stellvektor direkt in den Reglerentwurf einfließen zu lassen. Der letztendliche Regler ergibt sich aus der Lösung des Optimierungsproblems, dass $J$ minimal wird. Nach [Ludyk, S.177] gilt für die Reglermatrix
+verwendet. Die Matrizen $\bs{Q}$ und $\bs{R}$ dienen der Gewichtung des Zustands- bzw. Stellvektors und müssen positiv semidefinit bzw. definit sein. Durch die Gewichtungsmatrizen ist es möglich Forderung an den ursprünglichen Zustands- und Stellvektor direkt in den Reglerentwurf einfließen zu lassen. Der letztendliche Regler ergibt sich aus der Lösung des Optimierungsproblems, dass $J$ minimal wird. Nach \cite[S. 177]{Ludyk} gilt für die Reglermatrix
 \begin{equation}
 \bs{K} = (\bs{R}+\bs{B}^T\bs{P}\bs{B})^{-1}\bs{B}^T\bs{P}\bs{A}\,,
 \end{equation}
@@ -121,14 +121,14 @@ Hierfür müssen zunächst die Begriffe der Steuerbarkeit und Beobachtbarkeit er
 
 \begin{quote}
 \glqq Ein System $\Sigma$ heißt vollständig steuerbar, wenn es in endlicher Zeit $t_e$ von jedem beliebigen Anfangszustand $\bs{x}_0$ durch eine geeignet gewählte Eingangsgröße $\bs{u}_{[0,t_e]}$ in einen beliebig vorgegebenen Endzustand $\bs{x}(t_e)$ überführt werden kann.\grqq
-\signed{LunzeRT2, S. 64}
+\signed{\cite[S. 64]{LunzeRT2}}
 \end{quote}
 
 Umgekehrt beschreibt die Beobachtbarkeit die Möglichkeit den Zustandsvektor eines Systems aus dem Verlauf des Eingang- und Ausgangvektors zu rekonstruieren.
 
 \begin{quote}
 \glqq Ein System $\Sigma = (\bs{A},\bs{B},\bs{C})$ hießt vollständig beobachtbar, wenn der Anfangszustand $\bs{x}_0$ aus dem über einem endlichen Intervall $[0,t_e]$ bekannten Verlauf der Eingangsgröße $\bs{u}_{[0,t_e]}$ und der Ausgangsgröße $\bs{y}_{[0,t_e]}$ bestimmt werden kann.\grqq
-\signed{LunzeRT2, S. 92}
+\signed{\cite[S. 92]{LunzeRT2}}
 \end{quote}
 
 Um sowohl die Steuer- als auch Beobachtbarkeit eines Systems zu prüfen können die Kalmankritieren angewandt werden [LunzeRT2, S.93ff]. Für den Entwurf eines Zustandsregler muss ein System mindestens stabilisierbar sein. Dies bedeutet, dass alle instabilen Eingevorgänge des System sowohl steuer- als auch beobachtbar sind. Für diesen Fall lässt sich zeigen [Lunze RT2, S.301], dass der Entwurf nach dem linear qudratischen Gütekriterium zu einem asymptotisch stabilen Regelkreis führt. Hieraus folgt, dass alle Eigenwerte des geschlossenen Regelkreises im Einheitskreises liegen. Des weiteren lässt sich durch
@@ -136,10 +136,10 @@ Um sowohl die Steuer- als auch Beobachtbarkeit eines Systems zu prüfen können 
 \vert z\vert = e^{\sigma_i} \hspace{35pt} \vert \hspace{15pt} s_i = \sigma_i + \omega_i\cdot j
 \end{equation}
 der Abstand der Eigenwerte zum Ursprung der komplexen Ebene interpretieren. Je näher ein Eigenwert am Ursprung liegt, desto schneller wird die zugehörige Eigenbewegung. Im geschlossenen Regelkreis wird eine schnelle Systemdynamik durch hohe Stellgrößen verursacht, welche durch die Reglermatrix $\bs{K}$ bestimmt werden. Daraus folgt, dass die Erhöhung der Reglerfaktoren $k_{ij}$ die Eigenwerte des geschlossenen Regelkreises näher an den Ursprung rückt. Umgekehrt kann die Bedeutung der Gewichtungsmatrix $\bs{R}$ interpretiert werden. Je größer die Elemente von $\bs{R}$ werden, desto stärker fließt der Verlauf des Stellvektors in das Gütekriterium ein. Da dieses minimiert werden soll, resultieren kleinere Elemente der Reglermatrix und somit eine langsamere Systemdynamik.
-Die Matrix $\bs{Q}$ wirkt entgegengesetzt. Da das Gütekriterium den zeitlichen Verlauf des Zustandvektors erfasst, führt eine Erhöhung der Matrix $\bs{Q}$ auf eine schnellere Eigenbewegung, welche durch erhöhte Reglerwerte erreicht wird. Hier zeigt sich ein Vorteil der linear quadratisch optimalen Regelung. Bei dem Entwurf durch Eigenwertvorgabe kann der Verlauf einer Zustandsgröße nur indirekt durch die Definition der Eigenbewegung beeinflusst werden. Im Gegensatz dazu erfolgt durch die Diagnoalelemente der Matrix $\bs{Q}$ eine direkte Gewichtung der Zustandsgrößen.\footnote{Allerdings sei angemerkt, dass sich durch die Gewichtungsmatrix $\bs{Q}$ keine Entkopplung der Zustandsgrößen erzwingen lässt. Für die Entkopplung der Zustandsgrößen müssen nicht nur die Eigenwerte sondern auch die Eigenvektoren durch den Regler beeinflusst werden. Dies ist nur möglich wenn die Reglermatrix mehr Elemente als zu regelnde Zustandsgrößen besitzt [Lunze RT2, S.254 ff]. Des weiteren sind solche System in der Realität oftmals nicht realisierbar, wären beispielsweise alle Eigenwerte und -vektoren des Würfels frei wählbar könnten die Größen $\varphi$ und $\dot{\varphi}$ voneinander entkoppelt werden.}
+Die Matrix $\bs{Q}$ wirkt entgegengesetzt. Da das Gütekriterium den zeitlichen Verlauf des Zustandvektors erfasst, führt eine Erhöhung der Matrix $\bs{Q}$ auf eine schnellere Eigenbewegung, welche durch erhöhte Reglerwerte erreicht wird. Hier zeigt sich ein Vorteil der linear quadratisch optimalen Regelung. Bei dem Entwurf durch Eigenwertvorgabe kann der Verlauf einer Zustandsgröße nur indirekt durch die Definition der Eigenbewegung beeinflusst werden. Im Gegensatz dazu erfolgt durch die Diagnoalelemente der Matrix $\bs{Q}$ eine direkte Gewichtung der Zustandsgrößen.\footnote{Allerdings sei angemerkt, dass sich durch die Gewichtungsmatrix $\bs{Q}$ keine Entkopplung der Zustandsgrößen erzwingen lässt. Für die Entkopplung der Zustandsgrößen müssen nicht nur die Eigenwerte sondern auch die Eigenvektoren durch den Regler beeinflusst werden. Dies ist nur möglich wenn die Reglermatrix mehr Elemente als zu regelnde Zustandsgrößen besitzt \cite[S. 254 ff.]{LunzeRT2}. Des weiteren sind solche System in der Realität oftmals nicht realisierbar, wären beispielsweise alle Eigenwerte und -vektoren des Würfels frei wählbar könnten die Größen $\varphi$ und $\dot{\varphi}$ voneinander entkoppelt werden.}
 Da das Zeitverhalten des geschlossenen Regelkreises in dem hier behandelten Anwendungsfall eine untergeordnete Rolle spielt, wird nun die Empfindlichkeit gegenüber Störungen betrachtet. Aus dem Reglergesetzt
 \begin{equation}
 \bs{u} = -\bs{K}\cdot\bs{x}
 \end{equation}
 geht hervor, dass sich ein beliebiges Messrauschen proportional zur Reglermatrix in der Stellgröße widerspiegelt. Folglich beeinflusst das Entwurfsverfahren nicht direkt die Stör-empfindlichkeit des Regelkreises. Vielmehr wird diese durch die Lage der Eigenwerte bestimmt. Je näher diese an dem Einheitskreis liegen, desto robuster wird das System gegenüber Messrauschen.
-Ein weiterer Vorteil der linear quadratisch optimalen Regelung besteht in derer Robustheit gegenüber Parameteränderungen. Diese Eigenschaft beschreibt wir groß die Abweichungen einzelner Parameter sein können um nach wie vor einen stabilen Regelkreis zu erhalten. In [Lunze RT2, S. 303ff] werden diese Eigenschaften mit Hilfe des Phasen- und Amplitudenrandes erläutert.
+Ein weiterer Vorteil der linear quadratisch optimalen Regelung besteht in derer Robustheit gegenüber Parameteränderungen. Diese Eigenschaft beschreibt wir groß die Abweichungen einzelner Parameter sein können um nach wie vor einen stabilen Regelkreis zu erhalten. In \cite[S. 303 ff.]{LunzeRT2} werden diese Eigenschaften mit Hilfe des Phasen- und Amplitudenrandes erläutert.

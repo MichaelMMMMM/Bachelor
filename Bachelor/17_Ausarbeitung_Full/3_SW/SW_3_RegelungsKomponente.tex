@@ -7,7 +7,7 @@ Prinzipiell lässt sich der logische Ablauf der Komponente mit einem einfachen Z
 \caption{Zustandsdiagramm der Kontrol-Komponente}
 \end{figure}
 
-Ein solches Zustandsdiagramm kann z.B. mit einer objektorientierten Adaption der Methode von Samek (\cite{Wietzke1}, S. 246 ff.) implementiert werden. Hierbei werden Zustände als Methoden der FSM realisiert, wobei für Oberzustände eigene Klassen entworfen werden, die wiederum Methoden für die jeweiligen Unterzustände besitzen. Die Referenzierung des aktuellen Zustandes erfolgt über einen Funktionenzeiger, der auf die Methode des entsprechenden Zustandes gerichtet ist. 
+Ein solches Zustandsdiagramm kann z.B. mit einer objektorientierten Adaption der Methode von Samek \cite[S. 246 ff.]{Wietzke1} implementiert werden. Hierbei werden Zustände als Methoden der FSM realisiert, wobei für Oberzustände eigene Klassen entworfen werden, die wiederum Methoden für die jeweiligen Unterzustände besitzen. Die Referenzierung des aktuellen Zustandes erfolgt über einen Funktionenzeiger, der auf die Methode des entsprechenden Zustandes gerichtet ist. 
 
 Als Basis der Typenhierachie dient die abstrakte Klasse \textit{AState}, welche den Zustandstypen als Methodenzeiger definiert, eine Standardimplementierung der \textit{dispatch()}-Methode vorgibt und statische Membervariablen deklariert um die Verarbeitung interner Events zu ermöglichen.
 \begin{lstlisting}[caption={Abstrakte Basisklasse für die Zustände},captionpos=b]
@@ -36,7 +36,7 @@ bool AState::dispatch(CMessage& msg)
 }
 \end{lstlisting} 
 
-Die auszuführenden Aktionen, wie z.B. die Berechnung des Regelkreises, werden in der Klasse \textit{CActionHandler} gekapselt (\cite{Wietzke1}, S. 225). Dadurch erfolgt eine klare Trennung des Kontroll- und Signalflusses. Prinzipiell besitzt \textit{CActionHandler} Methoden, die jeweils beim Betreten und Verlassen der Zustände aufgerufen wird. Zusätzlich kann er um nötige Hilfsmethoden erweitert werden.
+Die auszuführenden Aktionen, wie z.B. die Berechnung des Regelkreises, werden in der Klasse \textit{CActionHandler} gekapselt \cite[S. 225]{Wietzke1}. Dadurch erfolgt eine klare Trennung des Kontroll- und Signalflusses. Prinzipiell besitzt \textit{CActionHandler} Methoden, die jeweils beim Betreten und Verlassen der Zustände aufgerufen wird. Zusätzlich kann er um nötige Hilfsmethoden erweitert werden.
 \begin{lstlisting}[caption={Beispielhafte Implementierung des Actionhandlers},captionpos=b]
 class CActionHandler
 {

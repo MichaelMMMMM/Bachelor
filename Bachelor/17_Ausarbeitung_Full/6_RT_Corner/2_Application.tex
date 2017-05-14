@@ -17,7 +17,7 @@ Die folgenden Abbildung zeigen den Verlauf der Zustandsgrößen und der Stellgr�
 
 \includegraphics[width=0.45\linewidth]{img/exp1_ur.eps}
 \includegraphics[width=0.45\linewidth]{img/exp1_tm.eps}
-\caption{Systemverhalten des geschlossenen Regelkreises, Quelle: eigene Darstellung}
+\caption{Systemverhalten des geschlossenen Regelkreises}
 \end{figure}
 Das Experiment zeigt, dass der Regler den Würfel auf einer Ecke stabilisiert. Allerdings ist das System nicht asymptotisch stabil sondern oszilliert mit einer konstanten Amplitude. Eine mögliche Erklärung für diese Verhalten liegt in der Modellgüte. Um die Direktionalitätsproblematik zu lösen wurde ein Regler gewählt, welcher die Eigenwerte des geschlossenen Kreises nahe an den Einheitskreis legt. Sind nun die Systemparameter des Modells fehlerbehaftet ist es möglich, dass die Eigenwerte des realen Regelkreises weiter  an den Einheitskreis rücken. In diesem Fall können bereits kleinen Anregungen wie z.B. ein in dem Modell nicht erfasstes System- oder Messrauschen zu einer verbleibenden Schwingung führen. Des weiteren ist der Einfluss der Nichtlinearitäten zu nennen, welche die Auswirkungen der Modellungenauigkeiten zusätzlich beeinflussen können. 
 
@@ -30,6 +30,6 @@ Um die Reglergüte zu verbessern werden zunächst die Versuchsergebnisse betrach
 
 \includegraphics[width=0.45\textwidth]{img/exp2_ur.eps}
 \includegraphics[width=0.45\textwidth]{img/exp2_tm.eps}
-\caption{Verhalten des geschlossenen Regelkreises mit angepasstem Regler, Quelle: eigene Darstellung}
+\caption{Verhalten des geschlossenen Regelkreises mit angepasstem Regler}
 \end{figure}
 Aus den Versuchen geht hervor, dass die Anpassung des Reglers eine deutliche Verbesserung des geschlossenen Regelkreises mit sich bringt. Jedoch ist diese Vorgehensweise kritisch zu beurteilen. Einerseits verbleibt eine Schwingung, welche ähnlich zu dem Verhalten aus dem vorherigen Versuch ist. Lediglich die Amplitude der Schwingung wurde die Änderung der Reglermatrix reduziert. Andererseits führt der Eingriff in die Reglermatrix dazu, dass die Reglereigenschaften, welche aus dem LQR-Verfahren resultieren, nicht mehr garantiert werden. Insbesondere die guten Robustheitseigenschaften können verloren gehen. Dies zeigt sich wenn die Reglerelemente weiter verändert werden um die verbleibenden Schwingungen zu eliminieren. Derartige Änderungen führen zu einem instabilen Regelkreis.

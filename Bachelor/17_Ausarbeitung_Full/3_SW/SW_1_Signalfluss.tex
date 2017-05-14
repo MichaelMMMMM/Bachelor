@@ -3,7 +3,7 @@ Im nächsten Schritt muss der Signalfluss implementiert werden. Hierfür wird ei
 Zunächst wird eine, auf den Sensorwerten basierende, Zustandsschätzung durchgeführt. Dieser Vektor wird anschließend gefiltert und zur Berechnung des Reglers genutzt.
 \begin{figure}[!h]
 \centering
-\includegraphics[width=\linewidth]{img/SW_1_Signalfluss_BSB.pdf}
+\includegraphics[width=0.9\linewidth, trim={0cm 0cm 0cm 14cm}, clip]{img/SW_1_Signalfluss_BSB.pdf}
 \caption{Blockschaltbild des Signalflusses}
 \end{figure}
 
@@ -39,7 +39,7 @@ private:
 \end{lstlisting}
 Die Aktionsobjekte definieren zunächst ihren Ein- und Ausgangstyp. Die Berechnung des Systems erfolgt über die Methode \textit{calcOutput()}.
 Nun müssen die Aktionsobjekte zu dem vorgegebenen Signalfluss zusammengefasst werden. Um diesen Schritt im Entwicklungsprozess zu erleichtern, soll ein Konzept implementiert werden, dem eine Typenliste der Aktionsobjekte übergeben wird und daraus das Blockschaltbild erzeugt.
-Für die Implementierung der Typenliste wird der Ansatz nach (\cite{ModernCpp}, S. 40 ff.) verwendet. Zunächst wird die leere Struktur \textit{CNullType} definiert, welche als Terminierungssymbol in der Typenliste fungiert. Die Liste wird mit Hilfe der Templatestruktur \textit{TTypeList} implementiert, welche als Parameter einen Anfangs- und Endtypen entgegennimmt.
+Für die Implementierung der Typenliste wird der Ansatz nach \cite[S. 40 ff.]{ModernCpp} verwendet. Zunächst wird die leere Struktur \textit{CNullType} definiert, welche als Terminierungssymbol in der Typenliste fungiert. Die Liste wird mit Hilfe der Templatestruktur \textit{TTypeList} implementiert, welche als Parameter einen Anfangs- und Endtypen entgegennimmt.
 \begin{lstlisting}[caption={Implementierung der Typenlist},captionpos=b]
 struct CNullType{};
 
@@ -50,7 +50,7 @@ struct TTypeList
 	using Tail = TailType;
 };
 \end{lstlisting}
-Die obige Implementierung unterstützt lediglich Listen der Länge zwei. Deshalb werden Makros verwendet (\cite{ModernCpp}, S. 45), die rekursive Intanszierungen des Templates nutzen um die Listen beliebiger Länge zu erhalten. Mittels dieser Makros kann dann auch die Typenliste der Aktionsobjekte erzeugt werden.
+Die obige Implementierung unterstützt lediglich Listen der Länge zwei. Deshalb werden Makros verwendet \cite[S. 45]{ModernCpp}, die rekursive Intanszierungen des Templates nutzen um die Listen beliebiger Länge zu erhalten. Mittels dieser Makros kann dann auch die Typenliste der Aktionsobjekte erzeugt werden.
 \begin{lstlisting}[caption={Definition und Aufruf der Makors für verlängerte Typenlisten},captionpos=b]
 #define TYPELIST_1(T1)         TTypeList<T1, CNullType>
 #define TYPELIST_2(T1, T2) 	   TTypeList<T1, TYPELIST_1(T2)>
@@ -58,7 +58,7 @@ Die obige Implementierung unterstützt lediglich Listen der Länge zwei. Deshalb
 ...
 using ActionObjList = TYPELIST_3(CStateEstimate, CFilter, CController);
 \end{lstlisting}
-Um nun die Aktionstypen zu einem Signalfluss-Objekt zusammenzufügen, wird das Muster der linearen Typenhierachie nach (\cite{ModernCpp}, S. 62 ff.) angewandt. Dessen Aufbau erinnert an eine verkettete Liste, wobei die Typen durch Vererbung verknüpft werden. Die Templateklasse \textit{TActionHolder} wird als Träger für die Aktionsobjekte entworfen.
+Um nun die Aktionstypen zu einem Signalfluss-Objekt zusammenzufügen, wird das Muster der linearen Typenhierachie nach \cite[S. 62 ff.]{ModernCpp} angewandt. Dessen Aufbau erinnert an eine verkettete Liste, wobei die Typen durch Vererbung verknüpft werden. Die Templateklasse \textit{TActionHolder} wird als Träger für die Aktionsobjekte entworfen.
 Im allgemeinen Fall wird dem Template der Typ eines Aktionobjektes \textit{ActionObj} und eine beliebige Elternklasse \textit{Base} übergeben, die beide an \textit{TActionHolder} vererben. In der \textit{calcOutput()}-Methode wird zunächst die Berechnung des Aktionsobjektes durchgeführt und anschließend \textit{calcOutput()} der zweiten Elternklasse aufgerufen.
 \begin{lstlisting}[caption={Templateklasse des Trägerobjektes},captionpos=b]
 template<class ActionObj, class Base>
@@ -86,14 +86,14 @@ public:
 };
 \end{lstlisting}
 Die zweite Templateklasse ist \textit{TLinHierachy}, mit dem folgenden Prototyp.
-\begin{lstlisting}[caption={Deklaration der Templateklasse für lineare Hierarchien (\cite{ModernCpp}, S. 63)},captionpos=b]
+\begin{lstlisting}[caption={Deklaration der Templateklasse für lineare Hierarchien {\cite[S. 63]{ModernCpp}} },captionpos=b]
 template<class TList,
          template<AtomicType, class Base> class Unit,
          class Root = CNullType>
 class TLinHierachy;
-\end{lstlisting}
+\end{lstlisting} 
 Der erste Templateparameter ist die Typenliste, welche die zu generierende Typenhierachie vorgibt. Der zweite Parameter ist eine Templateklasse, die als Träger der Objekte aus der Typenliste agiert. In diesem Anwendungsfall wird die zuvor definierte Templateklasse \textit{TActionHolder} verwendet. Der letzte Parameter ist der Terminierungstyp der Hierarchie, welcher als Standardargument \textit{CNullType} übergeben wird. Analog zu \textit{TActionHolder} werden durch Spezialisierungen zwei Fälle unterschieden. Zunächst sei der Fall betrachtet, dass der Parameter \textit{TList} eine Typenliste aus zwei beliebigen Typen ist.
-\begin{lstlisting}[caption={Erste Templatespezialisierung der linearen Hierarchie (\cite{ModernCpp}, S. 64)},captionpos=b]
+\begin{lstlisting}[caption={Erste Templatespezialisierung der linearen Hierarchie {\cite[S. 64]{ModernCpp}} },captionpos=b]
 template<class T1, 
          class T2, 
          template<class, class> class Unit, 
@@ -104,7 +104,7 @@ class TLinHierachy<TTypeList<T1, T2>, Unit, Root>
 \end{lstlisting}
 Diese Instanziierung wird solange genutzt bist das Ende der ursprünglichen Typenliste erreicht ist. Die instantiierte Klasse von \textit{TLinHierachy}, ist eine leere Klasse die von \textit{Unit} erbt. \textit{Unit} wird wiederum mit \textit{TLinHierachy} instantiiert, wobei lediglich der zweite Parameter \textit{T2} übergeben wird. Dadurch wird die ursprüngliche Typenliste schrittweise abgearbeitet.
 Die zweite Templatespezialisierung wird genutzt um die Generation am Ende der Typenliste zu terminieren. Dies ist der Fall wenn \textit{TLinHierachy} mit einer Typeliste der Länge eins instantiiert wird.
-\begin{lstlisting}[caption={Zweite Templatespezialisierung der linearen Hierarchie (\cite{ModernCpp}, S. 64)},captionpos=b]
+\begin{lstlisting}[caption={Zweite Templatespezialisierung der linearen Hierarchie {\cite[S. 64]{ModernCpp}} },captionpos=b]
 template<class T, template<class, class> class Unit, class Root>
 class TLinHierachy<TYPELIST_1(T), Unit, Root>
 	: public Unit<T, Root>

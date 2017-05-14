@@ -3,7 +3,7 @@ Der erste Schritt besteht darin die kinematischen Zusammenhänge des Systems zu 
 \begin{figure}[!ht]
 \centering
 \includegraphics[width=0.6\linewidth, trim={1cm 1.5cm 18cm 3.5cm}, clip]{img/ModellWuerfelseite}
-\caption{Kinematikplan des Würfels auf einer Kante, Quelle: eigene Darstellung}
+\caption{Kinematikplan des Würfels auf einer Kante}
 \label{skizze_dynamik_edge}
 \end{figure}
 
@@ -52,15 +52,15 @@ Dieser Umstand kann genutzt werden, indem ein Vektor zunächst in einer einfache
 \end{equation}
 Dieses Beispiel zeigt, dass die Einführung von Bezugssystemen eine eindeutige Notation und Vorgehensweise zur Berechnung von vektorwertigen Funktionen mit sich bringt. Man möge bei diesem Anwendungsfall argumentieren, dass die trigonometrischen Zusammenhänge des Gravitationsmomentes auch aus der Abbildung \ref{skizze_dynamik_edge} ablesen lassen. Allerdings ist die hier betrachtete Vorgehensweise allgemeingültig und kann auf beliebig komplexe Systeme angewendet werden. Beispielsweise kann das Gravitationsmoment in dem Fall, dass der Würfel auf einer Ecke steht, kaum mehr aus einer Skizze bestimmt werden.
 
-Zur vollständigen Beschreibung der Kinematik müssen die Geschwindigkeiten des Systems ermittelt werden, welche aus den Ableitungen der Winkel $\varphi$ und $\psi$ hervorgehen. Als Beispiel für die Ableitung eines Vektors dient wieder der Ortsvektor $\bs{c}$ des Schwerpunktes. Dieser ist aus der Perspektive des Bezugssystem $K$ konstant, folglich verschwindet auch dessen Ableitung bzw. Geschwindigkeit. Wird der Vektor aber in $A$ abgebildet hängt dieser von der Zeitfunktion $\varphi(t)$ ab. Deshalb muss bei der Ableitung eines Vektors das Bezugssystem angegeben werden, aus dessen Perspektive differenziert wird ([Kane], S.25ff). Wenn $\bs{c}$ in $A$ differenziert werden soll, so muss dieser zunächst in $A$ dargestellt und anschließend komponentenweise nach der Zeit abgeleitet werden.
+Zur vollständigen Beschreibung der Kinematik müssen die Geschwindigkeiten des Systems ermittelt werden, welche aus den Ableitungen der Winkel $\varphi$ und $\psi$ hervorgehen. Als Beispiel für die Ableitung eines Vektors dient wieder der Ortsvektor $\bs{c}$ des Schwerpunktes. Dieser ist aus der Perspektive des Bezugssystem $K$ konstant, folglich verschwindet auch dessen Ableitung bzw. Geschwindigkeit. Wird der Vektor aber in $A$ abgebildet hängt dieser von der Zeitfunktion $\varphi(t)$ ab. Deshalb muss bei der Ableitung eines Vektors das Bezugssystem angegeben werden, aus dessen Perspektive differenziert wird \cite[S. 25 ff.]{KaneBook}. Wenn $\bs{c}$ in $A$ differenziert werden soll, so muss dieser zunächst in $A$ dargestellt und anschließend komponentenweise nach der Zeit abgeleitet werden.
 \begin{equation}
 \frac{\presuper{A}{d}\bs{c}}{dt} = \frac{d(c_{\varphi}\cdot l\idx{C})}{dt}\cdot \bs{a}\idx{1} + \frac{d(s_{\varphi}\cdot l\idx{C})}{dt}\cdot \bs{a}\idx{2} + \frac{d(0)}{dt}\cdot \bs{a}\idx{3} = \vecBS{A}{-s_{\varphi}\cdot \dot{\varphi}\cdot l\idx{C}}{c_{\varphi}\cdot \dot{\varphi}\cdot l\idx{C}}{0}
 \end{equation}
-Hieraus folgt, dass auch die Geschwindigkeiten eines Körpers lediglich als relativ zu einem Bezugssystem angegeben werden können. Somit beschreibt $\vel{B}{v}{P}$ die Geschwindigkeit bzw. $\vel{B}{a}{P}$ die Beschleunigung  eines Punktes oder Körpers $P$  relativ zu einem Bezugssystem $B$. Diese werden wie folgt definiert ([Kane], S.28).
+Hieraus folgt, dass auch die Geschwindigkeiten eines Körpers lediglich als relativ zu einem Bezugssystem angegeben werden können. Somit beschreibt $\vel{B}{v}{P}$ die Geschwindigkeit bzw. $\vel{B}{a}{P}$ die Beschleunigung  eines Punktes oder Körpers $P$  relativ zu einem Bezugssystem $B$. Diese werden wie folgt definiert \cite[S. 28]{KaneBook}.
 \begin{equation}
 \vel{B}{v}{P} = \frac{\presuper{B}{d\bs{p}}}{dt} \hspace{35pt} \vel{B}{a}{P} = \frac{\presuper{B}{d}\vel{B}{v}{P}}{dt}
 \end{equation}
-Die selbe Notation wird für Winkelgeschwindigkeiten und -beschleunigungen eingeführt, wobei $\vel{A}{\omega}{B}$ die Winkelgeschwindigkeit und $\vel{A}{\alpha}{B}$ die Winkelbeschleunigung eines Punktes oder Bezugssystems $B$ relativ zu $A$ ist. Die Geschwindigkeit relativ zu einem Inertialsystem wird auch als absolute Geschwindigkeit bezeichnet. Für die Bezugssysteme $K$ und $R$ lassen sich mit Hilfe der Abbildung \ref{skizze_dynamik_edge} die folgenden Winkelgeschwindigkeiten bestimmen, wobei die absolute Winkelgeschwindigkeit eines Bezugssystems die Summe seiner relativen Winkelgeschwindigkeiten ist ([Kane], S.24f).
+Die selbe Notation wird für Winkelgeschwindigkeiten und -beschleunigungen eingeführt, wobei $\vel{A}{\omega}{B}$ die Winkelgeschwindigkeit und $\vel{A}{\alpha}{B}$ die Winkelbeschleunigung eines Punktes oder Bezugssystems $B$ relativ zu $A$ ist. Die Geschwindigkeit relativ zu einem Inertialsystem wird auch als absolute Geschwindigkeit bezeichnet. Für die Bezugssysteme $K$ und $R$ lassen sich mit Hilfe der Abbildung \ref{skizze_dynamik_edge} die folgenden Winkelgeschwindigkeiten bestimmen, wobei die absolute Winkelgeschwindigkeit eines Bezugssystems die Summe seiner relativen Winkelgeschwindigkeiten ist \cite[S. 24 f.]{KaneBook}.
 \begin{equation}
 \vel{A}{\omega}{K} = \vecBS{K}{0}{0}{\dot{\varphi}} \hspace{15pt} \vel{K}{\omega}{R} = \vecBS{R}{0}{0}{\dot{\psi}} \hspace{15pt} \vel{A}{\omega}{R} = \vel{A}{\omega}{K} + \vel{K}{\omega}{R} = \vecBS{A}{0}{0}{\dot{\varphi} + \dot{\psi}}
 \end{equation}

@@ -4,9 +4,9 @@
 \contentsline {lstlisting}{\numberline {7.4}Definition und Aufruf der Makors f\IeC {\"u}r verl\IeC {\"a}ngerte Typenlisten}{72}{lstlisting.7.4}
 \contentsline {lstlisting}{\numberline {7.5}Templateklasse des Tr\IeC {\"a}gerobjektes}{72}{lstlisting.7.5}
 \contentsline {lstlisting}{\numberline {7.6}Templatespezialisierung des Tr\IeC {\"a}gerobjektes f\IeC {\"u}r das Ende der Typenliste}{73}{lstlisting.7.6}
-\contentsline {lstlisting}{\numberline {7.7}Deklaration der Templateklasse f\IeC {\"u}r lineare Hierarchien (\cite {ModernCpp}, S. 63)}{73}{lstlisting.7.7}
-\contentsline {lstlisting}{\numberline {7.8}Erste Templatespezialisierung der linearen Hierarchie (\cite {ModernCpp}, S. 64)}{73}{lstlisting.7.8}
-\contentsline {lstlisting}{\numberline {7.9}Zweite Templatespezialisierung der linearen Hierarchie (\cite {ModernCpp}, S. 64)}{73}{lstlisting.7.9}
+\contentsline {lstlisting}{\numberline {7.7}Deklaration der Templateklasse f\IeC {\"u}r lineare Hierarchien {\cite [S. 63]{ModernCpp}}}{73}{lstlisting.7.7}
+\contentsline {lstlisting}{\numberline {7.8}Erste Templatespezialisierung der linearen Hierarchie {\cite [S. 64]{ModernCpp}}}{73}{lstlisting.7.8}
+\contentsline {lstlisting}{\numberline {7.9}Zweite Templatespezialisierung der linearen Hierarchie {\cite [S. 64]{ModernCpp}}}{73}{lstlisting.7.9}
 \contentsline {lstlisting}{\numberline {7.10}Anwendungsbeispiel der linearen Hierarchie}{74}{lstlisting.7.10}
 \contentsline {lstlisting}{\numberline {7.11}Beispiel f\IeC {\"u}r den Zugriff auf Aktionsobjekte in der Hierarchie}{74}{lstlisting.7.11}
 \contentsline {lstlisting}{\numberline {7.12}Beispiel f\IeC {\"u}r die komponierte Aktionsobjekte}{74}{lstlisting.7.12}

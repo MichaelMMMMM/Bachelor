@@ -51,7 +51,7 @@ F\idx5 &= \inProd{\vel{A}{\omega}{K}\idx5}{\bs{T}^{K/O}} + \sum^3_{i=1} \inProd{
 \\
 F\idx6 &= \inProd{\vel{A}{\omega}{K}\idx6}{\bs{T}^{K/O}} + \sum^3_{i=1} \inProd{\vel{A}{\omega}{Ri}\idx6}{\bs{T}^{Ri/Mi}} = T\idx{M3}-C_{\psi}(u\idx6 - u\idx3)
 \end{align}
-Neben den aktiven Kräften müssen auch die generalisierten Trägheitskräfte $F^*_i$ ermittelt werden um die Bewegungsgleichungen zu bestimmen. Hierfür werden zunächst die Trägheitsmomente $\bs{T}_*$ der Körper ermittelt werden. Nach (\cite{KaneBook}, S. 124 ff.) gilt für die Trägheitsmomente der  Zusammenhang
+Neben den aktiven Kräften müssen auch die generalisierten Trägheitskräfte $F^*_i$ ermittelt werden um die Bewegungsgleichungen zu bestimmen. Hierfür werden zunächst die Trägheitsmomente $\bs{T}_*$ der Körper ermittelt werden. Nach \cite[S. 124 ff.]{KaneBook} gilt für die Trägheitsmomente der  Zusammenhang
 \begin{equation}
 \bs{T}_* = -\bs{\alpha}\cdot \bs{I} - \bs{\omega}\times(\bs{I}\cdot\bs{\omega}) \,.
 \end{equation}
@@ -78,7 +78,7 @@ Somit ist der Trägheitstensor $\bs{I}^{K/O}$ gleich der Summe von $\bs{I}^{GH/O
 \bs{T}^{K/O}_* = - \vel{A}{\alpha}{K}\cdot\bs{I}^{K/O} - \vel{A}{\omega}{K}\times(\bs{I}^{K/O}\cdot \vel{A}{\omega}{K})
 \end{equation}
 Prinzipiell können nun die generalisierten Trägheitskräfte $F^*_i$ durch die Skalarmultiplikation mit den partiellen Geschwindigkeiten berechnet werden. Allerdings handelt es sich bei den Trägheitsmomenten um nichtlineare Terme. Diese führen einerseits auf schwer nachzuvollziehende Bewegungsgleichungen. Andererseits werden für die Transformation in eine Zustandsraumdarstellung lineare Differentialgleichungen benötigt. In diesem Fall kann eine vorzeitige Linearisierung durchgeführt werden (\cite{KaneBook}, S. 171 ff.). Das heißt an Stelle die vollständigen, nicht linearen Bewegungsgleichungen zu bestimmen und anschließend zu linearisieren, werden bereits die generalisierten  Geschwindigkeiten $\hat{\bs{\omega}}$, sowie die resultierenden Dreh- und Trägheitsmomente $\hat{F}_i$ und $\hat{F}^*_i$ linearisiert und daraus die linearen Bewegungsgleichungen bestimmt.
-Hierfür muss zunächst der Arbeitspunkt des Systems festgelegt werden, welcher der Position auf eine rEcke entspricht. Die Winkel $\varphi_i$ müssen folglich so gewählt werden, dass der Ortsvektor des Schwerpunktes $\bs{c}$ aus Perspektive des Inertialsystems lediglich eine Komponente in Richtung von $\bs{a}_1$ besitzt.
+Hierfür muss zunächst der Arbeitspunkt des Systems festgelegt werden, welcher der Position auf einer Ecke entspricht. Die Winkel $\varphi_i$ müssen folglich so gewählt werden, dass der Ortsvektor des Schwerpunktes $\bs{c}$ aus Perspektive des Inertialsystems lediglich eine Komponente in Richtung von $\bs{a}_1$ besitzt.
 \begin{equation}
 \vecBS{A}{\vert \bs{c} \vert}{0}{0} \overset{!}= \pMat{K}{A}\cdot \vecBS{K}{l\idx{C}}{l\idx{C}}{l\idx{C}} \rArrow \varphi\idx{10} = 0, \hspace{10pt} \varphi\idx{20} =-2\cdot \text{atan}(\sqrt{2}-\sqrt{3}), \hspace{10pt} \varphi\idx{30}=\frac{-\pi}{4}
 \end{equation}

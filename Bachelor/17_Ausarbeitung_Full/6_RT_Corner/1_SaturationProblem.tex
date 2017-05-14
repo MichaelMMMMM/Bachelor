@@ -17,7 +17,7 @@ Der auf der Ecke balancierende Würfel besitzt allerdings mehrere Eingangsgröß
 \begin{equation}
 \bs{T}\idx{M} = \vecBS{K}{u_{1\text{,sat}}}{u_{2\text{,sat}}}{u_{3\text{,sat}}}
 \end{equation}
-nicht nur in seiner Norm sonder auch der Richtung verändert wird. Die Richtungsänderung des Stellvektors durch Beschränkungen wird als Direktionalitätsproblem bezeichnet und kann unerwünschte Auswirkungen auf die Stabilität des Systems mit sich bringen (\cite{Ortseifen}, S. 33). Diese Problematik zeigt sich wenn die Simulation um eine Stellgrößenbeschränkung erweitert wird. Nun wird ist das Stabil bereits bei einem Anfangswinkel
+nicht nur in seiner Norm sonder auch der Richtung verändert wird. Die Richtungsänderung des Stellvektors durch Beschränkungen wird als Direktionalitätsproblem bezeichnet und kann unerwünschte Auswirkungen auf die Stabilität des Systems mit sich bringen \cite[S. 33]{Ortseifen}. Diese Problematik zeigt sich wenn die Simulation um eine Stellgrößenbeschränkung erweitert wird. Nun wird ist das Stabil bereits bei einem Anfangswinkel
 \begin{equation}
 \bs{\overline{\varphi}}(0) \approx \begin{bmatrix}
 0 \\ 2^\circ \\ 2^\circ
@@ -30,4 +30,4 @@ Die Gewichtsmatrix $\bs{Q}$ wird iterativ an Hand der Simulation variiert bis ei
 0 & 5^\circ & 5^\circ
 \end{bmatrix}
 \end{equation}
-erreicht werden, bei denen sich das System stabil verhält. Jedoch ist es mit dieser Vorgehensweise nicht möglich das Einzugsgebiet der Zustände, welche in die Ruhelage überführt werden, in einem geschlossenen Ausdruck zu formulieren. Die Simulation ermöglicht lediglich eine Abschätzung des Stabilitätverhaltens. Somit kann die Stabilität erst empirisch an der reellen Regelstrecke bewiesen werden. Um diese Problematik zu beseitigen müssen alternative Ansätze verfolgt werden. Mögliche Lösung stellen der Entwurf eines Sättigungsreglers (\cite{AdamyNL}, S.264 ff) oder die Implementierung eines modellbasierten Anti-Windups (\cite{Ortseifen}) dar. Diese Methoden kommen im Rahmen dieser Arbeit jedoch nicht zum Einsatz.
+erreicht werden, bei denen sich das System stabil verhält. Jedoch ist es mit dieser Vorgehensweise nicht möglich das Einzugsgebiet der Zustände, welche in die Ruhelage überführt werden, in einem geschlossenen Ausdruck zu formulieren. Die Simulation ermöglicht lediglich eine Abschätzung des Stabilitätverhaltens. Somit kann die Stabilität erst empirisch an der reellen Regelstrecke bewiesen werden. Um diese Problematik zu beseitigen müssen alternative Ansätze verfolgt werden. Mögliche Lösung stellen der Entwurf eines Sättigungsreglers \cite[S. 264 ff.]{AdamyNL} oder die Implementierung eines modellbasierten Anti-Windups \cite{Ortseifen} dar. Diese Methoden kommen im Rahmen dieser Arbeit jedoch nicht zum Einsatz.

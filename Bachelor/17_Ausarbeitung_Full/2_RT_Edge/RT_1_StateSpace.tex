@@ -46,7 +46,7 @@ Prinzipiell kann jedes lineare zeitinvariante System \textfrak{S}
 \end{equation}
 beschreiben lasse. Wobei $\bs{x} \in \mathbb{R}^n$ Zustandsvektor, $\bs{u} \in \mathbb{R}^r$ Eingangsvektor und $\bs{y} \in \mathbb{R}^m$ Ausgangsvektor heißt. Im weiteren Verlauf wird die Zeitabhängigkeit dieser drei Vektoren nicht mehr explizit angegeben. Des weiteren werden in dieser Arbeit lediglich nicht sprungfähige Systeme \cSS{A}{B}{C} betrachtet, deren Eingangsvektor $\bs{u}$  den Ausgangsvektor $\bs{y}$ nicht direkt beeinflusst und somit $\bs{D} = \bs{0}$ gilt.
 
-Ein großer Vorteil dieser Modellierung besteht darin, dass für jedes Systems unendlich viele Zustandsraumdarstellungen existieren[Beucher, S. 54]. Dieser Umstand wird ersichtlich wenn man für die Herleitung der Bewegungsgleichungen alternative generalisierte Geschwindigkeiten wählt und diese anschließend in eine Zustandsraumdarstellung transformiert.
+Ein großer Vorteil dieser Modellierung besteht darin, dass für jedes Systems unendlich viele Zustandsraumdarstellungen existieren\cite[S. 54]{Beucher}. Dieser Umstand wird ersichtlich wenn man für die Herleitung der Bewegungsgleichungen alternative generalisierte Geschwindigkeiten wählt und diese anschließend in eine Zustandsraumdarstellung transformiert.
 \begin{equation}
 \tilde{u}\idx{K} \equiv \dot{\varphi} \hspace{35pt} \tilde{u}\idx{R} \equiv \dot{\psi}
 \end{equation}
@@ -110,7 +110,7 @@ heißt kanonische Normalform, wobei die Matrix $\bs{\tilde{A}}$ die Form
 0 & 0 & \hdots & \lambda_n
 \end{bmatrix}
 \end{equation}
-besitzt. Folglich sind die Elemente des Zustandvektors $\bs{\tilde{x}}$, welche kanonische Zustandsvariablen genannt werden, vollständig voneinander entkoppelt und werden deshalb auch als Eigenvorgänge bzw. Eigenbewegungen des Systems bezeichnet. Die vollständige Entkopplung der Zustandsgrößen ist nicht immer mögliche, für eine ausführliche Diskussion Thematik sei auf [RT1, Lunze, S.135ff] verwiesen.
+besitzt. Folglich sind die Elemente des Zustandvektors $\bs{\tilde{x}}$, welche kanonische Zustandsvariablen genannt werden, vollständig voneinander entkoppelt und werden deshalb auch als Eigenvorgänge bzw. Eigenbewegungen des Systems bezeichnet. Die vollständige Entkopplung der Zustandsgrößen ist nicht immer mögliche, für eine ausführliche Diskussion Thematik sei auf \cite[S. 135 ff.]{LunzeRT1} verwiesen.
 Die homogenen Lösung der kanonischen Normalform lässt sich mit Hilfe des Exponentialansatzes ermitteln.
 \begin{equation}
 \tilde{x}_{i\text{,h}}(t) = e^{\lambda_i\cdot t}\cdot \tilde{x}_i(0) \rArrow \bs{\tilde{x}}\idx{h}(t) = \begin{bmatrix}
@@ -130,7 +130,7 @@ Formal kann dieser Zusammenhang durch die Erweiterung des Exponentialansatzes au
 \bs{x}(t) = e^{\bs{A}\cdot t}\cdot \bs{x}(0) + \int^t_0 e^{\bs{A}(t-\tau)}\bs{B}\cdot \bs{u}(\tau)d\tau
 \label{eq_fMat_zeitbereich}
 \end{equation}
-Die Matrix-Exponentialfunktion $e^{\bs{A}\cdot t}$ heißt Fundamentalmatrix $\bs{\Phi}(t)$ und kann über die folgende Reihenentwicklung bestimmt werden. Eine Herleitung kann [RT2, Unbehauen, S. 6. ff] entnommen werden. 
+Die Matrix-Exponentialfunktion $e^{\bs{A}\cdot t}$ heißt Fundamentalmatrix $\bs{\Phi}(t)$ und kann über die folgende Reihenentwicklung bestimmt werden. Eine Herleitung kann \cite[S. 6 ff.]{UnbehauenRT2} entnommen werden. 
 \begin{equation}
 \bs{\Phi}(t) = e^{\bs{A}\cdot t} = \sum^{\infty}_{k=0} \bs{A}^k\frac{t^k}{k!}
 \end{equation}
