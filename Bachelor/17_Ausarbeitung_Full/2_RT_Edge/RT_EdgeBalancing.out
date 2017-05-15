@@ -1,7 +1,7 @@
-\BOOKMARK [0][-]{chapter.1}{Regelungstechnik}{}% 1
-\BOOKMARK [1][-]{section.1.1}{Zustandsraumdarstellung f\374r kontinuierliche Systeme}{chapter.1}% 2
+\BOOKMARK [0][-]{chapter.1}{Reglerentwurf f\374r das Balancieren auf einer Kante}{}% 1
+\BOOKMARK [1][-]{section.1.1}{Zustandsraumdarstellung f\374r zeitkontinuierliche Systeme}{chapter.1}% 2
 \BOOKMARK [1][-]{section.1.2}{Zustandsraumdarstellung f\374r zeitdiskrete Systeme}{chapter.1}% 3
-\BOOKMARK [1][-]{section.1.3}{Entwurf von Zustandsregelungen}{chapter.1}% 4
+\BOOKMARK [1][-]{section.1.3}{Entwurf von Zustandsreglern}{chapter.1}% 4
 \BOOKMARK [2][-]{subsection.1.3.1}{Reglerentwurf durch Eigenwertvorgabe}{section.1.3}% 5
 \BOOKMARK [2][-]{subsection.1.3.2}{Linear quadratisch optimale Regelung}{section.1.3}% 6
-\BOOKMARK [1][-]{section.1.4}{Verifizierung des Reglers an der Regelstrecke}{chapter.1}% 7
+\BOOKMARK [1][-]{section.1.4}{Erprobung des Reglers an der Regelstrecke}{chapter.1}% 7

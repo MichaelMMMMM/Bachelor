@@ -1,7 +1,7 @@
 \section{Untersuchung der Kinetik}
-Der nächste Schritt besteht darin die Kräfte zu modellieren, welche auf den Würfelkörper und die drei Schwungmassen wirken. Aus diesen können im Anschluss mit Hilfe der partiellen Geschwindigkeiten die generalisierten aktiven Kräfte $F_i$ ermittelt werden.
-Zunächst sollen die resultierenden Drehmomente $\bs{T}^{Ri/Mi}$ der Schwungmassen $R_i$ um ihren jeweiligen Drehpunkt $M_i$ bestimmt werden. Hierfür muss einerseits das Drehmoment $\bs{T}^{Ri/Mi}\idx{M}$ des antreibenden Motors und das verzögernde Reibmoment $\bs{T}^{Ri/Mi}\idx{R}$ beachtet werden.
-Diese ergeben sich aus der Summe der Drehmomente $\bs{T}^{Ri/Mi}$, welche durch die antreibenden Motoren verursacht werden, und der verzögernden Reibmomente $\bs{T}^{Ri/Mi}$
+Der nächste Schritt besteht darin die Kräfte zu modellieren, welche auf den Würfelkörper und die drei Schwungmassen wirken. Aus diesen lassen sich mit Hilfe der partiellen Geschwindigkeiten die generalisierten aktiven Kräfte $F_i$ ermitteln.
+Zunächst sollen die resultierenden Drehmomente $\bs{T}^{Ri/Mi}$ der Schwungmassen $R_i$ um ihren jeweiligen Drehpunkt $M_i$ bestimmt werden. Hierfür muss einerseits das Drehmoment $\bs{T}^{Ri/Mi}\idx{M}$ des antreibenden Motors, andererseits das verzögernde Reibmoment $\bs{T}^{Ri/Mi}\idx{R}$ beachtet werden.
+Diese ergeben sich aus der Summe der Drehmomente $\bs{T}^{Ri/Mi}$, welche  die antreibenden Motoren verursachen, und der verzögernden Reibmomente $\bs{T}^{Ri/Mi}$
 \begin{equation}
 \bs{T}^{R1/M1} = \bs{T}^{R1/M1}\idx{M} + \bs{T}^{R1/M1}\idx{R} = \vecBS{K}{T\idx{M1}}{0}{0} + \vecBS{K}{-C_{\psi}\cdot (u\idx4 - u\idx1)}{0}{0}
 \end{equation}
@@ -31,7 +31,7 @@ Somit folgt für das resultierende Drehmoment
 {-c_{\varphi\idx2}c_{\varphi\idx3} - c_{\varphi\idx2}\cdot s_{\varphi\idx3}} - \vecBS{K}{T\idx{M1}-C_{\psi}(u\idx4 - u\idx1)}{T\idx{M2}-C_{\psi}(u\idx5 - u\idx2)}{T\idx{M3}-C_{\psi}(u\idx6 - u\idx3)}
 \end{split}\,.
 \end{equation}
-Im nächsten Schritt können die generalisierten aktiven Kräfte berechnet werden. Diese entsprechen der Summe der inneren Produkte der resultierenden Drehmomente und der  partiellen Geschwindigkeit der Körper. Wenn die partiellen Geschwindigkeiten als die  Bewegungsrichtungen der Körper betrachtet werden, so stellt die Skalarmultiplikation der partiellen Geschwindigkeit und dem resultierenden Drehmoments dessen Abbildung in die Bewegungsrichtung dar. Folglich handelt es sich bei den generalisierten aktiven Kräften um skalare Größen, welche den Einfluss der wirkenden Drehmomente in Richtung der Freiheitsgrade wiedergeben.
+Im nächsten Schritt können die generalisierten aktiven Kräfte berechnet werden, welche der Summe der inneren Produkte der resultierenden Drehmomente und der  partiellen Geschwindigkeit der Körper entsprechen. Wenn die partiellen Geschwindigkeiten als die  Bewegungsrichtungen der Körper betrachtet werden, so stellt die Skalarmultiplikation der partiellen Geschwindigkeit und des resultierenden Drehmoments dessen Abbildung in die Bewegungsrichtung dar. Folglich handelt es sich bei den generalisierten aktiven Kräften um skalare Größen, welche den Einfluss der wirkenden Drehmomente in Richtung der Freiheitsgrade wiedergeben.
 \begin{align}
 F\idx1 &= \inProd{\vel{A}{\omega}{K}\idx1}{\bs{T}^{K/O}} + \sum^3_{i=1} \inProd{\vel{A}{\omega}{Ri}\idx1}{\bs{T}^{Ri/Mi}} 
 \\
@@ -51,16 +51,16 @@ F\idx5 &= \inProd{\vel{A}{\omega}{K}\idx5}{\bs{T}^{K/O}} + \sum^3_{i=1} \inProd{
 \\
 F\idx6 &= \inProd{\vel{A}{\omega}{K}\idx6}{\bs{T}^{K/O}} + \sum^3_{i=1} \inProd{\vel{A}{\omega}{Ri}\idx6}{\bs{T}^{Ri/Mi}} = T\idx{M3}-C_{\psi}(u\idx6 - u\idx3)
 \end{align}
-Neben den aktiven Kräften müssen auch die generalisierten Trägheitskräfte $F^*_i$ ermittelt werden um die Bewegungsgleichungen zu bestimmen. Hierfür werden zunächst die Trägheitsmomente $\bs{T}_*$ der Körper ermittelt werden. Nach \cite[S. 124 ff.]{KaneBook} gilt für die Trägheitsmomente der  Zusammenhang
+Neben den aktiven Kräften müssen auch die generalisierten Trägheitskräfte $F^*_i$ ermittelt werden um die Bewegungsgleichungen zu bestimmen, wofür zunächst die Trägheitsmomente $\bs{T}_*$ ermittelt werden. Nach \cite[S. 124 ff.]{KaneBook} gilt für die Trägheitsmomente der  Zusammenhang
 \begin{equation}
-\bs{T}_* = -\bs{\alpha}\cdot \bs{I} - \bs{\omega}\times(\bs{I}\cdot\bs{\omega}) \,.
+\bs{T}_* = -\bs{\alpha}\cdot \bs{I} - \bs{\omega}\times(\bs{I}\cdot\bs{\omega}) \,,
 \end{equation}
-Wobei $\bs{\alpha}$ und $\bs{\omega}$ die Winkelbeschleunigung bzw. -geschwindigkeit des Körpers und $\bs{I}$ dessen Trägheitstensor bezeichnet. 
+wobei $\bs{\alpha}$ und $\bs{\omega}$ die Winkelbeschleunigung bzw. -geschwindigkeit des Körpers und $\bs{I}$ dessen Trägheitstensor bezeichnet. 
 Die Winkelgeschwindigkeiten der Körper sind bereits bekannt, die Winkelbeschleunigung ergeben sich durch die Ableitung der Winkelgeschwindigkeiten relativ zu dem Intertialsystem $A$.
 \begin{equation}
 \vel{A}{\alpha}{K} = \frac{\presuper{A}d}{dt}\vel{A}{\omega}{K}, \vel{A}{\alpha}{R1} = \frac{\presuper{A}d}{dt}\vel{A}{\omega}{R1}, \vel{A}{\alpha}{R2} = \frac{\presuper{A}d}{dt}\vel{A}{\omega}{R2}, \vel{A}{\alpha}{R3} = \frac{\presuper{A}d}{dt}\vel{A}{\omega}{R3}
 \end{equation}
-Zunächst sollen die Trägheitsmomente $\bs{T}^{Ri/Mi}_*$ der Schwungmassen bestimmt werden. Deren Trägsheitstensoren $\bs{I}^{Ri/Mi}$ im Bezug auf die Drehpunkte $M_i$ wurde, wie in Abschnitt (\ref{TM_3D_Systemparameter}) erläutert, mit Hilfe einer CAD-Anwendung ermittelt.
+Zunächst sollen die Trägheitsmomente $\bs{T}^{Ri/Mi}_*$ der Schwungmassen bestimmt werden, deren Trägsheitstensoren $\bs{I}^{Ri/Mi}$ im Bezug auf die Drehpunkte $M_i$, wie in Abschnitt (\ref{TM_3D_Systemparameter}) erläutert, mit Hilfe einer CAD-Anwendung ermittelt wurden.
 \begin{equation}
 \bs{I}^{Ri/Mi} = \begin{pmatrix}
 I^{Ri}\idx{11} & 0 & 0 \\ 0 & I^{Ri}\idx{22} & 0 \\ 0 & 0 & I^{Ri}\idx{33}
@@ -69,7 +69,7 @@ I^{Ri}\idx{11} & 0 & 0 \\ 0 & I^{Ri}\idx{22} & 0 \\ 0 & 0 & I^{Ri}\idx{33}
 \begin{equation}
 \bs{T}^{Ri/Mi}_* = - \vel{A}{\alpha}{Ri}\cdot \bs{I}^{R_i/M_i} - \vel{A}{\omega}{Ri}\times(\bs{I}^{Ri/Mi} \cdot \vel{A}{\omega}{Ri})
 \end{equation}
-Der Trägheitstensor $\bs{I}^{K/O}$ des Würfelkörpers um den Punkt $O$ setzt sich aus mehreren Komponenten zusammen. Einerseits wird er durch den Trägheitstensor $\bs{I}^{GH/O}$ des Gehäuses um den Punkt $O$ beeinflusst, dieser Tensor beschreibt die Trägheitseigenschaften des Würfels ohne die Schwungmassen zu berücksichtigen. Andererseits beeinflussen die Schwungmassen das Trägheitsmoment des Würfelkörpers. Um diesen Einfluss nachzuvollziehen wird die Bewegung der Schwungmassen in zwei Komponenten zerlegt. Einerseits rotieren die Schwungmassen $R_i$ um die Punkte $M_i$, welche die Schwerpunkte der Schwungmassen sind. Andererseits bewegen sich die Schwerpunkte $M_i$ um den Punkt $O$ und sind bei der Betrachtung der Trägheitseigenschaften dem Würfelkörper zuzuordnen. Der Grund hierfür ist, dass die Schwerpunkte der Schwungmassen auf dem Würfelkörper fixiert sind. Im Modell werden die Schwerpunkte als Punktmassen mit der Masse $m_R$ behandelt. Diese Interpretation entspricht der Aussage des Steiner'schen Satzes.
+Der Trägheitstensor $\bs{I}^{K/O}$ des Würfelkörpers um den Punkt $O$ setzt sich aus mehreren Komponenten zusammen. Auf der einen Seite wird er durch den Trägheitstensor $\bs{I}^{GH/O}$ des Gehäuses um den Punkt $O$ beeinflusst, welcher die Trägheitseigenschaften des Würfels beschreibt, ohne dabei die Schwungmassen zu berücksichtigen. Auf der anderen Seite beeinflussen die Schwungmassen das Trägheitsmoment des Würfelkörpers. Um diesen Einfluss nachzuvollziehen, wird die Bewegung der Schwungmassen in zwei Komponenten zerlegt. Zum einen rotieren die Schwungmassen $R_i$ um die Punkte $M_i$, welche die Schwerpunkte der Schwungmassen bilden. Zum anderen bewegen sich die Schwerpunkte $M_i$ um den Punkt $O$ und sind bei der Betrachtung der Trägheitseigenschaften dem Würfelkörper zuzuordnen, da die Schwerpunkte der Schwungmassen auf dem Würfelkörper fixiert sind. Im Modell werden die Schwerpunkte als Punktmassen mit der Masse $m_R$ behandelt. Diese Interpretation entspricht der Aussage des Steiner'schen Satzes.
 Somit ist der Trägheitstensor $\bs{I}^{K/O}$ gleich der Summe von $\bs{I}^{GH/O}$ und den Trägheitstensoren der drei Massepunkte $M_i$ mit der Masse $m_R$ um $O$, wobei $\bs{r}_i$ den Ortsvektor des Punktes $M_i$ beschreibt.
 \begin{equation}
 \bs{I}^{K/O} = \bs{I}^{GH/O} + \sum^3_{i=1}m\idx{R}(\inProd{\bs{r}_i}{\bs{r}_i}-\bs{r}_i\otimes\bs{r}_i)
@@ -77,15 +77,15 @@ Somit ist der Trägheitstensor $\bs{I}^{K/O}$ gleich der Summe von $\bs{I}^{GH/O
 \begin{equation}
 \bs{T}^{K/O}_* = - \vel{A}{\alpha}{K}\cdot\bs{I}^{K/O} - \vel{A}{\omega}{K}\times(\bs{I}^{K/O}\cdot \vel{A}{\omega}{K})
 \end{equation}
-Prinzipiell können nun die generalisierten Trägheitskräfte $F^*_i$ durch die Skalarmultiplikation mit den partiellen Geschwindigkeiten berechnet werden. Allerdings handelt es sich bei den Trägheitsmomenten um nichtlineare Terme. Diese führen einerseits auf schwer nachzuvollziehende Bewegungsgleichungen. Andererseits werden für die Transformation in eine Zustandsraumdarstellung lineare Differentialgleichungen benötigt. In diesem Fall kann eine vorzeitige Linearisierung durchgeführt werden (\cite{KaneBook}, S. 171 ff.). Das heißt an Stelle die vollständigen, nicht linearen Bewegungsgleichungen zu bestimmen und anschließend zu linearisieren, werden bereits die generalisierten  Geschwindigkeiten $\hat{\bs{\omega}}$, sowie die resultierenden Dreh- und Trägheitsmomente $\hat{F}_i$ und $\hat{F}^*_i$ linearisiert und daraus die linearen Bewegungsgleichungen bestimmt.
-Hierfür muss zunächst der Arbeitspunkt des Systems festgelegt werden, welcher der Position auf einer Ecke entspricht. Die Winkel $\varphi_i$ müssen folglich so gewählt werden, dass der Ortsvektor des Schwerpunktes $\bs{c}$ aus Perspektive des Inertialsystems lediglich eine Komponente in Richtung von $\bs{a}_1$ besitzt.
+Prinzipiell können nun die generalisierten Trägheitskräfte $F^*_i$ durch die Skalarmultiplikation mit den partiellen Geschwindigkeiten berechnet werden. Allerdings handelt es sich bei den Trägheitsmomenten um nichtlineare Terme. Diese führen einerseits auf schwer nachzuvollziehende Bewegungsgleichungen. Andererseits werden für die Transformation in eine Zustandsraumdarstellung lineare Differentialgleichungen benötigt. In diesem Fall kann eine vorzeitige Linearisierung durchgeführt werden \cite[S. 171 ff.]{KaneBook}. Das heißt anstatt die vollständigen, nicht linearen Bewegungsgleichungen zu bestimmen und anschließend zu linearisieren, werden bereits die generalisierten  Geschwindigkeiten $\hat{\bs{\omega}}$ sowie die resultierenden Dreh- und Trägheitsmomente $\hat{F}_i$ und $\hat{F}^*_i$ linearisiert und daraus die linearen Bewegungsgleichungen bestimmt.
+Hierfür muss zunächst der Arbeitspunkt des Systems festgelegt werden, welcher der Position auf einer Ecke entspricht. Die Winkel $\varphi_i$ müssen folglich so gewählt werden, dass der Ortsvektor des Schwerpunktes $\bs{c}$ aus der Perspektive des Inertialsystems lediglich eine Komponente in Richtung des Vektors $\bs{a}_1$ besitzt.
 \begin{equation}
 \vecBS{A}{\vert \bs{c} \vert}{0}{0} \overset{!}= \pMat{K}{A}\cdot \vecBS{K}{l\idx{C}}{l\idx{C}}{l\idx{C}} \rArrow \varphi\idx{10} = 0, \hspace{10pt} \varphi\idx{20} =-2\cdot \text{atan}(\sqrt{2}-\sqrt{3}), \hspace{10pt} \varphi\idx{30}=\frac{-\pi}{4}
 \end{equation}
 \begin{equation}
 \hat{\varphi}_i = \varphi_{i0} + \bar{\varphi}_i
 \end{equation}
-In dem Gleichgewichtspunkt verschwinden die Winkelgeschwindigkeiten des Systems, folglich gilt für die generalisierten Geschwindigkeiten im Arbeitspunkt $u_{i0} = 0$
+In dem Gleichgewichtspunkt verschwinden die Winkelgeschwindigkeiten des Systems, weshalb für die generalisierten Geschwindigkeiten im Arbeitspunkt $u_{i0} = 0$
 \begin{align}
 \hat{u}\idx1 &= \dot{\varphi}\idx{2}\cdot s_{\varphi\idx{30}} + \dot{\varphi}\idx{1}\cdot c_{\varphi\idx{20}}c_{\varphi\idx{30}} \\
 \hat{u}\idx2 &= \dot{\varphi}\idx{2}\cdot c_{\varphi\idx{30}} - \dot{\varphi}\idx{1}\cdot c_{\varphi\idx{20}} s_{\varphi\idx{30}} \\
@@ -97,9 +97,9 @@ In dem Gleichgewichtspunkt verschwinden die Winkelgeschwindigkeiten des Systems,
 \begin{equation}
 \vel{A}{\hat{\omega}}{K} = \vecBS{K}{\hat{u}\idx1}{\hat{u}\idx2}{\hat{u}\idx3}, \hspace{10pt} \vel{A}{\hat{\omega}}{R1} = \vecBS{K}{\hat{u}\idx4}{\hat{u}\idx2}{\hat{u}\idx3}, \hspace{10pt}
 \vel{A}{\hat{\omega}}{R2} = \vecBS{K}{\hat{u}\idx1}{\hat{u}\idx5}{\hat{u}\idx3}, \hspace{10pt}
-\vel{A}{\hat{\omega}}{R3} = \vecBS{K}{\hat{u}\idx1}{\hat{u}\idx2}{\hat{u}\idx6} \,.
+\vel{A}{\hat{\omega}}{R3} = \vecBS{K}{\hat{u}\idx1}{\hat{u}\idx2}{\hat{u}\idx6}
 \end{equation}
-Insbesondere die Winkelbeschleunigungen werden durch die linearisierten Winkelgeschwindigkeiten stark vereinfacht.
+gilt. Insbesondere die Winkelbeschleunigungen werden durch die linearisierten Winkelgeschwindigkeiten stark vereinfacht.
 \begin{align}
 \vel{A}{\hat{\alpha}}{K} &= {\presuper{A}d}{dt}\vel{A}{\hat{\omega}}{K}
  &&= \vecBS{K}{\ddot{\varphi}\idx2\cdot s_{\varphi\idx{30}} + \ddot{\varphi}\idx1\cdot c_{\varphi\idx{20}}c_{\varphi\idx{30}}}{\ddot{\varphi}\idx2\cdot c_{\varphi\idx{30}} - \ddot{\varphi}\idx1\cdot c_{\varphi\idx{20}} s_{\varphi\idx{30}}}{\ddot{\varphi}\idx3 + \ddot{\varphi}\idx1\cdot s_{\varphi\idx{20}}} &&= \vecBS{K}{\hat{\dot{u}}\idx1}{\hat{\dot{u}}\idx2}{\hat{\dot{u}}\idx3}
@@ -120,14 +120,14 @@ Somit können nun die linearisierten Trägheitsmomente berechnet werden, wobei d
 \begin{equation}
 \hat{\bs{T}}^{R3/M3}\idx* = -\vel{A}{\hat{\alpha}}{R3}\cdot \bs{I}^{R3/M3} = \vecBS{K}{-\hat{\dot{u}}\idx1\cdot I^{R3}\idx{11}}{-\hat{\dot{u}}\idx2\cdot I^{R3}\idx{22}}{-\hat{\dot{u}}\idx6\cdot I^{R3}\idx{33}}
 \end{equation}
-Bei der Berechnung des Trägheitsmomentes $\hat{\bs{T}}^{K/O}$ muss beachtet werden, dass die Devitationsmomente des Tensors $\bs{I}^{K/O}$ nicht verschwinden und deshalb ein  komplexerer Ausdruck für das Trägheitsmoment resultiert.
+Bei der Berechnung des Trägheitsmomentes $\hat{\bs{T}}^{K/O}$ muss beachtet werden, dass die Devitationsmomente des Tensors $\bs{I}^{K/O}$ nicht verschwinden, woraus ein  komplexerer Ausdruck für das Trägheitsmoment resultiert.
 \begin{equation}
 \hat{\bs{T}}^{K/O}\idx* = -\vel{A}{\hat{\alpha}}{K}\cdot \bs{I}^{K/O} = -\vecBS{K}
 {\hat{\dot{u}}\idx1\cdot I^{K}\idx{11} + \hat{\dot{u}}\idx2\cdot I^{K}\idx{21} + \hat{\dot{u}}\idx3\cdot I^{K}\idx{31}}
 {\hat{\dot{u}}\idx1\cdot I^{K}\idx{12} + \hat{\dot{u}}\idx2\cdot I^{K}\idx{22} + \hat{\dot{u}}\idx3\cdot I^{K}\idx{32}}
 {\hat{\dot{u}}\idx1\cdot I^{K}\idx{13} + \hat{\dot{u}}\idx2\cdot I^{K}\idx{23} + \hat{\dot{u}}\idx3\cdot I^{K}\idx{33}}
 \end{equation}
-Nun können mit Hilfe der partiellen Geschwindigkeiten, welche durch die Linearisierung nicht beeinflusst werden, die generalisierten Trägheitskräfte $\hat{F}^*_i$ berechnet werden.
+Nun lassen sich mithilfe der partiellen Geschwindigkeiten, welche durch die Linearisierung nicht beeinflusst werden, die generalisierten Trägheitskräfte $\hat{F}^*_i$ berechnen.
 \begin{align}
 \hat{F}^*\idx1 &= \inProd{\hat{\bs{T}}^{K/O}\idx*}{\vel{A}{\omega}{K}\idx1} + \sum^3\idx{i=1}\inProd{\hat{\bs{T}}^{Ri/Mi}\idx*}{\vel{A}{\omega}{Ri}\idx1} 
 \\
@@ -147,7 +147,7 @@ Nun können mit Hilfe der partiellen Geschwindigkeiten, welche durch die Lineari
 \\
 \hat{F}^*\idx6 &= \inProd{\hat{\bs{T}}^{K/O}\idx*}{\vel{A}{\omega}{K}\idx6} + \sum^3\idx{i=1}\inProd{\hat{\bs{T}}^{Ri/Mi}\idx*}{\vel{A}{\omega}{Ri}\idx6} = -\hat{\dot{u}}\idx6\cdot I^{R3}\idx{33}
 \end{align}
-Zuletzt müssen die generalisierten aktiven Kräfte linearisiert werden um mit Hilfe von Kanes Gleichungen die Bewegungsgleichungen zu ermitteln. Hierbei muss lediglich das Gravitationsmoment $\bs{T}^{K/O}_G$ linearisiert werden, da die restlichen Momente bereits in linearer Form vorliegen.
+Zuletzt müssen die generalisierten aktiven Kräfte linearisiert werden, um mithilfe von Kanes Gleichungen die Bewegungsgleichungen zu ermitteln. Hierbei wird lediglich das Gravitationsmoment $\bs{T}^{K/O}_G$ linearisiert, da die restlichen Momente bereits in linearer Form vorliegen.
 \begin{align}
 \hat{\bs{T}}^{K/0}\idx{G} = \bs{\Delta T\idx{G}} \cdot \bs{\overline{\varphi}}
 \end{align}

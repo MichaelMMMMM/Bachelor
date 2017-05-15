@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.31)  10 MAY 2017 16:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.31)  15 MAY 2017 16:44
 entering extended mode
 **./Sensorik.tex
 (Sensorik.tex
@@ -972,6 +972,9 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 1.
 
 
+LaTeX Warning: Citation `MPU9250' on page 2 undefined on input line 15.
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
@@ -1013,6 +1016,9 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 1.
+
+
+LaTeX Warning: Citation `KaneBook' on page 4 undefined on input line 17.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1058,231 +1064,11 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\begingroup' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<let>-command' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@nomath' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\begingroup' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\setbox' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\hbox' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\thinmuskip' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\medmuskip' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\m@ne' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\thickmuskip' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@ne' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\setbox' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\tw@' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\hbox' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\varphi' on input line 1.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\mathsurround' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\varphi' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\mathsurround' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@tempa' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\mathchoice' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\hbox' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\mathsurround' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\displaystyle' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\varphi' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\hbox' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\mathsurround' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\textstyle' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\varphi' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\hbox' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\mathsurround' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\scriptstyle' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\varphi' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\hbox' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\mathsurround' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\scriptscriptstyle' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\varphi' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\endgroup' on input line 1.
+(hyperref)                removing `subscript' on input line 1.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
@@ -1342,7 +1128,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 1.
 
-<img/Observer.pdf, id=128, 963.6pt x 542.025pt>
+<img/Observer.pdf, id=127, 963.6pt x 542.025pt>
 File: img/Observer.pdf Graphic file (type pdf)
  <use img/Observer.pdf>
 Package pdftex.def Info: img/Observer.pdf used on input line 18.
@@ -1357,77 +1143,77 @@ Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 34.
  [9 <./img/Observer.pdf>]
 Package epstopdf Info: Source file: <img/edge_exp3_phi.eps>
-(epstopdf)                    date: 2017-05-01 21:18:32
-(epstopdf)                    size: 71081 bytes
+(epstopdf)                    date: 2017-05-15 16:36:53
+(epstopdf)                    size: 69093 bytes
 (epstopdf)             Output file: <img/edge_exp3_phi-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-05-01 21:18:32
-(epstopdf)                    size: 27188 bytes
+(epstopdf)                    date: 2017-05-15 16:43:36
+(epstopdf)                    size: 27258 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/edge_exp3_phi-eps-conve
 rted-to.pdf img/edge_exp3_phi.eps>
 (epstopdf)             \includegraphics on input line 40.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/edge_exp3_phi-eps-converted-to.pdf, id=158, 365.365pt x 308.15125pt>
+<img/edge_exp3_phi-eps-converted-to.pdf, id=155, 367.3725pt x 307.1475pt>
 File: img/edge_exp3_phi-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/edge_exp3_phi-eps-converted-to.pdf>
 Package pdftex.def Info: img/edge_exp3_phi-eps-converted-to.pdf used on input l
 ine 40.
-(pdftex.def)             Requested size: 189.63438pt x 159.93863pt.
+(pdftex.def)             Requested size: 198.45662pt x 165.92747pt.
 Package epstopdf Info: Source file: <img/edge_exp3_uk.eps>
-(epstopdf)                    date: 2017-05-01 21:18:33
-(epstopdf)                    size: 83652 bytes
+(epstopdf)                    date: 2017-05-15 16:36:54
+(epstopdf)                    size: 81315 bytes
 (epstopdf)             Output file: <img/edge_exp3_uk-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-05-01 21:18:33
-(epstopdf)                    size: 33778 bytes
+(epstopdf)                    date: 2017-05-15 16:43:37
+(epstopdf)                    size: 33830 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/edge_exp3_uk-eps-conver
 ted-to.pdf img/edge_exp3_uk.eps>
 (epstopdf)             \includegraphics on input line 41.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/edge_exp3_uk-eps-converted-to.pdf, id=159, 376.40625pt x 308.15125pt>
+<img/edge_exp3_uk-eps-converted-to.pdf, id=156, 378.41376pt x 307.1475pt>
 File: img/edge_exp3_uk-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/edge_exp3_uk-eps-converted-to.pdf>
 Package pdftex.def Info: img/edge_exp3_uk-eps-converted-to.pdf used on input li
 ne 41.
-(pdftex.def)             Requested size: 189.63438pt x 155.25073pt.
+(pdftex.def)             Requested size: 198.45662pt x 161.08144pt.
 Package epstopdf Info: Source file: <img/edge_exp3_ur.eps>
-(epstopdf)                    date: 2017-05-01 21:18:33
-(epstopdf)                    size: 85489 bytes
+(epstopdf)                    date: 2017-05-15 16:36:54
+(epstopdf)                    size: 83222 bytes
 (epstopdf)             Output file: <img/edge_exp3_ur-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-05-01 21:18:33
-(epstopdf)                    size: 34497 bytes
+(epstopdf)                    date: 2017-05-15 16:43:38
+(epstopdf)                    size: 34600 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/edge_exp3_ur-eps-conver
 ted-to.pdf img/edge_exp3_ur.eps>
 (epstopdf)             \includegraphics on input line 44.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/edge_exp3_ur-eps-converted-to.pdf, id=160, 368.37625pt x 308.15125pt>
+<img/edge_exp3_ur-eps-converted-to.pdf, id=157, 370.38374pt x 307.1475pt>
 File: img/edge_exp3_ur-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/edge_exp3_ur-eps-converted-to.pdf>
 Package pdftex.def Info: img/edge_exp3_ur-eps-converted-to.pdf used on input li
 ne 44.
-(pdftex.def)             Requested size: 189.63438pt x 158.63147pt.
+(pdftex.def)             Requested size: 198.45662pt x 164.57301pt.
 Package epstopdf Info: Source file: <img/edge_exp3_tm.eps>
-(epstopdf)                    date: 2017-05-01 21:18:33
-(epstopdf)                    size: 74724 bytes
+(epstopdf)                    date: 2017-05-15 16:36:54
+(epstopdf)                    size: 72593 bytes
 (epstopdf)             Output file: <img/edge_exp3_tm-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-05-01 21:18:33
-(epstopdf)                    size: 28426 bytes
+(epstopdf)                    date: 2017-05-15 16:43:38
+(epstopdf)                    size: 28479 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/edge_exp3_tm-eps-conver
 ted-to.pdf img/edge_exp3_tm.eps>
 (epstopdf)             \includegraphics on input line 45.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/edge_exp3_tm-eps-converted-to.pdf, id=161, 381.425pt x 308.15125pt>
+<img/edge_exp3_tm-eps-converted-to.pdf, id=158, 383.4325pt x 307.1475pt>
 File: img/edge_exp3_tm-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/edge_exp3_tm-eps-converted-to.pdf>
 Package pdftex.def Info: img/edge_exp3_tm-eps-converted-to.pdf used on input li
 ne 45.
-(pdftex.def)             Requested size: 189.63438pt x 153.20537pt.
+(pdftex.def)             Requested size: 198.45662pt x 158.97243pt.
 )
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 16.
@@ -1454,15 +1240,9 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 19.
  (Sensorik.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 19.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 19.
+Package rerunfilecheck Info: File `Sensorik.out' has not changed.
+(rerunfilecheck)             Checksum: A639C36933EB5779E8E45770289C3F68;409.
 
-
-Package rerunfilecheck Warning: File `Sensorik.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Sensorik.out':
-(rerunfilecheck)             Before: BA40F98449BF2B029230947185DA35AD;448
-(rerunfilecheck)             After:  BE4D53B14E01FFF60FC14459CA486787;414.
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 4.0pt have occurred.
@@ -1470,48 +1250,38 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 19.
  )
 (\end occurred when \ifx on line 18 was incomplete) 
 Here is how much of TeX's memory you used:
- 12428 strings out of 493333
- 186548 string characters out of 3139200
- 323805 words of memory out of 3000000
- 15651 multiletter control sequences out of 15000+200000
- 20566 words of font info for 76 fonts, out of 3000000 for 9000
+ 12417 strings out of 493333
+ 186401 string characters out of 3139200
+ 323546 words of memory out of 3000000
+ 15645 multiletter control sequences out of 15000+200000
+ 18112 words of font info for 68 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 54i,27n,56p,1402b,395s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{
-equation.6.4.29} has been referenced but does not exist, replaced by a fixed on
-e
-
-pdfTeX warning (dest): name{figure.caption.21} has been referenced but does not
- exist, replaced by a fixed one
-
- <C:\Users\ich\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\yfrak\dpi657\yfr
-ak.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C
-:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Progra
-m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Program Files/M
-iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.
-9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/
-type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
-blic/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
-onts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
-mmi9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmib10.pf
-b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb><
-C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Progra
-m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/f
-onts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
-/public/amsfonts/cm/cmsl10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
-amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
-/cm/cmsy8.pfb>
-Output written on Sensorik.pdf (11 pages, 1001457 bytes).
+ 54i,27n,56p,1397b,395s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\ich\AppData\Local
+\MiKTeX\2.9\fonts\pk\ljfour\public\yfrak\dpi657\yfrak.pk><C:/Program Files/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/cm/cmbx8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
+/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
+s/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmm
+i12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><
+C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Progra
+m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Program Files/M
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Program Files/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb><C:/Program Files/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
+amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
+m/cmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl10.p
+fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/P
+rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on Sensorik.pdf (11 pages, 904884 bytes).
 PDF statistics:
- 259 PDF objects out of 1000 (max. 8388607)
- 55 named destinations out of 1000 (max. 500000)
+ 255 PDF objects out of 1000 (max. 8388607)
+ 53 named destinations out of 1000 (max. 500000)
  83 words of extra memory for PDF output out of 10000 (max. 10000000)
 

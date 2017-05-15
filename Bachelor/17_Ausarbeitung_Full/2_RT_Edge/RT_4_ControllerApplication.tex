@@ -1,5 +1,5 @@
-\section{Verifizierung des Reglers an der Regelstrecke}
-Die letztendliche Aufgabe besteht darin einen Regler zu entwerfen, damit der Würfel auf einer Kante balanciert. Hierfür wird ein linear quadratisch optimaler Regler entworfen, wobei die Gewichtsmatrizen
+\section{Erprobung des Reglers an der Regelstrecke}
+Damit der Würfel auf einer Kante balancieren kann, wird ein LQ-Regler entworfen, wobei die Gewichtsmatrizen
 \begin{equation}
 \bs{Q} = \begin{bmatrix}
 \varphi^{-2}\idx{max} & 0 & 0 \\
@@ -15,27 +15,27 @@ J = \sum^{\infty}_{k=0}\left( \frac{\varphi(k)^2}{\varphi^2\idx{max}} + \frac{u\
 \end{equation}
 Somit werden der Zustandsvektor und die Stellgröße quadratisch über ihren maximalen Wert minimiert. Der daraus resultierende Regelkreis besitzt die Eigenwerte
 \begin{equation}
-\lambda_1 = 0{,}7895 \hspace{35pt} \lambda_{2,3} = 0{,}8830 \pm 0{,}0087j
+\lambda_1 = 0{,}7895 \hspace{35pt} \lambda_{2,3} = 0{,}8830 \pm 0{,}0087j\,,
 \end{equation}
-und ist somit asymptotisch stabil. Im nächsten Schritt wird der Regler an der realen Regelstrecke validiert. Die folgende Abbildung zeigt den Verlauf der Zustands- und Stellgröße, wobei das System bei dem Zeitpunk $t\approx 1{,}7$ durch eine äußere Störung erregt wurde.
+weshalb er asymptotisch stabil ist. Im nächsten Schritt wird der Regler an der realen Regelstrecke validiert. Die folgende Abbildung zeigt den Verlauf der Zustands- und Stellgröße, wobei das System bei dem Zeitpunk $t\approx 1{,}7$ durch eine äußere Störung erregt wurde.
 \begin{figure}[h!]
 \centering
-\includegraphics[width=0.4\linewidth]{img/edge_exp1_phi.eps}\hspace{1cm}
-\includegraphics[width=0.4\linewidth]{img/edge_exp1_uk.eps}
+\includegraphics[width=0.45\textwidth]{img/edge_exp1_phi.eps}\hspace{0.7cm}
+\includegraphics[width=0.45\textwidth]{img/edge_exp1_uk.eps}
 \vspace{0.5cm}
 
-\includegraphics[width=0.4\linewidth]{img/edge_exp1_ur.eps}\hspace{1cm}
-\includegraphics[width=0.4\linewidth]{img/edge_exp1_tm.eps}\caption{Verlauf der Zustands- und Stellgrößen bei dem Versuch an der Regelstrecke}
+\includegraphics[width=0.45\textwidth]{img/edge_exp1_ur.eps}\hspace{0.7cm}
+\includegraphics[width=0.45\textwidth]{img/edge_exp1_tm.eps}\caption{Verlauf der Zustands- und Stellgrößen bei dem Versuch an der Regelstrecke}
 \end{figure}
 \pagebreak
 
-Die Abbildungen zeigen, dass der Regler das System nicht in die Ruhelage $\bs{x}=\bs{0}$ überführt, sondern die Schwungmasse mit konstanter Geschwindigkeit rotiert. Dieser Umstand ist darauf zurückzuführen, dass der Zustandsvektor mit einem systematischen Messfehler erfasst wird. Im Modell wird diese Gegebenheit durch die Einführung der Zustandsgrößen
+Die Abbildungen zeigen, dass der Regler das System nicht in die Ruhelage $\bs{x}=\bs{0}$ überführt, sondern die Schwungmasse mit konstanter Geschwindigkeit rotieren lässt. Dieser Umstand ist darauf zurückzuführen, dass die Erfassung des Zustandsvektors von einem systematischen Messfehler betroffen ist. Im Modell wird diese Gegebenheit durch die Einführung der Zustandsgrößen
 \begin{equation}
 \bs{\hat{x}} = \begin{pmatrix}
 \hat{\varphi} \\ \hat{u}\idx{K} \\ \hat{u}\idx{R}
 \end{pmatrix}
 \end{equation}
-erfasst, welche die jeweiligen Messabweichungen darstellen. Der Ausgangsvektor $\bs{y}$ stellt die Messwerte dar und wird durch die Summe des ursprünglichen Zustandvektors $\bs{x}$ und der Messabweichungen $\bs{\hat{x}}$ berechnet. Aus diesen Überlegungen ergibt sich für den offenen Regelkreis das System
+erfasst, welche die jeweiligen Messabweichungen darstellen. Der Ausgangsvektor $\bs{y}$ stellt die Messwerte dar und wird durch die Summe des ursprünglichen Zustandvektors $\bs{x}$ und der Messabweichungen $\bs{\hat{x}}$ berechnet. Aus diesen Überlegungen folgt für den offenen Regelkreis das System
 \begin{equation}
 \textfrak{D}\idx{o} : \left\{ \begin{split}
 \bs{x}\idx{o}(k+1) &= \underbrace{\begin{bmatrix}
@@ -72,7 +72,7 @@ Für den geschlossenen Regelkreis ergeben sich die Eigenwerte
 \lambda\idx1 = 0{,}7895 \hspace{35pt} \lambda\idx{2,3} = 0{,}8830 \pm 0{,}0087j \hspace{35pt} \lambda\idx{4,5,6} = 1
 \,.
 \end{equation}
-Diese zeigen, dass die urpsrünglichen Eigenwerte erhalten bleiben und somit die Eigenbewegung nach wie vor stabilisiert wird. Die zusätzlichen Eigenwerte $\lambda\idx{4,5,6}=1$ sind den Messabweichungen zuzuordnen, welche als konstant modelliert wurden. Hieraus lässt sich folgern, dass der geschlossene Regelkreis als lineares System für beliebige Messabweichungen stabil ist, insofern diese nicht von einem instabilen Vorgang verursacht werden. Um den Einfluss der Messabweichungen auf die Trajektorie $\bs{x}$ zu ermitteln wird das System $\overline{\textfrak{D}}\idx{o}$ in die kanonische Normalform transformiert.
+Diese zeigen, dass die urpsrünglichen Eigenwerte erhalten bleiben und somit die Eigenbewegung nach wie vor stabilisiert wird. Die zusätzlichen Eigenwerte $\lambda\idx{4,5,6}=1$ sind den Messabweichungen zuzuordnen, welche als konstant modelliert wurden. Hieraus lässt sich folgern, dass der geschlossene Regelkreis als lineares System für beliebige Messabweichungen stabil ist, insofern diese nicht durch einen instabilen Vorgang verursacht werden. Um den Einfluss der Messabweichungen auf die Trajektorie $\bs{x}$ zu ermitteln wird das System $\overline{\textfrak{D}}\idx{o}$ in die kanonische Normalform transformiert.
 \begin{equation}
 \tilde{\overline{\bs{A}}}\idx{o} = \bs{V}^{-1}\idx{o}\overline{\bs{A}}\idx{o}\bs{V}\idx{o} = \begin{bmatrix}
 \lambda\idx1 & & & \\
@@ -93,24 +93,25 @@ Interessant ist hierbei die Form der Transformationsmatrix
 \end{bmatrix}
 \,.
 \end{equation}
-Zunächst geht aus den unteren drei Zeilen hervor, dass es sich bei den Messabweichungen $\bs{\hat{x}}$ um kanonische Zustandsvariablen handelt. Des weiteren bleiben die Eigenvektoren $\bs{V}$ des ursprünglichen Systems $\overline{\textfrak{D}}$ und somit auch dessen Eigenbewegung erhalten. Die Messabweichungen wirken lediglich über die Faktoren $\gamma_i$ auf die Geschwindigkeit $u\idx{R}$ des Schwungmasse ein. Unter der Annahme, dass die Messabweichungen konstant sind, führen diese zu einer verbleibenden Bewegung der Schwungmasse. Deshalb muss die vorherige Stabilitäsaussage auf das Gebiet der Zustands- und Stellgrößen begrenzt werden für welche die Stellgröße nicht begrenzt ist. Beispielsweise kann das System nicht mehr stabilisiert werden, wenn der Messfehler so groß ist, dass $\bs{\gamma}\cdot \bs{\hat{x}}$ die maximale Drehzahl des Motors überschreitet.
+Zunächst geht aus den unteren drei Zeilen hervor, dass es sich bei den Messabweichungen $\bs{\hat{x}}$ um kanonische Zustandsvariablen handelt. Des Weiteren bleiben die Eigenvektoren $\bs{V}$ des ursprünglichen Systems $\overline{\textfrak{D}}$ und somit auch dessen Eigenbewegung erhalten. Die Messabweichungen wirken lediglich über die Faktoren $\gamma_i$ auf die Geschwindigkeit $u\idx{R}$ des Schwungmasse ein. Unter der Annahme, dass die Messabweichungen konstant sind, führen diese zu einer verbleibenden Bewegung der Schwungmasse. Aus diesem Grund muss die vorherige Stabilitäsaussage auf das Gebiet der Zustands- und Stellgrößen begrenzt werden, für welche die Stellgröße nicht begrenzt ist. Beispielsweise kann das System nicht mehr stabilisiert werden, wenn durch einen Messfehler die maximale Drehzahl des Motors überschritten wird.
 
-Da der Winkel $\varphi$ nach wie vor asymptotisch stabil ist entspricht der Endwert der gemessenen Größe $\bs{y}(1)$ der Messabweichung.
+Da der Winkel $\varphi$ nach wie vor asymptotisch stabil ist, entspricht der Endwert der gemessenen Größe $\bs{y}(1)$ der Messabweichung.
 \begin{equation}
 \bs{y}(1) = \varphi + \hat{\varphi} \hspace{25pt} \rightarrow\hspace{25pt} \lim_{k\rightarrow\infty}\bs{y}(1) = \hat{\varphi}
 \end{equation}
-Deshalb wird zunächst die Messabweichung $\hat{\varphi}$ bestimmt und in einem anschließenden Versuch korrigiert. Nach dem Modell ist zu erwarten, dass die Schwungmasse nahe zum Stillstand kommt. Dies ist darin begründet, dass lediglich die Messabweichung $\varphi$ korrigiert wird, diese allerdings den größten Einfluss auf den Endwert des Systems hat.
-\begin{figure}[h!]
-\includegraphics[width=0.45\linewidth]{img/edge_exp2_phi.eps}
-\includegraphics[width=0.45\linewidth]{img/edge_exp2_uk.eps}
-\caption{Verlauf von $\varphi$ und $u\idx{K}$ bei korrigierten Messabweichungen}
+Deshalb wird zunächst die Messabweichung $\hat{\varphi}$ bestimmt und in einem anschließenden Versuch korrigiert. Nach dem Modell ist zu erwarten, dass die Schwungmasse beinahe zum Stillstand kommt, da lediglich die Messabweichung $\varphi$ korrigiert wird, welche allerdings den größten Einfluss auf den Endwert des Systems hat.
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=0.45\textwidth]{img/edge_exp2_phi.eps}\hspace{0.7cm}
+\includegraphics[width=0.45\textwidth]{img/edge_exp2_uk.eps}
 \label{plot1_edge_exp2}
 \end{figure}
-\begin{figure}[h!]
-\includegraphics[width=0.45\linewidth]{img/edge_exp2_ur.eps}
-\includegraphics[width=0.45\linewidth]{img/edge_exp2_tm.eps}
+\begin{figure}[!ht]\ContinuedFloat
+\centering
+\includegraphics[width=0.45\textwidth]{img/edge_exp2_ur.eps}\hspace{0.7cm}
+\includegraphics[width=0.45\textwidth]{img/edge_exp2_tm.eps}
 \caption{Verlauf von $u_R$ und $T_M$ bei korrigierten Messabweichungen}
 \label{plot2_edge_exp2}
 \end{figure}
 \newpage
-Die Abbildungen (\ref{plot1_edge_exp2}) und (\ref{plot2_edge_exp2}) zeigen den Verlauf der Zustandsgrößen, wobei zu dem Zeitpunkt $t=15$ die Messabweichung korrigiert wurde. Daraufhin nimmt die Geschwindigkeit $u_R$ der Schwungmasse deutlich ab.
+Die Abbildung (\ref{plot2_edge_exp2}) zeigt den Verlauf des Systems, wobei zu dem Zeitpunkt $t=15$ die Messabweichung korrigiert wurde. Daraufhin nimmt die Geschwindigkeit $u_R$ der Schwungmasse wie erwartet ab.

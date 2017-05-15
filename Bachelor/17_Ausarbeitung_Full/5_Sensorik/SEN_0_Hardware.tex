@@ -1,4 +1,4 @@
-\section{Bestimmung der Winkelgeschwindigkeiten $u_{Ki}$ und $u_{Ri}$}
+\section{Erfassung der Winkelgeschwindigkeiten $u_{Ki}$ und $u_{Ri}$}
 Für die Berechnung des Reglers ist der Zustandsvektor $\bs{x}$ erforderlich. Dieser setzt sich aus den Vektoren
 \begin{equation}
 \bs{\varphi} = \begin{bmatrix}
@@ -12,7 +12,7 @@ u\idx{K1} \\ u\idx{K2} \\ u\idx{K3}
 u\idx{R1} \\ u\idx{R2} \\ u\idx{R3}
 \end{bmatrix}
 \end{equation}
-zusammen.\footnote{Für die Erfassung der Zustandsgrößen werden die Winkel $\varphi_i$ betrachtet. Der Regler verwendet allerdings die Abweichung $\overline{\varphi}_i$ der Winkel von dem Arbeitspunkt. Deshalb wird der Arbeitspunkt von den Winkelwerten abgezogen bevor der Regler berechnet wird.} Um die Zustandsgrößen zu messen bzw. zu schätzen sind in dem Würfelgehäuse sechs MPU9050-Module montiert \cite{MPU9250}, welche sowohl einen Beschleunigungs- als auch Drehratensensor besitzen. Die Drehratensensoren erfassen deren Winkelgeschwindigkeiten in die Richtung dreier Messachsen, welche paarweise orthogonal zueinander stehen. Die drei Messwerte werden zu einem Vektor $\bs{\omega}_i$ zusammengefasst. Um die Sensoren in das mechanische Modell zu integrieren, werden deren Messachsen als Vektorbasis des Bezugssystem $S_i, i \in \left\{1, 2, 3, 4, 5, 6\right\}$ definiert. Somit sind die Anzeigewerte der Drehratensensoren die Komponenten der absoluten Winkelgeschwindigkeiten aus Perspektive von $S_i$
+zusammen.\footnote{Für die Erfassung der Zustandsgrößen werden die Winkel $\varphi_i$ betrachtet. Der Regler verwendet allerdings die Abweichung $\overline{\varphi}_i$ der Winkel vom Arbeitspunkt. Deshalb wird der Arbeitspunkt von den Winkelwerten abgezogen bevor der Regler berechnet wird.} Um die Zustandsgrößen zu messen bzw. zu schätzen, sind in dem Würfelgehäuse sechs MPU9050-Module montiert \cite{MPU9250}, welche sowohl einen Beschleunigungs- als auch einen Drehratensensor besitzen. Die Drehratensensoren erfassen deren Winkelgeschwindigkeiten in die Richtung dreier Messachsen, welche paarweise orthogonal zueinander stehen. Die drei Messwerte werden zu einem Vektor $\bs{\omega}_i$ zusammengefasst. Um die Sensoren in das mechanische Modell zu integrieren, werden deren Messachsen als Vektorbasis des Bezugssystem $S_i, i \in \left\{1, 2, 3, 4, 5, 6\right\}$ definiert. Somit sind die Anzeigewerte der Drehratensensoren die Komponenten der absoluten Winkelgeschwindigkeiten aus Perspektive von $S_i$
 \begin{equation}
 \bs{\omega}_i = \begin{bmatrix}
 \omega_{i\text{x}} \\ \omega_{i\text{y}} \\ \omega_{i\text{z}}
@@ -22,7 +22,7 @@ Da die Sensoren auf dem Würfelkörper fixiert sind, stimmen deren absolute Wink
 \begin{equation}
 \vel{A}{\omega}{S_i} = \vel{A}{\omega}{K} = \vecBS{K}{u\idx{K1}}{u\idx{K2}}{u\idx{K3}}
 \end{equation}
-Somit müssen lediglich die Abbildungmatrizen $\pMat{S_i}{K}$ bestimmt werden, um aus den Messwerten die Zustandsgrößen $\bs{u}_K$ zu berechnen. Da die Sensoren so montiert sind, dass deren Messachsen parallel zu den Würfelkanten liegen, können die Projektionsmatrizen an Hand des Aufbaus bestimmt werden.\footnote{Hier wird die Annahme getroffen, dass die Messachsen parallel zu den Würfelkanten stehen. In der Realität besteht durch Fertigungstoleranzen Abweichungen, welcher hier nicht berücksichtigt werden.}
+Somit müssen lediglich die Abbildungmatrizen $\pMat{S_i}{K}$ bestimmt werden, um aus den Messwerten die Zustandsgrößen $\bs{u}_K$ zu berechnen. Da die Sensoren so montiert sind, dass deren Messachsen parallel zu den Würfelkanten liegen, können die Projektionsmatrizen an Hand des Aufbaus bestimmt werden.\footnote{Hier wird die Annahme getroffen, dass die Messachsen parallel zu den Würfelkanten stehen. In der Realität enstehen durch Fertigungstoleranzen Abweichungen, welche hier nicht berücksichtigt werden.}
 \begin{equation}
 \pMat{S_{1,2}}{K} = \begin{bmatrix}
 0 & 1 & 0 \\ 1 & 0 & 0\\ 0 & 0 & 1

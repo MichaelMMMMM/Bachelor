@@ -2,35 +2,35 @@
 \BOOKMARK [0][-]{chapter*.7}{Listings}{}% 2
 \BOOKMARK [0][-]{chapter*.8}{Nomenklatur}{}% 3
 \BOOKMARK [0][-]{chapter.1}{Einleitung}{}% 4
-\BOOKMARK [0][-]{chapter.2}{Modellbildung W\374rfel auf Kante}{}% 5
+\BOOKMARK [0][-]{chapter.2}{Modellbildung f\374r den W\374rfel auf einer Kante}{}% 5
 \BOOKMARK [1][-]{section.2.1}{Untersuchung der Kinematik}{chapter.2}% 6
 \BOOKMARK [1][-]{section.2.2}{Untersuchung der Kinetik}{chapter.2}% 7
-\BOOKMARK [0][-]{chapter.3}{Regelungstechnik}{}% 8
-\BOOKMARK [1][-]{section.3.1}{Zustandsraumdarstellung f\374r kontinuierliche Systeme}{chapter.3}% 9
+\BOOKMARK [0][-]{chapter.3}{Reglerentwurf f\374r das Balancieren auf einer Kante}{}% 8
+\BOOKMARK [1][-]{section.3.1}{Zustandsraumdarstellung f\374r zeitkontinuierliche Systeme}{chapter.3}% 9
 \BOOKMARK [1][-]{section.3.2}{Zustandsraumdarstellung f\374r zeitdiskrete Systeme}{chapter.3}% 10
-\BOOKMARK [1][-]{section.3.3}{Entwurf von Zustandsregelungen}{chapter.3}% 11
+\BOOKMARK [1][-]{section.3.3}{Entwurf von Zustandsreglern}{chapter.3}% 11
 \BOOKMARK [2][-]{subsection.3.3.1}{Reglerentwurf durch Eigenwertvorgabe}{section.3.3}% 12
 \BOOKMARK [2][-]{subsection.3.3.2}{Linear quadratisch optimale Regelung}{section.3.3}% 13
-\BOOKMARK [1][-]{section.3.4}{Verifizierung des Reglers an der Regelstrecke}{chapter.3}% 14
-\BOOKMARK [0][-]{chapter.4}{Modellbildung W\374rfel auf Ecke}{}% 15
+\BOOKMARK [1][-]{section.3.4}{Erprobung des Reglers an der Regelstrecke}{chapter.3}% 14
+\BOOKMARK [0][-]{chapter.4}{Modellbildung f\374r den W\374rfel auf einer Ecke}{}% 15
 \BOOKMARK [1][-]{section.4.1}{Systemparameter}{chapter.4}% 16
 \BOOKMARK [1][-]{section.4.2}{Untersuchung der Kinematik}{chapter.4}% 17
 \BOOKMARK [1][-]{section.4.3}{Untersuchung der Kinetik}{chapter.4}% 18
 \BOOKMARK [0][-]{chapter.5}{Reglerentwurf f\374r das Balancieren auf einer Ecke}{}% 19
-\BOOKMARK [1][-]{section.5.1}{Modell basierter Reglerentwurf}{chapter.5}% 20
+\BOOKMARK [1][-]{section.5.1}{Modellbasierter Reglerentwurf}{chapter.5}% 20
 \BOOKMARK [1][-]{section.5.2}{Untersuchung der Stellgr\366\337enbeschr\344nkung}{chapter.5}% 21
 \BOOKMARK [1][-]{section.5.3}{Eprobung des Reglers an der Regelstrecke}{chapter.5}% 22
 \BOOKMARK [0][-]{chapter.6}{Erfassung der Zustandsgr\366\337en}{}% 23
-\BOOKMARK [1][-]{section.6.1}{Bestimmung der Winkelgeschwindigkeiten uKi und uRi}{chapter.6}% 24
-\BOOKMARK [1][-]{section.6.2}{Bestimmung der Winkel i}{chapter.6}% 25
-\BOOKMARK [1][-]{section.6.3}{Komplement\344rfilter f\374r die Winkel bold0mu mumu KaneBook}{chapter.6}% 26
-\BOOKMARK [1][-]{section.6.4}{Beobachter zur Ermittlung von }{chapter.6}% 27
-\BOOKMARK [0][-]{chapter.7}{Software}{}% 28
+\BOOKMARK [1][-]{section.6.1}{Erfassung der Winkelgeschwindigkeiten uKi und uRi}{chapter.6}% 24
+\BOOKMARK [1][-]{section.6.2}{Erfassung der Winkel i}{chapter.6}% 25
+\BOOKMARK [1][-]{section.6.3}{Komplement\344rfilter f\374r die Winkel i}{chapter.6}% 26
+\BOOKMARK [1][-]{section.6.4}{Beobachter f\374r die Sch\344tzung von }{chapter.6}% 27
+\BOOKMARK [0][-]{chapter.7}{Implementierung des Regelungskonzeptes}{}% 28
 \BOOKMARK [1][-]{section.7.1}{Zielplattform, Sensorik und Aktorik}{chapter.7}% 29
 \BOOKMARK [1][-]{section.7.2}{Implementierung des Signalflusses}{chapter.7}% 30
 \BOOKMARK [1][-]{section.7.3}{Aufbau der Komponentenarchitektur}{chapter.7}% 31
-\BOOKMARK [1][-]{section.7.4}{Entwurf der Regelungskomponente}{chapter.7}% 32
-\BOOKMARK [1][-]{section.7.5}{Entwurf der Kommunikationskomponente}{chapter.7}% 33
+\BOOKMARK [1][-]{section.7.4}{Aufbau der Regelungskomponente}{chapter.7}% 32
+\BOOKMARK [1][-]{section.7.5}{Aufbau der Kommunikationskomponente}{chapter.7}% 33
 \BOOKMARK [1][-]{section.7.6}{Aufbau der Desktop-Anwendung}{chapter.7}% 34
 \BOOKMARK [0][-]{chapter.8}{Zusammenfassung und Ausblick}{}% 35
 \BOOKMARK [0][-]{chapter*.33}{Literaturverzeichnis}{}% 36

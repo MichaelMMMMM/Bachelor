@@ -1,10 +1,10 @@
-\section{Bestimmung der Winkel $\varphi_i$}
-Ein relevantes Problem stellt die Bestimmung der Winkel $\bs{\varphi}$ dar welche nur indirekt über die Beschleunigungssensoren ermittelt werden können. Die Messwerte $\bs{s}$ der Beschleunigungssensoren setzten sich aus der resultierenden Beschleunigung $\vel{A}{a}{S_i}$ und dem überlagerten Erdbeschleunigungsvektor $\bs{g}$ zusammen.
+\section{Erfassung der Winkel $\varphi_i$}
+Ein relevantes Problem stellt die Bestimmung der Winkel $\bs{\varphi}$ dar, welche nur indirekt über die Beschleunigungssensoren ermittelt werden können. Die Messwerte $\bs{s}$ der Beschleunigungssensoren setzten sich aus der resultierenden Beschleunigung $\vel{A}{a}{S_i}$ und dem überlagerten Erdbeschleunigungsvektor $\bs{g}$ zusammen.
 Zunächst wird der Fall betrachtet, dass die Messachsen der Sensoren mit dem körperfesten Bezugssystem $K$ zusammenfallen.
 \begin{equation}
 \bs{s}_i = \vel{A}{a}{S_i} + \bs{g}
 \end{equation}
-Unter der Annahme, dass der Würfel nicht bewegt wird verschwindet der Einfluss der Beschleunigung $\vel{A}{a}{S_i}$.
+Unter der Annahme, dass der Würfel nicht bewegt wird, verschwindet der Einfluss der Beschleunigung $\vel{A}{a}{S_i}$.
 \begin{equation}
 \bs{s}_i = \bs{g} = \norm{\bs{g}}\cdot \vecBS{K}{-c_{\varphi\idx2}\cdot c_{\varphi\idx3}}{c_{\varphi\idx2}\cdot s_{\varphi\idx3}}{-s_{\varphi\idx2}}
 \end{equation}
@@ -14,7 +14,7 @@ Nun können die Winkel $\varphi\idx2$ und $\varphi\idx3$ aus den Komponenten des
 \hspace{35pt}
 \varphi_3 = -\text{atan}\left(\frac{\inProd{\bs{s}_i}{\bs{k}\idx2}}{\inProd{\bs{s}_i}{\bs{k}\idx3}}\right)
 \end{equation}
-Der Winkel $\varphi\idx1$ kann nicht aus dem Erdbeschleunigungsvektor ermittelt werden.  Jedoch schränkt dieser Umstand das Gesamtsystem nicht ein, da die Größe $\varphi\idx1$ keinen Einfluss auf die Systemdynamik hat. Um die Winkelschätzung auf den Fall des bewegten Würfels zu erweitern wird im nächsten Schritt die Beschleunigung $\vel{A}{a}{S_i}$ betrachtet. Da der Würfel eine rein rotatorische Bewegung durchführt genügt die Untersuchung der Winkelbeschleunigung und -geschwindigkeit  \cite[S. 30]{KaneBook}.
+Der Winkel $\varphi\idx1$ kann nicht aus dem Erdbeschleunigungsvektor ermittelt werden.  Jedoch schränkt dieser Umstand das Gesamtsystem nicht ein, da die Größe $\varphi\idx1$ keinen Einfluss auf die Systemdynamik hat. Um die Winkelschätzung auf den Fall des bewegten Würfels zu erweitern, wird im nächsten Schritt die Beschleunigung $\vel{A}{a}{S_i}$ betrachtet. Da der Würfel eine rein rotatorische Bewegung durchführt, genügt die Untersuchung der Winkelbeschleunigung und -geschwindigkeit  \cite[S. 30]{KaneBook}.
 \begin{equation}
 \begin{split}
 \vel{A}{a}{S_i} &= \vel{A}{\alpha}{K} \times \bs{r}_{S_i}  + \vel{A}{\omega}{K} \times \left( \vel{A}{\omega}{K}\times \bs{r}_{S_i} \right)
@@ -49,8 +49,8 @@ gelöst werden, wobei die Nebenbedingung
 \begin{equation}
 \sum^n_{i=1}b_i \neq 0
 \end{equation}
-zu beachten ist. Aus dieser Vorgehensweise können Rückschlüsse auf den Entwurf des Würfels gezogen werden. Sind die Ortsvektoren $\bs{r}_{S_i}$ linear abhängig genügen bereits zwei Sensoren um zwischen der resultierenden Beschleunigung $\vel{A}{a}{S_i}$ und der Erdbeschleunigung $g$ zu unterscheiden. Allerdings schränkt die Forderung nach linearer Abhängigkeiten die konstruktiven Möglichkeiten ein. Werden mehr als zwei Sensoren verwendet entfällt die Notwendigkeit der linearen Abhängigkeiten. Prinzipiell genügen drei Sensoren um die Einflüsse der Beschleunigung $\vel{A}{a}{S_i}$ zu eliminieren.
-Die hier verwendeten Beschleunigungssensoren sind von zwei weiteren Einschränkungen betroffen. Zunächst ist die Empfindlichkeit der Messung in z-Richtung gegenüber den x- und y-Achsen geringer, weshalb lediglich die letzteren verwendet. Des weiteren stimmen die Messachsen der Sensoren nicht mit dem körperfesten Bezugssystem $K$ überein. Um diese Umstände im Modell auszudrücken werden die drei Messachsen des Sensors als Bezugssystem $S_i$ interpretiert. Unter der Annahme, dass die Messachsen und Vektoren $\bs{k}_i$ paarweise orthogonal zueinander stehen kann die Projektionsmatrix $\pMat{S_i}{K}$ aus dem Aufbau bestimmt werden. Zusätzlich wird die dritte Spalte $\pMat{S_i}{K}$ durch den Nullvektor ersetzt um die Vernachlässigung der z-Messwerte darzustellen.
+zu beachten ist. Aus dieser Vorgehensweise können Rückschlüsse auf den Entwurf des Würfels gezogen werden. Sind die Ortsvektoren $\bs{r}_{S_i}$ linear abhängig, genügen bereits zwei Sensoren, um zwischen der resultierenden Beschleunigung $\vel{A}{a}{S_i}$ und der Erdbeschleunigung $g$ zu unterscheiden. Allerdings schränkt die Forderung nach linearer Abhängigkeit die konstruktiven Möglichkeiten ein. Werden mehr als zwei Sensoren verwendet, entfällt die Notwendigkeit der linearen Abhängigkeit. Prinzipiell genügen drei Sensoren, um die Einflüsse der Beschleunigung $\vel{A}{a}{S_i}$ zu eliminieren.
+Die hier verwendeten Beschleunigungssensoren sind von zwei weiteren Einschränkungen betroffen. Zunächst ist die Empfindlichkeit der Messung in z-Richtung gegenüber den x- und y-Achsen geringer, weshalb lediglich die Letzteren verwendet. Des Weiteren stimmen die Messachsen der Sensoren nicht mit dem körperfesten Bezugssystem $K$ überein. Um diese Umstände im Modell auszudrücken, werden die drei Messachsen des Sensors als Bezugssystem $S_i$ interpretiert. Unter der Annahme, dass die Messachsen und Vektoren $\bs{k}_i$ paarweise orthogonal zueinander stehen, kann die Projektionsmatrix $\pMat{S_i}{K}$ aus dem Aufbau bestimmt werden. Zusätzlich wird die dritte Spalte $\pMat{S_i}{K}$ durch den Nullvektor ersetzt, um die Vernachlässigung der z-Messwerte darzustellen.
 \begin{equation}
 \bs{s}_1 = \begin{bmatrix} 0 & 1 & 0 \\ 1 & 0 & 0 \\ 0 & 0 & 0\end{bmatrix}\cdot \presuper{S\idx1}{\bs{s}}\idx1 = \vecBS{K}{\inProd{\bs{s}_1}{\bs{k}_1}}{\inProd{\bs{s}_1}{\bs{k}_2}}{0} \hspace{25pt}
 \bs{s}_2 = \begin{bmatrix} 0 & 1 & 0 \\ 1 & 0 & 0 \\ 0 & 0 & 0\end{bmatrix}\cdot \presuper{S\idx2}{\bs{s}}\idx2 = \vecBS{K}{\inProd{\bs{s}_2}{\bs{k}_1}}{\inProd{\bs{s}_2}{\bs{k}_2}}{0}
@@ -71,8 +71,8 @@ Die hier verwendeten Beschleunigungssensoren sind von zwei weiteren Einschränku
 1 & 0 & 0 \\ 0 & 0 & 0 \\ 0 & 1 & 0
 \end{bmatrix}\cdot \presuper{S\idx6}{\bs{s}}\idx6 = \vecBS{K}{\inProd{\bs{s}_6}{\bs{k}_1}}{0}{\inProd{\bs{s}_6}{\bs{k}_3}}
 \end{equation}
-Da die z-Messwerte nicht verwendet werden gibt jeder Sensor nur die Beschleunigung in Richtung zweier Vektoren $\bs{k}_i$ wieder. Um dieses Problem zu beheben werden die Messwerte jeweils zweier Sensoren zu einem abstrakten Messvektor $\bs{\tilde{s}}_i$ zusammengefasst.
-Um hierbei die Auswirkung der Beschleunigungen $\vel{A}{a}{S_i}$ darzustellen wird die Definition
+Da die z-Messwerte nicht verwendet werden, gibt jeder Sensor nur die Beschleunigung in Richtung zweier Vektoren $\bs{k}_i$ wieder. Um dieses Problem zu beheben, werden die Messwerte jeweils zweier Sensoren zu einem abstrakten Messvektor $\bs{\tilde{s}}_i$ zusammengefasst.
+Um hierbei die Auswirkung der Beschleunigungen $\vel{A}{a}{S_i}$ darzustellen, wird die Definition
 \begin{equation}
 \kProdMat{\vel{A}{\alpha}{K}} + \kProdMat{\vel{A}{\omega}{K}}^2 \equiv \bs{M} = \begin{bmatrix}
 \bs{m}^T\idx1 \\ \bs{m}^T\idx2 \\ \bs{m}^T\idx3
@@ -118,7 +118,7 @@ In dieser Darstellung werden die Vektoren $\bs{\tilde{s}}_i$ mit den Diagonalmat
 b_{i\text{x}} & 0 & 0 \\ 0 & b_{i\text{y}} & 0 \\ 0 & 0 & b_{i\text{z}}
 \end{bmatrix}
 \end{equation}
-multipliziert um die Einflüsse der Beschleunigungen zu eliminieren. Für die Summe der Gewichteten Vektoren gilt
+multipliziert, um die Einflüsse der Beschleunigungen zu eliminieren. Für die Summe der Gewichteten Vektoren gilt
 \begin{equation}
 \sum^4_{i=1}\bs{B}_i\cdot \bs{\tilde{s}}_i = 
 \begin{bmatrix}
@@ -140,7 +140,7 @@ und andererseits
 \begin{equation}
 \text{det}\left(\sum^4_{i=1}\bs{B}_i\right) \neq 0
 \end{equation}
-gelten, ergibt sich für die Summe der Messvektoren $\bs{\tilde{\text{s}}}_i$
+gilt, ergibt sich für die Summe der Messvektoren $\bs{\tilde{\text{s}}}_i$
 \begin{equation}
 \sum^4_{i=1}\bs{B}_i\cdot\bs{\tilde{\text{s}}}_i = \sum^4_{i=1}\bs{B}_i\cdot \bs{g} \hspace{15pt}\leftrightarrow\hspace{15pt}
 \bs{g} = \left(\sum^4_{i=1}\bs{B}_i\right)^{-1}\cdot \sum^4_{i=1}\bs{B}_i\cdot\bs{\tilde{s}}_i \,.

@@ -13,7 +13,7 @@ Kd = K_unlimited;
 x0 = [0; 0.11; 0.08; zeros(6,1)];
 
 stop_time = 10;
-saturation_select = SATURATION_OFF;
+saturation_select = U_SATURATION_OFF;
 sim('LIN_Corner.slx');
 
 t_x = x_sim.time;
@@ -28,7 +28,7 @@ plot(t_x, phi); grid;
 emlTitle('Verlauf von $\overline{\varphi}$');
 emlXLabel('Zeit in Sekunden');
 emlYLabel('$\overline{\varphi}_i$ in Radiant');
-emlLegend({'$\varphi_1$', '$\varphi_2$', '$\varphi_3$'});
+emlLegend({'$\varphi_1$', '$\varphi_2$', '$\varphi_3$'}, 'sw');
 print('plots/lin_sim1_phi.eps', '-depsc');
 
 emlFigure();

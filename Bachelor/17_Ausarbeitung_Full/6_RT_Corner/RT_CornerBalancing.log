@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.31)  10 MAY 2017 15:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.31)  15 MAY 2017 16:35
 entering extended mode
 **./RT_CornerBalancing.tex
 (RT_CornerBalancing.tex
@@ -945,6 +945,9 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 3.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
+
+LaTeX Warning: Citation `LunzeRT2' on page 2 undefined on input line 58.
+
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 59.
 Package babel Info: Redefining ngerman shorthand "~
@@ -953,188 +956,193 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 59.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 59.
- [2]
+[2]
 Package epstopdf Info: Source file: <img/lin_sim1_phi.eps>
-(epstopdf)                    date: 2017-04-25 16:31:31
-(epstopdf)                    size: 585249 bytes
+(epstopdf)                    date: 2017-05-15 16:21:49
+(epstopdf)                    size: 591864 bytes
 (epstopdf)             Output file: <img/lin_sim1_phi-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-04-25 16:31:47
-(epstopdf)                    size: 95910 bytes
+(epstopdf)                    date: 2017-05-15 16:22:27
+(epstopdf)                    size: 108272 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/lin_sim1_phi-eps-conver
 ted-to.pdf img/lin_sim1_phi.eps>
 (epstopdf)             \includegraphics on input line 87.
 Package epstopdf Info: Output file is already uptodate.
-
-<img/lin_sim1_phi-eps-converted-to.pdf, id=53, 371.3875pt x 308.15125pt>
+ <img/lin_sim1_phi-eps-converted-to.pdf, id=54, 373.395pt x 307.1475pt>
 File: img/lin_sim1_phi-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/lin_sim1_phi-eps-converted-to.pdf>
 Package pdftex.def Info: img/lin_sim1_phi-eps-converted-to.pdf used on input li
 ne 87.
-(pdftex.def)             Requested size: 198.45662pt x 164.66885pt.
+(pdftex.def)             Requested size: 198.45662pt x 163.24669pt.
 Package epstopdf Info: Source file: <img/lin_sim1_uk.eps>
-(epstopdf)                    date: 2017-04-25 16:31:32
-(epstopdf)                    size: 609885 bytes
+(epstopdf)                    date: 2017-05-15 16:21:50
+(epstopdf)                    size: 610274 bytes
 (epstopdf)             Output file: <img/lin_sim1_uk-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-04-25 16:31:48
-(epstopdf)                    size: 211033 bytes
+(epstopdf)                    date: 2017-05-15 16:22:28
+(epstopdf)                    size: 203442 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/lin_sim1_uk-eps-convert
 ed-to.pdf img/lin_sim1_uk.eps>
 (epstopdf)             \includegraphics on input line 88.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/lin_sim1_uk-eps-converted-to.pdf, id=54, 371.3875pt x 308.15125pt>
+<img/lin_sim1_uk-eps-converted-to.pdf, id=55, 373.395pt x 307.1475pt>
 File: img/lin_sim1_uk-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/lin_sim1_uk-eps-converted-to.pdf>
 Package pdftex.def Info: img/lin_sim1_uk-eps-converted-to.pdf used on input lin
 e 88.
-(pdftex.def)             Requested size: 198.45662pt x 164.66885pt.
-Package epstopdf Info: Source file: <img/lin_sim1_ur.eps>
-(epstopdf)                    date: 2017-04-25 16:31:33
-(epstopdf)                    size: 610240 bytes
-(epstopdf)             Output file: <img/lin_sim1_ur-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-04-25 16:31:50
-(epstopdf)                    size: 192870 bytes
-(epstopdf)             Command: <epstopdf --outfile=img/lin_sim1_ur-eps-convert
-ed-to.pdf img/lin_sim1_ur.eps>
-(epstopdf)             \includegraphics on input line 92.
-Package epstopdf Info: Output file is already uptodate.
-
-<img/lin_sim1_ur-eps-converted-to.pdf, id=55, 374.39874pt x 308.15125pt>
-File: img/lin_sim1_ur-eps-converted-to.pdf Graphic file (type pdf)
-
-<use img/lin_sim1_ur-eps-converted-to.pdf>
-Package pdftex.def Info: img/lin_sim1_ur-eps-converted-to.pdf used on input lin
-e 92.
-(pdftex.def)             Requested size: 198.45662pt x 163.34288pt.
-Package epstopdf Info: Source file: <img/lin_sim1_tm.eps>
-(epstopdf)                    date: 2017-04-25 16:31:34
-(epstopdf)                    size: 92419 bytes
-(epstopdf)             Output file: <img/lin_sim1_tm-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-04-25 16:31:50
-(epstopdf)                    size: 34183 bytes
-(epstopdf)             Command: <epstopdf --outfile=img/lin_sim1_tm-eps-convert
-ed-to.pdf img/lin_sim1_tm.eps>
-(epstopdf)             \includegraphics on input line 93.
-Package epstopdf Info: Output file is already uptodate.
-
-<img/lin_sim1_tm-eps-converted-to.pdf, id=56, 371.3875pt x 308.15125pt>
-File: img/lin_sim1_tm-eps-converted-to.pdf Graphic file (type pdf)
-
-<use img/lin_sim1_tm-eps-converted-to.pdf>
-Package pdftex.def Info: img/lin_sim1_tm-eps-converted-to.pdf used on input lin
-e 93.
-(pdftex.def)             Requested size: 198.45662pt x 164.66885pt.
+(pdftex.def)             Requested size: 198.45662pt x 163.24669pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 97.
+(babel)             in language  on input line 91.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 97.
+(babel)             in language  on input line 91.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 97.
+(babel)             in language  on input line 91.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 97.
+(babel)             in language  on input line 91.
  [3 <./img/lin_sim1_phi-eps-converted-to.pdf> <./img/lin_sim1_uk-eps-converted-
 to.pdf>]
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 119.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 119.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 119.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 119.
-
-[4 <./img/lin_sim1_ur-eps-converted-to.pdf> <./img/lin_sim1_tm-eps-converted-to
-.pdf>]
-Package epstopdf Info: Source file: <img/lin_sim2_phi.eps>
-(epstopdf)                    date: 2017-04-26 09:27:15
-(epstopdf)                    size: 555444 bytes
-(epstopdf)             Output file: <img/lin_sim2_phi-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-04-26 09:28:11
-(epstopdf)                    size: 89769 bytes
-(epstopdf)             Command: <epstopdf --outfile=img/lin_sim2_phi-eps-conver
-ted-to.pdf img/lin_sim2_phi.eps>
-(epstopdf)             \includegraphics on input line 122.
+Package epstopdf Info: Source file: <img/lin_sim1_ur.eps>
+(epstopdf)                    date: 2017-05-15 16:21:51
+(epstopdf)                    size: 610571 bytes
+(epstopdf)             Output file: <img/lin_sim1_ur-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-05-15 16:22:29
+(epstopdf)                    size: 168764 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/lin_sim1_ur-eps-convert
+ed-to.pdf img/lin_sim1_ur.eps>
+(epstopdf)             \includegraphics on input line 94.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/lin_sim2_phi-eps-converted-to.pdf, id=87, 368.37625pt x 308.15125pt>
+<img/lin_sim1_ur-eps-converted-to.pdf, id=72, 376.40625pt x 307.1475pt>
+File: img/lin_sim1_ur-eps-converted-to.pdf Graphic file (type pdf)
+
+<use img/lin_sim1_ur-eps-converted-to.pdf>
+Package pdftex.def Info: img/lin_sim1_ur-eps-converted-to.pdf used on input lin
+e 94.
+(pdftex.def)             Requested size: 198.45662pt x 161.94379pt.
+Package epstopdf Info: Source file: <img/lin_sim1_tm.eps>
+(epstopdf)                    date: 2017-05-15 16:21:51
+(epstopdf)                    size: 95232 bytes
+(epstopdf)             Output file: <img/lin_sim1_tm-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-05-15 16:22:30
+(epstopdf)                    size: 31123 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/lin_sim1_tm-eps-convert
+ed-to.pdf img/lin_sim1_tm.eps>
+(epstopdf)             \includegraphics on input line 95.
+Package epstopdf Info: Output file is already uptodate.
+
+<img/lin_sim1_tm-eps-converted-to.pdf, id=73, 373.395pt x 307.1475pt>
+File: img/lin_sim1_tm-eps-converted-to.pdf Graphic file (type pdf)
+
+<use img/lin_sim1_tm-eps-converted-to.pdf>
+Package pdftex.def Info: img/lin_sim1_tm-eps-converted-to.pdf used on input lin
+e 95.
+(pdftex.def)             Requested size: 198.45662pt x 163.24669pt.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 120.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 120.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 120.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 120.
+ [4 <./img/lin_sim1_ur-eps-converted-to.pdf> <./img/lin_sim1_tm-eps-converted-t
+o.pdf>]
+Package epstopdf Info: Source file: <img/lin_sim2_phi.eps>
+(epstopdf)                    date: 2017-05-15 16:21:52
+(epstopdf)                    size: 556172 bytes
+(epstopdf)             Output file: <img/lin_sim2_phi-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-05-15 16:22:31
+(epstopdf)                    size: 90280 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/lin_sim2_phi-eps-conver
+ted-to.pdf img/lin_sim2_phi.eps>
+(epstopdf)             \includegraphics on input line 123.
+Package epstopdf Info: Output file is already uptodate.
+
+<img/lin_sim2_phi-eps-converted-to.pdf, id=88, 370.38374pt x 307.1475pt>
 File: img/lin_sim2_phi-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/lin_sim2_phi-eps-converted-to.pdf>
 Package pdftex.def Info: img/lin_sim2_phi-eps-converted-to.pdf used on input li
-ne 122.
-(pdftex.def)             Requested size: 198.45662pt x 166.00891pt.
+ne 123.
+(pdftex.def)             Requested size: 198.45662pt x 164.57301pt.
 Package epstopdf Info: Source file: <img/lin_sim2_uk.eps>
-(epstopdf)                    date: 2017-04-26 09:27:16
-(epstopdf)                    size: 610184 bytes
+(epstopdf)                    date: 2017-05-15 16:21:53
+(epstopdf)                    size: 610394 bytes
 (epstopdf)             Output file: <img/lin_sim2_uk-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-04-26 09:28:12
-(epstopdf)                    size: 214094 bytes
+(epstopdf)                    date: 2017-05-15 16:22:32
+(epstopdf)                    size: 217494 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/lin_sim2_uk-eps-convert
 ed-to.pdf img/lin_sim2_uk.eps>
-(epstopdf)             \includegraphics on input line 123.
+(epstopdf)             \includegraphics on input line 124.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/lin_sim2_uk-eps-converted-to.pdf, id=88, 363.3575pt x 308.15125pt>
+<img/lin_sim2_uk-eps-converted-to.pdf, id=89, 365.365pt x 307.1475pt>
 File: img/lin_sim2_uk-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/lin_sim2_uk-eps-converted-to.pdf>
 Package pdftex.def Info: img/lin_sim2_uk-eps-converted-to.pdf used on input lin
-e 123.
-(pdftex.def)             Requested size: 198.45662pt x 168.3082pt.
+e 124.
+(pdftex.def)             Requested size: 198.45662pt x 166.832pt.
 Package epstopdf Info: Source file: <img/lin_sim2_ur.eps>
-(epstopdf)                    date: 2017-04-26 09:27:17
-(epstopdf)                    size: 591183 bytes
+(epstopdf)                    date: 2017-05-15 16:21:53
+(epstopdf)                    size: 607920 bytes
 (epstopdf)             Output file: <img/lin_sim2_ur-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-04-26 09:28:14
-(epstopdf)                    size: 203420 bytes
+(epstopdf)                    date: 2017-05-15 16:22:33
+(epstopdf)                    size: 209362 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/lin_sim2_ur-eps-convert
 ed-to.pdf img/lin_sim2_ur.eps>
-(epstopdf)             \includegraphics on input line 126.
+(epstopdf)             \includegraphics on input line 127.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/lin_sim2_ur-eps-converted-to.pdf, id=89, 374.39874pt x 308.15125pt>
+<img/lin_sim2_ur-eps-converted-to.pdf, id=90, 376.40625pt x 307.1475pt>
 File: img/lin_sim2_ur-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/lin_sim2_ur-eps-converted-to.pdf>
 Package pdftex.def Info: img/lin_sim2_ur-eps-converted-to.pdf used on input lin
-e 126.
-(pdftex.def)             Requested size: 198.45662pt x 163.34288pt.
+e 127.
+(pdftex.def)             Requested size: 198.45662pt x 161.94379pt.
 Package epstopdf Info: Source file: <img/lin_sim2_tm.eps>
-(epstopdf)                    date: 2017-04-26 09:27:18
-(epstopdf)                    size: 94271 bytes
+(epstopdf)                    date: 2017-05-15 16:21:54
+(epstopdf)                    size: 95194 bytes
 (epstopdf)             Output file: <img/lin_sim2_tm-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-04-26 09:28:14
-(epstopdf)                    size: 36001 bytes
+(epstopdf)                    date: 2017-05-15 16:22:34
+(epstopdf)                    size: 36610 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/lin_sim2_tm-eps-convert
 ed-to.pdf img/lin_sim2_tm.eps>
-(epstopdf)             \includegraphics on input line 127.
+(epstopdf)             \includegraphics on input line 128.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/lin_sim2_tm-eps-converted-to.pdf, id=90, 371.3875pt x 308.15125pt>
+<img/lin_sim2_tm-eps-converted-to.pdf, id=91, 373.395pt x 307.1475pt>
 File: img/lin_sim2_tm-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/lin_sim2_tm-eps-converted-to.pdf>
 Package pdftex.def Info: img/lin_sim2_tm-eps-converted-to.pdf used on input lin
-e 127.
-(pdftex.def)             Requested size: 198.45662pt x 164.66885pt.
+e 128.
+(pdftex.def)             Requested size: 198.45662pt x 163.24669pt.
+
+Underfull \vbox (badness 1735) has occurred while \output is active []
+
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 148.
+(babel)             in language  on input line 149.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 148.
+(babel)             in language  on input line 149.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 148.
+(babel)             in language  on input line 149.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 148.
+(babel)             in language  on input line 149.
  [5
 
  <./img/lin_sim2_phi-eps-converted-to.pdf> <./img/lin_sim2_uk-eps-converted-to.
 pdf> <./img/lin_sim2_ur-eps-converted-to.pdf> <./img/lin_sim2_tm-eps-converted-
-to.pdf>])
+to.pdf>]
+
+LaTeX Warning: Citation `AdamyNL' on page 6 undefined on input line 170.
+
+)
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 11.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1143,8 +1151,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 11.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 11.
- [6]
-(1_SaturationProblem.tex
+ [6] (1_SaturationProblem.tex
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1186,149 +1193,149 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
 Package epstopdf Info: Source file: <img/exp1_phi.eps>
-(epstopdf)                    date: 2017-04-30 08:24:21
-(epstopdf)                    size: 112708 bytes
+(epstopdf)                    date: 2017-05-15 16:12:24
+(epstopdf)                    size: 101485 bytes
 (epstopdf)             Output file: <img/exp1_phi-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-05-02 12:59:26
-(epstopdf)                    size: 43021 bytes
+(epstopdf)                    date: 2017-05-15 16:22:35
+(epstopdf)                    size: 40264 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/exp1_phi-eps-converted-
 to.pdf img/exp1_phi.eps>
 (epstopdf)             \includegraphics on input line 14.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/exp1_phi-eps-converted-to.pdf, id=134, 385.44pt x 329.23pt>
+<img/exp1_phi-eps-converted-to.pdf, id=135, 378.41376pt x 307.1475pt>
 File: img/exp1_phi-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/exp1_phi-eps-converted-to.pdf>
 Package pdftex.def Info: img/exp1_phi-eps-converted-to.pdf used on input line 1
 4.
-(pdftex.def)             Requested size: 198.45662pt x 169.51263pt.
+(pdftex.def)             Requested size: 198.45662pt x 161.08144pt.
 Package epstopdf Info: Source file: <img/exp1_uk.eps>
-(epstopdf)                    date: 2017-04-30 08:24:21
-(epstopdf)                    size: 158206 bytes
+(epstopdf)                    date: 2017-05-15 16:12:24
+(epstopdf)                    size: 143903 bytes
 (epstopdf)             Output file: <img/exp1_uk-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-05-02 12:59:27
-(epstopdf)                    size: 61605 bytes
+(epstopdf)                    date: 2017-05-15 16:22:35
+(epstopdf)                    size: 58370 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/exp1_uk-eps-converted-t
 o.pdf img/exp1_uk.eps>
 (epstopdf)             \includegraphics on input line 15.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/exp1_uk-eps-converted-to.pdf, id=135, 380.42125pt x 329.23pt>
+<img/exp1_uk-eps-converted-to.pdf, id=136, 373.395pt x 307.1475pt>
 File: img/exp1_uk-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/exp1_uk-eps-converted-to.pdf>
 Package pdftex.def Info: img/exp1_uk-eps-converted-to.pdf used on input line 15
 .
-(pdftex.def)             Requested size: 198.45662pt x 171.75317pt.
+(pdftex.def)             Requested size: 198.45662pt x 163.24669pt.
 Package epstopdf Info: Source file: <img/exp1_ur.eps>
-(epstopdf)                    date: 2017-04-30 08:24:21
-(epstopdf)                    size: 159013 bytes
+(epstopdf)                    date: 2017-05-15 16:12:25
+(epstopdf)                    size: 144762 bytes
 (epstopdf)             Output file: <img/exp1_ur-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-05-02 12:59:28
-(epstopdf)                    size: 62447 bytes
+(epstopdf)                    date: 2017-05-15 16:22:36
+(epstopdf)                    size: 58934 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/exp1_ur-eps-converted-t
 o.pdf img/exp1_ur.eps>
 (epstopdf)             \includegraphics on input line 18.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/exp1_ur-eps-converted-to.pdf, id=136, 383.4325pt x 329.23pt>
+<img/exp1_ur-eps-converted-to.pdf, id=137, 376.40625pt x 307.1475pt>
 File: img/exp1_ur-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/exp1_ur-eps-converted-to.pdf>
 Package pdftex.def Info: img/exp1_ur-eps-converted-to.pdf used on input line 18
 .
-(pdftex.def)             Requested size: 198.45662pt x 170.40182pt.
+(pdftex.def)             Requested size: 198.45662pt x 161.94379pt.
 Package epstopdf Info: Source file: <img/exp1_tm.eps>
-(epstopdf)                    date: 2017-04-30 08:24:21
-(epstopdf)                    size: 146591 bytes
+(epstopdf)                    date: 2017-05-15 16:12:26
+(epstopdf)                    size: 132414 bytes
 (epstopdf)             Output file: <img/exp1_tm-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-05-02 12:59:30
-(epstopdf)                    size: 55507 bytes
+(epstopdf)                    date: 2017-05-15 16:22:37
+(epstopdf)                    size: 51947 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/exp1_tm-eps-converted-t
 o.pdf img/exp1_tm.eps>
 (epstopdf)             \includegraphics on input line 19.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/exp1_tm-eps-converted-to.pdf, id=137, 385.44pt x 329.23pt>
+<img/exp1_tm-eps-converted-to.pdf, id=138, 378.41376pt x 307.1475pt>
 File: img/exp1_tm-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/exp1_tm-eps-converted-to.pdf>
 Package pdftex.def Info: img/exp1_tm-eps-converted-to.pdf used on input line 19
 .
-(pdftex.def)             Requested size: 198.45662pt x 169.51263pt.
+(pdftex.def)             Requested size: 198.45662pt x 161.08144pt.
 Package epstopdf Info: Source file: <img/exp2_phi.eps>
-(epstopdf)                    date: 2017-04-30 08:24:21
-(epstopdf)                    size: 94914 bytes
+(epstopdf)                    date: 2017-05-15 16:12:26
+(epstopdf)                    size: 85089 bytes
 (epstopdf)             Output file: <img/exp2_phi-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-05-02 14:32:45
-(epstopdf)                    size: 36531 bytes
+(epstopdf)                    date: 2017-05-15 16:22:38
+(epstopdf)                    size: 34242 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/exp2_phi-eps-converted-
 to.pdf img/exp2_phi.eps>
-(epstopdf)             \includegraphics on input line 27.
+(epstopdf)             \includegraphics on input line 28.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/exp2_phi-eps-converted-to.pdf, id=138, 385.44pt x 329.23pt>
+<img/exp2_phi-eps-converted-to.pdf, id=139, 378.41376pt x 307.1475pt>
 File: img/exp2_phi-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/exp2_phi-eps-converted-to.pdf>
 Package pdftex.def Info: img/exp2_phi-eps-converted-to.pdf used on input line 2
-7.
-(pdftex.def)             Requested size: 198.45662pt x 169.51263pt.
+8.
+(pdftex.def)             Requested size: 198.45662pt x 161.08144pt.
 Package epstopdf Info: Source file: <img/exp2_uk.eps>
-(epstopdf)                    date: 2017-04-30 08:24:21
-(epstopdf)                    size: 130066 bytes
+(epstopdf)                    date: 2017-05-15 16:12:27
+(epstopdf)                    size: 116518 bytes
 (epstopdf)             Output file: <img/exp2_uk-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-05-02 14:32:46
-(epstopdf)                    size: 50933 bytes
+(epstopdf)                    date: 2017-05-15 16:22:38
+(epstopdf)                    size: 47440 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/exp2_uk-eps-converted-t
 o.pdf img/exp2_uk.eps>
-(epstopdf)             \includegraphics on input line 28.
+(epstopdf)             \includegraphics on input line 29.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/exp2_uk-eps-converted-to.pdf, id=139, 380.42125pt x 308.15125pt>
+<img/exp2_uk-eps-converted-to.pdf, id=140, 378.41376pt x 307.1475pt>
 File: img/exp2_uk-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/exp2_uk-eps-converted-to.pdf>
-Package pdftex.def Info: img/exp2_uk-eps-converted-to.pdf used on input line 28
+Package pdftex.def Info: img/exp2_uk-eps-converted-to.pdf used on input line 29
 .
-(pdftex.def)             Requested size: 198.45662pt x 160.75677pt.
+(pdftex.def)             Requested size: 198.45662pt x 161.08144pt.
 Package epstopdf Info: Source file: <img/exp2_ur.eps>
-(epstopdf)                    date: 2017-04-30 08:24:21
-(epstopdf)                    size: 130617 bytes
+(epstopdf)                    date: 2017-05-15 16:12:28
+(epstopdf)                    size: 117025 bytes
 (epstopdf)             Output file: <img/exp2_ur-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-05-02 14:32:47
-(epstopdf)                    size: 51895 bytes
+(epstopdf)                    date: 2017-05-15 16:22:39
+(epstopdf)                    size: 48056 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/exp2_ur-eps-converted-t
 o.pdf img/exp2_ur.eps>
-(epstopdf)             \includegraphics on input line 31.
-Package epstopdf Info: Output file is already uptodate.
-
-<img/exp2_ur-eps-converted-to.pdf, id=140, 383.4325pt x 329.23pt>
-File: img/exp2_ur-eps-converted-to.pdf Graphic file (type pdf)
-
-<use img/exp2_ur-eps-converted-to.pdf>
-Package pdftex.def Info: img/exp2_ur-eps-converted-to.pdf used on input line 31
-.
-(pdftex.def)             Requested size: 198.45662pt x 170.40182pt.
-Package epstopdf Info: Source file: <img/exp2_tm.eps>
-(epstopdf)                    date: 2017-04-30 08:24:21
-(epstopdf)                    size: 119146 bytes
-(epstopdf)             Output file: <img/exp2_tm-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-05-02 14:32:48
-(epstopdf)                    size: 45492 bytes
-(epstopdf)             Command: <epstopdf --outfile=img/exp2_tm-eps-converted-t
-o.pdf img/exp2_tm.eps>
 (epstopdf)             \includegraphics on input line 32.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/exp2_tm-eps-converted-to.pdf, id=141, 385.44pt x 329.23pt>
+<img/exp2_ur-eps-converted-to.pdf, id=141, 376.40625pt x 307.1475pt>
+File: img/exp2_ur-eps-converted-to.pdf Graphic file (type pdf)
+
+<use img/exp2_ur-eps-converted-to.pdf>
+Package pdftex.def Info: img/exp2_ur-eps-converted-to.pdf used on input line 32
+.
+(pdftex.def)             Requested size: 198.45662pt x 161.94379pt.
+Package epstopdf Info: Source file: <img/exp2_tm.eps>
+(epstopdf)                    date: 2017-05-15 16:12:28
+(epstopdf)                    size: 105647 bytes
+(epstopdf)             Output file: <img/exp2_tm-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-05-15 16:22:40
+(epstopdf)                    size: 41736 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/exp2_tm-eps-converted-t
+o.pdf img/exp2_tm.eps>
+(epstopdf)             \includegraphics on input line 33.
+Package epstopdf Info: Output file is already uptodate.
+
+<img/exp2_tm-eps-converted-to.pdf, id=142, 378.41376pt x 307.1475pt>
 File: img/exp2_tm-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/exp2_tm-eps-converted-to.pdf>
-Package pdftex.def Info: img/exp2_tm-eps-converted-to.pdf used on input line 32
+Package pdftex.def Info: img/exp2_tm-eps-converted-to.pdf used on input line 33
 .
-(pdftex.def)             Requested size: 198.45662pt x 169.51263pt.
+(pdftex.def)             Requested size: 198.45662pt x 161.08144pt.
 )
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 15.
@@ -1340,18 +1347,6 @@ Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 15.
  [9 <./img/exp1_phi-eps-converted-to.pdf> <./img/exp1_uk-eps-converted-to.pdf> 
 <./img/exp1_ur-eps-converted-to.pdf> <./img/exp1_tm-eps-converted-to.pdf>]
-Underfull \vbox (badness 1221) has occurred while \output is active []
-
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 15.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 15.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 15.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 15.
- [10 <./img/exp2_phi-eps-converted-to.pdf> <./img/exp2_uk-eps-converted-to.pdf>
- <./img/exp2_ur-eps-converted-to.pdf> <./img/exp2_tm-eps-converted-to.pdf>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 17.
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 17.
@@ -1361,14 +1356,14 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 17.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 17.
- [11]
+ [10 <./img/exp2_phi-eps-converted-to.pdf> <./img/exp2_uk-eps-converted-to.pdf>
+ <./img/exp2_ur-eps-converted-to.pdf> <./img/exp2_tm-eps-converted-to.pdf>]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 17.
-
-(RT_CornerBalancing.aux)
+ (RT_CornerBalancing.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 17.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 17.
 Package rerunfilecheck Info: File `RT_CornerBalancing.out' has not changed.
-(rerunfilecheck)             Checksum: 73867221691A53A6027FB9C4EF620569;347.
+(rerunfilecheck)             Checksum: 7BD1F4C98C1379BBB24A1195A9DC102E;346.
 
 
 LaTeX Warning: There were undefined references.
@@ -1377,33 +1372,34 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 17.
  )
 (\end occurred when \ifx on line 16 was incomplete) 
 Here is how much of TeX's memory you used:
- 12440 strings out of 493333
- 187942 string characters out of 3139200
- 324556 words of memory out of 3000000
- 15666 multiletter control sequences out of 15000+200000
- 15811 words of font info for 58 fonts, out of 3000000 for 9000
+ 12444 strings out of 493333
+ 188002 string characters out of 3139200
+ 323556 words of memory out of 3000000
+ 15670 multiletter control sequences out of 15000+200000
+ 16119 words of font info for 59 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 54i,25n,56p,2091b,397s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 54i,25n,56p,2102b,397s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\ich\AppData\Local
 \MiKTeX\2.9\fonts\pk\ljfour\public\yfrak\dpi657\yfrak.pk><C:/Program Files/MiKT
 eX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/f
 onts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
-c/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
-ts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmm
-ib10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra/cmmib
-8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:
-/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program F
-iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX 2.9/font
-s/type1/public/amsfonts/cm/cmsl10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
-public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
-msfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
-m/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/m
-sbm10.pfb>
-Output written on RT_CornerBalancing.pdf (11 pages, 1681244 bytes).
+e1/public/amsfonts/cm/cmbx9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
+/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
+s/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmm
+i8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmib10.pfb>
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb><C:
+/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program 
+Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmsl10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
+sfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
+m/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb
+>
+Output written on RT_CornerBalancing.pdf (10 pages, 1648989 bytes).
 PDF statistics:
- 250 PDF objects out of 1000 (max. 8388607)
- 49 named destinations out of 1000 (max. 500000)
+ 249 PDF objects out of 1000 (max. 8388607)
+ 48 named destinations out of 1000 (max. 500000)
  113 words of extra memory for PDF output out of 10000 (max. 10000000)
 
