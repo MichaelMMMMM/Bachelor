@@ -1,0 +1,37 @@
+\select@language {ngerman}
+\contentsline {chapter}{Abbildungsverzeichnis}{xi}{chapter*.6}
+\contentsline {chapter}{Listings}{xiii}{chapter*.7}
+\contentsline {chapter}{Nomenklatur}{xv}{chapter*.8}
+\contentsline {chapter}{\numberline {1}Einleitung}{1}{chapter.1}
+\contentsline {chapter}{\numberline {2}Modellbildung f\IeC {\"u}r den W\IeC {\"u}rfel auf einer Kante}{5}{chapter.2}
+\contentsline {section}{\numberline {2.1}Untersuchung der Kinematik}{6}{section.2.1}
+\contentsline {section}{\numberline {2.2}Untersuchung der Kinetik}{10}{section.2.2}
+\contentsline {chapter}{\numberline {3}Reglerentwurf f\IeC {\"u}r das Balancieren auf einer Kante}{13}{chapter.3}
+\contentsline {section}{\numberline {3.1}Zustandsraumdarstellung f\IeC {\"u}r zeitkontinuierliche Systeme}{14}{section.3.1}
+\contentsline {section}{\numberline {3.2}Zustandsraumdarstellung f\IeC {\"u}r zeitdiskrete Systeme}{18}{section.3.2}
+\contentsline {section}{\numberline {3.3}Entwurf von Zustandsreglern}{20}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Reglerentwurf durch Eigenwertvorgabe}{20}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Linear quadratisch optimale Regelung}{22}{subsection.3.3.2}
+\contentsline {section}{\numberline {3.4}Erprobung des Reglers an der Regelstrecke}{25}{section.3.4}
+\contentsline {chapter}{\numberline {4}Modellbildung f\IeC {\"u}r den W\IeC {\"u}rfel auf einer Ecke}{29}{chapter.4}
+\contentsline {section}{\numberline {4.1}Systemparameter}{30}{section.4.1}
+\contentsline {section}{\numberline {4.2}Untersuchung der Kinematik}{32}{section.4.2}
+\contentsline {section}{\numberline {4.3}Untersuchung der Kinetik}{35}{section.4.3}
+\contentsline {chapter}{\numberline {5}Reglerentwurf f\IeC {\"u}r das Balancieren auf einer Ecke}{43}{chapter.5}
+\contentsline {section}{\numberline {5.1}Modellbasierter Reglerentwurf}{44}{section.5.1}
+\contentsline {section}{\numberline {5.2}Untersuchung der Stellgr\IeC {\"o}\IeC {\ss }enbeschr\IeC {\"a}nkung}{49}{section.5.2}
+\contentsline {section}{\numberline {5.3}Eprobung des Reglers an der Regelstrecke}{51}{section.5.3}
+\contentsline {chapter}{\numberline {6}Erfassung der Zustandsgr\IeC {\"o}\IeC {\ss }en}{53}{chapter.6}
+\contentsline {section}{\numberline {6.1}Erfassung der Winkelgeschwindigkeiten $u_{Ki}$ und $u_{Ri}$}{54}{section.6.1}
+\contentsline {section}{\numberline {6.2}Erfassung der Winkel $\varphi _i$}{56}{section.6.2}
+\contentsline {section}{\numberline {6.3}Komplement\IeC {\"a}rfilter f\IeC {\"u}r die Winkel $\varphi _i$}{59}{section.6.3}
+\contentsline {section}{\numberline {6.4}Beobachter f\IeC {\"u}r die Sch\IeC {\"a}tzung von $\varphi $}{61}{section.6.4}
+\contentsline {chapter}{\numberline {7}Implementierung des Regelungskonzeptes}{65}{chapter.7}
+\contentsline {section}{\numberline {7.1}Zielplattform, Sensorik und Aktorik}{66}{section.7.1}
+\contentsline {section}{\numberline {7.2}Implementierung des Signalflusses}{69}{section.7.2}
+\contentsline {section}{\numberline {7.3}Aufbau der Komponentenarchitektur}{74}{section.7.3}
+\contentsline {section}{\numberline {7.4}Aufbau der Regelungskomponente}{77}{section.7.4}
+\contentsline {section}{\numberline {7.5}Aufbau der Kommunikationskomponente}{84}{section.7.5}
+\contentsline {section}{\numberline {7.6}Aufbau der Desktop-Anwendung}{86}{section.7.6}
+\contentsline {chapter}{\numberline {8}Zusammenfassung und Ausblick}{87}{chapter.8}
+\contentsline {chapter}{Literaturverzeichnis}{91}{chapter*.33}

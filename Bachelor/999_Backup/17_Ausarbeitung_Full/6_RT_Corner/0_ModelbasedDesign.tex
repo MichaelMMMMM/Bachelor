@@ -1,0 +1,175 @@
+\section{Modellbasierter Reglerentwurf}
+Aus dem letzten Kapitel ist die Zustandsgleichung
+\begin{equation}
+\dot{\bs{x}} = \underbrace{\begin{bmatrix}
+\bs{0}^{3\times 3} & \Delta\varPhi & \bs{0}^{3\times 3} 
+\\
+\bs{I}\idx{K}^{-1}\cdot\Delta\bs{T}\idx{G} & -C_{\psi}\cdot\bs{I}^{-1}\idx{K} & C_{\psi}\cdot\bs{I}^{-1}\idx{K}
+\\
+\bs{0}^{3\times 3} & C_{\psi}\cdot\bs{I}^{-1}\idx{R} & -C_{\psi}\cdot\bs{I}^{-1}\idx{R}
+\end{bmatrix}}_{=\bs{A}\idx{c}} \cdot \underbrace{\begin{bmatrix}
+\bs{\overline{\varphi}} 
+\\
+\bs{u}\idx{K} \\
+\bs{u}\idx{R}
+\end{bmatrix}}_{=\bs{x}}
++
+\underbrace{\begin{bmatrix}
+\bs{0}^{3\times 3}
+\\
+-\bs{I}^{-1}\idx{K}
+\\
+\bs{I}^{-1}\idx{R}
+\end{bmatrix}}_{=\bs{B}\idx{c}}\cdot \underbrace{\begin{bmatrix}
+T\idx{M1} \\ T\idx{M2} \\ T\idx{M3}
+\end{bmatrix}}_{=\bs{u}}
+\end{equation}
+hervorgegangen. Der Ausgangsvektor $\bs{y}\in \mathbb{R}^8$ enhält alle Zustandsgrößen bis auf den Winkel $\varphi_1$, da dieser nicht aus den Sensordaten ermittelt werden kann.
+\begin{equation}
+\bs{y} = \underbrace{\begin{bmatrix}
+\bs{0}^8 & \bs{I}^{8\times 8}
+\end{bmatrix}}_{\equiv \bs{C}\idx{c}} \cdot \bs{x}
+\end{equation}
+Im nächsten Schritt wird das kontinuierliche System \textfrak{S}($\bs{A}\idx{c}$,$\bs{B}\idx{c}$,$\bs{C}\idx{c}$) in das diskrete System \dSS{A}{B}{C} überführt. Hierfür wird die Abtastrate $f\idx{a} = 50\text{ Hz}$ verwendet.
+Anschließend wird das System mittels der Kalmankriterien auf Steuer- und Beobachtbarkeit geprüft. Hieraus folgt, dass das System sowohl über einen nicht steuerbaren als auch einen nicht beobachtbaren Zustand verfügt. Eine Voraussetzung für den Entwurf eines Zustandreglers besteht darin, dass das System vollständig steuer- und beobachtbar ist, weshalb das System \dSS{A}{B}{C} nicht direkt für den Reglerentwurf verwendet werden kann. Zunächst muss eine Minimalrealisierung \textfrak{D}$\idx{M}$($\bs{A}\idx{M}$,$\bs{B}\idx{M}$,$\bs{C}\idx{M}$) gefunden werden, welche nur den steuer- und beobachtbaren Unterraum des Systems enthält. Um eine Minimalrealisierung des Systems zu erhalten, wird es in eine so genannte Kalman-Dekomposition \textfrak{D}$\idx{K}$($\bs{A}\idx{K}$,$\bs6{B}\idx{K}$,$\bs{C}\idx{K}$) überführt. Die hierfür nötige Transformationsmatrix $\bs{T}\idx{K}$ wird mittels der Matlab-Funktion \textit{minreal()} bestimmt.
+\begin{equation}
+\bs{x}\idx{K} = \bs{T}^{-1}\idx{K}\cdot \bs{x}\hspace{25pt} \bs{A}\idx{K} = \bs{T}^{-1}\idx{K}\cdot \bs{A}\cdot \bs{T}\idx{K} \hspace{25pt} \bs{B}\idx{K} = \bs{T}^{-1}\idx{K}\cdot \bs{B} \hspace{25pt} \bs{C}\idx{K} = \bs{C}\cdot \bs{T}\idx{K}
+\end{equation}
+\begin{equation}
+\underbrace{\begin{bmatrix}
+\bs{x}_\text{M} \\ x_{\overline{\text{S}}} \\ x_{\overline{\text{B}}}
+\end{bmatrix}}_{= \bs{x}\idx{K}}(k+1) = 
+\underbrace{\begin{bmatrix}
+\bs{A}_\text{M} & \bs{a}_{\text{M}/\overline{\text{S}}} & 0 \\
+\bs{0}^{1\times 7} & a_{\overline{\text{S}}} & 0 \\
+\bs{a}_{\overline{\text{B}}/\text{M}} & a_{\overline{\text{B}}/\overline{\text{S}}} & a_{\overline{\text{B}}}
+\end{bmatrix}}_{= \bs{A}\idx{K}}\cdot \begin{bmatrix}
+\bs{x}_\text{M} \\ x_{\overline{\text{S}}} \\ x_{\overline{\text{B}}}
+\end{bmatrix}(k) + 
+\underbrace{\begin{bmatrix}
+\bs{B}_\text{M} \\ \bs{0}^{1\times 3} \\ \bs{b}^{T}_{\overline{\text{B}}}
+\end{bmatrix}}_{=\bs{B}\idx{K}}\cdot \bs{u}(k)
+\end{equation}
+\begin{equation}
+\bs{y}(k) = \underbrace{\begin{bmatrix}
+\bs{C}_\text{M}  & \bs{c}_{\overline{\text{S}}} & \bs{0}^8
+\end{bmatrix}}_{=\bs{C}\idx{K}}\cdot \bs{x}_\text{K}(k)
+\end{equation}
+Die Kalman-Dekomposition \textfrak{D}$\idx{K}$($\bs{A}\idx{K}$,$\bs{B}\idx{K}$,$\bs{C}\idx{K}$) setzt sich aus der Minimalrealisierung \textfrak{D}$\idx{M}$ ($\bs{A}\idx{M}$, $\bs{B}\idx{M}$, $\bs{C}\idx{M}$), dem nicht steuerbaren Teilsystem \textfrak{D}$_{\overline{\text{S}}}$($a_{\overline{\text{S}}}$, $\bs{0}^{3\times 1}$, $\bs{c}_{\overline{\text{S}}}$) und dem nicht beobachtbaren Teilsystem \textfrak{D}$_{\overline{\text{B}}}$($a_{\overline{\text{B}}}$, $\bs{b}^T_{\overline{\text{B}}}$, $\bs{0}^{8\times 1}$) zusammen.\footnote{Die hier gezeigte Dekomposition stellt nicht den allgemeingültigen Fall dar, der ein weiteres Teilsystem weder steuer- noch beobachtbaren Zustände enthält \cite[S. 108 ff.]{LunzeRT2}.} Prinzipiell lässt sich nun für das System \textfrak{D}$\idx{M}$ ein Zustandsregler entwickeln, der zu einem asymptotischen System führt. Allerdings ist dabei zu beachten, dass die Teilsysteme \textfrak{D}$\idx{M}$, \textfrak{D}$_{\overline{\text{S}}}$ und \textfrak{D}$_{\overline{\text{B}}}$ nicht voneinander entkoppelt sind. Die Abhängigkeiten zwischen den Teilsystemen werden von den Größen $\bs{a}_{\text{M}/\overline{\text{S}}}$, $\bs{a}_{\overline{\text{B}}}/\text{M}$ und $a_{\overline{\text{B}}/\overline{\text{S}}}$ beschrieben. Da der Zustandsregler lediglich die Eigenwerte des Teilsystem \textfrak{D}$\idx{M}$ beeinflussen kann, muss zusätzlich die Stabilität der Teilsysteme \textfrak{D}$_{\overline{\text{S}}}$ und \textfrak{D}$_{\overline{\text{B}}}$ geprüft werden. In diesem Kontext wird der Begriff der Stabilisierbarkeit verwendet, wobei ein System stabilisierbar heißt, wenn all seine Eigenvorgänge, die nicht zu seinem vollständig steuer- und beobachtbaren Unterraums gehören, asymptotisch stabil sind. In diesem Anwendungsfall handelt es sich bei \textfrak{D}$_{\overline{\text{S}}}$ und \textfrak{D}$_{\overline{\text{B}}}$ um Systeme erster Ordnung, derer Eigenwert $\lambda_{\overline{\text{S}}}$ bzw. $\lambda_{\overline{\text{B}}}$ auf dem Einheitskreis liegen.
+\begin{equation}
+\lambda_{\overline{\text{S}}} = \lambda_{\overline{\text{B}}} = 1
+\end{equation}
+Somit sind die beiden Teilsysteme grenzstabil. Um den Verlauf und Einfluss der Zustände $x_{\overline{\text{S}}}$ und $x_{\overline{\text{B}}}$ nachzuvollziehen, wird zunächst ein Regler für die Minimalrealisierung \textfrak{D}$\idx{M}$ entworfen und in einer Simulation erprobt. Für die Bestimmung der Reglermatrix $\bs{K}\idx{M}$ wird das LQR-Verfahren angewandt, wobei die Gewichtungsmatrizen $\bs{Q}$ und $\bs{R}$ in Diagonalform gewählt werden. Als Diagonalelemente werden die Kehrwerte der maximal zulässigen Zustandsgrößen im Quadrat verwendet. Hierbei ist zu beachten, dass der Reglerentwurf für das System \textfrak{D}$\idx{M}$ durchgeführt wird. Deshalb muss der maximale Zustandsvektor $\bs{x}\idx{max}$ in dessen Darstellung transformiert werden, wofür mit der Transformationsmatrix $\bs{T}^{-1}\idx{K}$ und einer nicht regulären Reduktionsmatrix multipliziert wird
+\begin{equation}
+\bs{x}_{\text{M,max}} = \begin{bmatrix}
+\bs{I}^{7\times 7} & \bs{0}^{7\times 2}
+\end{bmatrix}\cdot \bs{T}^{-1}\idx{K} \cdot \bs{x}\idx{max} \,.
+\label{eq_xred}
+\end{equation}
+\begin{equation}
+\bs{Q} = \text{diag}(\bs{x}\idx{M,max})^{-2} \hspace{35pt} \bs{R} = \text{diag}(\bs{u}\idx{max})^{-2}
+\end{equation}
+In der Simulation wird für die Regelstrecke das kontinuierliche System \textfrak{S}$\idx{c}$($\bs{A}\idx{c}$,$\bs{B}\idx{c}$,$\bs{C}\idx{c}$) verwendet. Für die Implementierung des Reglers ist ebenfalls die in (\ref{eq_xred}) beschriebene Transformation nötig.
+\begin{equation}
+\bs{u}(k) = -\underbrace{\bs{K}\idx{M}\cdot \begin{bmatrix}
+\bs{I}^{7\times 7} & \bs{0}^{7\times 2}
+\end{bmatrix} \cdot \bs{T}^{-1}\idx{K}}_{\equiv \bs{K}} \cdot \bs{x}(k)
+\end{equation}
+Die folgenden Abbildungen zeigen den Verlauf des Systems mit dem Anfangszustand
+\begin{equation}
+\bs{x}(0) = \begin{bmatrix}
+0 & 0{,}11 & 0{,}08 & \bs{0}^{6\times 1}
+\end{bmatrix}^T \,.
+\end{equation}
+\vspace*{-1cm}
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=0.45\textwidth]{img/lin_sim1_phi.eps}\hspace{0.7cm}
+\includegraphics[width=0.45\textwidth]{img/lin_sim1_uk.eps}
+\end{figure}
+\pagebreak
+
+\begin{figure}[!ht]\ContinuedFloat
+\centering
+\includegraphics[width=0.45\textwidth]{img/lin_sim1_ur.eps}\hspace{0.7cm}
+\includegraphics[width=0.45\textwidth]{img/lin_sim1_tm.eps}
+\caption{Verlauf des Systems in der Simulation mit $x_{\overline{\text{S}}}=0$}
+\end{figure}
+Die Simulation zeigt, dass alle Zustandsgrößen bis auf den Winkel $\varphi\idx1$ gegen null konvergieren. Daraus folgt, dass der Zustand $\varphi\idx1$ nicht Teil der Minimalrealisierung \textfrak{D}$\idx{M}$ ist, was sich mittels der Matrizen $\bs{C}\idx{c}$ und $\bs{A}\idx{c}$ bestätigen lässt. Die erste Spalte der Matrix $\bs{C}\idx{c}$ ist ein Nullvektor, woraus folgt, dass $\varphi\idx1$ den Ausgangsvektor $\bs{y}$ nicht beeinflusst. Eine solche Zustandsvariable wird auch als nicht ausgangsverbunden bezeichnet. Des Weiteren hat der Zustand $\varphi\idx1$ keine Auswirkung auf die Systemdynamik. Dies ist auf die erste Spalte der Systemmatrix $\bs{A}\idx{c}$
+\begin{equation}
+\bs{A}\idx{c}(:,1) = \begin{bmatrix}
+\bs{0}^{3\times 1} \\ \left[\bs{I}^{-1}\idx{K}\cdot \Delta\bs{T}\idx{G}\right](:,1)\\ \bs{0}^{3\times 1}
+\end{bmatrix} = \bs{0}^{9\times 1}
+\end{equation}
+zurückzuführen, welche ebenfalls einen Nullvektor darstellt. Hieraus resultiert, dass es sich bei dem Winkel $\varphi\idx1$ um den nicht beobachtbaren Zustand $x_{\overline{\text{B}}}$ handelt. Dies wird auch von der Struktur der inversen Transformationsmatrix
+\begin{equation}
+\bs{T}^{-1}\idx{K} = \begin{bmatrix}
+\bs{0}^{8\times 1} & \bs{T}^{-1}\idx{K}(2:9,2:9) \\
+1 & \bs{0}^{1\times 8}
+\end{bmatrix}
+\end{equation}
+bestätigt, welche $\varphi\idx1$ in $x_{\overline{\text{B}}}$ abbildet.
+
+Mithilfe der Matrix $\bs{T}^{-1}\idx{K}$ kann auch der nicht steuerbare Zustand $x_{\overline{\text{S}}}$ interpretiert werden. Die zugehörige Zeile
+\begin{equation}
+\bs{T}^{-1}\idx{K}(8,:) \approx \begin{bmatrix}
+0 & 0 & 0 & 0{,}5 & 0{,}5 & 0{,}7 & 0{,}01 & 0{,}01 & 0{,}01
+\end{bmatrix}
+\end{equation}
+bildet den Zustandsvektor $\bs{x}$ in die Variable $x_{\overline{\text{S}}}$ ab. Diese ist somit eine Linearkombination der Geschwindigkeiten $\bs{u}\idx{K}$ und $\bs{u}\idx{R}$, was ebenfalls das asymptotische Verhalten des Zustandvektors in der vorherigen Simulation erklärt. Da $\bs{u}\idx{K}(0)=\bs{u}\idx{R}(0)=\bs{0}$ und somit $x_{\overline{\text{S}}}(0)=0$ galt, spielte die Grenzstabilität des nicht steuerbaren Zustandes keine Rolle. Wird der Anfangszustand $\bs{x}(0)$ so angepasst, dass $x_{\overline{\text{S}}}(0)\neq \bs{0}$ gilt, ergibt sich das folgende Simulationsergebnis.
+\clearpage
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.45\linewidth]{img/lin_sim2_phi.eps}\hspace{0.7cm}
+\includegraphics[width=0.45\linewidth]{img/lin_sim2_uk.eps}
+\vspace{0.5cm}
+
+\includegraphics[width=0.45\linewidth]{img/lin_sim2_ur.eps}\hspace{0.7cm}
+\includegraphics[width=0.45\linewidth]{img/lin_sim2_tm.eps}
+\caption{Verlauf des Systems in der Simulation mit $x_{\overline{\text{S}}}\neq0$}
+\end{figure}
+Die Simulation zeigt, dass die Winkel $\varphi\idx2$ und $\varphi\idx3$ nach wie vor asymptotisch stabil sind. Allerdings konvergieren die Winkelgeschwindigkeiten $\bs{u}\idx{K}$ gegen den gleichen Endwert $u\idx{Ke}\neq 0$. Mittels der Winkelgeschwindigkeit
+\begin{equation}
+\vel{A}{\omega}{K} = \vecBS{K}{u\idx{K1}}{u\idx{K2}}{u\idx{K3}}
+\end{equation}
+bedeutet der Endwert $u_{Ke}$, dass der Würfel mit einer konstanten Winkelgeschwindigkeit um seine Raumdiagonale rotiert. Ebenso konvergieren die Geschwindigkeiten der Schwungmasse $\bs{u}\idx{R}$ und die Stellgrößen gegen einen von Null verschiedenen Endwert. Dieser Umstand kann anhand des Systems \textfrak{D}$\idx{K}$ erklärt werden. Der Unterraum \textfrak{D}$\idx{M}$ ist im geschlossenen Regelkreis asymptotisch stabil. Allerdings wirkt der nicht steuerbare Zustand $x_{\overline{\text{S}}}$ proportional zu dem Vektor $\bs{a}_{\text{M}/\overline{\text{S}}}$ auf $\bs{x}\idx{M}$ ein.
+\begin{equation}
+\bs{x}\idx{M}(k+1) = \left(\bs{A}\idx{M}-\bs{B}\idx{M}\cdot \bs{K}\idx{M}\right)\cdot \bs{x}\idx{M}(k) + \bs{a}_{\text{M}/\overline{\text{S}}}\cdot \sigma(t)\cdot x_{\overline{\text{S}}}(0)
+\end{equation}
+Mit Hilfe des Endwertsatzes kann das Konvergenzverhalten bestimmt werden.
+\begin{equation}
+\begin{split}
+z\cdot \bs{X}\idx{M}(z) &= \left(\bs{A}\idx{M} - \bs{B}\idx{M}\cdot \bs{K}\idx{M}\right)\cdot \bs{X}\idx{M}(z)  + \bs{a}_{\text{M}/\overline{\text{S}}}\cdot X_{\overline{\text{S}}}(z)
+\\
+\leftrightarrow \bs{X}\idx{M}(z) &= \left[z\cdot \bs{I} - \left(\bs{A}\idx{M} - \bs{B}\idx{M}\cdot \bs{K}\idx{M}\right) \right] ^{-1} \cdot \bs{a}_{\text{M}/\overline{\text{S}}}\cdot X_{\overline{\text{S}}}(z)
+\end{split}
+\end{equation}
+\begin{equation}
+\lim_{k\rightarrow\infty} \bs{x}\idx{M}(k) = \lim_{z\rightarrow 1}(z - 1)\bs{X}\idx{M}(z) \equiv\bs{x}\idx{M,end}
+\end{equation}
+Wird der Zustandsvektor $\bs{x}\idx{K,end}$ aus den Endwerten der Teilsysteme zusammengesetzt, kann dieser in den ursprünglichen Zustandsraum transformiert werden.
+\begin{equation}
+\begin{split}
+\bs{x}\idx{end} &= \bs{T}\idx{K}\cdot \begin{bmatrix}
+\bs{x}\idx{M,end} \\ x_{\overline{\text{S}}} \\ x_{\overline{\text{B}}}
+\end{bmatrix} 
+\\
+&= \begin{bmatrix}
+\varphi_1 & 0 & 0 & 5{,}4 x_{\overline{\text{S}}} & 5{,}4 x_{\overline{\text{S}}} & 5{,}4x_{\overline{\text{S}}} & -306{,}9 x_{\overline{\text{S}}} & -298{,}2 x_{\overline{\text{S}}} & -272{,}1 x_{\overline{\text{S}}}
+\end{bmatrix}^T
+\end{split}
+\end{equation}
+Dieses Ergebnis zeigt, dass das System des Würfels ein Ruhelagenkontinuum besitzt. Die Winkel $\overline{\varphi}\idx2$ und $\overline{\varphi}\idx{3}$ konvergieren stets gegen null, was der aufrechten Position des Würfels auf einer Ecke entspricht. Allerdings rotiert der Würfel dabei mit einer konstanten, von $x_{\overline{\text{S}}}$ abhängigen Geschwindigkeit um seine Raumdiagonale. Zudem rotieren die drei Schwungmassen mit einer konstanten Endgeschwindigkeit, welche ebenfalls von $x_{\overline{\text{S}}}$ abhängt. In diesem Zusammenhang kann auch die nicht Steuerbarkeit des Zustandes $x_{\overline{\text{S}}}$ erklärt werden. Angenommen der Würfel rotiert in einer Ruhelage des Kontinuums mit einer konstanten Winkelgeschwindigkeit
+\begin{equation}
+\vel{A}{\omega}{K} = \vecBS{K}{u\idx{end}}{u\idx{end}}{u\idx{end}}\,.
+\end{equation}
+Nun ist es zwar möglich diese Rotation durch ein parallel gerichtetes Motormoment
+\begin{equation}
+\bs{T}\idx{M} = \vecBS{K}{T}{T}{T}
+\end{equation}
+zu beeinflussen, allerdings werden dadurch zwangsläufig die Winkelgeschwindigkeiten $\bs{u}\idx{R}$ der Schwungmassen beeinflusst. Somit ist es nicht möglich die Rotation des Würfels um seine Raumdiagonale unabhängig von der Bewegung der Schwungmassen zu beeinflussen, was wiederum gegen die Forderung der vollständigen Steuerbarkeit eines Systems verstößt. Dieses Ergebnis muss jedoch kritisch betrachtet werden, da es sich hierbei lediglich um die Untersuchung eines linearisierten Systems handelt. Um eine finale Aussage über die Steuerbarkeit des Systems zu treffen, müssen dessen nicht lineare Bewegungsgleichung geprüft werden. Da es sich bei diesem Würfel um ein eingangslineares System handelt, ist dessen Prüfung auf Steuerbarkeit analytisch möglich \cite[S. 155 ff.]{AdamyNL}. Diese Untersuchung wird in dieser Arbeit allerdings nicht durchgeführt, da an der realen Regelstrecke lediglich Anfangszustände mit
+\begin{equation}
+\bs{\overline{\varphi}} \neq \bs{0} \hspace{35pt} \bs{u}\idx{K} \approx \bs{0} \hspace{35pt} \bs{u}\idx{R} \approx \bs{0}
+\end{equation}
+untersucht werden und der nicht steuerbare Zustand $x_{\overline{\text{S}}}$ somit nicht weiter ins Gewicht fällt.

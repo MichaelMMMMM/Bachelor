@@ -1,0 +1,23 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: BA_MM.aux
+A level-1 auxiliary file: 0_0_Erklaerung.aux
+A level-1 auxiliary file: 0_0_Danksagung.aux
+A level-1 auxiliary file: 0_0_Kurzfassung_Abstract.aux
+A level-1 auxiliary file: 0_0_Nomenklatur.aux
+A level-1 auxiliary file: 0_Introduction/Introduction.aux
+A level-1 auxiliary file: 1_TM_Edge/TM_EdgeBalancing.aux
+A level-1 auxiliary file: 2_RT_Edge/RT_EdgeBalancing.aux
+A level-1 auxiliary file: 4_TM_Corner/TM_CornerBalancing.aux
+A level-1 auxiliary file: 6_RT_Corner/RT_CornerBalancing.aux
+A level-1 auxiliary file: 5_Sensorik/Sensorik.aux
+A level-1 auxiliary file: 3_SW/Software.aux
+A level-1 auxiliary file: 7_Zusammenfassung/Zusammenfassung_Ausblick.aux
+I couldn't open database file Literatur.bib
+---line 41 of file BA_MM.aux
+ : \bibdata{Literatur
+ :                   }
+I'm skipping whatever remains of this command
+The style file: ieeetr.bst
+I found no database files---while reading file BA_MM.aux
+Warning--I didn't find a database entry for "eq_xred"
+Warning--I didn't find a database entry for "DUMMY:1"
+(There were 2 error messages)

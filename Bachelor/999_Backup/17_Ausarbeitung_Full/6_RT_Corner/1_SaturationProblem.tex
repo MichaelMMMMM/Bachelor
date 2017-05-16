@@ -1,0 +1,33 @@
+\section{Untersuchung der Stellgrößenbeschränkung}
+Bisher wurde das System unter der Annahme betrachtet, dass die Stellgrößen $\bs{u}$ unbegrenzt sind. Allerdings können die Motoren nur ein maximales Drehmoment $u\idx{max}=0{,}11\text{ Nm}$ aufbringen. Formal kann diese Begrenzung durch die Einführung der begrenzten Stellgröße
+\begin{equation}
+u_{i\text{,sat}} = \left\{ \begin{array}{cc}
+u\idx{max}\hspace{35pt} & u_i > u\idx{max} \\
+u \hspace{35pt}& -u\idx{max} < u_i < u\idx{max} \\
+-u\idx{max}\hspace{35pt} & u_i < -u\idx{max}
+\end{array} \right.
+\end{equation}
+ausgedrückt werden. Wird zunächst der Fall des auf einer Kante balancierenden Würfels betrachtet, so besitzt dieser lediglich eine Stellgröße. Tritt nun der Fall der Sättigung ein und die Stellgröße wird auf ihr Maximum beschränkt, so wird lediglich die Norm des Drehmomentvektors
+\begin{equation}
+\bs{T}\idx{M} = \vecBS{K}{0}{0}{u_{i\text{,sat}}}
+\end{equation}
+beeinflusst. Die Richtung des Drehmoments bleibt hingegen erhalten. Dies hat hinsichtlich der Stabilität die Folge, dass nur ein begrenztes Gebiet von Anfangszuständen in die Ruhelage überführt werden kann, da in den restlichen Anfangszuständen z.B. das Gravitationsmoment so groß ist, dass es von dem begrenzten Motormoment nicht überwunden werden kann.
+
+Der auf der Ecke balancierende Würfel besitzt allerdings mehrere Eingangsgrößen, was zur Folge hat, dass die Sättigung einer oder mehrerer Stellgrößen dazu führt, dass nicht nur die Norm sondern auch die Richtung des Drehmomentvektors
+\begin{equation}
+\bs{T}\idx{M} = \vecBS{K}{u_{1\text{,sat}}}{u_{2\text{,sat}}}{u_{3\text{,sat}}}
+\end{equation}
+verändert wird. Die Richtungsänderung des Stellvektors durch Beschränkungen wird als Direktionalitätsproblem bezeichnet und kann unerwünschte Auswirkungen auf die Stabilität des Systems mit sich bringen \cite[S. 33]{Ortseifen}. Diese Problematik zeigt sich, wenn die Simulation um eine Stellgrößenbeschränkung erweitert wird. Nun wird das System bereits bei einem Anfangswinkel
+\begin{equation}
+\bs{\overline{\varphi}}(0) \approx \begin{bmatrix}
+0 \\ 2^\circ \\ 2^\circ
+\end{bmatrix}
+\end{equation}
+instabil. Um das Einzugsgebiet der Ruhelage zu erweitern, wird die Gewichtungsmatrix $\bs{Q}$ modifiziert. Da diese den Verlauf des Zustandsvektors gewichtet, führt eine Reduktion ihrer Elemente zu niedrigeren Reglerwerten. Dadurch wird das Gebiet der Zustandsvektoren, welche eine Beschränkung der Stellgrößen verursacht, erweitert.
+Die Gewichtsmatrix $\bs{Q}$ wird iterativ anhand der Simulation variiert, bis ein zufriedenstellendes Ergebnis erreicht ist. Hierbei können Anfangswinkel im Bereich
+\begin{equation}
+\bs{\overline{\varphi}}(0) \approx \begin{bmatrix}
+0 & 5^\circ & 5^\circ
+\end{bmatrix}^T
+\end{equation}
+erreicht werden, bei denen sich das System stabil verhält. Jedoch ist es mit dieser Vorgehensweise nicht möglich das Einzugsgebiet der Zustände, welche in die Ruhelage überführt werden, in einem geschlossenen Ausdruck zu formulieren. Die Simulation ermöglicht lediglich eine Abschätzung des Stabilitätverhaltens. Somit kann die Stabilität erst empirisch an der reellen Regelstrecke bewiesen werden. Um diese Problematik zu beseitigen müssen alternative Ansätze verfolgt werden. Mögliche Lösung stellen der Entwurf eines Sättigungsreglers \cite[S. 264 ff.]{AdamyNL} oder die Implementierung eines modellbasierten Anti-Windups \cite{Ortseifen} dar, welche im Rahmen dieser Arbeit jedoch nicht zum Einsatz kommen.

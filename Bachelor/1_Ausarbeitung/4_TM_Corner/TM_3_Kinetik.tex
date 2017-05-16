@@ -1,0 +1,276 @@
+\section{Untersuchung der Kinetik}
+Der nächste Schritt besteht darin die Kräfte zu modellieren, welche auf den Würfelkörper und die drei Schwungmassen wirken. Aus diesen lassen sich mit Hilfe der partiellen Geschwindigkeiten die generalisierten aktiven Kräfte $F_i$ ermitteln.
+Zunächst sollen die resultierenden Drehmomente $\bs{T}^{Ri/Mi}$ der Schwungmassen $R_i$ um ihren jeweiligen Drehpunkt $M_i$ bestimmt werden. Hierfür muss einerseits das Drehmoment $\bs{T}^{Ri/Mi}\idx{M}$ des antreibenden Motors, andererseits das verzögernde Reibmoment $\bs{T}^{Ri/Mi}\idx{R}$ beachtet werden.
+Diese ergeben sich aus der Summe der Drehmomente $\bs{T}^{Ri/Mi}$, welche  die antreibenden Motoren verursachen, und der verzögernden Reibmomente $\bs{T}^{Ri/Mi}$
+\begin{equation}
+\bs{T}^{R1/M1} = \bs{T}^{R1/M1}\idx{M} + \bs{T}^{R1/M1}\idx{R} = \vecBS{K}{T\idx{M1}}{0}{0} + \vecBS{K}{-C_{\psi}\cdot (u\idx4 - u\idx1)}{0}{0}
+\end{equation}
+\begin{equation}
+\bs{T}^{R2/M2} = \bs{T}^{R2/M2}\idx{M} + \bs{T}^{R2/M2}\idx{R} = \vecBS{K}{0}{T\idx{M2}}{0} + \vecBS{K}{0}{-C_{\psi}\cdot (u\idx5 - u\idx2)}{0}
+\end{equation}
+\begin{equation}
+\bs{T}^{R3/M3} = \bs{T}^{R3/M3}\idx{M} + \bs{T}^{R3/M3}\idx{R} = \vecBS{K}{0}{0}{T\idx{M3}} + \vecBS{K}{0}{0}{-C_{\psi}\cdot (u\idx6 - u\idx3)}\,.
+\end{equation}
+Der Würfelkörper wird einerseits durch das Gravitationsmoment $\bs{T}^{K/O}\idx{G}$ und die resultierenden Momente der Schwungmassen $\bs{T}^{Ri/Mi}$, welche in umgekehrter Richtung auf den Würfel wirken, beeinflusst.
+Das Gravitationsmoment hängt von der Gewichtskraft $\bs{G}$ und der Position des Schwerpunktes $\bs{c}$ ab.
+\begin{equation}
+\begin{split}
+\bs{T}^{K/O}\idx{G} &= \bs{c} \times \bs{G} = \vecBS{K}{l\idx{C}}{l\idx{C}}{l\idx{C}} \times \vecBS{K}{-m\cdot g \cdot c_{\varphi\idx2} \cdot c_{\varphi\idx3}}{-m\cdot g\cdot c_{\varphi\idx2}\cdot s_{\varphi \idx3}}{-m\cdot g\cdot s_{\varphi\idx2}} 
+\\
+&= -m\cdot l\idx{C} \cdot g \vecBS{K}{s_{\varphi\idx2}+c_{\varphi\idx2}s_{\varphi\idx3}}
+{-s_{\varphi\idx2}+c_{\varphi\idx2}c_{\varphi\idx3}}
+{-c_{\varphi\idx2}c_{\varphi\idx3} - c_{\varphi\idx2}\cdot s_{\varphi\idx3}}
+\end{split}
+\end{equation}
+Somit folgt für das resultierende Drehmoment
+\begin{equation}
+\begin{split}
+\bs{T}^{K/O}&=\bs{T}^{K/O}\idx{G} - \bs{T}^{R1/M1} - \bs{T}^{R2/M2} - \bs{T}^{R3/M3} \\
+&= -m\cdot l\idx{C} \cdot g \vecBS{K}{s_{\varphi\idx2}+c_{\varphi\idx2}s_{\varphi\idx3}}
+{-s_{\varphi\idx2}+c_{\varphi\idx2}c_{\varphi\idx3}}
+{-c_{\varphi\idx2}c_{\varphi\idx3} - c_{\varphi\idx2}\cdot s_{\varphi\idx3}} - \vecBS{K}{T\idx{M1}-C_{\psi}(u\idx4 - u\idx1)}{T\idx{M2}-C_{\psi}(u\idx5 - u\idx2)}{T\idx{M3}-C_{\psi}(u\idx6 - u\idx3)}
+\end{split}\,.
+\end{equation}
+Im nächsten Schritt können die generalisierten aktiven Kräfte berechnet werden, welche der Summe der inneren Produkte der resultierenden Drehmomente und der  partiellen Geschwindigkeit der Körper entsprechen. Wenn die partiellen Geschwindigkeiten als die  Bewegungsrichtungen der Körper betrachtet werden, so stellt die Skalarmultiplikation der partiellen Geschwindigkeit und des resultierenden Drehmoments dessen Abbildung in die Bewegungsrichtung dar. Folglich handelt es sich bei den generalisierten aktiven Kräften um skalare Größen, welche den Einfluss der wirkenden Drehmomente in Richtung der Freiheitsgrade wiedergeben.
+\begin{align}
+F\idx1 &= \inProd{\vel{A}{\omega}{K}\idx1}{\bs{T}^{K/O}} + \sum^3_{i=1} \inProd{\vel{A}{\omega}{Ri}\idx1}{\bs{T}^{Ri/Mi}} 
+\\
+&= m\cdot l\idx{C} \cdot g (-s_{\varphi\idx2}-c_{\varphi\idx2}s_{\varphi\idx3}) - T\idx{M1} + C_{\psi}(u\idx4 - u\idx1) \nonumber
+\\
+F\idx2 &= \inProd{\vel{A}{\omega}{K}\idx2}{\bs{T}^{K/O}} + \sum^3_{i=1} \inProd{\vel{A}{\omega}{Ri}\idx2}{\bs{T}^{Ri/Mi}} 
+\\
+&= m\cdot l\idx{C} \cdot g (s_{\varphi\idx2}-c_{\varphi\idx2}c_{\varphi\idx3})-T\idx{M2}+C_{\psi}(u\idx5 - u\idx2) \nonumber
+\\
+F\idx3 &= \inProd{\vel{A}{\omega}{K}\idx3}{\bs{T}^{K/O}} + \sum^3_{i=1} \inProd{\vel{A}{\omega}{Ri}\idx3}{\bs{T}^{Ri/Mi}} 
+\\
+&= m\cdot l\idx{C} \cdot g (c_{\varphi\idx2}c_{\varphi\idx3} + c_{\varphi\idx2}s_{\varphi\idx3}) - T\idx{M3} + C_{\psi}(u\idx6 - u\idx3) \nonumber
+\\
+F\idx4 &= \inProd{\vel{A}{\omega}{K}\idx4}{\bs{T}^{K/O}} + \sum^3_{i=1} \inProd{\vel{A}{\omega}{Ri}\idx4}{\bs{T}^{Ri/Mi}} = T\idx{M1}-C_{\psi}(u\idx4 - u\idx1)
+\\
+F\idx5 &= \inProd{\vel{A}{\omega}{K}\idx5}{\bs{T}^{K/O}} + \sum^3_{i=1} \inProd{\vel{A}{\omega}{Ri}\idx5}{\bs{T}^{Ri/Mi}} = T\idx{M2}-C_{\psi}(u\idx5 - u\idx2)
+\\
+F\idx6 &= \inProd{\vel{A}{\omega}{K}\idx6}{\bs{T}^{K/O}} + \sum^3_{i=1} \inProd{\vel{A}{\omega}{Ri}\idx6}{\bs{T}^{Ri/Mi}} = T\idx{M3}-C_{\psi}(u\idx6 - u\idx3)
+\end{align}
+Neben den aktiven Kräften müssen auch die generalisierten Trägheitskräfte $F^*_i$ ermittelt werden um die Bewegungsgleichungen zu bestimmen, wofür zunächst die Trägheitsmomente $\bs{T}_*$ ermittelt werden. Nach \cite[S. 124 ff.]{KaneBook} gilt für die Trägheitsmomente der  Zusammenhang
+\begin{equation}
+\bs{T}_* = -\bs{\alpha}\cdot \bs{I} - \bs{\omega}\times(\bs{I}\cdot\bs{\omega}) \,,
+\end{equation}
+wobei $\bs{\alpha}$ und $\bs{\omega}$ die Winkelbeschleunigung bzw. -geschwindigkeit des Körpers und $\bs{I}$ dessen Trägheitstensor bezeichnet. 
+Die Winkelgeschwindigkeiten der Körper sind bereits bekannt, die Winkelbeschleunigung ergeben sich durch die Ableitung der Winkelgeschwindigkeiten relativ zu dem Intertialsystem $A$.
+\begin{equation}
+\vel{A}{\alpha}{K} = \frac{\presuper{A}d}{dt}\vel{A}{\omega}{K}, \vel{A}{\alpha}{R1} = \frac{\presuper{A}d}{dt}\vel{A}{\omega}{R1}, \vel{A}{\alpha}{R2} = \frac{\presuper{A}d}{dt}\vel{A}{\omega}{R2}, \vel{A}{\alpha}{R3} = \frac{\presuper{A}d}{dt}\vel{A}{\omega}{R3}
+\end{equation}
+Zunächst sollen die Trägheitsmomente $\bs{T}^{Ri/Mi}_*$ der Schwungmassen bestimmt werden, deren Trägsheitstensoren $\bs{I}^{Ri/Mi}$ im Bezug auf die Drehpunkte $M_i$, wie in Abschnitt (\ref{TM_3D_Systemparameter}) erläutert, mit Hilfe einer CAD-Anwendung ermittelt wurden.
+\begin{equation}
+\bs{I}^{Ri/Mi} = \begin{pmatrix}
+I^{Ri}\idx{11} & 0 & 0 \\ 0 & I^{Ri}\idx{22} & 0 \\ 0 & 0 & I^{Ri}\idx{33}
+\end{pmatrix}
+\end{equation}
+\begin{equation}
+\bs{T}^{Ri/Mi}_* = - \vel{A}{\alpha}{Ri}\cdot \bs{I}^{R_i/M_i} - \vel{A}{\omega}{Ri}\times(\bs{I}^{Ri/Mi} \cdot \vel{A}{\omega}{Ri})
+\end{equation}
+Der Trägheitstensor $\bs{I}^{K/O}$ des Würfelkörpers um den Punkt $O$ setzt sich aus mehreren Komponenten zusammen. Auf der einen Seite wird er durch den Trägheitstensor $\bs{I}^{GH/O}$ des Gehäuses um den Punkt $O$ beeinflusst, welcher die Trägheitseigenschaften des Würfels beschreibt, ohne dabei die Schwungmassen zu berücksichtigen. Auf der anderen Seite beeinflussen die Schwungmassen das Trägheitsmoment des Würfelkörpers. Um diesen Einfluss nachzuvollziehen, wird die Bewegung der Schwungmassen in zwei Komponenten zerlegt. Zum einen rotieren die Schwungmassen $R_i$ um die Punkte $M_i$, welche die Schwerpunkte der Schwungmassen bilden. Zum anderen bewegen sich die Schwerpunkte $M_i$ um den Punkt $O$ und sind bei der Betrachtung der Trägheitseigenschaften dem Würfelkörper zuzuordnen, da die Schwerpunkte der Schwungmassen auf dem Würfelkörper fixiert sind. Im Modell werden die Schwerpunkte als Punktmassen mit der Masse $m_R$ behandelt. Diese Interpretation entspricht der Aussage des Steiner'schen Satzes.
+Somit ist der Trägheitstensor $\bs{I}^{K/O}$ gleich der Summe von $\bs{I}^{GH/O}$ und den Trägheitstensoren der drei Massepunkte $M_i$ mit der Masse $m_R$ um $O$, wobei $\bs{r}_i$ den Ortsvektor des Punktes $M_i$ beschreibt.
+\begin{equation}
+\bs{I}^{K/O} = \bs{I}^{GH/O} + \sum^3_{i=1}m\idx{R}(\inProd{\bs{r}_i}{\bs{r}_i}-\bs{r}_i\otimes\bs{r}_i)
+\end{equation}
+\begin{equation}
+\bs{T}^{K/O}_* = - \vel{A}{\alpha}{K}\cdot\bs{I}^{K/O} - \vel{A}{\omega}{K}\times(\bs{I}^{K/O}\cdot \vel{A}{\omega}{K})
+\end{equation}
+Prinzipiell können nun die generalisierten Trägheitskräfte $F^*_i$ durch die Skalarmultiplikation mit den partiellen Geschwindigkeiten berechnet werden. Allerdings handelt es sich bei den Trägheitsmomenten um nichtlineare Terme. Diese führen einerseits auf schwer nachzuvollziehende Bewegungsgleichungen. Andererseits werden für die Transformation in eine Zustandsraumdarstellung lineare Differentialgleichungen benötigt. In diesem Fall kann eine vorzeitige Linearisierung durchgeführt werden \cite[S. 171 ff.]{KaneBook}. Das heißt anstatt die vollständigen, nicht linearen Bewegungsgleichungen zu bestimmen und anschließend zu linearisieren, werden bereits die generalisierten  Geschwindigkeiten $\hat{\bs{\omega}}$ sowie die resultierenden Dreh- und Trägheitsmomente $\hat{F}_i$ und $\hat{F}^*_i$ linearisiert und daraus die linearen Bewegungsgleichungen bestimmt.
+Hierfür muss zunächst der Arbeitspunkt des Systems festgelegt werden, welcher der Position auf einer Ecke entspricht. Die Winkel $\varphi_i$ müssen folglich so gewählt werden, dass der Ortsvektor des Schwerpunktes $\bs{c}$ aus der Perspektive des Inertialsystems lediglich eine Komponente in Richtung des Vektors $\bs{a}_1$ besitzt.
+\begin{equation}
+\vecBS{A}{\vert \bs{c} \vert}{0}{0} \overset{!}= \pMat{K}{A}\cdot \vecBS{K}{l\idx{C}}{l\idx{C}}{l\idx{C}} \rArrow \varphi\idx{10} = 0, \hspace{10pt} \varphi\idx{20} =-2\cdot \text{atan}(\sqrt{2}-\sqrt{3}), \hspace{10pt} \varphi\idx{30}=\frac{-\pi}{4}
+\end{equation}
+\begin{equation}
+\hat{\varphi}_i = \varphi_{i0} + \bar{\varphi}_i
+\end{equation}
+In dem Gleichgewichtspunkt verschwinden die Winkelgeschwindigkeiten des Systems, weshalb für die generalisierten Geschwindigkeiten im Arbeitspunkt $u_{i0} = 0$
+\begin{align}
+\hat{u}\idx1 &= \dot{\varphi}\idx{2}\cdot s_{\varphi\idx{30}} + \dot{\varphi}\idx{1}\cdot c_{\varphi\idx{20}}c_{\varphi\idx{30}} \\
+\hat{u}\idx2 &= \dot{\varphi}\idx{2}\cdot c_{\varphi\idx{30}} - \dot{\varphi}\idx{1}\cdot c_{\varphi\idx{20}} s_{\varphi\idx{30}} \\
+\hat{u}\idx3 &= \dot{\varphi}\idx{3} + \dot{\varphi}\idx{1}\cdot s_{\varphi\idx{20}} \\
+\hat{u}\idx4 &= \dot{\varphi}\idx{2}\cdot s_{\varphi\idx{30}} + \dot{\varphi}\idx{1}\cdot c_{\varphi\idx{20}} c_{\varphi\idx{30}} + \dot{\psi}\idx{1} \\
+\hat{u}\idx5 &= \dot{\varphi}\idx{2}\cdot c_{\varphi\idx{30}} - \dot{\varphi}\idx{1}\cdot c_{\varphi\idx{20}}s_{\varphi\idx{30}} + \dot{\psi}\idx{2} \\
+\hat{u}\idx6 &= \dot{\varphi}\idx{3} + \dot{\varphi}\idx{1}\cdot s_{\varphi\idx{20}} + \dot{\psi}\idx{3}
+\end{align}
+\begin{equation}
+\vel{A}{\hat{\omega}}{K} = \vecBS{K}{\hat{u}\idx1}{\hat{u}\idx2}{\hat{u}\idx3}, \hspace{10pt} \vel{A}{\hat{\omega}}{R1} = \vecBS{K}{\hat{u}\idx4}{\hat{u}\idx2}{\hat{u}\idx3}, \hspace{10pt}
+\vel{A}{\hat{\omega}}{R2} = \vecBS{K}{\hat{u}\idx1}{\hat{u}\idx5}{\hat{u}\idx3}, \hspace{10pt}
+\vel{A}{\hat{\omega}}{R3} = \vecBS{K}{\hat{u}\idx1}{\hat{u}\idx2}{\hat{u}\idx6}
+\end{equation}
+gilt. Insbesondere die Winkelbeschleunigungen werden durch die linearisierten Winkelgeschwindigkeiten stark vereinfacht.
+\begin{align}
+\vel{A}{\hat{\alpha}}{K} &= {\presuper{A}d}{dt}\vel{A}{\hat{\omega}}{K}
+ &&= \vecBS{K}{\ddot{\varphi}\idx2\cdot s_{\varphi\idx{30}} + \ddot{\varphi}\idx1\cdot c_{\varphi\idx{20}}c_{\varphi\idx{30}}}{\ddot{\varphi}\idx2\cdot c_{\varphi\idx{30}} - \ddot{\varphi}\idx1\cdot c_{\varphi\idx{20}} s_{\varphi\idx{30}}}{\ddot{\varphi}\idx3 + \ddot{\varphi}\idx1\cdot s_{\varphi\idx{20}}} &&= \vecBS{K}{\hat{\dot{u}}\idx1}{\hat{\dot{u}}\idx2}{\hat{\dot{u}}\idx3}
+\\
+\vel{A}{\hat{\alpha}}{R1} &= \frac{\presuper{A}d}{dt}\vel{A}{\hat{\omega}}{R1} &&= \vecBS{K}{\ddot{\varphi}\idx2\cdot s_{\varphi\idx{30}} + \ddot{\varphi}\idx1\cdot c_{\varphi\idx{20}}c_{\varphi\idx{30}}+\ddot{\psi}_1}{\ddot{\varphi}\idx2\cdot c_{\varphi\idx{30}} - \ddot{\varphi}\idx1\cdot c_{\varphi\idx{20}} s_{\varphi\idx{30}}}{\ddot{\varphi}\idx3 + \ddot{\varphi}\idx1\cdot s_{\varphi\idx{20}}} &&= \vecBS{K}{\hat{\dot{u}}\idx4}{\hat{\dot{u}}\idx2}{\hat{\dot{u}}\idx3}
+\\
+\vel{A}{\hat{\alpha}}{R2} &= \frac{\presuper{A}d}{dt}\vel{A}{\hat{\omega}}{R2} &&= \vecBS{K}{\ddot{\varphi}\idx2\cdot s_{\varphi\idx{30}} + \ddot{\varphi}\idx1\cdot c_{\varphi\idx{20}}c_{\varphi\idx{30}}}{\ddot{\varphi}\idx2\cdot c_{\varphi\idx{30}} - \ddot{\varphi}\idx1\cdot c_{\varphi\idx{20}} s_{\varphi\idx{30}} + \ddot{\psi}_2}{\ddot{\varphi}\idx3 + \ddot{\varphi}\idx1\cdot s_{\varphi\idx{20}}} &&= \vecBS{K}{\hat{\dot{u}}\idx1}{\hat{\dot{u}}\idx5}{\hat{\dot{u}}\idx3}
+\\
+\vel{A}{\hat{\alpha}}{K} &= \frac{\presuper{A}d}{dt}\vel{A}{\hat{\omega}}{K} &&= \vecBS{K}{\ddot{\varphi}\idx2\cdot s_{\varphi\idx{30}} + \ddot{\varphi}\idx1\cdot c_{\varphi\idx{20}}c_{\varphi\idx{30}}}{\ddot{\varphi}\idx2\cdot c_{\varphi\idx{30}} - \ddot{\varphi}\idx1\cdot c_{\varphi\idx{20}} s_{\varphi\idx{30}}}{\ddot{\varphi}\idx3 + \ddot{\varphi}\idx1\cdot s_{\varphi\idx{20}} + \ddot{\psi}_3} &&= \vecBS{K}{\hat{\dot{u}}\idx1}{\hat{\dot{u}}\idx2}{\hat{\dot{u}}\idx6}
+\end{align}
+Somit können nun die linearisierten Trägheitsmomente berechnet werden, wobei der zweite Term auf Grund der Linearisierung entfällt.
+\begin{equation}
+\hat{\bs{T}}^{R1/M1}\idx* = -\vel{A}{\hat{\alpha}}{R1}\cdot \bs{I}^{R1/M1} = \vecBS{K}{-\hat{\dot{u}}\idx4\cdot I^{R1}\idx{11}}{-\hat{\dot{u}}\idx2\cdot I^{R1}\idx{22}}{-\hat{\dot{u}}\idx3\cdot I^{R3}\idx{33}}
+\end{equation}
+\begin{equation}
+\hat{\bs{T}}^{R2/M2}\idx* = -\vel{A}{\hat{\alpha}}{R2}\cdot \bs{I}^{R2/M2} = \vecBS{K}{-\hat{\dot{u}}\idx1\cdot I^{R2}\idx{11}}{-\hat{\dot{u}}\idx5\cdot I^{R2}\idx{22}}{-\hat{\dot{u}}\idx3\cdot I^{R2}\idx{33}}
+\end{equation}
+\begin{equation}
+\hat{\bs{T}}^{R3/M3}\idx* = -\vel{A}{\hat{\alpha}}{R3}\cdot \bs{I}^{R3/M3} = \vecBS{K}{-\hat{\dot{u}}\idx1\cdot I^{R3}\idx{11}}{-\hat{\dot{u}}\idx2\cdot I^{R3}\idx{22}}{-\hat{\dot{u}}\idx6\cdot I^{R3}\idx{33}}
+\end{equation}
+Bei der Berechnung des Trägheitsmomentes $\hat{\bs{T}}^{K/O}$ muss beachtet werden, dass die Devitationsmomente des Tensors $\bs{I}^{K/O}$ nicht verschwinden, woraus ein  komplexerer Ausdruck für das Trägheitsmoment resultiert.
+\begin{equation}
+\hat{\bs{T}}^{K/O}\idx* = -\vel{A}{\hat{\alpha}}{K}\cdot \bs{I}^{K/O} = -\vecBS{K}
+{\hat{\dot{u}}\idx1\cdot I^{K}\idx{11} + \hat{\dot{u}}\idx2\cdot I^{K}\idx{21} + \hat{\dot{u}}\idx3\cdot I^{K}\idx{31}}
+{\hat{\dot{u}}\idx1\cdot I^{K}\idx{12} + \hat{\dot{u}}\idx2\cdot I^{K}\idx{22} + \hat{\dot{u}}\idx3\cdot I^{K}\idx{32}}
+{\hat{\dot{u}}\idx1\cdot I^{K}\idx{13} + \hat{\dot{u}}\idx2\cdot I^{K}\idx{23} + \hat{\dot{u}}\idx3\cdot I^{K}\idx{33}}
+\end{equation}
+Nun lassen sich mithilfe der partiellen Geschwindigkeiten, welche durch die Linearisierung nicht beeinflusst werden, die generalisierten Trägheitskräfte $\hat{F}^*_i$ berechnen.
+\begin{align}
+\hat{F}^*\idx1 &= \inProd{\hat{\bs{T}}^{K/O}\idx*}{\vel{A}{\omega}{K}\idx1} + \sum^3\idx{i=1}\inProd{\hat{\bs{T}}^{Ri/Mi}\idx*}{\vel{A}{\omega}{Ri}\idx1} 
+\\
+&= -\hat{\dot{u}}\idx1(I^K\idx{11}+I^{R2}\idx{11}+I^{R3}\idx{11}) - \hat{\dot{u}}\idx2\cdot I^{K}\idx{21} - \hat{\dot{u}}\idx3\cdot I^{K}\idx{31} \nonumber
+\\
+\hat{F}^*\idx2 &= \inProd{\hat{\bs{T}}^{K/O}\idx*}{\vel{A}{\omega}{K}\idx2} + \sum^3\idx{i=1}\inProd{\hat{\bs{T}}^{Ri/Mi}\idx*}{\vel{A}{\omega}{Ri}\idx2} 
+\\
+&= -\hat{\dot{u}}\idx1\cdot I^{K}\idx{12} - \hat{\dot{u}}\idx2(I^{K}\idx{22}+I^{R1}\idx{22}+I^{R3}\idx{33}) - \hat{\dot{u}}\idx3\cdot I^{K}\idx{13} \nonumber
+\\
+\hat{F}^*\idx3 &= \inProd{\hat{\bs{T}}^{K/O}\idx*}{\vel{A}{\omega}{K}\idx3} + \sum^3\idx{i=1}\inProd{\hat{\bs{T}}^{Ri/Mi}\idx*}{\vel{A}{\omega}{Ri}\idx3} 
+\\
+&= -\hat{\dot{u}}\idx1\cdot I^{K}\idx{13} - \hat{\dot{u}}\idx2\cdot I^{K}\idx{23} - \hat{\dot{u}}\idx3(I^{K}\idx{33}+I^{R1}\idx{33}+I^{R2}\idx{33}) \nonumber
+\\
+\hat{F}^*\idx4 &= \inProd{\hat{\bs{T}}^{K/O}\idx*}{\vel{A}{\omega}{K}\idx4} + \sum^3\idx{i=1}\inProd{\hat{\bs{T}}^{Ri/Mi}\idx*}{\vel{A}{\omega}{Ri}\idx4} -\hat{\dot{u}}\idx4\cdot I^{R1}\idx{11}
+\\
+\hat{F}^*\idx5 &= \inProd{\hat{\bs{T}}^{K/O}\idx*}{\vel{A}{\omega}{K}\idx5} + \sum^3\idx{i=1}\inProd{\hat{\bs{T}}^{Ri/Mi}\idx*}{\vel{A}{\omega}{Ri}\idx5} = -\hat{\dot{u}}\idx5\cdot I^{R2}\idx{22}
+\\
+\hat{F}^*\idx6 &= \inProd{\hat{\bs{T}}^{K/O}\idx*}{\vel{A}{\omega}{K}\idx6} + \sum^3\idx{i=1}\inProd{\hat{\bs{T}}^{Ri/Mi}\idx*}{\vel{A}{\omega}{Ri}\idx6} = -\hat{\dot{u}}\idx6\cdot I^{R3}\idx{33}
+\end{align}
+Zuletzt müssen die generalisierten aktiven Kräfte linearisiert werden, um mithilfe von Kanes Gleichungen die Bewegungsgleichungen zu ermitteln. Hierbei wird lediglich das Gravitationsmoment $\bs{T}^{K/O}_G$ linearisiert, da die restlichen Momente bereits in linearer Form vorliegen.
+\begin{align}
+\hat{\bs{T}}^{K/0}\idx{G} = \bs{\Delta T\idx{G}} \cdot \bs{\overline{\varphi}}
+\end{align}
+\begin{align*}
+\bs{\Delta T\idx{G}} = -m\cdot g\cdot l\idx{C}\cdot \begin{bmatrix}
+0 & c_{\varphi\idx{20}}-s_{\varphi\idx{20}}c_{\varphi\idx{30}} & c_{\varphi\idx{20}}c_{\varphi\idx{30}} 
+\\
+0 & -c_{\varphi\idx{20}}-s_{\varphi\idx{20}}c_{\varphi\idx{20}} & -c_{\varphi\idx{20}}s_{\varphi\idx{30}} 
+\\
+0 & s_{\varphi\idx{20}}s_{\varphi\idx{30}}+s_{\varphi\idx{20}}c_{\varphi\idx{30}} & c_{\varphi\idx{20}}s_{\varphi\idx{30}}-c_{\varphi\idx{20}}c_{\varphi\idx{30}}
+\end{bmatrix},\hspace{10pt}
+\bs{\overline{\varphi}}&= \begin{bmatrix}
+\overline{\varphi}\idx1 \\ \overline{\varphi}\idx2 \\ \overline{\varphi}\idx3
+\end{bmatrix} \nonumber
+\end{align*}
+\begin{align}
+\hat{F}_1 &= \inProd{\hat{\bs{T}}^{K/O}}{\bs{k}\idx1} &&\hspace{15pt}\hat{F}\idx4 = T\idx{M1} - C_{\psi}(\hat{u}\idx4 - \hat{u}\idx1)
+\\
+\hat{F}\idx2 &= \inProd{\hat{\bs{T}}^{K/O}}{\bs{k}\idx2} &&\hspace{15pt}\hat{F}\idx5 = T\idx{M2} - C_{\psi}(\hat{u}\idx5 - \hat{u}\idx2)
+\\
+\hat{F}\idx3 &= \inProd{\hat{\bs{T}}^{K/O}}{\bs{k}\idx3} &&\hspace{15pt}\hat{F}\idx6 = T\idx{M3} - C_{\psi}(\hat{u}\idx6 - \hat{u}\idx3)
+\end{align}
+An dieser Stelle können nun prinzipiell nach Kanes Gleichung
+\begin{equation}
+F_i + F^*_i = 0
+\end{equation}
+die Bewegungsgleichungen bestimmt werden. Allerdings wird in diesem Fall eine vektorielle Vorgehensweise gewählt, welche einen eleganten Weg zur gewünschten Zustandsraumdarstellung darstellt. Zunächst werden die folgenden Definition getroffen.
+\begin{equation}
+\bs{u}\idx{K} \equiv \begin{bmatrix} \hat{u}\idx1 \\ \hat{u}\idx2 \\ \hat{u}\idx3 \end{bmatrix}
+\hspace{35pt}
+\bs{u}\idx{R} \equiv \begin{bmatrix} \hat{u}\idx4 \\ \hat{u}\idx5 \\ \hat{u}\idx6 \end{bmatrix}
+\end{equation}
+\begin{equation}
+\begin{split}
+\bs{F}^*\idx{K} &\equiv \begin{bmatrix}-F^*\idx1 \\ -F^*\idx2 \\ -F^*\idx3\end{bmatrix} = 
+\begin{bmatrix}
+\hat{\dot{u}}\idx1(I^K\idx{11}+I^{R2}\idx{11}+I^{R3}\idx{11}) + \hat{\dot{u}}\idx2\cdot I^{K}\idx{21} + \hat{\dot{u}}\idx3\cdot I^{K}\idx{31}
+\\
+\hat{\dot{u}}\idx1\cdot I^{K}\idx{12} + \hat{\dot{u}}\idx2(I^{K}\idx{22}+I^{R1}\idx{22}+I^{R3}\idx{33}) + \hat{\dot{u}}\idx3\cdot I^{K}\idx{13} 
+\\
+\hat{\dot{u}}\idx1\cdot I^{K}\idx{13} + \hat{\dot{u}}\idx2\cdot I^{K}\idx{23} + \hat{\dot{u}}\idx3(I^{K}\idx{33}+I^{R1}\idx{33}+I^{R2}\idx{33})
+\end{bmatrix} \\
+&= 
+\underbrace{
+\begin{bmatrix}
+I^K\idx{11}+I^{R1}\idx{11}+I^{R2}\idx{11} & I^K\idx{21} & I^K\idx{31} \\
+I^K\idx{12} & I^K\idx{22}+I^{R1}\idx{22}+I^{R3}\idx{22} & I^K\idx{32} \\
+I^K\idx{13} & I^K\idx{23} & I^K\idx{33}+I^{R1}\idx{33}+I^{R2}\idx{33}
+\end{bmatrix}}_{\equiv \bs{I}\idx{K}} \cdot \underbrace{\begin{bmatrix}
+\hat{\dot{u}}\idx1 \\ \hat{\dot{u}}\idx2 \\ \hat{\dot{u}}\idx3
+\end{bmatrix}}_{\equiv \bs{\dot{u}}\idx{K}}
+\end{split}
+\end{equation} 
+\begin{equation}
+\begin{split}
+\bs{F}^*\idx{R} &\equiv \begin{bmatrix}-F^*\idx4 \\ -F^*\idx5 \\ -F^*\idx6 \end{bmatrix} = 
+\begin{bmatrix}
+\hat{\dot{u}}\idx4 \cdot I^{R1}\idx{11} \\ \hat{\dot{u}}\idx5\cdot I^{R2}\idx{22} \\ \hat{\dot{u}}\idx6\cdot I^{R3}\idx{33}
+\end{bmatrix} = \underbrace{\begin{bmatrix}
+I^{R1}\idx11 & 0 & 0 \\ 0 & I^{R2}\idx{22} & 0 \\ 0 & 0 & I^{R3}\idx{33}
+\end{bmatrix}}_{\equiv \bs{I}\idx{R}} \cdot \underbrace{\begin{bmatrix}
+\hat{\dot{u}}\idx4 \\ \hat{\dot{u}}\idx5 \\ \hat{\dot{u}}\idx6
+\end{bmatrix}}_{\equiv \bs{\dot{u}}\idx{R}}
+\end{split}
+\end{equation}
+\begin{equation}
+\begin{split}
+\bs{F}\idx{K} &\equiv \bs{\Delta T\idx{G}}\cdot \overline{\bs{\varphi}} + C_{\psi}\cdot \begin{bmatrix}
+\hat{u}\idx4 - \hat{u}\idx1 \\ \hat{u}\idx5 - \hat{u}\idx2 \\ \hat{u}\idx6 - \hat{u}\idx3
+\end{bmatrix} - \underbrace{\begin{bmatrix}
+T\idx{M1} \\ T\idx{M2} \\ T\idx{M3}
+\end{bmatrix}}_{\equiv \bs{T}\idx{M}}
+\\
+&= \bs{\Delta T\idx{G}} \cdot \overline{\bs{\varphi}} + C_{\psi} \cdot \bs{u}\idx{R} - C_{\psi} \cdot \bs{u}\idx{K}  - \bs{T}\idx{M}
+\end{split}
+\end{equation}
+\begin{equation}
+\bs{F}\idx{R} \equiv \begin{bmatrix} F\idx4 \\ F\idx5 \\ F\idx6 \end{bmatrix} = \sum^3_{i=1} \presuper{K}{\bs{T}^{Ri/Mi}} = \begin{bmatrix}
+T\idx{M1} \\ T\idx{M2} \\ T\idx{M3}
+\end{bmatrix} - C_{\psi}\cdot \begin{bmatrix}
+\hat{u}\idx4 - \hat{u}\idx1 \\ \hat{u}\idx5 - \hat{u}\idx2 \\ \hat{u}\idx6 - \hat{u}\idx3
+\end{bmatrix}
+\end{equation}
+Nach Kanes Gleichung gilt $F_i=-F^*_i$, woraus sowohl $\bs{F}\idx{K}=\bs{F}^*\idx{K}$ als auch $\bs{F}\idx{R}=\bs{F}^*\idx{R}$ folgt. Daraus resultieren die Gleichungen
+\begin{align}
+\label{eq_ZRD3D_zeile2}
+\bs{\dot{u}}\idx{K} &= \bs{I}^{-1}\idx{K} \cdot \bs{F}^*\idx{K} = \bs{I}^{-1}\idx{K} \cdot \bs{F}\idx{K} 
+\\
+&= \bs{I}^{-1}\idx{K} \cdot \bs{\Delta G} \cdot \bs{\overline{\varphi}} - C_{\psi}\cdot \bs{I}^{-1}\idx{K} \cdot \bs{u}\idx{K} + C_{\psi}\cdot \bs{I}^{-1}\idx{K} \cdot \bs{u}\idx{R} - \bs{I}^{-1}\idx{K} \cdot \bs{T}\idx{M} \nonumber
+\\
+\label{eq_ZRD3D_zeile3}
+\bs{\dot{u}}\idx{R} &= \bs{I}^{-1}\idx{R} \cdot \bs{F}^*\idx{R} = \bs{I}^{-1}\idx{R} \cdot \bs{F}\idx{K} =
+ C_{\psi}\cdot \bs{I}^{-1}\idx{R} \cdot \bs{u}\idx{K} - C_{\psi}\cdot \bs{I}^{-1}\idx{R} \cdot \bs{u}\idx{R} + \bs{I}^{-1}\idx{R} \cdot \bs{T}\idx{M} \,.
+\end{align}
+Wenn nun ein Zustandsvektor $\bs{x} \equiv \begin{bmatrix} \bs{\overline{\varphi}} & \bs{u}\idx{K} & \bs{u}\idx{R}\end{bmatrix}^T$ und ein Eingangsvektor $\bs{u} \equiv \bs{T}\idx{M}$ definiert werden, geben die obigen Gleichungen bereits zwei Drittel der gesuchten Zustandsraumdarstellung wieder. Der letzte Teil ergibt sich durch die Ableitung des Winkelvektors $\bs{\overline{\varphi}}$. Hierfür wird die Definition der generalisierten Geschwindigkeiten $\bs{u}\idx{K}$ nach den Winkeln $\bs{\overline{\varphi}}$ aufgelöst.
+\begin{equation}
+\label{eq_ZRD3D_zeile1}
+\dot{\bs{\overline{\varphi}}} = \underbrace{\begin{bmatrix}
+\frac{c_{\varphi\idx{30}}}{c_{\varphi\idx{20}}} & \frac{-s_{\varphi\idx{30}}}{c_{\varphi\idx{20}}} & 0 
+\\
+s_{\varphi\idx{30}} & c_{\varphi\idx{30}} & 0 
+\\
+\frac{-s_{\varphi\idx{20}}c_{\varphi\idx{30}}}{c_{\varphi\idx{20}}} &
+\frac{s_{\varphi\idx{20}}s_{\varphi\idx{30}}}{c_{\varphi\idx{20}}} & 1
+\end{bmatrix}}_{\equiv \bs{\Delta\varPhi}}\cdot \bs{u}\idx{K}
+\end{equation}
+Nun können die Gleichungen (\ref{eq_ZRD3D_zeile1}), (\ref{eq_ZRD3D_zeile2}) und (\ref{eq_ZRD3D_zeile3}) zu einer Zustandsraumdarstellung zusammengeführt werden.
+\begin{equation}
+\underbrace{\begin{bmatrix} \dot{\bs{\overline{\varphi}}} \\ \dot{\bs{u}}\idx{K} \\ \dot{\bs{u}}\idx{R} \end{bmatrix}}_{\equiv \dot{\bs{x}}} 
+= 
+\underbrace{\begin{bmatrix}
+0^{3\times 3} & \bs{\Delta\varPhi} & 0^{3\times 3} \\
+\bs{I}^{-1}\idx{K} \cdot \bs{\Delta T\idx{G}} & -C_{\psi}\cdot \bs{I}^{-1}\idx{K} & C_{\psi}\cdot \bs{I}^{-1}\idx{K} \\
+0^{3\times 3} & C_{\psi}\cdot \bs{I}^{-1}\idx{R} & -C_{\psi}\cdot \bs{I}^{-1}\idx{R}
+\end{bmatrix}}_{\equiv \bs{A}}
+\cdot
+\underbrace{\begin{bmatrix}\bs{\overline{\varphi}} \\ \bs{u}\idx{K} \\ \bs{u}\idx{R}\end{bmatrix}}_{\equiv \bs{x}}
++
+\underbrace{\begin{bmatrix}
+0^{3\times 3} \\ -\bs{I}^{-1}\idx{K} \\ \bs{I}^{-1}\idx{R}
+\end{bmatrix}}_{\equiv \bs{B}}
+\cdot
+\underbrace{\begin{bmatrix}
+T\idx{M1} \\ T\idx{M2} \\ T\idx{M3}
+\end{bmatrix}}_{\equiv \bs{u}}
+\end{equation}
