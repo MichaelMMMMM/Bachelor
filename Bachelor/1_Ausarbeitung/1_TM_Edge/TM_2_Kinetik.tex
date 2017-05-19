@@ -7,7 +7,7 @@ Das Motor- und Reibmoment wirkt an dem Verbindungspunkt zwischen Schwungmasse un
 \begin{equation}
 \bs{T}^{K/O} = T^{K/O}\idx{G} - \bs{T}^{R/M}\idx{M} - \bs{T}^{R/M}\idx{R} = [m\cdot g\cdot l_C\cdot s_{\varphi} - T\idx{M} + C_{\psi}(u\idx{2} - u\idx{1})] \cdot \bs{k}\idx{3}\,.
 \end{equation}
-Um die Bewegungsgleichungen zu ermitteln, werden die generalisierten aktiven Kräfte $F_i$ benötigt. Hierfür werden die Skalarprodukte der Drehmomente, welche auf die Körper wirken, und die partiellen Winkelgeschwindigkeiten, des entsprechenden Körpers, berechnet. Die Summe über alle Körper ergibt die generalisierte aktive Kraft $F_i$.
+Um die Bewegungsgleichungen zu ermitteln, werden die generalisierten aktiven Kräfte $F_i$ benötigt. Hierfür werden die Skalarprodukte der Drehmomente, welche auf die Körper wirken, und die partiellen Winkelgeschwindigkeiten, des entsprechenden Körpers, berechnet. Die Summe über alle Körper ergibt die generalisierte aktive Kraft $F_i$ \cite[S. 99 f.]{KaneBook}.
 \begin{equation}
 \begin{split}
 F\idx{1} &= \inProd{\bs{T}^{K/O}}{\vel{A}{\omega}{K}\idx{1}} + \inProd{\bs{T}^{R/M}}{\vel{A}{\omega}{R}\idx{1}}
@@ -26,7 +26,7 @@ Das Trägheitsmoment des Würfelkörpers lässt sich aus dessen Trägheitsskalar
 \begin{equation}
 \bs{T}^{K/O}_* = -\underbrace{(I^{GH/O} + m\idx{R}\cdot l^2_{MO})}_{\equiv I\idx{K}}\cdot \vecBS{K}{0}{0}{\dot{u}\idx1} = -I\idx{K}\cdot \vecBS{K}{0}{0}{\dot{u}\idx1}
 \end{equation}
-Die generalisierten Trägheitskräfte $F^*_i$ werden wieder aus der folgenden Summe von Skalarprodukten berechnet.
+Die generalisierten Trägheitskräfte $F^*_i$ werden wieder aus der folgenden Summe von Skalarprodukten berechnet \cite[S. 124 ff.]{KaneBook}.
 \begin{equation}
 \begin{split}
 F^*\idx{1} &= \inProd{\bs{T}^{K/O}_*}{\vel{A}{\omega}{K}\idx{1}} + \inProd{\bs{T}^{R/M}_*}{\vel{A}{\omega}{R}\idx{1}} = -I\idx{K}\cdot \dot{u}\idx{1} 
@@ -34,7 +34,7 @@ F^*\idx{1} &= \inProd{\bs{T}^{K/O}_*}{\vel{A}{\omega}{K}\idx{1}} + \inProd{\bs{T
 F^*\idx{2} &= \inProd{\bs{T}^{K/O}_*}{\vel{A}{\omega}{K}\idx{2}} + \inProd{\bs{T}^{R/M}_*}{\vel{A}{\omega}{R}\idx{2}} = -I\idx{R}\cdot \dot{u}\idx{2} 
 \end{split}
 \end{equation}
-Die Bewegunsgleichungen resultieren nun aus Kanes Gleichung $F_i + F^*_i = 0$.
+Die Bewegunsgleichungen resultieren nun aus Kanes Gleichung $F_i + F^*_i = 0$ \cite[S. 158 ff.]{KaneBook}.
 \begin{equation}
 \begin{split}
 F\idx{1} + F^*\idx{1} = 0 &\hspace{15pt}\leftrightarrow\hspace{15pt} I\idx{K}\cdot \dot{u}\idx{1} = m\cdot g\cdot l\idx{C}\cdot s_{\varphi} - T\idx{M} + C_{\psi}(u\idx{2} - u\idx{1}) 
@@ -44,7 +44,7 @@ F\idx{2} + F^*\idx{2} = 0 &\hspace{15pt}\leftrightarrow\hspace{15pt} I\idx{R}\cd
 \end{equation}
 Rückblickend kann Kanes Methodik in die folgenden Schritte unterteilt werden. Zunächst wird die Kinematik des Systems analysiert, wobei die Körper mit Hilfe von Bezugssystemen modelliert werden. Die Definition von generalisierten Geschwindigkeiten ermöglicht die Bestimmung der partiellen Geschwindigkeiten, wodurch die Bewegung des Systems in Betrag und Richtung unterteilt wird. Anschließend werden die partiellen Geschwindigkeiten genutzt um die wirkenden Kräfte und Trägheitskräfte in die Bewegungsrichtungen zu projizieren. Hieraus resultieren die generalisierten aktiven Kräfte und generalisierten Trägheitskräfte, welche mittels Kanes Gleichung auf die gesuchten Bewegungsgleichungen führen.
 
-Um die Bedeutung der generalisierten Geschwindigkeiten zu verdeutlichen wird der Fall betrachtet, dass die folgende Definition gewählt wird.
+Um die Bedeutung der generalisierten Geschwindigkeiten zu verdeutlichen, wird eine alternative Definition gewählt und die zugehörigen Bewegungsgleichungen ermittelt.
 \begin{equation}
 \tilde{u}\idx1 = \tilde{u}\idx{K} \equiv \dot{\varphi} \hspace{35pt} \tilde{u}\idx2 = \tilde{u}\idx{R} \equiv \dot{\psi}
 \end{equation}

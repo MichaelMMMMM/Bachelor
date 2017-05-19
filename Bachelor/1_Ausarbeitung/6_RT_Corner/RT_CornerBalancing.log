@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.31)  16 MAY 2017 10:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.31)  17 MAY 2017 09:23
 entering extended mode
 **./RT_CornerBalancing.tex
 (RT_CornerBalancing.tex
@@ -1134,7 +1134,7 @@ ed-to.pdf img/lin_sim1_ur.eps>
 (epstopdf)             \includegraphics on input line 95.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/lin_sim1_ur-eps-converted-to.pdf, id=74, 376.40625pt x 307.1475pt>
+<img/lin_sim1_ur-eps-converted-to.pdf, id=73, 376.40625pt x 307.1475pt>
 File: img/lin_sim1_ur-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/lin_sim1_ur-eps-converted-to.pdf>
@@ -1152,7 +1152,7 @@ ed-to.pdf img/lin_sim1_tm.eps>
 (epstopdf)             \includegraphics on input line 96.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/lin_sim1_tm-eps-converted-to.pdf, id=75, 373.395pt x 307.1475pt>
+<img/lin_sim1_tm-eps-converted-to.pdf, id=74, 373.395pt x 307.1475pt>
 File: img/lin_sim1_tm-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/lin_sim1_tm-eps-converted-to.pdf>
@@ -1180,7 +1180,7 @@ ted-to.pdf img/lin_sim2_phi.eps>
 (epstopdf)             \includegraphics on input line 124.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/lin_sim2_phi-eps-converted-to.pdf, id=90, 370.38374pt x 307.1475pt>
+<img/lin_sim2_phi-eps-converted-to.pdf, id=89, 370.38374pt x 307.1475pt>
 File: img/lin_sim2_phi-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/lin_sim2_phi-eps-converted-to.pdf>
@@ -1198,7 +1198,7 @@ ed-to.pdf img/lin_sim2_uk.eps>
 (epstopdf)             \includegraphics on input line 125.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/lin_sim2_uk-eps-converted-to.pdf, id=91, 365.365pt x 307.1475pt>
+<img/lin_sim2_uk-eps-converted-to.pdf, id=90, 365.365pt x 307.1475pt>
 File: img/lin_sim2_uk-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/lin_sim2_uk-eps-converted-to.pdf>
@@ -1216,7 +1216,7 @@ ed-to.pdf img/lin_sim2_ur.eps>
 (epstopdf)             \includegraphics on input line 128.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/lin_sim2_ur-eps-converted-to.pdf, id=92, 376.40625pt x 307.1475pt>
+<img/lin_sim2_ur-eps-converted-to.pdf, id=91, 376.40625pt x 307.1475pt>
 File: img/lin_sim2_ur-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/lin_sim2_ur-eps-converted-to.pdf>
@@ -1234,7 +1234,7 @@ ed-to.pdf img/lin_sim2_tm.eps>
 (epstopdf)             \includegraphics on input line 129.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/lin_sim2_tm-eps-converted-to.pdf, id=93, 373.395pt x 307.1475pt>
+<img/lin_sim2_tm-eps-converted-to.pdf, id=92, 373.395pt x 307.1475pt>
 File: img/lin_sim2_tm-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/lin_sim2_tm-eps-converted-to.pdf>
@@ -1318,7 +1318,7 @@ to.pdf img/exp1_phi.eps>
 (epstopdf)             \includegraphics on input line 14.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/exp1_phi-eps-converted-to.pdf, id=138, 378.41376pt x 307.1475pt>
+<img/exp1_phi-eps-converted-to.pdf, id=137, 378.41376pt x 307.1475pt>
 File: img/exp1_phi-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/exp1_phi-eps-converted-to.pdf>
@@ -1336,7 +1336,7 @@ o.pdf img/exp1_uk.eps>
 (epstopdf)             \includegraphics on input line 15.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/exp1_uk-eps-converted-to.pdf, id=139, 373.395pt x 307.1475pt>
+<img/exp1_uk-eps-converted-to.pdf, id=138, 373.395pt x 307.1475pt>
 File: img/exp1_uk-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/exp1_uk-eps-converted-to.pdf>
@@ -1354,7 +1354,7 @@ o.pdf img/exp1_ur.eps>
 (epstopdf)             \includegraphics on input line 18.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/exp1_ur-eps-converted-to.pdf, id=140, 376.40625pt x 307.1475pt>
+<img/exp1_ur-eps-converted-to.pdf, id=139, 376.40625pt x 307.1475pt>
 File: img/exp1_ur-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/exp1_ur-eps-converted-to.pdf>
@@ -1372,7 +1372,7 @@ o.pdf img/exp1_tm.eps>
 (epstopdf)             \includegraphics on input line 19.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/exp1_tm-eps-converted-to.pdf, id=141, 378.41376pt x 307.1475pt>
+<img/exp1_tm-eps-converted-to.pdf, id=140, 378.41376pt x 307.1475pt>
 File: img/exp1_tm-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/exp1_tm-eps-converted-to.pdf>
@@ -1390,7 +1390,7 @@ to.pdf img/exp2_phi.eps>
 (epstopdf)             \includegraphics on input line 28.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/exp2_phi-eps-converted-to.pdf, id=142, 378.41376pt x 307.1475pt>
+<img/exp2_phi-eps-converted-to.pdf, id=141, 378.41376pt x 307.1475pt>
 File: img/exp2_phi-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/exp2_phi-eps-converted-to.pdf>
@@ -1408,7 +1408,7 @@ o.pdf img/exp2_uk.eps>
 (epstopdf)             \includegraphics on input line 29.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/exp2_uk-eps-converted-to.pdf, id=143, 378.41376pt x 307.1475pt>
+<img/exp2_uk-eps-converted-to.pdf, id=142, 378.41376pt x 307.1475pt>
 File: img/exp2_uk-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/exp2_uk-eps-converted-to.pdf>
@@ -1426,7 +1426,7 @@ o.pdf img/exp2_ur.eps>
 (epstopdf)             \includegraphics on input line 32.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/exp2_ur-eps-converted-to.pdf, id=144, 376.40625pt x 307.1475pt>
+<img/exp2_ur-eps-converted-to.pdf, id=143, 376.40625pt x 307.1475pt>
 File: img/exp2_ur-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/exp2_ur-eps-converted-to.pdf>
@@ -1444,7 +1444,7 @@ o.pdf img/exp2_tm.eps>
 (epstopdf)             \includegraphics on input line 33.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/exp2_tm-eps-converted-to.pdf, id=145, 378.41376pt x 307.1475pt>
+<img/exp2_tm-eps-converted-to.pdf, id=144, 378.41376pt x 307.1475pt>
 File: img/exp2_tm-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/exp2_tm-eps-converted-to.pdf>
@@ -1483,45 +1483,39 @@ Package rerunfilecheck Info: File `RT_CornerBalancing.out' has not changed.
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 17.
  )
 (\end occurred when \ifx on line 16 was incomplete) 
 Here is how much of TeX's memory you used:
- 13176 strings out of 493333
- 198486 string characters out of 3139200
- 332807 words of memory out of 3000000
- 16356 multiletter control sequences out of 15000+200000
+ 13172 strings out of 493333
+ 198386 string characters out of 3139200
+ 333524 words of memory out of 3000000
+ 16353 multiletter control sequences out of 15000+200000
  76380 words of font info for 65 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  54i,25n,56p,2102b,397s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{
-equation.5.1.7} has been referenced but does not exist, replaced by a fixed one
-
-
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc} <C:\Users\ich\AppDat
-a\Local\MiKTeX\2.9\fonts\pk\ljfour\public\yfrak\dpi657\yfrak.pk>{C:/Program Fil
-es/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Files/MiKTeX 2.9/fon
-ts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/l
-m-rm.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathex.enc}<C:/Prog
-ram Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx10.pfb><C:/Program Files/MiKTeX 
-2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
-ublic/lm/lmbx9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmex10.pf
-b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi10.pfb><C:/Program Fil
-es/MiKTeX 2.9/fonts/type1/public/lm/lmmi8.pfb><C:/Program Files/MiKTeX 2.9/font
-s/type1/public/lm/lmmib10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/l
-m/lmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr6.pfb><C:/Pro
-gram Files/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Program Files/MiKTeX 2
-.9/fonts/type1/public/lm/lmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
-ic/lm/lmri10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmro10.pfb>
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Program Files
-/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/
-type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on RT_CornerBalancing.pdf (10 pages, 1724047 bytes).
+{C:/Program Files/MiKTeX 2.9
+/fonts/enc/dvips/lm/lm-ec.enc} <C:\Users\ich\AppData\Local\MiKTeX\2.9\fonts\pk\
+ljfour\public\yfrak\dpi657\yfrak.pk>{C:/Program Files/MiKTeX 2.9/fonts/enc/dvip
+s/lm/lm-mathit.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.en
+c}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files/M
+iKTeX 2.9/fonts/enc/dvips/lm/lm-mathex.enc}<C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/public/lm/lmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lm
+bx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx9.pfb><C:/Progr
+am Files/MiKTeX 2.9/fonts/type1/public/lm/lmex10.pfb><C:/Program Files/MiKTeX 2
+.9/fonts/type1/public/lm/lmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
+blic/lm/lmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmib10.pf
+b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Program File
+s/MiKTeX 2.9/fonts/type1/public/lm/lmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/
+type1/public/lm/lmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr
+9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb><C:/Program
+ Files/MiKTeX 2.9/fonts/type1/public/lm/lmro10.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
+ic/lm/lmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbol
+s/msbm10.pfb>
+Output written on RT_CornerBalancing.pdf (10 pages, 1723853 bytes).
 PDF statistics:
- 258 PDF objects out of 1000 (max. 8388607)
- 49 named destinations out of 1000 (max. 500000)
+ 256 PDF objects out of 1000 (max. 8388607)
+ 48 named destinations out of 1000 (max. 500000)
  113 words of extra memory for PDF output out of 10000 (max. 10000000)
 

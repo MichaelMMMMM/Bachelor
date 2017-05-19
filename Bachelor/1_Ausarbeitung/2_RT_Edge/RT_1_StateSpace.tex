@@ -6,7 +6,7 @@ I\idx{K} \cdot \dot{u}\idx{K} = m\cdot g\cdot l\idx{C}\cdot s_{\varphi} - C_{\ps
 \begin{equation}
 I\idx{R}\cdot \dot{u}\idx{R} = C_{\psi}\cdot u\idx{K} - C_{\psi}\cdot u\idx{R} + T\idx{M}
 \end{equation}
-hervorgegangen, welche die Systemdynamik vollständig beschreiben. Mit Hilfe der Definitionen
+hervorgegangen, welche die Systemdynamik vollständig beschreiben. Mithilfe der Definitionen
 \begin{equation}
 \bs{x} = \begin{bmatrix} \varphi \\ u\idx{K} \\ u\idx{R} \end{bmatrix}
 \hspace{35pt}
@@ -42,9 +42,9 @@ Prinzipiell lässt sich jedes lineare zeitinvariante System \textfrak{S}
 \bs{\dot{x}}(t) = \bs{A}\cdot \bs{x}(t) + \bs{B}\cdot \bs{u}(t) \\
 \bs{y}(t) = \bs{C}\cdot \bs{x}(t) + \bs{D}\cdot \bs{u}(t)
 \end{array}
-\right.\,.
+\right.
 \end{equation}
-beschreiben, wobei $\bs{x} \in \mathbb{R}^n$ Zustandsvektor, $\bs{u} \in \mathbb{R}^r$ Eingangsvektor und $\bs{y} \in \mathbb{R}^m$ Ausgangsvektor heißt. Im weiteren Verlauf wird die Zeitabhängigkeit dieser drei Vektoren nicht mehr explizit angegeben. Außerdem werden in dieser Arbeit lediglich nicht sprungfähige Systeme \cSS{A}{B}{C} betrachtet, deren Eingangsvektor $\bs{u}$ den Ausgangsvektor $\bs{y}$ nicht direkt beeinflusst und bei denen somit $\bs{D} = \bs{0}$ gilt.
+beschreiben, wobei $\bs{x} \in \mathbb{R}^n$ Zustandsvektor, $\bs{u} \in \mathbb{R}^r$ Eingangsvektor und $\bs{y} \in \mathbb{R}^m$ Ausgangsvektor heißt. Im weiteren Verlauf wird die Zeitabhängigkeit dieser drei Vektoren nicht mehr explizit angegeben. Außerdem werden in dieser Arbeit lediglich nicht sprungfähige Systeme \cSS{A}{B}{C} betrachtet, deren Eingangsvektor $\bs{u}$ den Ausgangsvektor $\bs{y}$ nicht direkt beeinflusst und somit $\bs{D} = \bs{0}$ gilt.
 
 Ein großer Vorteil dieser Modellierung besteht darin, dass für jedes System unendlich viele Zustandsraumdarstellungen existieren \cite[S. 54]{Beucher}. Dieser Umstand wird ersichtlich, wenn man für die Herleitung der Bewegungsgleichungen alternative generalisierte Geschwindigkeiten wählt und diese anschließend in eine Zustandsraumdarstellung transformiert.
 \begin{equation}
@@ -110,7 +110,7 @@ heißt kanonische Normalform, wobei die Matrix $\bs{\tilde{A}}$ die Form
 0 & 0 & \hdots & \lambda_n
 \end{bmatrix}
 \end{equation}
-besitzt. Folglich sind die Elemente des Zustandvektors $\bs{\tilde{x}}$, welche kanonische Zustandsvariablen genannt werden, vollständig voneinander entkoppelt, weshalb sie auch als  Eigenvorgänge bzw. Eigenbewegungen des Systems bezeichnet werden. Die vollständige Entkopplung der Zustandsgrößen ist nicht immer möglich, für eine ausführliche Diskussion der Thematik sei auf \cite[S. 135 ff.]{LunzeRT1} verwiesen.
+besitzt. Folglich sind die Elemente des Zustandvektors $\bs{\tilde{x}}$, welche kanonische Zustandsvariablen genannt werden, vollständig voneinander entkoppelt, weshalb sie auch als  Eigenvorgänge bzw. Eigenbewegungen des Systems bezeichnet werden. Die vollständige Entkopplung der Zustandsgrößen ist allerdings nicht immer möglich, für eine ausführliche Diskussion der Thematik sei auf \cite[S. 135 ff.]{LunzeRT1} verwiesen.
 Die homogene Lösung der kanonischen Normalform lässt sich mit Hilfe des Exponentialansatzes ermitteln.
 \begin{equation}
 \tilde{x}_{i\text{,h}}(t) = e^{\lambda_i\cdot t}\cdot \tilde{x}_i(0) \rArrow \bs{\tilde{x}}\idx{h}(t) = \begin{bmatrix}

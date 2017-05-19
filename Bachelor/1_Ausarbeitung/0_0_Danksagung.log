@@ -1,8 +1,8 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2017.1.27)  5 MAY 2017 19:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.31)  17 MAY 2017 08:21
 entering extended mode
 **./0_0_Danksagung.tex
 (0_0_Danksagung.tex
-LaTeX2e <2016/03/31> patch level 3
+LaTeX2e <2017/01/01> patch level 1
 Babel <3.9r> and hyphenation patterns for 75 language(s) loaded.
 ! Undefined control sequence.
 <argument> \undefinedpagestyle 
@@ -16,16 +16,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.2 \clearscrheadfoot
-                     
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.4 \chapter
+l.2 \chapter
             *{} \label{Danksagung}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -40,7 +31,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.4 \chapter*
+l.2 \chapter*
              {} \label{Danksagung}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -49,7 +40,7 @@ Missing character: There is no * in font nullfont!
 ! Undefined control sequence.
 <argument> \Large 
                   \textsf {\textbf {Danksagung}}
-l.5 ...erline{\Large \textsf{\textbf{Danksagung}}}
+l.3 ...erline{\Large \textsf{\textbf{Danksagung}}}
                                                    %\\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -58,7 +49,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 4--9
+Overfull \hbox (20.0pt too wide) in paragraph at lines 2--5
 []
  []
 
@@ -99,7 +90,7 @@ and I'll forget about whatever was undefined.
 Here is how much of TeX's memory you used:
  15 strings out of 493333
  218 string characters out of 3139200
- 53242 words of memory out of 3000000
+ 53255 words of memory out of 3000000
  3641 multiletter control sequences out of 15000+200000
  4239 words of font info for 16 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191

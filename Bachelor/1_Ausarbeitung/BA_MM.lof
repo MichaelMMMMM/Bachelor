@@ -9,10 +9,10 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Mechanische Skizze des W\IeC {\"u}rfels\relax }}{32}{figure.caption.14}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.0}{\ignorespaces Verlauf des Systems in der Simulation mit $x_{\overline {\text {S}}}=0$\relax }}{46}{figure.caption.16}
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Verlauf des Systems in der Simulation mit $x_{\overline {\text {S}}}\not =0$\relax }}{47}{figure.caption.17}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Systemverhalten des geschlossenen Regelkreises\relax }}{51}{figure.caption.18}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Verhalten des geschlossenen Regelkreises mit angepasstem Regler\relax }}{52}{figure.caption.19}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Verlauf des Systems in der Simulation mit $x_{\overline {\text {S}}}=0$\relax }}{46}{figure.caption.16}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Verlauf des Systems in der Simulation mit $x_{\overline {\text {S}}}\not =0$\relax }}{47}{figure.caption.17}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Systemverhalten des geschlossenen Regelkreises\relax }}{51}{figure.caption.18}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Verhalten des geschlossenen Regelkreises mit angepasstem Regler\relax }}{52}{figure.caption.19}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {6.1}{\ignorespaces Blockschaltbild Komplement\IeC {\"a}rfilter\relax }}{59}{figure.caption.20}
 \contentsline {figure}{\numberline {6.2}{\ignorespaces Blockschaltbild des Luenberger-Beobachters\relax }}{61}{figure.caption.21}
