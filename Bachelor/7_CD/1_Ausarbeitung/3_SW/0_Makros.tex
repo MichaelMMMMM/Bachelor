@@ -1,0 +1,54 @@
+\def\presuper#1#2%
+	{\mathop{}%
+	\mathopen{\vphantom{#2}}^{#1}%
+	\kern-\scriptspace%
+	#2}
+%Display vecotr in a reference frame
+\newcommand{\vecBS}[4]{\presuper{#1}{\begin{pmatrix}
+#2 \\ #3 \\ #4
+\end{pmatrix}}}
+%Boldsymbol shortcut
+\newcommand{\bs}[1]{\boldsymbol{#1}}
+%Bezugssystemdefinition
+\newcommand{\defBS}[1]{\{#1\} [ \bs{e}_{{#1}_1},\bs{e}_{{#1}_2}, \bs{e}_{{#1}_3} ]}
+%Projektionsmatrix
+\newcommand{\pMat}[2]{\presuper{#1}{\bs{P}}^{#2}}
+%Differenation in Respekt zu BS
+\newcommand{\diffIn}[3]{\frac{\presuper{#1}{d{#2}}}{d#3}}
+\newcommand{\partialDiffIn}[3]{\frac{\presuper{#1}{\partial{#2}}}{\partial #3}}
+%Geschwindigkeit/Beschleunigung
+\newcommand{\vel}[3]{\presuper{#1}{\bs{#2}}^{#3}}
+
+%Rightarrow with spaceing
+\newcommand{\rArrow}{\hspace{5pt}\rightarrow\hspace{5pt}}
+%Inneres Produkt
+\newcommand{\inProd}[2]{\langle {#1}, {#2} \rangle}
+
+%System macro
+\newcommand{\cSS}[3]{\textfrak{S}($\bs{#1}$,$\bs{#2}$,$\bs{#3}$)}
+\newcommand{\dSS}[3]{\textfrak{D}($\bs{#1}$,$\bs{#2}$,$\bs{#3}$)}
+
+%Laplace transform sign with spaces
+\newcommand{\myLaplace}{\hspace{15pt}\laplace\hspace{15pt}}
+
+\newcommand*{\signed}[1]{%
+        \nolinebreak[3]\hspace*{\fill}\mbox{\emph{#1}}
+    }
+%Vektor norm
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+%Kreuzproduktmatrix
+\newcommand{\kProdMat}[1]{\left[ #1 \right]_\times}
+
+%Nicht kursiver Subskript
+\newcommand{\idx}[1]{_{\text{#1}}}
+
+%Vertikales Transformationszeichen
+\newcommand{\vlaplace}[1][]{\mbox{\setlength{\unitlength}{0.1em}%
+                            \begin{picture}(10,20)%
+                              \put(3,2){\circle*{4}}%
+                              \put(3,4){\line(0,1){12}}%
+                              \put(3,18){\circle{4}}%
+                              \put(10,7){#1}
+                            \end{picture}%
+                           }%
+                     }%

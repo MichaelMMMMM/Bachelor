@@ -1,7 +1,6 @@
 \section{Untersuchung der Kinetik}
 Der nächste Schritt besteht darin die Kräfte zu modellieren, welche auf den Würfelkörper und die drei Schwungmassen wirken. Aus diesen lassen sich mit Hilfe der partiellen Geschwindigkeiten die generalisierten aktiven Kräfte $F_i$ ermitteln.
-Zunächst sollen die resultierenden Drehmomente $\bs{T}^{Ri/Mi}$ der Schwungmassen $R_i$ um ihren jeweiligen Drehpunkt $M_i$ bestimmt werden. Hierfür muss einerseits das Drehmoment $\bs{T}^{Ri/Mi}\idx{M}$ des antreibenden Motors, andererseits das verzögernde Reibmoment $\bs{T}^{Ri/Mi}\idx{R}$ beachtet werden.
-Diese ergeben sich aus der Summe der Drehmomente $\bs{T}^{Ri/Mi}$, welche  die antreibenden Motoren verursachen, und der verzögernden Reibmomente $\bs{T}^{Ri/Mi}$
+Zunächst sollen die resultierenden Drehmomente $\bs{T}^{Ri/Mi}$ der Schwungmassen $R_i$ um ihren jeweiligen Drehpunkt $M_i$ bestimmt werden. Diese ergeben sich aus der Summe der Drehmomente $\bs{T}^{Ri/Mi}_M$, welche  die antreibenden Motoren verursachen, und der verzögernden Reibmomente $\bs{T}^{Ri/Mi}_R$
 \begin{equation}
 \bs{T}^{R1/M1} = \bs{T}^{R1/M1}\idx{M} + \bs{T}^{R1/M1}\idx{R} = \vecBS{K}{T\idx{M1}}{0}{0} + \vecBS{K}{-C_{\psi}\cdot (u\idx4 - u\idx1)}{0}{0}
 \end{equation}
@@ -77,7 +76,7 @@ Somit ist der Trägheitstensor $\bs{I}^{K/O}$ gleich der Summe von $\bs{I}^{GH/O
 \begin{equation}
 \bs{T}^{K/O}_* = - \vel{A}{\alpha}{K}\cdot\bs{I}^{K/O} - \vel{A}{\omega}{K}\times(\bs{I}^{K/O}\cdot \vel{A}{\omega}{K})
 \end{equation}
-Prinzipiell können nun die generalisierten Trägheitskräfte $F^*_i$ durch die Skalarmultiplikation mit den partiellen Geschwindigkeiten berechnet werden. Allerdings handelt es sich bei den Trägheitsmomenten um nichtlineare Terme. Diese führen einerseits auf schwer nachzuvollziehende Bewegungsgleichungen. Andererseits werden für die Transformation in eine Zustandsraumdarstellung lineare Differentialgleichungen benötigt. In diesem Fall kann eine vorzeitige Linearisierung durchgeführt werden \cite[S. 171 ff.]{KaneBook}. Das heißt anstatt die vollständigen, nicht linearen Bewegungsgleichungen zu bestimmen und anschließend zu linearisieren, werden bereits die generalisierten  Geschwindigkeiten $\hat{\bs{\omega}}$ sowie die resultierenden Dreh- und Trägheitsmomente $\hat{F}_i$ und $\hat{F}^*_i$ linearisiert und daraus die linearen Bewegungsgleichungen bestimmt.
+Prinzipiell können nun die generalisierten Trägheitskräfte $F^*_i$ durch die Skalarmultiplikation mit den partiellen Geschwindigkeiten berechnet werden. Allerdings handelt es sich bei den Trägheitsmomenten um nichtlineare Terme. Diese führen einerseits auf schwer nachzuvollziehende Bewegungsgleichungen, andererseits werden für die Transformation in eine Zustandsraumdarstellung lineare Differentialgleichungen benötigt. In diesem Fall kann eine vorzeitige Linearisierung durchgeführt werden \cite[S. 171 ff.]{KaneBook}. Das heißt anstatt die vollständigen, nicht linearen Bewegungsgleichungen zu bestimmen und anschließend zu linearisieren, werden bereits die generalisierten  Geschwindigkeiten $\hat{\bs{\omega}}$ sowie die resultierenden Dreh- und Trägheitsmomente $\hat{F}_i$ und $\hat{F}^*_i$ linearisiert und daraus die linearen Bewegungsgleichungen bestimmt.
 Hierfür muss zunächst der Arbeitspunkt des Systems festgelegt werden, welcher der Position auf einer Ecke entspricht. Die Winkel $\varphi_i$ müssen folglich so gewählt werden, dass der Ortsvektor des Schwerpunktes $\bs{c}$ aus der Perspektive des Inertialsystems lediglich eine Komponente in Richtung des Vektors $\bs{a}_1$ besitzt.
 \begin{equation}
 \vecBS{A}{\vert \bs{c} \vert}{0}{0} \overset{!}= \pMat{K}{A}\cdot \vecBS{K}{l\idx{C}}{l\idx{C}}{l\idx{C}} \rArrow \varphi\idx{10} = 0, \hspace{10pt} \varphi\idx{20} =-2\cdot \text{atan}(\sqrt{2}-\sqrt{3}), \hspace{10pt} \varphi\idx{30}=\frac{-\pi}{4}
@@ -215,7 +214,9 @@ I^{R1}\idx11 & 0 & 0 \\ 0 & I^{R2}\idx{22} & 0 \\ 0 & 0 & I^{R3}\idx{33}
 \end{equation}
 \begin{equation}
 \begin{split}
-\bs{F}\idx{K} &\equiv \bs{\Delta T\idx{G}}\cdot \overline{\bs{\varphi}} + C_{\psi}\cdot \begin{bmatrix}
+\bs{F}\idx{K} &\equiv \begin{bmatrix}
+F\idx1 \\ F\idx2 \\ F\idx3
+\end{bmatrix} =\bs{\Delta T\idx{G}}\cdot \overline{\bs{\varphi}} + C_{\psi}\cdot \begin{bmatrix}
 \hat{u}\idx4 - \hat{u}\idx1 \\ \hat{u}\idx5 - \hat{u}\idx2 \\ \hat{u}\idx6 - \hat{u}\idx3
 \end{bmatrix} - \underbrace{\begin{bmatrix}
 T\idx{M1} \\ T\idx{M2} \\ T\idx{M3}

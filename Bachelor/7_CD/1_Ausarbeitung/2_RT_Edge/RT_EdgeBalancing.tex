@@ -1,0 +1,20 @@
+\ifx\FORMAT\undefined
+\include{0_Format}
+\begin{document}
+\fi
+
+\chapter{Reglerentwurf für das Balancieren auf einer Kante}\label{chapter_RT_Edge}
+Nachdem die Systemdynamik mit Hilfe von Bewegungsgleichungen beschrieben wurde, besteht der nächste Schritt darin, einen Regler zu entwerfen, welcher die Stabilisierung des Würfels auf einer Kante ermöglicht. Hierfür wird in diesem Abschnitt zunächst die Beschreibung eines Systems mit Hilfe der Zustandsraumdarstellung diskutiert. Anschließend wird der Zusammenhang zeitkontinuierlicher Systeme und deren zeitdiskreten Darstellungen ermittelt, um den Entwurf von digitalen Reglern zu ermöglichen. Daraufhin werden die Vorteile von Zustandsregler gegenüber klassischen Regelungsalgorithmen erläutert und ein Regler entworfen, um den Würfel auf einer Kante zu balancieren. Zuletzt wird diese Regelungsvorschrift an der reellen Regelstrecke erprobt und validiert.
+
+\newpage
+\input{RT_1_StateSpace}
+\newpage
+\input{RT_2_DiscreteStateSpace}
+\newpage
+\input{RT_3_ControllerDesign}
+\newpage
+\input{RT_4_ControllerApplication}
+
+\ifx\FORMAT\undefined
+\end{document}
+\fi

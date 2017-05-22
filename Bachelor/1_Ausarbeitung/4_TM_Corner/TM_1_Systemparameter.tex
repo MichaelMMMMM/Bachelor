@@ -1,5 +1,5 @@
 \section{Systemparameter}\label{TM_3D_Systemparameter}
-Zunächst werden die Parameter des mechanischen Systems vorgestellt. Das System setzt sich aus drei Schwungmassen und dem Würfelkörper zusammen. Unter dem Würfelkörper ist das Würfelgehäuse inklusive der montierten Motoren, Sensoren und Elektrik zu verstehen und wird mit $K$ bezeichnet. Für die Herleitung der Bewegungsgleichungen gilt die Annahme, dass der Würfelkörper nicht translativ bewegt wird, sondern lediglich um Punkt $O$ rotiert, bei dem es sich um die Ecke handelt, auf welcher der Würfel balanciert. Des Weiteren beschreiben alle Ortsvektoren den Vektor von $O$ zu dem jeweiligen Zielpunkt. Die drei Schwungmassen $R_i$ sind mit jeweils einem rotatorischem Freiheitsgrad auf den Motorwellen gelagert. Die Position der Lagerung wird mit $M_i$ bezeichnet und fällt auf Grund des symmetrischen Aufbaus der Schwungmassen mit deren Schwerpunkt zusammen.
+Zunächst werden die Parameter des mechanischen Systems vorgestellt, welches sich aus drei Schwungmassen und dem Würfelkörper zusammensetzt. Unter dem Würfelkörper ist das Würfelgehäuse inklusive der montierten Motoren, Sensoren und Elektrik zu verstehen und wird mit $K$ bezeichnet. Für die Herleitung der Bewegungsgleichungen gilt die Annahme, dass der Würfelkörper nicht translativ bewegt wird, sondern lediglich um den Punkt $O$ rotiert, bei dem es sich um die Ecke handelt, auf welcher der Würfel balanciert. Des Weiteren beschreiben alle Ortsvektoren den Vektor von $O$ zu dem jeweiligen Zielpunkt. Die drei Schwungmassen $R_i$ sind mit jeweils einem rotatorischem Freiheitsgrad auf den Motorwellen gelagert. Die Position der Lagerung wird mit $M_i$ bezeichnet und fällt auf Grund des symmetrischen Aufbaus der Schwungmassen mit deren Schwerpunkt zusammen.
 Die Massen
 \begin{equation}
 m_R = 0{,}155\text{ kg}
@@ -15,7 +15,7 @@ Letztere werden dabei aus der Perspektive des körperfesten Bezugssystem $K$ rel
 0 & 4{,}527\cdot 10^{-9} & 1{,}691\cdot 10^{-4}
 \end{bmatrix} \text{ kg}\cdot \text{m}^2 \,.
 \end{equation}
-Hieran zeigt sich, dass die Vektorbasis des Bezugssystem $K$ nahezu den Haupträgheitsachsen der Schwungmasse entspricht, da die Devitationsmomente um die Größenordnung $10^{5}$ unterhalb der Haupträgheitsmomente liegen. Deshalb wird die folgende Untersuchung unter der Annahme durchgeführt, dass die Devitationsmomente vernachlässigt werden könne und somit gilt
+Hieran zeigt sich, dass die Vektorbasis des Bezugssystem $K$ nahezu den Haupträgheitsachsen der Schwungmasse entspricht, da die Devitationsmomente um die Größenordnung $10^{5}$ unterhalb der Haupträgheitsmomente liegen. Aus diesem Grund wird die folgende Untersuchung unter der Annahme durchgeführt, dass die Devitationsmomente vernachlässigt werden können und somit gilt
 \begin{equation}
 \begin{split}
 \bs{I}^{R1/M1} &\equiv \begin{bmatrix}
@@ -70,7 +70,7 @@ Der Ortsvektor $\bs{c}$ des Schwerpunkts des Gesamtsystems wird ebenfalls numeri
 \begin{equation}
 \bs{c} = \vecBS{K}{-6{,}61}{-6{,}60}{-6{,}57}\text{ cm} \approx \vecBS{K}{l\idx{C}}{l\idx{C}}{l\idx{C}} \hspace{15pt} \vert \hspace{15pt} l\idx{C} = 6{,}6\text{ cm}
 \end{equation}
-Des Weiteren entsteht durch die Bewegung der Schwungmassen ein Reibmoment, welches als proportional zu den Winkelgeschwindigkeiten der Schwungmassen modelliert wird. Für Proportionalitätsfaktor $C_{\psi}$ wurde experimentell der  Wert 
+Des Weiteren entsteht durch die Bewegung der Schwungmassen ein Reibmoment, welches als proportional zu den Winkelgeschwindigkeiten der Schwungmassen modelliert wird. Für den Proportionalitätsfaktor $C_{\psi}$ wurde experimentell der  Wert 
 \begin{equation}
 C_{\psi} = 3{,}1176\cdot 10^{-5}\text{ kg}\cdot \text{m}^2 \cdot \text{s}^{-1}
 \end{equation}

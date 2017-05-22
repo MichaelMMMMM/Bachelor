@@ -1,0 +1,24 @@
+\ifx\FORMAT\undefined
+\include{0_Format}
+\begin{document}
+\fi
+
+\chapter{Implementierung des Regelungskonzeptes}\label{chapter_SW}
+Wie bereits in den letzten Abschnitten erläutert, wird der Regler als diskretes System implementiert. Deshalb spielt die verwendete Hardware und darauf ausgeführte Software eine zentrale Rolle. Dieser Umstand wird dadurch verstärkt, dass sämtliche Versuche, wie z.B. die Justierung der Sensoren, Systemidentifikation und Erprobung verschiedener Reglerkonzepte, in Form eines Programms durchgeführt werden. Aus diesem Grund widmet sich dieser Abschnitt dem Aufbau einer Software-Infrastruktur, welche die effiziente Entwicklung von mechatronischen Anwendungen ermöglicht.
+
+\newpage
+\input{SW_0_Zielplattform}
+\newpage
+\input{SW_1_Signalfluss}
+\newpage
+\input{SW_2_KomponentenArchitektur}
+\newpage
+\input{SW_3_RegelungsKomponente}
+\newpage
+\input{SW_4_KommunikationsKomponente}
+\newpage
+\input{SW_5_DesktopClient}
+
+\ifx\FORMAT\undefined
+\end{document}
+\fi

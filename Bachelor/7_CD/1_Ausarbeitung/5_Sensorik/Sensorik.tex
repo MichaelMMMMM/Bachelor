@@ -1,0 +1,20 @@
+\ifx\FORMAT\undefined
+\include{0_Format}
+\begin{document}
+\fi
+
+\chapter{Erfassung der Zustandsgrößen}\label{chapter_Sensorik}
+Nachdem im letzten Kapitel der Entwurf des Reglers diskutiert wurde, widmet sich dieser Teil der Arbeit der Erfassung der Zustandsgrößen. Zunächst werden die verwendeten Sensoren vorgestellt, die eine direkte Messung der Winkelgeschwindigkeiten $\bs{u}_k$ und $\bs{u}_R$ ermöglichen. Allerdings ist es nicht möglich, die Winkel $\bs{\varphi}$ über einen Sensor zu erfassen. Deshalb wird ein Konzept vorgestellt, um basierend auf den Beschleunigungssensoren eine Winkelschätzung durchzuführen. Anschließend wird ein Komplementärfilter präsentiert, um die Güte der Winkelsignale zu erhöhen. Der letzte Teil des Kapitels beschäftigt sich mit der Entwicklung eines Beobachters, welcher eingesetzt wird, um den Winkel $\varphi$ aus den Winkelgeschwindigkeiten zu schätzen.
+\newpage
+\input{SEN_0_Hardware}
+\newpage
+\input{SEN_1_PhiEstimate}
+\newpage
+\input{SEN_2_CompFilter}
+\newpage
+\input{SEN_3_PhiObserver}
+
+
+\ifx\FORMAT\undefined
+\end{document}
+\fi

@@ -1,0 +1,10 @@
+qDiag = [1;1;1;1;1;1;1];
+KKd = dlqr(KSSd.A, KSSd.B, diag(qDiag)*7e-4, R);
+Kd  = KKd * [eye(7), zeros(7,2)]/T_K;
+Kd(:,3) = Kd(:,3) * 2;
+Kd(1,4) = Kd(1,4) * 2;
+Kd(2,5) = Kd(2,5) * 2;
+Kd(3,6) = Kd(3,6) * 2;
+
+[*] Control-Comp: Entering Corner-Balance/Balance . . . Time: 4.64
+[*] Control-Comp: Exiting Corner-Balance/Balance . . . Time: 36.8207

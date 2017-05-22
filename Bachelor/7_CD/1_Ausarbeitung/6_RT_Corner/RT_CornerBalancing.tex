@@ -1,0 +1,18 @@
+\ifx\FORMAT\undefined
+\include{0_Format}
+\begin{document}
+\fi
+
+\chapter{Reglerentwurf für das Balancieren auf einer Ecke}\label{chapter_RT_Corner}
+Nachdem im vorherigen Kapitel ein Modell des Systems entwickelt wurde, muss für dieses ein Regler entworfen werden. Hierfür wird zunächst die kontinuierliche Zustandsraumdarstellung in eine diskrete überführt. Anschließend wird diese in eine Kalman-Dekomposition transformiert, um das System auf eine Minimalrealisierung zu reduzieren. Diese besteht lediglich aus steuer- und beobachtbaren Zuständen und kann somit als Ausgangspunkt für  die Bestimmung des Reglers verwendet werden, wobei ebenfalls das LQR-Verfahren angewandt wird. Der Regler wird im nächsten Schritt anhand einer Simulation überprüft, wobei der Verlauf der nicht steuer- bzw. beobachtbaren Zustände untersucht wird. Des Weiteren wird mittels der Simulation die Direktionalitätsproblematik des Mehrgrößensystems analysiert, welche durch die Stellgrößenbeschränkungen verursacht wird. Der resultierende Regler wird im Anschluss an der Regelstrecke erprobt und empirisch optimiert.
+
+\newpage
+\input{0_ModelbasedDesign}
+\newpage
+\input{1_SaturationProblem}
+\newpage
+\input{2_Application}
+
+\ifx\FORMAT\undefined
+\end{document}
+\fi
