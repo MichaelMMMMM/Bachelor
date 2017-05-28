@@ -1,7 +1,7 @@
 \contentsline {lstlisting}{\numberline {7.1}Beispielhafte Implementierung eines Datenobjektes}{69}{lstlisting.7.1}
 \contentsline {lstlisting}{\numberline {7.2}Beispielhafte Implementierung eines Aktionsobjektes}{69}{lstlisting.7.2}
 \contentsline {lstlisting}{\numberline {7.3}Implementierung der Typenliste}{70}{lstlisting.7.3}
-\contentsline {lstlisting}{\numberline {7.4}Definition und Aufruf der Makors f\IeC {\"u}r verl\IeC {\"a}ngerte Typenlisten}{70}{lstlisting.7.4}
+\contentsline {lstlisting}{\numberline {7.4}Definition und Aufruf der Makros f\IeC {\"u}r verl\IeC {\"a}ngerte Typenlisten}{70}{lstlisting.7.4}
 \contentsline {lstlisting}{\numberline {7.5}Templateklasse des Tr\IeC {\"a}gerobjektes}{70}{lstlisting.7.5}
 \contentsline {lstlisting}{\numberline {7.6}Templatespezialisierung des Tr\IeC {\"a}gerobjektes f\IeC {\"u}r das Ende der Typenliste}{71}{lstlisting.7.6}
 \contentsline {lstlisting}{\numberline {7.7}Deklaration der Templateklasse f\IeC {\"u}r lineare Hierarchien {\cite [S. 63]{ModernCpp}}}{71}{lstlisting.7.7}

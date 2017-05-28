@@ -1,8 +1,8 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.31)  22 MAY 2017 08:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2017.1.27)  28 MAY 2017 20:00
 entering extended mode
 **./BA_MM.tex
 (BA_MM.tex
-LaTeX2e <2017/01/01> patch level 1
+LaTeX2e <2016/03/31> patch level 3
 Babel <3.9r> and hyphenation patterns for 75 language(s) loaded.
 \@input{0_Format.aux}
 \openout2 = `0_Format.aux'.
@@ -26,7 +26,7 @@ File: bk11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \bibindent=\dimen102
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
-Package: amsmath 2016/11/05 v2.16a AMS math features
+Package: amsmath 2016/06/28 v2.15d AMS math features
 \@mathmargin=\skip43
 
 For additional information on amsmath, use the `?' option.
@@ -46,20 +46,20 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count88
-LaTeX Info: Redefining \frac on input line 213.
+LaTeX Info: Redefining \frac on input line 199.
 \uproot@=\count89
 \leftroot@=\count90
-LaTeX Info: Redefining \overline on input line 375.
+LaTeX Info: Redefining \overline on input line 297.
 \classnum@=\count91
 \DOTSCASE@=\count92
-LaTeX Info: Redefining \ldots on input line 472.
-LaTeX Info: Redefining \dots on input line 475.
-LaTeX Info: Redefining \cdots on input line 596.
+LaTeX Info: Redefining \ldots on input line 394.
+LaTeX Info: Redefining \dots on input line 397.
+LaTeX Info: Redefining \cdots on input line 518.
 \Mathstrutbox@=\box26
 \strutbox@=\box27
 \big@size=\dimen105
-LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
+LaTeX Font Info:    Redeclaring font encoding OML on input line 634.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 635.
 \macc@depth=\count93
 \c@MaxMatrixCols=\count94
 \dotsspace@=\muskip10
@@ -80,8 +80,8 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 \multlinegap=\skip44
 \multlinetaggap=\skip45
 \mathdisplay@stack=\toks18
-LaTeX Info: Redefining \[ on input line 2817.
-LaTeX Info: Redefining \] on input line 2818.
+LaTeX Info: Redefining \[ on input line 2739.
+LaTeX Info: Redefining \] on input line 2740.
 )
 (C:\Users\ich\AppData\Roaming\MiKTeX\2.9\tex\latex\mathtools\mathtools.sty
 Package: mathtools 2015/11/12 v1.18 mathematical typesetting tools
@@ -458,10 +458,10 @@ File: babel.def 2016/04/23 3.9r Babel common definitions
 Package babel Info: Making " an active character on input line 125.
 )))
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\fontenc.sty"
-Package: fontenc 2017/01/24 v2.0c Standard LaTeX package
+Package: fontenc 2016/06/19 v1.99m Standard LaTeX package
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1enc.def"
-File: t1enc.def 2017/01/24 v2.0c Standard LaTeX file
+File: t1enc.def 2016/06/19 v1.99m Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
 ))
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\lmodern.sty"
@@ -519,7 +519,7 @@ Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
-Package: graphics 2016/10/09 v1.0u Standard LaTeX Graphics (DPC,SPQR)
+Package: graphics 2016/07/10 v1.0t Standard LaTeX Graphics (DPC,SPQR)
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
@@ -530,7 +530,7 @@ File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 Package graphics Info: Driver file: pdftex.def on input line 99.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def"
-File: pdftex.def 2017/01/12 v0.06k Graphics/color for pdfTeX
+File: pdftex.def 2016/07/10 v0.06j Graphics/color for pdfTeX
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
 Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
@@ -593,28 +593,62 @@ G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 ))
 (C:\Users\ich\AppData\Roaming\MiKTeX\2.9\tex\latex\svg\svg.sty
-Package: svg 2017/03/28 v2.00a (include SVG pictures)
+Package: svg 2012/09/05 v1.0 SVG inclusion and extraction
 
-(C:\Users\ich\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\scrbase.sty
-Package: scrbase 2017/01/03 v3.22 KOMA-Script package (KOMA-Script-independent 
-basics and keyval usage)
+("C:\Program Files\MiKTeX 2.9\tex\latex\xkeyval\xkeyval.sty"
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 
-(C:\Users\ich\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\scrlfile.sty
-Package: scrlfile 2017/01/03 v3.22 KOMA-Script package (loading files)
-
-Package scrlfile, 2017/01/03 v3.22 KOMA-Script package (loading files)
-                  Copyright (C) Markus Kohm
-
-)) ("C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
-Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+("C:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\xkeyval.tex"
+("C:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\xkvutils.tex"
+\XKV@toks=\toks23
+\XKV@tempa@toks=\toks24
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\tools\shellesc.sty"
-Package: shellesc 2016/06/07 v0.02a unified shell escape interface for LaTeX
-Package shellesc Info: Restricted shell escape enabled on input line 69.
+\XKV@depth=\count108
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(C:\Users\ich\AppData\Roaming\MiKTeX\2.9\tex\latex\subfig\subfig.sty
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+
+(C:\Users\ich\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption.sty
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+
+(C:\Users\ich\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption3.sty
+Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
+\captionmargin=\dimen124
+\captionmargin@=\dimen125
+\captionwidth=\dimen126
+\caption@tempdima=\dimen127
+\caption@indent=\dimen128
+\caption@parindent=\dimen129
+\caption@hangindent=\dimen130
 )
-\c@svg@param@lastpage=\count108
-\c@svg@param@currpage=\count109
+\c@ContinuedFloat=\count109
 )
+\c@KVtest=\count110
+\sf@farskip=\skip50
+\sf@captopadj=\dimen131
+\sf@capskip=\skip51
+\sf@nearskip=\skip52
+\c@subfigure=\count111
+\c@subfigure@save=\count112
+\c@lofdepth=\count113
+\c@subtable=\count114
+\c@subtable@save=\count115
+\c@lotdepth=\count116
+\sf@top=\skip53
+\sf@bottom=\skip54
+)
+(C:\Users\ich\AppData\Roaming\MiKTeX\2.9\tex\latex\import\import.sty
+Package: import 2009/03/23  v 5.1
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\transparent.sty"
+Package: transparent 2016/05/16 v1.1 Transparency via pdfTeX's color stack (HO)
+
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty"
+Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
+))
 (C:\Users\ich\AppData\Roaming\MiKTeX\2.9\tex\latex\xcolor\xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 
@@ -632,19 +666,17 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\transparent.sty"
-Package: transparent 2016/05/16 v1.1 Transparency via pdfTeX's color stack (HO)
-
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty"
-Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
-))
+\SVG@out@width=\skip55
+\SVG@out@height=\skip56
+\c@svgfigure=\count117
+)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\multirow\multirow.sty"
-Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
-\multirow@colwidth=\skip50
-\multirow@cntb=\count110
-\multirow@dima=\skip51
-\bigstrutjot=\dimen124
+Package: multirow 2016/10/11 v2.1 Span multiple rows of a table
+\multirow@colwidth=\skip57
+\multirow@cnta=\count118
+\multirow@cntb=\count119
+\multirow@dima=\skip58
+\bigstrutjot=\dimen132
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
@@ -671,78 +703,44 @@ Now handling font encoding LYG ...
 )
 (C:\Users\ich\AppData\Roaming\MiKTeX\2.9\tex\latex\nomencl\nomencl.sty
 Package: nomencl 2005/09/22 v4.2 Nomenclature package (LN)
-\nomlabelwidth=\dimen125
-\nom@tempdim=\dimen126
-\nomitemsep=\skip52
+\nomlabelwidth=\dimen133
+\nom@tempdim=\dimen134
+\nomitemsep=\skip59
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\float\float.sty"
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count111
-\float@exts=\toks23
+\c@float@type=\count120
+\float@exts=\toks25
 \float@box=\box28
-\@float@everytoks=\toks24
+\@float@everytoks=\toks26
 \@floatcapt=\box29
-)
-(C:\Users\ich\AppData\Roaming\MiKTeX\2.9\tex\latex\subfig\subfig.sty
-Package: subfig 2005/06/28 ver: 1.3 subfig package
-
-(C:\Users\ich\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption.sty
-Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
-
-(C:\Users\ich\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption3.sty
-Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
-Package caption3 Info: TeX engine: e-TeX on input line 67.
-\captionmargin=\dimen127
-\captionmargin@=\dimen128
-\captionwidth=\dimen129
-\caption@tempdima=\dimen130
-\caption@indent=\dimen131
-\caption@parindent=\dimen132
-\caption@hangindent=\dimen133
-)
-\c@ContinuedFloat=\count112
-Package caption Info: float package is loaded.
-)
-\c@KVtest=\count113
-\sf@farskip=\skip53
-\sf@captopadj=\dimen134
-\sf@capskip=\skip54
-\sf@nearskip=\skip55
-\c@subfigure=\count114
-\c@subfigure@save=\count115
-\c@lofdepth=\count116
-\c@subtable=\count117
-\c@subtable@save=\count118
-\c@lotdepth=\count119
-\sf@top=\skip56
-\sf@bottom=\skip57
 )
 (C:\Users\ich\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\scrpage2.sty
 Package: scrpage2 2017/01/03 v3.22 KOMA-Script package (page head and foot)
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\tools\afterpage.sty"
 Package: afterpage 2014/10/28 v1.08 After-Page Package (DPC)
-\AP@output=\toks25
+\AP@output=\toks27
 \AP@partial=\box30
 \AP@footins=\box31
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\tools\longtable.sty"
 Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
-\LTleft=\skip58
-\LTright=\skip59
-\LTpre=\skip60
-\LTpost=\skip61
-\LTchunksize=\count120
+\LTleft=\skip60
+\LTright=\skip61
+\LTpre=\skip62
+\LTpost=\skip63
+\LTchunksize=\count121
 \LTcapwidth=\dimen135
 \LT@head=\box32
 \LT@firsthead=\box33
 \LT@foot=\box34
 \LT@lastfoot=\box35
-\LT@cols=\count121
-\LT@rows=\count122
-\c@LT@tables=\count123
-\c@LT@chunks=\count124
-\LT@p@ftn=\toks26
+\LT@cols=\count122
+\LT@rows=\count123
+\c@LT@tables=\count124
+\c@LT@chunks=\count125
+\LT@p@ftn=\toks28
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
 Package: hyperref 2016/06/24 v6.83q Hypertext links for LaTeX
@@ -781,16 +779,19 @@ Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
 Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
 Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
 )
+("C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
 \@linkdim=\dimen136
-\Hy@linkcounter=\count125
-\Hy@pagecounter=\count126
+\Hy@linkcounter=\count126
+\Hy@pagecounter=\count127
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
 File: pd1enc.def 2016/06/24 v6.83q Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count127
+\Hy@SavedSpaceFactor=\count128
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg"
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -802,7 +803,7 @@ Package hyperref Info: Plain pages OFF on input line 4501.
 Package hyperref Info: Backreferencing OFF on input line 4506.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4735.
-\c@Hy@tempcnt=\count128
+\c@Hy@tempcnt=\count129
 
 (C:\Users\ich\AppData\Roaming\MiKTeX\2.9\tex\latex\url\url.sty
 \Urlmuskip=\muskip11
@@ -810,7 +811,7 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5088.
 \XeTeXLinkMargin=\dimen137
-\Fld@menulength=\count129
+\Fld@menulength=\count130
 \Field@Width=\dimen138
 \Fld@charsize=\dimen139
 Package hyperref Info: Hyper figures OFF on input line 6342.
@@ -822,32 +823,32 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6367.
 Package hyperref Info: PDF/A mode OFF on input line 6372.
 LaTeX Info: Redefining \ref on input line 6412.
 LaTeX Info: Redefining \pageref on input line 6416.
-\Hy@abspage=\count130
-\c@Item=\count131
-\c@Hfootnote=\count132
+\Hy@abspage=\count131
+\c@Item=\count132
+\c@Hfootnote=\count133
 )
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def"
 File: hpdftex.def 2016/06/24 v6.83q Hyperref driver for pdfTeX
-\Fld@listcount=\count133
-\c@bookmark@seq@number=\count134
+\Fld@listcount=\count134
+\c@bookmark@seq@number=\count135
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
-\Hy@SectionHShift=\skip62
+\Hy@SectionHShift=\skip64
 )
 Package hyperref Info: Option `colorlinks' set `false' on input line 34.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
 Package: geometry 2010/09/12 v5.6 Page Geometry
-\Gm@cnth=\count135
-\Gm@cntv=\count136
-\c@Gm@tempcnt=\count137
+\Gm@cnth=\count136
+\Gm@cntv=\count137
+\c@Gm@tempcnt=\count138
 \Gm@bindingoffset=\dimen140
 \Gm@wd@mp=\dimen141
 \Gm@odd@mp=\dimen142
@@ -856,30 +857,30 @@ Package: geometry 2010/09/12 v5.6 Page Geometry
 \Gm@layoutheight=\dimen145
 \Gm@layouthoffset=\dimen146
 \Gm@layoutvoffset=\dimen147
-\Gm@dimlist=\toks27
+\Gm@dimlist=\toks29
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\courier.sty"
 Package: courier 2005/04/12 PSNFSS-v9.2a (WaS) 
 )
 (C:\Users\ich\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\listings.sty
-\lst@mode=\count138
+\lst@mode=\count139
 \lst@gtempboxa=\box36
-\lst@token=\toks28
-\lst@length=\count139
+\lst@token=\toks30
+\lst@length=\count140
 \lst@currlwidth=\dimen148
-\lst@column=\count140
-\lst@pos=\count141
+\lst@column=\count141
+\lst@pos=\count142
 \lst@lostspace=\dimen149
 \lst@width=\dimen150
-\lst@newlines=\count142
-\lst@lineno=\count143
+\lst@newlines=\count143
+\lst@lineno=\count144
 \lst@maxwidth=\dimen151
 
 (C:\Users\ich\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstmisc.sty
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
-\c@lstnumber=\count144
-\lst@skipnumbers=\count145
+\c@lstnumber=\count145
+\lst@skipnumbers=\count146
 \lst@framebox=\box37
 )
 (C:\Users\ich\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\listings.cfg
@@ -921,20 +922,21 @@ File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 (C:\Users\ich\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count146
+\scratchcounter=\count147
 \scratchdimen=\dimen152
 \scratchbox=\box38
-\nofMPsegments=\count147
-\nofMParguments=\count148
-\everyMPshowfont=\toks29
-\MPscratchCnt=\count149
+\nofMPsegments=\count148
+\nofMParguments=\count149
+\everyMPshowfont=\toks31
+\MPscratchCnt=\count150
 \MPscratchDim=\dimen153
-\MPnumerator=\count150
-\makeMPintoPDFobject=\count151
-\everyMPtoPDFconversion=\toks30
+\MPnumerator=\count151
+\makeMPintoPDFobject=\count152
+\everyMPtoPDFconversion=\toks32
 )
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: longtable package is loaded.
@@ -959,7 +961,7 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count152
+\c@section@level=\count153
 )
 LaTeX Info: Redefining \ref on input line 10.
 LaTeX Info: Redefining \pageref on input line 10.
@@ -1004,7 +1006,7 @@ LaTeX Info: Redefining \nameref on input line 10.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c@lstlisting=\count153
+\c@lstlisting=\count154
 LaTeX Font Info:    Try loading font information for T1+lmss on input line 16.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmss.fd"
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1429,7 +1431,7 @@ File: 1_TM_Edge/img/ModellWuerfelseite.pdf Graphic file (type pdf)
 <use 1_TM_Edge/img/ModellWuerfelseite.pdf>
 Package pdftex.def Info: 1_TM_Edge/img/ModellWuerfelseite.pdf used on input lin
 e 5.
-(pdftex.def)             Requested size: 264.61333pt x 250.08806pt.
+(pdftex.def)             Requested size: 264.61333pt x 227.1648pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <9> on input line 10.
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -1462,13 +1464,13 @@ Package babel Info: Redefining ngerman shorthand "~
 Overfull \vbox (5.05856pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 70.
+(babel)             in language  on input line 75.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 70.
+(babel)             in language  on input line 75.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 70.
+(babel)             in language  on input line 75.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 70.
+(babel)             in language  on input line 75.
 
 [8])
 Overfull \vbox (5.05856pt too high) has occurred while \output is active []
@@ -1640,7 +1642,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 4.
 
-<2_RT_Edge/img/RT_ClosedLoop.pdf, id=682, 963.6pt x 542.025pt>
+<2_RT_Edge/img/RT_ClosedLoop.pdf, id=685, 963.6pt x 542.025pt>
 File: 2_RT_Edge/img/RT_ClosedLoop.pdf Graphic file (type pdf)
 
 <use 2_RT_Edge/img/RT_ClosedLoop.pdf>
@@ -1717,18 +1719,18 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
 Package epstopdf Info: Source file: <2_RT_Edge/img/edge_exp1_phi.eps>
-(epstopdf)                    date: 2017-05-15 16:36:50
-(epstopdf)                    size: 60266 bytes
+(epstopdf)                    date: 2017-05-16 20:16:07
+(epstopdf)                    size: 61937 bytes
 (epstopdf)             Output file: <2_RT_Edge/img/edge_exp1_phi-eps-converted-
 to.pdf>
-(epstopdf)                    date: 2017-05-15 16:37:22
+(epstopdf)                    date: 2017-05-16 20:16:07
 (epstopdf)                    size: 23736 bytes
 (epstopdf)             Command: <epstopdf --outfile=2_RT_Edge/img/edge_exp1_phi
 -eps-converted-to.pdf 2_RT_Edge/img/edge_exp1_phi.eps>
 (epstopdf)             \includegraphics on input line 23.
 Package epstopdf Info: Output file is already uptodate.
 
-<2_RT_Edge/img/edge_exp1_phi-eps-converted-to.pdf, id=752, 378.41376pt x 307.14
+<2_RT_Edge/img/edge_exp1_phi-eps-converted-to.pdf, id=755, 378.41376pt x 307.14
 75pt>
 File: 2_RT_Edge/img/edge_exp1_phi-eps-converted-to.pdf Graphic file (type pdf)
  <use 2_RT_Edge/img/edge_exp1_phi-eps-converted-to.pdf>
@@ -1736,18 +1738,18 @@ Package pdftex.def Info: 2_RT_Edge/img/edge_exp1_phi-eps-converted-to.pdf used
 on input line 23.
 (pdftex.def)             Requested size: 198.45662pt x 161.08144pt.
 Package epstopdf Info: Source file: <2_RT_Edge/img/edge_exp1_uk.eps>
-(epstopdf)                    date: 2017-05-15 16:36:51
-(epstopdf)                    size: 76915 bytes
+(epstopdf)                    date: 2017-05-16 20:16:07
+(epstopdf)                    size: 79098 bytes
 (epstopdf)             Output file: <2_RT_Edge/img/edge_exp1_uk-eps-converted-t
 o.pdf>
-(epstopdf)                    date: 2017-05-15 16:37:23
+(epstopdf)                    date: 2017-05-16 20:16:07
 (epstopdf)                    size: 31084 bytes
 (epstopdf)             Command: <epstopdf --outfile=2_RT_Edge/img/edge_exp1_uk-
 eps-converted-to.pdf 2_RT_Edge/img/edge_exp1_uk.eps>
 (epstopdf)             \includegraphics on input line 24.
 Package epstopdf Info: Output file is already uptodate.
 
-<2_RT_Edge/img/edge_exp1_uk-eps-converted-to.pdf, id=753, 376.40625pt x 307.147
+<2_RT_Edge/img/edge_exp1_uk-eps-converted-to.pdf, id=756, 376.40625pt x 307.147
 5pt>
 File: 2_RT_Edge/img/edge_exp1_uk-eps-converted-to.pdf Graphic file (type pdf)
  <use 2_RT_Edge/img/edge_exp1_uk-eps-converted-to.pdf>
@@ -1755,18 +1757,18 @@ Package pdftex.def Info: 2_RT_Edge/img/edge_exp1_uk-eps-converted-to.pdf used o
 n input line 24.
 (pdftex.def)             Requested size: 198.45662pt x 161.94379pt.
 Package epstopdf Info: Source file: <2_RT_Edge/img/edge_exp1_ur.eps>
-(epstopdf)                    date: 2017-05-15 16:36:51
-(epstopdf)                    size: 78618 bytes
+(epstopdf)                    date: 2017-05-16 20:16:07
+(epstopdf)                    size: 80834 bytes
 (epstopdf)             Output file: <2_RT_Edge/img/edge_exp1_ur-eps-converted-t
 o.pdf>
-(epstopdf)                    date: 2017-05-15 16:37:23
+(epstopdf)                    date: 2017-05-16 20:16:07
 (epstopdf)                    size: 31745 bytes
 (epstopdf)             Command: <epstopdf --outfile=2_RT_Edge/img/edge_exp1_ur-
 eps-converted-to.pdf 2_RT_Edge/img/edge_exp1_ur.eps>
 (epstopdf)             \includegraphics on input line 27.
 Package epstopdf Info: Output file is already uptodate.
 
-<2_RT_Edge/img/edge_exp1_ur-eps-converted-to.pdf, id=754, 368.37625pt x 307.147
+<2_RT_Edge/img/edge_exp1_ur-eps-converted-to.pdf, id=757, 368.37625pt x 307.147
 5pt>
 File: 2_RT_Edge/img/edge_exp1_ur-eps-converted-to.pdf Graphic file (type pdf)
  <use 2_RT_Edge/img/edge_exp1_ur-eps-converted-to.pdf>
@@ -1774,18 +1776,18 @@ Package pdftex.def Info: 2_RT_Edge/img/edge_exp1_ur-eps-converted-to.pdf used o
 n input line 27.
 (pdftex.def)             Requested size: 198.45662pt x 165.46817pt.
 Package epstopdf Info: Source file: <2_RT_Edge/img/edge_exp1_tm.eps>
-(epstopdf)                    date: 2017-05-15 16:36:51
-(epstopdf)                    size: 66131 bytes
+(epstopdf)                    date: 2017-05-16 20:16:07
+(epstopdf)                    size: 67967 bytes
 (epstopdf)             Output file: <2_RT_Edge/img/edge_exp1_tm-eps-converted-t
 o.pdf>
-(epstopdf)                    date: 2017-05-15 16:37:24
+(epstopdf)                    date: 2017-05-16 20:16:07
 (epstopdf)                    size: 25468 bytes
 (epstopdf)             Command: <epstopdf --outfile=2_RT_Edge/img/edge_exp1_tm-
 eps-converted-to.pdf 2_RT_Edge/img/edge_exp1_tm.eps>
 (epstopdf)             \includegraphics on input line 28.
 Package epstopdf Info: Output file is already uptodate.
 
-<2_RT_Edge/img/edge_exp1_tm-eps-converted-to.pdf, id=755, 376.40625pt x 307.147
+<2_RT_Edge/img/edge_exp1_tm-eps-converted-to.pdf, id=758, 376.40625pt x 307.147
 5pt>
 File: 2_RT_Edge/img/edge_exp1_tm-eps-converted-to.pdf Graphic file (type pdf)
  <use 2_RT_Edge/img/edge_exp1_tm-eps-converted-to.pdf>
@@ -1829,18 +1831,18 @@ Package babel Info: Redefining ngerman shorthand "~
 
 [26]
 Package epstopdf Info: Source file: <2_RT_Edge/img/edge_exp2_phi.eps>
-(epstopdf)                    date: 2017-05-15 16:36:52
-(epstopdf)                    size: 65186 bytes
+(epstopdf)                    date: 2017-05-16 20:16:07
+(epstopdf)                    size: 67109 bytes
 (epstopdf)             Output file: <2_RT_Edge/img/edge_exp2_phi-eps-converted-
 to.pdf>
-(epstopdf)                    date: 2017-05-15 16:37:25
+(epstopdf)                    date: 2017-05-16 20:16:07
 (epstopdf)                    size: 25708 bytes
 (epstopdf)             Command: <epstopdf --outfile=2_RT_Edge/img/edge_exp2_phi
 -eps-converted-to.pdf 2_RT_Edge/img/edge_exp2_phi.eps>
 (epstopdf)             \includegraphics on input line 105.
 Package epstopdf Info: Output file is already uptodate.
 
-<2_RT_Edge/img/edge_exp2_phi-eps-converted-to.pdf, id=785, 382.42876pt x 307.14
+<2_RT_Edge/img/edge_exp2_phi-eps-converted-to.pdf, id=788, 382.42876pt x 307.14
 75pt>
 File: 2_RT_Edge/img/edge_exp2_phi-eps-converted-to.pdf Graphic file (type pdf)
  <use 2_RT_Edge/img/edge_exp2_phi-eps-converted-to.pdf>
@@ -1848,18 +1850,18 @@ Package pdftex.def Info: 2_RT_Edge/img/edge_exp2_phi-eps-converted-to.pdf used
 on input line 105.
 (pdftex.def)             Requested size: 198.45662pt x 159.38954pt.
 Package epstopdf Info: Source file: <2_RT_Edge/img/edge_exp2_uk.eps>
-(epstopdf)                    date: 2017-05-15 16:36:52
-(epstopdf)                    size: 82595 bytes
+(epstopdf)                    date: 2017-05-16 20:16:07
+(epstopdf)                    size: 85033 bytes
 (epstopdf)             Output file: <2_RT_Edge/img/edge_exp2_uk-eps-converted-t
 o.pdf>
-(epstopdf)                    date: 2017-05-15 16:37:26
+(epstopdf)                    date: 2017-05-16 20:16:07
 (epstopdf)                    size: 32968 bytes
 (epstopdf)             Command: <epstopdf --outfile=2_RT_Edge/img/edge_exp2_uk-
 eps-converted-to.pdf 2_RT_Edge/img/edge_exp2_uk.eps>
 (epstopdf)             \includegraphics on input line 106.
 Package epstopdf Info: Output file is already uptodate.
 
-<2_RT_Edge/img/edge_exp2_uk-eps-converted-to.pdf, id=786, 377.41pt x 307.1475pt
+<2_RT_Edge/img/edge_exp2_uk-eps-converted-to.pdf, id=789, 377.41pt x 307.1475pt
 >
 File: 2_RT_Edge/img/edge_exp2_uk-eps-converted-to.pdf Graphic file (type pdf)
  <use 2_RT_Edge/img/edge_exp2_uk-eps-converted-to.pdf>
@@ -1867,18 +1869,18 @@ Package pdftex.def Info: 2_RT_Edge/img/edge_exp2_uk-eps-converted-to.pdf used o
 n input line 106.
 (pdftex.def)             Requested size: 198.45662pt x 161.50792pt.
 Package epstopdf Info: Source file: <2_RT_Edge/img/edge_exp2_ur.eps>
-(epstopdf)                    date: 2017-05-15 16:36:52
-(epstopdf)                    size: 82845 bytes
+(epstopdf)                    date: 2017-05-16 20:16:07
+(epstopdf)                    size: 85307 bytes
 (epstopdf)             Output file: <2_RT_Edge/img/edge_exp2_ur-eps-converted-t
 o.pdf>
-(epstopdf)                    date: 2017-05-15 16:37:26
+(epstopdf)                    date: 2017-05-16 20:16:07
 (epstopdf)                    size: 33352 bytes
 (epstopdf)             Command: <epstopdf --outfile=2_RT_Edge/img/edge_exp2_ur-
 eps-converted-to.pdf 2_RT_Edge/img/edge_exp2_ur.eps>
 (epstopdf)             \includegraphics on input line 111.
 Package epstopdf Info: Output file is already uptodate.
 
-<2_RT_Edge/img/edge_exp2_ur-eps-converted-to.pdf, id=787, 369.38pt x 307.1475pt
+<2_RT_Edge/img/edge_exp2_ur-eps-converted-to.pdf, id=790, 369.38pt x 307.1475pt
 >
 File: 2_RT_Edge/img/edge_exp2_ur-eps-converted-to.pdf Graphic file (type pdf)
  <use 2_RT_Edge/img/edge_exp2_ur-eps-converted-to.pdf>
@@ -1886,18 +1888,18 @@ Package pdftex.def Info: 2_RT_Edge/img/edge_exp2_ur-eps-converted-to.pdf used o
 n input line 111.
 (pdftex.def)             Requested size: 198.45662pt x 165.01825pt.
 Package epstopdf Info: Source file: <2_RT_Edge/img/edge_exp2_tm.eps>
-(epstopdf)                    date: 2017-05-15 16:36:53
-(epstopdf)                    size: 69819 bytes
+(epstopdf)                    date: 2017-05-16 20:16:07
+(epstopdf)                    size: 71898 bytes
 (epstopdf)             Output file: <2_RT_Edge/img/edge_exp2_tm-eps-converted-t
 o.pdf>
-(epstopdf)                    date: 2017-05-15 16:37:27
+(epstopdf)                    date: 2017-05-16 20:16:07
 (epstopdf)                    size: 27238 bytes
 (epstopdf)             Command: <epstopdf --outfile=2_RT_Edge/img/edge_exp2_tm-
 eps-converted-to.pdf 2_RT_Edge/img/edge_exp2_tm.eps>
 (epstopdf)             \includegraphics on input line 112.
 Package epstopdf Info: Output file is already uptodate.
 
-<2_RT_Edge/img/edge_exp2_tm-eps-converted-to.pdf, id=788, 377.41pt x 307.1475pt
+<2_RT_Edge/img/edge_exp2_tm-eps-converted-to.pdf, id=791, 377.41pt x 307.1475pt
 >
 File: 2_RT_Edge/img/edge_exp2_tm-eps-converted-to.pdf Graphic file (type pdf)
  <use 2_RT_Edge/img/edge_exp2_tm-eps-converted-to.pdf>
@@ -1990,18 +1992,18 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
 Package epstopdf Info: Source file: <4_TM_Corner/img/tm_corner_drawing.eps>
-(epstopdf)                    date: 2017-05-14 07:55:51
+(epstopdf)                    date: 2017-05-16 20:16:08
 (epstopdf)                    size: 43981 bytes
 (epstopdf)             Output file: <4_TM_Corner/img/tm_corner_drawing-eps-conv
 erted-to.pdf>
-(epstopdf)                    date: 2017-05-14 07:55:51
+(epstopdf)                    date: 2017-05-16 20:16:08
 (epstopdf)                    size: 24324 bytes
 (epstopdf)             Command: <epstopdf --outfile=4_TM_Corner/img/tm_corner_d
 rawing-eps-converted-to.pdf 4_TM_Corner/img/tm_corner_drawing.eps>
 (epstopdf)             \includegraphics on input line 5.
 Package epstopdf Info: Output file is already uptodate.
 
-<4_TM_Corner/img/tm_corner_drawing-eps-converted-to.pdf, id=833, 682.55pt x 575
+<4_TM_Corner/img/tm_corner_drawing-eps-converted-to.pdf, id=836, 682.55pt x 575
 .14874pt>
 File: 4_TM_Corner/img/tm_corner_drawing-eps-converted-to.pdf Graphic file (type
  pdf)
@@ -2190,18 +2192,18 @@ Package babel Info: Redefining ngerman shorthand "~
 
 [44]
 Package epstopdf Info: Source file: <6_RT_Corner/img/lin_sim1_phi.eps>
-(epstopdf)                    date: 2017-05-15 16:21:49
-(epstopdf)                    size: 591864 bytes
+(epstopdf)                    date: 2017-05-16 20:16:08
+(epstopdf)                    size: 623426 bytes
 (epstopdf)             Output file: <6_RT_Corner/img/lin_sim1_phi-eps-converted
 -to.pdf>
-(epstopdf)                    date: 2017-05-15 16:22:27
+(epstopdf)                    date: 2017-05-16 20:16:08
 (epstopdf)                    size: 108272 bytes
 (epstopdf)             Command: <epstopdf --outfile=6_RT_Corner/img/lin_sim1_ph
 i-eps-converted-to.pdf 6_RT_Corner/img/lin_sim1_phi.eps>
 (epstopdf)             \includegraphics on input line 88.
 Package epstopdf Info: Output file is already uptodate.
 
-<6_RT_Corner/img/lin_sim1_phi-eps-converted-to.pdf, id=985, 373.395pt x 307.147
+<6_RT_Corner/img/lin_sim1_phi-eps-converted-to.pdf, id=988, 373.395pt x 307.147
 5pt>
 File: 6_RT_Corner/img/lin_sim1_phi-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -2210,18 +2212,18 @@ Package pdftex.def Info: 6_RT_Corner/img/lin_sim1_phi-eps-converted-to.pdf used
  on input line 88.
 (pdftex.def)             Requested size: 198.45662pt x 163.24669pt.
 Package epstopdf Info: Source file: <6_RT_Corner/img/lin_sim1_uk.eps>
-(epstopdf)                    date: 2017-05-15 16:21:50
-(epstopdf)                    size: 610274 bytes
+(epstopdf)                    date: 2017-05-16 20:16:08
+(epstopdf)                    size: 642439 bytes
 (epstopdf)             Output file: <6_RT_Corner/img/lin_sim1_uk-eps-converted-
 to.pdf>
-(epstopdf)                    date: 2017-05-15 16:22:28
+(epstopdf)                    date: 2017-05-16 20:16:08
 (epstopdf)                    size: 203442 bytes
 (epstopdf)             Command: <epstopdf --outfile=6_RT_Corner/img/lin_sim1_uk
 -eps-converted-to.pdf 6_RT_Corner/img/lin_sim1_uk.eps>
 (epstopdf)             \includegraphics on input line 89.
 Package epstopdf Info: Output file is already uptodate.
 
-<6_RT_Corner/img/lin_sim1_uk-eps-converted-to.pdf, id=986, 373.395pt x 307.1475
+<6_RT_Corner/img/lin_sim1_uk-eps-converted-to.pdf, id=989, 373.395pt x 307.1475
 pt>
 File: 6_RT_Corner/img/lin_sim1_uk-eps-converted-to.pdf Graphic file (type pdf)
  <use 6_RT_Corner/img/lin_sim1_uk-eps-converted-to.pdf>
@@ -2243,18 +2245,18 @@ Package babel Info: Redefining ngerman shorthand "~
 [45 <./6_RT_Corner/img/lin_sim1_phi-eps-converted-to.pdf> <./6_RT_Corner/img/li
 n_sim1_uk-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <6_RT_Corner/img/lin_sim1_ur.eps>
-(epstopdf)                    date: 2017-05-15 16:21:51
-(epstopdf)                    size: 610571 bytes
+(epstopdf)                    date: 2017-05-16 20:16:08
+(epstopdf)                    size: 642759 bytes
 (epstopdf)             Output file: <6_RT_Corner/img/lin_sim1_ur-eps-converted-
 to.pdf>
-(epstopdf)                    date: 2017-05-15 16:22:29
+(epstopdf)                    date: 2017-05-16 20:16:08
 (epstopdf)                    size: 168764 bytes
 (epstopdf)             Command: <epstopdf --outfile=6_RT_Corner/img/lin_sim1_ur
 -eps-converted-to.pdf 6_RT_Corner/img/lin_sim1_ur.eps>
 (epstopdf)             \includegraphics on input line 95.
 Package epstopdf Info: Output file is already uptodate.
 
-<6_RT_Corner/img/lin_sim1_ur-eps-converted-to.pdf, id=1004, 376.40625pt x 307.1
+<6_RT_Corner/img/lin_sim1_ur-eps-converted-to.pdf, id=1007, 376.40625pt x 307.1
 475pt>
 File: 6_RT_Corner/img/lin_sim1_ur-eps-converted-to.pdf Graphic file (type pdf)
  <use 6_RT_Corner/img/lin_sim1_ur-eps-converted-to.pdf>
@@ -2262,18 +2264,18 @@ Package pdftex.def Info: 6_RT_Corner/img/lin_sim1_ur-eps-converted-to.pdf used
 on input line 95.
 (pdftex.def)             Requested size: 198.45662pt x 161.94379pt.
 Package epstopdf Info: Source file: <6_RT_Corner/img/lin_sim1_tm.eps>
-(epstopdf)                    date: 2017-05-15 16:21:51
-(epstopdf)                    size: 95232 bytes
+(epstopdf)                    date: 2017-05-16 20:16:08
+(epstopdf)                    size: 98570 bytes
 (epstopdf)             Output file: <6_RT_Corner/img/lin_sim1_tm-eps-converted-
 to.pdf>
-(epstopdf)                    date: 2017-05-15 16:22:30
+(epstopdf)                    date: 2017-05-16 20:16:08
 (epstopdf)                    size: 31123 bytes
 (epstopdf)             Command: <epstopdf --outfile=6_RT_Corner/img/lin_sim1_tm
 -eps-converted-to.pdf 6_RT_Corner/img/lin_sim1_tm.eps>
 (epstopdf)             \includegraphics on input line 96.
 Package epstopdf Info: Output file is already uptodate.
 
-<6_RT_Corner/img/lin_sim1_tm-eps-converted-to.pdf, id=1005, 373.395pt x 307.147
+<6_RT_Corner/img/lin_sim1_tm-eps-converted-to.pdf, id=1008, 373.395pt x 307.147
 5pt>
 File: 6_RT_Corner/img/lin_sim1_tm-eps-converted-to.pdf Graphic file (type pdf)
  <use 6_RT_Corner/img/lin_sim1_tm-eps-converted-to.pdf>
@@ -2295,18 +2297,18 @@ Package babel Info: Redefining ngerman shorthand "~
 [46 <./6_RT_Corner/img/lin_sim1_ur-eps-converted-to.pdf> <./6_RT_Corner/img/lin
 _sim1_tm-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <6_RT_Corner/img/lin_sim2_phi.eps>
-(epstopdf)                    date: 2017-05-15 16:21:52
-(epstopdf)                    size: 556172 bytes
+(epstopdf)                    date: 2017-05-16 20:16:08
+(epstopdf)                    size: 587737 bytes
 (epstopdf)             Output file: <6_RT_Corner/img/lin_sim2_phi-eps-converted
 -to.pdf>
-(epstopdf)                    date: 2017-05-15 16:22:31
+(epstopdf)                    date: 2017-05-16 20:16:08
 (epstopdf)                    size: 90280 bytes
 (epstopdf)             Command: <epstopdf --outfile=6_RT_Corner/img/lin_sim2_ph
 i-eps-converted-to.pdf 6_RT_Corner/img/lin_sim2_phi.eps>
 (epstopdf)             \includegraphics on input line 124.
 Package epstopdf Info: Output file is already uptodate.
 
-<6_RT_Corner/img/lin_sim2_phi-eps-converted-to.pdf, id=1019, 370.38374pt x 307.
+<6_RT_Corner/img/lin_sim2_phi-eps-converted-to.pdf, id=1022, 370.38374pt x 307.
 1475pt>
 File: 6_RT_Corner/img/lin_sim2_phi-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -2315,18 +2317,18 @@ Package pdftex.def Info: 6_RT_Corner/img/lin_sim2_phi-eps-converted-to.pdf used
  on input line 124.
 (pdftex.def)             Requested size: 198.45662pt x 164.57301pt.
 Package epstopdf Info: Source file: <6_RT_Corner/img/lin_sim2_uk.eps>
-(epstopdf)                    date: 2017-05-15 16:21:53
-(epstopdf)                    size: 610394 bytes
+(epstopdf)                    date: 2017-05-16 20:16:08
+(epstopdf)                    size: 642562 bytes
 (epstopdf)             Output file: <6_RT_Corner/img/lin_sim2_uk-eps-converted-
 to.pdf>
-(epstopdf)                    date: 2017-05-15 16:22:32
+(epstopdf)                    date: 2017-05-16 20:16:08
 (epstopdf)                    size: 217494 bytes
 (epstopdf)             Command: <epstopdf --outfile=6_RT_Corner/img/lin_sim2_uk
 -eps-converted-to.pdf 6_RT_Corner/img/lin_sim2_uk.eps>
 (epstopdf)             \includegraphics on input line 125.
 Package epstopdf Info: Output file is already uptodate.
 
-<6_RT_Corner/img/lin_sim2_uk-eps-converted-to.pdf, id=1020, 365.365pt x 307.147
+<6_RT_Corner/img/lin_sim2_uk-eps-converted-to.pdf, id=1023, 365.365pt x 307.147
 5pt>
 File: 6_RT_Corner/img/lin_sim2_uk-eps-converted-to.pdf Graphic file (type pdf)
  <use 6_RT_Corner/img/lin_sim2_uk-eps-converted-to.pdf>
@@ -2334,18 +2336,18 @@ Package pdftex.def Info: 6_RT_Corner/img/lin_sim2_uk-eps-converted-to.pdf used
 on input line 125.
 (pdftex.def)             Requested size: 198.45662pt x 166.832pt.
 Package epstopdf Info: Source file: <6_RT_Corner/img/lin_sim2_ur.eps>
-(epstopdf)                    date: 2017-05-15 16:21:53
-(epstopdf)                    size: 607920 bytes
+(epstopdf)                    date: 2017-05-16 20:16:08
+(epstopdf)                    size: 640102 bytes
 (epstopdf)             Output file: <6_RT_Corner/img/lin_sim2_ur-eps-converted-
 to.pdf>
-(epstopdf)                    date: 2017-05-15 16:22:33
+(epstopdf)                    date: 2017-05-16 20:16:08
 (epstopdf)                    size: 209362 bytes
 (epstopdf)             Command: <epstopdf --outfile=6_RT_Corner/img/lin_sim2_ur
 -eps-converted-to.pdf 6_RT_Corner/img/lin_sim2_ur.eps>
 (epstopdf)             \includegraphics on input line 128.
 Package epstopdf Info: Output file is already uptodate.
 
-<6_RT_Corner/img/lin_sim2_ur-eps-converted-to.pdf, id=1021, 376.40625pt x 307.1
+<6_RT_Corner/img/lin_sim2_ur-eps-converted-to.pdf, id=1024, 376.40625pt x 307.1
 475pt>
 File: 6_RT_Corner/img/lin_sim2_ur-eps-converted-to.pdf Graphic file (type pdf)
  <use 6_RT_Corner/img/lin_sim2_ur-eps-converted-to.pdf>
@@ -2353,18 +2355,18 @@ Package pdftex.def Info: 6_RT_Corner/img/lin_sim2_ur-eps-converted-to.pdf used
 on input line 128.
 (pdftex.def)             Requested size: 198.45662pt x 161.94379pt.
 Package epstopdf Info: Source file: <6_RT_Corner/img/lin_sim2_tm.eps>
-(epstopdf)                    date: 2017-05-15 16:21:54
-(epstopdf)                    size: 95194 bytes
+(epstopdf)                    date: 2017-05-16 20:16:08
+(epstopdf)                    size: 98532 bytes
 (epstopdf)             Output file: <6_RT_Corner/img/lin_sim2_tm-eps-converted-
 to.pdf>
-(epstopdf)                    date: 2017-05-15 16:22:34
+(epstopdf)                    date: 2017-05-16 20:16:08
 (epstopdf)                    size: 36610 bytes
 (epstopdf)             Command: <epstopdf --outfile=6_RT_Corner/img/lin_sim2_tm
 -eps-converted-to.pdf 6_RT_Corner/img/lin_sim2_tm.eps>
 (epstopdf)             \includegraphics on input line 129.
 Package epstopdf Info: Output file is already uptodate.
 
-<6_RT_Corner/img/lin_sim2_tm-eps-converted-to.pdf, id=1022, 373.395pt x 307.147
+<6_RT_Corner/img/lin_sim2_tm-eps-converted-to.pdf, id=1025, 373.395pt x 307.147
 5pt>
 File: 6_RT_Corner/img/lin_sim2_tm-eps-converted-to.pdf Graphic file (type pdf)
  <use 6_RT_Corner/img/lin_sim2_tm-eps-converted-to.pdf>
@@ -2434,18 +2436,18 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
 Package epstopdf Info: Source file: <6_RT_Corner/img/exp1_phi.eps>
-(epstopdf)                    date: 2017-05-15 16:12:24
-(epstopdf)                    size: 101485 bytes
+(epstopdf)                    date: 2017-05-16 20:16:08
+(epstopdf)                    size: 105506 bytes
 (epstopdf)             Output file: <6_RT_Corner/img/exp1_phi-eps-converted-to.
 pdf>
-(epstopdf)                    date: 2017-05-15 16:22:35
+(epstopdf)                    date: 2017-05-16 20:16:08
 (epstopdf)                    size: 40264 bytes
 (epstopdf)             Command: <epstopdf --outfile=6_RT_Corner/img/exp1_phi-ep
 s-converted-to.pdf 6_RT_Corner/img/exp1_phi.eps>
 (epstopdf)             \includegraphics on input line 14.
 Package epstopdf Info: Output file is already uptodate.
 
-<6_RT_Corner/img/exp1_phi-eps-converted-to.pdf, id=1070, 378.41376pt x 307.1475
+<6_RT_Corner/img/exp1_phi-eps-converted-to.pdf, id=1073, 378.41376pt x 307.1475
 pt>
 File: 6_RT_Corner/img/exp1_phi-eps-converted-to.pdf Graphic file (type pdf)
  <use 6_RT_Corner/img/exp1_phi-eps-converted-to.pdf>
@@ -2453,36 +2455,36 @@ Package pdftex.def Info: 6_RT_Corner/img/exp1_phi-eps-converted-to.pdf used on
 input line 14.
 (pdftex.def)             Requested size: 198.45662pt x 161.08144pt.
 Package epstopdf Info: Source file: <6_RT_Corner/img/exp1_uk.eps>
-(epstopdf)                    date: 2017-05-15 16:12:24
-(epstopdf)                    size: 143903 bytes
+(epstopdf)                    date: 2017-05-16 20:16:08
+(epstopdf)                    size: 149806 bytes
 (epstopdf)             Output file: <6_RT_Corner/img/exp1_uk-eps-converted-to.p
 df>
-(epstopdf)                    date: 2017-05-15 16:22:35
+(epstopdf)                    date: 2017-05-16 20:16:08
 (epstopdf)                    size: 58370 bytes
 (epstopdf)             Command: <epstopdf --outfile=6_RT_Corner/img/exp1_uk-eps
 -converted-to.pdf 6_RT_Corner/img/exp1_uk.eps>
 (epstopdf)             \includegraphics on input line 15.
 Package epstopdf Info: Output file is already uptodate.
 
-<6_RT_Corner/img/exp1_uk-eps-converted-to.pdf, id=1071, 373.395pt x 307.1475pt>
+<6_RT_Corner/img/exp1_uk-eps-converted-to.pdf, id=1074, 373.395pt x 307.1475pt>
 File: 6_RT_Corner/img/exp1_uk-eps-converted-to.pdf Graphic file (type pdf)
 <use 6_RT_Corner/img/exp1_uk-eps-converted-to.pdf>
 Package pdftex.def Info: 6_RT_Corner/img/exp1_uk-eps-converted-to.pdf used on i
 nput line 15.
 (pdftex.def)             Requested size: 198.45662pt x 163.24669pt.
 Package epstopdf Info: Source file: <6_RT_Corner/img/exp1_ur.eps>
-(epstopdf)                    date: 2017-05-15 16:12:25
-(epstopdf)                    size: 144762 bytes
+(epstopdf)                    date: 2017-05-16 20:16:08
+(epstopdf)                    size: 150688 bytes
 (epstopdf)             Output file: <6_RT_Corner/img/exp1_ur-eps-converted-to.p
 df>
-(epstopdf)                    date: 2017-05-15 16:22:36
+(epstopdf)                    date: 2017-05-16 20:16:08
 (epstopdf)                    size: 58934 bytes
 (epstopdf)             Command: <epstopdf --outfile=6_RT_Corner/img/exp1_ur-eps
 -converted-to.pdf 6_RT_Corner/img/exp1_ur.eps>
 (epstopdf)             \includegraphics on input line 18.
 Package epstopdf Info: Output file is already uptodate.
 
-<6_RT_Corner/img/exp1_ur-eps-converted-to.pdf, id=1072, 376.40625pt x 307.1475p
+<6_RT_Corner/img/exp1_ur-eps-converted-to.pdf, id=1075, 376.40625pt x 307.1475p
 t>
 File: 6_RT_Corner/img/exp1_ur-eps-converted-to.pdf Graphic file (type pdf)
  <use 6_RT_Corner/img/exp1_ur-eps-converted-to.pdf>
@@ -2490,18 +2492,18 @@ Package pdftex.def Info: 6_RT_Corner/img/exp1_ur-eps-converted-to.pdf used on i
 nput line 18.
 (pdftex.def)             Requested size: 198.45662pt x 161.94379pt.
 Package epstopdf Info: Source file: <6_RT_Corner/img/exp1_tm.eps>
-(epstopdf)                    date: 2017-05-15 16:12:26
-(epstopdf)                    size: 132414 bytes
+(epstopdf)                    date: 2017-05-16 20:16:08
+(epstopdf)                    size: 137981 bytes
 (epstopdf)             Output file: <6_RT_Corner/img/exp1_tm-eps-converted-to.p
 df>
-(epstopdf)                    date: 2017-05-15 16:22:37
+(epstopdf)                    date: 2017-05-16 20:16:08
 (epstopdf)                    size: 51947 bytes
 (epstopdf)             Command: <epstopdf --outfile=6_RT_Corner/img/exp1_tm-eps
 -converted-to.pdf 6_RT_Corner/img/exp1_tm.eps>
 (epstopdf)             \includegraphics on input line 19.
 Package epstopdf Info: Output file is already uptodate.
 
-<6_RT_Corner/img/exp1_tm-eps-converted-to.pdf, id=1073, 378.41376pt x 307.1475p
+<6_RT_Corner/img/exp1_tm-eps-converted-to.pdf, id=1076, 378.41376pt x 307.1475p
 t>
 File: 6_RT_Corner/img/exp1_tm-eps-converted-to.pdf Graphic file (type pdf)
  <use 6_RT_Corner/img/exp1_tm-eps-converted-to.pdf>
@@ -2509,18 +2511,18 @@ Package pdftex.def Info: 6_RT_Corner/img/exp1_tm-eps-converted-to.pdf used on i
 nput line 19.
 (pdftex.def)             Requested size: 198.45662pt x 161.08144pt.
 Package epstopdf Info: Source file: <6_RT_Corner/img/exp2_phi.eps>
-(epstopdf)                    date: 2017-05-15 16:12:26
-(epstopdf)                    size: 85089 bytes
+(epstopdf)                    date: 2017-05-16 20:16:08
+(epstopdf)                    size: 88155 bytes
 (epstopdf)             Output file: <6_RT_Corner/img/exp2_phi-eps-converted-to.
 pdf>
-(epstopdf)                    date: 2017-05-15 16:22:38
+(epstopdf)                    date: 2017-05-16 20:16:08
 (epstopdf)                    size: 34242 bytes
 (epstopdf)             Command: <epstopdf --outfile=6_RT_Corner/img/exp2_phi-ep
 s-converted-to.pdf 6_RT_Corner/img/exp2_phi.eps>
 (epstopdf)             \includegraphics on input line 28.
 Package epstopdf Info: Output file is already uptodate.
 
-<6_RT_Corner/img/exp2_phi-eps-converted-to.pdf, id=1074, 378.41376pt x 307.1475
+<6_RT_Corner/img/exp2_phi-eps-converted-to.pdf, id=1077, 378.41376pt x 307.1475
 pt>
 File: 6_RT_Corner/img/exp2_phi-eps-converted-to.pdf Graphic file (type pdf)
  <use 6_RT_Corner/img/exp2_phi-eps-converted-to.pdf>
@@ -2528,18 +2530,18 @@ Package pdftex.def Info: 6_RT_Corner/img/exp2_phi-eps-converted-to.pdf used on
 input line 28.
 (pdftex.def)             Requested size: 198.45662pt x 161.08144pt.
 Package epstopdf Info: Source file: <6_RT_Corner/img/exp2_uk.eps>
-(epstopdf)                    date: 2017-05-15 16:12:27
-(epstopdf)                    size: 116518 bytes
+(epstopdf)                    date: 2017-05-16 20:16:08
+(epstopdf)                    size: 120915 bytes
 (epstopdf)             Output file: <6_RT_Corner/img/exp2_uk-eps-converted-to.p
 df>
-(epstopdf)                    date: 2017-05-15 16:22:38
+(epstopdf)                    date: 2017-05-16 20:16:08
 (epstopdf)                    size: 47440 bytes
 (epstopdf)             Command: <epstopdf --outfile=6_RT_Corner/img/exp2_uk-eps
 -converted-to.pdf 6_RT_Corner/img/exp2_uk.eps>
 (epstopdf)             \includegraphics on input line 29.
 Package epstopdf Info: Output file is already uptodate.
 
-<6_RT_Corner/img/exp2_uk-eps-converted-to.pdf, id=1075, 378.41376pt x 307.1475p
+<6_RT_Corner/img/exp2_uk-eps-converted-to.pdf, id=1078, 378.41376pt x 307.1475p
 t>
 File: 6_RT_Corner/img/exp2_uk-eps-converted-to.pdf Graphic file (type pdf)
  <use 6_RT_Corner/img/exp2_uk-eps-converted-to.pdf>
@@ -2547,18 +2549,18 @@ Package pdftex.def Info: 6_RT_Corner/img/exp2_uk-eps-converted-to.pdf used on i
 nput line 29.
 (pdftex.def)             Requested size: 198.45662pt x 161.08144pt.
 Package epstopdf Info: Source file: <6_RT_Corner/img/exp2_ur.eps>
-(epstopdf)                    date: 2017-05-15 16:12:28
-(epstopdf)                    size: 117025 bytes
+(epstopdf)                    date: 2017-05-16 20:16:08
+(epstopdf)                    size: 121442 bytes
 (epstopdf)             Output file: <6_RT_Corner/img/exp2_ur-eps-converted-to.p
 df>
-(epstopdf)                    date: 2017-05-15 16:22:39
+(epstopdf)                    date: 2017-05-16 20:16:08
 (epstopdf)                    size: 48056 bytes
 (epstopdf)             Command: <epstopdf --outfile=6_RT_Corner/img/exp2_ur-eps
 -converted-to.pdf 6_RT_Corner/img/exp2_ur.eps>
 (epstopdf)             \includegraphics on input line 32.
 Package epstopdf Info: Output file is already uptodate.
 
-<6_RT_Corner/img/exp2_ur-eps-converted-to.pdf, id=1076, 376.40625pt x 307.1475p
+<6_RT_Corner/img/exp2_ur-eps-converted-to.pdf, id=1079, 376.40625pt x 307.1475p
 t>
 File: 6_RT_Corner/img/exp2_ur-eps-converted-to.pdf Graphic file (type pdf)
  <use 6_RT_Corner/img/exp2_ur-eps-converted-to.pdf>
@@ -2566,18 +2568,18 @@ Package pdftex.def Info: 6_RT_Corner/img/exp2_ur-eps-converted-to.pdf used on i
 nput line 32.
 (pdftex.def)             Requested size: 198.45662pt x 161.94379pt.
 Package epstopdf Info: Source file: <6_RT_Corner/img/exp2_tm.eps>
-(epstopdf)                    date: 2017-05-15 16:12:28
-(epstopdf)                    size: 105647 bytes
+(epstopdf)                    date: 2017-05-16 20:16:08
+(epstopdf)                    size: 109711 bytes
 (epstopdf)             Output file: <6_RT_Corner/img/exp2_tm-eps-converted-to.p
 df>
-(epstopdf)                    date: 2017-05-15 16:22:40
+(epstopdf)                    date: 2017-05-16 20:16:08
 (epstopdf)                    size: 41736 bytes
 (epstopdf)             Command: <epstopdf --outfile=6_RT_Corner/img/exp2_tm-eps
 -converted-to.pdf 6_RT_Corner/img/exp2_tm.eps>
 (epstopdf)             \includegraphics on input line 33.
 Package epstopdf Info: Output file is already uptodate.
 
-<6_RT_Corner/img/exp2_tm-eps-converted-to.pdf, id=1077, 378.41376pt x 307.1475p
+<6_RT_Corner/img/exp2_tm-eps-converted-to.pdf, id=1080, 378.41376pt x 307.1475p
 t>
 File: 6_RT_Corner/img/exp2_tm-eps-converted-to.pdf Graphic file (type pdf)
  <use 6_RT_Corner/img/exp2_tm-eps-converted-to.pdf>
@@ -2777,7 +2779,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 1.
 
-<5_Sensorik/img/CompFilter.pdf, id=1169, 963.6pt x 542.025pt>
+<5_Sensorik/img/CompFilter.pdf, id=1172, 963.6pt x 542.025pt>
 File: 5_Sensorik/img/CompFilter.pdf Graphic file (type pdf)
 
 <use 5_Sensorik/img/CompFilter.pdf>
@@ -2825,7 +2827,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 1.
 
-<5_Sensorik/img/Observer.pdf, id=1201, 963.6pt x 542.025pt>
+<5_Sensorik/img/Observer.pdf, id=1204, 963.6pt x 542.025pt>
 File: 5_Sensorik/img/Observer.pdf Graphic file (type pdf)
 
 <use 5_Sensorik/img/Observer.pdf>
@@ -2845,18 +2847,18 @@ Package babel Info: Redefining ngerman shorthand "~
 
 [61 <./5_Sensorik/img/Observer.pdf>]
 Package epstopdf Info: Source file: <5_Sensorik/img/edge_exp3_phi.eps>
-(epstopdf)                    date: 2017-05-15 16:36:53
-(epstopdf)                    size: 69093 bytes
+(epstopdf)                    date: 2017-05-16 20:16:08
+(epstopdf)                    size: 71195 bytes
 (epstopdf)             Output file: <5_Sensorik/img/edge_exp3_phi-eps-converted
 -to.pdf>
-(epstopdf)                    date: 2017-05-15 16:43:36
+(epstopdf)                    date: 2017-05-16 20:16:08
 (epstopdf)                    size: 27258 bytes
 (epstopdf)             Command: <epstopdf --outfile=5_Sensorik/img/edge_exp3_ph
 i-eps-converted-to.pdf 5_Sensorik/img/edge_exp3_phi.eps>
 (epstopdf)             \includegraphics on input line 40.
 Package epstopdf Info: Output file is already uptodate.
 
-<5_Sensorik/img/edge_exp3_phi-eps-converted-to.pdf, id=1227, 367.3725pt x 307.1
+<5_Sensorik/img/edge_exp3_phi-eps-converted-to.pdf, id=1230, 367.3725pt x 307.1
 475pt>
 File: 5_Sensorik/img/edge_exp3_phi-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -2865,18 +2867,18 @@ Package pdftex.def Info: 5_Sensorik/img/edge_exp3_phi-eps-converted-to.pdf used
  on input line 40.
 (pdftex.def)             Requested size: 198.45662pt x 165.92747pt.
 Package epstopdf Info: Source file: <5_Sensorik/img/edge_exp3_uk.eps>
-(epstopdf)                    date: 2017-05-15 16:36:54
-(epstopdf)                    size: 81315 bytes
+(epstopdf)                    date: 2017-05-16 20:16:08
+(epstopdf)                    size: 83880 bytes
 (epstopdf)             Output file: <5_Sensorik/img/edge_exp3_uk-eps-converted-
 to.pdf>
-(epstopdf)                    date: 2017-05-15 16:43:37
+(epstopdf)                    date: 2017-05-16 20:16:08
 (epstopdf)                    size: 33830 bytes
 (epstopdf)             Command: <epstopdf --outfile=5_Sensorik/img/edge_exp3_uk
 -eps-converted-to.pdf 5_Sensorik/img/edge_exp3_uk.eps>
 (epstopdf)             \includegraphics on input line 41.
 Package epstopdf Info: Output file is already uptodate.
 
-<5_Sensorik/img/edge_exp3_uk-eps-converted-to.pdf, id=1228, 378.41376pt x 307.1
+<5_Sensorik/img/edge_exp3_uk-eps-converted-to.pdf, id=1231, 378.41376pt x 307.1
 475pt>
 File: 5_Sensorik/img/edge_exp3_uk-eps-converted-to.pdf Graphic file (type pdf)
  <use 5_Sensorik/img/edge_exp3_uk-eps-converted-to.pdf>
@@ -2884,18 +2886,18 @@ Package pdftex.def Info: 5_Sensorik/img/edge_exp3_uk-eps-converted-to.pdf used
 on input line 41.
 (pdftex.def)             Requested size: 198.45662pt x 161.08144pt.
 Package epstopdf Info: Source file: <5_Sensorik/img/edge_exp3_ur.eps>
-(epstopdf)                    date: 2017-05-15 16:36:54
-(epstopdf)                    size: 83222 bytes
+(epstopdf)                    date: 2017-05-16 20:16:08
+(epstopdf)                    size: 85820 bytes
 (epstopdf)             Output file: <5_Sensorik/img/edge_exp3_ur-eps-converted-
 to.pdf>
-(epstopdf)                    date: 2017-05-15 16:43:38
+(epstopdf)                    date: 2017-05-16 20:16:08
 (epstopdf)                    size: 34600 bytes
 (epstopdf)             Command: <epstopdf --outfile=5_Sensorik/img/edge_exp3_ur
 -eps-converted-to.pdf 5_Sensorik/img/edge_exp3_ur.eps>
 (epstopdf)             \includegraphics on input line 44.
 Package epstopdf Info: Output file is already uptodate.
 
-<5_Sensorik/img/edge_exp3_ur-eps-converted-to.pdf, id=1229, 370.38374pt x 307.1
+<5_Sensorik/img/edge_exp3_ur-eps-converted-to.pdf, id=1232, 370.38374pt x 307.1
 475pt>
 File: 5_Sensorik/img/edge_exp3_ur-eps-converted-to.pdf Graphic file (type pdf)
  <use 5_Sensorik/img/edge_exp3_ur-eps-converted-to.pdf>
@@ -2903,18 +2905,18 @@ Package pdftex.def Info: 5_Sensorik/img/edge_exp3_ur-eps-converted-to.pdf used
 on input line 44.
 (pdftex.def)             Requested size: 198.45662pt x 164.57301pt.
 Package epstopdf Info: Source file: <5_Sensorik/img/edge_exp3_tm.eps>
-(epstopdf)                    date: 2017-05-15 16:36:54
-(epstopdf)                    size: 72593 bytes
+(epstopdf)                    date: 2017-05-16 20:16:08
+(epstopdf)                    size: 74826 bytes
 (epstopdf)             Output file: <5_Sensorik/img/edge_exp3_tm-eps-converted-
 to.pdf>
-(epstopdf)                    date: 2017-05-15 16:43:38
+(epstopdf)                    date: 2017-05-16 20:16:08
 (epstopdf)                    size: 28479 bytes
 (epstopdf)             Command: <epstopdf --outfile=5_Sensorik/img/edge_exp3_tm
 -eps-converted-to.pdf 5_Sensorik/img/edge_exp3_tm.eps>
 (epstopdf)             \includegraphics on input line 45.
 Package epstopdf Info: Output file is already uptodate.
 
-<5_Sensorik/img/edge_exp3_tm-eps-converted-to.pdf, id=1230, 383.4325pt x 307.14
+<5_Sensorik/img/edge_exp3_tm-eps-converted-to.pdf, id=1233, 383.4325pt x 307.14
 75pt>
 File: 5_Sensorik/img/edge_exp3_tm-eps-converted-to.pdf Graphic file (type pdf)
  <use 5_Sensorik/img/edge_exp3_tm-eps-converted-to.pdf>
@@ -2995,7 +2997,7 @@ Overfull \hbox (0.45251pt too wide) in paragraph at lines 2--5
 in Kom-bi-na-ti-on mit ei-ner Linux-Distribution
  []
 
-<3_SW/img/SW_0_Sensoren_BSB.pdf, id=1266, 621.07031pt x 341.02406pt>
+<3_SW/img/SW_0_Sensoren_BSB.pdf, id=1269, 621.07031pt x 341.02406pt>
 File: 3_SW/img/SW_0_Sensoren_BSB.pdf Graphic file (type pdf)
 
 <use 3_SW/img/SW_0_Sensoren_BSB.pdf>
@@ -3014,21 +3016,21 @@ Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 15.
 
 [66 <./3_SW/img/SW_0_Sensoren_BSB.pdf>]
-<3_SW/img/SW_0_Sensoren_KD.pdf, id=1283, 606.76688pt x 341.02406pt>
+<3_SW/img/SW_0_Sensoren_KD.pdf, id=1286, 606.76688pt x 341.02406pt>
 File: 3_SW/img/SW_0_Sensoren_KD.pdf Graphic file (type pdf)
 
 <use 3_SW/img/SW_0_Sensoren_KD.pdf>
 Package pdftex.def Info: 3_SW/img/SW_0_Sensoren_KD.pdf used on input line 19.
 (pdftex.def)             Requested size: 308.71106pt x 173.50888pt.
 
-<3_SW/img/SW_0_Motoren_BSB.pdf, id=1284, 566.115pt x 124.96687pt>
+<3_SW/img/SW_0_Motoren_BSB.pdf, id=1287, 566.115pt x 124.96687pt>
 File: 3_SW/img/SW_0_Motoren_BSB.pdf Graphic file (type pdf)
 
 <use 3_SW/img/SW_0_Motoren_BSB.pdf>
 Package pdftex.def Info: 3_SW/img/SW_0_Motoren_BSB.pdf used on input line 26.
 (pdftex.def)             Requested size: 308.71106pt x 68.1485pt.
 
-<3_SW/img/SW_0_Hardware_KD.pdf, id=1285, 582.67688pt x 383.93437pt>
+<3_SW/img/SW_0_Hardware_KD.pdf, id=1288, 582.67688pt x 383.93437pt>
 File: 3_SW/img/SW_0_Hardware_KD.pdf Graphic file (type pdf)
 
 <use 3_SW/img/SW_0_Hardware_KD.pdf>
@@ -3068,7 +3070,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
 
-<3_SW/img/SW_1_Signalfluss_BSB.pdf, id=1324, 963.6pt x 542.025pt>
+<3_SW/img/SW_1_Signalfluss_BSB.pdf, id=1327, 963.6pt x 542.025pt>
 File: 3_SW/img/SW_1_Signalfluss_BSB.pdf Graphic file (type pdf)
 
 <use 3_SW/img/SW_1_Signalfluss_BSB.pdf>
@@ -3115,7 +3117,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 76.
 
-[70] <3_SW/img/SW_1_Signalfluss_KD.pdf, id=1407, 582.67688pt x 383.93437pt>
+[70] <3_SW/img/SW_1_Signalfluss_KD.pdf, id=1410, 582.67688pt x 383.93437pt>
 File: 3_SW/img/SW_1_Signalfluss_KD.pdf Graphic file (type pdf)
 
 <use 3_SW/img/SW_1_Signalfluss_KD.pdf>
@@ -3168,14 +3170,14 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
 
-<3_SW/img/SW_1_KA_BSB.pdf, id=1492, 810.77907pt x 341.02406pt>
+<3_SW/img/SW_1_KA_BSB.pdf, id=1495, 810.77907pt x 341.02406pt>
 File: 3_SW/img/SW_1_KA_BSB.pdf Graphic file (type pdf)
 
 <use 3_SW/img/SW_1_KA_BSB.pdf>
 Package pdftex.def Info: 3_SW/img/SW_1_KA_BSB.pdf used on input line 6.
 (pdftex.def)             Requested size: 441.01773pt x 185.50317pt.
 
-<3_SW/img/SW_1_KA_KD.pdf, id=1495, 606.76688pt x 341.02406pt>
+<3_SW/img/SW_1_KA_KD.pdf, id=1498, 606.76688pt x 341.02406pt>
 File: 3_SW/img/SW_1_KA_KD.pdf Graphic file (type pdf)
 
 <use 3_SW/img/SW_1_KA_KD.pdf>
@@ -3223,7 +3225,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
 
-<3_SW/img/SW_2_ControlComp_SC.pdf, id=1562, 483.30562pt x 255.95625pt>
+<3_SW/img/SW_2_ControlComp_SC.pdf, id=1565, 483.30562pt x 255.95625pt>
 File: 3_SW/img/SW_2_ControlComp_SC.pdf Graphic file (type pdf)
 
 <use 3_SW/img/SW_2_ControlComp_SC.pdf>
@@ -3320,7 +3322,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
 
-<3_SW/img/SW_4_CommComp_SC.pdf, id=1822, 368.1253pt x 164.86594pt>
+<3_SW/img/SW_4_CommComp_SC.pdf, id=1825, 368.1253pt x 164.86594pt>
 File: 3_SW/img/SW_4_CommComp_SC.pdf Graphic file (type pdf)
 
 <use 3_SW/img/SW_4_CommComp_SC.pdf>
@@ -3509,45 +3511,57 @@ Package rerunfilecheck Info: File `BA_MM.out' has not changed.
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 4.0pt have occurred.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 55.
  ) 
 Here is how much of TeX's memory you used:
- 15170 strings out of 493333
- 232114 string characters out of 3139200
- 356005 words of memory out of 3000000
- 17322 multiletter control sequences out of 15000+200000
+ 14549 strings out of 493333
+ 217021 string characters out of 3139200
+ 329502 words of memory out of 3000000
+ 16694 multiletter control sequences out of 15000+200000
  128323 words of font info for 101 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 54i,44n,56p,2130b,1893s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}{C:/Program Files/Mi
-KTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Files/MiKTeX 2.9/fonts/en
-c/dvips/lm/lm-rm.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathex.enc} <C:\Users\ich\Ap
-pData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\yfrak\dpi657\yfrak.pk>{C:/Program
- Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}<C:/Program Files/MiKTeX 2.9
-/fonts/type1/public/amsfonts/latxfont/lcircle1.pfb><C:/Program Files/MiKTeX 2.9
-/fonts/type1/public/lm/lmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
-ic/lm/lmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx8.pfb><
-C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmex10.pfb><C:/Program Files/
-MiKTeX 2.9/fonts/type1/public/lm/lmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/
-type1/public/lm/lmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/l
-mmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi8.pfb><C:/Progr
-am Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi9.pfb><C:/Program Files/MiKTeX 2.
-9/fonts/type1/public/lm/lmmib10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
-blic/lm/lmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr6.pfb><
-C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Program Files/Mi
-KTeX 2.9/fonts/type1/public/lm/lmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
-1/public/lm/lmri10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmro1
-0.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmss12.pfb><C:/Program
- Files/MiKTeX 2.9/fonts/type1/public/lm/lmss17.pfb><C:/Program Files/MiKTeX 2.9
-/fonts/type1/public/lm/lmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
-blic/lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb
-><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C
-:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/P
-rogram Files/MiKTeX 2.9/fonts/type1/urw/courier/ucrb8a.pfb>
-Output written on BA_MM.pdf (109 pages, 5646847 bytes).
+ 72i,44n,100p,2130b,1929s stack positions out of 5000i,500n,10000p,200000b,50000s
+pdfTeX warning (dest): name{equation.1.2.20} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{equation.1.2.21} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.1} has been referenced but does not 
+exist, replaced by a fixed one
+
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}{C:/Program Files/MiKT
+eX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/
+dvips/lm/lm-rm.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C
+:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathex.enc} <C:\Users\ich\AppD
+ata\Local\MiKTeX\2.9\fonts\pk\ljfour\public\yfrak\dpi657\yfrak.pk>{C:/Program F
+iles/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}<C:/Program Files/MiKTeX 2.9/f
+onts/type1/public/amsfonts/latxfont/lcircle1.pfb><C:/Program Files/MiKTeX 2.9/f
+onts/type1/public/lm/lmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
+/lm/lmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx8.pfb><C:
+/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmex10.pfb><C:/Program Files/Mi
+KTeX 2.9/fonts/type1/public/lm/lmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
+pe1/public/lm/lmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmm
+i6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi8.pfb><C:/Program
+ Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi9.pfb><C:/Program Files/MiKTeX 2.9/
+fonts/type1/public/lm/lmmib10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
+ic/lm/lmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr6.pfb><C:
+/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Program Files/MiKT
+eX 2.9/fonts/type1/public/lm/lmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
+public/lm/lmri10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmro10.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmss12.pfb><C:/Program F
+iles/MiKTeX 2.9/fonts/type1/public/lm/lmss17.pfb><C:/Program Files/MiKTeX 2.9/f
+onts/type1/public/lm/lmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
+ic/lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><
+C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/
+Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Pro
+gram Files/MiKTeX 2.9/fonts/type1/urw/courier/ucrb8a.pfb>
+Output written on BA_MM.pdf (109 pages, 5647254 bytes).
 PDF statistics:
- 2185 PDF objects out of 2487 (max. 8388607)
- 845 named destinations out of 1000 (max. 500000)
+ 2189 PDF objects out of 2487 (max. 8388607)
+ 848 named destinations out of 1000 (max. 500000)
  534 words of extra memory for PDF output out of 10000 (max. 10000000)
 
