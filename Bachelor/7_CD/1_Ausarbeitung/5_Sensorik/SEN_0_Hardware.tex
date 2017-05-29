@@ -35,6 +35,9 @@ Somit müssen lediglich die Abbildungmatrizen $\pMat{S_i}{K}$ bestimmt werden, u
 \end{bmatrix}
 \end{equation}
 Der letztendliche Messwert $\bs{u}_K$ wird durch den Mittelwert der sechs Drehratensensoren gebildet.
+\begin{equation}
+\bs{u}\idx{K} = \sum^6_{i=1}\frac{\pMat{S_i}{K}\cdot \bs{\omega}_i}{6}
+\end{equation}
 \pagebreak
 
 Die Zustände $u_{Ri}$ ergeben sich aus der Summe

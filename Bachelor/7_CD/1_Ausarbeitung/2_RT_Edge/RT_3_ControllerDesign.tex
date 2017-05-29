@@ -107,7 +107,7 @@ Im vorherigen Abschnitt wurden die Nachteile der Eigenwertvorgabe aufgezeigt, we
 \begin{equation}
 J = \sum^{\infty}_{k=0} \left[\bs{x}^T(k)\cdot \bs{Q} \cdot \bs{x}(k) + \bs{u}^T(k)\cdot \bs{R}\cdot \bs{u}(k)\right]
 \end{equation}
-verwendet. Die Matrizen $\bs{Q}$ und $\bs{R}$ dienen der Gewichtung des Zustands- bzw. Stellvektors und müssen positiv semidefinit bzw. definit sein. Durch die Gewichtungsmatrizen ist es möglich Forderung an den ursprünglichen Zustands- und Stellvektor direkt in den Reglerentwurf einfließen zu lassen. Der letztendliche Regler ergibt sich aus der Lösung des Optimierungsproblems, dass $J$ minimal wird. Nach \cite[S. 177]{Ludyk} gilt für die Reglermatrix
+verwendet. Die Matrizen $\bs{Q}$ und $\bs{R}$ dienen der Gewichtung des Zustands- bzw. Stellvektors und müssen positiv semidefinit bzw. definit sein. Durch die Gewichtungsmatrizen ist es möglich Forderungen an den ursprünglichen Zustands- und Stellvektor direkt in den Reglerentwurf einfließen zu lassen. Der letztendliche Regler ergibt sich aus der Lösung des Optimierungsproblems, welches darin besteht, $J$ zu minimieren. Nach \cite[S. 177]{Ludyk} gilt für die Reglermatrix
 \begin{equation}
 \bs{K} = (\bs{R}+\bs{B}^T\bs{P}\bs{B})^{-1}\bs{B}^T\bs{P}\bs{A}\,,
 \end{equation}
@@ -131,7 +131,7 @@ Umgekehrt beschreibt die Beobachtbarkeit die Möglichkeit den Zustandsvektor ein
 \signed{\cite[S. 92]{LunzeRT2}}
 \end{quote}
 
-Um sowohl die Steuer- als auch Beobachtbarkeit eines Systems zu prüfen, können die Kalmankritieren angewandt werden [LunzeRT2, S. 93 ff.]. Für den Entwurf eines Zustandsreglers muss ein System mindestens stabilisierbar sein, was bedeutet, dass alle instabilen Eingevorgänge des Systems sowohl steuer- als auch beobachtbar sind. Für diesen Fall lässt sich zeigen [Lunze RT2, S. 301], dass der Entwurf nach dem linear qudratischen Gütekriterium zu einem asymptotisch stabilen Regelkreis führt. Hieraus folgt, dass alle Eigenwerte des geschlossenen Regelkreises im Einheitskreises liegen. Ebenso lässt sich durch
+Um sowohl die Steuer- als auch Beobachtbarkeit eines Systems zu prüfen, können die Kalmankritieren angewandt werden [LunzeRT2, S. 93 ff.]. Für den Entwurf eines Zustandsreglers muss ein System mindestens stabilisierbar sein, was bedeutet, dass alle instabilen Eigenvorgänge des Systems sowohl steuer- als auch beobachtbar sind. Für diesen Fall lässt sich zeigen [Lunze RT2, S. 301], dass der Entwurf nach dem linear qudratischen Gütekriterium zu einem asymptotisch stabilen Regelkreis führt. Hieraus folgt, dass alle Eigenwerte des geschlossenen Regelkreises im Einheitskreises liegen. Ebenso lässt sich durch
 \begin{equation}
 \vert z\vert = e^{\sigma_i} \hspace{35pt} \vert \hspace{15pt} s_i = \sigma_i + \omega_i\cdot j
 \end{equation}

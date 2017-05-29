@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.31)  22 MAY 2017 08:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.31)  29 MAY 2017 16:56
 entering extended mode
 **./BA_MM.tex
 (BA_MM.tex
@@ -1338,17 +1338,24 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
+<0_Introduction/img/3D_Modell_img.jpg, id=473, 4288.02pt x 2858.68pt>
+File: 0_Introduction/img/3D_Modell_img.jpg Graphic file (type jpg)
+
+<use 0_Introduction/img/3D_Modell_img.jpg>
+Package pdftex.def Info: 0_Introduction/img/3D_Modell_img.jpg used on input lin
+e 5.
+(pdftex.def)             Requested size: 374.86775pt x 249.89833pt.
 
 Overfull \vbox (5.05856pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 7.
+(babel)             in language  on input line 11.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 7.
+(babel)             in language  on input line 11.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 7.
+(babel)             in language  on input line 11.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 7.
+(babel)             in language  on input line 11.
 
 [1
 
@@ -1356,19 +1363,19 @@ Package babel Info: Redefining ngerman shorthand "~
 
 
 
-])
+ <./0_Introduction/img/3D_Modell_img.jpg>]
 Overfull \vbox (5.05856pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 36.
+(babel)             in language  on input line 19.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 36.
+(babel)             in language  on input line 19.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 36.
+(babel)             in language  on input line 19.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 36.
+(babel)             in language  on input line 19.
 
-[2]
+[2])
 Overfull \vbox (5.05856pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
@@ -1423,13 +1430,13 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
 
-<1_TM_Edge/img/ModellWuerfelseite.pdf, id=504, 963.6pt x 542.025pt>
+<1_TM_Edge/img/ModellWuerfelseite.pdf, id=508, 963.6pt x 542.025pt>
 File: 1_TM_Edge/img/ModellWuerfelseite.pdf Graphic file (type pdf)
 
 <use 1_TM_Edge/img/ModellWuerfelseite.pdf>
 Package pdftex.def Info: 1_TM_Edge/img/ModellWuerfelseite.pdf used on input lin
 e 5.
-(pdftex.def)             Requested size: 264.61333pt x 250.08806pt.
+(pdftex.def)             Requested size: 264.61333pt x 227.1648pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <9> on input line 10.
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -1462,13 +1469,13 @@ Package babel Info: Redefining ngerman shorthand "~
 Overfull \vbox (5.05856pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 70.
+(babel)             in language  on input line 75.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 70.
+(babel)             in language  on input line 75.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 70.
+(babel)             in language  on input line 75.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 70.
+(babel)             in language  on input line 75.
 
 [8])
 Overfull \vbox (5.05856pt too high) has occurred while \output is active []
@@ -1640,7 +1647,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 4.
 
-<2_RT_Edge/img/RT_ClosedLoop.pdf, id=682, 963.6pt x 542.025pt>
+<2_RT_Edge/img/RT_ClosedLoop.pdf, id=686, 963.6pt x 542.025pt>
 File: 2_RT_Edge/img/RT_ClosedLoop.pdf Graphic file (type pdf)
 
 <use 2_RT_Edge/img/RT_ClosedLoop.pdf>
@@ -1725,16 +1732,16 @@ to.pdf>
 (epstopdf)                    size: 23736 bytes
 (epstopdf)             Command: <epstopdf --outfile=2_RT_Edge/img/edge_exp1_phi
 -eps-converted-to.pdf 2_RT_Edge/img/edge_exp1_phi.eps>
-(epstopdf)             \includegraphics on input line 23.
+(epstopdf)             \includegraphics on input line 24.
 Package epstopdf Info: Output file is already uptodate.
 
-<2_RT_Edge/img/edge_exp1_phi-eps-converted-to.pdf, id=752, 378.41376pt x 307.14
+<2_RT_Edge/img/edge_exp1_phi-eps-converted-to.pdf, id=756, 378.41376pt x 307.14
 75pt>
 File: 2_RT_Edge/img/edge_exp1_phi-eps-converted-to.pdf Graphic file (type pdf)
  <use 2_RT_Edge/img/edge_exp1_phi-eps-converted-to.pdf>
 Package pdftex.def Info: 2_RT_Edge/img/edge_exp1_phi-eps-converted-to.pdf used 
-on input line 23.
-(pdftex.def)             Requested size: 198.45662pt x 161.08144pt.
+on input line 24.
+(pdftex.def)             Requested size: 189.63438pt x 153.92018pt.
 Package epstopdf Info: Source file: <2_RT_Edge/img/edge_exp1_uk.eps>
 (epstopdf)                    date: 2017-05-15 16:36:51
 (epstopdf)                    size: 76915 bytes
@@ -1744,16 +1751,16 @@ o.pdf>
 (epstopdf)                    size: 31084 bytes
 (epstopdf)             Command: <epstopdf --outfile=2_RT_Edge/img/edge_exp1_uk-
 eps-converted-to.pdf 2_RT_Edge/img/edge_exp1_uk.eps>
-(epstopdf)             \includegraphics on input line 24.
+(epstopdf)             \includegraphics on input line 25.
 Package epstopdf Info: Output file is already uptodate.
 
-<2_RT_Edge/img/edge_exp1_uk-eps-converted-to.pdf, id=753, 376.40625pt x 307.147
+<2_RT_Edge/img/edge_exp1_uk-eps-converted-to.pdf, id=757, 376.40625pt x 307.147
 5pt>
 File: 2_RT_Edge/img/edge_exp1_uk-eps-converted-to.pdf Graphic file (type pdf)
  <use 2_RT_Edge/img/edge_exp1_uk-eps-converted-to.pdf>
 Package pdftex.def Info: 2_RT_Edge/img/edge_exp1_uk-eps-converted-to.pdf used o
-n input line 24.
-(pdftex.def)             Requested size: 198.45662pt x 161.94379pt.
+n input line 25.
+(pdftex.def)             Requested size: 189.63438pt x 154.74504pt.
 Package epstopdf Info: Source file: <2_RT_Edge/img/edge_exp1_ur.eps>
 (epstopdf)                    date: 2017-05-15 16:36:51
 (epstopdf)                    size: 78618 bytes
@@ -1763,16 +1770,16 @@ o.pdf>
 (epstopdf)                    size: 31745 bytes
 (epstopdf)             Command: <epstopdf --outfile=2_RT_Edge/img/edge_exp1_ur-
 eps-converted-to.pdf 2_RT_Edge/img/edge_exp1_ur.eps>
-(epstopdf)             \includegraphics on input line 27.
+(epstopdf)             \includegraphics on input line 28.
 Package epstopdf Info: Output file is already uptodate.
 
-<2_RT_Edge/img/edge_exp1_ur-eps-converted-to.pdf, id=754, 368.37625pt x 307.147
+<2_RT_Edge/img/edge_exp1_ur-eps-converted-to.pdf, id=758, 368.37625pt x 307.147
 5pt>
 File: 2_RT_Edge/img/edge_exp1_ur-eps-converted-to.pdf Graphic file (type pdf)
  <use 2_RT_Edge/img/edge_exp1_ur-eps-converted-to.pdf>
 Package pdftex.def Info: 2_RT_Edge/img/edge_exp1_ur-eps-converted-to.pdf used o
-n input line 27.
-(pdftex.def)             Requested size: 198.45662pt x 165.46817pt.
+n input line 28.
+(pdftex.def)             Requested size: 189.63438pt x 158.11476pt.
 Package epstopdf Info: Source file: <2_RT_Edge/img/edge_exp1_tm.eps>
 (epstopdf)                    date: 2017-05-15 16:36:51
 (epstopdf)                    size: 66131 bytes
@@ -1782,50 +1789,50 @@ o.pdf>
 (epstopdf)                    size: 25468 bytes
 (epstopdf)             Command: <epstopdf --outfile=2_RT_Edge/img/edge_exp1_tm-
 eps-converted-to.pdf 2_RT_Edge/img/edge_exp1_tm.eps>
-(epstopdf)             \includegraphics on input line 28.
+(epstopdf)             \includegraphics on input line 29.
 Package epstopdf Info: Output file is already uptodate.
 
-<2_RT_Edge/img/edge_exp1_tm-eps-converted-to.pdf, id=755, 376.40625pt x 307.147
+<2_RT_Edge/img/edge_exp1_tm-eps-converted-to.pdf, id=759, 376.40625pt x 307.147
 5pt>
 File: 2_RT_Edge/img/edge_exp1_tm-eps-converted-to.pdf Graphic file (type pdf)
  <use 2_RT_Edge/img/edge_exp1_tm-eps-converted-to.pdf>
 Package pdftex.def Info: 2_RT_Edge/img/edge_exp1_tm-eps-converted-to.pdf used o
-n input line 28.
-(pdftex.def)             Requested size: 198.45662pt x 161.94379pt.
+n input line 29.
+(pdftex.def)             Requested size: 189.63438pt x 154.74504pt.
 
 Overfull \vbox (5.05856pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 31.
+(babel)             in language  on input line 32.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 31.
+(babel)             in language  on input line 32.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 31.
+(babel)             in language  on input line 32.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 31.
+(babel)             in language  on input line 32.
 
 [25 <./2_RT_Edge/img/edge_exp1_phi-eps-converted-to.pdf> <./2_RT_Edge/img/edge_
 exp1_uk-eps-converted-to.pdf> <./2_RT_Edge/img/edge_exp1_ur-eps-converted-to.pd
 f> <./2_RT_Edge/img/edge_exp1_tm-eps-converted-to.pdf>]
 
 Package amsmath Warning: Cannot use `split' here;
-(amsmath)                trying to recover with `aligned' on input line 49.
+(amsmath)                trying to recover with `aligned' on input line 50.
 
 
 Package amsmath Warning: Cannot use `split' here;
-(amsmath)                trying to recover with `aligned' on input line 67.
+(amsmath)                trying to recover with `aligned' on input line 68.
 
 
 Overfull \vbox (5.05856pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 95.
+(babel)             in language  on input line 96.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 95.
+(babel)             in language  on input line 96.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 95.
+(babel)             in language  on input line 96.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 95.
+(babel)             in language  on input line 96.
 
 [26]
 Package epstopdf Info: Source file: <2_RT_Edge/img/edge_exp2_phi.eps>
@@ -1837,15 +1844,15 @@ to.pdf>
 (epstopdf)                    size: 25708 bytes
 (epstopdf)             Command: <epstopdf --outfile=2_RT_Edge/img/edge_exp2_phi
 -eps-converted-to.pdf 2_RT_Edge/img/edge_exp2_phi.eps>
-(epstopdf)             \includegraphics on input line 105.
+(epstopdf)             \includegraphics on input line 106.
 Package epstopdf Info: Output file is already uptodate.
 
-<2_RT_Edge/img/edge_exp2_phi-eps-converted-to.pdf, id=785, 382.42876pt x 307.14
+<2_RT_Edge/img/edge_exp2_phi-eps-converted-to.pdf, id=789, 382.42876pt x 307.14
 75pt>
 File: 2_RT_Edge/img/edge_exp2_phi-eps-converted-to.pdf Graphic file (type pdf)
  <use 2_RT_Edge/img/edge_exp2_phi-eps-converted-to.pdf>
 Package pdftex.def Info: 2_RT_Edge/img/edge_exp2_phi-eps-converted-to.pdf used 
-on input line 105.
+on input line 106.
 (pdftex.def)             Requested size: 198.45662pt x 159.38954pt.
 Package epstopdf Info: Source file: <2_RT_Edge/img/edge_exp2_uk.eps>
 (epstopdf)                    date: 2017-05-15 16:36:52
@@ -1856,15 +1863,15 @@ o.pdf>
 (epstopdf)                    size: 32968 bytes
 (epstopdf)             Command: <epstopdf --outfile=2_RT_Edge/img/edge_exp2_uk-
 eps-converted-to.pdf 2_RT_Edge/img/edge_exp2_uk.eps>
-(epstopdf)             \includegraphics on input line 106.
+(epstopdf)             \includegraphics on input line 107.
 Package epstopdf Info: Output file is already uptodate.
 
-<2_RT_Edge/img/edge_exp2_uk-eps-converted-to.pdf, id=786, 377.41pt x 307.1475pt
+<2_RT_Edge/img/edge_exp2_uk-eps-converted-to.pdf, id=790, 377.41pt x 307.1475pt
 >
 File: 2_RT_Edge/img/edge_exp2_uk-eps-converted-to.pdf Graphic file (type pdf)
  <use 2_RT_Edge/img/edge_exp2_uk-eps-converted-to.pdf>
 Package pdftex.def Info: 2_RT_Edge/img/edge_exp2_uk-eps-converted-to.pdf used o
-n input line 106.
+n input line 107.
 (pdftex.def)             Requested size: 198.45662pt x 161.50792pt.
 Package epstopdf Info: Source file: <2_RT_Edge/img/edge_exp2_ur.eps>
 (epstopdf)                    date: 2017-05-15 16:36:52
@@ -1875,15 +1882,15 @@ o.pdf>
 (epstopdf)                    size: 33352 bytes
 (epstopdf)             Command: <epstopdf --outfile=2_RT_Edge/img/edge_exp2_ur-
 eps-converted-to.pdf 2_RT_Edge/img/edge_exp2_ur.eps>
-(epstopdf)             \includegraphics on input line 111.
+(epstopdf)             \includegraphics on input line 112.
 Package epstopdf Info: Output file is already uptodate.
 
-<2_RT_Edge/img/edge_exp2_ur-eps-converted-to.pdf, id=787, 369.38pt x 307.1475pt
+<2_RT_Edge/img/edge_exp2_ur-eps-converted-to.pdf, id=791, 369.38pt x 307.1475pt
 >
 File: 2_RT_Edge/img/edge_exp2_ur-eps-converted-to.pdf Graphic file (type pdf)
  <use 2_RT_Edge/img/edge_exp2_ur-eps-converted-to.pdf>
 Package pdftex.def Info: 2_RT_Edge/img/edge_exp2_ur-eps-converted-to.pdf used o
-n input line 111.
+n input line 112.
 (pdftex.def)             Requested size: 198.45662pt x 165.01825pt.
 Package epstopdf Info: Source file: <2_RT_Edge/img/edge_exp2_tm.eps>
 (epstopdf)                    date: 2017-05-15 16:36:53
@@ -1894,27 +1901,27 @@ o.pdf>
 (epstopdf)                    size: 27238 bytes
 (epstopdf)             Command: <epstopdf --outfile=2_RT_Edge/img/edge_exp2_tm-
 eps-converted-to.pdf 2_RT_Edge/img/edge_exp2_tm.eps>
-(epstopdf)             \includegraphics on input line 112.
+(epstopdf)             \includegraphics on input line 113.
 Package epstopdf Info: Output file is already uptodate.
 
-<2_RT_Edge/img/edge_exp2_tm-eps-converted-to.pdf, id=788, 377.41pt x 307.1475pt
+<2_RT_Edge/img/edge_exp2_tm-eps-converted-to.pdf, id=792, 377.41pt x 307.1475pt
 >
 File: 2_RT_Edge/img/edge_exp2_tm-eps-converted-to.pdf Graphic file (type pdf)
  <use 2_RT_Edge/img/edge_exp2_tm-eps-converted-to.pdf>
 Package pdftex.def Info: 2_RT_Edge/img/edge_exp2_tm-eps-converted-to.pdf used o
-n input line 112.
+n input line 113.
 (pdftex.def)             Requested size: 198.45662pt x 161.50792pt.
 
 Overfull \vbox (5.05856pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 116.
+(babel)             in language  on input line 117.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 116.
+(babel)             in language  on input line 117.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 116.
+(babel)             in language  on input line 117.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 116.
+(babel)             in language  on input line 117.
 
 [27 <./2_RT_Edge/img/edge_exp2_phi-eps-converted-to.pdf> <./2_RT_Edge/img/edge_
 exp2_uk-eps-converted-to.pdf>]))
@@ -2001,7 +2008,7 @@ rawing-eps-converted-to.pdf 4_TM_Corner/img/tm_corner_drawing.eps>
 (epstopdf)             \includegraphics on input line 5.
 Package epstopdf Info: Output file is already uptodate.
 
-<4_TM_Corner/img/tm_corner_drawing-eps-converted-to.pdf, id=833, 682.55pt x 575
+<4_TM_Corner/img/tm_corner_drawing-eps-converted-to.pdf, id=837, 682.55pt x 575
 .14874pt>
 File: 4_TM_Corner/img/tm_corner_drawing-eps-converted-to.pdf Graphic file (type
  pdf)
@@ -2201,7 +2208,7 @@ i-eps-converted-to.pdf 6_RT_Corner/img/lin_sim1_phi.eps>
 (epstopdf)             \includegraphics on input line 88.
 Package epstopdf Info: Output file is already uptodate.
 
-<6_RT_Corner/img/lin_sim1_phi-eps-converted-to.pdf, id=985, 373.395pt x 307.147
+<6_RT_Corner/img/lin_sim1_phi-eps-converted-to.pdf, id=989, 373.395pt x 307.147
 5pt>
 File: 6_RT_Corner/img/lin_sim1_phi-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -2221,7 +2228,7 @@ to.pdf>
 (epstopdf)             \includegraphics on input line 89.
 Package epstopdf Info: Output file is already uptodate.
 
-<6_RT_Corner/img/lin_sim1_uk-eps-converted-to.pdf, id=986, 373.395pt x 307.1475
+<6_RT_Corner/img/lin_sim1_uk-eps-converted-to.pdf, id=990, 373.395pt x 307.1475
 pt>
 File: 6_RT_Corner/img/lin_sim1_uk-eps-converted-to.pdf Graphic file (type pdf)
  <use 6_RT_Corner/img/lin_sim1_uk-eps-converted-to.pdf>
@@ -2254,7 +2261,7 @@ to.pdf>
 (epstopdf)             \includegraphics on input line 95.
 Package epstopdf Info: Output file is already uptodate.
 
-<6_RT_Corner/img/lin_sim1_ur-eps-converted-to.pdf, id=1004, 376.40625pt x 307.1
+<6_RT_Corner/img/lin_sim1_ur-eps-converted-to.pdf, id=1008, 376.40625pt x 307.1
 475pt>
 File: 6_RT_Corner/img/lin_sim1_ur-eps-converted-to.pdf Graphic file (type pdf)
  <use 6_RT_Corner/img/lin_sim1_ur-eps-converted-to.pdf>
@@ -2273,7 +2280,7 @@ to.pdf>
 (epstopdf)             \includegraphics on input line 96.
 Package epstopdf Info: Output file is already uptodate.
 
-<6_RT_Corner/img/lin_sim1_tm-eps-converted-to.pdf, id=1005, 373.395pt x 307.147
+<6_RT_Corner/img/lin_sim1_tm-eps-converted-to.pdf, id=1009, 373.395pt x 307.147
 5pt>
 File: 6_RT_Corner/img/lin_sim1_tm-eps-converted-to.pdf Graphic file (type pdf)
  <use 6_RT_Corner/img/lin_sim1_tm-eps-converted-to.pdf>
@@ -2306,7 +2313,7 @@ i-eps-converted-to.pdf 6_RT_Corner/img/lin_sim2_phi.eps>
 (epstopdf)             \includegraphics on input line 124.
 Package epstopdf Info: Output file is already uptodate.
 
-<6_RT_Corner/img/lin_sim2_phi-eps-converted-to.pdf, id=1019, 370.38374pt x 307.
+<6_RT_Corner/img/lin_sim2_phi-eps-converted-to.pdf, id=1023, 370.38374pt x 307.
 1475pt>
 File: 6_RT_Corner/img/lin_sim2_phi-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -2326,7 +2333,7 @@ to.pdf>
 (epstopdf)             \includegraphics on input line 125.
 Package epstopdf Info: Output file is already uptodate.
 
-<6_RT_Corner/img/lin_sim2_uk-eps-converted-to.pdf, id=1020, 365.365pt x 307.147
+<6_RT_Corner/img/lin_sim2_uk-eps-converted-to.pdf, id=1024, 365.365pt x 307.147
 5pt>
 File: 6_RT_Corner/img/lin_sim2_uk-eps-converted-to.pdf Graphic file (type pdf)
  <use 6_RT_Corner/img/lin_sim2_uk-eps-converted-to.pdf>
@@ -2345,7 +2352,7 @@ to.pdf>
 (epstopdf)             \includegraphics on input line 128.
 Package epstopdf Info: Output file is already uptodate.
 
-<6_RT_Corner/img/lin_sim2_ur-eps-converted-to.pdf, id=1021, 376.40625pt x 307.1
+<6_RT_Corner/img/lin_sim2_ur-eps-converted-to.pdf, id=1025, 376.40625pt x 307.1
 475pt>
 File: 6_RT_Corner/img/lin_sim2_ur-eps-converted-to.pdf Graphic file (type pdf)
  <use 6_RT_Corner/img/lin_sim2_ur-eps-converted-to.pdf>
@@ -2364,7 +2371,7 @@ to.pdf>
 (epstopdf)             \includegraphics on input line 129.
 Package epstopdf Info: Output file is already uptodate.
 
-<6_RT_Corner/img/lin_sim2_tm-eps-converted-to.pdf, id=1022, 373.395pt x 307.147
+<6_RT_Corner/img/lin_sim2_tm-eps-converted-to.pdf, id=1026, 373.395pt x 307.147
 5pt>
 File: 6_RT_Corner/img/lin_sim2_tm-eps-converted-to.pdf Graphic file (type pdf)
  <use 6_RT_Corner/img/lin_sim2_tm-eps-converted-to.pdf>
@@ -2445,7 +2452,7 @@ s-converted-to.pdf 6_RT_Corner/img/exp1_phi.eps>
 (epstopdf)             \includegraphics on input line 14.
 Package epstopdf Info: Output file is already uptodate.
 
-<6_RT_Corner/img/exp1_phi-eps-converted-to.pdf, id=1070, 378.41376pt x 307.1475
+<6_RT_Corner/img/exp1_phi-eps-converted-to.pdf, id=1074, 378.41376pt x 307.1475
 pt>
 File: 6_RT_Corner/img/exp1_phi-eps-converted-to.pdf Graphic file (type pdf)
  <use 6_RT_Corner/img/exp1_phi-eps-converted-to.pdf>
@@ -2464,7 +2471,7 @@ df>
 (epstopdf)             \includegraphics on input line 15.
 Package epstopdf Info: Output file is already uptodate.
 
-<6_RT_Corner/img/exp1_uk-eps-converted-to.pdf, id=1071, 373.395pt x 307.1475pt>
+<6_RT_Corner/img/exp1_uk-eps-converted-to.pdf, id=1075, 373.395pt x 307.1475pt>
 File: 6_RT_Corner/img/exp1_uk-eps-converted-to.pdf Graphic file (type pdf)
 <use 6_RT_Corner/img/exp1_uk-eps-converted-to.pdf>
 Package pdftex.def Info: 6_RT_Corner/img/exp1_uk-eps-converted-to.pdf used on i
@@ -2482,7 +2489,7 @@ df>
 (epstopdf)             \includegraphics on input line 18.
 Package epstopdf Info: Output file is already uptodate.
 
-<6_RT_Corner/img/exp1_ur-eps-converted-to.pdf, id=1072, 376.40625pt x 307.1475p
+<6_RT_Corner/img/exp1_ur-eps-converted-to.pdf, id=1076, 376.40625pt x 307.1475p
 t>
 File: 6_RT_Corner/img/exp1_ur-eps-converted-to.pdf Graphic file (type pdf)
  <use 6_RT_Corner/img/exp1_ur-eps-converted-to.pdf>
@@ -2501,7 +2508,7 @@ df>
 (epstopdf)             \includegraphics on input line 19.
 Package epstopdf Info: Output file is already uptodate.
 
-<6_RT_Corner/img/exp1_tm-eps-converted-to.pdf, id=1073, 378.41376pt x 307.1475p
+<6_RT_Corner/img/exp1_tm-eps-converted-to.pdf, id=1077, 378.41376pt x 307.1475p
 t>
 File: 6_RT_Corner/img/exp1_tm-eps-converted-to.pdf Graphic file (type pdf)
  <use 6_RT_Corner/img/exp1_tm-eps-converted-to.pdf>
@@ -2520,7 +2527,7 @@ s-converted-to.pdf 6_RT_Corner/img/exp2_phi.eps>
 (epstopdf)             \includegraphics on input line 28.
 Package epstopdf Info: Output file is already uptodate.
 
-<6_RT_Corner/img/exp2_phi-eps-converted-to.pdf, id=1074, 378.41376pt x 307.1475
+<6_RT_Corner/img/exp2_phi-eps-converted-to.pdf, id=1078, 378.41376pt x 307.1475
 pt>
 File: 6_RT_Corner/img/exp2_phi-eps-converted-to.pdf Graphic file (type pdf)
  <use 6_RT_Corner/img/exp2_phi-eps-converted-to.pdf>
@@ -2539,7 +2546,7 @@ df>
 (epstopdf)             \includegraphics on input line 29.
 Package epstopdf Info: Output file is already uptodate.
 
-<6_RT_Corner/img/exp2_uk-eps-converted-to.pdf, id=1075, 378.41376pt x 307.1475p
+<6_RT_Corner/img/exp2_uk-eps-converted-to.pdf, id=1079, 378.41376pt x 307.1475p
 t>
 File: 6_RT_Corner/img/exp2_uk-eps-converted-to.pdf Graphic file (type pdf)
  <use 6_RT_Corner/img/exp2_uk-eps-converted-to.pdf>
@@ -2558,7 +2565,7 @@ df>
 (epstopdf)             \includegraphics on input line 32.
 Package epstopdf Info: Output file is already uptodate.
 
-<6_RT_Corner/img/exp2_ur-eps-converted-to.pdf, id=1076, 376.40625pt x 307.1475p
+<6_RT_Corner/img/exp2_ur-eps-converted-to.pdf, id=1080, 376.40625pt x 307.1475p
 t>
 File: 6_RT_Corner/img/exp2_ur-eps-converted-to.pdf Graphic file (type pdf)
  <use 6_RT_Corner/img/exp2_ur-eps-converted-to.pdf>
@@ -2577,7 +2584,7 @@ df>
 (epstopdf)             \includegraphics on input line 33.
 Package epstopdf Info: Output file is already uptodate.
 
-<6_RT_Corner/img/exp2_tm-eps-converted-to.pdf, id=1077, 378.41376pt x 307.1475p
+<6_RT_Corner/img/exp2_tm-eps-converted-to.pdf, id=1081, 378.41376pt x 307.1475p
 t>
 File: 6_RT_Corner/img/exp2_tm-eps-converted-to.pdf Graphic file (type pdf)
  <use 6_RT_Corner/img/exp2_tm-eps-converted-to.pdf>
@@ -2677,13 +2684,13 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Overfull \vbox (5.05856pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 39.
+(babel)             in language  on input line 42.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 39.
+(babel)             in language  on input line 42.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 39.
+(babel)             in language  on input line 42.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 39.
+(babel)             in language  on input line 42.
 
 [54])
 Overfull \vbox (5.05856pt too high) has occurred while \output is active []
@@ -2735,13 +2742,13 @@ Package babel Info: Redefining ngerman shorthand "~
 Overfull \vbox (5.05856pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 80.
+(babel)             in language  on input line 76.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 80.
+(babel)             in language  on input line 76.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 80.
+(babel)             in language  on input line 76.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 80.
+(babel)             in language  on input line 76.
 
 [57])
 Overfull \vbox (5.05856pt too high) has occurred while \output is active []
@@ -2777,7 +2784,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 1.
 
-<5_Sensorik/img/CompFilter.pdf, id=1169, 963.6pt x 542.025pt>
+<5_Sensorik/img/CompFilter.pdf, id=1174, 963.6pt x 542.025pt>
 File: 5_Sensorik/img/CompFilter.pdf Graphic file (type pdf)
 
 <use 5_Sensorik/img/CompFilter.pdf>
@@ -2825,7 +2832,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 1.
 
-<5_Sensorik/img/Observer.pdf, id=1201, 963.6pt x 542.025pt>
+<5_Sensorik/img/Observer.pdf, id=1206, 963.6pt x 542.025pt>
 File: 5_Sensorik/img/Observer.pdf Graphic file (type pdf)
 
 <use 5_Sensorik/img/Observer.pdf>
@@ -2856,7 +2863,7 @@ i-eps-converted-to.pdf 5_Sensorik/img/edge_exp3_phi.eps>
 (epstopdf)             \includegraphics on input line 40.
 Package epstopdf Info: Output file is already uptodate.
 
-<5_Sensorik/img/edge_exp3_phi-eps-converted-to.pdf, id=1227, 367.3725pt x 307.1
+<5_Sensorik/img/edge_exp3_phi-eps-converted-to.pdf, id=1232, 367.3725pt x 307.1
 475pt>
 File: 5_Sensorik/img/edge_exp3_phi-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -2876,7 +2883,7 @@ to.pdf>
 (epstopdf)             \includegraphics on input line 41.
 Package epstopdf Info: Output file is already uptodate.
 
-<5_Sensorik/img/edge_exp3_uk-eps-converted-to.pdf, id=1228, 378.41376pt x 307.1
+<5_Sensorik/img/edge_exp3_uk-eps-converted-to.pdf, id=1233, 378.41376pt x 307.1
 475pt>
 File: 5_Sensorik/img/edge_exp3_uk-eps-converted-to.pdf Graphic file (type pdf)
  <use 5_Sensorik/img/edge_exp3_uk-eps-converted-to.pdf>
@@ -2895,7 +2902,7 @@ to.pdf>
 (epstopdf)             \includegraphics on input line 44.
 Package epstopdf Info: Output file is already uptodate.
 
-<5_Sensorik/img/edge_exp3_ur-eps-converted-to.pdf, id=1229, 370.38374pt x 307.1
+<5_Sensorik/img/edge_exp3_ur-eps-converted-to.pdf, id=1234, 370.38374pt x 307.1
 475pt>
 File: 5_Sensorik/img/edge_exp3_ur-eps-converted-to.pdf Graphic file (type pdf)
  <use 5_Sensorik/img/edge_exp3_ur-eps-converted-to.pdf>
@@ -2914,7 +2921,7 @@ to.pdf>
 (epstopdf)             \includegraphics on input line 45.
 Package epstopdf Info: Output file is already uptodate.
 
-<5_Sensorik/img/edge_exp3_tm-eps-converted-to.pdf, id=1230, 383.4325pt x 307.14
+<5_Sensorik/img/edge_exp3_tm-eps-converted-to.pdf, id=1235, 383.4325pt x 307.14
 75pt>
 File: 5_Sensorik/img/edge_exp3_tm-eps-converted-to.pdf Graphic file (type pdf)
  <use 5_Sensorik/img/edge_exp3_tm-eps-converted-to.pdf>
@@ -2995,7 +3002,7 @@ Overfull \hbox (0.45251pt too wide) in paragraph at lines 2--5
 in Kom-bi-na-ti-on mit ei-ner Linux-Distribution
  []
 
-<3_SW/img/SW_0_Sensoren_BSB.pdf, id=1266, 621.07031pt x 341.02406pt>
+<3_SW/img/SW_0_Sensoren_BSB.pdf, id=1271, 621.07031pt x 341.02406pt>
 File: 3_SW/img/SW_0_Sensoren_BSB.pdf Graphic file (type pdf)
 
 <use 3_SW/img/SW_0_Sensoren_BSB.pdf>
@@ -3014,21 +3021,21 @@ Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 15.
 
 [66 <./3_SW/img/SW_0_Sensoren_BSB.pdf>]
-<3_SW/img/SW_0_Sensoren_KD.pdf, id=1283, 606.76688pt x 341.02406pt>
+<3_SW/img/SW_0_Sensoren_KD.pdf, id=1288, 606.76688pt x 341.02406pt>
 File: 3_SW/img/SW_0_Sensoren_KD.pdf Graphic file (type pdf)
 
 <use 3_SW/img/SW_0_Sensoren_KD.pdf>
 Package pdftex.def Info: 3_SW/img/SW_0_Sensoren_KD.pdf used on input line 19.
 (pdftex.def)             Requested size: 308.71106pt x 173.50888pt.
 
-<3_SW/img/SW_0_Motoren_BSB.pdf, id=1284, 566.115pt x 124.96687pt>
+<3_SW/img/SW_0_Motoren_BSB.pdf, id=1289, 566.115pt x 124.96687pt>
 File: 3_SW/img/SW_0_Motoren_BSB.pdf Graphic file (type pdf)
 
 <use 3_SW/img/SW_0_Motoren_BSB.pdf>
 Package pdftex.def Info: 3_SW/img/SW_0_Motoren_BSB.pdf used on input line 26.
 (pdftex.def)             Requested size: 308.71106pt x 68.1485pt.
 
-<3_SW/img/SW_0_Hardware_KD.pdf, id=1285, 582.67688pt x 383.93437pt>
+<3_SW/img/SW_0_Hardware_KD.pdf, id=1290, 582.67688pt x 383.93437pt>
 File: 3_SW/img/SW_0_Hardware_KD.pdf Graphic file (type pdf)
 
 <use 3_SW/img/SW_0_Hardware_KD.pdf>
@@ -3068,7 +3075,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
 
-<3_SW/img/SW_1_Signalfluss_BSB.pdf, id=1324, 963.6pt x 542.025pt>
+<3_SW/img/SW_1_Signalfluss_BSB.pdf, id=1329, 963.6pt x 542.025pt>
 File: 3_SW/img/SW_1_Signalfluss_BSB.pdf Graphic file (type pdf)
 
 <use 3_SW/img/SW_1_Signalfluss_BSB.pdf>
@@ -3115,7 +3122,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 76.
 
-[70] <3_SW/img/SW_1_Signalfluss_KD.pdf, id=1407, 582.67688pt x 383.93437pt>
+[70] <3_SW/img/SW_1_Signalfluss_KD.pdf, id=1412, 582.67688pt x 383.93437pt>
 File: 3_SW/img/SW_1_Signalfluss_KD.pdf Graphic file (type pdf)
 
 <use 3_SW/img/SW_1_Signalfluss_KD.pdf>
@@ -3168,14 +3175,14 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
 
-<3_SW/img/SW_1_KA_BSB.pdf, id=1492, 810.77907pt x 341.02406pt>
+<3_SW/img/SW_1_KA_BSB.pdf, id=1497, 810.77907pt x 341.02406pt>
 File: 3_SW/img/SW_1_KA_BSB.pdf Graphic file (type pdf)
 
 <use 3_SW/img/SW_1_KA_BSB.pdf>
 Package pdftex.def Info: 3_SW/img/SW_1_KA_BSB.pdf used on input line 6.
 (pdftex.def)             Requested size: 441.01773pt x 185.50317pt.
 
-<3_SW/img/SW_1_KA_KD.pdf, id=1495, 606.76688pt x 341.02406pt>
+<3_SW/img/SW_1_KA_KD.pdf, id=1500, 606.76688pt x 341.02406pt>
 File: 3_SW/img/SW_1_KA_KD.pdf Graphic file (type pdf)
 
 <use 3_SW/img/SW_1_KA_KD.pdf>
@@ -3223,7 +3230,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
 
-<3_SW/img/SW_2_ControlComp_SC.pdf, id=1562, 483.30562pt x 255.95625pt>
+<3_SW/img/SW_2_ControlComp_SC.pdf, id=1567, 483.30562pt x 255.95625pt>
 File: 3_SW/img/SW_2_ControlComp_SC.pdf Graphic file (type pdf)
 
 <use 3_SW/img/SW_2_ControlComp_SC.pdf>
@@ -3320,7 +3327,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
 
-<3_SW/img/SW_4_CommComp_SC.pdf, id=1822, 368.1253pt x 164.86594pt>
+<3_SW/img/SW_4_CommComp_SC.pdf, id=1827, 368.1253pt x 164.86594pt>
 File: 3_SW/img/SW_4_CommComp_SC.pdf Graphic file (type pdf)
 
 <use 3_SW/img/SW_4_CommComp_SC.pdf>
@@ -3380,13 +3387,13 @@ Package babel Info: Redefining ngerman shorthand "~
 Overfull \vbox (5.05856pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 7.
+(babel)             in language  on input line 8.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 7.
+(babel)             in language  on input line 8.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 7.
+(babel)             in language  on input line 8.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 7.
+(babel)             in language  on input line 8.
 
 [87
 
@@ -3396,13 +3403,13 @@ Package babel Info: Redefining ngerman shorthand "~
 Overfull \vbox (5.05856pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 14.
+(babel)             in language  on input line 21.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 14.
+(babel)             in language  on input line 21.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 14.
+(babel)             in language  on input line 21.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 14.
+(babel)             in language  on input line 21.
 
 [88])
 Overfull \vbox (5.05856pt too high) has occurred while \output is active []
@@ -3417,25 +3424,21 @@ Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 50.
 
 [89]
+Overfull \vbox (5.05856pt too high) has occurred while \output is active []
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 50.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 50.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 50.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 50.
+
+[90]
 \openout2 = `99_Literatur.aux'.
 
  (99_Literatur.tex
-Overfull \vbox (5.05856pt too high) has occurred while \output is active []
-
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 1.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 1.
-
-[90
-
-
-
-]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
@@ -3452,7 +3455,11 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 37.
 
-[91])
+[91
+
+
+
+])
 Overfull \vbox (5.05856pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
@@ -3503,7 +3510,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 55.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 55.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 55.
 Package rerunfilecheck Info: File `BA_MM.out' has not changed.
-(rerunfilecheck)             Checksum: 9973EAADDFC18116D4518DA76FA7DC50;2805.
+(rerunfilecheck)             Checksum: 8DC9EB92E3F4C03F74446179300D0286;2805.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -3512,10 +3519,10 @@ LaTeX Font Warning: Size substitutions with differences
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 55.
  ) 
 Here is how much of TeX's memory you used:
- 15170 strings out of 493333
- 232114 string characters out of 3139200
- 356005 words of memory out of 3000000
- 17322 multiletter control sequences out of 15000+200000
+ 15181 strings out of 493333
+ 232393 string characters out of 3139200
+ 356584 words of memory out of 3000000
+ 17328 multiletter control sequences out of 15000+200000
  128323 words of font info for 101 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  54i,44n,56p,2130b,1893s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -3545,9 +3552,9 @@ blic/lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb
 ><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C
 :/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/P
 rogram Files/MiKTeX 2.9/fonts/type1/urw/courier/ucrb8a.pfb>
-Output written on BA_MM.pdf (109 pages, 5646847 bytes).
+Output written on BA_MM.pdf (109 pages, 9445497 bytes).
 PDF statistics:
- 2185 PDF objects out of 2487 (max. 8388607)
- 845 named destinations out of 1000 (max. 500000)
- 534 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2192 PDF objects out of 2487 (max. 8388607)
+ 847 named destinations out of 1000 (max. 500000)
+ 539 words of extra memory for PDF output out of 10000 (max. 10000000)
 

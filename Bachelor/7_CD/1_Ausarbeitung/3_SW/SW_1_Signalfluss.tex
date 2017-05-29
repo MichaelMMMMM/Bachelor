@@ -1,5 +1,5 @@
 \section{Implementierung des Signalflusses}
-Im nächsten Schritt muss der Signalfluss implementiert werden. Hierfür wird ein Ansatz der Template-Metaprogrammierung verwendet, um ein einheitliches Konzept für die Umsetzung von Signalverarbeitungsalgorithmen zu schaffen. Ebenso soll das Konzept Änderung im Singalfluss ermöglichen ohne dabei größere Eingriffe im Quellcode vornehmen zu müssen. Als Beispiel wird das folgende Blockschaltbild verwendet.
+Im nächsten Schritt muss der Signalfluss implementiert werden. Hierfür wird ein Ansatz der Template-Metaprogrammierung verwendet, um ein einheitliches Konzept für die Umsetzung von Signalverarbeitungsalgorithmen zu schaffen. Ebenso soll das Konzept Änderung im Signalfluss ermöglichen ohne dabei größere Eingriffe im Quellcode vornehmen zu müssen. Als Beispiel wird das folgende Blockschaltbild verwendet.
 Zunächst wird eine, auf den Sensorwerten basierende, Zustandsschätzung durchgeführt. Dieser Vektor wird anschließend gefiltert und zur Berechnung des Reglers genutzt.
 \begin{figure}[!h]
 \centering
@@ -50,8 +50,8 @@ struct TTypeList
 	using Tail = TailType;
 };
 \end{lstlisting}
-Die obige Implementierung unterstützt lediglich Listen der Länge zwei. Deshalb werden Makros verwendet \cite[S. 45]{ModernCpp}, die rekursive Intanszierungen des Templates nutzen um die Listen beliebiger Länge zu erhalten. Mittels dieser Makros kann auch die Typenliste der Aktionsobjekte erzeugt werden.
-\begin{lstlisting}[caption={Definition und Aufruf der Makors für verlängerte Typenlisten},captionpos=b]
+Die obige Implementierung unterstützt lediglich Listen der Länge zwei. Deshalb werden Makros verwendet \cite[S. 45]{ModernCpp}, die rekursive Instanziierungen des Templates nutzen um die Listen beliebiger Länge zu erhalten. Mittels dieser Makros kann auch die Typenliste der Aktionsobjekte erzeugt werden.
+\begin{lstlisting}[caption={Definition und Aufruf der Makros für verlängerte Typenlisten},captionpos=b]
 #define TYPELIST_1(T1)         TTypeList<T1, CNullType>
 #define TYPELIST_2(T1, T2) 	   TTypeList<T1, TYPELIST_1(T2)>
 #define TYPELIST_3(T1, T2, T3) TTypeList<T1, TYPELIST_2(T2, T3)>

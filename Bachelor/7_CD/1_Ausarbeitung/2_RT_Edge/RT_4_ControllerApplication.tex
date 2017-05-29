@@ -11,21 +11,22 @@ Damit der Würfel auf einer Kante balancieren kann, wird ein LQ-Regler entworfen
 \end{equation}
 verwendet werden. Daraus resultiert das Gütekriterium
 \begin{equation}
-J = \sum^{\infty}_{k=0}\left( \frac{\varphi(k)^2}{\varphi^2\idx{max}} + \frac{u\idx{K}(k)^2}{u^2\idx{K,max}} + \frac{u\idx{R}(k)^2}{u^2\idx{R,max}} + \frac{T\idx{M}(k)^2}{T^2\idx{M,max}}\right)\,.
+J = \sum^{\infty}_{k=0}\left( \frac{\varphi(k)^2}{\varphi^2\idx{max}} + \frac{u\idx{K}(k)^2}{u^2\idx{K,max}} + \frac{u\idx{R}(k)^2}{u^2\idx{R,max}} + \frac{T\idx{M}(k)^2}{T^2\idx{M,max}}\right)\,,
 \end{equation}
-Somit werden der Zustandsvektor und die Stellgröße quadratisch über ihren maximalen Wert minimiert. Der daraus resultierende Regelkreis besitzt die Eigenwerte
+in welchem der Zustandsvektor und die Stellgröße quadratisch über ihren maximalen Wert normiert werden. Die maximalen Zustandsgrößen ergeben sich aus der begrenzten Stellgröße. Beispielsweise ist das Gravitationsmoment ab dem Winkel $\varphi\idx{max}$ größer als das maximale Motormoment. 
+Der geschlossene Regelkreis besitzt die Eigenwerte
 \begin{equation}
 \lambda_1 = 0{,}7895 \hspace{35pt} \lambda_{2,3} = 0{,}8830 \pm 0{,}0087j\,,
 \end{equation}
 weshalb er asymptotisch stabil ist. Im nächsten Schritt wird der Regler an der realen Regelstrecke validiert. Die folgende Abbildung zeigt den Verlauf der Zustands- und Stellgröße, wobei das System bei dem Zeitpunk $t\approx 1{,}7$ durch eine äußere Störung erregt wurde.
 \begin{figure}[h!]
 \centering
-\includegraphics[width=0.45\textwidth]{img/edge_exp1_phi.eps}\hspace{0.7cm}
-\includegraphics[width=0.45\textwidth]{img/edge_exp1_uk.eps}
-\vspace{0.5cm}
+\includegraphics[width=0.43\textwidth]{img/edge_exp1_phi.eps}\hspace{0.7cm}
+\includegraphics[width=0.43\textwidth]{img/edge_exp1_uk.eps}
+\vspace{0.3cm}
 
-\includegraphics[width=0.45\textwidth]{img/edge_exp1_ur.eps}\hspace{0.7cm}
-\includegraphics[width=0.45\textwidth]{img/edge_exp1_tm.eps}\caption{Verlauf der Zustands- und Stellgrößen bei dem Versuch an der Regelstrecke}
+\includegraphics[width=0.43\textwidth]{img/edge_exp1_ur.eps}\hspace{0.7cm}
+\includegraphics[width=0.43\textwidth]{img/edge_exp1_tm.eps}\caption{Verlauf der Zustands- und Stellgrößen bei dem Versuch an der Regelstrecke}
 \end{figure}
 \pagebreak
 

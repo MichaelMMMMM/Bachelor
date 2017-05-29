@@ -140,7 +140,7 @@ Nun lassen sich mithilfe der partiellen Geschwindigkeiten, welche durch die Line
 \\
 &= -\hat{\dot{u}}\idx1\cdot I^{K}\idx{13} - \hat{\dot{u}}\idx2\cdot I^{K}\idx{23} - \hat{\dot{u}}\idx3(I^{K}\idx{33}+I^{R1}\idx{33}+I^{R2}\idx{33}) \nonumber
 \\
-\hat{F}^*\idx4 &= \inProd{\hat{\bs{T}}^{K/O}\idx*}{\vel{A}{\omega}{K}\idx4} + \sum^3\idx{i=1}\inProd{\hat{\bs{T}}^{Ri/Mi}\idx*}{\vel{A}{\omega}{Ri}\idx4} -\hat{\dot{u}}\idx4\cdot I^{R1}\idx{11}
+\hat{F}^*\idx4 &= \inProd{\hat{\bs{T}}^{K/O}\idx*}{\vel{A}{\omega}{K}\idx4} + \sum^3\idx{i=1}\inProd{\hat{\bs{T}}^{Ri/Mi}\idx*}{\vel{A}{\omega}{Ri}\idx4} =  -\hat{\dot{u}}\idx4\cdot I^{R1}\idx{11}
 \\
 \hat{F}^*\idx5 &= \inProd{\hat{\bs{T}}^{K/O}\idx*}{\vel{A}{\omega}{K}\idx5} + \sum^3\idx{i=1}\inProd{\hat{\bs{T}}^{Ri/Mi}\idx*}{\vel{A}{\omega}{Ri}\idx5} = -\hat{\dot{u}}\idx5\cdot I^{R2}\idx{22}
 \\
@@ -243,7 +243,7 @@ Nach Kanes Gleichung gilt $F_i=-F^*_i$, woraus sowohl $\bs{F}\idx{K}=\bs{F}^*\id
 \bs{\dot{u}}\idx{R} &= \bs{I}^{-1}\idx{R} \cdot \bs{F}^*\idx{R} = \bs{I}^{-1}\idx{R} \cdot \bs{F}\idx{K} =
  C_{\psi}\cdot \bs{I}^{-1}\idx{R} \cdot \bs{u}\idx{K} - C_{\psi}\cdot \bs{I}^{-1}\idx{R} \cdot \bs{u}\idx{R} + \bs{I}^{-1}\idx{R} \cdot \bs{T}\idx{M} \,.
 \end{align}
-Wenn nun ein Zustandsvektor $\bs{x} \equiv \begin{bmatrix} \bs{\overline{\varphi}} & \bs{u}\idx{K} & \bs{u}\idx{R}\end{bmatrix}^T$ und ein Eingangsvektor $\bs{u} \equiv \bs{T}\idx{M}$ definiert werden, geben die obigen Gleichungen bereits zwei Drittel der gesuchten Zustandsraumdarstellung wieder. Der letzte Teil ergibt sich durch die Ableitung des Winkelvektors $\bs{\overline{\varphi}}$. Hierfür wird die Definition der generalisierten Geschwindigkeiten $\bs{u}\idx{K}$ nach den Winkeln $\bs{\overline{\varphi}}$ aufgelöst.
+Wenn nun ein Zustandsvektor $\bs{x} \equiv \begin{bmatrix} \bs{\overline{\varphi}} & \bs{u}\idx{K} & \bs{u}\idx{R}\end{bmatrix}^T$ und ein Eingangsvektor $\bs{u} \equiv \bs{T}\idx{M}$ definiert werden, geben die obigen Gleichungen bereits zwei Drittel der gesuchten Zustandsraumdarstellung wieder. Der letzte Teil ergibt sich durch die Ableitung des Winkelvektors $\bs{\overline{\varphi}}$. Hierfür wird die Definition der generalisierten Geschwindigkeiten $\bs{u}\idx{K}$ nach den Winkeln ${\overline{\varphi}}_i$ aufgelöst.
 \begin{equation}
 \label{eq_ZRD3D_zeile1}
 \dot{\bs{\overline{\varphi}}} = \underbrace{\begin{bmatrix}

@@ -34,7 +34,7 @@ z = e^{T\cdot s} \hspace{35pt} s = \sigma + j\cdot \omega
 Die Stabilitätsbedingung für kontinuierliche Systeme besteht darin, dass alle Eigenwerte $\lambda_i$ links der imaginären Achse liegen. Aus (\ref{eq_abs_z}) folgt, dass der Betrag der diskreten Eigenwerte im Einheitskreis liegen muss, damit diese Forderung als erfüllt gilt. Des Weiteren führen diskrete Eigenwerte, die nahe am Ursprung liegen, zu einer schnelleren Systemdynamik. Somit bringt die Zustandsraumdarstellung für diskrete Systeme die gleichen Vorteile mit sich wie bei zeitkontinuierlichen Systemen.
 Allerdings handelt es sich bei der Regelstrecke nach wie vor um ein kontinuerliches System, lediglich der Regler stellt ein diskretes System dar. Die Schnittstelle zwischen der kontinuierlichen Strecke und dem diskreten Regler ist einerseits ein Abtastglied, welches den Zustandsvektors $\bs{x}(t)$ in die Zahlenfolge $\bs{x}(k)$ überführt. Andererseits wird die Folge der Stellgröße $\bs{u}(k)$ mit Hilfe eines Halteglieds nullter Ordnung als eine kontinuierliche Treppenfunktion moduliert.
 
-Um den geschlossenen Regelkreis einheitlich zu beschreiben, muss deshalb die kontinuierliche Zustandsarumdarstellung der Regelstrecke in eine diskrete transformiert werden. Hierzu wird zunächst die Lösung eines kontinuierlichen Systems \cSS{A}{B}{C} betrachtet.\footnote{Die folgende Herleitung und Erklärung ist nach \cite[S. 170 f.]{UnbehauenRT2} paraphrasiert.}
+Um den geschlossenen Regelkreis einheitlich zu beschreiben, muss deshalb die kontinuierliche Zustandsraumdarstellung der Regelstrecke in eine diskrete transformiert werden. Hierzu wird zunächst die Lösung eines kontinuierlichen Systems \cSS{A}{B}{C} betrachtet.\footnote{Die folgende Herleitung und Erklärung ist nach \cite[S. 170 f.]{UnbehauenRT2} paraphrasiert.}
 \begin{equation}
 \bs{x}(t) = e^{\bs{A}\cdot t}\cdot \bs{x}(t_0) + \int^t_0 e^{\bs{A}(t-\tau)}\bs{B}\cdot \bs{u}(\tau)d\tau
 \end{equation}
@@ -57,7 +57,7 @@ Diese Lösung stellt den Zusammenhang zwischen der kontinuierlichen und diskrete
 \begin{equation}
 \bs{A}\idx{d} = e^{\bs{A}T} \hspace{35pt} \bs{B}\idx{d} = (e^{\bs{A}T}-\bs{I})\bs{A}^{-1}\bs{B} \hspace{35pt} \bs{C}\idx{d} = \bs{C}
 \end{equation}
-Mit der Definition
+Mit der Matrix
 \begin{equation}
 \bs{S} = T \sum^{\infty}_{v=0}\bs{A}^v\frac{T^v}{(v+1)!}
 \end{equation}
@@ -65,4 +65,4 @@ kann die Definition vereinfacht und die Berechnung der inversen Matrix vermieden
 \begin{equation}
 \bs{A}\idx{d} = \bs{I}+\bs{S}\bs{A}\hspace{35pt} \bs{B}\idx{d} = \bs{SB}
 \end{equation}
-Die Matrix $\bs{S}$ beschreibt einerseits den Einfluss des Halteglieds auf den Regelkreis, andererseits ermöglicht sie die Überführung in eine diskrete Darstellung, welche benötigt wird, um die Regelstrecke und den Regler in einer einheitlichen Form zu beschreiben. 
+Mithilfe der Matrix $\bs{S}$ kann das System in eine diskrete Darstellung überführt werden, welche benötigt wird, um die Regelstrecke und den Regler in einer einheitlichen Form zu beschreiben. 

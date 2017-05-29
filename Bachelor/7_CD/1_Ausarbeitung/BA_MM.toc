@@ -34,4 +34,4 @@
 \contentsline {section}{\numberline {7.5}Aufbau der Kommunikationskomponente}{84}{section.7.5}
 \contentsline {section}{\numberline {7.6}Aufbau der Desktop-Anwendung}{86}{section.7.6}
 \contentsline {chapter}{\numberline {8}Zusammenfassung und Ausblick}{87}{chapter.8}
-\contentsline {chapter}{Literaturverzeichnis}{91}{chapter*.33}
+\contentsline {chapter}{Literaturverzeichnis}{91}{chapter*.34}
