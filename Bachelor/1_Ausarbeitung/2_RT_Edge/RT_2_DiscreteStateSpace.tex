@@ -57,7 +57,7 @@ Diese Lösung stellt den Zusammenhang zwischen der kontinuierlichen und diskrete
 \begin{equation}
 \bs{A}\idx{d} = e^{\bs{A}T} \hspace{35pt} \bs{B}\idx{d} = (e^{\bs{A}T}-\bs{I})\bs{A}^{-1}\bs{B} \hspace{35pt} \bs{C}\idx{d} = \bs{C}
 \end{equation}
-Mit der Definition
+Mit der Matrix
 \begin{equation}
 \bs{S} = T \sum^{\infty}_{v=0}\bs{A}^v\frac{T^v}{(v+1)!}
 \end{equation}
@@ -65,4 +65,4 @@ kann die Definition vereinfacht und die Berechnung der inversen Matrix vermieden
 \begin{equation}
 \bs{A}\idx{d} = \bs{I}+\bs{S}\bs{A}\hspace{35pt} \bs{B}\idx{d} = \bs{SB}
 \end{equation}
-Die Matrix $\bs{S}$ beschreibt einerseits den Einfluss des Halteglieds auf den Regelkreis, andererseits ermöglicht sie die Überführung in eine diskrete Darstellung, welche benötigt wird, um die Regelstrecke und den Regler in einer einheitlichen Form zu beschreiben. 
+Mithilfe der Matrix $\bs{S}$ kann das System in eine diskrete Darstellung überführt werden, welche benötigt wird, um die Regelstrecke und den Regler in einer einheitlichen Form zu beschreiben. 

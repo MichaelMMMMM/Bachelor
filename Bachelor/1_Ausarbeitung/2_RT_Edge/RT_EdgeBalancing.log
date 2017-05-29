@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.31)  19 MAY 2017 14:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.31)  29 MAY 2017 08:51
 entering extended mode
 **./RT_EdgeBalancing.tex
 (RT_EdgeBalancing.tex
@@ -1246,7 +1246,7 @@ Package epstopdf Info: Source file: <img/edge_exp1_phi.eps>
 (epstopdf)                    size: 23736 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/edge_exp1_phi-eps-conve
 rted-to.pdf img/edge_exp1_phi.eps>
-(epstopdf)             \includegraphics on input line 23.
+(epstopdf)             \includegraphics on input line 24.
 Package epstopdf Info: Output file is already uptodate.
 
 <img/edge_exp1_phi-eps-converted-to.pdf, id=194, 378.41376pt x 307.1475pt>
@@ -1254,8 +1254,8 @@ File: img/edge_exp1_phi-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/edge_exp1_phi-eps-converted-to.pdf>
 Package pdftex.def Info: img/edge_exp1_phi-eps-converted-to.pdf used on input l
-ine 23.
-(pdftex.def)             Requested size: 198.45662pt x 161.08144pt.
+ine 24.
+(pdftex.def)             Requested size: 189.63438pt x 153.92018pt.
 Package epstopdf Info: Source file: <img/edge_exp1_uk.eps>
 (epstopdf)                    date: 2017-05-15 16:36:51
 (epstopdf)                    size: 76915 bytes
@@ -1264,7 +1264,7 @@ Package epstopdf Info: Source file: <img/edge_exp1_uk.eps>
 (epstopdf)                    size: 31084 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/edge_exp1_uk-eps-conver
 ted-to.pdf img/edge_exp1_uk.eps>
-(epstopdf)             \includegraphics on input line 24.
+(epstopdf)             \includegraphics on input line 25.
 Package epstopdf Info: Output file is already uptodate.
 
 <img/edge_exp1_uk-eps-converted-to.pdf, id=195, 376.40625pt x 307.1475pt>
@@ -1272,8 +1272,8 @@ File: img/edge_exp1_uk-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/edge_exp1_uk-eps-converted-to.pdf>
 Package pdftex.def Info: img/edge_exp1_uk-eps-converted-to.pdf used on input li
-ne 24.
-(pdftex.def)             Requested size: 198.45662pt x 161.94379pt.
+ne 25.
+(pdftex.def)             Requested size: 189.63438pt x 154.74504pt.
 Package epstopdf Info: Source file: <img/edge_exp1_ur.eps>
 (epstopdf)                    date: 2017-05-15 16:36:51
 (epstopdf)                    size: 78618 bytes
@@ -1282,7 +1282,7 @@ Package epstopdf Info: Source file: <img/edge_exp1_ur.eps>
 (epstopdf)                    size: 31745 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/edge_exp1_ur-eps-conver
 ted-to.pdf img/edge_exp1_ur.eps>
-(epstopdf)             \includegraphics on input line 27.
+(epstopdf)             \includegraphics on input line 28.
 Package epstopdf Info: Output file is already uptodate.
 
 <img/edge_exp1_ur-eps-converted-to.pdf, id=196, 368.37625pt x 307.1475pt>
@@ -1290,8 +1290,8 @@ File: img/edge_exp1_ur-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/edge_exp1_ur-eps-converted-to.pdf>
 Package pdftex.def Info: img/edge_exp1_ur-eps-converted-to.pdf used on input li
-ne 27.
-(pdftex.def)             Requested size: 198.45662pt x 165.46817pt.
+ne 28.
+(pdftex.def)             Requested size: 189.63438pt x 158.11476pt.
 Package epstopdf Info: Source file: <img/edge_exp1_tm.eps>
 (epstopdf)                    date: 2017-05-15 16:36:51
 (epstopdf)                    size: 66131 bytes
@@ -1300,7 +1300,7 @@ Package epstopdf Info: Source file: <img/edge_exp1_tm.eps>
 (epstopdf)                    size: 25468 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/edge_exp1_tm-eps-conver
 ted-to.pdf img/edge_exp1_tm.eps>
-(epstopdf)             \includegraphics on input line 28.
+(epstopdf)             \includegraphics on input line 29.
 Package epstopdf Info: Output file is already uptodate.
 
 <img/edge_exp1_tm-eps-converted-to.pdf, id=197, 376.40625pt x 307.1475pt>
@@ -1308,38 +1308,38 @@ File: img/edge_exp1_tm-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/edge_exp1_tm-eps-converted-to.pdf>
 Package pdftex.def Info: img/edge_exp1_tm-eps-converted-to.pdf used on input li
-ne 28.
-(pdftex.def)             Requested size: 198.45662pt x 161.94379pt.
+ne 29.
+(pdftex.def)             Requested size: 189.63438pt x 154.74504pt.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 31.
+(babel)             in language  on input line 32.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 31.
+(babel)             in language  on input line 32.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 31.
+(babel)             in language  on input line 32.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 31.
+(babel)             in language  on input line 32.
  [13 <./img/edge_exp1_phi-eps-converted-to.pdf> <./img/edge_exp1_uk-eps-convert
 ed-to.pdf> <./img/edge_exp1_ur-eps-converted-to.pdf> <./img/edge_exp1_tm-eps-co
 nverted-to.pdf>]
 
 Package amsmath Warning: Cannot use `split' here;
-(amsmath)                trying to recover with `aligned' on input line 49.
+(amsmath)                trying to recover with `aligned' on input line 50.
 
 
 Package amsmath Warning: Cannot use `split' here;
-(amsmath)                trying to recover with `aligned' on input line 67.
+(amsmath)                trying to recover with `aligned' on input line 68.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 95.
+(babel)             in language  on input line 96.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 95.
+(babel)             in language  on input line 96.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 95.
+(babel)             in language  on input line 96.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 95.
+(babel)             in language  on input line 96.
  [14]
 Package epstopdf Info: Source file: <img/edge_exp2_phi.eps>
 (epstopdf)                    date: 2017-05-15 16:36:52
@@ -1349,7 +1349,7 @@ Package epstopdf Info: Source file: <img/edge_exp2_phi.eps>
 (epstopdf)                    size: 25708 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/edge_exp2_phi-eps-conve
 rted-to.pdf img/edge_exp2_phi.eps>
-(epstopdf)             \includegraphics on input line 105.
+(epstopdf)             \includegraphics on input line 106.
 Package epstopdf Info: Output file is already uptodate.
 
 <img/edge_exp2_phi-eps-converted-to.pdf, id=229, 382.42876pt x 307.1475pt>
@@ -1357,7 +1357,7 @@ File: img/edge_exp2_phi-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/edge_exp2_phi-eps-converted-to.pdf>
 Package pdftex.def Info: img/edge_exp2_phi-eps-converted-to.pdf used on input l
-ine 105.
+ine 106.
 (pdftex.def)             Requested size: 198.45662pt x 159.38954pt.
 Package epstopdf Info: Source file: <img/edge_exp2_uk.eps>
 (epstopdf)                    date: 2017-05-15 16:36:52
@@ -1367,7 +1367,7 @@ Package epstopdf Info: Source file: <img/edge_exp2_uk.eps>
 (epstopdf)                    size: 32968 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/edge_exp2_uk-eps-conver
 ted-to.pdf img/edge_exp2_uk.eps>
-(epstopdf)             \includegraphics on input line 106.
+(epstopdf)             \includegraphics on input line 107.
 Package epstopdf Info: Output file is already uptodate.
 
 <img/edge_exp2_uk-eps-converted-to.pdf, id=230, 377.41pt x 307.1475pt>
@@ -1375,7 +1375,7 @@ File: img/edge_exp2_uk-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/edge_exp2_uk-eps-converted-to.pdf>
 Package pdftex.def Info: img/edge_exp2_uk-eps-converted-to.pdf used on input li
-ne 106.
+ne 107.
 (pdftex.def)             Requested size: 198.45662pt x 161.50792pt.
 Package epstopdf Info: Source file: <img/edge_exp2_ur.eps>
 (epstopdf)                    date: 2017-05-15 16:36:52
@@ -1385,7 +1385,7 @@ Package epstopdf Info: Source file: <img/edge_exp2_ur.eps>
 (epstopdf)                    size: 33352 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/edge_exp2_ur-eps-conver
 ted-to.pdf img/edge_exp2_ur.eps>
-(epstopdf)             \includegraphics on input line 111.
+(epstopdf)             \includegraphics on input line 112.
 Package epstopdf Info: Output file is already uptodate.
 
 <img/edge_exp2_ur-eps-converted-to.pdf, id=231, 369.38pt x 307.1475pt>
@@ -1393,7 +1393,7 @@ File: img/edge_exp2_ur-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/edge_exp2_ur-eps-converted-to.pdf>
 Package pdftex.def Info: img/edge_exp2_ur-eps-converted-to.pdf used on input li
-ne 111.
+ne 112.
 (pdftex.def)             Requested size: 198.45662pt x 165.01825pt.
 Package epstopdf Info: Source file: <img/edge_exp2_tm.eps>
 (epstopdf)                    date: 2017-05-15 16:36:53
@@ -1403,7 +1403,7 @@ Package epstopdf Info: Source file: <img/edge_exp2_tm.eps>
 (epstopdf)                    size: 27238 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/edge_exp2_tm-eps-conver
 ted-to.pdf img/edge_exp2_tm.eps>
-(epstopdf)             \includegraphics on input line 112.
+(epstopdf)             \includegraphics on input line 113.
 Package epstopdf Info: Output file is already uptodate.
 
 <img/edge_exp2_tm-eps-converted-to.pdf, id=232, 377.41pt x 307.1475pt>
@@ -1411,16 +1411,16 @@ File: img/edge_exp2_tm-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/edge_exp2_tm-eps-converted-to.pdf>
 Package pdftex.def Info: img/edge_exp2_tm-eps-converted-to.pdf used on input li
-ne 112.
+ne 113.
 (pdftex.def)             Requested size: 198.45662pt x 161.50792pt.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 116.
+(babel)             in language  on input line 117.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 116.
+(babel)             in language  on input line 117.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 116.
+(babel)             in language  on input line 117.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 116.
+(babel)             in language  on input line 117.
  [15 <./img/edge_exp2_phi-eps-converted-to.pdf> <./img/edge_exp2_uk-eps-convert
 ed-to.pdf>])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 19.
@@ -1483,7 +1483,7 @@ lm/lmri10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmro10.pfb><C:
 KTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
 e1/public/amsfonts/symbols/msam10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
 public/amsfonts/symbols/msbm10.pfb>
-Output written on RT_EdgeBalancing.pdf (16 pages, 879561 bytes).
+Output written on RT_EdgeBalancing.pdf (16 pages, 879693 bytes).
 PDF statistics:
  359 PDF objects out of 1000 (max. 8388607)
  96 named destinations out of 1000 (max. 500000)
